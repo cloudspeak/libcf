@@ -1,19 +1,13 @@
 // @ts-check
 
-/**
- * @typedef {Object} TypeName
- * @property {string} resourceName
- * @property {string} propertyName
- * @property {string[]} namespace
- */
-
 const fs = require('fs');
 const path = require('path');
 const FileUtils = require('./FileUtils')
 const JsDocGenerator = require('./JsDocGenerator')
 const CloudFormationUtils = require('./CloudFormationUtils')
-const ResourceNode = require('./ResourceNode')
+const ResourceTypeNode = require('./ResourceTypeNode')
 const NamespaceNode = require('./NamespaceNode')
+const Property = require('./PropertyType')
 
 //const ResourceNamespace = require('./ResourceNamespace')
 
@@ -38,21 +32,6 @@ module.exports = class Generator {
     
 
 
-    /**
-     * @param {string} typeName
-     * @returns {TypeName}
-     */
-    parseTypeName(typeName) {
-        let resourceName, propertyName
-        [ resourceName, propertyName ] = typeName.split('.')
-        let namespace = resourceName.split('::')
-
-        return {
-            resourceName,
-            propertyName,
-            namespace
-        }
-    }
 
     generate(filename) {
 
@@ -61,7 +40,7 @@ module.exports = class Generator {
         
         let exportsTree = this.createExportsTreeWithResourceTypes(new NamespaceNode())
         let orphanProperties = this.addPropertyTypesToExportTree(exportsTree)
-        let codeLines = this.generateExportsCode(exportsTree)
+        let codeLines = [ '// @ts-check', ...this.generateExportsCode(exportsTree) ]
         let fileContent = codeLines.join('\n')
 
         let outputFile = path.join(this.outputPath, "cflib.js")
@@ -76,7 +55,7 @@ module.exports = class Generator {
 
         for (let resourceTypeName in this.data.ResourceTypes) {
             let resourceTypeData = this.data.ResourceTypes[resourceTypeName]
-            let parsedName = this.parseTypeName(resourceTypeName)
+            let parsedName = CloudFormationUtils.parseTypeName(resourceTypeName)
 
             let tree = exportsTree
 
@@ -85,10 +64,9 @@ module.exports = class Generator {
                 tree = tree.get(namespacePart)
             }
 
-            tree.set(parsedName.namespace[parsedName.namespace.length - 1], new ResourceNode({
-                parsedName,
-                data: resourceTypeData
-            }));
+            tree.set(parsedName.namespace[parsedName.namespace.length - 1],
+                    new ResourceTypeNode(parsedName, resourceTypeData
+            ));
         }
 
         return exportsTree
@@ -103,21 +81,18 @@ module.exports = class Generator {
 
         for (let propertyTypeName in this.data.PropertyTypes) {
             let propertyTypeData = this.data.PropertyTypes[propertyTypeName]
-            let parsedName = this.parseTypeName(propertyTypeName)
+            let parsedName = CloudFormationUtils.parseTypeName(propertyTypeName)
 
             let tree = exportsTree
             for (let namespacePart of parsedName.namespace) {
                 tree = tree.get(namespacePart)
             }
 
-            /** @type {ResourceNode} */
+            /** @type {ResourceTypeNode} */
             let resourceNamespace = (/** @type {ResourceNamespace} */ tree);
             
             if (resourceNamespace) {
-                resourceNamespace.addPropertyType({
-                    parsedName,
-                    data: propertyTypeData
-                })
+                resourceNamespace.addPropertyType(new Property(parsedName, propertyTypeData))
             }
             else {
                 orphanProperties.push(propertyTypeName)
