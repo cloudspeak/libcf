@@ -44,7 +44,8 @@ module.exports = class JsDocGenerator {
             let jsDocProperties = Object.keys(properties).map(propertyName => {
                 let property = properties[propertyName]
                 let jsDocType = JsDocGenerator.getPropertyJsDocType(parsedName, property)
-                return `@property {${jsDocType}} ${propertyName} ${propertyName}.`
+                let nameJsDoc = property.Required ? propertyName : `[${propertyName}]`
+                return `@property {${jsDocType}} ${nameJsDoc} ${propertyName}.`
             })
             return JsDocGenerator.generateComment([ jsDocTypedef ].concat(jsDocProperties))
     }
