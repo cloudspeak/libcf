@@ -38,7 +38,10 @@ module.exports = class ResourceNode extends NamespaceNode {
     }
 
     generateCode() {
-        return [ "ResourceCode"]
+        return [
+            'class {',
+            '}'
+        ]
     }
 
 }
