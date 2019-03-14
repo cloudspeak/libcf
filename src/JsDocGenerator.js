@@ -8,7 +8,12 @@ module.exports = class JsDocGenerator {
      * @param {TypeName} typeName
      */
     static getPropertyTypeTypedefName(typeName) {
-        return `${typeName.namespace.join('_')}_${typeName.propertyName}`
+        if (typeName.propertyName) {
+            return `${typeName.namespace.join('_')}_${typeName.propertyName}`
+        }
+        else {
+            return `${typeName.namespace.join('_')}`
+        }
     }
 
     /**
@@ -30,7 +35,19 @@ module.exports = class JsDocGenerator {
         }
     }
     
-    
+    /**
+     * @param {TypeName} parsedName 
+     * @param {CfProperties} properties 
+     */
+    static generatePropertiesTypedef(parsedName, properties) {
+        let jsDocTypedef = `@typedef {Object} ${JsDocGenerator.getPropertyTypeTypedefName(parsedName)}`
+            let jsDocProperties = Object.keys(properties).map(propertyName => {
+                let property = properties[propertyName]
+                let jsDocType = JsDocGenerator.getPropertyJsDocType(parsedName, property)
+                return `@property {${jsDocType}} ${propertyName} ${propertyName}.`
+            })
+            return JsDocGenerator.generateComment([ jsDocTypedef ].concat(jsDocProperties))
+    }
 
     static getPropertyJsDocType(parentParsedName, property) {
         if (property.Type === CfTypeList && property.PrimitiveItemType) {

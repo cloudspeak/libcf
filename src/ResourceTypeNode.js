@@ -1,3 +1,4 @@
+const JsDocGenerator = require('./JsDocGenerator')
 const CloudFormationUtils = require('./CloudFormationUtils')
 const NamespaceNode = require('./NamespaceNode')
 const PropertyType = require('./PropertyType')
@@ -30,13 +31,20 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
 
     generateCode() {
         let propertyCode = this._propertyTypes.reduce((array, p) => array.concat(p.generateCode()), [])
-        propertyCode = propertyCode.map(line => '  ' + line)
+        let innerCode = [
+            ...this.generateTypedef(),
+            ...propertyCode
+        ].map(line => '  ' + line)
 
         return [
             'class {',
-            ...propertyCode,
+            ...innerCode,
             '}'
         ]
+    }
+
+    generateTypedef() {
+        return JsDocGenerator.generatePropertiesTypedef(this.parsedName, this.data.Properties)
     }
 
 }

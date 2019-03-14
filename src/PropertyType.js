@@ -22,13 +22,7 @@ module.exports = class PropertyType {
 
     generateTypedef() {
         if (this.data.Properties) {
-            let jsDocTypedef = `@typedef {Object} ${JsDocGenerator.getPropertyTypeTypedefName(this.parsedName)}`
-            let jsDocProperties = Object.keys(this.data.Properties).map(propertyName => {
-                let property = this.data.Properties[propertyName]
-                let jsDocType = JsDocGenerator.getPropertyJsDocType(this.parsedName, property)
-                return `@property {${jsDocType}} ${propertyName} ${propertyName}.`
-            })
-            return JsDocGenerator.generateComment([ jsDocTypedef ].concat(jsDocProperties))
+            return JsDocGenerator.generatePropertiesTypedef(this.parsedName, this.data.Properties)
         }
         else if (this.data.PrimitiveType) {
             let jsDocType = JsDocGenerator.cfPrimitiveToJsDocPrimitive(this.data.PrimitiveType)
