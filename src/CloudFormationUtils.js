@@ -44,6 +44,7 @@ module.exports = class CloudFormationUtils {
      * @property {string} resourceName
      * @property {string} propertyName
      * @property {string[]} namespace
+     * @property {string} fullname
      */
 
     /**
@@ -54,12 +55,15 @@ module.exports = class CloudFormationUtils {
         let resourceName, propertyName
         [ resourceName, propertyName ] = typeName.split('.')
         let namespace = resourceName.split('::')
-        let fullname = `${namespace}.${propertyName}`
-
+        let fullname = (propertyName)
+                ? `${resourceName}.${propertyName}`
+                : resourceName
+        
         return {
             resourceName,
             propertyName,
-            namespace
+            namespace,
+            fullname
         }
     }
 
@@ -72,7 +76,9 @@ module.exports = class CloudFormationUtils {
             resourceName: parentTypeName.resourceName,
             propertyName: propertyName,
             namespace: parentTypeName.namespace,
-            fullname: `${parentTypeName.namespace}.${propertyName}`
+            fullname: (propertyName)
+                ? `${parentTypeName.resourceName}.${propertyName}`
+                : parentTypeName.resourceName
         }
     }
 
