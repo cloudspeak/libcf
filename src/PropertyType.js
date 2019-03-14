@@ -15,10 +15,9 @@ module.exports = class PropertyType {
      * @returns {string[]}
      */
     generateCode() {
-        if (this.parsedName.namespace === "AWS::EC2::LaunchTemplate" &&  this.parsedName.propertyName === "CapacityReservationPreference") 
-        { try{throw new Error()}catch(e) {} }
-
         return this.generateTypedef()
+                .concat(this.generateCastFunctionComment())
+                .concat(this.generateCastFunction())
     }
 
     generateTypedef() {
@@ -44,7 +43,21 @@ module.exports = class PropertyType {
         else {
             throw new Error(`Type ${this.parsedName.fullname} does not have properties or a primitive type`)
         }
-        
+    }
+
+
+    generateCastFunctionComment() {
+        let typedefName = JsDocGenerator.getPropertyTypeTypedefName(this.parsedName)
+        return JsDocGenerator.generateComment([
+            `@param {${typedefName}} properties ${this.parsedName.propertyName} properties.`,
+            `@returns {${typedefName}}`
+        ])
+    }
+
+    generateCastFunction() {
+        return [
+            `static ${this.parsedName.propertyName}(properties) { return properties; }`
+        ]
     }
 
 

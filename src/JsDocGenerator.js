@@ -8,7 +8,7 @@ module.exports = class JsDocGenerator {
      * @param {TypeName} typeName
      */
     static getPropertyTypeTypedefName(typeName) {
-        return typeName.propertyName
+        return `${typeName.namespace.join('_')}_${typeName.propertyName}`
     }
 
     /**
