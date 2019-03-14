@@ -15,6 +15,9 @@ module.exports = class PropertyType {
      * @returns {string[]}
      */
     generateCode() {
+        if (this.parsedName.namespace === "AWS::EC2::LaunchTemplate" &&  this.parsedName.propertyName === "CapacityReservationPreference") 
+        { try{throw new Error()}catch(e) {} }
+
         return this.generateTypedef()
     }
 
@@ -28,6 +31,20 @@ module.exports = class PropertyType {
             })
             return JsDocGenerator.generateComment([ jsDocTypedef ].concat(jsDocProperties))
         }
+        else if (this.data.PrimitiveType) {
+            let jsDocType = JsDocGenerator.cfPrimitiveToJsDocPrimitive(this.data.PrimitiveType)
+            let jsDocTypedef = `@typedef {${jsDocType}} ${JsDocGenerator.getPropertyTypeTypedefName(this.parsedName)}`
+            return JsDocGenerator.generateComment([ jsDocTypedef ])
+        }
+        else if (this.data.Type) {
+            let jsDocType = JsDocGenerator.getPropertyJsDocType(this.parsedName, this.data)
+            let jsDocTypedef = `@typedef {${jsDocType}} ${JsDocGenerator.getPropertyTypeTypedefName(this.parsedName)}`
+            return JsDocGenerator.generateComment([ jsDocTypedef ])
+        }
+        else {
+            throw new Error(`Type ${this.parsedName.fullname} does not have properties or a primitive type`)
+        }
+        
     }
 
 

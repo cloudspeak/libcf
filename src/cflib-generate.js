@@ -7,3 +7,4 @@ let outputPath = './output'
 new CfLibGenerator(outputPath).generate(filename);
 
 
+process.exit()
