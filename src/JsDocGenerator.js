@@ -47,7 +47,7 @@ module.exports = class JsDocGenerator {
             let fullPropertyName = CloudFormationUtils.getFullPropertyTypeName(parentParsedName, property.Type)
             return this.getPropertyTypeTypedefName(fullPropertyName);
         }
-        // else throw new Error(`Unable to determine datatype for property `)
+        else throw new Error(`Unable to determine datatype for property `)
     }
 
 
