@@ -33,6 +33,9 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
         let propertyCode = this._propertyTypes.reduce((array, p) => array.concat(p.generateCode()), [])
         let innerCode = [
             ...this.generateTypedef(),
+            ...this.generateConstructorComment(),
+            ...this.generateConstructor(),
+            ...this.generatePropertiesGetter(),
             ...propertyCode
         ].map(line => '  ' + line)
 
@@ -47,5 +50,28 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
         return JsDocGenerator.generatePropertiesTypedef(this.parsedName, this.data.Properties)
     }
 
-}
+    generateConstructorComment() {
+        let typedefName = JsDocGenerator.getPropertyTypeTypedefName(this.parsedName)
+        return [
+            `Create a new ${this.parsedName.fullname}`,
+            `@param {${typedefName}} properties`
+        ]
+    }
 
+    generateConstructor() {
+        return [
+            'constructor(properties) {',
+            '    this._properties = properties',
+            '}'
+        ]
+    }
+
+    generatePropertiesGetter() {
+        return [
+            'get properties() {',
+            '    return this._properties',
+            '}'
+        ]
+    }
+
+}

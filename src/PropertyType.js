@@ -43,7 +43,7 @@ module.exports = class PropertyType {
     generateCastFunctionComment() {
         let typedefName = JsDocGenerator.getPropertyTypeTypedefName(this.parsedName)
         return JsDocGenerator.generateComment([
-            `@param {${typedefName}} properties ${this.parsedName.propertyName} properties.`,
+            `@param {${typedefName}} properties`,
             `@returns {${typedefName}}`
         ])
     }
