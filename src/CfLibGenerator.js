@@ -3,8 +3,9 @@ const path = require('path');
 const FileUtils = require('./FileUtils')
 const CloudFormationUtils = require('./CloudFormationUtils')
 const ResourceTypeNode = require('./ResourceTypeNode')
+const OrphanPropertyTypeNode = require('./OrphanPropertyTypeNode')
 const NamespaceNode = require('./NamespaceNode')
-const Property = require('./PropertyType')
+const PropertyType = require('./PropertyType')
 
 module.exports = class Generator {
 
@@ -23,6 +24,8 @@ module.exports = class Generator {
         
         let exportsTree = this.createExportsTreeWithResourceTypes(new NamespaceNode())
         let orphanProperties = this.addPropertyTypesToExportTree(exportsTree)
+        this.addOrphanedPropertyTypesToExportTree(exportsTree, orphanProperties)
+
         let codeLines = [ 
             '// @ts-check',
             '// *************************************************************************',
@@ -81,7 +84,7 @@ module.exports = class Generator {
             let resourceNamespace = (/** @type {ResourceNamespace} */ tree);
             
             if (resourceNamespace) {
-                resourceNamespace.addPropertyType(new Property(parsedName, propertyTypeData))
+                resourceNamespace.addPropertyType(new PropertyType(parsedName, propertyTypeData))
             }
             else {
                 orphanProperties.push(propertyTypeName)
@@ -91,14 +94,35 @@ module.exports = class Generator {
         return orphanProperties
     }
 
+    
+    /**
+     * @param {NamespaceNode} exportsTree 
+     */
+    addOrphanedPropertyTypesToExportTree(exportsTree, orphanProperties) {
+
+        for (let propertyTypeName of orphanProperties) {
+            if (propertyTypeName === "Tag") {
+                let propertyTypeData = this.data.PropertyTypes[propertyTypeName]
+                let parsedName = {
+                    propertyName: propertyTypeName,
+                    resourceName: null,
+                    namespace: null,
+                    fullname: propertyTypeName
+                }
+                exportsTree.set(propertyTypeName, new OrphanPropertyTypeNode(parsedName, propertyTypeData))
+            }
+            else {
+                throw new Error("Unknown global property " + propertyTypeName)
+            }
+        }
+    }
     /**
      * 
      * @param {NamespaceNode} exportsTree
      * @returns {string[]}
      */
     generateExportsCode(exportsTree) {
-        let exportsCode = exportsTree.generateCode()
-        exportsCode[0] = `module.exports = ${exportsCode[0]}`
+        let exportsCode = exportsTree.generateCode("module.exports = ")
         return exportsCode
     }
     

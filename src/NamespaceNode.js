@@ -26,16 +26,17 @@ module.exports = class NamespaceNode {
     /**
      * @returns {string[]}
      */
-    generateCode() {
-        let codeMap = ObjectUtils.mapObject(this.children, (_, value) => value.generateCode())  // Map children to code arrays
-        codeMap = ObjectUtils.mapObject(codeMap, (key, value) => [                              // Add field assignment
-            ...JsDocGenerator.generateNamespace(key),
-            `${key}: ${value[0]}`,
-            ...value.slice(1)
-        ])
-        let codeArrays = ObjectUtils.objectToArray(codeMap)                                      // Convert to array of string[]
 
-        for (let i = 0; i < codeArrays.length - 1; i++) {                            // Append with commas except last
+    generateCode(assignment) {
+        let codeMap = ObjectUtils.mapObject(this.children,
+                (key, value) => value.generateCode(`${key}: `))                     // Map children to code arrays
+        codeMap = ObjectUtils.mapObject(codeMap, (key, value) => [                  // Add namespace
+            ...JsDocGenerator.generateNamespace(key),
+            ...value
+        ])
+        let codeArrays = ObjectUtils.objectToArray(codeMap)                         // Convert to array of string[]
+
+        for (let i = 0; i < codeArrays.length - 1; i++) {                           // Append with commas except last
             if (codeArrays[i]) {
                 codeArrays[i][codeArrays[i].length - 1] += ','
             }
@@ -45,7 +46,7 @@ module.exports = class NamespaceNode {
         codeArray = codeArray.map(line => '  ' + line)                              // Indentation
 
         return [
-            '{',
+            `${assignment}{`,
             ...codeArray,
             '}'
         ]

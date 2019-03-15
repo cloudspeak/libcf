@@ -8,8 +8,11 @@ module.exports = class JsDocGenerator {
      * @param {TypeName} typeName
      */
     static getPropertyTypeTypedefName(typeName) {
-        if (typeName.propertyName) {
+        if (typeName.propertyName && typeName.namespace) {
             return `${typeName.namespace.join('_')}_${typeName.propertyName}`
+        }
+        else if (typeName.propertyName) {
+            return typeName.propertyName
         }
         else {
             return `${typeName.namespace.join('_')}`

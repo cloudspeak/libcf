@@ -29,7 +29,7 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
         this._propertyTypes.push(propertyType)
     }
 
-    generateCode() {
+    generateCode(assignment) {
         let propertyCode = this._propertyTypes.reduce((array, p) => array.concat(p.generateCode()), [])
         let innerCode = [
             ...this.generateTypedef(),
@@ -46,7 +46,7 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
         ].map(line => '  ' + line)
 
         return [
-            'class {',
+            `${assignment}class {`,
             ...innerCode,
             '}'
         ]

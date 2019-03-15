@@ -15,9 +15,11 @@ module.exports = class PropertyType {
      * @returns {string[]}
      */
     generateCode() {
-        return this.generateTypedef()
-                .concat(this.generateCastFunctionComment())
-                .concat(this.generateCastFunction())
+        return [
+            ...this.generateTypedef(),
+            ...this.generateCastFunctionComment(),
+            ...this.generateCastFunction()
+        ]
     }
 
     generateTypedef() {

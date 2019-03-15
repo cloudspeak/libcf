@@ -26722,5 +26722,18 @@ module.exports = {
         static AuthenticationConfiguration(properties) { return properties; }
       }
     }
-  }
+  },
+  /**
+   * @namespace Tag
+   */
+  /**
+   * @typedef {Object} Tag
+   * @property {string} Key Key.
+   * @property {string} Value Value.
+   */
+  /**
+   * @param {Tag} properties
+   * @returns {Tag}
+   */
+  Tag:  function(properties) { return properties; }
 }
