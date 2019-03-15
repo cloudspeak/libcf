@@ -30,10 +30,35 @@ module.exports = {
          * @param {AWS_ElasticBeanstalk_ConfigurationTemplate} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticBeanstalk::ConfigurationTemplate";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticBeanstalk_ConfigurationTemplate_SourceConfiguration
@@ -73,10 +98,35 @@ module.exports = {
          * @param {AWS_ElasticBeanstalk_Application} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticBeanstalk::Application";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticBeanstalk_Application_ApplicationResourceLifecycleConfig
@@ -144,10 +194,35 @@ module.exports = {
          * @param {AWS_ElasticBeanstalk_Environment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticBeanstalk::Environment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticBeanstalk_Environment_OptionSetting
@@ -188,10 +263,35 @@ module.exports = {
          * @param {AWS_ElasticBeanstalk_ApplicationVersion} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticBeanstalk::ApplicationVersion";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticBeanstalk_ApplicationVersion_SourceBundle
@@ -235,10 +335,35 @@ module.exports = {
          * @param {AWS_AmazonMQ_Broker} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AmazonMQ::Broker";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AmazonMQ_Broker_User
@@ -308,10 +433,35 @@ module.exports = {
          * @param {AWS_AmazonMQ_ConfigurationAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AmazonMQ::ConfigurationAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AmazonMQ_ConfigurationAssociation_ConfigurationId
@@ -342,10 +492,35 @@ module.exports = {
          * @param {AWS_AmazonMQ_Configuration} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AmazonMQ::Configuration";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AmazonMQ_Configuration_TagsEntry
@@ -385,10 +560,35 @@ module.exports = {
          * @param {AWS_AppSync_DataSource} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppSync::DataSource";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AppSync_DataSource_AuthorizationConfig
@@ -496,10 +696,35 @@ module.exports = {
          * @param {AWS_AppSync_Resolver} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppSync::Resolver";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AppSync_Resolver_PipelineConfig
@@ -526,10 +751,35 @@ module.exports = {
          * @param {AWS_AppSync_GraphQLSchema} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppSync::GraphQLSchema";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -549,10 +799,35 @@ module.exports = {
          * @param {AWS_AppSync_GraphQLApi} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppSync::GraphQLApi";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AppSync_GraphQLApi_OpenIDConnectConfig
@@ -610,10 +885,35 @@ module.exports = {
          * @param {AWS_AppSync_FunctionConfiguration} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppSync::FunctionConfiguration";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -631,10 +931,35 @@ module.exports = {
          * @param {AWS_AppSync_ApiKey} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppSync::ApiKey";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -656,10 +981,35 @@ module.exports = {
          * @param {AWS_EC2_RouteTable} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::RouteTable";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -680,10 +1030,35 @@ module.exports = {
          * @param {AWS_EC2_VPCPeeringConnection} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPCPeeringConnection";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -699,10 +1074,35 @@ module.exports = {
          * @param {AWS_EC2_PlacementGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::PlacementGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -725,10 +1125,35 @@ module.exports = {
          * @param {AWS_EC2_TransitGateway} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::TransitGateway";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -745,10 +1170,35 @@ module.exports = {
          * @param {AWS_EC2_VPCEndpointServicePermissions} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPCEndpointServicePermissions";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -772,10 +1222,35 @@ module.exports = {
          * @param {AWS_EC2_NetworkAclEntry} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::NetworkAclEntry";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EC2_NetworkAclEntry_Icmp
@@ -811,10 +1286,35 @@ module.exports = {
          * @param {AWS_EC2_InternetGateway} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::InternetGateway";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -831,10 +1331,35 @@ module.exports = {
          * @param {AWS_EC2_LaunchTemplate} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::LaunchTemplate";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EC2_LaunchTemplate_PrivateIpAdd
@@ -1102,10 +1627,35 @@ module.exports = {
          * @param {AWS_EC2_Volume} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::Volume";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1122,10 +1672,35 @@ module.exports = {
          * @param {AWS_EC2_TransitGatewayRouteTableAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::TransitGatewayRouteTableAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1141,10 +1716,35 @@ module.exports = {
          * @param {AWS_EC2_SpotFleet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::SpotFleet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EC2_SpotFleet_ClassicLoadBalancer
@@ -1400,10 +2000,35 @@ module.exports = {
          * @param {AWS_EC2_VPNConnectionRoute} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPNConnectionRoute";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1421,10 +2046,35 @@ module.exports = {
          * @param {AWS_EC2_NetworkInterfacePermission} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::NetworkInterfacePermission";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1442,10 +2092,35 @@ module.exports = {
          * @param {AWS_EC2_EIP} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::EIP";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1472,10 +2147,35 @@ module.exports = {
          * @param {AWS_EC2_SecurityGroupIngress} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::SecurityGroupIngress";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1492,10 +2192,35 @@ module.exports = {
          * @param {AWS_EC2_SubnetRouteTableAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::SubnetRouteTableAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1519,10 +2244,35 @@ module.exports = {
          * @param {AWS_EC2_Route} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::Route";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1544,10 +2294,35 @@ module.exports = {
          * @param {AWS_EC2_FlowLog} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::FlowLog";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1564,10 +2339,35 @@ module.exports = {
          * @param {AWS_EC2_TransitGatewayRouteTablePropagation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::TransitGatewayRouteTablePropagation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1591,10 +2391,35 @@ module.exports = {
          * @param {AWS_EC2_SecurityGroupEgress} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::SecurityGroupEgress";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1620,10 +2445,35 @@ module.exports = {
          * @param {AWS_EC2_NetworkInterface} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::NetworkInterface";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EC2_NetworkInterface_InstanceIpv6Address
@@ -1661,10 +2511,35 @@ module.exports = {
          * @param {AWS_EC2_TransitGatewayAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::TransitGatewayAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1681,10 +2556,35 @@ module.exports = {
          * @param {AWS_EC2_SubnetNetworkAclAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::SubnetNetworkAclAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1701,10 +2601,35 @@ module.exports = {
          * @param {AWS_EC2_SubnetCidrBlock} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::SubnetCidrBlock";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1722,10 +2647,35 @@ module.exports = {
          * @param {AWS_EC2_NatGateway} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::NatGateway";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1746,10 +2696,35 @@ module.exports = {
          * @param {AWS_EC2_SecurityGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::SecurityGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EC2_SecurityGroup_Ingress
@@ -1805,10 +2780,35 @@ module.exports = {
          * @param {AWS_EC2_Subnet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::Subnet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1828,10 +2828,35 @@ module.exports = {
          * @param {AWS_EC2_VPC} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPC";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -1880,10 +2905,35 @@ module.exports = {
          * @param {AWS_EC2_Instance} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::Instance";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EC2_Instance_ElasticGpuSpecification
@@ -2054,10 +3104,35 @@ module.exports = {
          * @param {AWS_EC2_DHCPOptions} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::DHCPOptions";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2076,10 +3151,35 @@ module.exports = {
          * @param {AWS_EC2_TransitGatewayRoute} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::TransitGatewayRoute";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2096,10 +3196,35 @@ module.exports = {
          * @param {AWS_EC2_NetworkAcl} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::NetworkAcl";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2116,10 +3241,35 @@ module.exports = {
          * @param {AWS_EC2_VPNGatewayRoutePropagation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPNGatewayRoutePropagation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2135,10 +3285,35 @@ module.exports = {
          * @param {AWS_EC2_EgressOnlyInternetGateway} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::EgressOnlyInternetGateway";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2157,10 +3332,35 @@ module.exports = {
          * @param {AWS_EC2_NetworkInterfaceAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::NetworkInterfaceAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2179,10 +3379,35 @@ module.exports = {
          * @param {AWS_EC2_CustomerGateway} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::CustomerGateway";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2201,10 +3426,35 @@ module.exports = {
          * @param {AWS_EC2_TrunkInterfaceAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::TrunkInterfaceAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2222,10 +3472,35 @@ module.exports = {
          * @param {AWS_EC2_VolumeAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VolumeAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2243,10 +3518,35 @@ module.exports = {
          * @param {AWS_EC2_Host} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::Host";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2266,10 +3566,35 @@ module.exports = {
          * @param {AWS_EC2_EIPAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::EIPAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2287,10 +3612,35 @@ module.exports = {
          * @param {AWS_EC2_VPNGateway} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPNGateway";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2313,10 +3663,35 @@ module.exports = {
          * @param {AWS_EC2_VPCEndpoint} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPCEndpoint";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2334,10 +3709,35 @@ module.exports = {
          * @param {AWS_EC2_VPCGatewayAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPCGatewayAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2358,10 +3758,35 @@ module.exports = {
          * @param {AWS_EC2_VPNConnection} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPNConnection";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EC2_VPNConnection_VpnTunnelOptionsSpecification
@@ -2389,10 +3814,35 @@ module.exports = {
          * @param {AWS_EC2_VPCCidrBlock} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPCCidrBlock";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2418,10 +3868,35 @@ module.exports = {
          * @param {AWS_EC2_EC2Fleet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::EC2Fleet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EC2_EC2Fleet_FleetLaunchTemplateSpecificationRequest
@@ -2525,10 +4000,35 @@ module.exports = {
          * @param {AWS_EC2_TransitGatewayRouteTable} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::TransitGatewayRouteTable";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2545,10 +4045,35 @@ module.exports = {
          * @param {AWS_EC2_VPCDHCPOptionsAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EC2::VPCDHCPOptionsAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -2571,10 +4096,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_PortfolioShare} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::PortfolioShare";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2591,10 +4141,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_TagOptionAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::TagOptionAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2614,10 +4189,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_LaunchTemplateConstraint} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::LaunchTemplateConstraint";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2635,10 +4235,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_TagOption} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::TagOption";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2657,10 +4282,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_PortfolioPrincipalAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::PortfolioPrincipalAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2680,10 +4330,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_LaunchRoleConstraint} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::LaunchRoleConstraint";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2708,10 +4383,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_CloudFormationProvisionedProduct} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::CloudFormationProvisionedProduct";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ServiceCatalog_CloudFormationProvisionedProduct_ProvisioningParameter
@@ -2746,10 +4446,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_CloudFormationProduct} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::CloudFormationProduct";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ServiceCatalog_CloudFormationProduct_ProvisioningArtifactProperties
@@ -2779,10 +4504,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_PortfolioProductAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::PortfolioProductAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2802,10 +4552,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_Portfolio} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::Portfolio";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2822,10 +4597,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_AcceptedPortfolioShare} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::AcceptedPortfolioShare";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2845,10 +4645,35 @@ module.exports = {
          * @param {AWS_ServiceCatalog_LaunchNotificationConstraint} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceCatalog::LaunchNotificationConstraint";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -2871,10 +4696,35 @@ module.exports = {
          * @param {AWS_Cognito_IdentityPoolRoleAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Cognito::IdentityPoolRoleAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Cognito_IdentityPoolRoleAttachment_RulesConfigurationType
@@ -2926,10 +4776,35 @@ module.exports = {
          * @param {AWS_Cognito_UserPoolGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Cognito::UserPoolGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -2954,10 +4829,35 @@ module.exports = {
          * @param {AWS_Cognito_IdentityPool} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Cognito::IdentityPool";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Cognito_IdentityPool_PushSync
@@ -3011,10 +4911,35 @@ module.exports = {
          * @param {AWS_Cognito_UserPoolUser} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Cognito::UserPoolUser";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Cognito_UserPoolUser_AttributeType
@@ -3056,10 +4981,35 @@ module.exports = {
          * @param {AWS_Cognito_UserPool} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Cognito::UserPool";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Cognito_UserPool_PasswordPolicy
@@ -3206,10 +5156,35 @@ module.exports = {
          * @param {AWS_Cognito_UserPoolClient} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Cognito::UserPoolClient";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -3227,10 +5202,35 @@ module.exports = {
          * @param {AWS_Cognito_UserPoolUserToGroupAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Cognito::UserPoolUserToGroupAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -3257,10 +5257,35 @@ module.exports = {
          * @param {AWS_Events_Rule} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Events::Rule";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Events_Rule_SqsParameters
@@ -3354,10 +5379,35 @@ module.exports = {
          * @param {AWS_Events_EventBusPolicy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Events::EventBusPolicy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Events_EventBusPolicy_Condition
@@ -3390,10 +5440,35 @@ module.exports = {
          * @param {AWS_WAF_IPSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAF::IPSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAF_IPSet_IPSetDescriptor
@@ -3420,10 +5495,35 @@ module.exports = {
          * @param {AWS_WAF_SizeConstraintSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAF::SizeConstraintSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAF_SizeConstraintSet_FieldToMatch
@@ -3463,10 +5563,35 @@ module.exports = {
          * @param {AWS_WAF_Rule} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAF::Rule";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAF_Rule_Predicate
@@ -3494,10 +5619,35 @@ module.exports = {
          * @param {AWS_WAF_ByteMatchSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAF::ByteMatchSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAF_ByteMatchSet_ByteMatchTuple
@@ -3537,10 +5687,35 @@ module.exports = {
          * @param {AWS_WAF_SqlInjectionMatchSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAF::SqlInjectionMatchSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAF_SqlInjectionMatchSet_SqlInjectionMatchTuple
@@ -3579,10 +5754,35 @@ module.exports = {
          * @param {AWS_WAF_WebACL} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAF::WebACL";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAF_WebACL_WafAction
@@ -3619,10 +5819,35 @@ module.exports = {
          * @param {AWS_WAF_XssMatchSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAF::XssMatchSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAF_XssMatchSet_FieldToMatch
@@ -3666,10 +5891,35 @@ module.exports = {
          * @param {AWS_IAM_Group} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IAM::Group";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IAM_Group_Policy
@@ -3699,10 +5949,35 @@ module.exports = {
          * @param {AWS_IAM_Policy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IAM::Policy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -3724,10 +5999,35 @@ module.exports = {
          * @param {AWS_IAM_Role} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IAM::Role";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IAM_Role_Policy
@@ -3755,10 +6055,35 @@ module.exports = {
          * @param {AWS_IAM_ServiceLinkedRole} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IAM::ServiceLinkedRole";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -3775,10 +6100,35 @@ module.exports = {
          * @param {AWS_IAM_UserToGroupAddition} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IAM::UserToGroupAddition";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -3796,10 +6146,35 @@ module.exports = {
          * @param {AWS_IAM_InstanceProfile} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IAM::InstanceProfile";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -3817,10 +6192,35 @@ module.exports = {
          * @param {AWS_IAM_AccessKey} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IAM::AccessKey";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -3842,10 +6242,35 @@ module.exports = {
          * @param {AWS_IAM_User} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IAM::User";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IAM_User_LoginProfile
@@ -3887,10 +6312,35 @@ module.exports = {
          * @param {AWS_IAM_ManagedPolicy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IAM::ManagedPolicy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -3917,10 +6367,35 @@ module.exports = {
          * @param {AWS_CodePipeline_CustomActionType} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CodePipeline::CustomActionType";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CodePipeline_CustomActionType_Settings
@@ -3980,10 +6455,35 @@ module.exports = {
          * @param {AWS_CodePipeline_Webhook} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CodePipeline::Webhook";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CodePipeline_Webhook_WebhookFilterRule
@@ -4025,10 +6525,35 @@ module.exports = {
          * @param {AWS_CodePipeline_Pipeline} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CodePipeline::Pipeline";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CodePipeline_Pipeline_InputArtifact
@@ -4167,10 +6692,35 @@ module.exports = {
          * @param {AWS_Elasticsearch_Domain} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Elasticsearch::Domain";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Elasticsearch_Domain_VPCOptions
@@ -4258,10 +6808,35 @@ module.exports = {
          * @param {AWS_ApiGateway_RequestValidator} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::RequestValidator";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4281,10 +6856,35 @@ module.exports = {
          * @param {AWS_ApiGateway_Deployment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::Deployment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGateway_Deployment_DeploymentCanarySettings
@@ -4386,10 +6986,35 @@ module.exports = {
          * @param {AWS_ApiGateway_Authorizer} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::Authorizer";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4408,10 +7033,35 @@ module.exports = {
          * @param {AWS_ApiGateway_DomainName} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::DomainName";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGateway_DomainName_EndpointConfiguration
@@ -4438,10 +7088,35 @@ module.exports = {
          * @param {AWS_ApiGateway_DocumentationPart} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::DocumentationPart";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGateway_DocumentationPart_Location
@@ -4476,10 +7151,35 @@ module.exports = {
          * @param {AWS_ApiGateway_ApiKey} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::ApiKey";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGateway_ApiKey_StageKey
@@ -4509,10 +7209,35 @@ module.exports = {
          * @param {AWS_ApiGateway_Model} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::Model";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4530,10 +7255,35 @@ module.exports = {
          * @param {AWS_ApiGateway_Resource} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::Resource";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4549,10 +7299,35 @@ module.exports = {
          * @param {AWS_ApiGateway_Account} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::Account";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4579,10 +7354,35 @@ module.exports = {
          * @param {AWS_ApiGateway_RestApi} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::RestApi";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGateway_RestApi_S3Location
@@ -4623,10 +7423,35 @@ module.exports = {
          * @param {AWS_ApiGateway_UsagePlan} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::UsagePlan";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGateway_UsagePlan_ApiStage
@@ -4677,10 +7502,35 @@ module.exports = {
          * @param {AWS_ApiGateway_BasePathMapping} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::BasePathMapping";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4709,10 +7559,35 @@ module.exports = {
          * @param {AWS_ApiGateway_Stage} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::Stage";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGateway_Stage_MethodSetting
@@ -4770,10 +7645,35 @@ module.exports = {
          * @param {AWS_ApiGateway_VpcLink} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::VpcLink";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4793,10 +7693,35 @@ module.exports = {
          * @param {AWS_ApiGateway_GatewayResponse} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::GatewayResponse";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4824,10 +7749,35 @@ module.exports = {
          * @param {AWS_ApiGateway_Method} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::Method";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGateway_Method_MethodResponse
@@ -4889,10 +7839,35 @@ module.exports = {
          * @param {AWS_ApiGateway_ClientCertificate} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::ClientCertificate";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4910,10 +7885,35 @@ module.exports = {
          * @param {AWS_ApiGateway_DocumentationVersion} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::DocumentationVersion";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -4931,10 +7931,35 @@ module.exports = {
          * @param {AWS_ApiGateway_UsagePlanKey} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGateway::UsagePlanKey";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -4956,10 +7981,35 @@ module.exports = {
          * @param {AWS_WAFRegional_SizeConstraintSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAFRegional::SizeConstraintSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAFRegional_SizeConstraintSet_SizeConstraint
@@ -4998,10 +8048,35 @@ module.exports = {
          * @param {AWS_WAFRegional_SqlInjectionMatchSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAFRegional::SqlInjectionMatchSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAFRegional_SqlInjectionMatchSet_FieldToMatch
@@ -5038,10 +8113,35 @@ module.exports = {
          * @param {AWS_WAFRegional_XssMatchSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAFRegional::XssMatchSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAFRegional_XssMatchSet_XssMatchTuple
@@ -5078,10 +8178,35 @@ module.exports = {
          * @param {AWS_WAFRegional_ByteMatchSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAFRegional::ByteMatchSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAFRegional_ByteMatchSet_ByteMatchTuple
@@ -5121,10 +8246,35 @@ module.exports = {
          * @param {AWS_WAFRegional_WebACLAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAFRegional::WebACLAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -5143,10 +8293,35 @@ module.exports = {
          * @param {AWS_WAFRegional_WebACL} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAFRegional::WebACL";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAFRegional_WebACL_Rule
@@ -5184,10 +8359,35 @@ module.exports = {
          * @param {AWS_WAFRegional_Rule} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAFRegional::Rule";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAFRegional_Rule_Predicate
@@ -5215,10 +8415,35 @@ module.exports = {
          * @param {AWS_WAFRegional_IPSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WAFRegional::IPSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WAFRegional_IPSet_IPSetDescriptor
@@ -5253,10 +8478,35 @@ module.exports = {
          * @param {AWS_RDS_DBSecurityGroupIngress} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RDS::DBSecurityGroupIngress";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -5297,10 +8547,35 @@ module.exports = {
          * @param {AWS_RDS_DBCluster} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RDS::DBCluster";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_RDS_DBCluster_ScalingConfiguration
@@ -5331,10 +8606,35 @@ module.exports = {
          * @param {AWS_RDS_DBSubnetGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RDS::DBSubnetGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -5354,10 +8654,35 @@ module.exports = {
          * @param {AWS_RDS_OptionGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RDS::OptionGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_RDS_OptionGroup_OptionSetting
@@ -5400,10 +8725,35 @@ module.exports = {
          * @param {AWS_RDS_DBParameterGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RDS::DBParameterGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -5423,10 +8773,35 @@ module.exports = {
          * @param {AWS_RDS_EventSubscription} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RDS::EventSubscription";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -5490,10 +8865,35 @@ module.exports = {
          * @param {AWS_RDS_DBInstance} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RDS::DBInstance";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_RDS_DBInstance_ProcessorFeature
@@ -5522,10 +8922,35 @@ module.exports = {
          * @param {AWS_RDS_DBSecurityGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RDS::DBSecurityGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_RDS_DBSecurityGroup_Ingress
@@ -5556,10 +8981,35 @@ module.exports = {
          * @param {AWS_RDS_DBClusterParameterGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RDS::DBClusterParameterGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -5586,10 +9036,35 @@ module.exports = {
          * @param {AWS_EMR_InstanceFleetConfig} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EMR::InstanceFleetConfig";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EMR_InstanceFleetConfig_VolumeSpecification
@@ -5699,10 +9174,35 @@ module.exports = {
          * @param {AWS_EMR_Cluster} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EMR::Cluster";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EMR_Cluster_InstanceGroupConfig
@@ -6031,10 +9531,35 @@ module.exports = {
          * @param {AWS_EMR_InstanceGroupConfig} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EMR::InstanceGroupConfig";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EMR_InstanceGroupConfig_EbsBlockDeviceConfig
@@ -6184,10 +9709,35 @@ module.exports = {
          * @param {AWS_EMR_Step} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EMR::Step";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EMR_Step_HadoopJarStepConfig
@@ -6226,10 +9776,35 @@ module.exports = {
          * @param {AWS_EMR_SecurityConfiguration} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EMR::SecurityConfiguration";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -6257,10 +9832,35 @@ module.exports = {
          * @param {AWS_WorkSpaces_Workspace} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::WorkSpaces::Workspace";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_WorkSpaces_Workspace_WorkspaceProperties
@@ -6305,10 +9905,35 @@ module.exports = {
          * @param {AWS_ApiGatewayV2_Route} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGatewayV2::Route";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGatewayV2_Route_ParameterConstraints
@@ -6345,10 +9970,35 @@ module.exports = {
          * @param {AWS_ApiGatewayV2_Integration} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGatewayV2::Integration";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -6372,10 +10022,35 @@ module.exports = {
          * @param {AWS_ApiGatewayV2_Stage} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGatewayV2::Stage";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGatewayV2_Stage_AccessLogSettings
@@ -6416,10 +10091,35 @@ module.exports = {
          * @param {AWS_ApiGatewayV2_Deployment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGatewayV2::Deployment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -6439,10 +10139,35 @@ module.exports = {
          * @param {AWS_ApiGatewayV2_Model} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGatewayV2::Model";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -6465,10 +10190,35 @@ module.exports = {
          * @param {AWS_ApiGatewayV2_Authorizer} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGatewayV2::Authorizer";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -6490,10 +10240,35 @@ module.exports = {
          * @param {AWS_ApiGatewayV2_Api} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGatewayV2::Api";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -6514,10 +10289,35 @@ module.exports = {
          * @param {AWS_ApiGatewayV2_RouteResponse} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGatewayV2::RouteResponse";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApiGatewayV2_RouteResponse_ParameterConstraints
@@ -6548,10 +10348,35 @@ module.exports = {
          * @param {AWS_ApiGatewayV2_IntegrationResponse} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApiGatewayV2::IntegrationResponse";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -6573,10 +10398,35 @@ module.exports = {
          * @param {AWS_Logs_LogGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Logs::LogGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -6594,10 +10444,35 @@ module.exports = {
          * @param {AWS_Logs_MetricFilter} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Logs::MetricFilter";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Logs_MetricFilter_MetricTransformation
@@ -6626,10 +10501,35 @@ module.exports = {
          * @param {AWS_Logs_LogStream} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Logs::LogStream";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -6648,10 +10548,35 @@ module.exports = {
          * @param {AWS_Logs_SubscriptionFilter} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Logs::SubscriptionFilter";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -6670,10 +10595,35 @@ module.exports = {
          * @param {AWS_Logs_Destination} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Logs::Destination";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -6698,10 +10648,35 @@ module.exports = {
          * @param {AWS_Kinesis_Stream} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Kinesis::Stream";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Kinesis_Stream_StreamEncryption
@@ -6728,10 +10703,35 @@ module.exports = {
          * @param {AWS_Kinesis_StreamConsumer} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Kinesis::StreamConsumer";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -6756,10 +10756,35 @@ module.exports = {
          * @param {AWS_RAM_ResourceShare} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RAM::ResourceShare";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -6797,10 +10822,35 @@ module.exports = {
          * @param {AWS_AutoScaling_LaunchConfiguration} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AutoScaling::LaunchConfiguration";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AutoScaling_LaunchConfiguration_BlockDeviceMapping
@@ -6849,10 +10899,35 @@ module.exports = {
          * @param {AWS_AutoScaling_LifecycleHook} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AutoScaling::LifecycleHook";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -6877,10 +10952,35 @@ module.exports = {
          * @param {AWS_AutoScaling_ScalingPolicy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AutoScaling::ScalingPolicy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AutoScaling_ScalingPolicy_MetricDimension
@@ -6973,10 +11073,35 @@ module.exports = {
          * @param {AWS_AutoScaling_AutoScalingGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AutoScaling::AutoScalingGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AutoScaling_AutoScalingGroup_LaunchTemplateOverrides
@@ -7098,10 +11223,35 @@ module.exports = {
          * @param {AWS_AutoScaling_ScheduledAction} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AutoScaling::ScheduledAction";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -7133,10 +11283,35 @@ module.exports = {
          * @param {AWS_SQS_Queue} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SQS::Queue";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -7153,10 +11328,35 @@ module.exports = {
          * @param {AWS_SQS_QueuePolicy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SQS::QueuePolicy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -7186,10 +11386,35 @@ module.exports = {
          * @param {AWS_AppStream_ImageBuilder} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppStream::ImageBuilder";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AppStream_ImageBuilder_VpcConfig
@@ -7234,10 +11459,35 @@ module.exports = {
          * @param {AWS_AppStream_Stack} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppStream::Stack";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AppStream_Stack_ApplicationSettings
@@ -7286,10 +11536,35 @@ module.exports = {
          * @param {AWS_AppStream_DirectoryConfig} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppStream::DirectoryConfig";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AppStream_DirectoryConfig_ServiceAccountCredentials
@@ -7316,10 +11591,35 @@ module.exports = {
          * @param {AWS_AppStream_StackFleetAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppStream::StackFleetAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -7338,10 +11638,35 @@ module.exports = {
          * @param {AWS_AppStream_StackUserAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppStream::StackUserAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -7361,10 +11686,35 @@ module.exports = {
          * @param {AWS_AppStream_User} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppStream::User";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -7392,10 +11742,35 @@ module.exports = {
          * @param {AWS_AppStream_Fleet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AppStream::Fleet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AppStream_Fleet_ComputeCapacity
@@ -7446,10 +11821,35 @@ module.exports = {
          * @param {AWS_AutoScalingPlans_ScalingPlan} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::AutoScalingPlans::ScalingPlan";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_AutoScalingPlans_ScalingPlan_ApplicationSource
@@ -7597,10 +11997,35 @@ module.exports = {
          * @param {AWS_Route53_RecordSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Route53::RecordSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Route53_RecordSet_GeoLocation
@@ -7642,10 +12067,35 @@ module.exports = {
          * @param {AWS_Route53_HostedZone} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Route53::HostedZone";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Route53_HostedZone_HostedZoneTag
@@ -7702,10 +12152,35 @@ module.exports = {
          * @param {AWS_Route53_RecordSetGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Route53::RecordSetGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Route53_RecordSetGroup_RecordSet
@@ -7767,10 +12242,35 @@ module.exports = {
          * @param {AWS_Route53_HealthCheck} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Route53::HealthCheck";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Route53_HealthCheck_HealthCheckConfig
@@ -7836,10 +12336,35 @@ module.exports = {
          * @param {AWS_CloudWatch_Dashboard} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudWatch::Dashboard";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -7874,10 +12399,35 @@ module.exports = {
          * @param {AWS_CloudWatch_Alarm} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudWatch::Alarm";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CloudWatch_Alarm_MetricStat
@@ -7944,10 +12494,35 @@ module.exports = {
          * @param {AWS_ECS_Cluster} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ECS::Cluster";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -7977,10 +12552,35 @@ module.exports = {
          * @param {AWS_ECS_Service} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ECS::Service";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ECS_Service_LoadBalancer
@@ -8079,10 +12679,35 @@ module.exports = {
          * @param {AWS_ECS_TaskDefinition} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ECS::TaskDefinition";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ECS_TaskDefinition_DockerVolumeConfiguration
@@ -8324,10 +12949,35 @@ module.exports = {
          * @param {AWS_ElasticLoadBalancingV2_ListenerCertificate} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticLoadBalancingV2::ListenerCertificate";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticLoadBalancingV2_ListenerCertificate_Certificate
@@ -8360,10 +13010,35 @@ module.exports = {
          * @param {AWS_ElasticLoadBalancingV2_LoadBalancer} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticLoadBalancingV2::LoadBalancer";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticLoadBalancingV2_LoadBalancer_LoadBalancerAttribute
@@ -8404,10 +13079,35 @@ module.exports = {
          * @param {AWS_ElasticLoadBalancingV2_Listener} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticLoadBalancingV2::Listener";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticLoadBalancingV2_Listener_AuthenticateOidcConfig
@@ -8510,10 +13210,35 @@ module.exports = {
          * @param {AWS_ElasticLoadBalancingV2_ListenerRule} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticLoadBalancingV2::ListenerRule";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticLoadBalancingV2_ListenerRule_AuthenticateOidcConfig
@@ -8630,10 +13355,35 @@ module.exports = {
          * @param {AWS_ElasticLoadBalancingV2_TargetGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticLoadBalancingV2::TargetGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticLoadBalancingV2_TargetGroup_TargetGroupAttribute
@@ -8688,10 +13438,35 @@ module.exports = {
          * @param {AWS_Neptune_DBParameterGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Neptune::DBParameterGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -8711,10 +13486,35 @@ module.exports = {
          * @param {AWS_Neptune_DBClusterParameterGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Neptune::DBClusterParameterGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -8743,10 +13543,35 @@ module.exports = {
          * @param {AWS_Neptune_DBCluster} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Neptune::DBCluster";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -8765,10 +13590,35 @@ module.exports = {
          * @param {AWS_Neptune_DBSubnetGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Neptune::DBSubnetGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -8794,10 +13644,35 @@ module.exports = {
          * @param {AWS_Neptune_DBInstance} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Neptune::DBInstance";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -8818,10 +13693,35 @@ module.exports = {
          * @param {AWS_StepFunctions_Activity} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::StepFunctions::Activity";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -8839,10 +13739,35 @@ module.exports = {
          * @param {AWS_StepFunctions_StateMachine} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::StepFunctions::StateMachine";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -8864,10 +13789,35 @@ module.exports = {
          * @param {AWS_KinesisAnalytics_ApplicationOutput} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KinesisAnalytics::ApplicationOutput";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_KinesisAnalytics_ApplicationOutput_KinesisFirehoseOutput
@@ -8936,10 +13886,35 @@ module.exports = {
          * @param {AWS_KinesisAnalytics_ApplicationReferenceDataSource} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KinesisAnalytics::ApplicationReferenceDataSource";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_KinesisAnalytics_ApplicationReferenceDataSource_S3ReferenceDataSource
@@ -9041,10 +14016,35 @@ module.exports = {
          * @param {AWS_KinesisAnalytics_Application} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KinesisAnalytics::Application";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_KinesisAnalytics_Application_MappingParameters
@@ -9191,10 +14191,35 @@ module.exports = {
          * @param {AWS_OpsWorks_Volume} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::OpsWorks::Volume";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -9221,10 +14246,35 @@ module.exports = {
          * @param {AWS_OpsWorks_App} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::OpsWorks::App";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_OpsWorks_App_DataSource
@@ -9305,10 +14355,35 @@ module.exports = {
          * @param {AWS_OpsWorks_Layer} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::OpsWorks::Layer";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_OpsWorks_Layer_ShutdownEventConfiguration
@@ -9420,10 +14495,35 @@ module.exports = {
          * @param {AWS_OpsWorks_Stack} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::OpsWorks::Stack";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_OpsWorks_Stack_Source
@@ -9495,10 +14595,35 @@ module.exports = {
          * @param {AWS_OpsWorks_ElasticLoadBalancerAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::OpsWorks::ElasticLoadBalancerAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -9534,10 +14659,35 @@ module.exports = {
          * @param {AWS_OpsWorks_Instance} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::OpsWorks::Instance";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_OpsWorks_Instance_BlockDeviceMapping
@@ -9596,10 +14746,35 @@ module.exports = {
          * @param {AWS_OpsWorks_UserProfile} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::OpsWorks::UserProfile";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -9621,10 +14796,35 @@ module.exports = {
          * @param {AWS_CloudFront_StreamingDistribution} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudFront::StreamingDistribution";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CloudFront_StreamingDistribution_TrustedSigners
@@ -9687,10 +14887,35 @@ module.exports = {
          * @param {AWS_CloudFront_Distribution} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudFront::Distribution";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CloudFront_Distribution_Cookies
@@ -9906,10 +15131,35 @@ module.exports = {
          * @param {AWS_CloudFront_CloudFrontOriginAccessIdentity} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudFront::CloudFrontOriginAccessIdentity";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CloudFront_CloudFrontOriginAccessIdentity_CloudFrontOriginAccessIdentityConfig
@@ -9941,10 +15191,35 @@ module.exports = {
          * @param {AWS_GameLift_Alias} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::GameLift::Alias";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_GameLift_Alias_RoutingStrategy
@@ -9973,10 +15248,35 @@ module.exports = {
          * @param {AWS_GameLift_Build} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::GameLift::Build";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_GameLift_Build_S3Location
@@ -10013,10 +15313,35 @@ module.exports = {
          * @param {AWS_GameLift_Fleet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::GameLift::Fleet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_GameLift_Fleet_IpPermission
@@ -10054,10 +15379,35 @@ module.exports = {
          * @param {AWS_GuardDuty_Filter} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::GuardDuty::Filter";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_GuardDuty_Filter_FindingCriteria
@@ -10100,10 +15450,35 @@ module.exports = {
          * @param {AWS_GuardDuty_ThreatIntelSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::GuardDuty::ThreatIntelSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10124,10 +15499,35 @@ module.exports = {
          * @param {AWS_GuardDuty_Member} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::GuardDuty::Member";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10144,10 +15544,35 @@ module.exports = {
          * @param {AWS_GuardDuty_Detector} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::GuardDuty::Detector";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10167,10 +15592,35 @@ module.exports = {
          * @param {AWS_GuardDuty_IPSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::GuardDuty::IPSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10188,10 +15638,35 @@ module.exports = {
          * @param {AWS_GuardDuty_Master} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::GuardDuty::Master";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -10218,10 +15693,35 @@ module.exports = {
          * @param {AWS_DirectoryService_MicrosoftAD} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DirectoryService::MicrosoftAD";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_DirectoryService_MicrosoftAD_VpcSettings
@@ -10254,10 +15754,35 @@ module.exports = {
          * @param {AWS_DirectoryService_SimpleAD} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DirectoryService::SimpleAD";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_DirectoryService_SimpleAD_VpcSettings
@@ -10294,10 +15819,35 @@ module.exports = {
          * @param {AWS_SNS_Subscription} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SNS::Subscription";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10316,10 +15866,35 @@ module.exports = {
          * @param {AWS_SNS_Topic} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SNS::Topic";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SNS_Topic_Subscription
@@ -10346,10 +15921,35 @@ module.exports = {
          * @param {AWS_SNS_TopicPolicy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SNS::TopicPolicy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -10373,10 +15973,35 @@ module.exports = {
          * @param {AWS_EFS_MountTarget} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EFS::MountTarget";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10397,10 +16022,35 @@ module.exports = {
          * @param {AWS_EFS_FileSystem} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::EFS::FileSystem";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_EFS_FileSystem_ElasticFileSystemTag
@@ -10433,10 +16083,35 @@ module.exports = {
          * @param {AWS_SSM_Document} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SSM::Document";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10463,10 +16138,35 @@ module.exports = {
          * @param {AWS_SSM_PatchBaseline} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SSM::PatchBaseline";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SSM_PatchBaseline_RuleGroup
@@ -10538,10 +16238,35 @@ module.exports = {
          * @param {AWS_SSM_MaintenanceWindowTarget} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SSM::MaintenanceWindowTarget";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SSM_MaintenanceWindowTarget_Targets
@@ -10575,10 +16300,35 @@ module.exports = {
          * @param {AWS_SSM_MaintenanceWindow} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SSM::MaintenanceWindow";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10598,10 +16348,35 @@ module.exports = {
          * @param {AWS_SSM_Parameter} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SSM::Parameter";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10622,10 +16397,35 @@ module.exports = {
          * @param {AWS_SSM_ResourceDataSync} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SSM::ResourceDataSync";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10648,10 +16448,35 @@ module.exports = {
          * @param {AWS_SSM_Association} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SSM::Association";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SSM_Association_InstanceAssociationOutputLocation
@@ -10717,10 +16542,35 @@ module.exports = {
          * @param {AWS_SSM_MaintenanceWindowTask} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SSM::MaintenanceWindowTask";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SSM_MaintenanceWindowTask_MaintenanceWindowLambdaParameters
@@ -10838,10 +16688,35 @@ module.exports = {
          * @param {AWS_SageMaker_Model} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SageMaker::Model";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SageMaker_Model_VpcConfig
@@ -10881,10 +16756,35 @@ module.exports = {
          * @param {AWS_SageMaker_NotebookInstanceLifecycleConfig} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SageMaker::NotebookInstanceLifecycleConfig";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SageMaker_NotebookInstanceLifecycleConfig_NotebookInstanceLifecycleHook
@@ -10912,10 +16812,35 @@ module.exports = {
          * @param {AWS_SageMaker_EndpointConfig} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SageMaker::EndpointConfig";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SageMaker_EndpointConfig_ProductionVariant
@@ -10947,10 +16872,35 @@ module.exports = {
          * @param {AWS_SageMaker_Endpoint} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SageMaker::Endpoint";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -10975,10 +16925,35 @@ module.exports = {
          * @param {AWS_SageMaker_NotebookInstance} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SageMaker::NotebookInstance";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -11003,10 +16978,35 @@ module.exports = {
          * @param {AWS_Config_DeliveryChannel} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Config::DeliveryChannel";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Config_DeliveryChannel_ConfigSnapshotDeliveryProperties
@@ -11033,10 +17033,35 @@ module.exports = {
          * @param {AWS_Config_ConfigurationAggregator} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Config::ConfigurationAggregator";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Config_ConfigurationAggregator_OrganizationAggregationSource
@@ -11075,10 +17100,35 @@ module.exports = {
          * @param {AWS_Config_AggregationAuthorization} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Config::AggregationAuthorization";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11096,10 +17146,35 @@ module.exports = {
          * @param {AWS_Config_ConfigurationRecorder} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Config::ConfigurationRecorder";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Config_ConfigurationRecorder_RecordingGroup
@@ -11131,10 +17206,35 @@ module.exports = {
          * @param {AWS_Config_ConfigRule} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Config::ConfigRule";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Config_ConfigRule_Scope
@@ -11195,10 +17295,35 @@ module.exports = {
          * @param {AWS_KMS_Key} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KMS::Key";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11215,10 +17340,35 @@ module.exports = {
          * @param {AWS_KMS_Alias} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KMS::Alias";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -11267,10 +17417,35 @@ module.exports = {
          * @param {AWS_Redshift_Cluster} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Redshift::Cluster";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Redshift_Cluster_LoggingProperties
@@ -11299,10 +17474,35 @@ module.exports = {
          * @param {AWS_Redshift_ClusterParameterGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Redshift::ClusterParameterGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Redshift_ClusterParameterGroup_Parameter
@@ -11331,10 +17531,35 @@ module.exports = {
          * @param {AWS_Redshift_ClusterSecurityGroupIngress} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Redshift::ClusterSecurityGroupIngress";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11352,10 +17577,35 @@ module.exports = {
          * @param {AWS_Redshift_ClusterSubnetGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Redshift::ClusterSubnetGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11372,10 +17622,35 @@ module.exports = {
          * @param {AWS_Redshift_ClusterSecurityGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Redshift::ClusterSecurityGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -11400,10 +17675,35 @@ module.exports = {
          * @param {AWS_Lambda_EventSourceMapping} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Lambda::EventSourceMapping";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11423,10 +17723,35 @@ module.exports = {
          * @param {AWS_Lambda_LayerVersion} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Lambda::LayerVersion";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Lambda_LayerVersion_Content
@@ -11457,10 +17782,35 @@ module.exports = {
          * @param {AWS_Lambda_Alias} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Lambda::Alias";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Lambda_Alias_AliasRoutingConfiguration
@@ -11498,10 +17848,35 @@ module.exports = {
          * @param {AWS_Lambda_LayerVersionPermission} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Lambda::LayerVersionPermission";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11532,10 +17907,35 @@ module.exports = {
          * @param {AWS_Lambda_Function} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Lambda::Function";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Lambda_Function_VpcConfig
@@ -11602,10 +18002,35 @@ module.exports = {
          * @param {AWS_Lambda_Version} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Lambda::Version";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11626,10 +18051,35 @@ module.exports = {
          * @param {AWS_Lambda_Permission} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Lambda::Permission";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -11654,10 +18104,35 @@ module.exports = {
          * @param {AWS_CertificateManager_Certificate} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CertificateManager::Certificate";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CertificateManager_Certificate_DomainValidationOption
@@ -11688,10 +18163,35 @@ module.exports = {
          * @param {AWS_Inspector_ResourceGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Inspector::ResourceGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11711,10 +18211,35 @@ module.exports = {
          * @param {AWS_Inspector_AssessmentTemplate} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Inspector::AssessmentTemplate";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11731,10 +18256,35 @@ module.exports = {
          * @param {AWS_Inspector_AssessmentTarget} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Inspector::AssessmentTarget";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -11757,10 +18307,35 @@ module.exports = {
          * @param {AWS_IoT1Click_Project} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoT1Click::Project";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IoT1Click_Project_DeviceTemplate
@@ -11797,10 +18372,35 @@ module.exports = {
          * @param {AWS_IoT1Click_Device} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoT1Click::Device";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -11819,10 +18419,35 @@ module.exports = {
          * @param {AWS_IoT1Click_Placement} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoT1Click::Placement";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -11847,10 +18472,35 @@ module.exports = {
          * @param {AWS_IoTAnalytics_Dataset} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoTAnalytics::Dataset";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IoTAnalytics_Dataset_DatasetContentVersionValue
@@ -11999,10 +18649,35 @@ module.exports = {
          * @param {AWS_IoTAnalytics_Channel} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoTAnalytics::Channel";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IoTAnalytics_Channel_RetentionPeriod
@@ -12030,10 +18705,35 @@ module.exports = {
          * @param {AWS_IoTAnalytics_Pipeline} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoTAnalytics::Pipeline";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IoTAnalytics_Pipeline_DeviceShadowEnrich
@@ -12184,10 +18884,35 @@ module.exports = {
          * @param {AWS_IoTAnalytics_Datastore} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoTAnalytics::Datastore";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IoTAnalytics_Datastore_RetentionPeriod
@@ -12224,10 +18949,35 @@ module.exports = {
          * @param {AWS_Batch_JobDefinition} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Batch::JobDefinition";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Batch_JobDefinition_NodeProperties
@@ -12357,10 +19107,35 @@ module.exports = {
          * @param {AWS_Batch_JobQueue} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Batch::JobQueue";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Batch_JobQueue_ComputeEnvironmentOrder
@@ -12390,10 +19165,35 @@ module.exports = {
          * @param {AWS_Batch_ComputeEnvironment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Batch::ComputeEnvironment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Batch_ComputeEnvironment_LaunchTemplateSpecification
@@ -12451,10 +19251,35 @@ module.exports = {
          * @param {AWS_DocDB_DBSubnetGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DocDB::DBSubnetGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -12476,10 +19301,35 @@ module.exports = {
          * @param {AWS_DocDB_DBInstance} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DocDB::DBInstance";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -12510,10 +19360,35 @@ module.exports = {
          * @param {AWS_DocDB_DBCluster} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DocDB::DBCluster";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -12533,10 +19408,35 @@ module.exports = {
          * @param {AWS_DocDB_DBClusterParameterGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DocDB::DBClusterParameterGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -12573,10 +19473,35 @@ module.exports = {
          * @param {AWS_OpsWorksCM_Server} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::OpsWorksCM::Server";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_OpsWorksCM_Server_EngineAttribute
@@ -12608,10 +19533,35 @@ module.exports = {
          * @param {AWS_IoT_Thing} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoT::Thing";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IoT_Thing_AttributePayload
@@ -12637,10 +19587,35 @@ module.exports = {
          * @param {AWS_IoT_Policy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoT::Policy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -12657,10 +19632,35 @@ module.exports = {
          * @param {AWS_IoT_TopicRule} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoT::TopicRule";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_IoT_TopicRule_S3Action
@@ -12883,10 +19883,35 @@ module.exports = {
          * @param {AWS_IoT_PolicyPrincipalAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoT::PolicyPrincipalAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -12903,10 +19928,35 @@ module.exports = {
          * @param {AWS_IoT_ThingPrincipalAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoT::ThingPrincipalAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -12923,10 +19973,35 @@ module.exports = {
          * @param {AWS_IoT_Certificate} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::IoT::Certificate";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -12962,10 +20037,35 @@ module.exports = {
          * @param {AWS_ElasticLoadBalancing_LoadBalancer} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElasticLoadBalancing::LoadBalancer";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElasticLoadBalancing_LoadBalancer_HealthCheck
@@ -13079,10 +20179,35 @@ module.exports = {
          * @param {AWS_DMS_Certificate} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DMS::Certificate";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -13101,10 +20226,35 @@ module.exports = {
          * @param {AWS_DMS_ReplicationSubnetGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DMS::ReplicationSubnetGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -13126,10 +20276,35 @@ module.exports = {
          * @param {AWS_DMS_EventSubscription} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DMS::EventSubscription";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -13162,10 +20337,35 @@ module.exports = {
          * @param {AWS_DMS_Endpoint} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DMS::Endpoint";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_DMS_Endpoint_KinesisSettings
@@ -13255,10 +20455,35 @@ module.exports = {
          * @param {AWS_DMS_ReplicationTask} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DMS::ReplicationTask";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -13287,10 +20512,35 @@ module.exports = {
          * @param {AWS_DMS_ReplicationInstance} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DMS::ReplicationInstance";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -13313,10 +20563,35 @@ module.exports = {
          * @param {AWS_Glue_Table} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Glue::Table";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Glue_Table_SkewedInfo
@@ -13414,10 +20689,35 @@ module.exports = {
          * @param {AWS_Glue_Connection} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Glue::Connection";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Glue_Connection_ConnectionInput
@@ -13461,10 +20761,35 @@ module.exports = {
          * @param {AWS_Glue_Partition} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Glue::Partition";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Glue_Partition_SerdeInfo
@@ -13563,10 +20888,35 @@ module.exports = {
          * @param {AWS_Glue_Job} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Glue::Job";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Glue_Job_JobCommand
@@ -13611,10 +20961,35 @@ module.exports = {
          * @param {AWS_Glue_Database} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Glue::Database";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Glue_Database_DatabaseInput
@@ -13649,10 +21024,35 @@ module.exports = {
          * @param {AWS_Glue_DevEndpoint} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Glue::DevEndpoint";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -13673,10 +21073,35 @@ module.exports = {
          * @param {AWS_Glue_Trigger} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Glue::Trigger";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Glue_Trigger_Action
@@ -13732,10 +21157,35 @@ module.exports = {
          * @param {AWS_Glue_Crawler} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Glue::Crawler";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Glue_Crawler_Targets
@@ -13803,10 +21253,35 @@ module.exports = {
          * @param {AWS_Glue_Classifier} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Glue::Classifier";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Glue_Classifier_XMLClassifier
@@ -13860,10 +21335,35 @@ module.exports = {
          * @param {AWS_ElastiCache_SecurityGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElastiCache::SecurityGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -13881,10 +21381,35 @@ module.exports = {
          * @param {AWS_ElastiCache_SubnetGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElastiCache::SubnetGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -13902,10 +21427,35 @@ module.exports = {
          * @param {AWS_ElastiCache_SecurityGroupIngress} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElastiCache::SecurityGroupIngress";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -13949,10 +21499,35 @@ module.exports = {
          * @param {AWS_ElastiCache_ReplicationGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElastiCache::ReplicationGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ElastiCache_ReplicationGroup_NodeGroupConfiguration
@@ -13983,10 +21558,35 @@ module.exports = {
          * @param {AWS_ElastiCache_ParameterGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElastiCache::ParameterGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -14022,10 +21622,35 @@ module.exports = {
          * @param {AWS_ElastiCache_CacheCluster} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ElastiCache::CacheCluster";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -14060,10 +21685,35 @@ module.exports = {
          * @param {AWS_CodeDeploy_DeploymentGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CodeDeploy::DeploymentGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CodeDeploy_DeploymentGroup_LoadBalancerInfo
@@ -14262,10 +21912,35 @@ module.exports = {
          * @param {AWS_CodeDeploy_DeploymentConfig} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CodeDeploy::DeploymentConfig";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CodeDeploy_DeploymentConfig_MinimumHealthyHosts
@@ -14292,10 +21967,35 @@ module.exports = {
          * @param {AWS_CodeDeploy_Application} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CodeDeploy::Application";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -14316,10 +22016,35 @@ module.exports = {
          * @param {AWS_SES_ReceiptFilter} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SES::ReceiptFilter";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SES_ReceiptFilter_Filter
@@ -14357,10 +22082,35 @@ module.exports = {
          * @param {AWS_SES_ReceiptRule} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SES::ReceiptRule";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SES_ReceiptRule_BounceAction
@@ -14482,10 +22232,35 @@ module.exports = {
          * @param {AWS_SES_ConfigurationSetEventDestination} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SES::ConfigurationSetEventDestination";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SES_ConfigurationSetEventDestination_EventDestination
@@ -14544,10 +22319,35 @@ module.exports = {
          * @param {AWS_SES_Template} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SES::Template";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SES_Template_Template
@@ -14575,10 +22375,35 @@ module.exports = {
          * @param {AWS_SES_ConfigurationSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SES::ConfigurationSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -14594,10 +22419,35 @@ module.exports = {
          * @param {AWS_SES_ReceiptRuleSet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SES::ReceiptRuleSet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -14620,10 +22470,35 @@ module.exports = {
          * @param {AWS_SecretsManager_RotationSchedule} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SecretsManager::RotationSchedule";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SecretsManager_RotationSchedule_RotationRules
@@ -14653,10 +22528,35 @@ module.exports = {
          * @param {AWS_SecretsManager_Secret} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SecretsManager::Secret";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_SecretsManager_Secret_GenerateSecretString
@@ -14691,10 +22591,35 @@ module.exports = {
          * @param {AWS_SecretsManager_ResourcePolicy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SecretsManager::ResourcePolicy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -14712,10 +22637,35 @@ module.exports = {
          * @param {AWS_SecretsManager_SecretTargetAttachment} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SecretsManager::SecretTargetAttachment";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -14752,10 +22702,35 @@ module.exports = {
          * @param {AWS_CodeBuild_Project} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CodeBuild::Project";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CodeBuild_Project_Artifacts
@@ -14939,10 +22914,35 @@ module.exports = {
          * @param {AWS_Budgets_Budget} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Budgets::Budget";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Budgets_Budget_NotificationWithSubscribers
@@ -15051,10 +23051,35 @@ module.exports = {
          * @param {AWS_DAX_SubnetGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DAX::SubnetGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15072,10 +23097,35 @@ module.exports = {
          * @param {AWS_DAX_ParameterGroup} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DAX::ParameterGroup";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15103,10 +23153,35 @@ module.exports = {
          * @param {AWS_DAX_Cluster} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DAX::Cluster";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_DAX_Cluster_SSESpecification
@@ -15144,10 +23219,35 @@ module.exports = {
          * @param {AWS_FSx_FileSystem} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::FSx::FileSystem";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_FSx_FileSystem_TagEntry
@@ -15210,10 +23310,35 @@ module.exports = {
          * @param {AWS_DataPipeline_Pipeline} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DataPipeline::Pipeline";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_DataPipeline_Pipeline_ParameterAttribute
@@ -15301,10 +23426,35 @@ module.exports = {
          * @param {AWS_Route53Resolver_ResolverRule} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Route53Resolver::ResolverRule";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Route53Resolver_ResolverRule_TargetAddress
@@ -15332,10 +23482,35 @@ module.exports = {
          * @param {AWS_Route53Resolver_ResolverRuleAssociation} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Route53Resolver::ResolverRuleAssociation";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15355,10 +23530,35 @@ module.exports = {
          * @param {AWS_Route53Resolver_ResolverEndpoint} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Route53Resolver::ResolverEndpoint";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Route53Resolver_ResolverEndpoint_IpAddressRequest
@@ -15401,10 +23601,35 @@ module.exports = {
          * @param {AWS_CloudTrail_Trail} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudTrail::Trail";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CloudTrail_Trail_EventSelector
@@ -15452,10 +23677,35 @@ module.exports = {
          * @param {AWS_RoboMaker_SimulationApplication} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RoboMaker::SimulationApplication";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_RoboMaker_SimulationApplication_RobotSoftwareSuite
@@ -15513,10 +23763,35 @@ module.exports = {
          * @param {AWS_RoboMaker_SimulationApplicationVersion} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RoboMaker::SimulationApplicationVersion";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15533,10 +23808,35 @@ module.exports = {
          * @param {AWS_RoboMaker_RobotApplicationVersion} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RoboMaker::RobotApplicationVersion";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15556,10 +23856,35 @@ module.exports = {
          * @param {AWS_RoboMaker_RobotApplication} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RoboMaker::RobotApplication";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_RoboMaker_RobotApplication_RobotSoftwareSuite
@@ -15600,10 +23925,35 @@ module.exports = {
          * @param {AWS_RoboMaker_Robot} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RoboMaker::Robot";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15620,10 +23970,35 @@ module.exports = {
          * @param {AWS_RoboMaker_Fleet} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::RoboMaker::Fleet";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -15646,10 +24021,35 @@ module.exports = {
          * @param {AWS_CloudFormation_WaitCondition} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudFormation::WaitCondition";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15669,10 +24069,35 @@ module.exports = {
          * @param {AWS_CloudFormation_Stack} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudFormation::Stack";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15687,10 +24112,35 @@ module.exports = {
          * @param {AWS_CloudFormation_WaitConditionHandle} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudFormation::WaitConditionHandle";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15710,10 +24160,35 @@ module.exports = {
          * @param {AWS_CloudFormation_Macro} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudFormation::Macro";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15729,10 +24204,35 @@ module.exports = {
          * @param {AWS_CloudFormation_CustomResource} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CloudFormation::CustomResource";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -15759,10 +24259,35 @@ module.exports = {
          * @param {AWS_Cloud9_EnvironmentEC2} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Cloud9::EnvironmentEC2";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_Cloud9_EnvironmentEC2_Repository
@@ -15795,10 +24320,35 @@ module.exports = {
          * @param {AWS_ServiceDiscovery_Instance} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceDiscovery::Instance";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15819,10 +24369,35 @@ module.exports = {
          * @param {AWS_ServiceDiscovery_Service} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceDiscovery::Service";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ServiceDiscovery_Service_DnsConfig
@@ -15880,10 +24455,35 @@ module.exports = {
          * @param {AWS_ServiceDiscovery_HttpNamespace} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceDiscovery::HttpNamespace";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15901,10 +24501,35 @@ module.exports = {
          * @param {AWS_ServiceDiscovery_PrivateDnsNamespace} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceDiscovery::PrivateDnsNamespace";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       },
       /**
@@ -15921,10 +24546,35 @@ module.exports = {
          * @param {AWS_ServiceDiscovery_PublicDnsNamespace} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ServiceDiscovery::PublicDnsNamespace";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -15946,10 +24596,35 @@ module.exports = {
          * @param {AWS_KinesisAnalyticsV2_ApplicationOutput} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KinesisAnalyticsV2::ApplicationOutput";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_KinesisAnalyticsV2_ApplicationOutput_LambdaOutput
@@ -16015,10 +24690,35 @@ module.exports = {
          * @param {AWS_KinesisAnalyticsV2_ApplicationCloudWatchLoggingOption} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_KinesisAnalyticsV2_ApplicationCloudWatchLoggingOption_CloudWatchLoggingOption
@@ -16044,10 +24744,35 @@ module.exports = {
          * @param {AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource_RecordColumn
@@ -16149,10 +24874,35 @@ module.exports = {
          * @param {AWS_KinesisAnalyticsV2_Application} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KinesisAnalyticsV2::Application";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_KinesisAnalyticsV2_Application_RecordColumn
@@ -16428,10 +25178,35 @@ module.exports = {
          * @param {AWS_ApplicationAutoScaling_ScalingPolicy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApplicationAutoScaling::ScalingPolicy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApplicationAutoScaling_ScalingPolicy_StepScalingPolicyConfiguration
@@ -16524,10 +25299,35 @@ module.exports = {
          * @param {AWS_ApplicationAutoScaling_ScalableTarget} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ApplicationAutoScaling::ScalableTarget";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ApplicationAutoScaling_ScalableTarget_ScheduledAction
@@ -16573,10 +25373,35 @@ module.exports = {
          * @param {AWS_CodeCommit_Repository} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::CodeCommit::Repository";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_CodeCommit_Repository_RepositoryTrigger
@@ -16625,10 +25450,35 @@ module.exports = {
          * @param {AWS_S3_Bucket} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::S3::Bucket";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_S3_Bucket_BucketEncryption
@@ -17073,10 +25923,35 @@ module.exports = {
          * @param {AWS_S3_BucketPolicy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::S3::BucketPolicy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -17104,10 +25979,35 @@ module.exports = {
          * @param {AWS_KinesisFirehose_DeliveryStream} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::KinesisFirehose::DeliveryStream";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_KinesisFirehose_DeliveryStream_ElasticsearchDestinationConfiguration
@@ -17335,10 +26235,35 @@ module.exports = {
          * @param {AWS_DLM_LifecyclePolicy} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DLM::LifecyclePolicy";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_DLM_LifecyclePolicy_Schedule
@@ -17403,10 +26328,35 @@ module.exports = {
          * @param {AWS_SDB_Domain} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::SDB::Domain";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     },
@@ -17429,10 +26379,35 @@ module.exports = {
          * @param {AWS_ECR_Repository} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::ECR::Repository";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_ECR_Repository_LifecyclePolicy
@@ -17474,10 +26449,35 @@ module.exports = {
          * @param {AWS_DynamoDB_Table} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::DynamoDB::Table";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} AWS_DynamoDB_Table_TimeToLiveSpecification
@@ -17601,10 +26601,35 @@ module.exports = {
          * @param {AWS_Athena_NamedQuery} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "AWS::Athena::NamedQuery";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
       }
     }
@@ -17632,10 +26657,35 @@ module.exports = {
          * @param {Alexa_ASK_Skill} properties
          */
         constructor(properties) {
-            this._properties = properties
+            this.Type = "Alexa::ASK::Skill";
+            this.Properties = properties;
         }
         get properties() {
-            return this._properties
+            return this.Properties;
+        }
+        addCreationPolicy(value) {
+            this.CreationPolicy = value;
+            return this;
+        }
+        addDeletionPolicy(value) {
+            this.DeletionPolicy = value;
+            return this;
+        }
+        addDependsOn(value) {
+            this.DependsOn = value;
+            return this;
+        }
+        addMetadata(value) {
+            this.Metadata = value;
+            return this;
+        }
+        addUpdatePolicy(value) {
+            this.UpdatePolicy = value;
+            return this;
+        }
+        addUpdateReplacePolicy(value) {
+            this.UpdateReplacePolicy = value;
+            return this;
         }
         /**
          * @typedef {Object} Alexa_ASK_Skill_SkillPackage

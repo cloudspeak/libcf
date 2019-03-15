@@ -36,6 +36,12 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
             ...this.generateConstructorComment(),
             ...this.generateConstructor(),
             ...this.generatePropertiesGetter(),
+            ...this.generateAttributeBuilder('CreationPolicy'),
+            ...this.generateAttributeBuilder('DeletionPolicy'),
+            ...this.generateAttributeBuilder('DependsOn'),
+            ...this.generateAttributeBuilder('Metadata'),
+            ...this.generateAttributeBuilder('UpdatePolicy'),
+            ...this.generateAttributeBuilder('UpdateReplacePolicy'),
             ...propertyCode
         ].map(line => '  ' + line)
 
@@ -61,7 +67,8 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
     generateConstructor() {
         return [
             'constructor(properties) {',
-            '    this._properties = properties',
+            `    this.Type = "${this.parsedName.fullname}";`,
+            '    this.Properties = properties;',
             '}'
         ]
     }
@@ -69,7 +76,16 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
     generatePropertiesGetter() {
         return [
             'get properties() {',
-            '    return this._properties',
+            '    return this.Properties;',
+            '}'
+        ]
+    }
+    
+    generateAttributeBuilder(name) {
+        return [
+            `add${name}(value) {`,
+            `    this.${name} = value;`,
+            `    return this;`,
             '}'
         ]
     }
