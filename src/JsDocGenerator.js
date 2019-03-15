@@ -41,13 +41,13 @@ module.exports = class JsDocGenerator {
      */
     static generatePropertiesTypedef(parsedName, properties) {
         let jsDocTypedef = `@typedef {Object} ${JsDocGenerator.getPropertyTypeTypedefName(parsedName)}`
-            let jsDocProperties = Object.keys(properties).map(propertyName => {
-                let property = properties[propertyName]
-                let jsDocType = JsDocGenerator.getPropertyJsDocType(parsedName, property)
-                let nameJsDoc = property.Required ? propertyName : `[${propertyName}]`
-                return `@property {${jsDocType}} ${nameJsDoc} ${propertyName}.`
-            })
-            return JsDocGenerator.generateComment([ jsDocTypedef ].concat(jsDocProperties))
+        let jsDocProperties = Object.keys(properties).map(propertyName => {
+            let property = properties[propertyName]
+            let jsDocType = JsDocGenerator.getPropertyJsDocType(parsedName, property)
+            let nameJsDoc = property.Required ? propertyName : `[${propertyName}]`
+            return `@property {${jsDocType}} ${nameJsDoc} ${propertyName}.`
+        })
+        return JsDocGenerator.generateComment([ jsDocTypedef ].concat(jsDocProperties))
     }
 
     static getPropertyJsDocType(parentParsedName, property) {
@@ -56,7 +56,7 @@ module.exports = class JsDocGenerator {
         }
         else if (property.Type === "List" && property.ItemType) {
             let fullPropertyName = CloudFormationUtils.getFullPropertyTypeName(parentParsedName, property.ItemType)
-            return this.getPropertyTypeTypedefName(fullPropertyName) + [];
+            return this.getPropertyTypeTypedefName(fullPropertyName) + "[]";
         }
         else if (property.PrimitiveType) {
             return this.cfPrimitiveToJsDocPrimitive(property.PrimitiveType)
