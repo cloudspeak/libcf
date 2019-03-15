@@ -54,7 +54,7 @@ module.exports = class Stack {
      * @returns {Stack} This stack
      */
     setVersion(version) {
-        this.template.Version = version;
+        this.template.AWSTemplateFormatVersion = version;
         return this;
     }
 
