@@ -60,6 +60,8 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
         let typedefName = JsDocGenerator.getPropertyTypeTypedefName(this.parsedName)
         return JsDocGenerator.generateComment([
             `Create a new ${this.parsedName.fullname}`,
+            ``,
+            `See ${this.data.Documentation}`,
             `@param {${typedefName}} properties`
         ])
     }
