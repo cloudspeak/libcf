@@ -184,7 +184,7 @@ module.exports = {
          * @property {AWS_ElasticBeanstalk_Environment_OptionSetting[]} [OptionSettings] OptionSettings.
          * @property {string} [PlatformArn] PlatformArn.
          * @property {string} [SolutionStackName] SolutionStackName.
-         * @property {AWS_ElasticBeanstalk_Environment_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [TemplateName] TemplateName.
          * @property {AWS_ElasticBeanstalk_Environment_Tier} [Tier] Tier.
          * @property {string} [VersionLabel] VersionLabel.
@@ -973,7 +973,7 @@ module.exports = {
       RouteTable: class {
         /**
          * @typedef {Object} AWS_EC2_RouteTable
-         * @property {AWS_EC2_RouteTable_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} VpcId VpcId.
          */
         /**
@@ -1022,7 +1022,7 @@ module.exports = {
          * @property {string} [PeerRegion] PeerRegion.
          * @property {string} [PeerRoleArn] PeerRoleArn.
          * @property {string} PeerVpcId PeerVpcId.
-         * @property {AWS_EC2_VPCPeeringConnection_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} VpcId VpcId.
          */
         /**
@@ -1118,7 +1118,7 @@ module.exports = {
          * @property {string} [VpnEcmpSupport] VpnEcmpSupport.
          * @property {string} [DnsSupport] DnsSupport.
          * @property {number} [AmazonSideAsn] AmazonSideAsn.
-         * @property {AWS_EC2_TransitGateway_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::EC2::TransitGateway
@@ -1279,7 +1279,7 @@ module.exports = {
       InternetGateway: class {
         /**
          * @typedef {Object} AWS_EC2_InternetGateway
-         * @property {AWS_EC2_InternetGateway_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::EC2::InternetGateway
@@ -1498,7 +1498,7 @@ module.exports = {
         /**
          * @typedef {Object} AWS_EC2_LaunchTemplate_TagSpecification
          * @property {string} [ResourceType] ResourceType.
-         * @property {AWS_EC2_LaunchTemplate_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * @param {AWS_EC2_LaunchTemplate_TagSpecification} properties
@@ -1619,7 +1619,7 @@ module.exports = {
          * @property {string} [KmsKeyId] KmsKeyId.
          * @property {number} [Size] Size.
          * @property {string} [SnapshotId] SnapshotId.
-         * @property {AWS_EC2_Volume_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [VolumeType] VolumeType.
          */
         /**
@@ -1796,7 +1796,7 @@ module.exports = {
         /**
          * @typedef {Object} AWS_EC2_SpotFleet_SpotFleetTagSpecification
          * @property {string} [ResourceType] ResourceType.
-         * @property {AWS_EC2_SpotFleet_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * @param {AWS_EC2_SpotFleet_SpotFleetTagSpecification} properties
@@ -2438,7 +2438,7 @@ module.exports = {
          * @property {number} [SecondaryPrivateIpAddressCount] SecondaryPrivateIpAddressCount.
          * @property {boolean} [SourceDestCheck] SourceDestCheck.
          * @property {string} SubnetId SubnetId.
-         * @property {AWS_EC2_NetworkInterface_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::EC2::NetworkInterface
@@ -2504,7 +2504,7 @@ module.exports = {
          * @property {string} TransitGatewayId TransitGatewayId.
          * @property {string} VpcId VpcId.
          * @property {string[]} SubnetIds SubnetIds.
-         * @property {AWS_EC2_TransitGatewayAttachment_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::EC2::TransitGatewayAttachment
@@ -2640,7 +2640,7 @@ module.exports = {
          * @typedef {Object} AWS_EC2_NatGateway
          * @property {string} AllocationId AllocationId.
          * @property {string} SubnetId SubnetId.
-         * @property {AWS_EC2_NatGateway_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::EC2::NatGateway
@@ -2688,7 +2688,7 @@ module.exports = {
          * @property {string} [GroupName] GroupName.
          * @property {AWS_EC2_SecurityGroup_Egress[]} [SecurityGroupEgress] SecurityGroupEgress.
          * @property {AWS_EC2_SecurityGroup_Ingress[]} [SecurityGroupIngress] SecurityGroupIngress.
-         * @property {AWS_EC2_SecurityGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [VpcId] VpcId.
          */
         /**
@@ -2772,7 +2772,7 @@ module.exports = {
          * @property {string} CidrBlock CidrBlock.
          * @property {string} [Ipv6CidrBlock] Ipv6CidrBlock.
          * @property {boolean} [MapPublicIpOnLaunch] MapPublicIpOnLaunch.
-         * @property {AWS_EC2_Subnet_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} VpcId VpcId.
          */
         /**
@@ -2821,7 +2821,7 @@ module.exports = {
          * @property {boolean} [EnableDnsHostnames] EnableDnsHostnames.
          * @property {boolean} [EnableDnsSupport] EnableDnsSupport.
          * @property {string} [InstanceTenancy] InstanceTenancy.
-         * @property {AWS_EC2_VPC_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::EC2::VPC
@@ -2895,7 +2895,7 @@ module.exports = {
          * @property {boolean} [SourceDestCheck] SourceDestCheck.
          * @property {AWS_EC2_Instance_SsmAssociation[]} [SsmAssociations] SsmAssociations.
          * @property {string} [SubnetId] SubnetId.
-         * @property {AWS_EC2_Instance_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [Tenancy] Tenancy.
          * @property {string} [UserData] UserData.
          * @property {AWS_EC2_Instance_Volume[]} [Volumes] Volumes.
@@ -3097,7 +3097,7 @@ module.exports = {
          * @property {string[]} [NetbiosNameServers] NetbiosNameServers.
          * @property {number} [NetbiosNodeType] NetbiosNodeType.
          * @property {string[]} [NtpServers] NtpServers.
-         * @property {AWS_EC2_DHCPOptions_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::EC2::DHCPOptions
@@ -3188,7 +3188,7 @@ module.exports = {
       NetworkAcl: class {
         /**
          * @typedef {Object} AWS_EC2_NetworkAcl
-         * @property {AWS_EC2_NetworkAcl_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} VpcId VpcId.
          */
         /**
@@ -3371,7 +3371,7 @@ module.exports = {
          * @typedef {Object} AWS_EC2_CustomerGateway
          * @property {number} BgpAsn BgpAsn.
          * @property {string} IpAddress IpAddress.
-         * @property {AWS_EC2_CustomerGateway_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} Type Type.
          */
         /**
@@ -3604,7 +3604,7 @@ module.exports = {
         /**
          * @typedef {Object} AWS_EC2_VPNGateway
          * @property {number} [AmazonSideAsn] AmazonSideAsn.
-         * @property {AWS_EC2_VPNGateway_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} Type Type.
          */
         /**
@@ -3748,7 +3748,7 @@ module.exports = {
          * @typedef {Object} AWS_EC2_VPNConnection
          * @property {string} CustomerGatewayId CustomerGatewayId.
          * @property {boolean} [StaticRoutesOnly] StaticRoutesOnly.
-         * @property {AWS_EC2_VPNConnection_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} Type Type.
          * @property {string} VpnGatewayId VpnGatewayId.
          * @property {AWS_EC2_VPNConnection_VpnTunnelOptionsSpecification[]} [VpnTunnelOptionsSpecifications] VpnTunnelOptionsSpecifications.
@@ -3993,7 +3993,7 @@ module.exports = {
         /**
          * @typedef {Object} AWS_EC2_TransitGatewayRouteTable
          * @property {string} TransitGatewayId TransitGatewayId.
-         * @property {AWS_EC2_TransitGatewayRouteTable_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::EC2::TransitGatewayRouteTable
@@ -4374,7 +4374,7 @@ module.exports = {
          * @property {string[]} [NotificationArns] NotificationArns.
          * @property {string} [AcceptLanguage] AcceptLanguage.
          * @property {string} [ProductId] ProductId.
-         * @property {AWS_ServiceCatalog_CloudFormationProvisionedProduct_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [ProvisionedProductName] ProvisionedProductName.
          * @property {string} [ProvisioningArtifactId] ProvisioningArtifactId.
          */
@@ -4437,7 +4437,7 @@ module.exports = {
          * @property {string} [SupportEmail] SupportEmail.
          * @property {string} [AcceptLanguage] AcceptLanguage.
          * @property {string} [SupportUrl] SupportUrl.
-         * @property {AWS_ServiceCatalog_CloudFormationProduct_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} Name Name.
          * @property {AWS_ServiceCatalog_CloudFormationProduct_ProvisioningArtifactProperties[]} ProvisioningArtifactParameters ProvisioningArtifactParameters.
          */
@@ -4545,7 +4545,7 @@ module.exports = {
          * @property {string} [Description] Description.
          * @property {string} DisplayName DisplayName.
          * @property {string} [AcceptLanguage] AcceptLanguage.
-         * @property {AWS_ServiceCatalog_Portfolio_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::ServiceCatalog::Portfolio
@@ -6684,7 +6684,7 @@ module.exports = {
          * @property {AWS_Elasticsearch_Domain_EncryptionAtRestOptions} [EncryptionAtRestOptions] EncryptionAtRestOptions.
          * @property {AWS_Elasticsearch_Domain_NodeToNodeEncryptionOptions} [NodeToNodeEncryptionOptions] NodeToNodeEncryptionOptions.
          * @property {AWS_Elasticsearch_Domain_SnapshotOptions} [SnapshotOptions] SnapshotOptions.
-         * @property {AWS_Elasticsearch_Domain_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {AWS_Elasticsearch_Domain_VPCOptions} [VPCOptions] VPCOptions.
          */
         /**
@@ -6931,7 +6931,7 @@ module.exports = {
          * @property {string} [LoggingLevel] LoggingLevel.
          * @property {AWS_ApiGateway_Deployment_MethodSetting[]} [MethodSettings] MethodSettings.
          * @property {boolean} [MetricsEnabled] MetricsEnabled.
-         * @property {AWS_ApiGateway_Deployment_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {number} [ThrottlingBurstLimit] ThrottlingBurstLimit.
          * @property {number} [ThrottlingRateLimit] ThrottlingRateLimit.
          * @property {boolean} [TracingEnabled] TracingEnabled.
@@ -7550,7 +7550,7 @@ module.exports = {
          * @property {AWS_ApiGateway_Stage_MethodSetting[]} [MethodSettings] MethodSettings.
          * @property {string} RestApiId RestApiId.
          * @property {string} [StageName] StageName.
-         * @property {AWS_ApiGateway_Stage_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {boolean} [TracingEnabled] TracingEnabled.
          * @property {AWS_ApiGateway_Stage_Map} [Variables] Variables.
          */
@@ -8539,7 +8539,7 @@ module.exports = {
          * @property {string} [SnapshotIdentifier] SnapshotIdentifier.
          * @property {string} [SourceRegion] SourceRegion.
          * @property {boolean} [StorageEncrypted] StorageEncrypted.
-         * @property {AWS_RDS_DBCluster_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string[]} [VpcSecurityGroupIds] VpcSecurityGroupIds.
          */
         /**
@@ -8599,7 +8599,7 @@ module.exports = {
          * @property {string} DBSubnetGroupDescription DBSubnetGroupDescription.
          * @property {string} [DBSubnetGroupName] DBSubnetGroupName.
          * @property {string[]} SubnetIds SubnetIds.
-         * @property {AWS_RDS_DBSubnetGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::RDS::DBSubnetGroup
@@ -8647,7 +8647,7 @@ module.exports = {
          * @property {string} MajorEngineVersion MajorEngineVersion.
          * @property {AWS_RDS_OptionGroup_OptionConfiguration[]} OptionConfigurations OptionConfigurations.
          * @property {string} OptionGroupDescription OptionGroupDescription.
-         * @property {AWS_RDS_OptionGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::RDS::OptionGroup
@@ -8718,7 +8718,7 @@ module.exports = {
          * @property {string} Description Description.
          * @property {string} Family Family.
          * @property {AWS_RDS_DBParameterGroup_Map} [Parameters] Parameters.
-         * @property {AWS_RDS_DBParameterGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::RDS::DBParameterGroup
@@ -8855,7 +8855,7 @@ module.exports = {
          * @property {string} [SourceRegion] SourceRegion.
          * @property {boolean} [StorageEncrypted] StorageEncrypted.
          * @property {string} [StorageType] StorageType.
-         * @property {AWS_RDS_DBInstance_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [Timezone] Timezone.
          * @property {boolean} [UseDefaultProcessorFeatures] UseDefaultProcessorFeatures.
          * @property {string[]} [VPCSecurityGroups] VPCSecurityGroups.
@@ -8915,7 +8915,7 @@ module.exports = {
          * @property {AWS_RDS_DBSecurityGroup_Ingress[]} DBSecurityGroupIngress DBSecurityGroupIngress.
          * @property {string} [EC2VpcId] EC2VpcId.
          * @property {string} GroupDescription GroupDescription.
-         * @property {AWS_RDS_DBSecurityGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::RDS::DBSecurityGroup
@@ -8974,7 +8974,7 @@ module.exports = {
          * @property {string} Description Description.
          * @property {string} Family Family.
          * @property {string} Parameters Parameters.
-         * @property {AWS_RDS_DBClusterParameterGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::RDS::DBClusterParameterGroup
@@ -9166,7 +9166,7 @@ module.exports = {
          * @property {string} [SecurityConfiguration] SecurityConfiguration.
          * @property {string} ServiceRole ServiceRole.
          * @property {AWS_EMR_Cluster_StepConfig[]} [Steps] Steps.
-         * @property {AWS_EMR_Cluster_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {boolean} [VisibleToAllUsers] VisibleToAllUsers.
          */
         /**
@@ -9821,7 +9821,7 @@ module.exports = {
          * @property {string} BundleId BundleId.
          * @property {string} DirectoryId DirectoryId.
          * @property {boolean} [RootVolumeEncryptionEnabled] RootVolumeEncryptionEnabled.
-         * @property {AWS_WorkSpaces_Workspace_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} UserName UserName.
          * @property {boolean} [UserVolumeEncryptionEnabled] UserVolumeEncryptionEnabled.
          * @property {string} [VolumeEncryptionKey] VolumeEncryptionKey.
@@ -10641,7 +10641,7 @@ module.exports = {
          * @property {number} [RetentionPeriodHours] RetentionPeriodHours.
          * @property {number} ShardCount ShardCount.
          * @property {AWS_Kinesis_Stream_StreamEncryption} [StreamEncryption] StreamEncryption.
-         * @property {AWS_Kinesis_Stream_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::Kinesis::Stream
@@ -10748,7 +10748,7 @@ module.exports = {
          * @property {string[]} [Principals] Principals.
          * @property {boolean} [AllowExternalPrincipals] AllowExternalPrincipals.
          * @property {string[]} [ResourceArns] ResourceArns.
-         * @property {AWS_RAM_ResourceShare_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} Name Name.
          */
         /**
@@ -11275,7 +11275,7 @@ module.exports = {
          * @property {string} [QueueName] QueueName.
          * @property {number} [ReceiveMessageWaitTimeSeconds] ReceiveMessageWaitTimeSeconds.
          * @property {string} [RedrivePolicy] RedrivePolicy.
-         * @property {AWS_SQS_Queue_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {number} [VisibilityTimeout] VisibilityTimeout.
          */
         /**
@@ -13002,7 +13002,7 @@ module.exports = {
          * @property {string[]} [SecurityGroups] SecurityGroups.
          * @property {AWS_ElasticLoadBalancingV2_LoadBalancer_SubnetMapping[]} [SubnetMappings] SubnetMappings.
          * @property {string[]} [Subnets] Subnets.
-         * @property {AWS_ElasticLoadBalancingV2_LoadBalancer_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [Type] Type.
          */
         /**
@@ -13343,7 +13343,7 @@ module.exports = {
          * @property {string} [Name] Name.
          * @property {number} [Port] Port.
          * @property {string} [Protocol] Protocol.
-         * @property {AWS_ElasticLoadBalancingV2_TargetGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {AWS_ElasticLoadBalancingV2_TargetGroup_TargetGroupAttribute[]} [TargetGroupAttributes] TargetGroupAttributes.
          * @property {string} [TargetType] TargetType.
          * @property {AWS_ElasticLoadBalancingV2_TargetGroup_TargetDescription[]} [Targets] Targets.
@@ -13430,7 +13430,7 @@ module.exports = {
          * @property {string} Description Description.
          * @property {string} Parameters Parameters.
          * @property {string} Family Family.
-         * @property {AWS_Neptune_DBParameterGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [Name] Name.
          */
         /**
@@ -13478,7 +13478,7 @@ module.exports = {
          * @property {string} Description Description.
          * @property {string} Parameters Parameters.
          * @property {string} Family Family.
-         * @property {AWS_Neptune_DBClusterParameterGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [Name] Name.
          */
         /**
@@ -13536,7 +13536,7 @@ module.exports = {
          * @property {string[]} [VpcSecurityGroupIds] VpcSecurityGroupIds.
          * @property {string} [DBClusterParameterGroupName] DBClusterParameterGroupName.
          * @property {number} [BackupRetentionPeriod] BackupRetentionPeriod.
-         * @property {AWS_Neptune_DBCluster_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::Neptune::DBCluster
@@ -13583,7 +13583,7 @@ module.exports = {
          * @property {string} [DBSubnetGroupName] DBSubnetGroupName.
          * @property {string} DBSubnetGroupDescription DBSubnetGroupDescription.
          * @property {string[]} SubnetIds SubnetIds.
-         * @property {AWS_Neptune_DBSubnetGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::Neptune::DBSubnetGroup
@@ -13637,7 +13637,7 @@ module.exports = {
          * @property {string} [DBSubnetGroupName] DBSubnetGroupName.
          * @property {string} [DBInstanceIdentifier] DBInstanceIdentifier.
          * @property {string} [DBSnapshotIdentifier] DBSnapshotIdentifier.
-         * @property {AWS_Neptune_DBInstance_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::Neptune::DBInstance
@@ -14345,7 +14345,7 @@ module.exports = {
          * @property {string[]} [Packages] Packages.
          * @property {string} Shortname Shortname.
          * @property {string} StackId StackId.
-         * @property {AWS_OpsWorks_Layer_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} Type Type.
          * @property {boolean} [UseEbsOptimizedInstances] UseEbsOptimizedInstances.
          * @property {AWS_OpsWorks_Layer_VolumeConfiguration[]} [VolumeConfigurations] VolumeConfigurations.
@@ -14485,7 +14485,7 @@ module.exports = {
          * @property {AWS_OpsWorks_Stack_RdsDbInstance[]} [RdsDbInstances] RdsDbInstances.
          * @property {string} ServiceRoleArn ServiceRoleArn.
          * @property {string} [SourceStackId] SourceStackId.
-         * @property {AWS_OpsWorks_Stack_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {boolean} [UseCustomCookbooks] UseCustomCookbooks.
          * @property {boolean} [UseOpsworksSecurityGroups] UseOpsworksSecurityGroups.
          * @property {string} [VpcId] VpcId.
@@ -14789,7 +14789,7 @@ module.exports = {
         /**
          * @typedef {Object} AWS_CloudFront_StreamingDistribution
          * @property {AWS_CloudFront_StreamingDistribution_StreamingDistributionConfig} StreamingDistributionConfig StreamingDistributionConfig.
-         * @property {AWS_CloudFront_StreamingDistribution_Tag[]} Tags Tags.
+         * @property {Tag[]} Tags Tags.
          */
         /**
          * Create a new AWS::CloudFront::StreamingDistribution
@@ -14880,7 +14880,7 @@ module.exports = {
         /**
          * @typedef {Object} AWS_CloudFront_Distribution
          * @property {AWS_CloudFront_Distribution_DistributionConfig} DistributionConfig DistributionConfig.
-         * @property {AWS_CloudFront_Distribution_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::CloudFront::Distribution
@@ -16076,7 +16076,7 @@ module.exports = {
          * @typedef {Object} AWS_SSM_Document
          * @property {string} Content Content.
          * @property {string} [DocumentType] DocumentType.
-         * @property {AWS_SSM_Document_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::SSM::Document
@@ -16681,7 +16681,7 @@ module.exports = {
          * @property {string} [ModelName] ModelName.
          * @property {AWS_SageMaker_Model_VpcConfig} [VpcConfig] VpcConfig.
          * @property {AWS_SageMaker_Model_ContainerDefinition[]} [Containers] Containers.
-         * @property {AWS_SageMaker_Model_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::SageMaker::Model
@@ -16805,7 +16805,7 @@ module.exports = {
          * @property {AWS_SageMaker_EndpointConfig_ProductionVariant[]} ProductionVariants ProductionVariants.
          * @property {string} [KmsKeyId] KmsKeyId.
          * @property {string} [EndpointConfigName] EndpointConfigName.
-         * @property {AWS_SageMaker_EndpointConfig_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::SageMaker::EndpointConfig
@@ -16865,7 +16865,7 @@ module.exports = {
          * @typedef {Object} AWS_SageMaker_Endpoint
          * @property {string} [EndpointName] EndpointName.
          * @property {string} EndpointConfigName EndpointConfigName.
-         * @property {AWS_SageMaker_Endpoint_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::SageMaker::Endpoint
@@ -16918,7 +16918,7 @@ module.exports = {
          * @property {string} [LifecycleConfigName] LifecycleConfigName.
          * @property {string[]} [SecurityGroupIds] SecurityGroupIds.
          * @property {string} RoleArn RoleArn.
-         * @property {AWS_SageMaker_NotebookInstance_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::SageMaker::NotebookInstance
@@ -17288,7 +17288,7 @@ module.exports = {
          * @property {string} KeyPolicy KeyPolicy.
          * @property {string} [KeyUsage] KeyUsage.
          * @property {number} [PendingWindowInDays] PendingWindowInDays.
-         * @property {AWS_KMS_Key_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::KMS::Key
@@ -17409,7 +17409,7 @@ module.exports = {
          * @property {boolean} [PubliclyAccessible] PubliclyAccessible.
          * @property {string} [SnapshotClusterIdentifier] SnapshotClusterIdentifier.
          * @property {string} [SnapshotIdentifier] SnapshotIdentifier.
-         * @property {AWS_Redshift_Cluster_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string[]} [VpcSecurityGroupIds] VpcSecurityGroupIds.
          */
         /**
@@ -17467,7 +17467,7 @@ module.exports = {
          * @property {string} Description Description.
          * @property {string} ParameterGroupFamily ParameterGroupFamily.
          * @property {AWS_Redshift_ClusterParameterGroup_Parameter[]} [Parameters] Parameters.
-         * @property {AWS_Redshift_ClusterParameterGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::Redshift::ClusterParameterGroup
@@ -17570,7 +17570,7 @@ module.exports = {
          * @typedef {Object} AWS_Redshift_ClusterSubnetGroup
          * @property {string} Description Description.
          * @property {string[]} SubnetIds SubnetIds.
-         * @property {AWS_Redshift_ClusterSubnetGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::Redshift::ClusterSubnetGroup
@@ -17615,7 +17615,7 @@ module.exports = {
         /**
          * @typedef {Object} AWS_Redshift_ClusterSecurityGroup
          * @property {string} Description Description.
-         * @property {AWS_Redshift_ClusterSecurityGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::Redshift::ClusterSecurityGroup
@@ -17897,7 +17897,7 @@ module.exports = {
          * @property {number} [ReservedConcurrentExecutions] ReservedConcurrentExecutions.
          * @property {string} Role Role.
          * @property {string} Runtime Runtime.
-         * @property {AWS_Lambda_Function_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {number} [Timeout] Timeout.
          * @property {AWS_Lambda_Function_TracingConfig} [TracingConfig] TracingConfig.
          * @property {AWS_Lambda_Function_VpcConfig} [VpcConfig] VpcConfig.
@@ -18096,7 +18096,7 @@ module.exports = {
          * @property {string} DomainName DomainName.
          * @property {AWS_CertificateManager_Certificate_DomainValidationOption[]} [DomainValidationOptions] DomainValidationOptions.
          * @property {string[]} [SubjectAlternativeNames] SubjectAlternativeNames.
-         * @property {AWS_CertificateManager_Certificate_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [ValidationMethod] ValidationMethod.
          */
         /**
@@ -18156,7 +18156,7 @@ module.exports = {
       ResourceGroup: class {
         /**
          * @typedef {Object} AWS_Inspector_ResourceGroup
-         * @property {AWS_Inspector_ResourceGroup_Tag[]} ResourceGroupTags ResourceGroupTags.
+         * @property {Tag[]} ResourceGroupTags ResourceGroupTags.
          */
         /**
          * Create a new AWS::Inspector::ResourceGroup
@@ -18204,7 +18204,7 @@ module.exports = {
          * @property {number} DurationInSeconds DurationInSeconds.
          * @property {string} [AssessmentTemplateName] AssessmentTemplateName.
          * @property {string[]} RulesPackageArns RulesPackageArns.
-         * @property {AWS_Inspector_AssessmentTemplate_Tag[]} [UserAttributesForFindings] UserAttributesForFindings.
+         * @property {Tag[]} [UserAttributesForFindings] UserAttributesForFindings.
          */
         /**
          * Create a new AWS::Inspector::AssessmentTemplate
@@ -18465,7 +18465,7 @@ module.exports = {
          * @property {string} [DatasetName] DatasetName.
          * @property {AWS_IoTAnalytics_Dataset_Trigger[]} [Triggers] Triggers.
          * @property {AWS_IoTAnalytics_Dataset_RetentionPeriod} [RetentionPeriod] RetentionPeriod.
-         * @property {AWS_IoTAnalytics_Dataset_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::IoTAnalytics::Dataset
@@ -18642,7 +18642,7 @@ module.exports = {
          * @typedef {Object} AWS_IoTAnalytics_Channel
          * @property {string} [ChannelName] ChannelName.
          * @property {AWS_IoTAnalytics_Channel_RetentionPeriod} [RetentionPeriod] RetentionPeriod.
-         * @property {AWS_IoTAnalytics_Channel_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::IoTAnalytics::Channel
@@ -18697,7 +18697,7 @@ module.exports = {
         /**
          * @typedef {Object} AWS_IoTAnalytics_Pipeline
          * @property {string} [PipelineName] PipelineName.
-         * @property {AWS_IoTAnalytics_Pipeline_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {AWS_IoTAnalytics_Pipeline_Activity[]} PipelineActivities PipelineActivities.
          */
         /**
@@ -18877,7 +18877,7 @@ module.exports = {
          * @typedef {Object} AWS_IoTAnalytics_Datastore
          * @property {string} [DatastoreName] DatastoreName.
          * @property {AWS_IoTAnalytics_Datastore_RetentionPeriod} [RetentionPeriod] RetentionPeriod.
-         * @property {AWS_IoTAnalytics_Datastore_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::IoTAnalytics::Datastore
@@ -19244,7 +19244,7 @@ module.exports = {
          * @property {string} [DBSubnetGroupName] DBSubnetGroupName.
          * @property {string} DBSubnetGroupDescription DBSubnetGroupDescription.
          * @property {string[]} SubnetIds SubnetIds.
-         * @property {AWS_DocDB_DBSubnetGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::DocDB::DBSubnetGroup
@@ -19294,7 +19294,7 @@ module.exports = {
          * @property {string} [PreferredMaintenanceWindow] PreferredMaintenanceWindow.
          * @property {boolean} [AutoMinorVersionUpgrade] AutoMinorVersionUpgrade.
          * @property {string} [DBInstanceIdentifier] DBInstanceIdentifier.
-         * @property {AWS_DocDB_DBInstance_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::DocDB::DBInstance
@@ -19353,7 +19353,7 @@ module.exports = {
          * @property {string} [MasterUsername] MasterUsername.
          * @property {string} [DBClusterParameterGroupName] DBClusterParameterGroupName.
          * @property {number} [BackupRetentionPeriod] BackupRetentionPeriod.
-         * @property {AWS_DocDB_DBCluster_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::DocDB::DBCluster
@@ -19400,7 +19400,7 @@ module.exports = {
          * @property {string} Description Description.
          * @property {string} Parameters Parameters.
          * @property {string} Family Family.
-         * @property {AWS_DocDB_DBClusterParameterGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [Name] Name.
          */
         /**
@@ -20030,7 +20030,7 @@ module.exports = {
          * @property {string} [Scheme] Scheme.
          * @property {string[]} [SecurityGroups] SecurityGroups.
          * @property {string[]} [Subnets] Subnets.
-         * @property {AWS_ElasticLoadBalancing_LoadBalancer_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::ElasticLoadBalancing::LoadBalancer
@@ -20219,7 +20219,7 @@ module.exports = {
          * @property {string} ReplicationSubnetGroupDescription ReplicationSubnetGroupDescription.
          * @property {string} [ReplicationSubnetGroupIdentifier] ReplicationSubnetGroupIdentifier.
          * @property {string[]} SubnetIds SubnetIds.
-         * @property {AWS_DMS_ReplicationSubnetGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::DMS::ReplicationSubnetGroup
@@ -20269,7 +20269,7 @@ module.exports = {
          * @property {string} [SubscriptionName] SubscriptionName.
          * @property {string} SnsTopicArn SnsTopicArn.
          * @property {string[]} [SourceIds] SourceIds.
-         * @property {AWS_DMS_EventSubscription_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::DMS::EventSubscription
@@ -20326,7 +20326,7 @@ module.exports = {
          * @property {string} [ServerName] ServerName.
          * @property {string} [ExtraConnectionAttributes] ExtraConnectionAttributes.
          * @property {string} EndpointType EndpointType.
-         * @property {AWS_DMS_Endpoint_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [EndpointIdentifier] EndpointIdentifier.
          * @property {string} [Password] Password.
          * @property {string} [CertificateArn] CertificateArn.
@@ -20447,7 +20447,7 @@ module.exports = {
          * @property {string} MigrationType MigrationType.
          * @property {string} TargetEndpointArn TargetEndpointArn.
          * @property {string} ReplicationInstanceArn ReplicationInstanceArn.
-         * @property {AWS_DMS_ReplicationTask_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {number} [CdcStartTime] CdcStartTime.
          */
         /**
@@ -20505,7 +20505,7 @@ module.exports = {
          * @property {string} ReplicationInstanceClass ReplicationInstanceClass.
          * @property {boolean} [PubliclyAccessible] PubliclyAccessible.
          * @property {boolean} [MultiAZ] MultiAZ.
-         * @property {AWS_DMS_ReplicationInstance_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          */
         /**
          * Create a new AWS::DMS::ReplicationInstance
@@ -21491,7 +21491,7 @@ module.exports = {
          * @property {number} [SnapshotRetentionLimit] SnapshotRetentionLimit.
          * @property {string} [SnapshotWindow] SnapshotWindow.
          * @property {string} [SnapshottingClusterId] SnapshottingClusterId.
-         * @property {AWS_ElastiCache_ReplicationGroup_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {boolean} [TransitEncryptionEnabled] TransitEncryptionEnabled.
          */
         /**
@@ -21614,7 +21614,7 @@ module.exports = {
          * @property {string} [SnapshotName] SnapshotName.
          * @property {number} [SnapshotRetentionLimit] SnapshotRetentionLimit.
          * @property {string} [SnapshotWindow] SnapshotWindow.
-         * @property {AWS_ElastiCache_CacheCluster_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string[]} [VpcSecurityGroupIds] VpcSecurityGroupIds.
          */
         /**
@@ -22520,7 +22520,7 @@ module.exports = {
          * @property {string} [KmsKeyId] KmsKeyId.
          * @property {string} [SecretString] SecretString.
          * @property {AWS_SecretsManager_Secret_GenerateSecretString} [GenerateSecretString] GenerateSecretString.
-         * @property {AWS_SecretsManager_Secret_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [Name] Name.
          */
         /**
@@ -22693,7 +22693,7 @@ module.exports = {
          * @property {string} ServiceRole ServiceRole.
          * @property {number} [QueuedTimeoutInMinutes] QueuedTimeoutInMinutes.
          * @property {AWS_CodeBuild_Project_Environment} Environment Environment.
-         * @property {AWS_CodeBuild_Project_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {number} [TimeoutInMinutes] TimeoutInMinutes.
          * @property {AWS_CodeBuild_Project_ProjectCache} [Cache] Cache.
          */
@@ -23418,7 +23418,7 @@ module.exports = {
          * @property {string} DomainName DomainName.
          * @property {string} RuleType RuleType.
          * @property {AWS_Route53Resolver_ResolverRule_TargetAddress[]} [TargetIps] TargetIps.
-         * @property {AWS_Route53Resolver_ResolverRule_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [Name] Name.
          */
         /**
@@ -23522,7 +23522,7 @@ module.exports = {
          * @property {AWS_Route53Resolver_ResolverEndpoint_IpAddressRequest[]} IpAddresses IpAddresses.
          * @property {string} Direction Direction.
          * @property {string[]} SecurityGroupIds SecurityGroupIds.
-         * @property {AWS_Route53Resolver_ResolverEndpoint_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [Name] Name.
          */
         /**
@@ -23593,7 +23593,7 @@ module.exports = {
          * @property {string} S3BucketName S3BucketName.
          * @property {string} [S3KeyPrefix] S3KeyPrefix.
          * @property {string} [SnsTopicName] SnsTopicName.
-         * @property {AWS_CloudTrail_Trail_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} [TrailName] TrailName.
          */
         /**
@@ -24060,7 +24060,7 @@ module.exports = {
          * @typedef {Object} AWS_CloudFormation_Stack
          * @property {string[]} [NotificationARNs] NotificationARNs.
          * @property {AWS_CloudFormation_Stack_Map} [Parameters] Parameters.
-         * @property {AWS_CloudFormation_Stack_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {string} TemplateURL TemplateURL.
          * @property {number} [TimeoutInMinutes] TimeoutInMinutes.
          */
@@ -25441,7 +25441,7 @@ module.exports = {
          * @property {AWS_S3_Bucket_NotificationConfiguration} [NotificationConfiguration] NotificationConfiguration.
          * @property {AWS_S3_Bucket_PublicAccessBlockConfiguration} [PublicAccessBlockConfiguration] PublicAccessBlockConfiguration.
          * @property {AWS_S3_Bucket_ReplicationConfiguration} [ReplicationConfiguration] ReplicationConfiguration.
-         * @property {AWS_S3_Bucket_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {AWS_S3_Bucket_VersioningConfiguration} [VersioningConfiguration] VersioningConfiguration.
          * @property {AWS_S3_Bucket_WebsiteConfiguration} [WebsiteConfiguration] WebsiteConfiguration.
          */
@@ -26267,7 +26267,7 @@ module.exports = {
         }
         /**
          * @typedef {Object} AWS_DLM_LifecyclePolicy_Schedule
-         * @property {AWS_DLM_LifecyclePolicy_Tag[]} [TagsToAdd] TagsToAdd.
+         * @property {Tag[]} [TagsToAdd] TagsToAdd.
          * @property {AWS_DLM_LifecyclePolicy_CreateRule} [CreateRule] CreateRule.
          * @property {AWS_DLM_LifecyclePolicy_RetainRule} [RetainRule] RetainRule.
          * @property {string} [Name] Name.
@@ -26302,7 +26302,7 @@ module.exports = {
          * @typedef {Object} AWS_DLM_LifecyclePolicy_PolicyDetails
          * @property {string[]} [ResourceTypes] ResourceTypes.
          * @property {AWS_DLM_LifecyclePolicy_Schedule[]} [Schedules] Schedules.
-         * @property {AWS_DLM_LifecyclePolicy_Tag[]} [TargetTags] TargetTags.
+         * @property {Tag[]} [TargetTags] TargetTags.
          */
         /**
          * @param {AWS_DLM_LifecyclePolicy_PolicyDetails} properties
@@ -26441,7 +26441,7 @@ module.exports = {
          * @property {AWS_DynamoDB_Table_SSESpecification} [SSESpecification] SSESpecification.
          * @property {AWS_DynamoDB_Table_StreamSpecification} [StreamSpecification] StreamSpecification.
          * @property {string} [TableName] TableName.
-         * @property {AWS_DynamoDB_Table_Tag[]} [Tags] Tags.
+         * @property {Tag[]} [Tags] Tags.
          * @property {AWS_DynamoDB_Table_TimeToLiveSpecification} [TimeToLiveSpecification] TimeToLiveSpecification.
          */
         /**

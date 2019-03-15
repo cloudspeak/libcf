@@ -72,6 +72,9 @@ module.exports = class CloudFormationUtils {
      * @param {string} propertyName 
      */
     static getFullPropertyTypeName(parentTypeName, propertyName) {
+        if (propertyName === "Tag") {
+            return propertyName // Special case as it is the only global property
+        }
         return {
             resourceName: parentTypeName.resourceName,
             propertyName: propertyName,
