@@ -1,9 +1,9 @@
 const cfDefinitions = require('./cfDefinitions')
 const intrinsicFunctions = require('./intrinsicFunctions')
-const Stack = require('./Stack')
+const Template = require('./Template')
 
 module.exports = {
     ...intrinsicFunctions,
     ...cfDefinitions,
-    Stack
+    Template
 }

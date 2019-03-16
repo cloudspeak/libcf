@@ -11,7 +11,36 @@
  * @property {object} [Outputs]
  */
 
-module.exports = class Stack {
+ /**
+  * Represents a CloudFormation template.  Resources can be added to the template either by using
+  * the constructor:
+  * 
+  * ```
+  * new cf.Template({
+  *     MyBucket: new cf.AWS.S3.Bucket({
+  *     BucketName: "MyTestBucket"
+  *     })
+  * })
+  * ```
+  * 
+  * or by using the `setResource` builder method:
+  * 
+  * ```
+  * new cf.Template()
+  *     .setResource("MyBucket", new cf.AWS.S3.Bucket({
+  *                 BucketName: "MyTestBucket"
+  *             })
+  * ```
+  * 
+  * The Template class naturally has the same structure as a CloudFormation template so can be
+  * serialised directly to JSON, although the `templateJSON` accessor is also provided for
+  * convenience.
+  * 
+  * By default, the template version will be set to the default value.  This can be overidden
+  * using the `setVersion` or `clearVersion` methods.
+  * 
+  */
+module.exports = class Template {
 
     /**
      * The default version for CloudFormation templates.
@@ -23,10 +52,10 @@ module.exports = class Stack {
     }
 
     /**
-     * Create a new CloudFormation stack template from the given resources.
+     * Create a new CloudFormation template from the given resources.
      * 
-     * The stack will be given the default template version.
-     * @param {object} [resources] The stack resources
+     * The template will be given the default template version.
+     * @param {object} [resources] The template resources
      */
     constructor(resources) {
         /** @type {CfTemplate} */
@@ -39,7 +68,7 @@ module.exports = class Stack {
     }
 
     /**
-     * Returns the stack template as a JSON string
+     * Returns the template as a JSON string
      * @returns {string}
      */
     get templateJson() {
@@ -51,10 +80,22 @@ module.exports = class Stack {
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html
      * @param {string} version Template version
-     * @returns {Stack} This stack
+     * @returns {Template} This template
      */
     setVersion(version) {
         this.template.AWSTemplateFormatVersion = version;
+        return this;
+    }
+
+    /**
+     * Builder pattern method which clears the template version.  The version is set by default,
+     * so this method allows the version field to be removed.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html
+     * @returns {Template} This template
+     */
+    clearVersion() {
+        delete this.template.AWSTemplateFormatVersion;
         return this;
     }
 
@@ -63,7 +104,7 @@ module.exports = class Stack {
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-description-structure.html
      * @param {string} description Template description
-     * @returns {Stack} This stack
+     * @returns {Template} This template
      */
     setDescription(description) {
         this.template.Description = description;
@@ -77,7 +118,7 @@ module.exports = class Stack {
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
      * @param {string} name The logical name of the resource in the template
      * @param {object} resourceDescription The resource description object
-     * @returns {Stack} This stack
+     * @returns {Template} This template
      */
     setResource(name, resourceDescription) {
         this.template.Resources[name] = resourceDescription
@@ -89,7 +130,7 @@ module.exports = class Stack {
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
      * @param {object} metadata Template metadata
-     * @returns {Stack} This stack
+     * @returns {Template} This template
      */
     setMetadata(metadata) {
         this.template.Metadata = metadata;
@@ -101,7 +142,7 @@ module.exports = class Stack {
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
      * @param {object} parameters Template parameters
-     * @returns {Stack} This stack
+     * @returns {Template} This template
      */
     setParameters(parameters) {
         this.template.Parameters = parameters;
@@ -113,7 +154,7 @@ module.exports = class Stack {
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html
      * @param {object} mappings Template mappings
-     * @returns {Stack} This stack
+     * @returns {Template} This template
      */
     setMappings(mappings) {
         this.template.Mappings = mappings;
@@ -125,7 +166,7 @@ module.exports = class Stack {
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
      * @param {object} conditions Template conditions
-     * @returns {Stack} This stack
+     * @returns {Template} This template
      */
     setConditions(conditions) {
         this.template.Conditions = conditions;
@@ -137,7 +178,7 @@ module.exports = class Stack {
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
      * @param {object} transforms Template transforms
-     * @returns {Stack} This stack
+     * @returns {Template} This template
      */
     setTransform(transforms) {
         this.template.Transform = transforms;
@@ -149,7 +190,7 @@ module.exports = class Stack {
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
      * @param {object} outputs Template outputs
-     * @returns {Stack} This stack
+     * @returns {Template} This template
      */
     setOutputs(outputs) {
         this.template.Outputs = outputs;
