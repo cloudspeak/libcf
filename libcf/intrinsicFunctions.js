@@ -1,5 +1,7 @@
 module.exports = {
 
+    // Documentation last updated 2019-03-15
+
     /**
      * The intrinsic function Ref returns the value of the specified parameter or resource.
      *  * When you specify a parameter's logical name, it returns the value of the parameter.
@@ -48,8 +50,8 @@ module.exports = {
          * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-cidr.html
          * @param {string} ipBlock The user-specified CIDR address block to be split into smaller
          *      CIDR blocks.
-         * @param {number} count The number of CIDRs to generate. Valid range is between 1 and 256.
-         * @param {number} cidrBits The number of subnet bits for the CIDR. For example, specifying
+         * @param {number|string} count The number of CIDRs to generate. Valid range is between 1 and 256.
+         * @param {number|string} cidrBits The number of subnet bits for the CIDR. For example, specifying
          *     a value "8" for this parameter will create a CIDR with a mask of "/24".
          * 
          *      **Note:** Subnet bits is the inverse of subnet mask. To calculate the required host
@@ -59,7 +61,7 @@ module.exports = {
          */
         Cidr: function(ipBlock, count, cidrBits) {
             return {
-                "Fn::Cidr": [ipBlock, "" + count, "" + cidrBits]
+                "Fn::Cidr": [ipBlock, count, cidrBits]
             }
         },
 
@@ -164,7 +166,7 @@ module.exports = {
          * 
          * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-select.html
          * @template T
-         * @param {number} index The index of the object to retrieve. This must be a value from
+         * @param {number|string} index The index of the object to retrieve. This must be a value from
          *      zero to N-1, where N represents the number of elements in the array.
          * @param {T[]} listOfObjects The list of objects to select from. This list must not
          *      be null, nor can it have null entries.
@@ -232,7 +234,7 @@ module.exports = {
             }
             else {
                 return {
-                    "Fn::Sub": [ string ]
+                    "Fn::Sub": string
                 }
             }
         },
