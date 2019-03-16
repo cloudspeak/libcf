@@ -59,7 +59,7 @@ module.exports = {
          */
         Cidr: function(ipBlock, count, cidrBits) {
             return {
-                "Fn::Cidr": [ipBlock, count, cidrBits]
+                "Fn::Cidr": [ipBlock, "" + count, "" + cidrBits]
             }
         },
 
