@@ -66,27 +66,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -178,27 +178,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -372,27 +372,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -489,27 +489,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -630,27 +630,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -805,27 +805,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -901,27 +901,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1022,27 +1022,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1300,27 +1300,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1376,27 +1376,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1446,27 +1446,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1619,27 +1619,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1679,27 +1679,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1739,27 +1739,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1814,27 +1814,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1864,27 +1864,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -1949,27 +1949,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -2004,27 +2004,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -2094,27 +2094,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -2186,27 +2186,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -2241,27 +2241,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -2942,27 +2942,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -2997,27 +2997,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -3047,27 +3047,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -3717,27 +3717,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -3777,27 +3777,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -3837,27 +3837,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -3942,27 +3942,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -3997,27 +3997,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4087,27 +4087,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4167,27 +4167,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4222,27 +4222,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4312,27 +4312,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4412,27 +4412,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4514,27 +4514,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4569,27 +4569,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4624,27 +4624,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4684,27 +4684,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4759,27 +4759,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -4951,27 +4951,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -5021,27 +5021,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -5236,27 +5236,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -5655,27 +5655,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -5720,27 +5720,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -5775,27 +5775,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -5830,27 +5830,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -5880,27 +5880,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -5945,27 +5945,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6010,27 +6010,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6075,27 +6075,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6135,27 +6135,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6195,27 +6195,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6265,27 +6265,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6325,27 +6325,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6410,27 +6410,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6470,27 +6470,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6545,27 +6545,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6626,27 +6626,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6726,27 +6726,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -6984,27 +6984,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7039,27 +7039,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7104,27 +7104,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7159,27 +7159,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7229,27 +7229,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7289,27 +7289,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7354,27 +7354,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7424,27 +7424,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7519,27 +7519,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7635,27 +7635,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7726,27 +7726,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7796,27 +7796,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7851,27 +7851,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7921,27 +7921,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -7986,27 +7986,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -8129,27 +8129,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -8224,27 +8224,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -8377,27 +8377,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -8528,27 +8528,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -8914,27 +8914,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -8974,27 +8974,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -9059,27 +9059,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -9296,27 +9296,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -9382,27 +9382,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -9458,27 +9458,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -9570,27 +9570,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -9651,27 +9651,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -9763,27 +9763,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -9870,27 +9870,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -9967,27 +9967,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10079,27 +10079,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10170,27 +10170,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10250,27 +10250,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10331,27 +10331,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10386,27 +10386,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10446,27 +10446,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10506,27 +10506,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10586,27 +10586,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10708,27 +10708,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10793,27 +10793,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -10976,27 +10976,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -11098,27 +11098,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -11453,27 +11453,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -11669,27 +11669,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -11739,27 +11739,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12074,27 +12074,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12139,27 +12139,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12215,27 +12215,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12331,27 +12331,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12422,27 +12422,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12482,27 +12482,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12532,27 +12532,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12637,27 +12637,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12754,27 +12754,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -12892,27 +12892,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13007,27 +13007,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13180,27 +13180,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13250,27 +13250,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13360,27 +13360,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13553,27 +13553,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13613,27 +13613,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13673,27 +13673,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13733,27 +13733,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13840,27 +13840,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -13937,27 +13937,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14034,27 +14034,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14146,27 +14146,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14211,27 +14211,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14313,27 +14313,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14394,27 +14394,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14490,27 +14490,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14665,27 +14665,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14761,27 +14761,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14831,27 +14831,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -14958,27 +14958,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -15028,27 +15028,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -15318,27 +15318,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -15404,27 +15404,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -15500,27 +15500,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -15585,27 +15585,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -15902,27 +15902,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -16763,27 +16763,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -17135,27 +17135,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -17242,27 +17242,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -17332,27 +17332,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -17478,27 +17478,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -17604,27 +17604,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -17694,27 +17694,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -17811,27 +17811,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -17881,27 +17881,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -17966,27 +17966,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18046,27 +18046,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18121,27 +18121,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18217,27 +18217,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18277,27 +18277,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18337,27 +18337,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18423,27 +18423,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18488,27 +18488,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18553,27 +18553,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18628,27 +18628,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18704,27 +18704,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18779,27 +18779,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -18919,27 +18919,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -19076,27 +19076,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -19171,27 +19171,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -19461,27 +19461,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -19780,27 +19780,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -19890,27 +19890,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -19945,27 +19945,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -20045,27 +20045,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -20182,27 +20182,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -20310,27 +20310,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -20386,27 +20386,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -20451,27 +20451,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -20521,27 +20521,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -20631,27 +20631,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -20749,27 +20749,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -21178,27 +21178,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -21300,27 +21300,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -21439,27 +21439,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -21632,27 +21632,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -21825,27 +21825,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -21970,27 +21970,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -22139,27 +22139,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -22259,27 +22259,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -22521,27 +22521,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -23159,27 +23159,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -23265,27 +23265,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -23382,27 +23382,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -23693,27 +23693,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24074,27 +24074,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24212,27 +24212,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24282,27 +24282,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24397,27 +24397,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24462,27 +24462,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24562,27 +24562,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24617,27 +24617,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24677,27 +24677,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24737,27 +24737,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -24907,27 +24907,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -25155,27 +25155,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -25492,27 +25492,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -25597,27 +25597,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -25856,27 +25856,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -26212,27 +26212,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -26397,27 +26397,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -26547,27 +26547,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -26725,27 +26725,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -26785,27 +26785,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -26954,27 +26954,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -27569,27 +27569,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -27650,27 +27650,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -27736,27 +27736,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -27862,27 +27862,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -27973,27 +27973,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28100,27 +28100,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28175,27 +28175,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28230,27 +28230,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28300,27 +28300,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28360,27 +28360,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28445,27 +28445,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28551,27 +28551,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28657,27 +28657,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28722,27 +28722,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28798,27 +28798,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28868,27 +28868,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -28943,27 +28943,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -29029,27 +29029,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -29134,27 +29134,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -29319,27 +29319,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -29430,27 +29430,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -29500,27 +29500,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -29575,27 +29575,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -29660,27 +29660,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -29844,27 +29844,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30152,27 +30152,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30264,27 +30264,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30345,27 +30345,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30446,27 +30446,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30541,27 +30541,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30616,27 +30616,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30692,27 +30692,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30799,27 +30799,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30859,27 +30859,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -30960,27 +30960,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31128,27 +31128,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31183,27 +31183,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31378,27 +31378,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31464,27 +31464,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31550,27 +31550,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31610,27 +31610,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31665,27 +31665,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31740,27 +31740,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31810,27 +31810,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -31906,27 +31906,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32008,27 +32008,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32133,27 +32133,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32293,27 +32293,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32368,27 +32368,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32443,27 +32443,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32519,27 +32519,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32589,27 +32589,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32644,27 +32644,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32709,27 +32709,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32806,27 +32806,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32871,27 +32871,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -32946,27 +32946,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -33284,27 +33284,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -33365,27 +33365,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -33771,27 +33771,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -33877,27 +33877,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -34207,27 +34207,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -34298,27 +34298,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -34480,27 +34480,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -34560,27 +34560,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -34685,27 +34685,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -34755,27 +34755,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -34890,27 +34890,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -34971,27 +34971,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -35042,27 +35042,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -35097,27 +35097,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -35689,27 +35689,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -35744,27 +35744,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -35799,27 +35799,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -35929,27 +35929,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -36217,27 +36217,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -36282,27 +36282,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -36362,27 +36362,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -36497,27 +36497,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -36772,27 +36772,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -36887,27 +36887,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -36952,27 +36952,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -37238,27 +37238,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -37370,27 +37370,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -37661,27 +37661,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -37769,27 +37769,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -37885,27 +37885,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -37960,27 +37960,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -38123,27 +38123,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -38288,27 +38288,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -38421,27 +38421,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -38481,27 +38481,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -38541,27 +38541,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -38731,27 +38731,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -38827,27 +38827,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -38977,27 +38977,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -39102,27 +39102,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -39545,27 +39545,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -39621,27 +39621,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -39676,27 +39676,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -39778,27 +39778,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -40097,27 +40097,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -40246,27 +40246,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -40327,27 +40327,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -40377,27 +40377,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -40442,27 +40442,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -40533,27 +40533,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -40649,27 +40649,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -40709,27 +40709,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -40844,27 +40844,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -41308,27 +41308,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -41600,27 +41600,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -41660,27 +41660,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -41770,27 +41770,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -41881,27 +41881,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -42059,27 +42059,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -42275,27 +42275,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -42356,27 +42356,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -42426,27 +42426,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -42562,27 +42562,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -42694,27 +42694,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -42838,27 +42838,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -42893,27 +42893,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -42963,27 +42963,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43080,27 +43080,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43135,27 +43135,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43200,27 +43200,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43270,27 +43270,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43315,27 +43315,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43385,27 +43385,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43435,27 +43435,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43520,27 +43520,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43606,27 +43606,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43681,27 +43681,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43825,27 +43825,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43885,27 +43885,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -43940,27 +43940,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -44000,27 +44000,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -44155,27 +44155,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -44226,27 +44226,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -44474,27 +44474,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -45108,27 +45108,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -45369,27 +45369,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -45491,27 +45491,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -45657,27 +45657,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -46692,27 +46692,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -46782,27 +46782,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -47379,27 +47379,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -47538,27 +47538,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -47603,27 +47603,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -47734,27 +47734,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -48014,27 +48014,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }
@@ -48084,27 +48084,27 @@ module.exports = {
         get properties() {
             return this.Properties;
         }
-        addCreationPolicy(value) {
+        setCreationPolicy(value) {
             this.CreationPolicy = value;
             return this;
         }
-        addDeletionPolicy(value) {
+        setDeletionPolicy(value) {
             this.DeletionPolicy = value;
             return this;
         }
-        addDependsOn(value) {
+        setDependsOn(value) {
             this.DependsOn = value;
             return this;
         }
-        addMetadata(value) {
+        setMetadata(value) {
             this.Metadata = value;
             return this;
         }
-        addUpdatePolicy(value) {
+        setUpdatePolicy(value) {
             this.UpdatePolicy = value;
             return this;
         }
-        addUpdateReplacePolicy(value) {
+        setUpdateReplacePolicy(value) {
             this.UpdateReplacePolicy = value;
             return this;
         }

@@ -85,7 +85,7 @@ module.exports = class ResourceTypeNode extends NamespaceNode {
     
     generateAttributeBuilder(name) {
         return [
-            `add${name}(value) {`,
+            `set${name}(value) {`,
             `    this.${name} = value;`,
             `    return this;`,
             '}'
