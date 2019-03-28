@@ -36,13 +36,12 @@ export class ResourceType {
             ...this.generateInstanceVariables(),
             ...this.generateConstructorComment(),
             ...this.generateConstructor(),
-            //...this.generatePropertiesGetter(),
-            // ...this.generateAttributeBuilder('CreationPolicy'),
-            // ...this.generateAttributeBuilder('DeletionPolicy'),
-            // ...this.generateAttributeBuilder('DependsOn'),
-            // ...this.generateAttributeBuilder('Metadata'),
-            // ...this.generateAttributeBuilder('UpdatePolicy'),
-            // ...this.generateAttributeBuilder('UpdateReplacePolicy'),
+            ...this.generateAttributeBuilder('CreationPolicy'),
+            ...this.generateAttributeBuilder('DeletionPolicy'),
+            ...this.generateAttributeBuilder('DependsOn'),
+            ...this.generateAttributeBuilder('Metadata'),
+            ...this.generateAttributeBuilder('UpdatePolicy'),
+            ...this.generateAttributeBuilder('UpdateReplacePolicy'),
             ...propertyCode
         ].map(line => '  ' + line)
 
@@ -101,7 +100,8 @@ export class ResourceType {
     
     generateAttributeBuilder(name) {
         return [
-            `set${name}(value) {`,
+            `${name}: any`,
+            `set${name}(value: any): ${this.parsedName.namespace[this.parsedName.namespace.length - 1]} {`,
             `    this.${name} = value;`,
             `    return this;`,
             '}'
