@@ -7,7 +7,10 @@ const CfTypeMap = "Map"
 
 export class TsGenerator {
 
-    
+    static getResourceTypePropertiesInterfaceName(parsedName: TypeName) {
+        return parsedName.namespace[parsedName.namespace.length - 1] + "Properties"
+    }
+
     static getPropertyTypeInterfaceName(parsedName: TypeName) {
         if (parsedName.namespace) {
             return parsedName.namespace[parsedName.namespace.length - 1] + parsedName.propertyName

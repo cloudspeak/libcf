@@ -4,6 +4,7 @@ import { NamespaceNode } from './NamespaceNode'
 import { PropertyType } from './PropertyType'
 import { TypeName } from './TypeName';
 import { CfResourceTypeData } from './CloudFormationDefinitionTypes';
+import { TsGenerator } from './TsGenerator';
 
 /**
  * Represents an entire CF resource namespace, which includes a resource type and all of its
@@ -46,6 +47,7 @@ export class ResourceType {
         ].map(line => '  ' + line)
 
         return [
+            ...this.generatePropertiesInterface(),
             `export class ${this.parsedName.namespace[this.parsedName.namespace.length - 1]} {`,
             ...innerCode,
             '}'
@@ -53,26 +55,36 @@ export class ResourceType {
     }
 
     generateConstructorComment() {
-        let typedefName = JsDocGenerator.getPropertyTypeTypedefName(this.parsedName)
         return JsDocGenerator.generateComment([
             `Create a new ${this.parsedName.fullname}`,
             ``,
-            `See ${this.data.Documentation}`,
-            `@param {${typedefName}} properties`
+            `See ${this.data.Documentation}`
         ])
     }
 
     generateInstanceVariables() {
         return [
             'Type: string',
-            'Properties: any'
+            `Properties: ${TsGenerator.getResourceTypePropertiesInterfaceName(this.parsedName)}`
         ]
         
     }
 
+    generatePropertiesInterface() {
+        let tsName = TsGenerator.getResourceTypePropertiesInterfaceName(this.parsedName)
+        let propertyListCode = TsGenerator.generatePropertyList(this.parsedName, this.data.Properties)
+        propertyListCode = propertyListCode.map(s => `  ${s}`)
+
+        return [
+            `export interface ${tsName} {`,
+            ...propertyListCode,
+            '}'
+        ]
+    }
+
     generateConstructor() {
         return [
-            'constructor(properties) {',
+            `constructor(properties: ${TsGenerator.getResourceTypePropertiesInterfaceName(this.parsedName)}) {`,
             `    this.Type = "${this.parsedName.fullname}";`,
             '    this.Properties = properties;',
             '}'

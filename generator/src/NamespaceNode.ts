@@ -26,7 +26,7 @@ export class NamespaceNode extends RootNode {
         }, [])
 
         let propertyCode = this.properties.reduce((array: string[], prop: PropertyType) => {
-            return array.concat(prop.generateNamespaceInterface())
+            return array.concat(prop.generatePropertyTypeInterface())
         }, [])
         childrenCode = childrenCode.concat(propertyCode)
 

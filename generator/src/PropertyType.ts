@@ -13,7 +13,7 @@ export class PropertyType {
         this.data = data
     }
 
-    generateNamespaceInterface() {
+    generatePropertyTypeInterface() {
         let tsName = TsGenerator.getPropertyTypeInterfaceName(this.parsedName)
 
         if (!this.data.hasOwnProperty('Properties')) {
