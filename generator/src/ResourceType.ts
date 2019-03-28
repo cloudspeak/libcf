@@ -29,31 +29,27 @@ export class ResourceType {
         this._propertyTypes.push(propertyType)
     }
 
-    generateCode(assignment) {
+    generateCode() {
         let propertyCode = this._propertyTypes.reduce((array, p) => array.concat(p.generateCode()), [])
         let innerCode = [
-            ...this.generateTypedef(),
+            ...this.generateInstanceVariables(),
             ...this.generateConstructorComment(),
             ...this.generateConstructor(),
             ...this.generatePropertiesGetter(),
-            ...this.generateAttributeBuilder('CreationPolicy'),
-            ...this.generateAttributeBuilder('DeletionPolicy'),
-            ...this.generateAttributeBuilder('DependsOn'),
-            ...this.generateAttributeBuilder('Metadata'),
-            ...this.generateAttributeBuilder('UpdatePolicy'),
-            ...this.generateAttributeBuilder('UpdateReplacePolicy'),
+            // ...this.generateAttributeBuilder('CreationPolicy'),
+            // ...this.generateAttributeBuilder('DeletionPolicy'),
+            // ...this.generateAttributeBuilder('DependsOn'),
+            // ...this.generateAttributeBuilder('Metadata'),
+            // ...this.generateAttributeBuilder('UpdatePolicy'),
+            // ...this.generateAttributeBuilder('UpdateReplacePolicy'),
             ...propertyCode
         ].map(line => '  ' + line)
 
         return [
-            `${assignment}class {`,
+            `export class ${this.parsedName.namespace[this.parsedName.namespace.length - 1]} {`,
             ...innerCode,
             '}'
         ]
-    }
-
-    generateTypedef() {
-        return JsDocGenerator.generatePropertiesTypedef(this.parsedName, this.data.Properties)
     }
 
     generateConstructorComment() {
@@ -64,6 +60,14 @@ export class ResourceType {
             `See ${this.data.Documentation}`,
             `@param {${typedefName}} properties`
         ])
+    }
+
+    generateInstanceVariables() {
+        return [
+            'Type: string',
+            'Properties: any'
+        ]
+        
     }
 
     generateConstructor() {

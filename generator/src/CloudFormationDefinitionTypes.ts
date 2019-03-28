@@ -6,7 +6,7 @@ export interface CfPropertyData {
     Type?: string
     PrimitiveType?: string
     ItemType?: string
-    ItemPrimitiveType?: string
+    PrimitiveItemType?: string
 }
 
 export interface CfResourceTypeData {
@@ -21,7 +21,7 @@ export interface CfPropertyTypeData {
 }
 
 export interface CfDefinitions {
-    PropertyTypes: {[key: string]: CfPropertyTypeData}
+    PropertyTypes: {[key: string]: CfPropertyTypeData | CfPropertyData }
     ResourceTypes: {[key: string]: CfResourceTypeData}
     ResourceSpecificationVersion: string    
 }

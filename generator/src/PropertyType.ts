@@ -1,15 +1,38 @@
 import { JsDocGenerator } from './JsDocGenerator'
 import { TypeName } from './TypeName';
-import { CfPropertyTypeData } from './CloudFormationDefinitionTypes';
+import { CfPropertyTypeData, CfPropertyData } from './CloudFormationDefinitionTypes';
+import { TsGenerator } from './TsGenerator';
 
 export class PropertyType {
 
     parsedName: TypeName
-    data: CfPropertyTypeData
+    data: CfPropertyTypeData | CfPropertyData
 
     constructor(parsedName, data) {
         this.parsedName = parsedName
         this.data = data
+    }
+
+    generateNamespaceInterface() {
+        let tsName = TsGenerator.getPropertyTypeInterfaceName(this.parsedName)
+
+        if (!this.data.hasOwnProperty('Properties')) {
+            console.log("No props:", this.parsedName.fullname)
+            return [
+                `type ${tsName} = ${TsGenerator.getPropertyTsType(this.parsedName, this.data as CfPropertyData)}`
+            ]
+        }
+        else {
+            let propertyTypeData = this.data as CfPropertyTypeData
+            let propertyListCode = TsGenerator.generatePropertyList(this.parsedName, propertyTypeData.Properties)
+            propertyListCode = propertyListCode.map(s => `  ${s}`)
+
+            return [
+                `export interface ${tsName} {`,
+                ...propertyListCode,
+                '}'
+            ]
+        }
     }
 
     /**

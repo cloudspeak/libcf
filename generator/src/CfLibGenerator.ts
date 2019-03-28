@@ -7,6 +7,7 @@ import { ResourceType } from './ResourceType'
 import { OrphanPropertyTypeNode } from './OrphanPropertyTypeNode'
 import { NamespaceNode } from './NamespaceNode'
 import { RootNode } from './RootNode';
+import { PropertyType } from './PropertyType';
 
 module.exports = class Generator {
 
@@ -28,7 +29,10 @@ module.exports = class Generator {
         
         
         let exportsTree = this.createExportsTreeWithResourceTypes()
-        //let orphanProperties = this.addPropertyTypesToExportTree(exportsTree)
+        let orphanProperties = this.addPropertyTypesToExportTree(exportsTree)
+
+        console.log("ORPHS", orphanProperties)
+
         //this.addOrphanedPropertyTypesToExportTree(exportsTree, orphanProperties)
 
         let codeLines = [ 
@@ -69,30 +73,30 @@ module.exports = class Generator {
         return root
     }
 
-    addPropertyTypesToExportTree(exportsTree: NamespaceNode): any {
-        // let orphanProperties = []
+    addPropertyTypesToExportTree(root: RootNode): any {
+        let orphanProperties = []
 
-        // for (let propertyTypeName in this.data.PropertyTypes) {
-        //     let propertyTypeData = this.data.PropertyTypes[propertyTypeName]
-        //     let parsedName = CloudFormationUtils.parseTypeName(propertyTypeName)
+        for (let propertyTypeName in this.data.PropertyTypes) {
+            let propertyTypeData = this.data.PropertyTypes[propertyTypeName]
+            let parsedName = CloudFormationUtils.parseTypeName(propertyTypeName)
 
-        //     let tree = exportsTree
-        //     for (let namespacePart of parsedName.namespace) {
-        //         tree = tree.get(namespacePart)
-        //     }
 
-        //     /** @type {ResourceType} */
-        //     let resourceNamespace = (/** @type {ResourceNamespace} */ tree);
-            
-        //     if (resourceNamespace) {
-        //         resourceNamespace.addPropertyType(new PropertyType(parsedName, propertyTypeData))
-        //     }
-        //     else {
-        //         orphanProperties.push(propertyTypeName)
-        //     }
-            
-        // }
-        // return orphanProperties
+            let tree = root
+            let namespaceLeaf: NamespaceNode
+
+            for (let namespacePart of parsedName.namespace.slice(0, -1) ) {
+                namespaceLeaf = tree.get(namespacePart)
+                tree = tree.get(namespacePart)
+            }
+
+            if (namespaceLeaf) {
+                namespaceLeaf.addProperty(new PropertyType(parsedName, propertyTypeData))
+            }
+            else {
+                orphanProperties.push(propertyTypeName)
+            }
+        }
+        return orphanProperties
     }
 
     
