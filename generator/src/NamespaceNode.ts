@@ -4,12 +4,11 @@ import { RootNode } from './RootNode';
 
 export class NamespaceNode extends RootNode {
 
-    resource: ResourceType
-    properties: PropertyType[]
+    resources: ResourceType[] = []
+    properties: PropertyType[] = []
 
     constructor(private name: string) {
         super()
-        this.properties = []
     }
 
     addProperty(property: PropertyType) {
@@ -30,9 +29,10 @@ export class NamespaceNode extends RootNode {
         }, [])
         childrenCode = childrenCode.concat(propertyCode)
 
-        if (this.resource) {
-            childrenCode = childrenCode.concat(this.resource.generateCode())
-        }
+        let resourceCode = this.resources.reduce((array: string[], prop: ResourceType) => {
+            return array.concat(prop.generateCode())
+        }, [])
+        childrenCode = childrenCode.concat(resourceCode)
 
         return [
             `export namespace ${this.name} {`,

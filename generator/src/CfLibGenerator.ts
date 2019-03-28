@@ -67,7 +67,7 @@ module.exports = class Generator {
                 tree = tree.get(namespacePart)
             }
 
-            namespaceLeaf.resource = new ResourceType(parsedName, resourceTypeData);
+            namespaceLeaf.resources.push(new ResourceType(parsedName, resourceTypeData))
         }
 
         return root
