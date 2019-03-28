@@ -1,6 +1,7 @@
 import { CfPropertyData } from "./CloudFormationDefinitionTypes";
 import { TypeName } from "./TypeName";
 import { CloudFormationUtils } from "./CloudFormationUtils";
+import { JsDocGenerator } from "./JsDocGenerator";
 
 const CfTypeList = "List"
 const CfTypeMap = "Map"
@@ -28,14 +29,23 @@ export class TsGenerator {
             let tsFieldName = property.Required ? propertyName : `${propertyName}?`
             let requiredString = property.Required ? "(required)" : "(optional)"
             let updateTypeComment = property.UpdateType ? [                    
-                `       Update type is ${property.UpdateType}.`,
+                `Update type is ${property.UpdateType}.`,
                 ``,
             ] : []
 
-            let commentLines = [
-                'COMMENT'
-            ]
-            return array.concat(`${tsFieldName}: ${tsType}`)
+            
+
+            let commentLines = JsDocGenerator.generateComment([
+                `Property ${parsedName.fullname} ${requiredString}`,
+                '',
+                ...updateTypeComment,
+                '',
+                `See ${property.Documentation}`
+            ])
+            return array.concat([
+                ...commentLines,
+                `${tsFieldName}: ${tsType}`
+            ])
 
             // return array.concat([
             //     `@property {${jsDocType}} ${nameJsDoc} ${propertyName} property ${requiredString}.`,
