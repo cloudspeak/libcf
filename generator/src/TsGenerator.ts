@@ -13,7 +13,10 @@ export class TsGenerator {
     }
 
     static getPropertyTypeInterfaceName(parsedName: TypeName) {
-        if (parsedName.namespace) {
+        if (parsedName.fullname === "Tag") {  // Special case as it is the only global property
+            return parsedName.fullname + "Properties"
+        }
+        else if (parsedName.namespace) {
             return parsedName.namespace[parsedName.namespace.length - 1] + parsedName.propertyName
         }
         else {

@@ -29,9 +29,14 @@ export class CloudFormationUtils {
      * @param {TypeName} parentTypeName 
      * @param {string} propertyName 
      */
-    static getFullPropertyTypeName(parentTypeName, propertyName) {
+    static getFullPropertyTypeName(parentTypeName: TypeName, propertyName: string): TypeName {
         if (propertyName === "Tag") {
-            return propertyName // Special case as it is the only global property
+            return {
+                propertyName: propertyName,
+                resourceName: null,
+                namespace: null,
+                fullname: propertyName
+            } // Special case as it is the only global property
         }
         return {
             resourceName: parentTypeName.resourceName,
