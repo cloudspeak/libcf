@@ -36,7 +36,7 @@ export class ResourceType {
             ...this.generateInstanceVariables(),
             ...this.generateConstructorComment(),
             ...this.generateConstructor(),
-            ...this.generatePropertiesGetter(),
+            //...this.generatePropertiesGetter(),
             // ...this.generateAttributeBuilder('CreationPolicy'),
             // ...this.generateAttributeBuilder('DeletionPolicy'),
             // ...this.generateAttributeBuilder('DependsOn'),
@@ -93,7 +93,7 @@ export class ResourceType {
 
     generatePropertiesGetter() {
         return [
-            'get properties() {',
+            `get properties(): ${TsGenerator.getResourceTypePropertiesInterfaceName(this.parsedName)} {`,
             '    return this.Properties;',
             '}'
         ]
