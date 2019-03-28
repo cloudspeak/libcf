@@ -31,7 +31,7 @@ export class ResourceType {
     }
 
     generateCode() {
-        let propertyCode = this._propertyTypes.reduce((array, p) => array.concat(p.generateCode()), [])
+        let propertyCode = this._propertyTypes.reduce((array, p) => array.concat(p.generateStaticCastFunction()), [])
         let innerCode = [
             ...this.generateInstanceVariables(),
             ...this.generateConstructorComment(),

@@ -35,10 +35,26 @@ export class PropertyType {
         }
     }
 
-    /**
-     * @returns {string[]}
-     */
-    generateCode() {
+
+    generateStaticCastFunctionComment() {
+        return JsDocGenerator.generateComment([
+            `Create a new ${this.parsedName.fullname}`,
+            ``,
+            `See ${this.data.Documentation}`
+        ])
+    }
+
+    generateStaticCastFunction() {
+        return [
+            ...this.generateStaticCastFunctionComment(),
+            `static ${this.parsedName.propertyName}(properties: ${TsGenerator.getPropertyTypeInterfaceName(this.parsedName)}) ` + 
+                    `: ${TsGenerator.getPropertyTypeInterfaceName(this.parsedName)} {`,
+                    `  return properties;`,
+                    `}`
+        ]
+    }
+
+    generateCode(): string[] {
         return [
             //...this.generateTypedef(),
             ...this.generateCastFunctionComment(),

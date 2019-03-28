@@ -90,11 +90,17 @@ module.exports = class Generator {
             }
 
             if (namespaceLeaf) {
-                namespaceLeaf.addProperty(new PropertyType(parsedName, propertyTypeData))
+                let propertyType = new PropertyType(parsedName, propertyTypeData)
+                namespaceLeaf.addProperty(propertyType)
+
+                let resourceType = namespaceLeaf.resources.find(r => r.parsedName.resourceName === parsedName.resourceName)
+                resourceType.addPropertyType(propertyType)
             }
             else {
                 orphanProperties.push(propertyTypeName)
             }
+
+            
         }
         return orphanProperties
     }
