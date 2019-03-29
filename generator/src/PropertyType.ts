@@ -17,7 +17,6 @@ export class PropertyType {
         let tsName = TsGenerator.getPropertyTypeInterfaceName(this.parsedName)
 
         if (!this.data.hasOwnProperty('Properties')) {
-            console.log(tsName)
             return [
                 `type ${tsName} = ${TsGenerator.getPropertyTsType(this.parsedName, this.data as CfPropertyData)}`
             ]

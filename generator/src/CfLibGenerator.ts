@@ -4,21 +4,19 @@ import { CfDefinitions } from './CloudFormationDefinitionTypes'
 import { FileUtils } from './FileUtils';
 import { CloudFormationUtils } from './CloudFormationUtils'
 import { ResourceType } from './ResourceType'
-import { OrphanPropertyTypeNode } from './OrphanPropertyTypeNode'
 import { NamespaceNode } from './NamespaceNode'
 import { RootNode } from './RootNode';
 import { PropertyType } from './PropertyType';
-import { TsGenerator } from './TsGenerator';
 
 module.exports = class Generator {
 
     fileUtils: FileUtils
-    outputPath: string
+    outputFile: string
     data: CfDefinitions
 
-    constructor(outputPath: string) {
+    constructor(outputFile: string) {
         this.fileUtils = new FileUtils()
-        this.outputPath = outputPath;
+        this.outputFile = outputFile;
     }
     
 
@@ -41,10 +39,8 @@ module.exports = class Generator {
             ...orphanCode
         ]
         let fileContent = codeLines.join('\n')
-
-        let outputFile = path.join(this.outputPath, "cfDefinitions.ts")
-        this.fileUtils.createFolderTree(this.outputPath)
-        fs.writeFileSync(outputFile, fileContent)        
+        this.fileUtils.createFolderTree(path.parse(this.outputFile).dir)
+        fs.writeFileSync(this.outputFile, fileContent)
     }
 
     createExportsTreeWithResourceTypes(): RootNode {

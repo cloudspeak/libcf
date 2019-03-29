@@ -1,10 +1,20 @@
 {
-  "name": "cloudspeak-libcf-generator",
-  "version": "0.1.0",
+  "name": "cloudspeak-libcf",
+  "version": "0.2.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "generate": "cd generator && yarn start ../CloudFormationResourceSpecification.json ../src/cfDefinitions.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+  },
   "devDependencies": {
+    "@types/node": "^11.12.0",
+    "typescript": "^3.3.4000",
+    "ts-node": "^8.0.3",
     "jest": "^24.5.0"
   },
-  "scripts": {
-    "test": "jest"
-  }
+  "files": ["dist/**/*"]
 }
