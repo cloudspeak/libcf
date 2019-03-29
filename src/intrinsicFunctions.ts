@@ -20,10 +20,10 @@
      * @param {string} logicalName The logical name of the resource or parameter you want to dereference
      * @returns {string} The physical ID of the resource or the value of the parameter.
      */
-    export function Ref(logicalName) {
+    export function Ref(logicalName: string): string {
         return {
             Ref: logicalName
-        }
+        } as unknown as string
     }
 
     export namespace Fn {
@@ -37,10 +37,10 @@
          * @param {string} valueToEncode The string value you want to convert to Base64
          * @returns {string} The original string, in Base64 representation
          */
-        export function Base64(valueToEncode) {
+        export function Base64(valueToEncode: string): string {
             return {
                 "Fn::Base64": valueToEncode
-            }
+            } as unknown as string
         }
 
         /**
@@ -59,10 +59,10 @@
          *      IPv6.
          * @returns {string[]} An array of CIDR address blocks.
          */
-        export function Cidr(ipBlock, count, cidrBits) {
+        export function Cidr(ipBlock: string, count: number | string, cidrBits: number | string): string[] {
             return {
                 "Fn::Cidr": [ipBlock, count, cidrBits]
-            }
+            } as unknown as string[]
         }
 
         /**
@@ -78,10 +78,10 @@
          *      keys from the list assigned to `TopLevelKey`.
          * @returns {string} The value that is assigned to `SecondLevelKey`.
          */
-        export function FindInMap(mapName, topLevelKey, secondLevelKey) {
+        export function FindInMap(mapName: string, topLevelKey: string, secondLevelKey: string): string {
             return {
                 "Fn::FindInMap": [mapName, topLevelKey, secondLevelKey]
-            }
+            } as unknown as string
         }
 
         /**
@@ -96,13 +96,13 @@
          *      resource type.
          * @returns {string} The attribute value.
          */
-        export function GetAtt(logicalNameOfResource, attributeName) {
+        export function GetAtt(logicalNameOfResource: string, attributeName): string {
             return {
                 "Fn::GetAtt": [
                     logicalNameOfResource,
                     attributeName
                 ]
-            }
+            } as unknown as string
         }
 
         // /**
@@ -128,20 +128,20 @@
         //     }
         // },
 
-        // /**
-        //  * The intrinsic function `Fn::ImportValue` returns the value of an output exported by
-        //  * another stack. You typically use this function to create cross-stack references. In the
-        //  * following example template snippets, Stack A exports VPC security group values and Stack
-        //  * B imports them.
-        //  * 
-        //  * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html
-        //  * @param {string} sharedValueToImport The stack output value that you want to import.
-        //  */
-        // ImportValue: function(sharedValueToImport) {
-        //     return {
-        //         "Fn::ImportValue" : sharedValueToImport
-        //     }
-        // },
+        /**
+         * The intrinsic function `Fn::ImportValue` returns the value of an output exported by
+         * another stack. You typically use this function to create cross-stack references. In the
+         * following example template snippets, Stack A exports VPC security group values and Stack
+         * B imports them.
+         * 
+         * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html
+         * @param {string} sharedValueToImport The stack output value that you want to import.
+         */
+        export function ImportValue(sharedValueToImport: string): unknown {
+            return {
+                "Fn::ImportValue" : sharedValueToImport
+            }
+        }
 
         // /**
         //  * The intrinsic function `Fn::Join` appends a set of values into a single value, separated
