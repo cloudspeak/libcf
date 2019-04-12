@@ -1,21 +1,21 @@
-const JsDocGenerator = require('./JsDocGenerator')
-const CloudFormationUtils = require('./CloudFormationUtils')
-const NamespaceNode = require('./NamespaceNode')
-const PropertyType = require('./PropertyType')
+import { JsDocGenerator } from './JsDocGenerator'
+import { NamespaceNode } from './NamespaceNode'
+import { PropertyType } from './PropertyType'
+import { TypeName } from './TypeName';
+import { CfPropertyTypeData } from './CloudFormationDefinitionTypes';
 
 /**
  * Represents an entire CF resource namespace, which includes a resource type and all of its
  * property types
  * @property {CfPropertyTypeData} propertyTypes
  */
-module.exports = class OrphanPropertyTypeNode extends NamespaceNode {
+export class OrphanPropertyTypeNode {
 
-    /**
-     * @param {TypeName} parsedName 
-     * @param {CfPropertyTypeData} data 
-     */
+    parsedName: TypeName
+    data: CfPropertyTypeData
+    propertyType: PropertyType
+
     constructor(parsedName, data) {
-        super()
         this.parsedName = parsedName
         this.data = data
         this.propertyType = new PropertyType(this.parsedName, this.data)
@@ -23,7 +23,7 @@ module.exports = class OrphanPropertyTypeNode extends NamespaceNode {
 
     generateCode(assignment) {
         return [
-            ...this.propertyType.generateTypedef(),
+            //...this.propertyType.generateTypedef(),
             ...this.propertyType.generateCastFunctionComment(),
             `${assignment} function(properties) { return properties; }`
         ]
