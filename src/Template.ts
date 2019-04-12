@@ -1,3 +1,5 @@
+import { Resource } from "./Resource";
+
  /**
   * Represents a CloudFormation template.  Resources can be added to the template either by using
   * the constructor:
@@ -30,7 +32,7 @@
 export class Template {
     AWSTemplateFormatVersion: string
     Description: string
-    Resources: {[key: string]: any}
+    Resources: {[key: string]: Resource}
     Metadata: any
     Parameters: any
     Mappings: any
@@ -53,7 +55,7 @@ export class Template {
      * The template will be given the default template version.
      * @param {object} [resources] The template resources
      */
-    constructor(resources: {[key: string]: any}) {
+    constructor(resources: {[key: string]: Resource}) {
         if (!resources) {
             resources = {}
         }
@@ -65,7 +67,7 @@ export class Template {
      * Returns the template as a JSON string
      * @returns {string}
      */
-    get templateJson() {
+    get templateJson(): string {
         return JSON.stringify(this);
     }
 
@@ -76,7 +78,7 @@ export class Template {
      * @param {string} version Template version
      * @returns {Template} This template
      */
-    setVersion(version: string) {
+    setVersion(version: string): Template {
         this.AWSTemplateFormatVersion = version;
         return this;
     }
@@ -88,7 +90,7 @@ export class Template {
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html
      * @returns {Template} This template
      */
-    clearVersion() {
+    clearVersion(): Template {
         delete this.AWSTemplateFormatVersion;
         return this;
     }
@@ -100,7 +102,7 @@ export class Template {
      * @param {string} description Template description
      * @returns {Template} This template
      */
-    setDescription(description: string) {
+    setDescription(description: string): Template {
         this.Description = description;
         return this;
     }
@@ -111,10 +113,10 @@ export class Template {
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
      * @param {string} name The logical name of the resource in the template
-     * @param {object} resourceDescription The resource description object
+     * @param {Resource} resourceDescription The resource description object
      * @returns {Template} This template
      */
-    setResource(name: string, resourceDescription: any) {
+    setResource(name: string, resourceDescription: Resource): Template {
         this.Resources[name] = resourceDescription;
         return this;
     }
@@ -126,7 +128,7 @@ export class Template {
      * @param {object} metadata Template metadata
      * @returns {Template} This template
      */
-    setMetadata(metadata: any) {
+    setMetadata(metadata: any): Template {
         this.Metadata = metadata;
         return this;
     }
@@ -138,7 +140,7 @@ export class Template {
      * @param {object} parameters Template parameters
      * @returns {Template} This template
      */
-    setParameters(parameters: any) {
+    setParameters(parameters: any): Template {
         this.Parameters = parameters;
         return this;
     }
@@ -150,7 +152,7 @@ export class Template {
      * @param {object} mappings Template mappings
      * @returns {Template} This template
      */
-    setMappings(mappings: any) {
+    setMappings(mappings: any): Template {
         this.Mappings = mappings;
         return this;
     }
@@ -162,7 +164,7 @@ export class Template {
      * @param {object} conditions Template conditions
      * @returns {Template} This template
      */
-    setConditions(conditions: any) {
+    setConditions(conditions: any): Template {
         this.Conditions = conditions;
         return this;
     }
@@ -174,7 +176,7 @@ export class Template {
      * @param {object} transforms Template transforms
      * @returns {Template} This template
      */
-    setTransform(transforms: any) {
+    setTransform(transforms: any): Template {
         this.Transform = transforms;
         return this;
     }
@@ -186,7 +188,7 @@ export class Template {
      * @param {object} outputs Template outputs
      * @returns {Template} This template
      */
-    setOutputs(outputs: any) {
+    setOutputs(outputs: any): Template {
         this.Outputs = outputs;
         return this;
     }
