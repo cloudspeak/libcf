@@ -8,6 +8,14 @@ const CfTypeMap = "Map"
 
 export class TsGenerator {
 
+    static get CfResourceInterface(): string {
+        return "Resource"
+    }
+    
+    static get CfResourceInterfaceAlias(): string {
+        return "LibcfResource"
+    }
+
     static getResourceTypePropertiesInterfaceName(parsedName: TypeName) {
         return parsedName.namespace[parsedName.namespace.length - 1] + "Properties"
     }

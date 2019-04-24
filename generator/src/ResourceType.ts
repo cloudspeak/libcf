@@ -1,6 +1,4 @@
 import { JsDocGenerator } from './JsDocGenerator'
-import { CloudFormationUtils } from './CloudFormationUtils'
-import { NamespaceNode } from './NamespaceNode'
 import { PropertyType } from './PropertyType'
 import { TypeName } from './TypeName';
 import { CfResourceTypeData } from './CloudFormationDefinitionTypes';
@@ -47,7 +45,7 @@ export class ResourceType {
 
         return [
             ...this.generatePropertiesInterface(),
-            `export class ${this.parsedName.namespace[this.parsedName.namespace.length - 1]} {`,
+            `export class ${this.parsedName.namespace[this.parsedName.namespace.length - 1]} implements ${TsGenerator.CfResourceInterfaceAlias} {`,
             ...innerCode,
             '}'
         ]
