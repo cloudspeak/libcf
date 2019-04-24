@@ -72,6 +72,14 @@ export class Template {
     }
 
     /**
+     * Returns the template as a formatted JSON string
+     * @returns {string}
+     */
+    get prettyJson(): string {
+        return JSON.stringify(this, null, 2);
+    }
+
+    /**
      * Builder pattern method which sets the template version
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html
