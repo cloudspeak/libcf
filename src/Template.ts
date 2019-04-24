@@ -22,7 +22,7 @@ import { Resource } from "./Resource";
   * ```
   * 
   * The Template class naturally has the same structure as a CloudFormation template so can be
-  * serialised directly to JSON, although the `templateJSON` accessor is also provided for
+  * serialised directly to JSON, although the `json` accessor is also provided for
   * convenience.
   * 
   * By default, the template version will be set to the default value.  This can be overidden
@@ -67,7 +67,7 @@ export class Template {
      * Returns the template as a JSON string
      * @returns {string}
      */
-    get templateJson(): string {
+    get json(): string {
         return JSON.stringify(this);
     }
 

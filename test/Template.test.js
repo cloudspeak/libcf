@@ -110,6 +110,20 @@ test('Simple resource', () => {
 //     expect(libTemplate).toBe(expected)
 // })
 
+test('When json is called, valid JSON is returned', () => {
+    
+    let template = new cf.Template({
+        MyBucket: new cf.AWS.S3.Bucket({
+            BucketName: "TestBucket"
+        })
+    })
+
+    let outputJson = template.json    
+    let expectedJson = `{"AWSTemplateFormatVersion":"2010-09-09","Resources":{"MyBucket":{"Type":"AWS::S3::Bucket","Properties":{"BucketName":"TestBucket"}}}}`
+
+    expect(outputJson).toBe(expectedJson)
+})
+
 
 function norm(object) {
     return JSON.parse(JSON.stringify(object))
