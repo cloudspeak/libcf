@@ -1,4 +1,6 @@
-const cf = require('../libcf')
+//@ts-check
+
+const cf = require('..')
 
 
 test('Base64 function returns correct object', () => {
@@ -14,7 +16,7 @@ test('Cidr function returns correct object', () => {
 })
 
 test('FindInMap function returns correct object', () => {
-    let libTemplate = json(cf.Fn.FindInMap("RegionMap", { "Ref": "AWS::Region"}, "HVM64"))
+    let libTemplate = json(cf.Fn.FindInMap("RegionMap", cf.Cast({ "Ref": "AWS::Region"}), "HVM64"))
     let expected = norm('{"Fn::FindInMap": [ "RegionMap", { "Ref" : "AWS::Region" }, "HVM64"]}')
     expect(libTemplate).toBe(expected)
 })
@@ -32,7 +34,7 @@ test('GetAZs function returns correct object', () => {
 })
 
 test('ImportValue function returns correct object', () => {
-    let libTemplate = json(cf.Fn.ImportValue({"Fn::Sub": "${NetworkStackNameParameter}-SubnetID" }))
+    let libTemplate = json(cf.Fn.ImportValue(cf.Cast({"Fn::Sub": "${NetworkStackNameParameter}-SubnetID" })))
     let expected = norm('{ "Fn::ImportValue" : {"Fn::Sub": "${NetworkStackNameParameter}-SubnetID" } }')
     expect(libTemplate).toBe(expected)
 })
@@ -68,7 +70,7 @@ test('Transform function returns correct object', () => {
 })
 
 test('And function returns correct object', () => {
-    let libTemplate = json(cf.Fn.And([{"Fn::Equals": ["sg-mysggroup", {"Ref": "ASecurityGroup"}]}, {"Condition": "SomeOtherCondition"}] ))
+    let libTemplate = json(cf.Fn.And([cf.Cast({"Fn::Equals": ["sg-mysggroup", {"Ref": "ASecurityGroup"}]}), cf.Cast({"Condition": "SomeOtherCondition"})] ))
     let expected = norm('{ "Fn::And": [ {"Fn::Equals": ["sg-mysggroup", {"Ref": "ASecurityGroup"}]}, {"Condition": "SomeOtherCondition"} ] }')
     expect(libTemplate).toBe(expected)
 })
@@ -80,13 +82,13 @@ test('If function returns correct object', () => {
 })
 
 test('Not function returns correct object', () => {
-    let libTemplate = json(cf.Fn.Not({"Fn::Equals" : [{"Ref" : "EnvironmentType"},"prod"]}))
+    let libTemplate = json(cf.Fn.Not(cf.Cast({"Fn::Equals" : [{"Ref" : "EnvironmentType"},"prod"]})))
     let expected = norm('{"Fn::Not" : [{"Fn::Equals" : [{"Ref" : "EnvironmentType"},"prod"]}]}')
     expect(libTemplate).toBe(expected)
 })
 
 test('Or function returns correct object', () => {
-    let libTemplate = json(cf.Fn.Or([{"Fn::Equals" : ["sg-mysggroup", {"Ref" : "ASecurityGroup"}]},{"Condition" : "SomeOtherCondition"}]))
+    let libTemplate = json(cf.Fn.Or([cf.Cast({"Fn::Equals" : ["sg-mysggroup", {"Ref" : "ASecurityGroup"}]}),cf.Cast({"Condition" : "SomeOtherCondition"})]))
     let expected = norm('{"Fn::Or" : [{"Fn::Equals" : ["sg-mysggroup", {"Ref" : "ASecurityGroup"}]},{"Condition" : "SomeOtherCondition"}]}')
     expect(libTemplate).toBe(expected)
 })
@@ -136,7 +138,7 @@ test('Conditional functions 1', () => {
     let libTemplate = json(
         cf.Fn.And([
             cf.Fn.Equals("sg-mysggroup", cf.Ref("ASecurityGroup")),
-            { Condition: "SomeOtherCondition"}
+            cf.Cast({ Condition: "SomeOtherCondition"})
         ])
     )
     let expected = norm(`{

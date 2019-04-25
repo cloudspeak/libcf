@@ -1,4 +1,4 @@
-module.exports = class ObjectUtils {
+export class ObjectUtils {
     static mapObject(object, callback) {
         return Object.keys(object).reduce(
             (newObject, key) => {

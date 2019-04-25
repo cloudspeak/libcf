@@ -1,8 +1,8 @@
-const CloudFormationUtils = require('./CloudFormationUtils')
+import { CloudFormationUtils } from './CloudFormationUtils'
 
 const CfTypeList = "List"
 
-module.exports = class JsDocGenerator {
+export class JsDocGenerator {
 
     /**
      * @param {TypeName} typeName
