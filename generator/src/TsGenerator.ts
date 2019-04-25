@@ -16,6 +16,10 @@ export class TsGenerator {
         return "LibcfResource"
     }
 
+    static get CfNamespaceName(): string {
+        return "Cf"
+    }
+
     static getResourceTypePropertiesInterfaceName(parsedName: TypeName) {
         return parsedName.namespace[parsedName.namespace.length - 1] + "Properties"
     }

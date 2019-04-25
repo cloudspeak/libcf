@@ -1,14 +1,14 @@
 //@ts-check
 
-const cf = require('..')
+const { Template, Cf } = require('..')
 const assert = require('assert');
 
 test('Empty Template', () => {
     
-    let libTemplate = norm(new cf.Template({}))
+    let libTemplate = norm(new Template({}))
     
     let expected = JSON.parse(`{
-        "AWSTemplateFormatVersion" : "${cf.Template.DefaultVersion}",
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
         "Resources": {}
     }`)
     assert.deepStrictEqual(libTemplate, expected)
@@ -16,7 +16,7 @@ test('Empty Template', () => {
 
 test('When clearVersion is called, version is not present', () => {
     
-    let libTemplate = norm(new cf.Template({})
+    let libTemplate = norm(new Template({})
             .clearVersion())
     
     let expected = JSON.parse(`{
@@ -28,7 +28,7 @@ test('When clearVersion is called, version is not present', () => {
 
 test('Non-resource attributes', () => {
 
-    let libTemplate = norm(new cf.Template({})
+    let libTemplate = norm(new Template({})
             .setVersion("myver")
             .setDescription("mydescription")
             .setConditions({ "cond": "cond1" })
@@ -55,8 +55,8 @@ test('Non-resource attributes', () => {
 
 test('Simple resource', () => {
 
-    let libTemplate = norm(new cf.Template({
-        MyBucket: new cf.AWS.S3.Bucket({
+    let libTemplate = norm(new Template({
+        MyBucket: new Cf.AWS.S3.Bucket({
             BucketName: "TestBucket"
         })
     }))
@@ -112,8 +112,8 @@ test('Simple resource', () => {
 
 test('When json is called, valid JSON is returned', () => {
     
-    let template = new cf.Template({
-        MyBucket: new cf.AWS.S3.Bucket({
+    let template = new Template({
+        MyBucket: new Cf.AWS.S3.Bucket({
             BucketName: "TestBucket"
         })
     })
@@ -126,8 +126,8 @@ test('When json is called, valid JSON is returned', () => {
 
 test('When prettyJson is called, formatted JSON is returned', () => {
     
-    let template = new cf.Template({
-        MyBucket: new cf.AWS.S3.Bucket({
+    let template = new Template({
+        MyBucket: new Cf.AWS.S3.Bucket({
             BucketName: "TestBucket"
         })
     })
