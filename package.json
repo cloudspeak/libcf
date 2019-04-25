@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "generate": "cd generator && yarn start ../CloudFormationResourceSpecification.json ../src/cfDefinitions.ts",
-    "test": "jest"
+    "testOnly": "jest",
+    "test": "yarn build && yarn testOnly"
   },
   "dependencies": {
     "@types/jest": "^24.0.11"

@@ -110,6 +110,103 @@ test('Simple resource', () => {
 //     expect(libTemplate).toBe(expected)
 // })
 
+
+test('When setResource is called for a nonexistent key then it is added', () => {
+
+    let libTemplate = new Template({
+        MyResource1: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket1" })
+    })
+
+    libTemplate.setResource("MyResource2", new Cf.AWS.S3.Bucket({ BucketName: "MyBucket2" }))
+
+    expect(libTemplate.Resources["MyResource1"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource1"]["Properties"]["BucketName"]).toBe("MyBucket1")
+    expect(libTemplate.Resources["MyResource2"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource2"]["Properties"]["BucketName"]).toBe("MyBucket2")
+})
+
+test('When setResource is called for a existing key then it is overwritten', () => {
+
+    let libTemplate = new Template({
+        MyResource1: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket1" }),
+        MyResource2: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket2a" })
+    })
+
+    libTemplate.setResource("MyResource2", new Cf.AWS.S3.Bucket({ BucketName: "MyBucket2b" }))
+
+    expect(libTemplate.Resources["MyResource1"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource1"]["Properties"]["BucketName"]).toBe("MyBucket1")
+    expect(libTemplate.Resources["MyResource2"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource2"]["Properties"]["BucketName"]).toBe("MyBucket2b")
+})
+
+test('When addResource is called for a nonexistent key then it is added', () => {
+
+    let libTemplate = new Template({
+        MyResource1: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket1" })
+    })
+
+    libTemplate.addResource("MyResource2", new Cf.AWS.S3.Bucket({ BucketName: "MyBucket2" }))
+
+    expect(libTemplate.Resources["MyResource1"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource1"]["Properties"]["BucketName"]).toBe("MyBucket1")
+    expect(libTemplate.Resources["MyResource2"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource2"]["Properties"]["BucketName"]).toBe("MyBucket2")
+})
+
+test('When addResource is called for a existing key then an error is thrown', () => {
+
+    let libTemplate = new Template({
+        MyResource1: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket1a" })
+    })
+
+    expect(() => {
+        libTemplate.addResource("MyResource1", new Cf.AWS.S3.Bucket({ BucketName: "MyBucket1b" }))
+    }).toThrowError("A resource with the logical ID 'MyResource1' already exists")
+
+    expect(libTemplate.Resources["MyResource1"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource1"]["Properties"]["BucketName"]).toBe("MyBucket1a")
+})
+
+test('When addResources is called for multiple nonexistent keys then multiple resources are added', () => {
+
+    let libTemplate = new Template({
+        MyResource1: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket1" })
+    })
+
+    libTemplate.addResources({
+        MyResource2: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket2" }),
+        MyResource3: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket3" })
+    })
+
+    expect(libTemplate.Resources["MyResource1"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource1"]["Properties"]["BucketName"]).toBe("MyBucket1")
+    expect(libTemplate.Resources["MyResource2"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource2"]["Properties"]["BucketName"]).toBe("MyBucket2")
+    expect(libTemplate.Resources["MyResource3"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource3"]["Properties"]["BucketName"]).toBe("MyBucket3")
+})
+
+test('When addResources is called for multiple nonexistent keys and one existing key then error is thrown and none are added', () => {
+
+    let libTemplate = new Template({
+        MyResource1: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket1a" })
+    })
+
+    expect(() => {
+        libTemplate.addResources({
+            MyResource2: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket2" }),
+            MyResource1: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket1b" }),
+            MyResource3: new Cf.AWS.S3.Bucket({ BucketName: "MyBucket3" })
+        })
+    }).toThrowError("A resource with the logical ID 'MyResource1' already exists")
+
+    expect(libTemplate.Resources["MyResource1"]).toBeDefined()
+    expect(libTemplate.Resources["MyResource1"]["Properties"]["BucketName"]).toBe("MyBucket1a")
+    expect(libTemplate.Resources["MyResource2"]).not.toBeDefined()
+    expect(libTemplate.Resources["MyResource3"]).not.toBeDefined()
+})
+
 test('When json is called, valid JSON is returned', () => {
     
     let template = new Template({

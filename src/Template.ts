@@ -120,12 +120,53 @@ export class Template {
      * template.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
-     * @param {string} name The logical name of the resource in the template
+     * @param {string} key The logical ID of the resource in the template
      * @param {Resource} resourceDescription The resource description object
      * @returns {Template} This template
      */
-    setResource(name: string, resourceDescription: Resource): Template {
-        this.Resources[name] = resourceDescription;
+    setResource(key: string, resourceDescription: Resource): Template {
+        this.Resources[key] = resourceDescription;
+        return this;
+    }
+
+    /**
+     * Builder pattern method which inserts a resource on the template.
+     * Unlike {@link setResource}, this method throws an exception if a
+     * resource with the given logical ID already exists.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+     * @param {string} key The logical ID of the resource in the template
+     * @param {Resource} resourceDescription The resource description object
+     * @returns {Template} This template
+     */
+    addResource(key: string, resourceDescription: Resource): Template {
+        if (this.Resources.hasOwnProperty(key)) {
+            throw new Error(`A resource with the logical ID '${key}' already exists`)
+        }
+        this.Resources[key] = resourceDescription;
+        return this;
+    }
+    
+    /**
+     * Builder pattern method which inserts a set of resources on the template.
+     * This method throws an error if any resource keys (logical IDs) are given
+     * which already exist in the template.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+     * @param resources An object containing the resources to add
+     * @returns {Template} This template
+     */
+    addResources(resources: {[key: string]: Resource}): Template {
+
+        let existingKeys = Object.keys(resources).filter(k => this.Resources.hasOwnProperty(k))
+        
+        if (existingKeys.length > 0) {
+            throw new Error(`A resource with the logical ID '${existingKeys[0]}' already exists`)
+        }
+
+        for (let key in resources) {
+            this.Resources[key] = resources[key]
+        }
         return this;
     }
 
