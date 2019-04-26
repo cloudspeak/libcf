@@ -60,7 +60,7 @@ The `Template` class and resource classes naturally serialize to valid CloudForm
 
 ## Other template properties
 
-Libcf does not yet provide strong typing for template properties other than `Resources`, such as `Metadata`, `Outputs`, etc., however these properties do exist on the template class.  There are also methods named `setMetadata`, `setOutputs`, etc. which return the template object, thus allowing them to be used in a builder-like pattern:
+Libcf does not yet provide strong typing for template attributes other than `Resources`, such as `Metadata`, `Outputs`, etc., however these attributes do exist on the template class.  There are also methods named `setMetadata`, `setOutputs`, etc. which return the template object, thus allowing them to be used in a builder-like pattern:
 
 ```javascript
 let template = new Template({
@@ -112,7 +112,7 @@ Note that the property type name (`KeySchema`) is prefixed by the resource type 
 
 ## Other resource properties
 
-Libcf does not yet provide strong typing for resource properties other than `Properties`, such as `CreationPolicy`, `DependsOn`, etc., however these properties do exist on all resource classes.  There are also methods named `setCreationPolicy`, `setDependsOn`, etc. which return the resource object, thus allowing them to be used in a builder-like pattern:
+Libcf does not yet provide strong typing for resource attributes other than `Properties`, such as `CreationPolicy`, `DependsOn`, etc., however these attributes do exist on all resource classes.  There are also methods named `setCreationPolicy`, `setDependsOn`, etc. which return the resource object, thus allowing them to be used in a builder-like pattern:
 
 ```javascript
 let template = new Template({
