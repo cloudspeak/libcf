@@ -1,3 +1,13 @@
+/**
+ * @file Interface which represents a CloudFormation resource.
+ */
+
+
+/**
+ * Represents a CloudFormation resource, as specified by the CloudFormation template specification.
+ * 
+ * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+ */
 export interface Resource {
     Type: string
     Properties: any
