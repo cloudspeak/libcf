@@ -1,8 +1,12 @@
+/**
+ * @file Class which represents a CloudFormation Template.
+ */
+
 import { Resource } from "./Resource";
 
  /**
-  * Represents a CloudFormation template.  Resources can be added to the template either by using
-  * the constructor:
+  * Represents a CloudFormation template, as specified by the CloudFormation template
+  * specification. Resources can be added to the template either by using the constructor:
   * 
   * ```
   * new cf.Template({
@@ -12,21 +16,21 @@ import { Resource } from "./Resource";
   * })
   * ```
   * 
-  * or by using the `setResource` builder method:
+  * or by using the {@link setResource} builder method:
   * 
   * ```
   * new cf.Template()
   *     .setResource("MyBucket", new cf.AWS.S3.Bucket({
-  *                 BucketName: "MyTestBucket"
-  *             })
+  *         BucketName: "MyTestBucket"
+  *     })
   * ```
   * 
   * The Template class naturally has the same structure as a CloudFormation template so can be
-  * serialised directly to JSON, although the `json` accessor is also provided for
-  * convenience.
+  * serialized directly to JSON, although the {@link json} and {@link prettyJson} accessors are
+  * also provided for convenience.
   * 
-  * By default, the template version will be set to the default value.  This can be overidden
-  * using the `setVersion` or `clearVersion` methods.
+  * By default, the template version will be set to the default value.  This can be overridden
+  * using the {@link setVersion} or {@link clearVersion} methods.
   * 
   */
 export class Template {
@@ -52,7 +56,7 @@ export class Template {
     /**
      * Create a new CloudFormation template from the given resources.
      * 
-     * The template will be given the default template version.
+     * The template will assume the [default template version]{@link AWSTemplateFormatVersion}.
      * @param {object} [resources] The template resources
      */
     constructor(resources: {[key: string]: Resource}) {
@@ -64,7 +68,7 @@ export class Template {
     }
 
     /**
-     * Returns the template as a JSON string
+     * Returns the template as a JSON string.
      * @returns {string}
      */
     get json(): string {
@@ -72,7 +76,7 @@ export class Template {
     }
 
     /**
-     * Returns the template as a formatted JSON string
+     * Returns the template as a formatted JSON string.
      * @returns {string}
      */
     get prettyJson(): string {
@@ -80,7 +84,7 @@ export class Template {
     }
 
     /**
-     * Builder pattern method which sets the template version
+     * Builder pattern method which sets the template version.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html
      * @param {string} version Template version
@@ -92,8 +96,9 @@ export class Template {
     }
 
     /**
-     * Builder pattern method which clears the template version.  The version is set by default,
-     * so this method allows the version field to be removed.
+     * Builder pattern method which clears the template version.  When you construct a new
+     * `Template`, the version is set to the default value, so this method allows the version
+     * field to be removed if desired.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html
      * @returns {Template} This template
@@ -104,7 +109,7 @@ export class Template {
     }
 
     /**
-     * Builder pattern method which sets the template description
+     * Builder pattern method which sets the template description.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-description-structure.html
      * @param {string} description Template description
@@ -116,8 +121,7 @@ export class Template {
     }
 
     /**
-     * Builder pattern method which inserts or updates a resource on the
-     * template.
+     * Builder pattern method which inserts or updates a resource on the template.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
      * @param {string} key The logical ID of the resource in the template
@@ -171,7 +175,7 @@ export class Template {
     }
 
     /**
-     * Builder pattern method which sets the template metadata
+     * Builder pattern method which sets the template metadata.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
      * @param {object} metadata Template metadata
@@ -183,7 +187,7 @@ export class Template {
     }
 
     /**
-     * Builder pattern method which sets the template parameters
+     * Builder pattern method which sets the template parameters.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
      * @param {object} parameters Template parameters
@@ -195,7 +199,7 @@ export class Template {
     }
     
     /**
-     * Builder pattern method which sets the template mappings
+     * Builder pattern method which sets the template mappings.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html
      * @param {object} mappings Template mappings
@@ -207,7 +211,7 @@ export class Template {
     }
     
     /**
-     * Builder pattern method which sets the template conditions
+     * Builder pattern method which sets the template conditions.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
      * @param {object} conditions Template conditions
@@ -219,7 +223,7 @@ export class Template {
     }
 
     /**
-     * Builder pattern method which sets the template transforms
+     * Builder pattern method which sets the template transforms.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
      * @param {object} transforms Template transforms
@@ -231,7 +235,7 @@ export class Template {
     }
 
     /**
-     * Builder pattern method which sets the template outputs
+     * Builder pattern method which sets the template outputs.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
      * @param {object} outputs Template outputs
