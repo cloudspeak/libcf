@@ -328,7 +328,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html
          */
         constructor(properties: ConfigurationTemplateProperties) {
-            this.Type = "AWS::ElasticBeanstalk::ConfigurationTemplate";
+            this.Type = ConfigurationTemplate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -434,7 +434,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html
          */
         constructor(properties: ApplicationProperties) {
-            this.Type = "AWS::ElasticBeanstalk::Application";
+            this.Type = Application.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -640,7 +640,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html
          */
         constructor(properties: EnvironmentProperties) {
-            this.Type = "AWS::ElasticBeanstalk::Environment";
+            this.Type = Environment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -746,7 +746,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html
          */
         constructor(properties: ApplicationVersionProperties) {
-            this.Type = "AWS::ElasticBeanstalk::ApplicationVersion";
+            this.Type = ApplicationVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -1106,7 +1106,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html
          */
         constructor(properties: BrokerProperties) {
-            this.Type = "AWS::AmazonMQ::Broker";
+            this.Type = Broker.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -1245,7 +1245,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html
          */
         constructor(properties: ConfigurationAssociationProperties) {
-            this.Type = "AWS::AmazonMQ::ConfigurationAssociation";
+            this.Type = ConfigurationAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -1364,7 +1364,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html
          */
         constructor(properties: ConfigurationProperties) {
-            this.Type = "AWS::AmazonMQ::Configuration";
+            this.Type = Configuration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -1815,7 +1815,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html
          */
         constructor(properties: DataSourceProperties) {
-            this.Type = "AWS::AppSync::DataSource";
+            this.Type = DataSource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -2068,7 +2068,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html
          */
         constructor(properties: ResolverProperties) {
-            this.Type = "AWS::AppSync::Resolver";
+            this.Type = Resolver.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -2160,7 +2160,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html
          */
         constructor(properties: GraphQLSchemaProperties) {
-            this.Type = "AWS::AppSync::GraphQLSchema";
+            this.Type = GraphQLSchema.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -2256,7 +2256,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html
          */
         constructor(properties: GraphQLApiProperties) {
-            this.Type = "AWS::AppSync::GraphQLApi";
+            this.Type = GraphQLApi.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -2430,7 +2430,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-functionconfiguration.html
          */
         constructor(properties: FunctionConfigurationProperties) {
-            this.Type = "AWS::AppSync::FunctionConfiguration";
+            this.Type = FunctionConfiguration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -2508,7 +2508,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html
          */
         constructor(properties: ApiKeyProperties) {
-            this.Type = "AWS::AppSync::ApiKey";
+            this.Type = ApiKey.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -4905,7 +4905,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route-table.html
          */
         constructor(properties: RouteTableProperties) {
-            this.Type = "AWS::EC2::RouteTable";
+            this.Type = RouteTable.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5010,7 +5010,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html
          */
         constructor(properties: VPCPeeringConnectionProperties) {
-            this.Type = "AWS::EC2::VPCPeeringConnection";
+            this.Type = VPCPeeringConnection.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5070,7 +5070,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html
          */
         constructor(properties: PlacementGroupProperties) {
-            this.Type = "AWS::EC2::PlacementGroup";
+            this.Type = PlacementGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5193,7 +5193,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgateway.html
          */
         constructor(properties: TransitGatewayProperties) {
-            this.Type = "AWS::EC2::TransitGateway";
+            this.Type = TransitGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5262,7 +5262,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html
          */
         constructor(properties: VPCEndpointServicePermissionsProperties) {
-            this.Type = "AWS::EC2::VPCEndpointServicePermissions";
+            this.Type = VPCEndpointServicePermissions.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5394,7 +5394,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html
          */
         constructor(properties: NetworkAclEntryProperties) {
-            this.Type = "AWS::EC2::NetworkAclEntry";
+            this.Type = NetworkAclEntry.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5482,7 +5482,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-internetgateway.html
          */
         constructor(properties: InternetGatewayProperties) {
-            this.Type = "AWS::EC2::InternetGateway";
+            this.Type = InternetGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5551,7 +5551,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html
          */
         constructor(properties: LaunchTemplateProperties) {
-            this.Type = "AWS::EC2::LaunchTemplate";
+            this.Type = LaunchTemplate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5977,7 +5977,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html
          */
         constructor(properties: VolumeProperties) {
-            this.Type = "AWS::EC2::Volume";
+            this.Type = Volume.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6046,7 +6046,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetableassociation.html
          */
         constructor(properties: TransitGatewayRouteTableAssociationProperties) {
-            this.Type = "AWS::EC2::TransitGatewayRouteTableAssociation";
+            this.Type = TransitGatewayRouteTableAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6106,7 +6106,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-spotfleet.html
          */
         constructor(properties: SpotFleetProperties) {
-            this.Type = "AWS::EC2::SpotFleet";
+            this.Type = SpotFleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6455,7 +6455,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html
          */
         constructor(properties: VPNConnectionRouteProperties) {
-            this.Type = "AWS::EC2::VPNConnectionRoute";
+            this.Type = VPNConnectionRoute.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6533,7 +6533,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html
          */
         constructor(properties: NetworkInterfacePermissionProperties) {
-            this.Type = "AWS::EC2::NetworkInterfacePermission";
+            this.Type = NetworkInterfacePermission.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6611,7 +6611,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html
          */
         constructor(properties: EIPProperties) {
-            this.Type = "AWS::EC2::EIP";
+            this.Type = EIP.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6770,7 +6770,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html
          */
         constructor(properties: SecurityGroupIngressProperties) {
-            this.Type = "AWS::EC2::SecurityGroupIngress";
+            this.Type = SecurityGroupIngress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6839,7 +6839,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html
          */
         constructor(properties: SubnetRouteTableAssociationProperties) {
-            this.Type = "AWS::EC2::SubnetRouteTableAssociation";
+            this.Type = SubnetRouteTableAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6971,7 +6971,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html
          */
         constructor(properties: RouteProperties) {
-            this.Type = "AWS::EC2::Route";
+            this.Type = Route.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7085,7 +7085,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html
          */
         constructor(properties: FlowLogProperties) {
-            this.Type = "AWS::EC2::FlowLog";
+            this.Type = FlowLog.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7154,7 +7154,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetablepropagation.html
          */
         constructor(properties: TransitGatewayRouteTablePropagationProperties) {
-            this.Type = "AWS::EC2::TransitGatewayRouteTablePropagation";
+            this.Type = TransitGatewayRouteTablePropagation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7286,7 +7286,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html
          */
         constructor(properties: SecurityGroupEgressProperties) {
-            this.Type = "AWS::EC2::SecurityGroupEgress";
+            this.Type = SecurityGroupEgress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7436,7 +7436,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html
          */
         constructor(properties: NetworkInterfaceProperties) {
-            this.Type = "AWS::EC2::NetworkInterface";
+            this.Type = NetworkInterface.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7551,7 +7551,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayattachment.html
          */
         constructor(properties: TransitGatewayAttachmentProperties) {
-            this.Type = "AWS::EC2::TransitGatewayAttachment";
+            this.Type = TransitGatewayAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7620,7 +7620,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html
          */
         constructor(properties: SubnetNetworkAclAssociationProperties) {
-            this.Type = "AWS::EC2::SubnetNetworkAclAssociation";
+            this.Type = SubnetNetworkAclAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7689,7 +7689,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetcidrblock.html
          */
         constructor(properties: SubnetCidrBlockProperties) {
-            this.Type = "AWS::EC2::SubnetCidrBlock";
+            this.Type = SubnetCidrBlock.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7767,7 +7767,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html
          */
         constructor(properties: NatGatewayProperties) {
-            this.Type = "AWS::EC2::NatGateway";
+            this.Type = NatGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7872,7 +7872,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html
          */
         constructor(properties: SecurityGroupProperties) {
-            this.Type = "AWS::EC2::SecurityGroup";
+            this.Type = SecurityGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8014,7 +8014,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html
          */
         constructor(properties: SubnetProperties) {
-            this.Type = "AWS::EC2::Subnet";
+            this.Type = Subnet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8110,7 +8110,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html
          */
         constructor(properties: VPCProperties) {
-            this.Type = "AWS::EC2::VPC";
+            this.Type = VPC.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8467,7 +8467,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html
          */
         constructor(properties: InstanceProperties) {
-            this.Type = "AWS::EC2::Instance";
+            this.Type = Instance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8768,7 +8768,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html
          */
         constructor(properties: DHCPOptionsProperties) {
-            this.Type = "AWS::EC2::DHCPOptions";
+            this.Type = DHCPOptions.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8855,7 +8855,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroute.html
          */
         constructor(properties: TransitGatewayRouteProperties) {
-            this.Type = "AWS::EC2::TransitGatewayRoute";
+            this.Type = TransitGatewayRoute.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8924,7 +8924,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html
          */
         constructor(properties: NetworkAclProperties) {
-            this.Type = "AWS::EC2::NetworkAcl";
+            this.Type = NetworkAcl.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8993,7 +8993,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html
          */
         constructor(properties: VPNGatewayRoutePropagationProperties) {
-            this.Type = "AWS::EC2::VPNGatewayRoutePropagation";
+            this.Type = VPNGatewayRoutePropagation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9053,7 +9053,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-egressonlyinternetgateway.html
          */
         constructor(properties: EgressOnlyInternetGatewayProperties) {
-            this.Type = "AWS::EC2::EgressOnlyInternetGateway";
+            this.Type = EgressOnlyInternetGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9140,7 +9140,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html
          */
         constructor(properties: NetworkInterfaceAttachmentProperties) {
-            this.Type = "AWS::EC2::NetworkInterfaceAttachment";
+            this.Type = NetworkInterfaceAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9227,7 +9227,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html
          */
         constructor(properties: CustomerGatewayProperties) {
-            this.Type = "AWS::EC2::CustomerGateway";
+            this.Type = CustomerGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9314,7 +9314,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html
          */
         constructor(properties: TrunkInterfaceAssociationProperties) {
-            this.Type = "AWS::EC2::TrunkInterfaceAssociation";
+            this.Type = TrunkInterfaceAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9392,7 +9392,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html
          */
         constructor(properties: VolumeAttachmentProperties) {
-            this.Type = "AWS::EC2::VolumeAttachment";
+            this.Type = VolumeAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9470,7 +9470,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html
          */
         constructor(properties: HostProperties) {
-            this.Type = "AWS::EC2::Host";
+            this.Type = Host.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9566,7 +9566,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html
          */
         constructor(properties: EIPAssociationProperties) {
-            this.Type = "AWS::EC2::EIPAssociation";
+            this.Type = EIPAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9644,7 +9644,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html
          */
         constructor(properties: VPNGatewayProperties) {
-            this.Type = "AWS::EC2::VPNGateway";
+            this.Type = VPNGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9767,7 +9767,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html
          */
         constructor(properties: VPCEndpointProperties) {
-            this.Type = "AWS::EC2::VPCEndpoint";
+            this.Type = VPCEndpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9845,7 +9845,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html
          */
         constructor(properties: VPCGatewayAttachmentProperties) {
-            this.Type = "AWS::EC2::VPCGatewayAttachment";
+            this.Type = VPCGatewayAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9950,7 +9950,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html
          */
         constructor(properties: VPNConnectionProperties) {
-            this.Type = "AWS::EC2::VPNConnection";
+            this.Type = VPNConnection.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10042,7 +10042,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html
          */
         constructor(properties: VPCCidrBlockProperties) {
-            this.Type = "AWS::EC2::VPCCidrBlock";
+            this.Type = VPCCidrBlock.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10192,7 +10192,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html
          */
         constructor(properties: EC2FleetProperties) {
-            this.Type = "AWS::EC2::EC2Fleet";
+            this.Type = EC2Fleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10373,7 +10373,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetable.html
          */
         constructor(properties: TransitGatewayRouteTableProperties) {
-            this.Type = "AWS::EC2::TransitGatewayRouteTable";
+            this.Type = TransitGatewayRouteTable.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10442,7 +10442,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html
          */
         constructor(properties: VPCDHCPOptionsAssociationProperties) {
-            this.Type = "AWS::EC2::VPCDHCPOptionsAssociation";
+            this.Type = VPCDHCPOptionsAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10571,7 +10571,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html
          */
         constructor(properties: PortfolioShareProperties) {
-            this.Type = "AWS::ServiceCatalog::PortfolioShare";
+            this.Type = PortfolioShare.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10640,7 +10640,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html
          */
         constructor(properties: TagOptionAssociationProperties) {
-            this.Type = "AWS::ServiceCatalog::TagOptionAssociation";
+            this.Type = TagOptionAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10736,7 +10736,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html
          */
         constructor(properties: LaunchTemplateConstraintProperties) {
-            this.Type = "AWS::ServiceCatalog::LaunchTemplateConstraint";
+            this.Type = LaunchTemplateConstraint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10814,7 +10814,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html
          */
         constructor(properties: TagOptionProperties) {
-            this.Type = "AWS::ServiceCatalog::TagOption";
+            this.Type = TagOption.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10901,7 +10901,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html
          */
         constructor(properties: PortfolioPrincipalAssociationProperties) {
-            this.Type = "AWS::ServiceCatalog::PortfolioPrincipalAssociation";
+            this.Type = PortfolioPrincipalAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10997,7 +10997,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html
          */
         constructor(properties: LaunchRoleConstraintProperties) {
-            this.Type = "AWS::ServiceCatalog::LaunchRoleConstraint";
+            this.Type = LaunchRoleConstraint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11138,7 +11138,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html
          */
         constructor(properties: CloudFormationProvisionedProductProperties) {
-            this.Type = "AWS::ServiceCatalog::CloudFormationProvisionedProduct";
+            this.Type = CloudFormationProvisionedProduct.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11293,7 +11293,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html
          */
         constructor(properties: CloudFormationProductProperties) {
-            this.Type = "AWS::ServiceCatalog::CloudFormationProduct";
+            this.Type = CloudFormationProduct.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11394,7 +11394,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html
          */
         constructor(properties: PortfolioProductAssociationProperties) {
-            this.Type = "AWS::ServiceCatalog::PortfolioProductAssociation";
+            this.Type = PortfolioProductAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11490,7 +11490,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html
          */
         constructor(properties: PortfolioProperties) {
-            this.Type = "AWS::ServiceCatalog::Portfolio";
+            this.Type = Portfolio.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11559,7 +11559,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html
          */
         constructor(properties: AcceptedPortfolioShareProperties) {
-            this.Type = "AWS::ServiceCatalog::AcceptedPortfolioShare";
+            this.Type = AcceptedPortfolioShare.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11655,7 +11655,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html
          */
         constructor(properties: LaunchNotificationConstraintProperties) {
-            this.Type = "AWS::ServiceCatalog::LaunchNotificationConstraint";
+            this.Type = LaunchNotificationConstraint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12266,7 +12266,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html
          */
         constructor(properties: IdentityPoolRoleAttachmentProperties) {
-            this.Type = "AWS::Cognito::IdentityPoolRoleAttachment";
+            this.Type = IdentityPoolRoleAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12404,7 +12404,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html
          */
         constructor(properties: UserPoolGroupProperties) {
-            this.Type = "AWS::Cognito::UserPoolGroup";
+            this.Type = UserPoolGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12545,7 +12545,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html
          */
         constructor(properties: IdentityPoolProperties) {
-            this.Type = "AWS::Cognito::IdentityPool";
+            this.Type = IdentityPool.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12701,7 +12701,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html
          */
         constructor(properties: UserPoolUserProperties) {
-            this.Type = "AWS::Cognito::UserPoolUser";
+            this.Type = UserPoolUser.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12919,7 +12919,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html
          */
         constructor(properties: UserPoolProperties) {
-            this.Type = "AWS::Cognito::UserPool";
+            this.Type = UserPool.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13187,7 +13187,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html
          */
         constructor(properties: UserPoolClientProperties) {
-            this.Type = "AWS::Cognito::UserPoolClient";
+            this.Type = UserPoolClient.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13265,7 +13265,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html
          */
         constructor(properties: UserPoolUserToGroupAttachmentProperties) {
-            this.Type = "AWS::Cognito::UserPoolUserToGroupAttachment";
+            this.Type = UserPoolUserToGroupAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13595,7 +13595,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html
          */
         constructor(properties: RuleProperties) {
-            this.Type = "AWS::Events::Rule";
+            this.Type = Rule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13780,7 +13780,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html
          */
         constructor(properties: EventBusPolicyProperties) {
-            this.Type = "AWS::Events::EventBusPolicy";
+            this.Type = EventBusPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14159,7 +14159,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html
          */
         constructor(properties: IPSetProperties) {
-            this.Type = "AWS::WAF::IPSet";
+            this.Type = IPSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14242,7 +14242,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html
          */
         constructor(properties: SizeConstraintSetProperties) {
-            this.Type = "AWS::WAF::SizeConstraintSet";
+            this.Type = SizeConstraintSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14348,7 +14348,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html
          */
         constructor(properties: RuleProperties) {
-            this.Type = "AWS::WAF::Rule";
+            this.Type = Rule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14431,7 +14431,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html
          */
         constructor(properties: ByteMatchSetProperties) {
-            this.Type = "AWS::WAF::ByteMatchSet";
+            this.Type = ByteMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14528,7 +14528,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html
          */
         constructor(properties: SqlInjectionMatchSetProperties) {
-            this.Type = "AWS::WAF::SqlInjectionMatchSet";
+            this.Type = SqlInjectionMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14643,7 +14643,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html
          */
         constructor(properties: WebACLProperties) {
-            this.Type = "AWS::WAF::WebACL";
+            this.Type = WebACL.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14740,7 +14740,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html
          */
         constructor(properties: XssMatchSetProperties) {
-            this.Type = "AWS::WAF::XssMatchSet";
+            this.Type = XssMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14937,7 +14937,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html
          */
         constructor(properties: GroupProperties) {
-            this.Type = "AWS::IAM::Group";
+            this.Type = Group.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15047,7 +15047,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html
          */
         constructor(properties: PolicyProperties) {
-            this.Type = "AWS::IAM::Policy";
+            this.Type = Policy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15161,7 +15161,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
          */
         constructor(properties: RoleProperties) {
-            this.Type = "AWS::IAM::Role";
+            this.Type = Role.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15253,7 +15253,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html
          */
         constructor(properties: ServiceLinkedRoleProperties) {
-            this.Type = "AWS::IAM::ServiceLinkedRole";
+            this.Type = ServiceLinkedRole.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15322,7 +15322,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html
          */
         constructor(properties: UserToGroupAdditionProperties) {
-            this.Type = "AWS::IAM::UserToGroupAddition";
+            this.Type = UserToGroupAddition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15400,7 +15400,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html
          */
         constructor(properties: InstanceProfileProperties) {
-            this.Type = "AWS::IAM::InstanceProfile";
+            this.Type = InstanceProfile.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15478,7 +15478,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html
          */
         constructor(properties: AccessKeyProperties) {
-            this.Type = "AWS::IAM::AccessKey";
+            this.Type = AccessKey.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15592,7 +15592,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html
          */
         constructor(properties: UserProperties) {
-            this.Type = "AWS::IAM::User";
+            this.Type = User.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15734,7 +15734,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html
          */
         constructor(properties: ManagedPolicyProperties) {
-            this.Type = "AWS::IAM::ManagedPolicy";
+            this.Type = ManagedPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -16285,7 +16285,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html
          */
         constructor(properties: CustomActionTypeProperties) {
-            this.Type = "AWS::CodePipeline::CustomActionType";
+            this.Type = CustomActionType.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -16450,7 +16450,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html
          */
         constructor(properties: WebhookProperties) {
-            this.Type = "AWS::CodePipeline::Webhook";
+            this.Type = Webhook.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -16592,7 +16592,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html
          */
         constructor(properties: PipelineProperties) {
-            this.Type = "AWS::CodePipeline::Pipeline";
+            this.Type = Pipeline.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17040,7 +17040,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html
          */
         constructor(properties: DomainProperties) {
-            this.Type = "AWS::Elasticsearch::Domain";
+            this.Type = Domain.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18115,7 +18115,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html
          */
         constructor(properties: RequestValidatorProperties) {
-            this.Type = "AWS::ApiGateway::RequestValidator";
+            this.Type = RequestValidator.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18211,7 +18211,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html
          */
         constructor(properties: DeploymentProperties) {
-            this.Type = "AWS::ApiGateway::Deployment";
+            this.Type = Deployment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18422,7 +18422,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html
          */
         constructor(properties: AuthorizerProperties) {
-            this.Type = "AWS::ApiGateway::Authorizer";
+            this.Type = Authorizer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18509,7 +18509,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html
          */
         constructor(properties: DomainNameProperties) {
-            this.Type = "AWS::ApiGateway::DomainName";
+            this.Type = DomainName.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18601,7 +18601,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html
          */
         constructor(properties: DocumentationPartProperties) {
-            this.Type = "AWS::ApiGateway::DocumentationPart";
+            this.Type = DocumentationPart.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18729,7 +18729,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html
          */
         constructor(properties: ApiKeyProperties) {
-            this.Type = "AWS::ApiGateway::ApiKey";
+            this.Type = ApiKey.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18839,7 +18839,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html
          */
         constructor(properties: ModelProperties) {
-            this.Type = "AWS::ApiGateway::Model";
+            this.Type = Model.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18917,7 +18917,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html
          */
         constructor(properties: ResourceProperties) {
-            this.Type = "AWS::ApiGateway::Resource";
+            this.Type = Resource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18977,7 +18977,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html
          */
         constructor(properties: AccountProperties) {
-            this.Type = "AWS::ApiGateway::Account";
+            this.Type = Account.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19136,7 +19136,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html
          */
         constructor(properties: RestApiProperties) {
-            this.Type = "AWS::ApiGateway::RestApi";
+            this.Type = RestApi.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19260,7 +19260,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html
          */
         constructor(properties: UsagePlanProperties) {
-            this.Type = "AWS::ApiGateway::UsagePlan";
+            this.Type = UsagePlan.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19389,7 +19389,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html
          */
         constructor(properties: BasePathMappingProperties) {
-            this.Type = "AWS::ApiGateway::BasePathMapping";
+            this.Type = BasePathMapping.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19566,7 +19566,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html
          */
         constructor(properties: StageProperties) {
-            this.Type = "AWS::ApiGateway::Stage";
+            this.Type = Stage.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19686,7 +19686,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html
          */
         constructor(properties: VpcLinkProperties) {
-            this.Type = "AWS::ApiGateway::VpcLink";
+            this.Type = VpcLink.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19782,7 +19782,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html
          */
         constructor(properties: GatewayResponseProperties) {
-            this.Type = "AWS::ApiGateway::GatewayResponse";
+            this.Type = GatewayResponse.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19950,7 +19950,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
          */
         constructor(properties: MethodProperties) {
-            this.Type = "AWS::ApiGateway::Method";
+            this.Type = Method.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20052,7 +20052,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-clientcertificate.html
          */
         constructor(properties: ClientCertificateProperties) {
-            this.Type = "AWS::ApiGateway::ClientCertificate";
+            this.Type = ClientCertificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20130,7 +20130,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html
          */
         constructor(properties: DocumentationVersionProperties) {
-            this.Type = "AWS::ApiGateway::DocumentationVersion";
+            this.Type = DocumentationVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20208,7 +20208,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html
          */
         constructor(properties: UsagePlanKeyProperties) {
-            this.Type = "AWS::ApiGateway::UsagePlanKey";
+            this.Type = UsagePlanKey.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20573,7 +20573,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html
          */
         constructor(properties: SizeConstraintSetProperties) {
-            this.Type = "AWS::WAFRegional::SizeConstraintSet";
+            this.Type = SizeConstraintSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20670,7 +20670,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html
          */
         constructor(properties: SqlInjectionMatchSetProperties) {
-            this.Type = "AWS::WAFRegional::SqlInjectionMatchSet";
+            this.Type = SqlInjectionMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20767,7 +20767,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html
          */
         constructor(properties: XssMatchSetProperties) {
-            this.Type = "AWS::WAFRegional::XssMatchSet";
+            this.Type = XssMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20864,7 +20864,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html
          */
         constructor(properties: ByteMatchSetProperties) {
-            this.Type = "AWS::WAFRegional::ByteMatchSet";
+            this.Type = ByteMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20961,7 +20961,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html
          */
         constructor(properties: WebACLAssociationProperties) {
-            this.Type = "AWS::WAFRegional::WebACLAssociation";
+            this.Type = WebACLAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -21048,7 +21048,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html
          */
         constructor(properties: WebACLProperties) {
-            this.Type = "AWS::WAFRegional::WebACL";
+            this.Type = WebACL.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -21154,7 +21154,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html
          */
         constructor(properties: RuleProperties) {
-            this.Type = "AWS::WAFRegional::Rule";
+            this.Type = Rule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -21237,7 +21237,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ipset.html
          */
         constructor(properties: IPSetProperties) {
-            this.Type = "AWS::WAFRegional::IPSet";
+            this.Type = IPSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -21521,7 +21521,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html
          */
         constructor(properties: DBSecurityGroupIngressProperties) {
-            this.Type = "AWS::RDS::DBSecurityGroupIngress";
+            this.Type = DBSecurityGroupIngress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -21806,7 +21806,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html
          */
         constructor(properties: DBClusterProperties) {
-            this.Type = "AWS::RDS::DBCluster";
+            this.Type = DBCluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -21907,7 +21907,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html
          */
         constructor(properties: DBSubnetGroupProperties) {
-            this.Type = "AWS::RDS::DBSubnetGroup";
+            this.Type = DBSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -22003,7 +22003,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html
          */
         constructor(properties: OptionGroupProperties) {
-            this.Type = "AWS::RDS::OptionGroup";
+            this.Type = OptionGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -22118,7 +22118,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html
          */
         constructor(properties: DBParameterGroupProperties) {
-            this.Type = "AWS::RDS::DBParameterGroup";
+            this.Type = DBParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -22214,7 +22214,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html
          */
         constructor(properties: EventSubscriptionProperties) {
-            this.Type = "AWS::RDS::EventSubscription";
+            this.Type = EventSubscription.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -22706,7 +22706,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html
          */
         constructor(properties: DBInstanceProperties) {
-            this.Type = "AWS::RDS::DBInstance";
+            this.Type = DBInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -22807,7 +22807,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html
          */
         constructor(properties: DBSecurityGroupProperties) {
-            this.Type = "AWS::RDS::DBSecurityGroup";
+            this.Type = DBSecurityGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -22908,7 +22908,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html
          */
         constructor(properties: DBClusterParameterGroupProperties) {
-            this.Type = "AWS::RDS::DBClusterParameterGroup";
+            this.Type = DBClusterParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24531,7 +24531,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html
          */
         constructor(properties: InstanceFleetConfigProperties) {
-            this.Type = "AWS::EMR::InstanceFleetConfig";
+            this.Type = InstanceFleetConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24851,7 +24851,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html
          */
         constructor(properties: ClusterProperties) {
-            this.Type = "AWS::EMR::Cluster";
+            this.Type = Cluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -25356,7 +25356,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html
          */
         constructor(properties: InstanceGroupConfigProperties) {
-            this.Type = "AWS::EMR::InstanceGroupConfig";
+            this.Type = InstanceGroupConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -25611,7 +25611,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html
          */
         constructor(properties: StepProperties) {
-            this.Type = "AWS::EMR::Step";
+            this.Type = Step.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -25708,7 +25708,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html
          */
         constructor(properties: SecurityConfigurationProperties) {
-            this.Type = "AWS::EMR::SecurityConfiguration";
+            this.Type = SecurityConfiguration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -25880,7 +25880,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html
          */
         constructor(properties: WorkspaceProperties) {
-            this.Type = "AWS::WorkSpaces::Workspace";
+            this.Type = Workspace.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26144,7 +26144,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-route.html
          */
         constructor(properties: RouteProperties) {
-            this.Type = "AWS::ApiGatewayV2::Route";
+            this.Type = Route.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26326,7 +26326,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html
          */
         constructor(properties: IntegrationProperties) {
-            this.Type = "AWS::ApiGatewayV2::Integration";
+            this.Type = Integration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26458,7 +26458,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html
          */
         constructor(properties: StageProperties) {
-            this.Type = "AWS::ApiGatewayV2::Stage";
+            this.Type = Stage.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26564,7 +26564,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-deployment.html
          */
         constructor(properties: DeploymentProperties) {
-            this.Type = "AWS::ApiGatewayV2::Deployment";
+            this.Type = Deployment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26660,7 +26660,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-model.html
          */
         constructor(properties: ModelProperties) {
-            this.Type = "AWS::ApiGatewayV2::Model";
+            this.Type = Model.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26783,7 +26783,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html
          */
         constructor(properties: AuthorizerProperties) {
-            this.Type = "AWS::ApiGatewayV2::Authorizer";
+            this.Type = Authorizer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26897,7 +26897,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html
          */
         constructor(properties: ApiProperties) {
-            this.Type = "AWS::ApiGatewayV2::Api";
+            this.Type = Api.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27002,7 +27002,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-routeresponse.html
          */
         constructor(properties: RouteResponseProperties) {
-            this.Type = "AWS::ApiGatewayV2::RouteResponse";
+            this.Type = RouteResponse.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27130,7 +27130,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integrationresponse.html
          */
         constructor(properties: IntegrationResponseProperties) {
-            this.Type = "AWS::ApiGatewayV2::IntegrationResponse";
+            this.Type = IntegrationResponse.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27239,7 +27239,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html
          */
         constructor(properties: LogGroupProperties) {
-            this.Type = "AWS::Logs::LogGroup";
+            this.Type = LogGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27317,7 +27317,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html
          */
         constructor(properties: MetricFilterProperties) {
-            this.Type = "AWS::Logs::MetricFilter";
+            this.Type = MetricFilter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27400,7 +27400,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html
          */
         constructor(properties: LogStreamProperties) {
-            this.Type = "AWS::Logs::LogStream";
+            this.Type = LogStream.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27487,7 +27487,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html
          */
         constructor(properties: SubscriptionFilterProperties) {
-            this.Type = "AWS::Logs::SubscriptionFilter";
+            this.Type = SubscriptionFilter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27574,7 +27574,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html
          */
         constructor(properties: DestinationProperties) {
-            this.Type = "AWS::Logs::Destination";
+            this.Type = Destination.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27692,7 +27692,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html
          */
         constructor(properties: StreamProperties) {
-            this.Type = "AWS::Kinesis::Stream";
+            this.Type = Stream.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27775,7 +27775,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-streamconsumer.html
          */
         constructor(properties: StreamConsumerProperties) {
-            this.Type = "AWS::Kinesis::StreamConsumer";
+            this.Type = StreamConsumer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27873,7 +27873,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html
          */
         constructor(properties: ResourceShareProperties) {
-            this.Type = "AWS::RAM::ResourceShare";
+            this.Type = ResourceShare.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -28606,7 +28606,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html
          */
         constructor(properties: LaunchConfigurationProperties) {
-            this.Type = "AWS::AutoScaling::LaunchConfiguration";
+            this.Type = LaunchConfiguration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -28757,7 +28757,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html
          */
         constructor(properties: LifecycleHookProperties) {
-            this.Type = "AWS::AutoScaling::LifecycleHook";
+            this.Type = LifecycleHook.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -28898,7 +28898,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html
          */
         constructor(properties: ScalingPolicyProperties) {
-            this.Type = "AWS::AutoScaling::ScalingPolicy";
+            this.Type = ScalingPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -29217,7 +29217,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html
          */
         constructor(properties: AutoScalingGroupProperties) {
-            this.Type = "AWS::AutoScaling::AutoScalingGroup";
+            this.Type = AutoScalingGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -29457,7 +29457,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html
          */
         constructor(properties: ScheduledActionProperties) {
-            this.Type = "AWS::AutoScaling::ScheduledAction";
+            this.Type = ScheduledAction.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -29618,7 +29618,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html
          */
         constructor(properties: QueueProperties) {
-            this.Type = "AWS::SQS::Queue";
+            this.Type = Queue.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -29687,7 +29687,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html
          */
         constructor(properties: QueuePolicyProperties) {
-            this.Type = "AWS::SQS::QueuePolicy";
+            this.Type = QueuePolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -30010,7 +30010,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html
          */
         constructor(properties: ImageBuilderProperties) {
-            this.Type = "AWS::AppStream::ImageBuilder";
+            this.Type = ImageBuilder.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -30179,7 +30179,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html
          */
         constructor(properties: StackProperties) {
-            this.Type = "AWS::AppStream::Stack";
+            this.Type = Stack.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -30299,7 +30299,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html
          */
         constructor(properties: DirectoryConfigProperties) {
-            this.Type = "AWS::AppStream::DirectoryConfig";
+            this.Type = DirectoryConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -30382,7 +30382,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stackfleetassociation.html
          */
         constructor(properties: StackFleetAssociationProperties) {
-            this.Type = "AWS::AppStream::StackFleetAssociation";
+            this.Type = StackFleetAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -30469,7 +30469,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stackuserassociation.html
          */
         constructor(properties: StackUserAssociationProperties) {
-            this.Type = "AWS::AppStream::StackUserAssociation";
+            this.Type = StackUserAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -30565,7 +30565,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html
          */
         constructor(properties: UserProperties) {
-            this.Type = "AWS::AppStream::User";
+            this.Type = User.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -30733,7 +30733,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html
          */
         constructor(properties: FleetProperties) {
-            this.Type = "AWS::AppStream::Fleet";
+            this.Type = Fleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -31233,7 +31233,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html
          */
         constructor(properties: ScalingPlanProperties) {
-            this.Type = "AWS::AutoScalingPlans::ScalingPlan";
+            this.Type = ScalingPlan.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32048,7 +32048,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html
          */
         constructor(properties: RecordSetProperties) {
-            this.Type = "AWS::Route53::RecordSet";
+            this.Type = RecordSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32172,7 +32172,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html
          */
         constructor(properties: HostedZoneProperties) {
-            this.Type = "AWS::Route53::HostedZone";
+            this.Type = HostedZone.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32315,7 +32315,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html
          */
         constructor(properties: RecordSetGroupProperties) {
-            this.Type = "AWS::Route53::RecordSetGroup";
+            this.Type = RecordSetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32426,7 +32426,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html
          */
         constructor(properties: HealthCheckProperties) {
-            this.Type = "AWS::Route53::HealthCheck";
+            this.Type = HealthCheck.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32673,7 +32673,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html
          */
         constructor(properties: DashboardProperties) {
-            this.Type = "AWS::CloudWatch::Dashboard";
+            this.Type = Dashboard.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32904,7 +32904,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html
          */
         constructor(properties: AlarmProperties) {
-            this.Type = "AWS::CloudWatch::Alarm";
+            this.Type = Alarm.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -33918,7 +33918,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html
          */
         constructor(properties: ClusterProperties) {
-            this.Type = "AWS::ECS::Cluster";
+            this.Type = Cluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -34104,7 +34104,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html
          */
         constructor(properties: ServiceProperties) {
-            this.Type = "AWS::ECS::Service";
+            this.Type = Service.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -34343,7 +34343,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html
          */
         constructor(properties: TaskDefinitionProperties) {
-            this.Type = "AWS::ECS::TaskDefinition";
+            this.Type = TaskDefinition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -35458,7 +35458,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html
          */
         constructor(properties: ListenerCertificateProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::ListenerCertificate";
+            this.Type = ListenerCertificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -35604,7 +35604,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html
          */
         constructor(properties: LoadBalancerProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::LoadBalancer";
+            this.Type = LoadBalancer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -35737,7 +35737,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html
          */
         constructor(properties: ListenerProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::Listener";
+            this.Type = Listener.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -35908,7 +35908,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html
          */
         constructor(properties: ListenerRuleProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::ListenerRule";
+            this.Type = ListenerRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36196,7 +36196,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html
          */
         constructor(properties: TargetGroupProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::TargetGroup";
+            this.Type = TargetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36336,7 +36336,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbparametergroup.html
          */
         constructor(properties: DBParameterGroupProperties) {
-            this.Type = "AWS::Neptune::DBParameterGroup";
+            this.Type = DBParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36432,7 +36432,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html
          */
         constructor(properties: DBClusterParameterGroupProperties) {
-            this.Type = "AWS::Neptune::DBClusterParameterGroup";
+            this.Type = DBClusterParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36609,7 +36609,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html
          */
         constructor(properties: DBClusterProperties) {
-            this.Type = "AWS::Neptune::DBCluster";
+            this.Type = DBCluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36696,7 +36696,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbsubnetgroup.html
          */
         constructor(properties: DBSubnetGroupProperties) {
-            this.Type = "AWS::Neptune::DBSubnetGroup";
+            this.Type = DBSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36846,7 +36846,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html
          */
         constructor(properties: DBInstanceProperties) {
-            this.Type = "AWS::Neptune::DBInstance";
+            this.Type = DBInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36908,7 +36908,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html
          */
         constructor(properties: ActivityProperties) {
-            this.Type = "AWS::StepFunctions::Activity";
+            this.Type = Activity.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36986,7 +36986,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html
          */
         constructor(properties: StateMachineProperties) {
-            this.Type = "AWS::StepFunctions::StateMachine";
+            this.Type = StateMachine.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -37629,7 +37629,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html
          */
         constructor(properties: ApplicationOutputProperties) {
-            this.Type = "AWS::KinesisAnalytics::ApplicationOutput";
+            this.Type = ApplicationOutput.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -37768,7 +37768,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationreferencedatasource.html
          */
         constructor(properties: ApplicationReferenceDataSourceProperties) {
-            this.Type = "AWS::KinesisAnalytics::ApplicationReferenceDataSource";
+            this.Type = ApplicationReferenceDataSource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -37967,7 +37967,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html
          */
         constructor(properties: ApplicationProperties) {
-            this.Type = "AWS::KinesisAnalytics::Application";
+            this.Type = Application.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -38890,7 +38890,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html
          */
         constructor(properties: VolumeProperties) {
-            this.Type = "AWS::OpsWorks::Volume";
+            this.Type = Volume.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39049,7 +39049,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html
          */
         constructor(properties: AppProperties) {
-            this.Type = "AWS::OpsWorks::App";
+            this.Type = App.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39327,7 +39327,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html
          */
         constructor(properties: LayerProperties) {
-            this.Type = "AWS::OpsWorks::Layer";
+            this.Type = Layer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39687,7 +39687,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html
          */
         constructor(properties: StackProperties) {
-            this.Type = "AWS::OpsWorks::Stack";
+            this.Type = Stack.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39826,7 +39826,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html
          */
         constructor(properties: ElasticLoadBalancerAttachmentProperties) {
-            this.Type = "AWS::OpsWorks::ElasticLoadBalancerAttachment";
+            this.Type = ElasticLoadBalancerAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -40066,7 +40066,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html
          */
         constructor(properties: InstanceProperties) {
-            this.Type = "AWS::OpsWorks::Instance";
+            this.Type = Instance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -40195,7 +40195,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html
          */
         constructor(properties: UserProfileProperties) {
-            this.Type = "AWS::OpsWorks::UserProfile";
+            this.Type = UserProfile.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41161,7 +41161,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html
          */
         constructor(properties: StreamingDistributionProperties) {
-            this.Type = "AWS::CloudFront::StreamingDistribution";
+            this.Type = StreamingDistribution.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41286,7 +41286,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html
          */
         constructor(properties: DistributionProperties) {
-            this.Type = "AWS::CloudFront::Distribution";
+            this.Type = Distribution.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41556,7 +41556,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cloudfrontoriginaccessidentity.html
          */
         constructor(properties: CloudFrontOriginAccessIdentityProperties) {
-            this.Type = "AWS::CloudFront::CloudFrontOriginAccessIdentity";
+            this.Type = CloudFrontOriginAccessIdentity.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41746,7 +41746,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html
          */
         constructor(properties: AliasProperties) {
-            this.Type = "AWS::GameLift::Alias";
+            this.Type = Alias.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41838,7 +41838,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html
          */
         constructor(properties: BuildProperties) {
-            this.Type = "AWS::GameLift::Build";
+            this.Type = Build.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42002,7 +42002,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html
          */
         constructor(properties: FleetProperties) {
-            this.Type = "AWS::GameLift::Fleet";
+            this.Type = Fleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42190,7 +42190,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html
          */
         constructor(properties: FilterProperties) {
-            this.Type = "AWS::GuardDuty::Filter";
+            this.Type = Filter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42314,7 +42314,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html
          */
         constructor(properties: ThreatIntelSetProperties) {
-            this.Type = "AWS::GuardDuty::ThreatIntelSet";
+            this.Type = ThreatIntelSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42419,7 +42419,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html
          */
         constructor(properties: MemberProperties) {
-            this.Type = "AWS::GuardDuty::Member";
+            this.Type = Member.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42488,7 +42488,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html
          */
         constructor(properties: DetectorProperties) {
-            this.Type = "AWS::GuardDuty::Detector";
+            this.Type = Detector.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42584,7 +42584,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html
          */
         constructor(properties: IPSetProperties) {
-            this.Type = "AWS::GuardDuty::IPSet";
+            this.Type = IPSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42662,7 +42662,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html
          */
         constructor(properties: MasterProperties) {
-            this.Type = "AWS::GuardDuty::Master";
+            this.Type = Master.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42818,7 +42818,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html
          */
         constructor(properties: MicrosoftADProperties) {
-            this.Type = "AWS::DirectoryService::MicrosoftAD";
+            this.Type = MicrosoftAD.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42955,7 +42955,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html
          */
         constructor(properties: SimpleADProperties) {
-            this.Type = "AWS::DirectoryService::SimpleAD";
+            this.Type = SimpleAD.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43105,7 +43105,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html
          */
         constructor(properties: SubscriptionProperties) {
-            this.Type = "AWS::SNS::Subscription";
+            this.Type = Subscription.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43192,7 +43192,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html
          */
         constructor(properties: TopicProperties) {
-            this.Type = "AWS::SNS::Topic";
+            this.Type = Topic.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43275,7 +43275,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html
          */
         constructor(properties: TopicPolicyProperties) {
-            this.Type = "AWS::SNS::TopicPolicy";
+            this.Type = TopicPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43384,7 +43384,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html
          */
         constructor(properties: MountTargetProperties) {
-            this.Type = "AWS::EFS::MountTarget";
+            this.Type = MountTarget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43489,7 +43489,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html
          */
         constructor(properties: FileSystemProperties) {
-            this.Type = "AWS::EFS::FileSystem";
+            this.Type = FileSystem.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44042,7 +44042,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html
          */
         constructor(properties: DocumentProperties) {
-            this.Type = "AWS::SSM::Document";
+            this.Type = Document.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44201,7 +44201,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html
          */
         constructor(properties: PatchBaselineProperties) {
-            this.Type = "AWS::SSM::PatchBaseline";
+            this.Type = PatchBaseline.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44376,7 +44376,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtarget.html
          */
         constructor(properties: MaintenanceWindowTargetProperties) {
-            this.Type = "AWS::SSM::MaintenanceWindowTarget";
+            this.Type = MaintenanceWindowTarget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44522,7 +44522,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindow.html
          */
         constructor(properties: MaintenanceWindowProperties) {
-            this.Type = "AWS::SSM::MaintenanceWindow";
+            this.Type = MaintenanceWindow.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44618,7 +44618,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html
          */
         constructor(properties: ParameterProperties) {
-            this.Type = "AWS::SSM::Parameter";
+            this.Type = Parameter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44723,7 +44723,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html
          */
         constructor(properties: ResourceDataSyncProperties) {
-            this.Type = "AWS::SSM::ResourceDataSync";
+            this.Type = ResourceDataSync.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44846,7 +44846,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html
          */
         constructor(properties: AssociationProperties) {
-            this.Type = "AWS::SSM::Association";
+            this.Type = Association.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45070,7 +45070,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html
          */
         constructor(properties: MaintenanceWindowTaskProperties) {
-            this.Type = "AWS::SSM::MaintenanceWindowTask";
+            this.Type = MaintenanceWindowTask.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45414,7 +45414,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html
          */
         constructor(properties: ModelProperties) {
-            this.Type = "AWS::SageMaker::Model";
+            this.Type = Model.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45520,7 +45520,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html
          */
         constructor(properties: NotebookInstanceLifecycleConfigProperties) {
-            this.Type = "AWS::SageMaker::NotebookInstanceLifecycleConfig";
+            this.Type = NotebookInstanceLifecycleConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45621,7 +45621,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html
          */
         constructor(properties: EndpointConfigProperties) {
-            this.Type = "AWS::SageMaker::EndpointConfig";
+            this.Type = EndpointConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45713,7 +45713,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html
          */
         constructor(properties: EndpointProperties) {
-            this.Type = "AWS::SageMaker::Endpoint";
+            this.Type = Endpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45854,7 +45854,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html
          */
         constructor(properties: NotebookInstanceProperties) {
-            this.Type = "AWS::SageMaker::NotebookInstance";
+            this.Type = NotebookInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46146,7 +46146,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html
          */
         constructor(properties: DeliveryChannelProperties) {
-            this.Type = "AWS::Config::DeliveryChannel";
+            this.Type = DeliveryChannel.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46238,7 +46238,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html
          */
         constructor(properties: ConfigurationAggregatorProperties) {
-            this.Type = "AWS::Config::ConfigurationAggregator";
+            this.Type = ConfigurationAggregator.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46335,7 +46335,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html
          */
         constructor(properties: AggregationAuthorizationProperties) {
-            this.Type = "AWS::Config::AggregationAuthorization";
+            this.Type = AggregationAuthorization.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46413,7 +46413,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html
          */
         constructor(properties: ConfigurationRecorderProperties) {
-            this.Type = "AWS::Config::ConfigurationRecorder";
+            this.Type = ConfigurationRecorder.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46532,7 +46532,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html
          */
         constructor(properties: ConfigRuleProperties) {
-            this.Type = "AWS::Config::ConfigRule";
+            this.Type = ConfigRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46690,7 +46690,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html
          */
         constructor(properties: KeyProperties) {
-            this.Type = "AWS::KMS::Key";
+            this.Type = Key.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46759,7 +46759,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html
          */
         constructor(properties: AliasProperties) {
-            this.Type = "AWS::KMS::Alias";
+            this.Type = Alias.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47113,7 +47113,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html
          */
         constructor(properties: ClusterProperties) {
-            this.Type = "AWS::Redshift::Cluster";
+            this.Type = Cluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47214,7 +47214,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html
          */
         constructor(properties: ClusterParameterGroupProperties) {
-            this.Type = "AWS::Redshift::ClusterParameterGroup";
+            this.Type = ClusterParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47315,7 +47315,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html
          */
         constructor(properties: ClusterSecurityGroupIngressProperties) {
-            this.Type = "AWS::Redshift::ClusterSecurityGroupIngress";
+            this.Type = ClusterSecurityGroupIngress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47393,7 +47393,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersubnetgroup.html
          */
         constructor(properties: ClusterSubnetGroupProperties) {
-            this.Type = "AWS::Redshift::ClusterSubnetGroup";
+            this.Type = ClusterSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47462,7 +47462,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroup.html
          */
         constructor(properties: ClusterSecurityGroupProperties) {
-            this.Type = "AWS::Redshift::ClusterSecurityGroup";
+            this.Type = ClusterSecurityGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47711,7 +47711,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html
          */
         constructor(properties: EventSourceMappingProperties) {
-            this.Type = "AWS::Lambda::EventSourceMapping";
+            this.Type = EventSourceMapping.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47807,7 +47807,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversion.html
          */
         constructor(properties: LayerVersionProperties) {
-            this.Type = "AWS::Lambda::LayerVersion";
+            this.Type = LayerVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47917,7 +47917,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html
          */
         constructor(properties: AliasProperties) {
-            this.Type = "AWS::Lambda::Alias";
+            this.Type = Alias.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48032,7 +48032,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html
          */
         constructor(properties: LayerVersionPermissionProperties) {
-            this.Type = "AWS::Lambda::LayerVersionPermission";
+            this.Type = LayerVersionPermission.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48227,7 +48227,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html
          */
         constructor(properties: FunctionProperties) {
-            this.Type = "AWS::Lambda::Function";
+            this.Type = Function.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48375,7 +48375,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html
          */
         constructor(properties: VersionProperties) {
-            this.Type = "AWS::Lambda::Version";
+            this.Type = Version.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48480,7 +48480,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html
          */
         constructor(properties: PermissionProperties) {
-            this.Type = "AWS::Lambda::Permission";
+            this.Type = Permission.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48598,7 +48598,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html
          */
         constructor(properties: CertificateProperties) {
-            this.Type = "AWS::CertificateManager::Certificate";
+            this.Type = Certificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48674,7 +48674,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html
          */
         constructor(properties: ResourceGroupProperties) {
-            this.Type = "AWS::Inspector::ResourceGroup";
+            this.Type = ResourceGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48770,7 +48770,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html
          */
         constructor(properties: AssessmentTemplateProperties) {
-            this.Type = "AWS::Inspector::AssessmentTemplate";
+            this.Type = AssessmentTemplate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48839,7 +48839,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html
          */
         constructor(properties: AssessmentTargetProperties) {
-            this.Type = "AWS::Inspector::AssessmentTarget";
+            this.Type = AssessmentTarget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48959,7 +48959,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html
          */
         constructor(properties: ProjectProperties) {
-            this.Type = "AWS::IoT1Click::Project";
+            this.Type = Project.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -49056,7 +49056,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-device.html
          */
         constructor(properties: DeviceProperties) {
-            this.Type = "AWS::IoT1Click::Device";
+            this.Type = Device.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -49143,7 +49143,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html
          */
         constructor(properties: PlacementProperties) {
-            this.Type = "AWS::IoT1Click::Placement";
+            this.Type = Placement.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -49977,7 +49977,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html
          */
         constructor(properties: DatasetProperties) {
-            this.Type = "AWS::IoTAnalytics::Dataset";
+            this.Type = Dataset.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -50237,7 +50237,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html
          */
         constructor(properties: ChannelProperties) {
-            this.Type = "AWS::IoTAnalytics::Channel";
+            this.Type = Channel.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -50329,7 +50329,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html
          */
         constructor(properties: PipelineProperties) {
-            this.Type = "AWS::IoTAnalytics::Pipeline";
+            this.Type = Pipeline.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -50561,7 +50561,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html
          */
         constructor(properties: DatastoreProperties) {
-            this.Type = "AWS::IoTAnalytics::Datastore";
+            this.Type = Datastore.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51176,7 +51176,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html
          */
         constructor(properties: JobDefinitionProperties) {
-            this.Type = "AWS::Batch::JobDefinition";
+            this.Type = JobDefinition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51403,7 +51403,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html
          */
         constructor(properties: JobQueueProperties) {
-            this.Type = "AWS::Batch::JobQueue";
+            this.Type = JobQueue.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51513,7 +51513,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html
          */
         constructor(properties: ComputeEnvironmentProperties) {
-            this.Type = "AWS::Batch::ComputeEnvironment";
+            this.Type = ComputeEnvironment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51630,7 +51630,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbsubnetgroup.html
          */
         constructor(properties: DBSubnetGroupProperties) {
-            this.Type = "AWS::DocDB::DBSubnetGroup";
+            this.Type = DBSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51744,7 +51744,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbinstance.html
          */
         constructor(properties: DBInstanceProperties) {
-            this.Type = "AWS::DocDB::DBInstance";
+            this.Type = DBInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51939,7 +51939,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html
          */
         constructor(properties: DBClusterProperties) {
-            this.Type = "AWS::DocDB::DBCluster";
+            this.Type = DBCluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -52035,7 +52035,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbclusterparametergroup.html
          */
         constructor(properties: DBClusterParameterGroupProperties) {
-            this.Type = "AWS::DocDB::DBClusterParameterGroup";
+            this.Type = DBClusterParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -52261,7 +52261,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html
          */
         constructor(properties: ServerProperties) {
-            this.Type = "AWS::OpsWorksCM::Server";
+            this.Type = Server.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -53021,7 +53021,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thing.html
          */
         constructor(properties: ThingProperties) {
-            this.Type = "AWS::IoT::Thing";
+            this.Type = Thing.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -53104,7 +53104,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html
          */
         constructor(properties: PolicyProperties) {
-            this.Type = "AWS::IoT::Policy";
+            this.Type = Policy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -53173,7 +53173,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html
          */
         constructor(properties: TopicRuleProperties) {
-            this.Type = "AWS::IoT::TopicRule";
+            this.Type = TopicRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -53480,7 +53480,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html
          */
         constructor(properties: PolicyPrincipalAttachmentProperties) {
-            this.Type = "AWS::IoT::PolicyPrincipalAttachment";
+            this.Type = PolicyPrincipalAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -53549,7 +53549,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html
          */
         constructor(properties: ThingPrincipalAttachmentProperties) {
-            this.Type = "AWS::IoT::ThingPrincipalAttachment";
+            this.Type = ThingPrincipalAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -53618,7 +53618,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html
          */
         constructor(properties: CertificateProperties) {
-            this.Type = "AWS::IoT::Certificate";
+            this.Type = Certificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54074,7 +54074,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html
          */
         constructor(properties: LoadBalancerProperties) {
-            this.Type = "AWS::ElasticLoadBalancing::LoadBalancer";
+            this.Type = LoadBalancer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54510,7 +54510,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html
          */
         constructor(properties: CertificateProperties) {
-            this.Type = "AWS::DMS::Certificate";
+            this.Type = Certificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54597,7 +54597,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html
          */
         constructor(properties: ReplicationSubnetGroupProperties) {
-            this.Type = "AWS::DMS::ReplicationSubnetGroup";
+            this.Type = ReplicationSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54711,7 +54711,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html
          */
         constructor(properties: EventSubscriptionProperties) {
-            this.Type = "AWS::DMS::EventSubscription";
+            this.Type = EventSubscription.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54924,7 +54924,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html
          */
         constructor(properties: EndpointProperties) {
-            this.Type = "AWS::DMS::Endpoint";
+            this.Type = Endpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -55126,7 +55126,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html
          */
         constructor(properties: ReplicationTaskProperties) {
-            this.Type = "AWS::DMS::ReplicationTask";
+            this.Type = ReplicationTask.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -55303,7 +55303,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html
          */
         constructor(properties: ReplicationInstanceProperties) {
-            this.Type = "AWS::DMS::ReplicationInstance";
+            this.Type = ReplicationInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -56359,7 +56359,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html
          */
         constructor(properties: TableProperties) {
-            this.Type = "AWS::Glue::Table";
+            this.Type = Table.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -56512,7 +56512,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html
          */
         constructor(properties: ConnectionProperties) {
-            this.Type = "AWS::Glue::Connection";
+            this.Type = Connection.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -56627,7 +56627,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html
          */
         constructor(properties: PartitionProperties) {
-            this.Type = "AWS::Glue::Partition";
+            this.Type = Partition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -56852,7 +56852,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html
          */
         constructor(properties: JobProperties) {
-            this.Type = "AWS::Glue::Job";
+            this.Type = Job.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -56963,7 +56963,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html
          */
         constructor(properties: DatabaseProperties) {
-            this.Type = "AWS::Glue::Database";
+            this.Type = Database.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57100,7 +57100,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html
          */
         constructor(properties: DevEndpointProperties) {
-            this.Type = "AWS::Glue::DevEndpoint";
+            this.Type = DevEndpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57205,7 +57205,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html
          */
         constructor(properties: TriggerProperties) {
-            this.Type = "AWS::Glue::Trigger";
+            this.Type = Trigger.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57388,7 +57388,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html
          */
         constructor(properties: CrawlerProperties) {
-            this.Type = "AWS::Glue::Crawler";
+            this.Type = Crawler.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57536,7 +57536,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html
          */
         constructor(properties: ClassifierProperties) {
-            this.Type = "AWS::Glue::Classifier";
+            this.Type = Classifier.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57687,7 +57687,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group.html
          */
         constructor(properties: SecurityGroupProperties) {
-            this.Type = "AWS::ElastiCache::SecurityGroup";
+            this.Type = SecurityGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57765,7 +57765,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html
          */
         constructor(properties: SubnetGroupProperties) {
-            this.Type = "AWS::ElastiCache::SubnetGroup";
+            this.Type = SubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57843,7 +57843,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html
          */
         constructor(properties: SecurityGroupIngressProperties) {
-            this.Type = "AWS::ElastiCache::SecurityGroupIngress";
+            this.Type = SecurityGroupIngress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58155,7 +58155,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html
          */
         constructor(properties: ReplicationGroupProperties) {
-            this.Type = "AWS::ElastiCache::ReplicationGroup";
+            this.Type = ReplicationGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58247,7 +58247,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html
          */
         constructor(properties: ParameterGroupProperties) {
-            this.Type = "AWS::ElastiCache::ParameterGroup";
+            this.Type = ParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58487,7 +58487,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html
          */
         constructor(properties: CacheClusterProperties) {
-            this.Type = "AWS::ElastiCache::CacheCluster";
+            this.Type = CacheCluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59073,7 +59073,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html
          */
         constructor(properties: DeploymentGroupProperties) {
-            this.Type = "AWS::CodeDeploy::DeploymentGroup";
+            this.Type = DeploymentGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59394,7 +59394,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html
          */
         constructor(properties: DeploymentConfigProperties) {
-            this.Type = "AWS::CodeDeploy::DeploymentConfig";
+            this.Type = DeploymentConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59477,7 +59477,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html
          */
         constructor(properties: ApplicationProperties) {
-            this.Type = "AWS::CodeDeploy::Application";
+            this.Type = Application.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60039,7 +60039,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptfilter.html
          */
         constructor(properties: ReceiptFilterProperties) {
-            this.Type = "AWS::SES::ReceiptFilter";
+            this.Type = ReceiptFilter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60145,7 +60145,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html
          */
         constructor(properties: ReceiptRuleProperties) {
-            this.Type = "AWS::SES::ReceiptRule";
+            this.Type = ReceiptRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60340,7 +60340,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationseteventdestination.html
          */
         constructor(properties: ConfigurationSetEventDestinationProperties) {
-            this.Type = "AWS::SES::ConfigurationSetEventDestination";
+            this.Type = ConfigurationSetEventDestination.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60456,7 +60456,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-template.html
          */
         constructor(properties: TemplateProperties) {
-            this.Type = "AWS::SES::Template";
+            this.Type = Template.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60530,7 +60530,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationset.html
          */
         constructor(properties: ConfigurationSetProperties) {
-            this.Type = "AWS::SES::ConfigurationSet";
+            this.Type = ConfigurationSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60590,7 +60590,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptruleset.html
          */
         constructor(properties: ReceiptRuleSetProperties) {
-            this.Type = "AWS::SES::ReceiptRuleSet";
+            this.Type = ReceiptRuleSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60773,7 +60773,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-rotationschedule.html
          */
         constructor(properties: RotationScheduleProperties) {
-            this.Type = "AWS::SecretsManager::RotationSchedule";
+            this.Type = RotationSchedule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60892,7 +60892,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-secret.html
          */
         constructor(properties: SecretProperties) {
-            this.Type = "AWS::SecretsManager::Secret";
+            this.Type = Secret.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60975,7 +60975,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-resourcepolicy.html
          */
         constructor(properties: ResourcePolicyProperties) {
-            this.Type = "AWS::SecretsManager::ResourcePolicy";
+            this.Type = ResourcePolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -61053,7 +61053,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-secrettargetattachment.html
          */
         constructor(properties: SecretTargetAttachmentProperties) {
-            this.Type = "AWS::SecretsManager::SecretTargetAttachment";
+            this.Type = SecretTargetAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -61736,7 +61736,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html
          */
         constructor(properties: ProjectProperties) {
-            this.Type = "AWS::CodeBuild::Project";
+            this.Type = Project.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -62287,7 +62287,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html
          */
         constructor(properties: BudgetProperties) {
-            this.Type = "AWS::Budgets::Budget";
+            this.Type = Budget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -62476,7 +62476,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-subnetgroup.html
          */
         constructor(properties: SubnetGroupProperties) {
-            this.Type = "AWS::DAX::SubnetGroup";
+            this.Type = SubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -62554,7 +62554,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-parametergroup.html
          */
         constructor(properties: ParameterGroupProperties) {
-            this.Type = "AWS::DAX::ParameterGroup";
+            this.Type = ParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -62722,7 +62722,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html
          */
         constructor(properties: ClusterProperties) {
-            this.Type = "AWS::DAX::Cluster";
+            this.Type = Cluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -62984,7 +62984,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html
          */
         constructor(properties: FileSystemProperties) {
-            this.Type = "AWS::FSx::FileSystem";
+            this.Type = FileSystem.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -63280,7 +63280,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html
          */
         constructor(properties: PipelineProperties) {
-            this.Type = "AWS::DataPipeline::Pipeline";
+            this.Type = Pipeline.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -63511,7 +63511,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html
          */
         constructor(properties: ResolverRuleProperties) {
-            this.Type = "AWS::Route53Resolver::ResolverRule";
+            this.Type = ResolverRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -63603,7 +63603,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverruleassociation.html
          */
         constructor(properties: ResolverRuleAssociationProperties) {
-            this.Type = "AWS::Route53Resolver::ResolverRuleAssociation";
+            this.Type = ResolverRuleAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -63699,7 +63699,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html
          */
         constructor(properties: ResolverEndpointProperties) {
-            this.Type = "AWS::Route53Resolver::ResolverEndpoint";
+            this.Type = ResolverEndpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -63932,7 +63932,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html
          */
         constructor(properties: TrailProperties) {
-            this.Type = "AWS::CloudTrail::Trail";
+            this.Type = Trail.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64214,7 +64214,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html
          */
         constructor(properties: SimulationApplicationProperties) {
-            this.Type = "AWS::RoboMaker::SimulationApplication";
+            this.Type = SimulationApplication.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64339,7 +64339,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplicationversion.html
          */
         constructor(properties: SimulationApplicationVersionProperties) {
-            this.Type = "AWS::RoboMaker::SimulationApplicationVersion";
+            this.Type = SimulationApplicationVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64408,7 +64408,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplicationversion.html
          */
         constructor(properties: RobotApplicationVersionProperties) {
-            this.Type = "AWS::RoboMaker::RobotApplicationVersion";
+            this.Type = RobotApplicationVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64504,7 +64504,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html
          */
         constructor(properties: RobotApplicationProperties) {
-            this.Type = "AWS::RoboMaker::RobotApplication";
+            this.Type = RobotApplication.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64628,7 +64628,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robot.html
          */
         constructor(properties: RobotProperties) {
-            this.Type = "AWS::RoboMaker::Robot";
+            this.Type = Robot.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64697,7 +64697,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-fleet.html
          */
         constructor(properties: FleetProperties) {
-            this.Type = "AWS::RoboMaker::Fleet";
+            this.Type = Fleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64777,7 +64777,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html
          */
         constructor(properties: WaitConditionProperties) {
-            this.Type = "AWS::CloudFormation::WaitCondition";
+            this.Type = WaitCondition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64873,7 +64873,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html
          */
         constructor(properties: StackProperties) {
-            this.Type = "AWS::CloudFormation::Stack";
+            this.Type = Stack.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64924,7 +64924,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitconditionhandle.html
          */
         constructor(properties: WaitConditionHandleProperties) {
-            this.Type = "AWS::CloudFormation::WaitConditionHandle";
+            this.Type = WaitConditionHandle.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65020,7 +65020,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-macro.html
          */
         constructor(properties: MacroProperties) {
-            this.Type = "AWS::CloudFormation::Macro";
+            this.Type = Macro.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65080,7 +65080,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html
          */
         constructor(properties: CustomResourceProperties) {
-            this.Type = "AWS::CloudFormation::CustomResource";
+            this.Type = CustomResource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65216,7 +65216,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html
          */
         constructor(properties: EnvironmentEC2Properties) {
-            this.Type = "AWS::Cloud9::EnvironmentEC2";
+            this.Type = EnvironmentEC2.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65399,7 +65399,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html
          */
         constructor(properties: InstanceProperties) {
-            this.Type = "AWS::ServiceDiscovery::Instance";
+            this.Type = Instance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65504,7 +65504,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html
          */
         constructor(properties: ServiceProperties) {
-            this.Type = "AWS::ServiceDiscovery::Service";
+            this.Type = Service.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65629,7 +65629,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-httpnamespace.html
          */
         constructor(properties: HttpNamespaceProperties) {
-            this.Type = "AWS::ServiceDiscovery::HttpNamespace";
+            this.Type = HttpNamespace.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65707,7 +65707,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-privatednsnamespace.html
          */
         constructor(properties: PrivateDnsNamespaceProperties) {
-            this.Type = "AWS::ServiceDiscovery::PrivateDnsNamespace";
+            this.Type = PrivateDnsNamespace.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65776,7 +65776,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-publicdnsnamespace.html
          */
         constructor(properties: PublicDnsNamespaceProperties) {
-            this.Type = "AWS::ServiceDiscovery::PublicDnsNamespace";
+            this.Type = PublicDnsNamespace.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -66679,7 +66679,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationoutput.html
          */
         constructor(properties: ApplicationOutputProperties) {
-            this.Type = "AWS::KinesisAnalyticsV2::ApplicationOutput";
+            this.Type = ApplicationOutput.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -66818,7 +66818,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption.html
          */
         constructor(properties: ApplicationCloudWatchLoggingOptionProperties) {
-            this.Type = "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption";
+            this.Type = ApplicationCloudWatchLoggingOption.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -66901,7 +66901,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html
          */
         constructor(properties: ApplicationReferenceDataSourceProperties) {
-            this.Type = "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource";
+            this.Type = ApplicationReferenceDataSource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -67109,7 +67109,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html
          */
         constructor(properties: ApplicationProperties) {
-            this.Type = "AWS::KinesisAnalyticsV2::Application";
+            this.Type = Application.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -67856,7 +67856,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html
          */
         constructor(properties: ScalingPolicyProperties) {
-            this.Type = "AWS::ApplicationAutoScaling::ScalingPolicy";
+            this.Type = ScalingPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -68054,7 +68054,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html
          */
         constructor(properties: ScalableTargetProperties) {
-            this.Type = "AWS::ApplicationAutoScaling::ScalableTarget";
+            this.Type = ScalableTarget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -68209,7 +68209,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html
          */
         constructor(properties: RepositoryProperties) {
-            this.Type = "AWS::CodeCommit::Repository";
+            this.Type = Repository.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -69472,7 +69472,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
          */
         constructor(properties: BucketProperties) {
-            this.Type = "AWS::S3::Bucket";
+            this.Type = Bucket.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -70101,7 +70101,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html
          */
         constructor(properties: BucketPolicyProperties) {
-            this.Type = "AWS::S3::BucketPolicy";
+            this.Type = BucketPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -70872,7 +70872,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html
          */
         constructor(properties: DeliveryStreamProperties) {
-            this.Type = "AWS::KinesisFirehose::DeliveryStream";
+            this.Type = DeliveryStream.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -71315,7 +71315,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html
          */
         constructor(properties: LifecyclePolicyProperties) {
-            this.Type = "AWS::DLM::LifecyclePolicy";
+            this.Type = LifecyclePolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -71433,7 +71433,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-simpledb.html
          */
         constructor(properties: DomainProperties) {
-            this.Type = "AWS::SDB::Domain";
+            this.Type = Domain.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -71533,7 +71533,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html
          */
         constructor(properties: RepositoryProperties) {
-            this.Type = "AWS::ECR::Repository";
+            this.Type = Repository.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -71908,7 +71908,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html
          */
         constructor(properties: TableProperties) {
-            this.Type = "AWS::DynamoDB::Table";
+            this.Type = Table.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -72137,7 +72137,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html
          */
         constructor(properties: NamedQueryProperties) {
-            this.Type = "AWS::Athena::NamedQuery";
+            this.Type = NamedQuery.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -72306,7 +72306,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ask-skill.html
          */
         constructor(properties: SkillProperties) {
-            this.Type = "Alexa::ASK::Skill";
+            this.Type = Skill.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any

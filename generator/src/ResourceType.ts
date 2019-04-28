@@ -85,7 +85,7 @@ export class ResourceType {
     generateConstructor() {
         return [
             `constructor(properties: ${TsGenerator.getResourceTypePropertiesInterfaceName(this.parsedName)}) {`,
-            `    this.Type = "${this.parsedName.fullname}";`,
+            `    this.Type = ${this.getClassName()}.TypeName`,
             '    this.Properties = properties;',
             '}'
         ]
