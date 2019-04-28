@@ -31,6 +31,7 @@ export class ResourceType {
     generateCode() {
         let propertyCode = this._propertyTypes.reduce((array, p) => array.concat(p.generateStaticCastFunction()), [])
         let innerCode = [
+            ...this.generateTypeNameStaticGetter(),
             ...this.generateInstanceVariables(),
             ...this.generateConstructorComment(),
             ...this.generateConstructor(),
@@ -103,6 +104,14 @@ export class ResourceType {
             `    this.${name} = value;`,
             `    return this;`,
             '}'
+        ]
+    }
+
+    generateTypeNameStaticGetter() {
+        return [
+            `static get TypeName() {`,
+            `  return "${this.parsedName.fullname}"`,
+            `}`
         ]
     }
 
