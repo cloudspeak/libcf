@@ -314,6 +314,12 @@ export namespace Cf {
         SourceConfiguration?: ConfigurationTemplateSourceConfiguration
       }
       export class ConfigurationTemplate implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticBeanstalk::ConfigurationTemplate"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticBeanstalk::ConfigurationTemplate"
+        }
         Type: string
         Properties: ConfigurationTemplateProperties
         /**
@@ -322,7 +328,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html
          */
         constructor(properties: ConfigurationTemplateProperties) {
-            this.Type = "AWS::ElasticBeanstalk::ConfigurationTemplate";
+            this.Type = ConfigurationTemplate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -371,6 +377,18 @@ export namespace Cf {
         static ConfigurationOptionSetting(properties: ConfigurationTemplateConfigurationOptionSetting) : ConfigurationTemplateConfigurationOptionSetting {
           return properties;
         }
+        /**
+         * Returns the SourceConfiguration property type name (`"AWS::ElasticBeanstalk::ConfigurationTemplate.SourceConfiguration"`)
+         */
+        static get SourceConfigurationTypeName(): string {
+          return "AWS::ElasticBeanstalk::ConfigurationTemplate.SourceConfiguration"
+        }
+        /**
+         * Returns the ConfigurationOptionSetting property type name (`"AWS::ElasticBeanstalk::ConfigurationTemplate.ConfigurationOptionSetting"`)
+         */
+        static get ConfigurationOptionSettingTypeName(): string {
+          return "AWS::ElasticBeanstalk::ConfigurationTemplate.ConfigurationOptionSetting"
+        }
       }
       export interface ApplicationProperties {
         /**
@@ -402,6 +420,12 @@ export namespace Cf {
         ResourceLifecycleConfig?: ApplicationApplicationResourceLifecycleConfig
       }
       export class Application implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticBeanstalk::Application"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticBeanstalk::Application"
+        }
         Type: string
         Properties: ApplicationProperties
         /**
@@ -410,7 +434,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html
          */
         constructor(properties: ApplicationProperties) {
-            this.Type = "AWS::ElasticBeanstalk::Application";
+            this.Type = Application.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -474,6 +498,30 @@ export namespace Cf {
          */
         static MaxAgeRule(properties: ApplicationMaxAgeRule) : ApplicationMaxAgeRule {
           return properties;
+        }
+        /**
+         * Returns the ApplicationResourceLifecycleConfig property type name (`"AWS::ElasticBeanstalk::Application.ApplicationResourceLifecycleConfig"`)
+         */
+        static get ApplicationResourceLifecycleConfigTypeName(): string {
+          return "AWS::ElasticBeanstalk::Application.ApplicationResourceLifecycleConfig"
+        }
+        /**
+         * Returns the ApplicationVersionLifecycleConfig property type name (`"AWS::ElasticBeanstalk::Application.ApplicationVersionLifecycleConfig"`)
+         */
+        static get ApplicationVersionLifecycleConfigTypeName(): string {
+          return "AWS::ElasticBeanstalk::Application.ApplicationVersionLifecycleConfig"
+        }
+        /**
+         * Returns the MaxCountRule property type name (`"AWS::ElasticBeanstalk::Application.MaxCountRule"`)
+         */
+        static get MaxCountRuleTypeName(): string {
+          return "AWS::ElasticBeanstalk::Application.MaxCountRule"
+        }
+        /**
+         * Returns the MaxAgeRule property type name (`"AWS::ElasticBeanstalk::Application.MaxAgeRule"`)
+         */
+        static get MaxAgeRuleTypeName(): string {
+          return "AWS::ElasticBeanstalk::Application.MaxAgeRule"
         }
       }
       export interface EnvironmentProperties {
@@ -578,6 +626,12 @@ export namespace Cf {
         VersionLabel?: string
       }
       export class Environment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticBeanstalk::Environment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticBeanstalk::Environment"
+        }
         Type: string
         Properties: EnvironmentProperties
         /**
@@ -586,7 +640,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html
          */
         constructor(properties: EnvironmentProperties) {
-            this.Type = "AWS::ElasticBeanstalk::Environment";
+            this.Type = Environment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -635,6 +689,18 @@ export namespace Cf {
         static Tier(properties: EnvironmentTier) : EnvironmentTier {
           return properties;
         }
+        /**
+         * Returns the OptionSetting property type name (`"AWS::ElasticBeanstalk::Environment.OptionSetting"`)
+         */
+        static get OptionSettingTypeName(): string {
+          return "AWS::ElasticBeanstalk::Environment.OptionSetting"
+        }
+        /**
+         * Returns the Tier property type name (`"AWS::ElasticBeanstalk::Environment.Tier"`)
+         */
+        static get TierTypeName(): string {
+          return "AWS::ElasticBeanstalk::Environment.Tier"
+        }
       }
       export interface ApplicationVersionProperties {
         /**
@@ -666,6 +732,12 @@ export namespace Cf {
         SourceBundle: ApplicationVersionSourceBundle
       }
       export class ApplicationVersion implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticBeanstalk::ApplicationVersion"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticBeanstalk::ApplicationVersion"
+        }
         Type: string
         Properties: ApplicationVersionProperties
         /**
@@ -674,7 +746,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html
          */
         constructor(properties: ApplicationVersionProperties) {
-            this.Type = "AWS::ElasticBeanstalk::ApplicationVersion";
+            this.Type = ApplicationVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -714,6 +786,12 @@ export namespace Cf {
          */
         static SourceBundle(properties: ApplicationVersionSourceBundle) : ApplicationVersionSourceBundle {
           return properties;
+        }
+        /**
+         * Returns the SourceBundle property type name (`"AWS::ElasticBeanstalk::ApplicationVersion.SourceBundle"`)
+         */
+        static get SourceBundleTypeName(): string {
+          return "AWS::ElasticBeanstalk::ApplicationVersion.SourceBundle"
         }
       }
     }
@@ -1014,6 +1092,12 @@ export namespace Cf {
         Tags?: BrokerTagsEntry[]
       }
       export class Broker implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AmazonMQ::Broker"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AmazonMQ::Broker"
+        }
         Type: string
         Properties: BrokerProperties
         /**
@@ -1022,7 +1106,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html
          */
         constructor(properties: BrokerProperties) {
-            this.Type = "AWS::AmazonMQ::Broker";
+            this.Type = Broker.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -1095,6 +1179,36 @@ export namespace Cf {
         static ConfigurationId(properties: BrokerConfigurationId) : BrokerConfigurationId {
           return properties;
         }
+        /**
+         * Returns the User property type name (`"AWS::AmazonMQ::Broker.User"`)
+         */
+        static get UserTypeName(): string {
+          return "AWS::AmazonMQ::Broker.User"
+        }
+        /**
+         * Returns the MaintenanceWindow property type name (`"AWS::AmazonMQ::Broker.MaintenanceWindow"`)
+         */
+        static get MaintenanceWindowTypeName(): string {
+          return "AWS::AmazonMQ::Broker.MaintenanceWindow"
+        }
+        /**
+         * Returns the LogList property type name (`"AWS::AmazonMQ::Broker.LogList"`)
+         */
+        static get LogListTypeName(): string {
+          return "AWS::AmazonMQ::Broker.LogList"
+        }
+        /**
+         * Returns the TagsEntry property type name (`"AWS::AmazonMQ::Broker.TagsEntry"`)
+         */
+        static get TagsEntryTypeName(): string {
+          return "AWS::AmazonMQ::Broker.TagsEntry"
+        }
+        /**
+         * Returns the ConfigurationId property type name (`"AWS::AmazonMQ::Broker.ConfigurationId"`)
+         */
+        static get ConfigurationIdTypeName(): string {
+          return "AWS::AmazonMQ::Broker.ConfigurationId"
+        }
       }
       export interface ConfigurationAssociationProperties {
         /**
@@ -1117,6 +1231,12 @@ export namespace Cf {
         Configuration: ConfigurationAssociationConfigurationId
       }
       export class ConfigurationAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AmazonMQ::ConfigurationAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AmazonMQ::ConfigurationAssociation"
+        }
         Type: string
         Properties: ConfigurationAssociationProperties
         /**
@@ -1125,7 +1245,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html
          */
         constructor(properties: ConfigurationAssociationProperties) {
-            this.Type = "AWS::AmazonMQ::ConfigurationAssociation";
+            this.Type = ConfigurationAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -1165,6 +1285,12 @@ export namespace Cf {
          */
         static ConfigurationId(properties: ConfigurationAssociationConfigurationId) : ConfigurationAssociationConfigurationId {
           return properties;
+        }
+        /**
+         * Returns the ConfigurationId property type name (`"AWS::AmazonMQ::ConfigurationAssociation.ConfigurationId"`)
+         */
+        static get ConfigurationIdTypeName(): string {
+          return "AWS::AmazonMQ::ConfigurationAssociation.ConfigurationId"
         }
       }
       export interface ConfigurationProperties {
@@ -1224,6 +1350,12 @@ export namespace Cf {
         Name: string
       }
       export class Configuration implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AmazonMQ::Configuration"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AmazonMQ::Configuration"
+        }
         Type: string
         Properties: ConfigurationProperties
         /**
@@ -1232,7 +1364,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html
          */
         constructor(properties: ConfigurationProperties) {
-            this.Type = "AWS::AmazonMQ::Configuration";
+            this.Type = Configuration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -1272,6 +1404,12 @@ export namespace Cf {
          */
         static TagsEntry(properties: ConfigurationTagsEntry) : ConfigurationTagsEntry {
           return properties;
+        }
+        /**
+         * Returns the TagsEntry property type name (`"AWS::AmazonMQ::Configuration.TagsEntry"`)
+         */
+        static get TagsEntryTypeName(): string {
+          return "AWS::AmazonMQ::Configuration.TagsEntry"
         }
       }
     }
@@ -1663,6 +1801,12 @@ export namespace Cf {
         ElasticsearchConfig?: DataSourceElasticsearchConfig
       }
       export class DataSource implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::DataSource"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppSync::DataSource"
+        }
         Type: string
         Properties: DataSourceProperties
         /**
@@ -1671,7 +1815,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html
          */
         constructor(properties: DataSourceProperties) {
-            this.Type = "AWS::AppSync::DataSource";
+            this.Type = DataSource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -1768,6 +1912,54 @@ export namespace Cf {
         static ElasticsearchConfig(properties: DataSourceElasticsearchConfig) : DataSourceElasticsearchConfig {
           return properties;
         }
+        /**
+         * Returns the AuthorizationConfig property type name (`"AWS::AppSync::DataSource.AuthorizationConfig"`)
+         */
+        static get AuthorizationConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.AuthorizationConfig"
+        }
+        /**
+         * Returns the RelationalDatabaseConfig property type name (`"AWS::AppSync::DataSource.RelationalDatabaseConfig"`)
+         */
+        static get RelationalDatabaseConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.RelationalDatabaseConfig"
+        }
+        /**
+         * Returns the RdsHttpEndpointConfig property type name (`"AWS::AppSync::DataSource.RdsHttpEndpointConfig"`)
+         */
+        static get RdsHttpEndpointConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.RdsHttpEndpointConfig"
+        }
+        /**
+         * Returns the LambdaConfig property type name (`"AWS::AppSync::DataSource.LambdaConfig"`)
+         */
+        static get LambdaConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.LambdaConfig"
+        }
+        /**
+         * Returns the AwsIamConfig property type name (`"AWS::AppSync::DataSource.AwsIamConfig"`)
+         */
+        static get AwsIamConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.AwsIamConfig"
+        }
+        /**
+         * Returns the HttpConfig property type name (`"AWS::AppSync::DataSource.HttpConfig"`)
+         */
+        static get HttpConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.HttpConfig"
+        }
+        /**
+         * Returns the DynamoDBConfig property type name (`"AWS::AppSync::DataSource.DynamoDBConfig"`)
+         */
+        static get DynamoDBConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.DynamoDBConfig"
+        }
+        /**
+         * Returns the ElasticsearchConfig property type name (`"AWS::AppSync::DataSource.ElasticsearchConfig"`)
+         */
+        static get ElasticsearchConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.ElasticsearchConfig"
+        }
       }
       export interface ResolverProperties {
         /**
@@ -1862,6 +2054,12 @@ export namespace Cf {
         FieldName: string
       }
       export class Resolver implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::Resolver"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppSync::Resolver"
+        }
         Type: string
         Properties: ResolverProperties
         /**
@@ -1870,7 +2068,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html
          */
         constructor(properties: ResolverProperties) {
-            this.Type = "AWS::AppSync::Resolver";
+            this.Type = Resolver.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -1911,6 +2109,12 @@ export namespace Cf {
         static PipelineConfig(properties: ResolverPipelineConfig) : ResolverPipelineConfig {
           return properties;
         }
+        /**
+         * Returns the PipelineConfig property type name (`"AWS::AppSync::Resolver.PipelineConfig"`)
+         */
+        static get PipelineConfigTypeName(): string {
+          return "AWS::AppSync::Resolver.PipelineConfig"
+        }
       }
       export interface GraphQLSchemaProperties {
         /**
@@ -1942,6 +2146,12 @@ export namespace Cf {
         ApiId: string
       }
       export class GraphQLSchema implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::GraphQLSchema"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppSync::GraphQLSchema"
+        }
         Type: string
         Properties: GraphQLSchemaProperties
         /**
@@ -1950,7 +2160,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html
          */
         constructor(properties: GraphQLSchemaProperties) {
-            this.Type = "AWS::AppSync::GraphQLSchema";
+            this.Type = GraphQLSchema.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -2032,6 +2242,12 @@ export namespace Cf {
         LogConfig?: GraphQLApiLogConfig
       }
       export class GraphQLApi implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::GraphQLApi"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppSync::GraphQLApi"
+        }
         Type: string
         Properties: GraphQLApiProperties
         /**
@@ -2040,7 +2256,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html
          */
         constructor(properties: GraphQLApiProperties) {
-            this.Type = "AWS::AppSync::GraphQLApi";
+            this.Type = GraphQLApi.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -2096,6 +2312,24 @@ export namespace Cf {
          */
         static UserPoolConfig(properties: GraphQLApiUserPoolConfig) : GraphQLApiUserPoolConfig {
           return properties;
+        }
+        /**
+         * Returns the OpenIDConnectConfig property type name (`"AWS::AppSync::GraphQLApi.OpenIDConnectConfig"`)
+         */
+        static get OpenIDConnectConfigTypeName(): string {
+          return "AWS::AppSync::GraphQLApi.OpenIDConnectConfig"
+        }
+        /**
+         * Returns the LogConfig property type name (`"AWS::AppSync::GraphQLApi.LogConfig"`)
+         */
+        static get LogConfigTypeName(): string {
+          return "AWS::AppSync::GraphQLApi.LogConfig"
+        }
+        /**
+         * Returns the UserPoolConfig property type name (`"AWS::AppSync::GraphQLApi.UserPoolConfig"`)
+         */
+        static get UserPoolConfigTypeName(): string {
+          return "AWS::AppSync::GraphQLApi.UserPoolConfig"
         }
       }
       export interface FunctionConfigurationProperties {
@@ -2182,6 +2416,12 @@ export namespace Cf {
         Name?: string
       }
       export class FunctionConfiguration implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::FunctionConfiguration"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppSync::FunctionConfiguration"
+        }
         Type: string
         Properties: FunctionConfigurationProperties
         /**
@@ -2190,7 +2430,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-functionconfiguration.html
          */
         constructor(properties: FunctionConfigurationProperties) {
-            this.Type = "AWS::AppSync::FunctionConfiguration";
+            this.Type = FunctionConfiguration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -2254,6 +2494,12 @@ export namespace Cf {
         ApiId: string
       }
       export class ApiKey implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::ApiKey"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppSync::ApiKey"
+        }
         Type: string
         Properties: ApiKeyProperties
         /**
@@ -2262,7 +2508,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html
          */
         constructor(properties: ApiKeyProperties) {
-            this.Type = "AWS::AppSync::ApiKey";
+            this.Type = ApiKey.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -4645,6 +4891,12 @@ export namespace Cf {
         VpcId: string
       }
       export class RouteTable implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::RouteTable"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::RouteTable"
+        }
         Type: string
         Properties: RouteTableProperties
         /**
@@ -4653,7 +4905,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route-table.html
          */
         constructor(properties: RouteTableProperties) {
-            this.Type = "AWS::EC2::RouteTable";
+            this.Type = RouteTable.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -4744,6 +4996,12 @@ export namespace Cf {
         VpcId: string
       }
       export class VPCPeeringConnection implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCPeeringConnection"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPCPeeringConnection"
+        }
         Type: string
         Properties: VPCPeeringConnectionProperties
         /**
@@ -4752,7 +5010,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html
          */
         constructor(properties: VPCPeeringConnectionProperties) {
-            this.Type = "AWS::EC2::VPCPeeringConnection";
+            this.Type = VPCPeeringConnection.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -4798,6 +5056,12 @@ export namespace Cf {
         Strategy?: string
       }
       export class PlacementGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::PlacementGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::PlacementGroup"
+        }
         Type: string
         Properties: PlacementGroupProperties
         /**
@@ -4806,7 +5070,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html
          */
         constructor(properties: PlacementGroupProperties) {
-            this.Type = "AWS::EC2::PlacementGroup";
+            this.Type = PlacementGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -4915,6 +5179,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class TransitGateway implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGateway"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::TransitGateway"
+        }
         Type: string
         Properties: TransitGatewayProperties
         /**
@@ -4923,7 +5193,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgateway.html
          */
         constructor(properties: TransitGatewayProperties) {
-            this.Type = "AWS::EC2::TransitGateway";
+            this.Type = TransitGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -4978,6 +5248,12 @@ export namespace Cf {
         ServiceId: string
       }
       export class VPCEndpointServicePermissions implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCEndpointServicePermissions"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPCEndpointServicePermissions"
+        }
         Type: string
         Properties: VPCEndpointServicePermissionsProperties
         /**
@@ -4986,7 +5262,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html
          */
         constructor(properties: VPCEndpointServicePermissionsProperties) {
-            this.Type = "AWS::EC2::VPCEndpointServicePermissions";
+            this.Type = VPCEndpointServicePermissions.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5104,6 +5380,12 @@ export namespace Cf {
         RuleNumber: number
       }
       export class NetworkAclEntry implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkAclEntry"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::NetworkAclEntry"
+        }
         Type: string
         Properties: NetworkAclEntryProperties
         /**
@@ -5112,7 +5394,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html
          */
         constructor(properties: NetworkAclEntryProperties) {
-            this.Type = "AWS::EC2::NetworkAclEntry";
+            this.Type = NetworkAclEntry.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5161,6 +5443,18 @@ export namespace Cf {
         static PortRange(properties: NetworkAclEntryPortRange) : NetworkAclEntryPortRange {
           return properties;
         }
+        /**
+         * Returns the Icmp property type name (`"AWS::EC2::NetworkAclEntry.Icmp"`)
+         */
+        static get IcmpTypeName(): string {
+          return "AWS::EC2::NetworkAclEntry.Icmp"
+        }
+        /**
+         * Returns the PortRange property type name (`"AWS::EC2::NetworkAclEntry.PortRange"`)
+         */
+        static get PortRangeTypeName(): string {
+          return "AWS::EC2::NetworkAclEntry.PortRange"
+        }
       }
       export interface InternetGatewayProperties {
         /**
@@ -5174,6 +5468,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class InternetGateway implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::InternetGateway"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::InternetGateway"
+        }
         Type: string
         Properties: InternetGatewayProperties
         /**
@@ -5182,7 +5482,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-internetgateway.html
          */
         constructor(properties: InternetGatewayProperties) {
-            this.Type = "AWS::EC2::InternetGateway";
+            this.Type = InternetGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5237,6 +5537,12 @@ export namespace Cf {
         LaunchTemplateData?: LaunchTemplateLaunchTemplateData
       }
       export class LaunchTemplate implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::LaunchTemplate"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::LaunchTemplate"
+        }
         Type: string
         Properties: LaunchTemplateProperties
         /**
@@ -5245,7 +5551,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html
          */
         constructor(properties: LaunchTemplateProperties) {
-            this.Type = "AWS::EC2::LaunchTemplate";
+            this.Type = LaunchTemplate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5446,6 +5752,132 @@ export namespace Cf {
         static LaunchTemplateElasticInferenceAccelerator(properties: LaunchTemplateLaunchTemplateElasticInferenceAccelerator) : LaunchTemplateLaunchTemplateElasticInferenceAccelerator {
           return properties;
         }
+        /**
+         * Returns the PrivateIpAdd property type name (`"AWS::EC2::LaunchTemplate.PrivateIpAdd"`)
+         */
+        static get PrivateIpAddTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.PrivateIpAdd"
+        }
+        /**
+         * Returns the LaunchTemplateData property type name (`"AWS::EC2::LaunchTemplate.LaunchTemplateData"`)
+         */
+        static get LaunchTemplateDataTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.LaunchTemplateData"
+        }
+        /**
+         * Returns the InstanceMarketOptions property type name (`"AWS::EC2::LaunchTemplate.InstanceMarketOptions"`)
+         */
+        static get InstanceMarketOptionsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.InstanceMarketOptions"
+        }
+        /**
+         * Returns the CreditSpecification property type name (`"AWS::EC2::LaunchTemplate.CreditSpecification"`)
+         */
+        static get CreditSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CreditSpecification"
+        }
+        /**
+         * Returns the Monitoring property type name (`"AWS::EC2::LaunchTemplate.Monitoring"`)
+         */
+        static get MonitoringTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.Monitoring"
+        }
+        /**
+         * Returns the Placement property type name (`"AWS::EC2::LaunchTemplate.Placement"`)
+         */
+        static get PlacementTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.Placement"
+        }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::EC2::LaunchTemplate.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.BlockDeviceMapping"
+        }
+        /**
+         * Returns the SpotOptions property type name (`"AWS::EC2::LaunchTemplate.SpotOptions"`)
+         */
+        static get SpotOptionsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.SpotOptions"
+        }
+        /**
+         * Returns the CapacityReservationPreference property type name (`"AWS::EC2::LaunchTemplate.CapacityReservationPreference"`)
+         */
+        static get CapacityReservationPreferenceTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CapacityReservationPreference"
+        }
+        /**
+         * Returns the CapacityReservationSpecification property type name (`"AWS::EC2::LaunchTemplate.CapacityReservationSpecification"`)
+         */
+        static get CapacityReservationSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CapacityReservationSpecification"
+        }
+        /**
+         * Returns the ElasticGpuSpecification property type name (`"AWS::EC2::LaunchTemplate.ElasticGpuSpecification"`)
+         */
+        static get ElasticGpuSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.ElasticGpuSpecification"
+        }
+        /**
+         * Returns the TagSpecification property type name (`"AWS::EC2::LaunchTemplate.TagSpecification"`)
+         */
+        static get TagSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.TagSpecification"
+        }
+        /**
+         * Returns the Ipv6Add property type name (`"AWS::EC2::LaunchTemplate.Ipv6Add"`)
+         */
+        static get Ipv6AddTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.Ipv6Add"
+        }
+        /**
+         * Returns the IamInstanceProfile property type name (`"AWS::EC2::LaunchTemplate.IamInstanceProfile"`)
+         */
+        static get IamInstanceProfileTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.IamInstanceProfile"
+        }
+        /**
+         * Returns the CapacityReservationTarget property type name (`"AWS::EC2::LaunchTemplate.CapacityReservationTarget"`)
+         */
+        static get CapacityReservationTargetTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CapacityReservationTarget"
+        }
+        /**
+         * Returns the NetworkInterface property type name (`"AWS::EC2::LaunchTemplate.NetworkInterface"`)
+         */
+        static get NetworkInterfaceTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.NetworkInterface"
+        }
+        /**
+         * Returns the LicenseSpecification property type name (`"AWS::EC2::LaunchTemplate.LicenseSpecification"`)
+         */
+        static get LicenseSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.LicenseSpecification"
+        }
+        /**
+         * Returns the CpuOptions property type name (`"AWS::EC2::LaunchTemplate.CpuOptions"`)
+         */
+        static get CpuOptionsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CpuOptions"
+        }
+        /**
+         * Returns the Ebs property type name (`"AWS::EC2::LaunchTemplate.Ebs"`)
+         */
+        static get EbsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.Ebs"
+        }
+        /**
+         * Returns the HibernationOptions property type name (`"AWS::EC2::LaunchTemplate.HibernationOptions"`)
+         */
+        static get HibernationOptionsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.HibernationOptions"
+        }
+        /**
+         * Returns the LaunchTemplateElasticInferenceAccelerator property type name (`"AWS::EC2::LaunchTemplate.LaunchTemplateElasticInferenceAccelerator"`)
+         */
+        static get LaunchTemplateElasticInferenceAcceleratorTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.LaunchTemplateElasticInferenceAccelerator"
+        }
       }
       export interface VolumeProperties {
         /**
@@ -5531,6 +5963,12 @@ export namespace Cf {
         VolumeType?: string
       }
       export class Volume implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Volume"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::Volume"
+        }
         Type: string
         Properties: VolumeProperties
         /**
@@ -5539,7 +5977,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html
          */
         constructor(properties: VolumeProperties) {
-            this.Type = "AWS::EC2::Volume";
+            this.Type = Volume.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5594,6 +6032,12 @@ export namespace Cf {
         TransitGatewayAttachmentId: string
       }
       export class TransitGatewayRouteTableAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayRouteTableAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::TransitGatewayRouteTableAssociation"
+        }
         Type: string
         Properties: TransitGatewayRouteTableAssociationProperties
         /**
@@ -5602,7 +6046,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetableassociation.html
          */
         constructor(properties: TransitGatewayRouteTableAssociationProperties) {
-            this.Type = "AWS::EC2::TransitGatewayRouteTableAssociation";
+            this.Type = TransitGatewayRouteTableAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5648,6 +6092,12 @@ export namespace Cf {
         SpotFleetRequestConfigData: SpotFleetSpotFleetRequestConfigData
       }
       export class SpotFleet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SpotFleet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::SpotFleet"
+        }
         Type: string
         Properties: SpotFleetProperties
         /**
@@ -5656,7 +6106,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-spotfleet.html
          */
         constructor(properties: SpotFleetProperties) {
-            this.Type = "AWS::EC2::SpotFleet";
+            this.Type = SpotFleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5849,6 +6299,126 @@ export namespace Cf {
         static BlockDeviceMapping(properties: SpotFleetBlockDeviceMapping) : SpotFleetBlockDeviceMapping {
           return properties;
         }
+        /**
+         * Returns the ClassicLoadBalancer property type name (`"AWS::EC2::SpotFleet.ClassicLoadBalancer"`)
+         */
+        static get ClassicLoadBalancerTypeName(): string {
+          return "AWS::EC2::SpotFleet.ClassicLoadBalancer"
+        }
+        /**
+         * Returns the LaunchTemplateConfig property type name (`"AWS::EC2::SpotFleet.LaunchTemplateConfig"`)
+         */
+        static get LaunchTemplateConfigTypeName(): string {
+          return "AWS::EC2::SpotFleet.LaunchTemplateConfig"
+        }
+        /**
+         * Returns the IamInstanceProfileSpecification property type name (`"AWS::EC2::SpotFleet.IamInstanceProfileSpecification"`)
+         */
+        static get IamInstanceProfileSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.IamInstanceProfileSpecification"
+        }
+        /**
+         * Returns the InstanceNetworkInterfaceSpecification property type name (`"AWS::EC2::SpotFleet.InstanceNetworkInterfaceSpecification"`)
+         */
+        static get InstanceNetworkInterfaceSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.InstanceNetworkInterfaceSpecification"
+        }
+        /**
+         * Returns the SpotFleetTagSpecification property type name (`"AWS::EC2::SpotFleet.SpotFleetTagSpecification"`)
+         */
+        static get SpotFleetTagSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotFleetTagSpecification"
+        }
+        /**
+         * Returns the PrivateIpAddressSpecification property type name (`"AWS::EC2::SpotFleet.PrivateIpAddressSpecification"`)
+         */
+        static get PrivateIpAddressSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.PrivateIpAddressSpecification"
+        }
+        /**
+         * Returns the SpotFleetLaunchSpecification property type name (`"AWS::EC2::SpotFleet.SpotFleetLaunchSpecification"`)
+         */
+        static get SpotFleetLaunchSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotFleetLaunchSpecification"
+        }
+        /**
+         * Returns the ClassicLoadBalancersConfig property type name (`"AWS::EC2::SpotFleet.ClassicLoadBalancersConfig"`)
+         */
+        static get ClassicLoadBalancersConfigTypeName(): string {
+          return "AWS::EC2::SpotFleet.ClassicLoadBalancersConfig"
+        }
+        /**
+         * Returns the SpotPlacement property type name (`"AWS::EC2::SpotFleet.SpotPlacement"`)
+         */
+        static get SpotPlacementTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotPlacement"
+        }
+        /**
+         * Returns the SpotFleetRequestConfigData property type name (`"AWS::EC2::SpotFleet.SpotFleetRequestConfigData"`)
+         */
+        static get SpotFleetRequestConfigDataTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotFleetRequestConfigData"
+        }
+        /**
+         * Returns the EbsBlockDevice property type name (`"AWS::EC2::SpotFleet.EbsBlockDevice"`)
+         */
+        static get EbsBlockDeviceTypeName(): string {
+          return "AWS::EC2::SpotFleet.EbsBlockDevice"
+        }
+        /**
+         * Returns the LoadBalancersConfig property type name (`"AWS::EC2::SpotFleet.LoadBalancersConfig"`)
+         */
+        static get LoadBalancersConfigTypeName(): string {
+          return "AWS::EC2::SpotFleet.LoadBalancersConfig"
+        }
+        /**
+         * Returns the FleetLaunchTemplateSpecification property type name (`"AWS::EC2::SpotFleet.FleetLaunchTemplateSpecification"`)
+         */
+        static get FleetLaunchTemplateSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.FleetLaunchTemplateSpecification"
+        }
+        /**
+         * Returns the TargetGroup property type name (`"AWS::EC2::SpotFleet.TargetGroup"`)
+         */
+        static get TargetGroupTypeName(): string {
+          return "AWS::EC2::SpotFleet.TargetGroup"
+        }
+        /**
+         * Returns the InstanceIpv6Address property type name (`"AWS::EC2::SpotFleet.InstanceIpv6Address"`)
+         */
+        static get InstanceIpv6AddressTypeName(): string {
+          return "AWS::EC2::SpotFleet.InstanceIpv6Address"
+        }
+        /**
+         * Returns the TargetGroupsConfig property type name (`"AWS::EC2::SpotFleet.TargetGroupsConfig"`)
+         */
+        static get TargetGroupsConfigTypeName(): string {
+          return "AWS::EC2::SpotFleet.TargetGroupsConfig"
+        }
+        /**
+         * Returns the GroupIdentifier property type name (`"AWS::EC2::SpotFleet.GroupIdentifier"`)
+         */
+        static get GroupIdentifierTypeName(): string {
+          return "AWS::EC2::SpotFleet.GroupIdentifier"
+        }
+        /**
+         * Returns the LaunchTemplateOverrides property type name (`"AWS::EC2::SpotFleet.LaunchTemplateOverrides"`)
+         */
+        static get LaunchTemplateOverridesTypeName(): string {
+          return "AWS::EC2::SpotFleet.LaunchTemplateOverrides"
+        }
+        /**
+         * Returns the SpotFleetMonitoring property type name (`"AWS::EC2::SpotFleet.SpotFleetMonitoring"`)
+         */
+        static get SpotFleetMonitoringTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotFleetMonitoring"
+        }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::EC2::SpotFleet.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::EC2::SpotFleet.BlockDeviceMapping"
+        }
       }
       export interface VPNConnectionRouteProperties {
         /**
@@ -5871,6 +6441,12 @@ export namespace Cf {
         VpnConnectionId: string
       }
       export class VPNConnectionRoute implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPNConnectionRoute"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPNConnectionRoute"
+        }
         Type: string
         Properties: VPNConnectionRouteProperties
         /**
@@ -5879,7 +6455,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html
          */
         constructor(properties: VPNConnectionRouteProperties) {
-            this.Type = "AWS::EC2::VPNConnectionRoute";
+            this.Type = VPNConnectionRoute.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -5943,6 +6519,12 @@ export namespace Cf {
         Permission: string
       }
       export class NetworkInterfacePermission implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkInterfacePermission"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::NetworkInterfacePermission"
+        }
         Type: string
         Properties: NetworkInterfacePermissionProperties
         /**
@@ -5951,7 +6533,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html
          */
         constructor(properties: NetworkInterfacePermissionProperties) {
-            this.Type = "AWS::EC2::NetworkInterfacePermission";
+            this.Type = NetworkInterfacePermission.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6015,6 +6597,12 @@ export namespace Cf {
         PublicIpv4Pool?: string
       }
       export class EIP implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::EIP"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::EIP"
+        }
         Type: string
         Properties: EIPProperties
         /**
@@ -6023,7 +6611,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html
          */
         constructor(properties: EIPProperties) {
-            this.Type = "AWS::EC2::EIP";
+            this.Type = EIP.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6168,6 +6756,12 @@ export namespace Cf {
         ToPort?: number
       }
       export class SecurityGroupIngress implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SecurityGroupIngress"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::SecurityGroupIngress"
+        }
         Type: string
         Properties: SecurityGroupIngressProperties
         /**
@@ -6176,7 +6770,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html
          */
         constructor(properties: SecurityGroupIngressProperties) {
-            this.Type = "AWS::EC2::SecurityGroupIngress";
+            this.Type = SecurityGroupIngress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6231,6 +6825,12 @@ export namespace Cf {
         SubnetId: string
       }
       export class SubnetRouteTableAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SubnetRouteTableAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::SubnetRouteTableAssociation"
+        }
         Type: string
         Properties: SubnetRouteTableAssociationProperties
         /**
@@ -6239,7 +6839,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html
          */
         constructor(properties: SubnetRouteTableAssociationProperties) {
-            this.Type = "AWS::EC2::SubnetRouteTableAssociation";
+            this.Type = SubnetRouteTableAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6357,6 +6957,12 @@ export namespace Cf {
         VpcPeeringConnectionId?: string
       }
       export class Route implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Route"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::Route"
+        }
         Type: string
         Properties: RouteProperties
         /**
@@ -6365,7 +6971,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html
          */
         constructor(properties: RouteProperties) {
-            this.Type = "AWS::EC2::Route";
+            this.Type = Route.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6465,6 +7071,12 @@ export namespace Cf {
         TrafficType: string
       }
       export class FlowLog implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::FlowLog"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::FlowLog"
+        }
         Type: string
         Properties: FlowLogProperties
         /**
@@ -6473,7 +7085,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html
          */
         constructor(properties: FlowLogProperties) {
-            this.Type = "AWS::EC2::FlowLog";
+            this.Type = FlowLog.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6528,6 +7140,12 @@ export namespace Cf {
         TransitGatewayAttachmentId: string
       }
       export class TransitGatewayRouteTablePropagation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayRouteTablePropagation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::TransitGatewayRouteTablePropagation"
+        }
         Type: string
         Properties: TransitGatewayRouteTablePropagationProperties
         /**
@@ -6536,7 +7154,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetablepropagation.html
          */
         constructor(properties: TransitGatewayRouteTablePropagationProperties) {
-            this.Type = "AWS::EC2::TransitGatewayRouteTablePropagation";
+            this.Type = TransitGatewayRouteTablePropagation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6654,6 +7272,12 @@ export namespace Cf {
         ToPort?: number
       }
       export class SecurityGroupEgress implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SecurityGroupEgress"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::SecurityGroupEgress"
+        }
         Type: string
         Properties: SecurityGroupEgressProperties
         /**
@@ -6662,7 +7286,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html
          */
         constructor(properties: SecurityGroupEgressProperties) {
-            this.Type = "AWS::EC2::SecurityGroupEgress";
+            this.Type = SecurityGroupEgress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6798,6 +7422,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class NetworkInterface implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkInterface"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::NetworkInterface"
+        }
         Type: string
         Properties: NetworkInterfaceProperties
         /**
@@ -6806,7 +7436,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html
          */
         constructor(properties: NetworkInterfaceProperties) {
-            this.Type = "AWS::EC2::NetworkInterface";
+            this.Type = NetworkInterface.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6855,6 +7485,18 @@ export namespace Cf {
         static PrivateIpAddressSpecification(properties: NetworkInterfacePrivateIpAddressSpecification) : NetworkInterfacePrivateIpAddressSpecification {
           return properties;
         }
+        /**
+         * Returns the InstanceIpv6Address property type name (`"AWS::EC2::NetworkInterface.InstanceIpv6Address"`)
+         */
+        static get InstanceIpv6AddressTypeName(): string {
+          return "AWS::EC2::NetworkInterface.InstanceIpv6Address"
+        }
+        /**
+         * Returns the PrivateIpAddressSpecification property type name (`"AWS::EC2::NetworkInterface.PrivateIpAddressSpecification"`)
+         */
+        static get PrivateIpAddressSpecificationTypeName(): string {
+          return "AWS::EC2::NetworkInterface.PrivateIpAddressSpecification"
+        }
       }
       export interface TransitGatewayAttachmentProperties {
         /**
@@ -6895,6 +7537,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class TransitGatewayAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::TransitGatewayAttachment"
+        }
         Type: string
         Properties: TransitGatewayAttachmentProperties
         /**
@@ -6903,7 +7551,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayattachment.html
          */
         constructor(properties: TransitGatewayAttachmentProperties) {
-            this.Type = "AWS::EC2::TransitGatewayAttachment";
+            this.Type = TransitGatewayAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -6958,6 +7606,12 @@ export namespace Cf {
         SubnetId: string
       }
       export class SubnetNetworkAclAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SubnetNetworkAclAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::SubnetNetworkAclAssociation"
+        }
         Type: string
         Properties: SubnetNetworkAclAssociationProperties
         /**
@@ -6966,7 +7620,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html
          */
         constructor(properties: SubnetNetworkAclAssociationProperties) {
-            this.Type = "AWS::EC2::SubnetNetworkAclAssociation";
+            this.Type = SubnetNetworkAclAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7021,6 +7675,12 @@ export namespace Cf {
         SubnetId: string
       }
       export class SubnetCidrBlock implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SubnetCidrBlock"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::SubnetCidrBlock"
+        }
         Type: string
         Properties: SubnetCidrBlockProperties
         /**
@@ -7029,7 +7689,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetcidrblock.html
          */
         constructor(properties: SubnetCidrBlockProperties) {
-            this.Type = "AWS::EC2::SubnetCidrBlock";
+            this.Type = SubnetCidrBlock.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7093,6 +7753,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class NatGateway implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NatGateway"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::NatGateway"
+        }
         Type: string
         Properties: NatGatewayProperties
         /**
@@ -7101,7 +7767,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html
          */
         constructor(properties: NatGatewayProperties) {
-            this.Type = "AWS::EC2::NatGateway";
+            this.Type = NatGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7192,6 +7858,12 @@ export namespace Cf {
         VpcId?: string
       }
       export class SecurityGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SecurityGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::SecurityGroup"
+        }
         Type: string
         Properties: SecurityGroupProperties
         /**
@@ -7200,7 +7872,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html
          */
         constructor(properties: SecurityGroupProperties) {
-            this.Type = "AWS::EC2::SecurityGroup";
+            this.Type = SecurityGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7248,6 +7920,18 @@ export namespace Cf {
          */
         static Egress(properties: SecurityGroupEgress) : SecurityGroupEgress {
           return properties;
+        }
+        /**
+         * Returns the Ingress property type name (`"AWS::EC2::SecurityGroup.Ingress"`)
+         */
+        static get IngressTypeName(): string {
+          return "AWS::EC2::SecurityGroup.Ingress"
+        }
+        /**
+         * Returns the Egress property type name (`"AWS::EC2::SecurityGroup.Egress"`)
+         */
+        static get EgressTypeName(): string {
+          return "AWS::EC2::SecurityGroup.Egress"
         }
       }
       export interface SubnetProperties {
@@ -7316,6 +8000,12 @@ export namespace Cf {
         VpcId: string
       }
       export class Subnet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Subnet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::Subnet"
+        }
         Type: string
         Properties: SubnetProperties
         /**
@@ -7324,7 +8014,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html
          */
         constructor(properties: SubnetProperties) {
-            this.Type = "AWS::EC2::Subnet";
+            this.Type = Subnet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7406,6 +8096,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class VPC implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPC"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPC"
+        }
         Type: string
         Properties: VPCProperties
         /**
@@ -7414,7 +8110,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html
          */
         constructor(properties: VPCProperties) {
-            this.Type = "AWS::EC2::VPC";
+            this.Type = VPC.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7757,6 +8453,12 @@ export namespace Cf {
         Volumes?: InstanceVolume[]
       }
       export class Instance implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Instance"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::Instance"
+        }
         Type: string
         Properties: InstanceProperties
         /**
@@ -7765,7 +8467,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html
          */
         constructor(properties: InstanceProperties) {
-            this.Type = "AWS::EC2::Instance";
+            this.Type = Instance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -7910,6 +8612,90 @@ export namespace Cf {
         static PrivateIpAddressSpecification(properties: InstancePrivateIpAddressSpecification) : InstancePrivateIpAddressSpecification {
           return properties;
         }
+        /**
+         * Returns the ElasticGpuSpecification property type name (`"AWS::EC2::Instance.ElasticGpuSpecification"`)
+         */
+        static get ElasticGpuSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.ElasticGpuSpecification"
+        }
+        /**
+         * Returns the NetworkInterface property type name (`"AWS::EC2::Instance.NetworkInterface"`)
+         */
+        static get NetworkInterfaceTypeName(): string {
+          return "AWS::EC2::Instance.NetworkInterface"
+        }
+        /**
+         * Returns the InstanceIpv6Address property type name (`"AWS::EC2::Instance.InstanceIpv6Address"`)
+         */
+        static get InstanceIpv6AddressTypeName(): string {
+          return "AWS::EC2::Instance.InstanceIpv6Address"
+        }
+        /**
+         * Returns the Volume property type name (`"AWS::EC2::Instance.Volume"`)
+         */
+        static get VolumeTypeName(): string {
+          return "AWS::EC2::Instance.Volume"
+        }
+        /**
+         * Returns the AssociationParameter property type name (`"AWS::EC2::Instance.AssociationParameter"`)
+         */
+        static get AssociationParameterTypeName(): string {
+          return "AWS::EC2::Instance.AssociationParameter"
+        }
+        /**
+         * Returns the LaunchTemplateSpecification property type name (`"AWS::EC2::Instance.LaunchTemplateSpecification"`)
+         */
+        static get LaunchTemplateSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.LaunchTemplateSpecification"
+        }
+        /**
+         * Returns the Ebs property type name (`"AWS::EC2::Instance.Ebs"`)
+         */
+        static get EbsTypeName(): string {
+          return "AWS::EC2::Instance.Ebs"
+        }
+        /**
+         * Returns the LicenseSpecification property type name (`"AWS::EC2::Instance.LicenseSpecification"`)
+         */
+        static get LicenseSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.LicenseSpecification"
+        }
+        /**
+         * Returns the NoDevice property type name (`"AWS::EC2::Instance.NoDevice"`)
+         */
+        static get NoDeviceTypeName(): string {
+          return "AWS::EC2::Instance.NoDevice"
+        }
+        /**
+         * Returns the SsmAssociation property type name (`"AWS::EC2::Instance.SsmAssociation"`)
+         */
+        static get SsmAssociationTypeName(): string {
+          return "AWS::EC2::Instance.SsmAssociation"
+        }
+        /**
+         * Returns the CreditSpecification property type name (`"AWS::EC2::Instance.CreditSpecification"`)
+         */
+        static get CreditSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.CreditSpecification"
+        }
+        /**
+         * Returns the ElasticInferenceAccelerator property type name (`"AWS::EC2::Instance.ElasticInferenceAccelerator"`)
+         */
+        static get ElasticInferenceAcceleratorTypeName(): string {
+          return "AWS::EC2::Instance.ElasticInferenceAccelerator"
+        }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::EC2::Instance.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::EC2::Instance.BlockDeviceMapping"
+        }
+        /**
+         * Returns the PrivateIpAddressSpecification property type name (`"AWS::EC2::Instance.PrivateIpAddressSpecification"`)
+         */
+        static get PrivateIpAddressSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.PrivateIpAddressSpecification"
+        }
       }
       export interface DHCPOptionsProperties {
         /**
@@ -7968,6 +8754,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DHCPOptions implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::DHCPOptions"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::DHCPOptions"
+        }
         Type: string
         Properties: DHCPOptionsProperties
         /**
@@ -7976,7 +8768,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html
          */
         constructor(properties: DHCPOptionsProperties) {
-            this.Type = "AWS::EC2::DHCPOptions";
+            this.Type = DHCPOptions.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8049,6 +8841,12 @@ export namespace Cf {
         TransitGatewayAttachmentId?: string
       }
       export class TransitGatewayRoute implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayRoute"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::TransitGatewayRoute"
+        }
         Type: string
         Properties: TransitGatewayRouteProperties
         /**
@@ -8057,7 +8855,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroute.html
          */
         constructor(properties: TransitGatewayRouteProperties) {
-            this.Type = "AWS::EC2::TransitGatewayRoute";
+            this.Type = TransitGatewayRoute.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8112,6 +8910,12 @@ export namespace Cf {
         VpcId: string
       }
       export class NetworkAcl implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkAcl"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::NetworkAcl"
+        }
         Type: string
         Properties: NetworkAclProperties
         /**
@@ -8120,7 +8924,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html
          */
         constructor(properties: NetworkAclProperties) {
-            this.Type = "AWS::EC2::NetworkAcl";
+            this.Type = NetworkAcl.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8175,6 +8979,12 @@ export namespace Cf {
         VpnGatewayId: string
       }
       export class VPNGatewayRoutePropagation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPNGatewayRoutePropagation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPNGatewayRoutePropagation"
+        }
         Type: string
         Properties: VPNGatewayRoutePropagationProperties
         /**
@@ -8183,7 +8993,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html
          */
         constructor(properties: VPNGatewayRoutePropagationProperties) {
-            this.Type = "AWS::EC2::VPNGatewayRoutePropagation";
+            this.Type = VPNGatewayRoutePropagation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8229,6 +9039,12 @@ export namespace Cf {
         VpcId: string
       }
       export class EgressOnlyInternetGateway implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::EgressOnlyInternetGateway"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::EgressOnlyInternetGateway"
+        }
         Type: string
         Properties: EgressOnlyInternetGatewayProperties
         /**
@@ -8237,7 +9053,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-egressonlyinternetgateway.html
          */
         constructor(properties: EgressOnlyInternetGatewayProperties) {
-            this.Type = "AWS::EC2::EgressOnlyInternetGateway";
+            this.Type = EgressOnlyInternetGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8310,6 +9126,12 @@ export namespace Cf {
         NetworkInterfaceId: string
       }
       export class NetworkInterfaceAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkInterfaceAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::NetworkInterfaceAttachment"
+        }
         Type: string
         Properties: NetworkInterfaceAttachmentProperties
         /**
@@ -8318,7 +9140,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html
          */
         constructor(properties: NetworkInterfaceAttachmentProperties) {
-            this.Type = "AWS::EC2::NetworkInterfaceAttachment";
+            this.Type = NetworkInterfaceAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8391,6 +9213,12 @@ export namespace Cf {
         Type: string
       }
       export class CustomerGateway implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::CustomerGateway"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::CustomerGateway"
+        }
         Type: string
         Properties: CustomerGatewayProperties
         /**
@@ -8399,7 +9227,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html
          */
         constructor(properties: CustomerGatewayProperties) {
-            this.Type = "AWS::EC2::CustomerGateway";
+            this.Type = CustomerGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8472,6 +9300,12 @@ export namespace Cf {
         VLANId?: number
       }
       export class TrunkInterfaceAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TrunkInterfaceAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::TrunkInterfaceAssociation"
+        }
         Type: string
         Properties: TrunkInterfaceAssociationProperties
         /**
@@ -8480,7 +9314,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html
          */
         constructor(properties: TrunkInterfaceAssociationProperties) {
-            this.Type = "AWS::EC2::TrunkInterfaceAssociation";
+            this.Type = TrunkInterfaceAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8544,6 +9378,12 @@ export namespace Cf {
         VolumeId: string
       }
       export class VolumeAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VolumeAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VolumeAttachment"
+        }
         Type: string
         Properties: VolumeAttachmentProperties
         /**
@@ -8552,7 +9392,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html
          */
         constructor(properties: VolumeAttachmentProperties) {
-            this.Type = "AWS::EC2::VolumeAttachment";
+            this.Type = VolumeAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8616,6 +9456,12 @@ export namespace Cf {
         InstanceType: string
       }
       export class Host implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Host"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::Host"
+        }
         Type: string
         Properties: HostProperties
         /**
@@ -8624,7 +9470,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html
          */
         constructor(properties: HostProperties) {
-            this.Type = "AWS::EC2::Host";
+            this.Type = Host.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8706,6 +9552,12 @@ export namespace Cf {
         PrivateIpAddress?: string
       }
       export class EIPAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::EIPAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::EIPAssociation"
+        }
         Type: string
         Properties: EIPAssociationProperties
         /**
@@ -8714,7 +9566,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html
          */
         constructor(properties: EIPAssociationProperties) {
-            this.Type = "AWS::EC2::EIPAssociation";
+            this.Type = EIPAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8778,6 +9630,12 @@ export namespace Cf {
         Type: string
       }
       export class VPNGateway implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPNGateway"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPNGateway"
+        }
         Type: string
         Properties: VPNGatewayProperties
         /**
@@ -8786,7 +9644,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html
          */
         constructor(properties: VPNGatewayProperties) {
-            this.Type = "AWS::EC2::VPNGateway";
+            this.Type = VPNGateway.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8895,6 +9753,12 @@ export namespace Cf {
         VpcId: string
       }
       export class VPCEndpoint implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCEndpoint"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPCEndpoint"
+        }
         Type: string
         Properties: VPCEndpointProperties
         /**
@@ -8903,7 +9767,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html
          */
         constructor(properties: VPCEndpointProperties) {
-            this.Type = "AWS::EC2::VPCEndpoint";
+            this.Type = VPCEndpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -8967,6 +9831,12 @@ export namespace Cf {
         VpnGatewayId?: string
       }
       export class VPCGatewayAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCGatewayAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPCGatewayAttachment"
+        }
         Type: string
         Properties: VPCGatewayAttachmentProperties
         /**
@@ -8975,7 +9845,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html
          */
         constructor(properties: VPCGatewayAttachmentProperties) {
-            this.Type = "AWS::EC2::VPCGatewayAttachment";
+            this.Type = VPCGatewayAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9066,6 +9936,12 @@ export namespace Cf {
         VpnTunnelOptionsSpecifications?: VPNConnectionVpnTunnelOptionsSpecification[]
       }
       export class VPNConnection implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPNConnection"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPNConnection"
+        }
         Type: string
         Properties: VPNConnectionProperties
         /**
@@ -9074,7 +9950,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html
          */
         constructor(properties: VPNConnectionProperties) {
-            this.Type = "AWS::EC2::VPNConnection";
+            this.Type = VPNConnection.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9115,6 +9991,12 @@ export namespace Cf {
         static VpnTunnelOptionsSpecification(properties: VPNConnectionVpnTunnelOptionsSpecification) : VPNConnectionVpnTunnelOptionsSpecification {
           return properties;
         }
+        /**
+         * Returns the VpnTunnelOptionsSpecification property type name (`"AWS::EC2::VPNConnection.VpnTunnelOptionsSpecification"`)
+         */
+        static get VpnTunnelOptionsSpecificationTypeName(): string {
+          return "AWS::EC2::VPNConnection.VpnTunnelOptionsSpecification"
+        }
       }
       export interface VPCCidrBlockProperties {
         /**
@@ -9146,6 +10028,12 @@ export namespace Cf {
         VpcId: string
       }
       export class VPCCidrBlock implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCCidrBlock"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPCCidrBlock"
+        }
         Type: string
         Properties: VPCCidrBlockProperties
         /**
@@ -9154,7 +10042,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html
          */
         constructor(properties: VPCCidrBlockProperties) {
-            this.Type = "AWS::EC2::VPCCidrBlock";
+            this.Type = VPCCidrBlock.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9290,6 +10178,12 @@ export namespace Cf {
         ValidUntil?: string
       }
       export class EC2Fleet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::EC2Fleet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::EC2Fleet"
+        }
         Type: string
         Properties: EC2FleetProperties
         /**
@@ -9298,7 +10192,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html
          */
         constructor(properties: EC2FleetProperties) {
-            this.Type = "AWS::EC2::EC2Fleet";
+            this.Type = EC2Fleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9395,6 +10289,54 @@ export namespace Cf {
         static SpotOptionsRequest(properties: EC2FleetSpotOptionsRequest) : EC2FleetSpotOptionsRequest {
           return properties;
         }
+        /**
+         * Returns the FleetLaunchTemplateSpecificationRequest property type name (`"AWS::EC2::EC2Fleet.FleetLaunchTemplateSpecificationRequest"`)
+         */
+        static get FleetLaunchTemplateSpecificationRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.FleetLaunchTemplateSpecificationRequest"
+        }
+        /**
+         * Returns the FleetLaunchTemplateConfigRequest property type name (`"AWS::EC2::EC2Fleet.FleetLaunchTemplateConfigRequest"`)
+         */
+        static get FleetLaunchTemplateConfigRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.FleetLaunchTemplateConfigRequest"
+        }
+        /**
+         * Returns the OnDemandOptionsRequest property type name (`"AWS::EC2::EC2Fleet.OnDemandOptionsRequest"`)
+         */
+        static get OnDemandOptionsRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.OnDemandOptionsRequest"
+        }
+        /**
+         * Returns the TagRequest property type name (`"AWS::EC2::EC2Fleet.TagRequest"`)
+         */
+        static get TagRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.TagRequest"
+        }
+        /**
+         * Returns the TargetCapacitySpecificationRequest property type name (`"AWS::EC2::EC2Fleet.TargetCapacitySpecificationRequest"`)
+         */
+        static get TargetCapacitySpecificationRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.TargetCapacitySpecificationRequest"
+        }
+        /**
+         * Returns the FleetLaunchTemplateOverridesRequest property type name (`"AWS::EC2::EC2Fleet.FleetLaunchTemplateOverridesRequest"`)
+         */
+        static get FleetLaunchTemplateOverridesRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.FleetLaunchTemplateOverridesRequest"
+        }
+        /**
+         * Returns the TagSpecification property type name (`"AWS::EC2::EC2Fleet.TagSpecification"`)
+         */
+        static get TagSpecificationTypeName(): string {
+          return "AWS::EC2::EC2Fleet.TagSpecification"
+        }
+        /**
+         * Returns the SpotOptionsRequest property type name (`"AWS::EC2::EC2Fleet.SpotOptionsRequest"`)
+         */
+        static get SpotOptionsRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.SpotOptionsRequest"
+        }
       }
       export interface TransitGatewayRouteTableProperties {
         /**
@@ -9417,6 +10359,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class TransitGatewayRouteTable implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayRouteTable"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::TransitGatewayRouteTable"
+        }
         Type: string
         Properties: TransitGatewayRouteTableProperties
         /**
@@ -9425,7 +10373,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetable.html
          */
         constructor(properties: TransitGatewayRouteTableProperties) {
-            this.Type = "AWS::EC2::TransitGatewayRouteTable";
+            this.Type = TransitGatewayRouteTable.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9480,6 +10428,12 @@ export namespace Cf {
         VpcId: string
       }
       export class VPCDHCPOptionsAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCDHCPOptionsAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EC2::VPCDHCPOptionsAssociation"
+        }
         Type: string
         Properties: VPCDHCPOptionsAssociationProperties
         /**
@@ -9488,7 +10442,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html
          */
         constructor(properties: VPCDHCPOptionsAssociationProperties) {
-            this.Type = "AWS::EC2::VPCDHCPOptionsAssociation";
+            this.Type = VPCDHCPOptionsAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9603,6 +10557,12 @@ export namespace Cf {
         PortfolioId: string
       }
       export class PortfolioShare implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::PortfolioShare"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::PortfolioShare"
+        }
         Type: string
         Properties: PortfolioShareProperties
         /**
@@ -9611,7 +10571,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html
          */
         constructor(properties: PortfolioShareProperties) {
-            this.Type = "AWS::ServiceCatalog::PortfolioShare";
+            this.Type = PortfolioShare.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9666,6 +10626,12 @@ export namespace Cf {
         ResourceId: string
       }
       export class TagOptionAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::TagOptionAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::TagOptionAssociation"
+        }
         Type: string
         Properties: TagOptionAssociationProperties
         /**
@@ -9674,7 +10640,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html
          */
         constructor(properties: TagOptionAssociationProperties) {
-            this.Type = "AWS::ServiceCatalog::TagOptionAssociation";
+            this.Type = TagOptionAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9756,6 +10722,12 @@ export namespace Cf {
         Rules: string
       }
       export class LaunchTemplateConstraint implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::LaunchTemplateConstraint"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::LaunchTemplateConstraint"
+        }
         Type: string
         Properties: LaunchTemplateConstraintProperties
         /**
@@ -9764,7 +10736,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html
          */
         constructor(properties: LaunchTemplateConstraintProperties) {
-            this.Type = "AWS::ServiceCatalog::LaunchTemplateConstraint";
+            this.Type = LaunchTemplateConstraint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9828,6 +10800,12 @@ export namespace Cf {
         Key: string
       }
       export class TagOption implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::TagOption"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::TagOption"
+        }
         Type: string
         Properties: TagOptionProperties
         /**
@@ -9836,7 +10814,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html
          */
         constructor(properties: TagOptionProperties) {
-            this.Type = "AWS::ServiceCatalog::TagOption";
+            this.Type = TagOption.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9909,6 +10887,12 @@ export namespace Cf {
         PrincipalType: string
       }
       export class PortfolioPrincipalAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::PortfolioPrincipalAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::PortfolioPrincipalAssociation"
+        }
         Type: string
         Properties: PortfolioPrincipalAssociationProperties
         /**
@@ -9917,7 +10901,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html
          */
         constructor(properties: PortfolioPrincipalAssociationProperties) {
-            this.Type = "AWS::ServiceCatalog::PortfolioPrincipalAssociation";
+            this.Type = PortfolioPrincipalAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -9999,6 +10983,12 @@ export namespace Cf {
         RoleArn: string
       }
       export class LaunchRoleConstraint implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::LaunchRoleConstraint"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::LaunchRoleConstraint"
+        }
         Type: string
         Properties: LaunchRoleConstraintProperties
         /**
@@ -10007,7 +10997,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html
          */
         constructor(properties: LaunchRoleConstraintProperties) {
-            this.Type = "AWS::ServiceCatalog::LaunchRoleConstraint";
+            this.Type = LaunchRoleConstraint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10134,6 +11124,12 @@ export namespace Cf {
         ProvisioningArtifactId?: string
       }
       export class CloudFormationProvisionedProduct implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::CloudFormationProvisionedProduct"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::CloudFormationProvisionedProduct"
+        }
         Type: string
         Properties: CloudFormationProvisionedProductProperties
         /**
@@ -10142,7 +11138,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html
          */
         constructor(properties: CloudFormationProvisionedProductProperties) {
-            this.Type = "AWS::ServiceCatalog::CloudFormationProvisionedProduct";
+            this.Type = CloudFormationProvisionedProduct.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10182,6 +11178,12 @@ export namespace Cf {
          */
         static ProvisioningParameter(properties: CloudFormationProvisionedProductProvisioningParameter) : CloudFormationProvisionedProductProvisioningParameter {
           return properties;
+        }
+        /**
+         * Returns the ProvisioningParameter property type name (`"AWS::ServiceCatalog::CloudFormationProvisionedProduct.ProvisioningParameter"`)
+         */
+        static get ProvisioningParameterTypeName(): string {
+          return "AWS::ServiceCatalog::CloudFormationProvisionedProduct.ProvisioningParameter"
         }
       }
       export interface CloudFormationProductProperties {
@@ -10277,6 +11279,12 @@ export namespace Cf {
         ProvisioningArtifactParameters: CloudFormationProductProvisioningArtifactProperties[]
       }
       export class CloudFormationProduct implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::CloudFormationProduct"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::CloudFormationProduct"
+        }
         Type: string
         Properties: CloudFormationProductProperties
         /**
@@ -10285,7 +11293,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html
          */
         constructor(properties: CloudFormationProductProperties) {
-            this.Type = "AWS::ServiceCatalog::CloudFormationProduct";
+            this.Type = CloudFormationProduct.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10325,6 +11333,12 @@ export namespace Cf {
          */
         static ProvisioningArtifactProperties(properties: CloudFormationProductProvisioningArtifactProperties) : CloudFormationProductProvisioningArtifactProperties {
           return properties;
+        }
+        /**
+         * Returns the ProvisioningArtifactProperties property type name (`"AWS::ServiceCatalog::CloudFormationProduct.ProvisioningArtifactProperties"`)
+         */
+        static get ProvisioningArtifactPropertiesTypeName(): string {
+          return "AWS::ServiceCatalog::CloudFormationProduct.ProvisioningArtifactProperties"
         }
       }
       export interface PortfolioProductAssociationProperties {
@@ -10366,6 +11380,12 @@ export namespace Cf {
         ProductId: string
       }
       export class PortfolioProductAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::PortfolioProductAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::PortfolioProductAssociation"
+        }
         Type: string
         Properties: PortfolioProductAssociationProperties
         /**
@@ -10374,7 +11394,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html
          */
         constructor(properties: PortfolioProductAssociationProperties) {
-            this.Type = "AWS::ServiceCatalog::PortfolioProductAssociation";
+            this.Type = PortfolioProductAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10456,6 +11476,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Portfolio implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::Portfolio"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::Portfolio"
+        }
         Type: string
         Properties: PortfolioProperties
         /**
@@ -10464,7 +11490,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html
          */
         constructor(properties: PortfolioProperties) {
-            this.Type = "AWS::ServiceCatalog::Portfolio";
+            this.Type = Portfolio.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10519,6 +11545,12 @@ export namespace Cf {
         PortfolioId: string
       }
       export class AcceptedPortfolioShare implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::AcceptedPortfolioShare"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::AcceptedPortfolioShare"
+        }
         Type: string
         Properties: AcceptedPortfolioShareProperties
         /**
@@ -10527,7 +11559,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html
          */
         constructor(properties: AcceptedPortfolioShareProperties) {
-            this.Type = "AWS::ServiceCatalog::AcceptedPortfolioShare";
+            this.Type = AcceptedPortfolioShare.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -10609,6 +11641,12 @@ export namespace Cf {
         ProductId: string
       }
       export class LaunchNotificationConstraint implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::LaunchNotificationConstraint"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceCatalog::LaunchNotificationConstraint"
+        }
         Type: string
         Properties: LaunchNotificationConstraintProperties
         /**
@@ -10617,7 +11655,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html
          */
         constructor(properties: LaunchNotificationConstraintProperties) {
-            this.Type = "AWS::ServiceCatalog::LaunchNotificationConstraint";
+            this.Type = LaunchNotificationConstraint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11214,6 +12252,12 @@ export namespace Cf {
         Roles?: object
       }
       export class IdentityPoolRoleAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::IdentityPoolRoleAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Cognito::IdentityPoolRoleAttachment"
+        }
         Type: string
         Properties: IdentityPoolRoleAttachmentProperties
         /**
@@ -11222,7 +12266,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html
          */
         constructor(properties: IdentityPoolRoleAttachmentProperties) {
-            this.Type = "AWS::Cognito::IdentityPoolRoleAttachment";
+            this.Type = IdentityPoolRoleAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11279,6 +12323,24 @@ export namespace Cf {
         static MappingRule(properties: IdentityPoolRoleAttachmentMappingRule) : IdentityPoolRoleAttachmentMappingRule {
           return properties;
         }
+        /**
+         * Returns the RulesConfigurationType property type name (`"AWS::Cognito::IdentityPoolRoleAttachment.RulesConfigurationType"`)
+         */
+        static get RulesConfigurationTypeTypeName(): string {
+          return "AWS::Cognito::IdentityPoolRoleAttachment.RulesConfigurationType"
+        }
+        /**
+         * Returns the RoleMapping property type name (`"AWS::Cognito::IdentityPoolRoleAttachment.RoleMapping"`)
+         */
+        static get RoleMappingTypeName(): string {
+          return "AWS::Cognito::IdentityPoolRoleAttachment.RoleMapping"
+        }
+        /**
+         * Returns the MappingRule property type name (`"AWS::Cognito::IdentityPoolRoleAttachment.MappingRule"`)
+         */
+        static get MappingRuleTypeName(): string {
+          return "AWS::Cognito::IdentityPoolRoleAttachment.MappingRule"
+        }
       }
       export interface UserPoolGroupProperties {
         /**
@@ -11328,6 +12390,12 @@ export namespace Cf {
         RoleArn?: string
       }
       export class UserPoolGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPoolGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Cognito::UserPoolGroup"
+        }
         Type: string
         Properties: UserPoolGroupProperties
         /**
@@ -11336,7 +12404,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html
          */
         constructor(properties: UserPoolGroupProperties) {
-            this.Type = "AWS::Cognito::UserPoolGroup";
+            this.Type = UserPoolGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11463,6 +12531,12 @@ export namespace Cf {
         OpenIdConnectProviderARNs?: string[]
       }
       export class IdentityPool implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::IdentityPool"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Cognito::IdentityPool"
+        }
         Type: string
         Properties: IdentityPoolProperties
         /**
@@ -11471,7 +12545,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html
          */
         constructor(properties: IdentityPoolProperties) {
-            this.Type = "AWS::Cognito::IdentityPool";
+            this.Type = IdentityPool.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11527,6 +12601,24 @@ export namespace Cf {
          */
         static CognitoStreams(properties: IdentityPoolCognitoStreams) : IdentityPoolCognitoStreams {
           return properties;
+        }
+        /**
+         * Returns the PushSync property type name (`"AWS::Cognito::IdentityPool.PushSync"`)
+         */
+        static get PushSyncTypeName(): string {
+          return "AWS::Cognito::IdentityPool.PushSync"
+        }
+        /**
+         * Returns the CognitoIdentityProvider property type name (`"AWS::Cognito::IdentityPool.CognitoIdentityProvider"`)
+         */
+        static get CognitoIdentityProviderTypeName(): string {
+          return "AWS::Cognito::IdentityPool.CognitoIdentityProvider"
+        }
+        /**
+         * Returns the CognitoStreams property type name (`"AWS::Cognito::IdentityPool.CognitoStreams"`)
+         */
+        static get CognitoStreamsTypeName(): string {
+          return "AWS::Cognito::IdentityPool.CognitoStreams"
         }
       }
       export interface UserPoolUserProperties {
@@ -11595,6 +12687,12 @@ export namespace Cf {
         UserAttributes?: UserPoolUserAttributeType[]
       }
       export class UserPoolUser implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPoolUser"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Cognito::UserPoolUser"
+        }
         Type: string
         Properties: UserPoolUserProperties
         /**
@@ -11603,7 +12701,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html
          */
         constructor(properties: UserPoolUserProperties) {
-            this.Type = "AWS::Cognito::UserPoolUser";
+            this.Type = UserPoolUser.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11643,6 +12741,12 @@ export namespace Cf {
          */
         static AttributeType(properties: UserPoolUserAttributeType) : UserPoolUserAttributeType {
           return properties;
+        }
+        /**
+         * Returns the AttributeType property type name (`"AWS::Cognito::UserPoolUser.AttributeType"`)
+         */
+        static get AttributeTypeTypeName(): string {
+          return "AWS::Cognito::UserPoolUser.AttributeType"
         }
       }
       export interface UserPoolProperties {
@@ -11801,6 +12905,12 @@ export namespace Cf {
         EmailVerificationMessage?: string
       }
       export class UserPool implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPool"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Cognito::UserPool"
+        }
         Type: string
         Properties: UserPoolProperties
         /**
@@ -11809,7 +12919,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html
          */
         constructor(properties: UserPoolProperties) {
-            this.Type = "AWS::Cognito::UserPool";
+            this.Type = UserPool.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -11930,6 +13040,72 @@ export namespace Cf {
         static StringAttributeConstraints(properties: UserPoolStringAttributeConstraints) : UserPoolStringAttributeConstraints {
           return properties;
         }
+        /**
+         * Returns the PasswordPolicy property type name (`"AWS::Cognito::UserPool.PasswordPolicy"`)
+         */
+        static get PasswordPolicyTypeName(): string {
+          return "AWS::Cognito::UserPool.PasswordPolicy"
+        }
+        /**
+         * Returns the Policies property type name (`"AWS::Cognito::UserPool.Policies"`)
+         */
+        static get PoliciesTypeName(): string {
+          return "AWS::Cognito::UserPool.Policies"
+        }
+        /**
+         * Returns the EmailConfiguration property type name (`"AWS::Cognito::UserPool.EmailConfiguration"`)
+         */
+        static get EmailConfigurationTypeName(): string {
+          return "AWS::Cognito::UserPool.EmailConfiguration"
+        }
+        /**
+         * Returns the LambdaConfig property type name (`"AWS::Cognito::UserPool.LambdaConfig"`)
+         */
+        static get LambdaConfigTypeName(): string {
+          return "AWS::Cognito::UserPool.LambdaConfig"
+        }
+        /**
+         * Returns the AdminCreateUserConfig property type name (`"AWS::Cognito::UserPool.AdminCreateUserConfig"`)
+         */
+        static get AdminCreateUserConfigTypeName(): string {
+          return "AWS::Cognito::UserPool.AdminCreateUserConfig"
+        }
+        /**
+         * Returns the SchemaAttribute property type name (`"AWS::Cognito::UserPool.SchemaAttribute"`)
+         */
+        static get SchemaAttributeTypeName(): string {
+          return "AWS::Cognito::UserPool.SchemaAttribute"
+        }
+        /**
+         * Returns the NumberAttributeConstraints property type name (`"AWS::Cognito::UserPool.NumberAttributeConstraints"`)
+         */
+        static get NumberAttributeConstraintsTypeName(): string {
+          return "AWS::Cognito::UserPool.NumberAttributeConstraints"
+        }
+        /**
+         * Returns the SmsConfiguration property type name (`"AWS::Cognito::UserPool.SmsConfiguration"`)
+         */
+        static get SmsConfigurationTypeName(): string {
+          return "AWS::Cognito::UserPool.SmsConfiguration"
+        }
+        /**
+         * Returns the DeviceConfiguration property type name (`"AWS::Cognito::UserPool.DeviceConfiguration"`)
+         */
+        static get DeviceConfigurationTypeName(): string {
+          return "AWS::Cognito::UserPool.DeviceConfiguration"
+        }
+        /**
+         * Returns the InviteMessageTemplate property type name (`"AWS::Cognito::UserPool.InviteMessageTemplate"`)
+         */
+        static get InviteMessageTemplateTypeName(): string {
+          return "AWS::Cognito::UserPool.InviteMessageTemplate"
+        }
+        /**
+         * Returns the StringAttributeConstraints property type name (`"AWS::Cognito::UserPool.StringAttributeConstraints"`)
+         */
+        static get StringAttributeConstraintsTypeName(): string {
+          return "AWS::Cognito::UserPool.StringAttributeConstraints"
+        }
       }
       export interface UserPoolClientProperties {
         /**
@@ -11997,6 +13173,12 @@ export namespace Cf {
         WriteAttributes?: string[]
       }
       export class UserPoolClient implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPoolClient"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Cognito::UserPoolClient"
+        }
         Type: string
         Properties: UserPoolClientProperties
         /**
@@ -12005,7 +13187,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html
          */
         constructor(properties: UserPoolClientProperties) {
-            this.Type = "AWS::Cognito::UserPoolClient";
+            this.Type = UserPoolClient.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12069,6 +13251,12 @@ export namespace Cf {
         Username: string
       }
       export class UserPoolUserToGroupAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPoolUserToGroupAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Cognito::UserPoolUserToGroupAttachment"
+        }
         Type: string
         Properties: UserPoolUserToGroupAttachmentProperties
         /**
@@ -12077,7 +13265,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html
          */
         constructor(properties: UserPoolUserToGroupAttachmentProperties) {
-            this.Type = "AWS::Cognito::UserPoolUserToGroupAttachment";
+            this.Type = UserPoolUserToGroupAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12393,6 +13581,12 @@ export namespace Cf {
         Targets?: RuleTarget[]
       }
       export class Rule implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Events::Rule"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Events::Rule"
+        }
         Type: string
         Properties: RuleProperties
         /**
@@ -12401,7 +13595,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html
          */
         constructor(properties: RuleProperties) {
-            this.Type = "AWS::Events::Rule";
+            this.Type = Rule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12490,6 +13684,48 @@ export namespace Cf {
         static EcsParameters(properties: RuleEcsParameters) : RuleEcsParameters {
           return properties;
         }
+        /**
+         * Returns the SqsParameters property type name (`"AWS::Events::Rule.SqsParameters"`)
+         */
+        static get SqsParametersTypeName(): string {
+          return "AWS::Events::Rule.SqsParameters"
+        }
+        /**
+         * Returns the RunCommandParameters property type name (`"AWS::Events::Rule.RunCommandParameters"`)
+         */
+        static get RunCommandParametersTypeName(): string {
+          return "AWS::Events::Rule.RunCommandParameters"
+        }
+        /**
+         * Returns the Target property type name (`"AWS::Events::Rule.Target"`)
+         */
+        static get TargetTypeName(): string {
+          return "AWS::Events::Rule.Target"
+        }
+        /**
+         * Returns the RunCommandTarget property type name (`"AWS::Events::Rule.RunCommandTarget"`)
+         */
+        static get RunCommandTargetTypeName(): string {
+          return "AWS::Events::Rule.RunCommandTarget"
+        }
+        /**
+         * Returns the InputTransformer property type name (`"AWS::Events::Rule.InputTransformer"`)
+         */
+        static get InputTransformerTypeName(): string {
+          return "AWS::Events::Rule.InputTransformer"
+        }
+        /**
+         * Returns the KinesisParameters property type name (`"AWS::Events::Rule.KinesisParameters"`)
+         */
+        static get KinesisParametersTypeName(): string {
+          return "AWS::Events::Rule.KinesisParameters"
+        }
+        /**
+         * Returns the EcsParameters property type name (`"AWS::Events::Rule.EcsParameters"`)
+         */
+        static get EcsParametersTypeName(): string {
+          return "AWS::Events::Rule.EcsParameters"
+        }
       }
       export interface EventBusPolicyProperties {
         /**
@@ -12530,6 +13766,12 @@ export namespace Cf {
         Principal: string
       }
       export class EventBusPolicy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Events::EventBusPolicy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Events::EventBusPolicy"
+        }
         Type: string
         Properties: EventBusPolicyProperties
         /**
@@ -12538,7 +13780,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html
          */
         constructor(properties: EventBusPolicyProperties) {
-            this.Type = "AWS::Events::EventBusPolicy";
+            this.Type = EventBusPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12578,6 +13820,12 @@ export namespace Cf {
          */
         static Condition(properties: EventBusPolicyCondition) : EventBusPolicyCondition {
           return properties;
+        }
+        /**
+         * Returns the Condition property type name (`"AWS::Events::EventBusPolicy.Condition"`)
+         */
+        static get ConditionTypeName(): string {
+          return "AWS::Events::EventBusPolicy.Condition"
         }
       }
     }
@@ -12897,6 +14145,12 @@ export namespace Cf {
         Name: string
       }
       export class IPSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAF::IPSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAF::IPSet"
+        }
         Type: string
         Properties: IPSetProperties
         /**
@@ -12905,7 +14159,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html
          */
         constructor(properties: IPSetProperties) {
-            this.Type = "AWS::WAF::IPSet";
+            this.Type = IPSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -12946,6 +14200,12 @@ export namespace Cf {
         static IPSetDescriptor(properties: IPSetIPSetDescriptor) : IPSetIPSetDescriptor {
           return properties;
         }
+        /**
+         * Returns the IPSetDescriptor property type name (`"AWS::WAF::IPSet.IPSetDescriptor"`)
+         */
+        static get IPSetDescriptorTypeName(): string {
+          return "AWS::WAF::IPSet.IPSetDescriptor"
+        }
       }
       export interface SizeConstraintSetProperties {
         /**
@@ -12968,6 +14228,12 @@ export namespace Cf {
         SizeConstraints: SizeConstraintSetSizeConstraint[]
       }
       export class SizeConstraintSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAF::SizeConstraintSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAF::SizeConstraintSet"
+        }
         Type: string
         Properties: SizeConstraintSetProperties
         /**
@@ -12976,7 +14242,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html
          */
         constructor(properties: SizeConstraintSetProperties) {
-            this.Type = "AWS::WAF::SizeConstraintSet";
+            this.Type = SizeConstraintSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13025,6 +14291,18 @@ export namespace Cf {
         static SizeConstraint(properties: SizeConstraintSetSizeConstraint) : SizeConstraintSetSizeConstraint {
           return properties;
         }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAF::SizeConstraintSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAF::SizeConstraintSet.FieldToMatch"
+        }
+        /**
+         * Returns the SizeConstraint property type name (`"AWS::WAF::SizeConstraintSet.SizeConstraint"`)
+         */
+        static get SizeConstraintTypeName(): string {
+          return "AWS::WAF::SizeConstraintSet.SizeConstraint"
+        }
       }
       export interface RuleProperties {
         /**
@@ -13056,6 +14334,12 @@ export namespace Cf {
         Predicates?: RulePredicate[]
       }
       export class Rule implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAF::Rule"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAF::Rule"
+        }
         Type: string
         Properties: RuleProperties
         /**
@@ -13064,7 +14348,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html
          */
         constructor(properties: RuleProperties) {
-            this.Type = "AWS::WAF::Rule";
+            this.Type = Rule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13105,6 +14389,12 @@ export namespace Cf {
         static Predicate(properties: RulePredicate) : RulePredicate {
           return properties;
         }
+        /**
+         * Returns the Predicate property type name (`"AWS::WAF::Rule.Predicate"`)
+         */
+        static get PredicateTypeName(): string {
+          return "AWS::WAF::Rule.Predicate"
+        }
       }
       export interface ByteMatchSetProperties {
         /**
@@ -13127,6 +14417,12 @@ export namespace Cf {
         Name: string
       }
       export class ByteMatchSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAF::ByteMatchSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAF::ByteMatchSet"
+        }
         Type: string
         Properties: ByteMatchSetProperties
         /**
@@ -13135,7 +14431,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html
          */
         constructor(properties: ByteMatchSetProperties) {
-            this.Type = "AWS::WAF::ByteMatchSet";
+            this.Type = ByteMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13184,6 +14480,18 @@ export namespace Cf {
         static FieldToMatch(properties: ByteMatchSetFieldToMatch) : ByteMatchSetFieldToMatch {
           return properties;
         }
+        /**
+         * Returns the ByteMatchTuple property type name (`"AWS::WAF::ByteMatchSet.ByteMatchTuple"`)
+         */
+        static get ByteMatchTupleTypeName(): string {
+          return "AWS::WAF::ByteMatchSet.ByteMatchTuple"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAF::ByteMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAF::ByteMatchSet.FieldToMatch"
+        }
       }
       export interface SqlInjectionMatchSetProperties {
         /**
@@ -13206,6 +14514,12 @@ export namespace Cf {
         SqlInjectionMatchTuples?: SqlInjectionMatchSetSqlInjectionMatchTuple[]
       }
       export class SqlInjectionMatchSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAF::SqlInjectionMatchSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAF::SqlInjectionMatchSet"
+        }
         Type: string
         Properties: SqlInjectionMatchSetProperties
         /**
@@ -13214,7 +14528,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html
          */
         constructor(properties: SqlInjectionMatchSetProperties) {
-            this.Type = "AWS::WAF::SqlInjectionMatchSet";
+            this.Type = SqlInjectionMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13263,6 +14577,18 @@ export namespace Cf {
         static FieldToMatch(properties: SqlInjectionMatchSetFieldToMatch) : SqlInjectionMatchSetFieldToMatch {
           return properties;
         }
+        /**
+         * Returns the SqlInjectionMatchTuple property type name (`"AWS::WAF::SqlInjectionMatchSet.SqlInjectionMatchTuple"`)
+         */
+        static get SqlInjectionMatchTupleTypeName(): string {
+          return "AWS::WAF::SqlInjectionMatchSet.SqlInjectionMatchTuple"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAF::SqlInjectionMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAF::SqlInjectionMatchSet.FieldToMatch"
+        }
       }
       export interface WebACLProperties {
         /**
@@ -13303,6 +14629,12 @@ export namespace Cf {
         Rules?: WebACLActivatedRule[]
       }
       export class WebACL implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAF::WebACL"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAF::WebACL"
+        }
         Type: string
         Properties: WebACLProperties
         /**
@@ -13311,7 +14643,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html
          */
         constructor(properties: WebACLProperties) {
-            this.Type = "AWS::WAF::WebACL";
+            this.Type = WebACL.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13360,6 +14692,18 @@ export namespace Cf {
         static ActivatedRule(properties: WebACLActivatedRule) : WebACLActivatedRule {
           return properties;
         }
+        /**
+         * Returns the WafAction property type name (`"AWS::WAF::WebACL.WafAction"`)
+         */
+        static get WafActionTypeName(): string {
+          return "AWS::WAF::WebACL.WafAction"
+        }
+        /**
+         * Returns the ActivatedRule property type name (`"AWS::WAF::WebACL.ActivatedRule"`)
+         */
+        static get ActivatedRuleTypeName(): string {
+          return "AWS::WAF::WebACL.ActivatedRule"
+        }
       }
       export interface XssMatchSetProperties {
         /**
@@ -13382,6 +14726,12 @@ export namespace Cf {
         XssMatchTuples: XssMatchSetXssMatchTuple[]
       }
       export class XssMatchSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAF::XssMatchSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAF::XssMatchSet"
+        }
         Type: string
         Properties: XssMatchSetProperties
         /**
@@ -13390,7 +14740,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html
          */
         constructor(properties: XssMatchSetProperties) {
-            this.Type = "AWS::WAF::XssMatchSet";
+            this.Type = XssMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13438,6 +14788,18 @@ export namespace Cf {
          */
         static XssMatchTuple(properties: XssMatchSetXssMatchTuple) : XssMatchSetXssMatchTuple {
           return properties;
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAF::XssMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAF::XssMatchSet.FieldToMatch"
+        }
+        /**
+         * Returns the XssMatchTuple property type name (`"AWS::WAF::XssMatchSet.XssMatchTuple"`)
+         */
+        static get XssMatchTupleTypeName(): string {
+          return "AWS::WAF::XssMatchSet.XssMatchTuple"
         }
       }
     }
@@ -13561,6 +14923,12 @@ export namespace Cf {
         Policies?: GroupPolicy[]
       }
       export class Group implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IAM::Group"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IAM::Group"
+        }
         Type: string
         Properties: GroupProperties
         /**
@@ -13569,7 +14937,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html
          */
         constructor(properties: GroupProperties) {
-            this.Type = "AWS::IAM::Group";
+            this.Type = Group.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13609,6 +14977,12 @@ export namespace Cf {
          */
         static Policy(properties: GroupPolicy) : GroupPolicy {
           return properties;
+        }
+        /**
+         * Returns the Policy property type name (`"AWS::IAM::Group.Policy"`)
+         */
+        static get PolicyTypeName(): string {
+          return "AWS::IAM::Group.Policy"
         }
       }
       export interface PolicyProperties {
@@ -13659,6 +15033,12 @@ export namespace Cf {
         Users?: string[]
       }
       export class Policy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IAM::Policy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IAM::Policy"
+        }
         Type: string
         Properties: PolicyProperties
         /**
@@ -13667,7 +15047,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html
          */
         constructor(properties: PolicyProperties) {
-            this.Type = "AWS::IAM::Policy";
+            this.Type = Policy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13767,6 +15147,12 @@ export namespace Cf {
         RoleName?: string
       }
       export class Role implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IAM::Role"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IAM::Role"
+        }
         Type: string
         Properties: RoleProperties
         /**
@@ -13775,7 +15161,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
          */
         constructor(properties: RoleProperties) {
-            this.Type = "AWS::IAM::Role";
+            this.Type = Role.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13816,6 +15202,12 @@ export namespace Cf {
         static Policy(properties: RolePolicy) : RolePolicy {
           return properties;
         }
+        /**
+         * Returns the Policy property type name (`"AWS::IAM::Role.Policy"`)
+         */
+        static get PolicyTypeName(): string {
+          return "AWS::IAM::Role.Policy"
+        }
       }
       export interface ServiceLinkedRoleProperties {
         /**
@@ -13847,6 +15239,12 @@ export namespace Cf {
         AWSServiceName: string
       }
       export class ServiceLinkedRole implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IAM::ServiceLinkedRole"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IAM::ServiceLinkedRole"
+        }
         Type: string
         Properties: ServiceLinkedRoleProperties
         /**
@@ -13855,7 +15253,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html
          */
         constructor(properties: ServiceLinkedRoleProperties) {
-            this.Type = "AWS::IAM::ServiceLinkedRole";
+            this.Type = ServiceLinkedRole.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13910,6 +15308,12 @@ export namespace Cf {
         Users: string[]
       }
       export class UserToGroupAddition implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IAM::UserToGroupAddition"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IAM::UserToGroupAddition"
+        }
         Type: string
         Properties: UserToGroupAdditionProperties
         /**
@@ -13918,7 +15322,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html
          */
         constructor(properties: UserToGroupAdditionProperties) {
-            this.Type = "AWS::IAM::UserToGroupAddition";
+            this.Type = UserToGroupAddition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -13982,6 +15386,12 @@ export namespace Cf {
         Roles: string[]
       }
       export class InstanceProfile implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IAM::InstanceProfile"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IAM::InstanceProfile"
+        }
         Type: string
         Properties: InstanceProfileProperties
         /**
@@ -13990,7 +15400,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html
          */
         constructor(properties: InstanceProfileProperties) {
-            this.Type = "AWS::IAM::InstanceProfile";
+            this.Type = InstanceProfile.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14054,6 +15464,12 @@ export namespace Cf {
         UserName: string
       }
       export class AccessKey implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IAM::AccessKey"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IAM::AccessKey"
+        }
         Type: string
         Properties: AccessKeyProperties
         /**
@@ -14062,7 +15478,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html
          */
         constructor(properties: AccessKeyProperties) {
-            this.Type = "AWS::IAM::AccessKey";
+            this.Type = AccessKey.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14162,6 +15578,12 @@ export namespace Cf {
         UserName?: string
       }
       export class User implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IAM::User"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IAM::User"
+        }
         Type: string
         Properties: UserProperties
         /**
@@ -14170,7 +15592,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html
          */
         constructor(properties: UserProperties) {
-            this.Type = "AWS::IAM::User";
+            this.Type = User.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14218,6 +15640,18 @@ export namespace Cf {
          */
         static Policy(properties: UserPolicy) : UserPolicy {
           return properties;
+        }
+        /**
+         * Returns the LoginProfile property type name (`"AWS::IAM::User.LoginProfile"`)
+         */
+        static get LoginProfileTypeName(): string {
+          return "AWS::IAM::User.LoginProfile"
+        }
+        /**
+         * Returns the Policy property type name (`"AWS::IAM::User.Policy"`)
+         */
+        static get PolicyTypeName(): string {
+          return "AWS::IAM::User.Policy"
         }
       }
       export interface ManagedPolicyProperties {
@@ -14286,6 +15720,12 @@ export namespace Cf {
         Users?: string[]
       }
       export class ManagedPolicy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IAM::ManagedPolicy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IAM::ManagedPolicy"
+        }
         Type: string
         Properties: ManagedPolicyProperties
         /**
@@ -14294,7 +15734,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html
          */
         constructor(properties: ManagedPolicyProperties) {
-            this.Type = "AWS::IAM::ManagedPolicy";
+            this.Type = ManagedPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14831,6 +16271,12 @@ export namespace Cf {
         Version?: string
       }
       export class CustomActionType implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CodePipeline::CustomActionType"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CodePipeline::CustomActionType"
+        }
         Type: string
         Properties: CustomActionTypeProperties
         /**
@@ -14839,7 +16285,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html
          */
         constructor(properties: CustomActionTypeProperties) {
-            this.Type = "AWS::CodePipeline::CustomActionType";
+            this.Type = CustomActionType.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -14895,6 +16341,24 @@ export namespace Cf {
          */
         static ConfigurationProperties(properties: CustomActionTypeConfigurationProperties) : CustomActionTypeConfigurationProperties {
           return properties;
+        }
+        /**
+         * Returns the Settings property type name (`"AWS::CodePipeline::CustomActionType.Settings"`)
+         */
+        static get SettingsTypeName(): string {
+          return "AWS::CodePipeline::CustomActionType.Settings"
+        }
+        /**
+         * Returns the ArtifactDetails property type name (`"AWS::CodePipeline::CustomActionType.ArtifactDetails"`)
+         */
+        static get ArtifactDetailsTypeName(): string {
+          return "AWS::CodePipeline::CustomActionType.ArtifactDetails"
+        }
+        /**
+         * Returns the ConfigurationProperties property type name (`"AWS::CodePipeline::CustomActionType.ConfigurationProperties"`)
+         */
+        static get ConfigurationPropertiesTypeName(): string {
+          return "AWS::CodePipeline::CustomActionType.ConfigurationProperties"
         }
       }
       export interface WebhookProperties {
@@ -14972,6 +16436,12 @@ export namespace Cf {
         RegisterWithThirdParty?: boolean
       }
       export class Webhook implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CodePipeline::Webhook"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CodePipeline::Webhook"
+        }
         Type: string
         Properties: WebhookProperties
         /**
@@ -14980,7 +16450,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html
          */
         constructor(properties: WebhookProperties) {
-            this.Type = "AWS::CodePipeline::Webhook";
+            this.Type = Webhook.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15028,6 +16498,18 @@ export namespace Cf {
          */
         static WebhookAuthConfiguration(properties: WebhookWebhookAuthConfiguration) : WebhookWebhookAuthConfiguration {
           return properties;
+        }
+        /**
+         * Returns the WebhookFilterRule property type name (`"AWS::CodePipeline::Webhook.WebhookFilterRule"`)
+         */
+        static get WebhookFilterRuleTypeName(): string {
+          return "AWS::CodePipeline::Webhook.WebhookFilterRule"
+        }
+        /**
+         * Returns the WebhookAuthConfiguration property type name (`"AWS::CodePipeline::Webhook.WebhookAuthConfiguration"`)
+         */
+        static get WebhookAuthConfigurationTypeName(): string {
+          return "AWS::CodePipeline::Webhook.WebhookAuthConfiguration"
         }
       }
       export interface PipelineProperties {
@@ -15096,6 +16578,12 @@ export namespace Cf {
         Stages: PipelineStageDeclaration[]
       }
       export class Pipeline implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CodePipeline::Pipeline"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CodePipeline::Pipeline"
+        }
         Type: string
         Properties: PipelineProperties
         /**
@@ -15104,7 +16592,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html
          */
         constructor(properties: PipelineProperties) {
-            this.Type = "AWS::CodePipeline::Pipeline";
+            this.Type = Pipeline.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15216,6 +16704,66 @@ export namespace Cf {
          */
         static EncryptionKey(properties: PipelineEncryptionKey) : PipelineEncryptionKey {
           return properties;
+        }
+        /**
+         * Returns the InputArtifact property type name (`"AWS::CodePipeline::Pipeline.InputArtifact"`)
+         */
+        static get InputArtifactTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.InputArtifact"
+        }
+        /**
+         * Returns the ActionDeclaration property type name (`"AWS::CodePipeline::Pipeline.ActionDeclaration"`)
+         */
+        static get ActionDeclarationTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.ActionDeclaration"
+        }
+        /**
+         * Returns the StageDeclaration property type name (`"AWS::CodePipeline::Pipeline.StageDeclaration"`)
+         */
+        static get StageDeclarationTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.StageDeclaration"
+        }
+        /**
+         * Returns the BlockerDeclaration property type name (`"AWS::CodePipeline::Pipeline.BlockerDeclaration"`)
+         */
+        static get BlockerDeclarationTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.BlockerDeclaration"
+        }
+        /**
+         * Returns the ArtifactStoreMap property type name (`"AWS::CodePipeline::Pipeline.ArtifactStoreMap"`)
+         */
+        static get ArtifactStoreMapTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.ArtifactStoreMap"
+        }
+        /**
+         * Returns the StageTransition property type name (`"AWS::CodePipeline::Pipeline.StageTransition"`)
+         */
+        static get StageTransitionTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.StageTransition"
+        }
+        /**
+         * Returns the ArtifactStore property type name (`"AWS::CodePipeline::Pipeline.ArtifactStore"`)
+         */
+        static get ArtifactStoreTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.ArtifactStore"
+        }
+        /**
+         * Returns the ActionTypeId property type name (`"AWS::CodePipeline::Pipeline.ActionTypeId"`)
+         */
+        static get ActionTypeIdTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.ActionTypeId"
+        }
+        /**
+         * Returns the OutputArtifact property type name (`"AWS::CodePipeline::Pipeline.OutputArtifact"`)
+         */
+        static get OutputArtifactTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.OutputArtifact"
+        }
+        /**
+         * Returns the EncryptionKey property type name (`"AWS::CodePipeline::Pipeline.EncryptionKey"`)
+         */
+        static get EncryptionKeyTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.EncryptionKey"
         }
       }
     }
@@ -15478,6 +17026,12 @@ export namespace Cf {
         VPCOptions?: DomainVPCOptions
       }
       export class Domain implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Elasticsearch::Domain"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Elasticsearch::Domain"
+        }
         Type: string
         Properties: DomainProperties
         /**
@@ -15486,7 +17040,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html
          */
         constructor(properties: DomainProperties) {
-            this.Type = "AWS::Elasticsearch::Domain";
+            this.Type = Domain.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -15566,6 +17120,42 @@ export namespace Cf {
          */
         static EncryptionAtRestOptions(properties: DomainEncryptionAtRestOptions) : DomainEncryptionAtRestOptions {
           return properties;
+        }
+        /**
+         * Returns the VPCOptions property type name (`"AWS::Elasticsearch::Domain.VPCOptions"`)
+         */
+        static get VPCOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.VPCOptions"
+        }
+        /**
+         * Returns the NodeToNodeEncryptionOptions property type name (`"AWS::Elasticsearch::Domain.NodeToNodeEncryptionOptions"`)
+         */
+        static get NodeToNodeEncryptionOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.NodeToNodeEncryptionOptions"
+        }
+        /**
+         * Returns the ElasticsearchClusterConfig property type name (`"AWS::Elasticsearch::Domain.ElasticsearchClusterConfig"`)
+         */
+        static get ElasticsearchClusterConfigTypeName(): string {
+          return "AWS::Elasticsearch::Domain.ElasticsearchClusterConfig"
+        }
+        /**
+         * Returns the SnapshotOptions property type name (`"AWS::Elasticsearch::Domain.SnapshotOptions"`)
+         */
+        static get SnapshotOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.SnapshotOptions"
+        }
+        /**
+         * Returns the EBSOptions property type name (`"AWS::Elasticsearch::Domain.EBSOptions"`)
+         */
+        static get EBSOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.EBSOptions"
+        }
+        /**
+         * Returns the EncryptionAtRestOptions property type name (`"AWS::Elasticsearch::Domain.EncryptionAtRestOptions"`)
+         */
+        static get EncryptionAtRestOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.EncryptionAtRestOptions"
         }
       }
     }
@@ -16511,6 +18101,12 @@ export namespace Cf {
         ValidateRequestParameters?: boolean
       }
       export class RequestValidator implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::RequestValidator"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::RequestValidator"
+        }
         Type: string
         Properties: RequestValidatorProperties
         /**
@@ -16519,7 +18115,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html
          */
         constructor(properties: RequestValidatorProperties) {
-            this.Type = "AWS::ApiGateway::RequestValidator";
+            this.Type = RequestValidator.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -16601,6 +18197,12 @@ export namespace Cf {
         StageName?: string
       }
       export class Deployment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Deployment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::Deployment"
+        }
         Type: string
         Properties: DeploymentProperties
         /**
@@ -16609,7 +18211,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html
          */
         constructor(properties: DeploymentProperties) {
-            this.Type = "AWS::ApiGateway::Deployment";
+            this.Type = Deployment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -16681,6 +18283,36 @@ export namespace Cf {
          */
         static AccessLogSetting(properties: DeploymentAccessLogSetting) : DeploymentAccessLogSetting {
           return properties;
+        }
+        /**
+         * Returns the DeploymentCanarySettings property type name (`"AWS::ApiGateway::Deployment.DeploymentCanarySettings"`)
+         */
+        static get DeploymentCanarySettingsTypeName(): string {
+          return "AWS::ApiGateway::Deployment.DeploymentCanarySettings"
+        }
+        /**
+         * Returns the MethodSetting property type name (`"AWS::ApiGateway::Deployment.MethodSetting"`)
+         */
+        static get MethodSettingTypeName(): string {
+          return "AWS::ApiGateway::Deployment.MethodSetting"
+        }
+        /**
+         * Returns the StageDescription property type name (`"AWS::ApiGateway::Deployment.StageDescription"`)
+         */
+        static get StageDescriptionTypeName(): string {
+          return "AWS::ApiGateway::Deployment.StageDescription"
+        }
+        /**
+         * Returns the CanarySetting property type name (`"AWS::ApiGateway::Deployment.CanarySetting"`)
+         */
+        static get CanarySettingTypeName(): string {
+          return "AWS::ApiGateway::Deployment.CanarySetting"
+        }
+        /**
+         * Returns the AccessLogSetting property type name (`"AWS::ApiGateway::Deployment.AccessLogSetting"`)
+         */
+        static get AccessLogSettingTypeName(): string {
+          return "AWS::ApiGateway::Deployment.AccessLogSetting"
         }
       }
       export interface AuthorizerProperties {
@@ -16776,6 +18408,12 @@ export namespace Cf {
         Type: string
       }
       export class Authorizer implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Authorizer"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::Authorizer"
+        }
         Type: string
         Properties: AuthorizerProperties
         /**
@@ -16784,7 +18422,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html
          */
         constructor(properties: AuthorizerProperties) {
-            this.Type = "AWS::ApiGateway::Authorizer";
+            this.Type = Authorizer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -16857,6 +18495,12 @@ export namespace Cf {
         RegionalCertificateArn?: string
       }
       export class DomainName implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::DomainName"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::DomainName"
+        }
         Type: string
         Properties: DomainNameProperties
         /**
@@ -16865,7 +18509,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html
          */
         constructor(properties: DomainNameProperties) {
-            this.Type = "AWS::ApiGateway::DomainName";
+            this.Type = DomainName.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -16906,6 +18550,12 @@ export namespace Cf {
         static EndpointConfiguration(properties: DomainNameEndpointConfiguration) : DomainNameEndpointConfiguration {
           return properties;
         }
+        /**
+         * Returns the EndpointConfiguration property type name (`"AWS::ApiGateway::DomainName.EndpointConfiguration"`)
+         */
+        static get EndpointConfigurationTypeName(): string {
+          return "AWS::ApiGateway::DomainName.EndpointConfiguration"
+        }
       }
       export interface DocumentationPartProperties {
         /**
@@ -16937,6 +18587,12 @@ export namespace Cf {
         RestApiId: string
       }
       export class DocumentationPart implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::DocumentationPart"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::DocumentationPart"
+        }
         Type: string
         Properties: DocumentationPartProperties
         /**
@@ -16945,7 +18601,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html
          */
         constructor(properties: DocumentationPartProperties) {
-            this.Type = "AWS::ApiGateway::DocumentationPart";
+            this.Type = DocumentationPart.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -16985,6 +18641,12 @@ export namespace Cf {
          */
         static Location(properties: DocumentationPartLocation) : DocumentationPartLocation {
           return properties;
+        }
+        /**
+         * Returns the Location property type name (`"AWS::ApiGateway::DocumentationPart.Location"`)
+         */
+        static get LocationTypeName(): string {
+          return "AWS::ApiGateway::DocumentationPart.Location"
         }
       }
       export interface ApiKeyProperties {
@@ -17053,6 +18715,12 @@ export namespace Cf {
         Value?: string
       }
       export class ApiKey implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::ApiKey"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::ApiKey"
+        }
         Type: string
         Properties: ApiKeyProperties
         /**
@@ -17061,7 +18729,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html
          */
         constructor(properties: ApiKeyProperties) {
-            this.Type = "AWS::ApiGateway::ApiKey";
+            this.Type = ApiKey.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17101,6 +18769,12 @@ export namespace Cf {
          */
         static StageKey(properties: ApiKeyStageKey) : ApiKeyStageKey {
           return properties;
+        }
+        /**
+         * Returns the StageKey property type name (`"AWS::ApiGateway::ApiKey.StageKey"`)
+         */
+        static get StageKeyTypeName(): string {
+          return "AWS::ApiGateway::ApiKey.StageKey"
         }
       }
       export interface ModelProperties {
@@ -17151,6 +18825,12 @@ export namespace Cf {
         Schema?: object
       }
       export class Model implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Model"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::Model"
+        }
         Type: string
         Properties: ModelProperties
         /**
@@ -17159,7 +18839,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html
          */
         constructor(properties: ModelProperties) {
-            this.Type = "AWS::ApiGateway::Model";
+            this.Type = Model.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17223,6 +18903,12 @@ export namespace Cf {
         RestApiId: string
       }
       export class Resource implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Resource"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::Resource"
+        }
         Type: string
         Properties: ResourceProperties
         /**
@@ -17231,7 +18917,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html
          */
         constructor(properties: ResourceProperties) {
-            this.Type = "AWS::ApiGateway::Resource";
+            this.Type = Resource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17277,6 +18963,12 @@ export namespace Cf {
         CloudWatchRoleArn?: string
       }
       export class Account implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Account"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::Account"
+        }
         Type: string
         Properties: AccountProperties
         /**
@@ -17285,7 +18977,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html
          */
         constructor(properties: AccountProperties) {
-            this.Type = "AWS::ApiGateway::Account";
+            this.Type = Account.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17430,6 +19122,12 @@ export namespace Cf {
         Policy?: object
       }
       export class RestApi implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::RestApi"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::RestApi"
+        }
         Type: string
         Properties: RestApiProperties
         /**
@@ -17438,7 +19136,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html
          */
         constructor(properties: RestApiProperties) {
-            this.Type = "AWS::ApiGateway::RestApi";
+            this.Type = RestApi.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17486,6 +19184,18 @@ export namespace Cf {
          */
         static EndpointConfiguration(properties: RestApiEndpointConfiguration) : RestApiEndpointConfiguration {
           return properties;
+        }
+        /**
+         * Returns the S3Location property type name (`"AWS::ApiGateway::RestApi.S3Location"`)
+         */
+        static get S3LocationTypeName(): string {
+          return "AWS::ApiGateway::RestApi.S3Location"
+        }
+        /**
+         * Returns the EndpointConfiguration property type name (`"AWS::ApiGateway::RestApi.EndpointConfiguration"`)
+         */
+        static get EndpointConfigurationTypeName(): string {
+          return "AWS::ApiGateway::RestApi.EndpointConfiguration"
         }
       }
       export interface UsagePlanProperties {
@@ -17536,6 +19246,12 @@ export namespace Cf {
         UsagePlanName?: string
       }
       export class UsagePlan implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::UsagePlan"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::UsagePlan"
+        }
         Type: string
         Properties: UsagePlanProperties
         /**
@@ -17544,7 +19260,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html
          */
         constructor(properties: UsagePlanProperties) {
-            this.Type = "AWS::ApiGateway::UsagePlan";
+            this.Type = UsagePlan.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17601,6 +19317,24 @@ export namespace Cf {
         static QuotaSettings(properties: UsagePlanQuotaSettings) : UsagePlanQuotaSettings {
           return properties;
         }
+        /**
+         * Returns the ApiStage property type name (`"AWS::ApiGateway::UsagePlan.ApiStage"`)
+         */
+        static get ApiStageTypeName(): string {
+          return "AWS::ApiGateway::UsagePlan.ApiStage"
+        }
+        /**
+         * Returns the ThrottleSettings property type name (`"AWS::ApiGateway::UsagePlan.ThrottleSettings"`)
+         */
+        static get ThrottleSettingsTypeName(): string {
+          return "AWS::ApiGateway::UsagePlan.ThrottleSettings"
+        }
+        /**
+         * Returns the QuotaSettings property type name (`"AWS::ApiGateway::UsagePlan.QuotaSettings"`)
+         */
+        static get QuotaSettingsTypeName(): string {
+          return "AWS::ApiGateway::UsagePlan.QuotaSettings"
+        }
       }
       export interface BasePathMappingProperties {
         /**
@@ -17641,6 +19375,12 @@ export namespace Cf {
         Stage?: string
       }
       export class BasePathMapping implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::BasePathMapping"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::BasePathMapping"
+        }
         Type: string
         Properties: BasePathMappingProperties
         /**
@@ -17649,7 +19389,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html
          */
         constructor(properties: BasePathMappingProperties) {
-            this.Type = "AWS::ApiGateway::BasePathMapping";
+            this.Type = BasePathMapping.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17812,6 +19552,12 @@ export namespace Cf {
         Variables?: {[key: string]: string}
       }
       export class Stage implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Stage"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::Stage"
+        }
         Type: string
         Properties: StageProperties
         /**
@@ -17820,7 +19566,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html
          */
         constructor(properties: StageProperties) {
-            this.Type = "AWS::ApiGateway::Stage";
+            this.Type = Stage.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17877,6 +19623,24 @@ export namespace Cf {
         static AccessLogSetting(properties: StageAccessLogSetting) : StageAccessLogSetting {
           return properties;
         }
+        /**
+         * Returns the MethodSetting property type name (`"AWS::ApiGateway::Stage.MethodSetting"`)
+         */
+        static get MethodSettingTypeName(): string {
+          return "AWS::ApiGateway::Stage.MethodSetting"
+        }
+        /**
+         * Returns the CanarySetting property type name (`"AWS::ApiGateway::Stage.CanarySetting"`)
+         */
+        static get CanarySettingTypeName(): string {
+          return "AWS::ApiGateway::Stage.CanarySetting"
+        }
+        /**
+         * Returns the AccessLogSetting property type name (`"AWS::ApiGateway::Stage.AccessLogSetting"`)
+         */
+        static get AccessLogSettingTypeName(): string {
+          return "AWS::ApiGateway::Stage.AccessLogSetting"
+        }
       }
       export interface VpcLinkProperties {
         /**
@@ -17908,6 +19672,12 @@ export namespace Cf {
         Name: string
       }
       export class VpcLink implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::VpcLink"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::VpcLink"
+        }
         Type: string
         Properties: VpcLinkProperties
         /**
@@ -17916,7 +19686,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html
          */
         constructor(properties: VpcLinkProperties) {
-            this.Type = "AWS::ApiGateway::VpcLink";
+            this.Type = VpcLink.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -17998,6 +19768,12 @@ export namespace Cf {
         StatusCode?: string
       }
       export class GatewayResponse implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::GatewayResponse"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::GatewayResponse"
+        }
         Type: string
         Properties: GatewayResponseProperties
         /**
@@ -18006,7 +19782,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html
          */
         constructor(properties: GatewayResponseProperties) {
-            this.Type = "AWS::ApiGateway::GatewayResponse";
+            this.Type = GatewayResponse.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18160,6 +19936,12 @@ export namespace Cf {
         RestApiId: string
       }
       export class Method implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Method"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::Method"
+        }
         Type: string
         Properties: MethodProperties
         /**
@@ -18168,7 +19950,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
          */
         constructor(properties: MethodProperties) {
-            this.Type = "AWS::ApiGateway::Method";
+            this.Type = Method.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18225,6 +20007,24 @@ export namespace Cf {
         static IntegrationResponse(properties: MethodIntegrationResponse) : MethodIntegrationResponse {
           return properties;
         }
+        /**
+         * Returns the MethodResponse property type name (`"AWS::ApiGateway::Method.MethodResponse"`)
+         */
+        static get MethodResponseTypeName(): string {
+          return "AWS::ApiGateway::Method.MethodResponse"
+        }
+        /**
+         * Returns the Integration property type name (`"AWS::ApiGateway::Method.Integration"`)
+         */
+        static get IntegrationTypeName(): string {
+          return "AWS::ApiGateway::Method.Integration"
+        }
+        /**
+         * Returns the IntegrationResponse property type name (`"AWS::ApiGateway::Method.IntegrationResponse"`)
+         */
+        static get IntegrationResponseTypeName(): string {
+          return "AWS::ApiGateway::Method.IntegrationResponse"
+        }
       }
       export interface ClientCertificateProperties {
         /**
@@ -18238,6 +20038,12 @@ export namespace Cf {
         Description?: string
       }
       export class ClientCertificate implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::ClientCertificate"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::ClientCertificate"
+        }
         Type: string
         Properties: ClientCertificateProperties
         /**
@@ -18246,7 +20052,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-clientcertificate.html
          */
         constructor(properties: ClientCertificateProperties) {
-            this.Type = "AWS::ApiGateway::ClientCertificate";
+            this.Type = ClientCertificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18310,6 +20116,12 @@ export namespace Cf {
         RestApiId: string
       }
       export class DocumentationVersion implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::DocumentationVersion"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::DocumentationVersion"
+        }
         Type: string
         Properties: DocumentationVersionProperties
         /**
@@ -18318,7 +20130,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html
          */
         constructor(properties: DocumentationVersionProperties) {
-            this.Type = "AWS::ApiGateway::DocumentationVersion";
+            this.Type = DocumentationVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18382,6 +20194,12 @@ export namespace Cf {
         UsagePlanId: string
       }
       export class UsagePlanKey implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::UsagePlanKey"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGateway::UsagePlanKey"
+        }
         Type: string
         Properties: UsagePlanKeyProperties
         /**
@@ -18390,7 +20208,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html
          */
         constructor(properties: UsagePlanKeyProperties) {
-            this.Type = "AWS::ApiGateway::UsagePlanKey";
+            this.Type = UsagePlanKey.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18741,6 +20559,12 @@ export namespace Cf {
         Name: string
       }
       export class SizeConstraintSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::SizeConstraintSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAFRegional::SizeConstraintSet"
+        }
         Type: string
         Properties: SizeConstraintSetProperties
         /**
@@ -18749,7 +20573,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html
          */
         constructor(properties: SizeConstraintSetProperties) {
-            this.Type = "AWS::WAFRegional::SizeConstraintSet";
+            this.Type = SizeConstraintSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18798,6 +20622,18 @@ export namespace Cf {
         static FieldToMatch(properties: SizeConstraintSetFieldToMatch) : SizeConstraintSetFieldToMatch {
           return properties;
         }
+        /**
+         * Returns the SizeConstraint property type name (`"AWS::WAFRegional::SizeConstraintSet.SizeConstraint"`)
+         */
+        static get SizeConstraintTypeName(): string {
+          return "AWS::WAFRegional::SizeConstraintSet.SizeConstraint"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAFRegional::SizeConstraintSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAFRegional::SizeConstraintSet.FieldToMatch"
+        }
       }
       export interface SqlInjectionMatchSetProperties {
         /**
@@ -18820,6 +20656,12 @@ export namespace Cf {
         Name: string
       }
       export class SqlInjectionMatchSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::SqlInjectionMatchSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAFRegional::SqlInjectionMatchSet"
+        }
         Type: string
         Properties: SqlInjectionMatchSetProperties
         /**
@@ -18828,7 +20670,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html
          */
         constructor(properties: SqlInjectionMatchSetProperties) {
-            this.Type = "AWS::WAFRegional::SqlInjectionMatchSet";
+            this.Type = SqlInjectionMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18877,6 +20719,18 @@ export namespace Cf {
         static SqlInjectionMatchTuple(properties: SqlInjectionMatchSetSqlInjectionMatchTuple) : SqlInjectionMatchSetSqlInjectionMatchTuple {
           return properties;
         }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAFRegional::SqlInjectionMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAFRegional::SqlInjectionMatchSet.FieldToMatch"
+        }
+        /**
+         * Returns the SqlInjectionMatchTuple property type name (`"AWS::WAFRegional::SqlInjectionMatchSet.SqlInjectionMatchTuple"`)
+         */
+        static get SqlInjectionMatchTupleTypeName(): string {
+          return "AWS::WAFRegional::SqlInjectionMatchSet.SqlInjectionMatchTuple"
+        }
       }
       export interface XssMatchSetProperties {
         /**
@@ -18899,6 +20753,12 @@ export namespace Cf {
         Name: string
       }
       export class XssMatchSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::XssMatchSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAFRegional::XssMatchSet"
+        }
         Type: string
         Properties: XssMatchSetProperties
         /**
@@ -18907,7 +20767,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html
          */
         constructor(properties: XssMatchSetProperties) {
-            this.Type = "AWS::WAFRegional::XssMatchSet";
+            this.Type = XssMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -18956,6 +20816,18 @@ export namespace Cf {
         static FieldToMatch(properties: XssMatchSetFieldToMatch) : XssMatchSetFieldToMatch {
           return properties;
         }
+        /**
+         * Returns the XssMatchTuple property type name (`"AWS::WAFRegional::XssMatchSet.XssMatchTuple"`)
+         */
+        static get XssMatchTupleTypeName(): string {
+          return "AWS::WAFRegional::XssMatchSet.XssMatchTuple"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAFRegional::XssMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAFRegional::XssMatchSet.FieldToMatch"
+        }
       }
       export interface ByteMatchSetProperties {
         /**
@@ -18978,6 +20850,12 @@ export namespace Cf {
         Name: string
       }
       export class ByteMatchSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::ByteMatchSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAFRegional::ByteMatchSet"
+        }
         Type: string
         Properties: ByteMatchSetProperties
         /**
@@ -18986,7 +20864,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html
          */
         constructor(properties: ByteMatchSetProperties) {
-            this.Type = "AWS::WAFRegional::ByteMatchSet";
+            this.Type = ByteMatchSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19035,6 +20913,18 @@ export namespace Cf {
         static FieldToMatch(properties: ByteMatchSetFieldToMatch) : ByteMatchSetFieldToMatch {
           return properties;
         }
+        /**
+         * Returns the ByteMatchTuple property type name (`"AWS::WAFRegional::ByteMatchSet.ByteMatchTuple"`)
+         */
+        static get ByteMatchTupleTypeName(): string {
+          return "AWS::WAFRegional::ByteMatchSet.ByteMatchTuple"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAFRegional::ByteMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAFRegional::ByteMatchSet.FieldToMatch"
+        }
       }
       export interface WebACLAssociationProperties {
         /**
@@ -19057,6 +20947,12 @@ export namespace Cf {
         WebACLId: string
       }
       export class WebACLAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::WebACLAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAFRegional::WebACLAssociation"
+        }
         Type: string
         Properties: WebACLAssociationProperties
         /**
@@ -19065,7 +20961,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html
          */
         constructor(properties: WebACLAssociationProperties) {
-            this.Type = "AWS::WAFRegional::WebACLAssociation";
+            this.Type = WebACLAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19138,6 +21034,12 @@ export namespace Cf {
         Name: string
       }
       export class WebACL implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::WebACL"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAFRegional::WebACL"
+        }
         Type: string
         Properties: WebACLProperties
         /**
@@ -19146,7 +21048,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html
          */
         constructor(properties: WebACLProperties) {
-            this.Type = "AWS::WAFRegional::WebACL";
+            this.Type = WebACL.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19195,6 +21097,18 @@ export namespace Cf {
         static Action(properties: WebACLAction) : WebACLAction {
           return properties;
         }
+        /**
+         * Returns the Rule property type name (`"AWS::WAFRegional::WebACL.Rule"`)
+         */
+        static get RuleTypeName(): string {
+          return "AWS::WAFRegional::WebACL.Rule"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::WAFRegional::WebACL.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::WAFRegional::WebACL.Action"
+        }
       }
       export interface RuleProperties {
         /**
@@ -19226,6 +21140,12 @@ export namespace Cf {
         Name: string
       }
       export class Rule implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::Rule"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAFRegional::Rule"
+        }
         Type: string
         Properties: RuleProperties
         /**
@@ -19234,7 +21154,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html
          */
         constructor(properties: RuleProperties) {
-            this.Type = "AWS::WAFRegional::Rule";
+            this.Type = Rule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19275,6 +21195,12 @@ export namespace Cf {
         static Predicate(properties: RulePredicate) : RulePredicate {
           return properties;
         }
+        /**
+         * Returns the Predicate property type name (`"AWS::WAFRegional::Rule.Predicate"`)
+         */
+        static get PredicateTypeName(): string {
+          return "AWS::WAFRegional::Rule.Predicate"
+        }
       }
       export interface IPSetProperties {
         /**
@@ -19297,6 +21223,12 @@ export namespace Cf {
         Name: string
       }
       export class IPSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::IPSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WAFRegional::IPSet"
+        }
         Type: string
         Properties: IPSetProperties
         /**
@@ -19305,7 +21237,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ipset.html
          */
         constructor(properties: IPSetProperties) {
-            this.Type = "AWS::WAFRegional::IPSet";
+            this.Type = IPSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19345,6 +21277,12 @@ export namespace Cf {
          */
         static IPSetDescriptor(properties: IPSetIPSetDescriptor) : IPSetIPSetDescriptor {
           return properties;
+        }
+        /**
+         * Returns the IPSetDescriptor property type name (`"AWS::WAFRegional::IPSet.IPSetDescriptor"`)
+         */
+        static get IPSetDescriptorTypeName(): string {
+          return "AWS::WAFRegional::IPSet.IPSetDescriptor"
         }
       }
     }
@@ -19569,6 +21507,12 @@ export namespace Cf {
         EC2SecurityGroupOwnerId?: string
       }
       export class DBSecurityGroupIngress implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBSecurityGroupIngress"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RDS::DBSecurityGroupIngress"
+        }
         Type: string
         Properties: DBSecurityGroupIngressProperties
         /**
@@ -19577,7 +21521,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html
          */
         constructor(properties: DBSecurityGroupIngressProperties) {
-            this.Type = "AWS::RDS::DBSecurityGroupIngress";
+            this.Type = DBSecurityGroupIngress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19848,6 +21792,12 @@ export namespace Cf {
         VpcSecurityGroupIds?: string[]
       }
       export class DBCluster implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBCluster"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RDS::DBCluster"
+        }
         Type: string
         Properties: DBClusterProperties
         /**
@@ -19856,7 +21806,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html
          */
         constructor(properties: DBClusterProperties) {
-            this.Type = "AWS::RDS::DBCluster";
+            this.Type = DBCluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -19896,6 +21846,12 @@ export namespace Cf {
          */
         static ScalingConfiguration(properties: DBClusterScalingConfiguration) : DBClusterScalingConfiguration {
           return properties;
+        }
+        /**
+         * Returns the ScalingConfiguration property type name (`"AWS::RDS::DBCluster.ScalingConfiguration"`)
+         */
+        static get ScalingConfigurationTypeName(): string {
+          return "AWS::RDS::DBCluster.ScalingConfiguration"
         }
       }
       export interface DBSubnetGroupProperties {
@@ -19937,6 +21893,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBSubnetGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBSubnetGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RDS::DBSubnetGroup"
+        }
         Type: string
         Properties: DBSubnetGroupProperties
         /**
@@ -19945,7 +21907,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html
          */
         constructor(properties: DBSubnetGroupProperties) {
-            this.Type = "AWS::RDS::DBSubnetGroup";
+            this.Type = DBSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20027,6 +21989,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class OptionGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RDS::OptionGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RDS::OptionGroup"
+        }
         Type: string
         Properties: OptionGroupProperties
         /**
@@ -20035,7 +22003,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html
          */
         constructor(properties: OptionGroupProperties) {
-            this.Type = "AWS::RDS::OptionGroup";
+            this.Type = OptionGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20084,6 +22052,18 @@ export namespace Cf {
         static OptionConfiguration(properties: OptionGroupOptionConfiguration) : OptionGroupOptionConfiguration {
           return properties;
         }
+        /**
+         * Returns the OptionSetting property type name (`"AWS::RDS::OptionGroup.OptionSetting"`)
+         */
+        static get OptionSettingTypeName(): string {
+          return "AWS::RDS::OptionGroup.OptionSetting"
+        }
+        /**
+         * Returns the OptionConfiguration property type name (`"AWS::RDS::OptionGroup.OptionConfiguration"`)
+         */
+        static get OptionConfigurationTypeName(): string {
+          return "AWS::RDS::OptionGroup.OptionConfiguration"
+        }
       }
       export interface DBParameterGroupProperties {
         /**
@@ -20124,6 +22104,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBParameterGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBParameterGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RDS::DBParameterGroup"
+        }
         Type: string
         Properties: DBParameterGroupProperties
         /**
@@ -20132,7 +22118,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html
          */
         constructor(properties: DBParameterGroupProperties) {
-            this.Type = "AWS::RDS::DBParameterGroup";
+            this.Type = DBParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20214,6 +22200,12 @@ export namespace Cf {
         SourceType?: string
       }
       export class EventSubscription implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RDS::EventSubscription"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RDS::EventSubscription"
+        }
         Type: string
         Properties: EventSubscriptionProperties
         /**
@@ -20222,7 +22214,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html
          */
         constructor(properties: EventSubscriptionProperties) {
-            this.Type = "AWS::RDS::EventSubscription";
+            this.Type = EventSubscription.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20700,6 +22692,12 @@ export namespace Cf {
         VPCSecurityGroups?: string[]
       }
       export class DBInstance implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBInstance"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RDS::DBInstance"
+        }
         Type: string
         Properties: DBInstanceProperties
         /**
@@ -20708,7 +22706,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html
          */
         constructor(properties: DBInstanceProperties) {
-            this.Type = "AWS::RDS::DBInstance";
+            this.Type = DBInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20748,6 +22746,12 @@ export namespace Cf {
          */
         static ProcessorFeature(properties: DBInstanceProcessorFeature) : DBInstanceProcessorFeature {
           return properties;
+        }
+        /**
+         * Returns the ProcessorFeature property type name (`"AWS::RDS::DBInstance.ProcessorFeature"`)
+         */
+        static get ProcessorFeatureTypeName(): string {
+          return "AWS::RDS::DBInstance.ProcessorFeature"
         }
       }
       export interface DBSecurityGroupProperties {
@@ -20789,6 +22793,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBSecurityGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBSecurityGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RDS::DBSecurityGroup"
+        }
         Type: string
         Properties: DBSecurityGroupProperties
         /**
@@ -20797,7 +22807,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html
          */
         constructor(properties: DBSecurityGroupProperties) {
-            this.Type = "AWS::RDS::DBSecurityGroup";
+            this.Type = DBSecurityGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -20837,6 +22847,12 @@ export namespace Cf {
          */
         static Ingress(properties: DBSecurityGroupIngress) : DBSecurityGroupIngress {
           return properties;
+        }
+        /**
+         * Returns the Ingress property type name (`"AWS::RDS::DBSecurityGroup.Ingress"`)
+         */
+        static get IngressTypeName(): string {
+          return "AWS::RDS::DBSecurityGroup.Ingress"
         }
       }
       export interface DBClusterParameterGroupProperties {
@@ -20878,6 +22894,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBClusterParameterGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBClusterParameterGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RDS::DBClusterParameterGroup"
+        }
         Type: string
         Properties: DBClusterParameterGroupProperties
         /**
@@ -20886,7 +22908,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html
          */
         constructor(properties: DBClusterParameterGroupProperties) {
-            this.Type = "AWS::RDS::DBClusterParameterGroup";
+            this.Type = DBClusterParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -22495,6 +24517,12 @@ export namespace Cf {
         TargetSpotCapacity?: number
       }
       export class InstanceFleetConfig implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EMR::InstanceFleetConfig"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig"
+        }
         Type: string
         Properties: InstanceFleetConfigProperties
         /**
@@ -22503,7 +24531,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html
          */
         constructor(properties: InstanceFleetConfigProperties) {
-            this.Type = "AWS::EMR::InstanceFleetConfig";
+            this.Type = InstanceFleetConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -22591,6 +24619,48 @@ export namespace Cf {
          */
         static EbsBlockDeviceConfig(properties: InstanceFleetConfigEbsBlockDeviceConfig) : InstanceFleetConfigEbsBlockDeviceConfig {
           return properties;
+        }
+        /**
+         * Returns the VolumeSpecification property type name (`"AWS::EMR::InstanceFleetConfig.VolumeSpecification"`)
+         */
+        static get VolumeSpecificationTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.VolumeSpecification"
+        }
+        /**
+         * Returns the SpotProvisioningSpecification property type name (`"AWS::EMR::InstanceFleetConfig.SpotProvisioningSpecification"`)
+         */
+        static get SpotProvisioningSpecificationTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.SpotProvisioningSpecification"
+        }
+        /**
+         * Returns the Configuration property type name (`"AWS::EMR::InstanceFleetConfig.Configuration"`)
+         */
+        static get ConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.Configuration"
+        }
+        /**
+         * Returns the EbsConfiguration property type name (`"AWS::EMR::InstanceFleetConfig.EbsConfiguration"`)
+         */
+        static get EbsConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.EbsConfiguration"
+        }
+        /**
+         * Returns the InstanceTypeConfig property type name (`"AWS::EMR::InstanceFleetConfig.InstanceTypeConfig"`)
+         */
+        static get InstanceTypeConfigTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.InstanceTypeConfig"
+        }
+        /**
+         * Returns the InstanceFleetProvisioningSpecifications property type name (`"AWS::EMR::InstanceFleetConfig.InstanceFleetProvisioningSpecifications"`)
+         */
+        static get InstanceFleetProvisioningSpecificationsTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.InstanceFleetProvisioningSpecifications"
+        }
+        /**
+         * Returns the EbsBlockDeviceConfig property type name (`"AWS::EMR::InstanceFleetConfig.EbsBlockDeviceConfig"`)
+         */
+        static get EbsBlockDeviceConfigTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.EbsBlockDeviceConfig"
         }
       }
       export interface ClusterProperties {
@@ -22767,6 +24837,12 @@ export namespace Cf {
         VisibleToAllUsers?: boolean
       }
       export class Cluster implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EMR::Cluster"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EMR::Cluster"
+        }
         Type: string
         Properties: ClusterProperties
         /**
@@ -22775,7 +24851,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html
          */
         constructor(properties: ClusterProperties) {
-            this.Type = "AWS::EMR::Cluster";
+            this.Type = Cluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -23016,6 +25092,162 @@ export namespace Cf {
         static ScalingTrigger(properties: ClusterScalingTrigger) : ClusterScalingTrigger {
           return properties;
         }
+        /**
+         * Returns the InstanceGroupConfig property type name (`"AWS::EMR::Cluster.InstanceGroupConfig"`)
+         */
+        static get InstanceGroupConfigTypeName(): string {
+          return "AWS::EMR::Cluster.InstanceGroupConfig"
+        }
+        /**
+         * Returns the SpotProvisioningSpecification property type name (`"AWS::EMR::Cluster.SpotProvisioningSpecification"`)
+         */
+        static get SpotProvisioningSpecificationTypeName(): string {
+          return "AWS::EMR::Cluster.SpotProvisioningSpecification"
+        }
+        /**
+         * Returns the BootstrapActionConfig property type name (`"AWS::EMR::Cluster.BootstrapActionConfig"`)
+         */
+        static get BootstrapActionConfigTypeName(): string {
+          return "AWS::EMR::Cluster.BootstrapActionConfig"
+        }
+        /**
+         * Returns the ScalingConstraints property type name (`"AWS::EMR::Cluster.ScalingConstraints"`)
+         */
+        static get ScalingConstraintsTypeName(): string {
+          return "AWS::EMR::Cluster.ScalingConstraints"
+        }
+        /**
+         * Returns the InstanceFleetConfig property type name (`"AWS::EMR::Cluster.InstanceFleetConfig"`)
+         */
+        static get InstanceFleetConfigTypeName(): string {
+          return "AWS::EMR::Cluster.InstanceFleetConfig"
+        }
+        /**
+         * Returns the JobFlowInstancesConfig property type name (`"AWS::EMR::Cluster.JobFlowInstancesConfig"`)
+         */
+        static get JobFlowInstancesConfigTypeName(): string {
+          return "AWS::EMR::Cluster.JobFlowInstancesConfig"
+        }
+        /**
+         * Returns the ScalingAction property type name (`"AWS::EMR::Cluster.ScalingAction"`)
+         */
+        static get ScalingActionTypeName(): string {
+          return "AWS::EMR::Cluster.ScalingAction"
+        }
+        /**
+         * Returns the StepConfig property type name (`"AWS::EMR::Cluster.StepConfig"`)
+         */
+        static get StepConfigTypeName(): string {
+          return "AWS::EMR::Cluster.StepConfig"
+        }
+        /**
+         * Returns the KerberosAttributes property type name (`"AWS::EMR::Cluster.KerberosAttributes"`)
+         */
+        static get KerberosAttributesTypeName(): string {
+          return "AWS::EMR::Cluster.KerberosAttributes"
+        }
+        /**
+         * Returns the SimpleScalingPolicyConfiguration property type name (`"AWS::EMR::Cluster.SimpleScalingPolicyConfiguration"`)
+         */
+        static get SimpleScalingPolicyConfigurationTypeName(): string {
+          return "AWS::EMR::Cluster.SimpleScalingPolicyConfiguration"
+        }
+        /**
+         * Returns the Application property type name (`"AWS::EMR::Cluster.Application"`)
+         */
+        static get ApplicationTypeName(): string {
+          return "AWS::EMR::Cluster.Application"
+        }
+        /**
+         * Returns the EbsBlockDeviceConfig property type name (`"AWS::EMR::Cluster.EbsBlockDeviceConfig"`)
+         */
+        static get EbsBlockDeviceConfigTypeName(): string {
+          return "AWS::EMR::Cluster.EbsBlockDeviceConfig"
+        }
+        /**
+         * Returns the PlacementType property type name (`"AWS::EMR::Cluster.PlacementType"`)
+         */
+        static get PlacementTypeTypeName(): string {
+          return "AWS::EMR::Cluster.PlacementType"
+        }
+        /**
+         * Returns the Configuration property type name (`"AWS::EMR::Cluster.Configuration"`)
+         */
+        static get ConfigurationTypeName(): string {
+          return "AWS::EMR::Cluster.Configuration"
+        }
+        /**
+         * Returns the ScriptBootstrapActionConfig property type name (`"AWS::EMR::Cluster.ScriptBootstrapActionConfig"`)
+         */
+        static get ScriptBootstrapActionConfigTypeName(): string {
+          return "AWS::EMR::Cluster.ScriptBootstrapActionConfig"
+        }
+        /**
+         * Returns the CloudWatchAlarmDefinition property type name (`"AWS::EMR::Cluster.CloudWatchAlarmDefinition"`)
+         */
+        static get CloudWatchAlarmDefinitionTypeName(): string {
+          return "AWS::EMR::Cluster.CloudWatchAlarmDefinition"
+        }
+        /**
+         * Returns the EbsConfiguration property type name (`"AWS::EMR::Cluster.EbsConfiguration"`)
+         */
+        static get EbsConfigurationTypeName(): string {
+          return "AWS::EMR::Cluster.EbsConfiguration"
+        }
+        /**
+         * Returns the ScalingRule property type name (`"AWS::EMR::Cluster.ScalingRule"`)
+         */
+        static get ScalingRuleTypeName(): string {
+          return "AWS::EMR::Cluster.ScalingRule"
+        }
+        /**
+         * Returns the KeyValue property type name (`"AWS::EMR::Cluster.KeyValue"`)
+         */
+        static get KeyValueTypeName(): string {
+          return "AWS::EMR::Cluster.KeyValue"
+        }
+        /**
+         * Returns the InstanceTypeConfig property type name (`"AWS::EMR::Cluster.InstanceTypeConfig"`)
+         */
+        static get InstanceTypeConfigTypeName(): string {
+          return "AWS::EMR::Cluster.InstanceTypeConfig"
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::EMR::Cluster.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::EMR::Cluster.MetricDimension"
+        }
+        /**
+         * Returns the VolumeSpecification property type name (`"AWS::EMR::Cluster.VolumeSpecification"`)
+         */
+        static get VolumeSpecificationTypeName(): string {
+          return "AWS::EMR::Cluster.VolumeSpecification"
+        }
+        /**
+         * Returns the AutoScalingPolicy property type name (`"AWS::EMR::Cluster.AutoScalingPolicy"`)
+         */
+        static get AutoScalingPolicyTypeName(): string {
+          return "AWS::EMR::Cluster.AutoScalingPolicy"
+        }
+        /**
+         * Returns the InstanceFleetProvisioningSpecifications property type name (`"AWS::EMR::Cluster.InstanceFleetProvisioningSpecifications"`)
+         */
+        static get InstanceFleetProvisioningSpecificationsTypeName(): string {
+          return "AWS::EMR::Cluster.InstanceFleetProvisioningSpecifications"
+        }
+        /**
+         * Returns the HadoopJarStepConfig property type name (`"AWS::EMR::Cluster.HadoopJarStepConfig"`)
+         */
+        static get HadoopJarStepConfigTypeName(): string {
+          return "AWS::EMR::Cluster.HadoopJarStepConfig"
+        }
+        /**
+         * Returns the ScalingTrigger property type name (`"AWS::EMR::Cluster.ScalingTrigger"`)
+         */
+        static get ScalingTriggerTypeName(): string {
+          return "AWS::EMR::Cluster.ScalingTrigger"
+        }
       }
       export interface InstanceGroupConfigProperties {
         /**
@@ -23110,6 +25342,12 @@ export namespace Cf {
         Name?: string
       }
       export class InstanceGroupConfig implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EMR::InstanceGroupConfig"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig"
+        }
         Type: string
         Properties: InstanceGroupConfigProperties
         /**
@@ -23118,7 +25356,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html
          */
         constructor(properties: InstanceGroupConfigProperties) {
-            this.Type = "AWS::EMR::InstanceGroupConfig";
+            this.Type = InstanceGroupConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -23247,6 +25485,78 @@ export namespace Cf {
         static EbsConfiguration(properties: InstanceGroupConfigEbsConfiguration) : InstanceGroupConfigEbsConfiguration {
           return properties;
         }
+        /**
+         * Returns the EbsBlockDeviceConfig property type name (`"AWS::EMR::InstanceGroupConfig.EbsBlockDeviceConfig"`)
+         */
+        static get EbsBlockDeviceConfigTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.EbsBlockDeviceConfig"
+        }
+        /**
+         * Returns the Configuration property type name (`"AWS::EMR::InstanceGroupConfig.Configuration"`)
+         */
+        static get ConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.Configuration"
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::EMR::InstanceGroupConfig.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.MetricDimension"
+        }
+        /**
+         * Returns the SimpleScalingPolicyConfiguration property type name (`"AWS::EMR::InstanceGroupConfig.SimpleScalingPolicyConfiguration"`)
+         */
+        static get SimpleScalingPolicyConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.SimpleScalingPolicyConfiguration"
+        }
+        /**
+         * Returns the ScalingRule property type name (`"AWS::EMR::InstanceGroupConfig.ScalingRule"`)
+         */
+        static get ScalingRuleTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.ScalingRule"
+        }
+        /**
+         * Returns the ScalingAction property type name (`"AWS::EMR::InstanceGroupConfig.ScalingAction"`)
+         */
+        static get ScalingActionTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.ScalingAction"
+        }
+        /**
+         * Returns the ScalingTrigger property type name (`"AWS::EMR::InstanceGroupConfig.ScalingTrigger"`)
+         */
+        static get ScalingTriggerTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.ScalingTrigger"
+        }
+        /**
+         * Returns the ScalingConstraints property type name (`"AWS::EMR::InstanceGroupConfig.ScalingConstraints"`)
+         */
+        static get ScalingConstraintsTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.ScalingConstraints"
+        }
+        /**
+         * Returns the CloudWatchAlarmDefinition property type name (`"AWS::EMR::InstanceGroupConfig.CloudWatchAlarmDefinition"`)
+         */
+        static get CloudWatchAlarmDefinitionTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.CloudWatchAlarmDefinition"
+        }
+        /**
+         * Returns the VolumeSpecification property type name (`"AWS::EMR::InstanceGroupConfig.VolumeSpecification"`)
+         */
+        static get VolumeSpecificationTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.VolumeSpecification"
+        }
+        /**
+         * Returns the AutoScalingPolicy property type name (`"AWS::EMR::InstanceGroupConfig.AutoScalingPolicy"`)
+         */
+        static get AutoScalingPolicyTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.AutoScalingPolicy"
+        }
+        /**
+         * Returns the EbsConfiguration property type name (`"AWS::EMR::InstanceGroupConfig.EbsConfiguration"`)
+         */
+        static get EbsConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.EbsConfiguration"
+        }
       }
       export interface StepProperties {
         /**
@@ -23287,6 +25597,12 @@ export namespace Cf {
         Name: string
       }
       export class Step implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EMR::Step"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EMR::Step"
+        }
         Type: string
         Properties: StepProperties
         /**
@@ -23295,7 +25611,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html
          */
         constructor(properties: StepProperties) {
-            this.Type = "AWS::EMR::Step";
+            this.Type = Step.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -23344,6 +25660,18 @@ export namespace Cf {
         static KeyValue(properties: StepKeyValue) : StepKeyValue {
           return properties;
         }
+        /**
+         * Returns the HadoopJarStepConfig property type name (`"AWS::EMR::Step.HadoopJarStepConfig"`)
+         */
+        static get HadoopJarStepConfigTypeName(): string {
+          return "AWS::EMR::Step.HadoopJarStepConfig"
+        }
+        /**
+         * Returns the KeyValue property type name (`"AWS::EMR::Step.KeyValue"`)
+         */
+        static get KeyValueTypeName(): string {
+          return "AWS::EMR::Step.KeyValue"
+        }
       }
       export interface SecurityConfigurationProperties {
         /**
@@ -23366,6 +25694,12 @@ export namespace Cf {
         SecurityConfiguration: object
       }
       export class SecurityConfiguration implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EMR::SecurityConfiguration"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EMR::SecurityConfiguration"
+        }
         Type: string
         Properties: SecurityConfigurationProperties
         /**
@@ -23374,7 +25708,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html
          */
         constructor(properties: SecurityConfigurationProperties) {
-            this.Type = "AWS::EMR::SecurityConfiguration";
+            this.Type = SecurityConfiguration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -23532,6 +25866,12 @@ export namespace Cf {
         WorkspaceProperties?: WorkspaceWorkspaceProperties
       }
       export class Workspace implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::WorkSpaces::Workspace"`)
+         */
+        static get TypeName(): string {
+          return "AWS::WorkSpaces::Workspace"
+        }
         Type: string
         Properties: WorkspaceProperties
         /**
@@ -23540,7 +25880,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html
          */
         constructor(properties: WorkspaceProperties) {
-            this.Type = "AWS::WorkSpaces::Workspace";
+            this.Type = Workspace.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -23580,6 +25920,12 @@ export namespace Cf {
          */
         static WorkspaceProperties(properties: WorkspaceWorkspaceProperties) : WorkspaceWorkspaceProperties {
           return properties;
+        }
+        /**
+         * Returns the WorkspaceProperties property type name (`"AWS::WorkSpaces::Workspace.WorkspaceProperties"`)
+         */
+        static get WorkspacePropertiesTypeName(): string {
+          return "AWS::WorkSpaces::Workspace.WorkspaceProperties"
         }
       }
     }
@@ -23784,6 +26130,12 @@ export namespace Cf {
         RequestParameters?: object
       }
       export class Route implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Route"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGatewayV2::Route"
+        }
         Type: string
         Properties: RouteProperties
         /**
@@ -23792,7 +26144,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-route.html
          */
         constructor(properties: RouteProperties) {
-            this.Type = "AWS::ApiGatewayV2::Route";
+            this.Type = Route.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -23832,6 +26184,12 @@ export namespace Cf {
          */
         static ParameterConstraints(properties: RouteParameterConstraints) : RouteParameterConstraints {
           return properties;
+        }
+        /**
+         * Returns the ParameterConstraints property type name (`"AWS::ApiGatewayV2::Route.ParameterConstraints"`)
+         */
+        static get ParameterConstraintsTypeName(): string {
+          return "AWS::ApiGatewayV2::Route.ParameterConstraints"
         }
       }
       export interface IntegrationProperties {
@@ -23954,6 +26312,12 @@ export namespace Cf {
         IntegrationType: string
       }
       export class Integration implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Integration"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGatewayV2::Integration"
+        }
         Type: string
         Properties: IntegrationProperties
         /**
@@ -23962,7 +26326,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html
          */
         constructor(properties: IntegrationProperties) {
-            this.Type = "AWS::ApiGatewayV2::Integration";
+            this.Type = Integration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24080,6 +26444,12 @@ export namespace Cf {
         DefaultRouteSettings?: StageRouteSettings
       }
       export class Stage implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Stage"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGatewayV2::Stage"
+        }
         Type: string
         Properties: StageProperties
         /**
@@ -24088,7 +26458,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html
          */
         constructor(properties: StageProperties) {
-            this.Type = "AWS::ApiGatewayV2::Stage";
+            this.Type = Stage.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24137,6 +26507,18 @@ export namespace Cf {
         static RouteSettings(properties: StageRouteSettings) : StageRouteSettings {
           return properties;
         }
+        /**
+         * Returns the AccessLogSettings property type name (`"AWS::ApiGatewayV2::Stage.AccessLogSettings"`)
+         */
+        static get AccessLogSettingsTypeName(): string {
+          return "AWS::ApiGatewayV2::Stage.AccessLogSettings"
+        }
+        /**
+         * Returns the RouteSettings property type name (`"AWS::ApiGatewayV2::Stage.RouteSettings"`)
+         */
+        static get RouteSettingsTypeName(): string {
+          return "AWS::ApiGatewayV2::Stage.RouteSettings"
+        }
       }
       export interface DeploymentProperties {
         /**
@@ -24168,6 +26550,12 @@ export namespace Cf {
         ApiId: string
       }
       export class Deployment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Deployment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGatewayV2::Deployment"
+        }
         Type: string
         Properties: DeploymentProperties
         /**
@@ -24176,7 +26564,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-deployment.html
          */
         constructor(properties: DeploymentProperties) {
-            this.Type = "AWS::ApiGatewayV2::Deployment";
+            this.Type = Deployment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24258,6 +26646,12 @@ export namespace Cf {
         Name: string
       }
       export class Model implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Model"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGatewayV2::Model"
+        }
         Type: string
         Properties: ModelProperties
         /**
@@ -24266,7 +26660,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-model.html
          */
         constructor(properties: ModelProperties) {
-            this.Type = "AWS::ApiGatewayV2::Model";
+            this.Type = Model.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24375,6 +26769,12 @@ export namespace Cf {
         Name: string
       }
       export class Authorizer implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Authorizer"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGatewayV2::Authorizer"
+        }
         Type: string
         Properties: AuthorizerProperties
         /**
@@ -24383,7 +26783,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html
          */
         constructor(properties: AuthorizerProperties) {
-            this.Type = "AWS::ApiGatewayV2::Authorizer";
+            this.Type = Authorizer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24483,6 +26883,12 @@ export namespace Cf {
         ApiKeySelectionExpression?: string
       }
       export class Api implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Api"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGatewayV2::Api"
+        }
         Type: string
         Properties: ApiProperties
         /**
@@ -24491,7 +26897,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html
          */
         constructor(properties: ApiProperties) {
-            this.Type = "AWS::ApiGatewayV2::Api";
+            this.Type = Api.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24582,6 +26988,12 @@ export namespace Cf {
         ResponseModels?: object
       }
       export class RouteResponse implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::RouteResponse"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGatewayV2::RouteResponse"
+        }
         Type: string
         Properties: RouteResponseProperties
         /**
@@ -24590,7 +27002,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-routeresponse.html
          */
         constructor(properties: RouteResponseProperties) {
-            this.Type = "AWS::ApiGatewayV2::RouteResponse";
+            this.Type = RouteResponse.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24630,6 +27042,12 @@ export namespace Cf {
          */
         static ParameterConstraints(properties: RouteResponseParameterConstraints) : RouteResponseParameterConstraints {
           return properties;
+        }
+        /**
+         * Returns the ParameterConstraints property type name (`"AWS::ApiGatewayV2::RouteResponse.ParameterConstraints"`)
+         */
+        static get ParameterConstraintsTypeName(): string {
+          return "AWS::ApiGatewayV2::RouteResponse.ParameterConstraints"
         }
       }
       export interface IntegrationResponseProperties {
@@ -24698,6 +27116,12 @@ export namespace Cf {
         ApiId: string
       }
       export class IntegrationResponse implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::IntegrationResponse"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApiGatewayV2::IntegrationResponse"
+        }
         Type: string
         Properties: IntegrationResponseProperties
         /**
@@ -24706,7 +27130,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integrationresponse.html
          */
         constructor(properties: IntegrationResponseProperties) {
-            this.Type = "AWS::ApiGatewayV2::IntegrationResponse";
+            this.Type = IntegrationResponse.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24801,6 +27225,12 @@ export namespace Cf {
         RetentionInDays?: number
       }
       export class LogGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Logs::LogGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Logs::LogGroup"
+        }
         Type: string
         Properties: LogGroupProperties
         /**
@@ -24809,7 +27239,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html
          */
         constructor(properties: LogGroupProperties) {
-            this.Type = "AWS::Logs::LogGroup";
+            this.Type = LogGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24873,6 +27303,12 @@ export namespace Cf {
         MetricTransformations: MetricFilterMetricTransformation[]
       }
       export class MetricFilter implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Logs::MetricFilter"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Logs::MetricFilter"
+        }
         Type: string
         Properties: MetricFilterProperties
         /**
@@ -24881,7 +27317,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html
          */
         constructor(properties: MetricFilterProperties) {
-            this.Type = "AWS::Logs::MetricFilter";
+            this.Type = MetricFilter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -24922,6 +27358,12 @@ export namespace Cf {
         static MetricTransformation(properties: MetricFilterMetricTransformation) : MetricFilterMetricTransformation {
           return properties;
         }
+        /**
+         * Returns the MetricTransformation property type name (`"AWS::Logs::MetricFilter.MetricTransformation"`)
+         */
+        static get MetricTransformationTypeName(): string {
+          return "AWS::Logs::MetricFilter.MetricTransformation"
+        }
       }
       export interface LogStreamProperties {
         /**
@@ -24944,6 +27386,12 @@ export namespace Cf {
         LogStreamName?: string
       }
       export class LogStream implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Logs::LogStream"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Logs::LogStream"
+        }
         Type: string
         Properties: LogStreamProperties
         /**
@@ -24952,7 +27400,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html
          */
         constructor(properties: LogStreamProperties) {
-            this.Type = "AWS::Logs::LogStream";
+            this.Type = LogStream.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -25025,6 +27473,12 @@ export namespace Cf {
         RoleArn?: string
       }
       export class SubscriptionFilter implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Logs::SubscriptionFilter"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Logs::SubscriptionFilter"
+        }
         Type: string
         Properties: SubscriptionFilterProperties
         /**
@@ -25033,7 +27487,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html
          */
         constructor(properties: SubscriptionFilterProperties) {
-            this.Type = "AWS::Logs::SubscriptionFilter";
+            this.Type = SubscriptionFilter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -25106,6 +27560,12 @@ export namespace Cf {
         TargetArn: string
       }
       export class Destination implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Logs::Destination"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Logs::Destination"
+        }
         Type: string
         Properties: DestinationProperties
         /**
@@ -25114,7 +27574,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html
          */
         constructor(properties: DestinationProperties) {
-            this.Type = "AWS::Logs::Destination";
+            this.Type = Destination.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -25218,6 +27678,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Stream implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Kinesis::Stream"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Kinesis::Stream"
+        }
         Type: string
         Properties: StreamProperties
         /**
@@ -25226,7 +27692,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html
          */
         constructor(properties: StreamProperties) {
-            this.Type = "AWS::Kinesis::Stream";
+            this.Type = Stream.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -25267,6 +27733,12 @@ export namespace Cf {
         static StreamEncryption(properties: StreamStreamEncryption) : StreamStreamEncryption {
           return properties;
         }
+        /**
+         * Returns the StreamEncryption property type name (`"AWS::Kinesis::Stream.StreamEncryption"`)
+         */
+        static get StreamEncryptionTypeName(): string {
+          return "AWS::Kinesis::Stream.StreamEncryption"
+        }
       }
       export interface StreamConsumerProperties {
         /**
@@ -25289,6 +27761,12 @@ export namespace Cf {
         StreamARN: string
       }
       export class StreamConsumer implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Kinesis::StreamConsumer"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Kinesis::StreamConsumer"
+        }
         Type: string
         Properties: StreamConsumerProperties
         /**
@@ -25297,7 +27775,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-streamconsumer.html
          */
         constructor(properties: StreamConsumerProperties) {
-            this.Type = "AWS::Kinesis::StreamConsumer";
+            this.Type = StreamConsumer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -25381,6 +27859,12 @@ export namespace Cf {
         Name: string
       }
       export class ResourceShare implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RAM::ResourceShare"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RAM::ResourceShare"
+        }
         Type: string
         Properties: ResourceShareProperties
         /**
@@ -25389,7 +27873,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html
          */
         constructor(properties: ResourceShareProperties) {
-            this.Type = "AWS::RAM::ResourceShare";
+            this.Type = ResourceShare.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26108,6 +28592,12 @@ export namespace Cf {
         UserData?: string
       }
       export class LaunchConfiguration implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::LaunchConfiguration"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AutoScaling::LaunchConfiguration"
+        }
         Type: string
         Properties: LaunchConfigurationProperties
         /**
@@ -26116,7 +28606,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html
          */
         constructor(properties: LaunchConfigurationProperties) {
-            this.Type = "AWS::AutoScaling::LaunchConfiguration";
+            this.Type = LaunchConfiguration.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26164,6 +28654,18 @@ export namespace Cf {
          */
         static BlockDevice(properties: LaunchConfigurationBlockDevice) : LaunchConfigurationBlockDevice {
           return properties;
+        }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::AutoScaling::LaunchConfiguration.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::AutoScaling::LaunchConfiguration.BlockDeviceMapping"
+        }
+        /**
+         * Returns the BlockDevice property type name (`"AWS::AutoScaling::LaunchConfiguration.BlockDevice"`)
+         */
+        static get BlockDeviceTypeName(): string {
+          return "AWS::AutoScaling::LaunchConfiguration.BlockDevice"
         }
       }
       export interface LifecycleHookProperties {
@@ -26241,6 +28743,12 @@ export namespace Cf {
         RoleARN?: string
       }
       export class LifecycleHook implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::LifecycleHook"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AutoScaling::LifecycleHook"
+        }
         Type: string
         Properties: LifecycleHookProperties
         /**
@@ -26249,7 +28757,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html
          */
         constructor(properties: LifecycleHookProperties) {
-            this.Type = "AWS::AutoScaling::LifecycleHook";
+            this.Type = LifecycleHook.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26376,6 +28884,12 @@ export namespace Cf {
         TargetTrackingConfiguration?: ScalingPolicyTargetTrackingConfiguration
       }
       export class ScalingPolicy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::ScalingPolicy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy"
+        }
         Type: string
         Properties: ScalingPolicyProperties
         /**
@@ -26384,7 +28898,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html
          */
         constructor(properties: ScalingPolicyProperties) {
-            this.Type = "AWS::AutoScaling::ScalingPolicy";
+            this.Type = ScalingPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26456,6 +28970,36 @@ export namespace Cf {
          */
         static StepAdjustment(properties: ScalingPolicyStepAdjustment) : ScalingPolicyStepAdjustment {
           return properties;
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::AutoScaling::ScalingPolicy.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.MetricDimension"
+        }
+        /**
+         * Returns the CustomizedMetricSpecification property type name (`"AWS::AutoScaling::ScalingPolicy.CustomizedMetricSpecification"`)
+         */
+        static get CustomizedMetricSpecificationTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.CustomizedMetricSpecification"
+        }
+        /**
+         * Returns the PredefinedMetricSpecification property type name (`"AWS::AutoScaling::ScalingPolicy.PredefinedMetricSpecification"`)
+         */
+        static get PredefinedMetricSpecificationTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.PredefinedMetricSpecification"
+        }
+        /**
+         * Returns the TargetTrackingConfiguration property type name (`"AWS::AutoScaling::ScalingPolicy.TargetTrackingConfiguration"`)
+         */
+        static get TargetTrackingConfigurationTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.TargetTrackingConfiguration"
+        }
+        /**
+         * Returns the StepAdjustment property type name (`"AWS::AutoScaling::ScalingPolicy.StepAdjustment"`)
+         */
+        static get StepAdjustmentTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.StepAdjustment"
         }
       }
       export interface AutoScalingGroupProperties {
@@ -26659,6 +29203,12 @@ export namespace Cf {
         VPCZoneIdentifier?: string[]
       }
       export class AutoScalingGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::AutoScalingGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup"
+        }
         Type: string
         Properties: AutoScalingGroupProperties
         /**
@@ -26667,7 +29217,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html
          */
         constructor(properties: AutoScalingGroupProperties) {
-            this.Type = "AWS::AutoScaling::AutoScalingGroup";
+            this.Type = AutoScalingGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26772,6 +29322,60 @@ export namespace Cf {
         static TagProperty(properties: AutoScalingGroupTagProperty) : AutoScalingGroupTagProperty {
           return properties;
         }
+        /**
+         * Returns the LaunchTemplateOverrides property type name (`"AWS::AutoScaling::AutoScalingGroup.LaunchTemplateOverrides"`)
+         */
+        static get LaunchTemplateOverridesTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.LaunchTemplateOverrides"
+        }
+        /**
+         * Returns the LifecycleHookSpecification property type name (`"AWS::AutoScaling::AutoScalingGroup.LifecycleHookSpecification"`)
+         */
+        static get LifecycleHookSpecificationTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.LifecycleHookSpecification"
+        }
+        /**
+         * Returns the MixedInstancesPolicy property type name (`"AWS::AutoScaling::AutoScalingGroup.MixedInstancesPolicy"`)
+         */
+        static get MixedInstancesPolicyTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.MixedInstancesPolicy"
+        }
+        /**
+         * Returns the LaunchTemplateSpecification property type name (`"AWS::AutoScaling::AutoScalingGroup.LaunchTemplateSpecification"`)
+         */
+        static get LaunchTemplateSpecificationTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.LaunchTemplateSpecification"
+        }
+        /**
+         * Returns the NotificationConfiguration property type name (`"AWS::AutoScaling::AutoScalingGroup.NotificationConfiguration"`)
+         */
+        static get NotificationConfigurationTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.NotificationConfiguration"
+        }
+        /**
+         * Returns the MetricsCollection property type name (`"AWS::AutoScaling::AutoScalingGroup.MetricsCollection"`)
+         */
+        static get MetricsCollectionTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.MetricsCollection"
+        }
+        /**
+         * Returns the InstancesDistribution property type name (`"AWS::AutoScaling::AutoScalingGroup.InstancesDistribution"`)
+         */
+        static get InstancesDistributionTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.InstancesDistribution"
+        }
+        /**
+         * Returns the LaunchTemplate property type name (`"AWS::AutoScaling::AutoScalingGroup.LaunchTemplate"`)
+         */
+        static get LaunchTemplateTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.LaunchTemplate"
+        }
+        /**
+         * Returns the TagProperty property type name (`"AWS::AutoScaling::AutoScalingGroup.TagProperty"`)
+         */
+        static get TagPropertyTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.TagProperty"
+        }
       }
       export interface ScheduledActionProperties {
         /**
@@ -26839,6 +29443,12 @@ export namespace Cf {
         StartTime?: string
       }
       export class ScheduledAction implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::ScheduledAction"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AutoScaling::ScheduledAction"
+        }
         Type: string
         Properties: ScheduledActionProperties
         /**
@@ -26847,7 +29457,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html
          */
         constructor(properties: ScheduledActionProperties) {
-            this.Type = "AWS::AutoScaling::ScheduledAction";
+            this.Type = ScheduledAction.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -26994,6 +29604,12 @@ export namespace Cf {
         VisibilityTimeout?: number
       }
       export class Queue implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SQS::Queue"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SQS::Queue"
+        }
         Type: string
         Properties: QueueProperties
         /**
@@ -27002,7 +29618,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html
          */
         constructor(properties: QueueProperties) {
-            this.Type = "AWS::SQS::Queue";
+            this.Type = Queue.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27057,6 +29673,12 @@ export namespace Cf {
         Queues: string[]
       }
       export class QueuePolicy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SQS::QueuePolicy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SQS::QueuePolicy"
+        }
         Type: string
         Properties: QueuePolicyProperties
         /**
@@ -27065,7 +29687,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html
          */
         constructor(properties: QueuePolicyProperties) {
-            this.Type = "AWS::SQS::QueuePolicy";
+            this.Type = QueuePolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27374,6 +29996,12 @@ export namespace Cf {
         ImageArn?: string
       }
       export class ImageBuilder implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::ImageBuilder"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppStream::ImageBuilder"
+        }
         Type: string
         Properties: ImageBuilderProperties
         /**
@@ -27382,7 +30010,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html
          */
         constructor(properties: ImageBuilderProperties) {
-            this.Type = "AWS::AppStream::ImageBuilder";
+            this.Type = ImageBuilder.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27430,6 +30058,18 @@ export namespace Cf {
          */
         static DomainJoinInfo(properties: ImageBuilderDomainJoinInfo) : ImageBuilderDomainJoinInfo {
           return properties;
+        }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::AppStream::ImageBuilder.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::AppStream::ImageBuilder.VpcConfig"
+        }
+        /**
+         * Returns the DomainJoinInfo property type name (`"AWS::AppStream::ImageBuilder.DomainJoinInfo"`)
+         */
+        static get DomainJoinInfoTypeName(): string {
+          return "AWS::AppStream::ImageBuilder.DomainJoinInfo"
         }
       }
       export interface StackProperties {
@@ -27525,6 +30165,12 @@ export namespace Cf {
         FeedbackURL?: string
       }
       export class Stack implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::Stack"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppStream::Stack"
+        }
         Type: string
         Properties: StackProperties
         /**
@@ -27533,7 +30179,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html
          */
         constructor(properties: StackProperties) {
-            this.Type = "AWS::AppStream::Stack";
+            this.Type = Stack.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27590,6 +30236,24 @@ export namespace Cf {
         static UserSetting(properties: StackUserSetting) : StackUserSetting {
           return properties;
         }
+        /**
+         * Returns the ApplicationSettings property type name (`"AWS::AppStream::Stack.ApplicationSettings"`)
+         */
+        static get ApplicationSettingsTypeName(): string {
+          return "AWS::AppStream::Stack.ApplicationSettings"
+        }
+        /**
+         * Returns the StorageConnector property type name (`"AWS::AppStream::Stack.StorageConnector"`)
+         */
+        static get StorageConnectorTypeName(): string {
+          return "AWS::AppStream::Stack.StorageConnector"
+        }
+        /**
+         * Returns the UserSetting property type name (`"AWS::AppStream::Stack.UserSetting"`)
+         */
+        static get UserSettingTypeName(): string {
+          return "AWS::AppStream::Stack.UserSetting"
+        }
       }
       export interface DirectoryConfigProperties {
         /**
@@ -27621,6 +30285,12 @@ export namespace Cf {
         DirectoryName: string
       }
       export class DirectoryConfig implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::DirectoryConfig"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppStream::DirectoryConfig"
+        }
         Type: string
         Properties: DirectoryConfigProperties
         /**
@@ -27629,7 +30299,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html
          */
         constructor(properties: DirectoryConfigProperties) {
-            this.Type = "AWS::AppStream::DirectoryConfig";
+            this.Type = DirectoryConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27670,6 +30340,12 @@ export namespace Cf {
         static ServiceAccountCredentials(properties: DirectoryConfigServiceAccountCredentials) : DirectoryConfigServiceAccountCredentials {
           return properties;
         }
+        /**
+         * Returns the ServiceAccountCredentials property type name (`"AWS::AppStream::DirectoryConfig.ServiceAccountCredentials"`)
+         */
+        static get ServiceAccountCredentialsTypeName(): string {
+          return "AWS::AppStream::DirectoryConfig.ServiceAccountCredentials"
+        }
       }
       export interface StackFleetAssociationProperties {
         /**
@@ -27692,6 +30368,12 @@ export namespace Cf {
         StackName: string
       }
       export class StackFleetAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::StackFleetAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppStream::StackFleetAssociation"
+        }
         Type: string
         Properties: StackFleetAssociationProperties
         /**
@@ -27700,7 +30382,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stackfleetassociation.html
          */
         constructor(properties: StackFleetAssociationProperties) {
-            this.Type = "AWS::AppStream::StackFleetAssociation";
+            this.Type = StackFleetAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27773,6 +30455,12 @@ export namespace Cf {
         AuthenticationType: string
       }
       export class StackUserAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::StackUserAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppStream::StackUserAssociation"
+        }
         Type: string
         Properties: StackUserAssociationProperties
         /**
@@ -27781,7 +30469,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stackuserassociation.html
          */
         constructor(properties: StackUserAssociationProperties) {
-            this.Type = "AWS::AppStream::StackUserAssociation";
+            this.Type = StackUserAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -27863,6 +30551,12 @@ export namespace Cf {
         AuthenticationType: string
       }
       export class User implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::User"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppStream::User"
+        }
         Type: string
         Properties: UserProperties
         /**
@@ -27871,7 +30565,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html
          */
         constructor(properties: UserProperties) {
-            this.Type = "AWS::AppStream::User";
+            this.Type = User.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -28025,6 +30719,12 @@ export namespace Cf {
         ImageArn?: string
       }
       export class Fleet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::Fleet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AppStream::Fleet"
+        }
         Type: string
         Properties: FleetProperties
         /**
@@ -28033,7 +30733,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html
          */
         constructor(properties: FleetProperties) {
-            this.Type = "AWS::AppStream::Fleet";
+            this.Type = Fleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -28089,6 +30789,24 @@ export namespace Cf {
          */
         static VpcConfig(properties: FleetVpcConfig) : FleetVpcConfig {
           return properties;
+        }
+        /**
+         * Returns the ComputeCapacity property type name (`"AWS::AppStream::Fleet.ComputeCapacity"`)
+         */
+        static get ComputeCapacityTypeName(): string {
+          return "AWS::AppStream::Fleet.ComputeCapacity"
+        }
+        /**
+         * Returns the DomainJoinInfo property type name (`"AWS::AppStream::Fleet.DomainJoinInfo"`)
+         */
+        static get DomainJoinInfoTypeName(): string {
+          return "AWS::AppStream::Fleet.DomainJoinInfo"
+        }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::AppStream::Fleet.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::AppStream::Fleet.VpcConfig"
         }
       }
     }
@@ -28501,6 +31219,12 @@ export namespace Cf {
         ScalingInstructions: ScalingPlanScalingInstruction[]
       }
       export class ScalingPlan implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::AutoScalingPlans::ScalingPlan"`)
+         */
+        static get TypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan"
+        }
         Type: string
         Properties: ScalingPlanProperties
         /**
@@ -28509,7 +31233,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html
          */
         constructor(properties: ScalingPlanProperties) {
-            this.Type = "AWS::AutoScalingPlans::ScalingPlan";
+            this.Type = ScalingPlan.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -28613,6 +31337,60 @@ export namespace Cf {
          */
         static CustomizedLoadMetricSpecification(properties: ScalingPlanCustomizedLoadMetricSpecification) : ScalingPlanCustomizedLoadMetricSpecification {
           return properties;
+        }
+        /**
+         * Returns the ApplicationSource property type name (`"AWS::AutoScalingPlans::ScalingPlan.ApplicationSource"`)
+         */
+        static get ApplicationSourceTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.ApplicationSource"
+        }
+        /**
+         * Returns the ScalingInstruction property type name (`"AWS::AutoScalingPlans::ScalingPlan.ScalingInstruction"`)
+         */
+        static get ScalingInstructionTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.ScalingInstruction"
+        }
+        /**
+         * Returns the TargetTrackingConfiguration property type name (`"AWS::AutoScalingPlans::ScalingPlan.TargetTrackingConfiguration"`)
+         */
+        static get TargetTrackingConfigurationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.TargetTrackingConfiguration"
+        }
+        /**
+         * Returns the CustomizedScalingMetricSpecification property type name (`"AWS::AutoScalingPlans::ScalingPlan.CustomizedScalingMetricSpecification"`)
+         */
+        static get CustomizedScalingMetricSpecificationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.CustomizedScalingMetricSpecification"
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::AutoScalingPlans::ScalingPlan.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.MetricDimension"
+        }
+        /**
+         * Returns the PredefinedScalingMetricSpecification property type name (`"AWS::AutoScalingPlans::ScalingPlan.PredefinedScalingMetricSpecification"`)
+         */
+        static get PredefinedScalingMetricSpecificationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.PredefinedScalingMetricSpecification"
+        }
+        /**
+         * Returns the TagFilter property type name (`"AWS::AutoScalingPlans::ScalingPlan.TagFilter"`)
+         */
+        static get TagFilterTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.TagFilter"
+        }
+        /**
+         * Returns the PredefinedLoadMetricSpecification property type name (`"AWS::AutoScalingPlans::ScalingPlan.PredefinedLoadMetricSpecification"`)
+         */
+        static get PredefinedLoadMetricSpecificationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.PredefinedLoadMetricSpecification"
+        }
+        /**
+         * Returns the CustomizedLoadMetricSpecification property type name (`"AWS::AutoScalingPlans::ScalingPlan.CustomizedLoadMetricSpecification"`)
+         */
+        static get CustomizedLoadMetricSpecificationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.CustomizedLoadMetricSpecification"
         }
       }
     }
@@ -29256,6 +32034,12 @@ export namespace Cf {
         Weight?: number
       }
       export class RecordSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Route53::RecordSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Route53::RecordSet"
+        }
         Type: string
         Properties: RecordSetProperties
         /**
@@ -29264,7 +32048,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html
          */
         constructor(properties: RecordSetProperties) {
-            this.Type = "AWS::Route53::RecordSet";
+            this.Type = RecordSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -29312,6 +32096,18 @@ export namespace Cf {
          */
         static AliasTarget(properties: RecordSetAliasTarget) : RecordSetAliasTarget {
           return properties;
+        }
+        /**
+         * Returns the GeoLocation property type name (`"AWS::Route53::RecordSet.GeoLocation"`)
+         */
+        static get GeoLocationTypeName(): string {
+          return "AWS::Route53::RecordSet.GeoLocation"
+        }
+        /**
+         * Returns the AliasTarget property type name (`"AWS::Route53::RecordSet.AliasTarget"`)
+         */
+        static get AliasTargetTypeName(): string {
+          return "AWS::Route53::RecordSet.AliasTarget"
         }
       }
       export interface HostedZoneProperties {
@@ -29362,6 +32158,12 @@ export namespace Cf {
         VPCs?: HostedZoneVPC[]
       }
       export class HostedZone implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Route53::HostedZone"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Route53::HostedZone"
+        }
         Type: string
         Properties: HostedZoneProperties
         /**
@@ -29370,7 +32172,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html
          */
         constructor(properties: HostedZoneProperties) {
-            this.Type = "AWS::Route53::HostedZone";
+            this.Type = HostedZone.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -29435,6 +32237,30 @@ export namespace Cf {
         static VPC(properties: HostedZoneVPC) : HostedZoneVPC {
           return properties;
         }
+        /**
+         * Returns the HostedZoneTag property type name (`"AWS::Route53::HostedZone.HostedZoneTag"`)
+         */
+        static get HostedZoneTagTypeName(): string {
+          return "AWS::Route53::HostedZone.HostedZoneTag"
+        }
+        /**
+         * Returns the HostedZoneConfig property type name (`"AWS::Route53::HostedZone.HostedZoneConfig"`)
+         */
+        static get HostedZoneConfigTypeName(): string {
+          return "AWS::Route53::HostedZone.HostedZoneConfig"
+        }
+        /**
+         * Returns the QueryLoggingConfig property type name (`"AWS::Route53::HostedZone.QueryLoggingConfig"`)
+         */
+        static get QueryLoggingConfigTypeName(): string {
+          return "AWS::Route53::HostedZone.QueryLoggingConfig"
+        }
+        /**
+         * Returns the VPC property type name (`"AWS::Route53::HostedZone.VPC"`)
+         */
+        static get VPCTypeName(): string {
+          return "AWS::Route53::HostedZone.VPC"
+        }
       }
       export interface RecordSetGroupProperties {
         /**
@@ -29475,6 +32301,12 @@ export namespace Cf {
         RecordSets?: RecordSetGroupRecordSet[]
       }
       export class RecordSetGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Route53::RecordSetGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Route53::RecordSetGroup"
+        }
         Type: string
         Properties: RecordSetGroupProperties
         /**
@@ -29483,7 +32315,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html
          */
         constructor(properties: RecordSetGroupProperties) {
-            this.Type = "AWS::Route53::RecordSetGroup";
+            this.Type = RecordSetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -29540,6 +32372,24 @@ export namespace Cf {
         static AliasTarget(properties: RecordSetGroupAliasTarget) : RecordSetGroupAliasTarget {
           return properties;
         }
+        /**
+         * Returns the RecordSet property type name (`"AWS::Route53::RecordSetGroup.RecordSet"`)
+         */
+        static get RecordSetTypeName(): string {
+          return "AWS::Route53::RecordSetGroup.RecordSet"
+        }
+        /**
+         * Returns the GeoLocation property type name (`"AWS::Route53::RecordSetGroup.GeoLocation"`)
+         */
+        static get GeoLocationTypeName(): string {
+          return "AWS::Route53::RecordSetGroup.GeoLocation"
+        }
+        /**
+         * Returns the AliasTarget property type name (`"AWS::Route53::RecordSetGroup.AliasTarget"`)
+         */
+        static get AliasTargetTypeName(): string {
+          return "AWS::Route53::RecordSetGroup.AliasTarget"
+        }
       }
       export interface HealthCheckProperties {
         /**
@@ -29562,6 +32412,12 @@ export namespace Cf {
         HealthCheckTags?: HealthCheckHealthCheckTag[]
       }
       export class HealthCheck implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Route53::HealthCheck"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Route53::HealthCheck"
+        }
         Type: string
         Properties: HealthCheckProperties
         /**
@@ -29570,7 +32426,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html
          */
         constructor(properties: HealthCheckProperties) {
-            this.Type = "AWS::Route53::HealthCheck";
+            this.Type = HealthCheck.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -29626,6 +32482,24 @@ export namespace Cf {
          */
         static AlarmIdentifier(properties: HealthCheckAlarmIdentifier) : HealthCheckAlarmIdentifier {
           return properties;
+        }
+        /**
+         * Returns the HealthCheckConfig property type name (`"AWS::Route53::HealthCheck.HealthCheckConfig"`)
+         */
+        static get HealthCheckConfigTypeName(): string {
+          return "AWS::Route53::HealthCheck.HealthCheckConfig"
+        }
+        /**
+         * Returns the HealthCheckTag property type name (`"AWS::Route53::HealthCheck.HealthCheckTag"`)
+         */
+        static get HealthCheckTagTypeName(): string {
+          return "AWS::Route53::HealthCheck.HealthCheckTag"
+        }
+        /**
+         * Returns the AlarmIdentifier property type name (`"AWS::Route53::HealthCheck.AlarmIdentifier"`)
+         */
+        static get AlarmIdentifierTypeName(): string {
+          return "AWS::Route53::HealthCheck.AlarmIdentifier"
         }
       }
     }
@@ -29785,6 +32659,12 @@ export namespace Cf {
         DashboardBody: string
       }
       export class Dashboard implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudWatch::Dashboard"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudWatch::Dashboard"
+        }
         Type: string
         Properties: DashboardProperties
         /**
@@ -29793,7 +32673,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html
          */
         constructor(properties: DashboardProperties) {
-            this.Type = "AWS::CloudWatch::Dashboard";
+            this.Type = Dashboard.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -30010,6 +32890,12 @@ export namespace Cf {
         Unit?: string
       }
       export class Alarm implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudWatch::Alarm"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudWatch::Alarm"
+        }
         Type: string
         Properties: AlarmProperties
         /**
@@ -30018,7 +32904,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html
          */
         constructor(properties: AlarmProperties) {
-            this.Type = "AWS::CloudWatch::Alarm";
+            this.Type = Alarm.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -30082,6 +32968,30 @@ export namespace Cf {
          */
         static Metric(properties: AlarmMetric) : AlarmMetric {
           return properties;
+        }
+        /**
+         * Returns the MetricStat property type name (`"AWS::CloudWatch::Alarm.MetricStat"`)
+         */
+        static get MetricStatTypeName(): string {
+          return "AWS::CloudWatch::Alarm.MetricStat"
+        }
+        /**
+         * Returns the Dimension property type name (`"AWS::CloudWatch::Alarm.Dimension"`)
+         */
+        static get DimensionTypeName(): string {
+          return "AWS::CloudWatch::Alarm.Dimension"
+        }
+        /**
+         * Returns the MetricDataQuery property type name (`"AWS::CloudWatch::Alarm.MetricDataQuery"`)
+         */
+        static get MetricDataQueryTypeName(): string {
+          return "AWS::CloudWatch::Alarm.MetricDataQuery"
+        }
+        /**
+         * Returns the Metric property type name (`"AWS::CloudWatch::Alarm.Metric"`)
+         */
+        static get MetricTypeName(): string {
+          return "AWS::CloudWatch::Alarm.Metric"
         }
       }
     }
@@ -30994,6 +33904,12 @@ export namespace Cf {
         ClusterName?: string
       }
       export class Cluster implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ECS::Cluster"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ECS::Cluster"
+        }
         Type: string
         Properties: ClusterProperties
         /**
@@ -31002,7 +33918,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html
          */
         constructor(properties: ClusterProperties) {
-            this.Type = "AWS::ECS::Cluster";
+            this.Type = Cluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -31174,6 +34090,12 @@ export namespace Cf {
         TaskDefinition: string
       }
       export class Service implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ECS::Service"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ECS::Service"
+        }
         Type: string
         Properties: ServiceProperties
         /**
@@ -31182,7 +34104,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html
          */
         constructor(properties: ServiceProperties) {
-            this.Type = "AWS::ECS::Service";
+            this.Type = Service.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -31270,6 +34192,48 @@ export namespace Cf {
          */
         static NetworkConfiguration(properties: ServiceNetworkConfiguration) : ServiceNetworkConfiguration {
           return properties;
+        }
+        /**
+         * Returns the LoadBalancer property type name (`"AWS::ECS::Service.LoadBalancer"`)
+         */
+        static get LoadBalancerTypeName(): string {
+          return "AWS::ECS::Service.LoadBalancer"
+        }
+        /**
+         * Returns the PlacementStrategy property type name (`"AWS::ECS::Service.PlacementStrategy"`)
+         */
+        static get PlacementStrategyTypeName(): string {
+          return "AWS::ECS::Service.PlacementStrategy"
+        }
+        /**
+         * Returns the ServiceRegistry property type name (`"AWS::ECS::Service.ServiceRegistry"`)
+         */
+        static get ServiceRegistryTypeName(): string {
+          return "AWS::ECS::Service.ServiceRegistry"
+        }
+        /**
+         * Returns the DeploymentConfiguration property type name (`"AWS::ECS::Service.DeploymentConfiguration"`)
+         */
+        static get DeploymentConfigurationTypeName(): string {
+          return "AWS::ECS::Service.DeploymentConfiguration"
+        }
+        /**
+         * Returns the PlacementConstraint property type name (`"AWS::ECS::Service.PlacementConstraint"`)
+         */
+        static get PlacementConstraintTypeName(): string {
+          return "AWS::ECS::Service.PlacementConstraint"
+        }
+        /**
+         * Returns the AwsVpcConfiguration property type name (`"AWS::ECS::Service.AwsVpcConfiguration"`)
+         */
+        static get AwsVpcConfigurationTypeName(): string {
+          return "AWS::ECS::Service.AwsVpcConfiguration"
+        }
+        /**
+         * Returns the NetworkConfiguration property type name (`"AWS::ECS::Service.NetworkConfiguration"`)
+         */
+        static get NetworkConfigurationTypeName(): string {
+          return "AWS::ECS::Service.NetworkConfiguration"
         }
       }
       export interface TaskDefinitionProperties {
@@ -31365,6 +34329,12 @@ export namespace Cf {
         Volumes?: TaskDefinitionVolume[]
       }
       export class TaskDefinition implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ECS::TaskDefinition"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ECS::TaskDefinition"
+        }
         Type: string
         Properties: TaskDefinitionProperties
         /**
@@ -31373,7 +34343,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html
          */
         constructor(properties: TaskDefinitionProperties) {
-            this.Type = "AWS::ECS::TaskDefinition";
+            this.Type = TaskDefinition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -31549,6 +34519,114 @@ export namespace Cf {
          */
         static RepositoryCredentials(properties: TaskDefinitionRepositoryCredentials) : TaskDefinitionRepositoryCredentials {
           return properties;
+        }
+        /**
+         * Returns the DockerVolumeConfiguration property type name (`"AWS::ECS::TaskDefinition.DockerVolumeConfiguration"`)
+         */
+        static get DockerVolumeConfigurationTypeName(): string {
+          return "AWS::ECS::TaskDefinition.DockerVolumeConfiguration"
+        }
+        /**
+         * Returns the ContainerDefinition property type name (`"AWS::ECS::TaskDefinition.ContainerDefinition"`)
+         */
+        static get ContainerDefinitionTypeName(): string {
+          return "AWS::ECS::TaskDefinition.ContainerDefinition"
+        }
+        /**
+         * Returns the LogConfiguration property type name (`"AWS::ECS::TaskDefinition.LogConfiguration"`)
+         */
+        static get LogConfigurationTypeName(): string {
+          return "AWS::ECS::TaskDefinition.LogConfiguration"
+        }
+        /**
+         * Returns the Device property type name (`"AWS::ECS::TaskDefinition.Device"`)
+         */
+        static get DeviceTypeName(): string {
+          return "AWS::ECS::TaskDefinition.Device"
+        }
+        /**
+         * Returns the KeyValuePair property type name (`"AWS::ECS::TaskDefinition.KeyValuePair"`)
+         */
+        static get KeyValuePairTypeName(): string {
+          return "AWS::ECS::TaskDefinition.KeyValuePair"
+        }
+        /**
+         * Returns the MountPoint property type name (`"AWS::ECS::TaskDefinition.MountPoint"`)
+         */
+        static get MountPointTypeName(): string {
+          return "AWS::ECS::TaskDefinition.MountPoint"
+        }
+        /**
+         * Returns the VolumeFrom property type name (`"AWS::ECS::TaskDefinition.VolumeFrom"`)
+         */
+        static get VolumeFromTypeName(): string {
+          return "AWS::ECS::TaskDefinition.VolumeFrom"
+        }
+        /**
+         * Returns the HostEntry property type name (`"AWS::ECS::TaskDefinition.HostEntry"`)
+         */
+        static get HostEntryTypeName(): string {
+          return "AWS::ECS::TaskDefinition.HostEntry"
+        }
+        /**
+         * Returns the KernelCapabilities property type name (`"AWS::ECS::TaskDefinition.KernelCapabilities"`)
+         */
+        static get KernelCapabilitiesTypeName(): string {
+          return "AWS::ECS::TaskDefinition.KernelCapabilities"
+        }
+        /**
+         * Returns the TaskDefinitionPlacementConstraint property type name (`"AWS::ECS::TaskDefinition.TaskDefinitionPlacementConstraint"`)
+         */
+        static get TaskDefinitionPlacementConstraintTypeName(): string {
+          return "AWS::ECS::TaskDefinition.TaskDefinitionPlacementConstraint"
+        }
+        /**
+         * Returns the Volume property type name (`"AWS::ECS::TaskDefinition.Volume"`)
+         */
+        static get VolumeTypeName(): string {
+          return "AWS::ECS::TaskDefinition.Volume"
+        }
+        /**
+         * Returns the HealthCheck property type name (`"AWS::ECS::TaskDefinition.HealthCheck"`)
+         */
+        static get HealthCheckTypeName(): string {
+          return "AWS::ECS::TaskDefinition.HealthCheck"
+        }
+        /**
+         * Returns the PortMapping property type name (`"AWS::ECS::TaskDefinition.PortMapping"`)
+         */
+        static get PortMappingTypeName(): string {
+          return "AWS::ECS::TaskDefinition.PortMapping"
+        }
+        /**
+         * Returns the Ulimit property type name (`"AWS::ECS::TaskDefinition.Ulimit"`)
+         */
+        static get UlimitTypeName(): string {
+          return "AWS::ECS::TaskDefinition.Ulimit"
+        }
+        /**
+         * Returns the LinuxParameters property type name (`"AWS::ECS::TaskDefinition.LinuxParameters"`)
+         */
+        static get LinuxParametersTypeName(): string {
+          return "AWS::ECS::TaskDefinition.LinuxParameters"
+        }
+        /**
+         * Returns the HostVolumeProperties property type name (`"AWS::ECS::TaskDefinition.HostVolumeProperties"`)
+         */
+        static get HostVolumePropertiesTypeName(): string {
+          return "AWS::ECS::TaskDefinition.HostVolumeProperties"
+        }
+        /**
+         * Returns the Tmpfs property type name (`"AWS::ECS::TaskDefinition.Tmpfs"`)
+         */
+        static get TmpfsTypeName(): string {
+          return "AWS::ECS::TaskDefinition.Tmpfs"
+        }
+        /**
+         * Returns the RepositoryCredentials property type name (`"AWS::ECS::TaskDefinition.RepositoryCredentials"`)
+         */
+        static get RepositoryCredentialsTypeName(): string {
+          return "AWS::ECS::TaskDefinition.RepositoryCredentials"
         }
       }
     }
@@ -32366,6 +35444,12 @@ export namespace Cf {
         ListenerArn: string
       }
       export class ListenerCertificate implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::ListenerCertificate"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerCertificate"
+        }
         Type: string
         Properties: ListenerCertificateProperties
         /**
@@ -32374,7 +35458,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html
          */
         constructor(properties: ListenerCertificateProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::ListenerCertificate";
+            this.Type = ListenerCertificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32414,6 +35498,12 @@ export namespace Cf {
          */
         static Certificate(properties: ListenerCertificateCertificate) : ListenerCertificateCertificate {
           return properties;
+        }
+        /**
+         * Returns the Certificate property type name (`"AWS::ElasticLoadBalancingV2::ListenerCertificate.Certificate"`)
+         */
+        static get CertificateTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerCertificate.Certificate"
         }
       }
       export interface LoadBalancerProperties {
@@ -32500,6 +35590,12 @@ export namespace Cf {
         Type?: string
       }
       export class LoadBalancer implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::LoadBalancer"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::LoadBalancer"
+        }
         Type: string
         Properties: LoadBalancerProperties
         /**
@@ -32508,7 +35604,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html
          */
         constructor(properties: LoadBalancerProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::LoadBalancer";
+            this.Type = LoadBalancer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32556,6 +35652,18 @@ export namespace Cf {
          */
         static SubnetMapping(properties: LoadBalancerSubnetMapping) : LoadBalancerSubnetMapping {
           return properties;
+        }
+        /**
+         * Returns the LoadBalancerAttribute property type name (`"AWS::ElasticLoadBalancingV2::LoadBalancer.LoadBalancerAttribute"`)
+         */
+        static get LoadBalancerAttributeTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::LoadBalancer.LoadBalancerAttribute"
+        }
+        /**
+         * Returns the SubnetMapping property type name (`"AWS::ElasticLoadBalancingV2::LoadBalancer.SubnetMapping"`)
+         */
+        static get SubnetMappingTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::LoadBalancer.SubnetMapping"
         }
       }
       export interface ListenerProperties {
@@ -32615,6 +35723,12 @@ export namespace Cf {
         SslPolicy?: string
       }
       export class Listener implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::Listener"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener"
+        }
         Type: string
         Properties: ListenerProperties
         /**
@@ -32623,7 +35737,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html
          */
         constructor(properties: ListenerProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::Listener";
+            this.Type = Listener.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32704,6 +35818,42 @@ export namespace Cf {
         static Certificate(properties: ListenerCertificate) : ListenerCertificate {
           return properties;
         }
+        /**
+         * Returns the AuthenticateOidcConfig property type name (`"AWS::ElasticLoadBalancingV2::Listener.AuthenticateOidcConfig"`)
+         */
+        static get AuthenticateOidcConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.AuthenticateOidcConfig"
+        }
+        /**
+         * Returns the AuthenticateCognitoConfig property type name (`"AWS::ElasticLoadBalancingV2::Listener.AuthenticateCognitoConfig"`)
+         */
+        static get AuthenticateCognitoConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.AuthenticateCognitoConfig"
+        }
+        /**
+         * Returns the RedirectConfig property type name (`"AWS::ElasticLoadBalancingV2::Listener.RedirectConfig"`)
+         */
+        static get RedirectConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.RedirectConfig"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::ElasticLoadBalancingV2::Listener.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.Action"
+        }
+        /**
+         * Returns the FixedResponseConfig property type name (`"AWS::ElasticLoadBalancingV2::Listener.FixedResponseConfig"`)
+         */
+        static get FixedResponseConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.FixedResponseConfig"
+        }
+        /**
+         * Returns the Certificate property type name (`"AWS::ElasticLoadBalancingV2::Listener.Certificate"`)
+         */
+        static get CertificateTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.Certificate"
+        }
       }
       export interface ListenerRuleProperties {
         /**
@@ -32744,6 +35894,12 @@ export namespace Cf {
         Priority: number
       }
       export class ListenerRule implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::ListenerRule"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule"
+        }
         Type: string
         Properties: ListenerRuleProperties
         /**
@@ -32752,7 +35908,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html
          */
         constructor(properties: ListenerRuleProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::ListenerRule";
+            this.Type = ListenerRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -32832,6 +35988,42 @@ export namespace Cf {
          */
         static RedirectConfig(properties: ListenerRuleRedirectConfig) : ListenerRuleRedirectConfig {
           return properties;
+        }
+        /**
+         * Returns the AuthenticateOidcConfig property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.AuthenticateOidcConfig"`)
+         */
+        static get AuthenticateOidcConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.AuthenticateOidcConfig"
+        }
+        /**
+         * Returns the AuthenticateCognitoConfig property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.AuthenticateCognitoConfig"`)
+         */
+        static get AuthenticateCognitoConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.AuthenticateCognitoConfig"
+        }
+        /**
+         * Returns the FixedResponseConfig property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.FixedResponseConfig"`)
+         */
+        static get FixedResponseConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.FixedResponseConfig"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.Action"
+        }
+        /**
+         * Returns the RuleCondition property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.RuleCondition"`)
+         */
+        static get RuleConditionTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.RuleCondition"
+        }
+        /**
+         * Returns the RedirectConfig property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.RedirectConfig"`)
+         */
+        static get RedirectConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.RedirectConfig"
         }
       }
       export interface TargetGroupProperties {
@@ -32990,6 +36182,12 @@ export namespace Cf {
         VpcId?: string
       }
       export class TargetGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::TargetGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::TargetGroup"
+        }
         Type: string
         Properties: TargetGroupProperties
         /**
@@ -32998,7 +36196,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html
          */
         constructor(properties: TargetGroupProperties) {
-            this.Type = "AWS::ElasticLoadBalancingV2::TargetGroup";
+            this.Type = TargetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -33055,6 +36253,24 @@ export namespace Cf {
         static TargetDescription(properties: TargetGroupTargetDescription) : TargetGroupTargetDescription {
           return properties;
         }
+        /**
+         * Returns the TargetGroupAttribute property type name (`"AWS::ElasticLoadBalancingV2::TargetGroup.TargetGroupAttribute"`)
+         */
+        static get TargetGroupAttributeTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::TargetGroup.TargetGroupAttribute"
+        }
+        /**
+         * Returns the Matcher property type name (`"AWS::ElasticLoadBalancingV2::TargetGroup.Matcher"`)
+         */
+        static get MatcherTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::TargetGroup.Matcher"
+        }
+        /**
+         * Returns the TargetDescription property type name (`"AWS::ElasticLoadBalancingV2::TargetGroup.TargetDescription"`)
+         */
+        static get TargetDescriptionTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::TargetGroup.TargetDescription"
+        }
       }
     }
     export namespace Neptune {
@@ -33106,6 +36322,12 @@ export namespace Cf {
         Name?: string
       }
       export class DBParameterGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBParameterGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Neptune::DBParameterGroup"
+        }
         Type: string
         Properties: DBParameterGroupProperties
         /**
@@ -33114,7 +36336,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbparametergroup.html
          */
         constructor(properties: DBParameterGroupProperties) {
-            this.Type = "AWS::Neptune::DBParameterGroup";
+            this.Type = DBParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -33196,6 +36418,12 @@ export namespace Cf {
         Name?: string
       }
       export class DBClusterParameterGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBClusterParameterGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Neptune::DBClusterParameterGroup"
+        }
         Type: string
         Properties: DBClusterParameterGroupProperties
         /**
@@ -33204,7 +36432,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html
          */
         constructor(properties: DBClusterParameterGroupProperties) {
-            this.Type = "AWS::Neptune::DBClusterParameterGroup";
+            this.Type = DBClusterParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -33367,6 +36595,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBCluster implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBCluster"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Neptune::DBCluster"
+        }
         Type: string
         Properties: DBClusterProperties
         /**
@@ -33375,7 +36609,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html
          */
         constructor(properties: DBClusterProperties) {
-            this.Type = "AWS::Neptune::DBCluster";
+            this.Type = DBCluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -33448,6 +36682,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBSubnetGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBSubnetGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Neptune::DBSubnetGroup"
+        }
         Type: string
         Properties: DBSubnetGroupProperties
         /**
@@ -33456,7 +36696,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbsubnetgroup.html
          */
         constructor(properties: DBSubnetGroupProperties) {
-            this.Type = "AWS::Neptune::DBSubnetGroup";
+            this.Type = DBSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -33592,6 +36832,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBInstance implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBInstance"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Neptune::DBInstance"
+        }
         Type: string
         Properties: DBInstanceProperties
         /**
@@ -33600,7 +36846,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html
          */
         constructor(properties: DBInstanceProperties) {
-            this.Type = "AWS::Neptune::DBInstance";
+            this.Type = DBInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -33648,6 +36894,12 @@ export namespace Cf {
         Name: string
       }
       export class Activity implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::StepFunctions::Activity"`)
+         */
+        static get TypeName(): string {
+          return "AWS::StepFunctions::Activity"
+        }
         Type: string
         Properties: ActivityProperties
         /**
@@ -33656,7 +36908,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html
          */
         constructor(properties: ActivityProperties) {
-            this.Type = "AWS::StepFunctions::Activity";
+            this.Type = Activity.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -33720,6 +36972,12 @@ export namespace Cf {
         RoleArn: string
       }
       export class StateMachine implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::StepFunctions::StateMachine"`)
+         */
+        static get TypeName(): string {
+          return "AWS::StepFunctions::StateMachine"
+        }
         Type: string
         Properties: StateMachineProperties
         /**
@@ -33728,7 +36986,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html
          */
         constructor(properties: StateMachineProperties) {
-            this.Type = "AWS::StepFunctions::StateMachine";
+            this.Type = StateMachine.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -34357,6 +37615,12 @@ export namespace Cf {
         Output: ApplicationOutputOutput
       }
       export class ApplicationOutput implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalytics::ApplicationOutput"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput"
+        }
         Type: string
         Properties: ApplicationOutputProperties
         /**
@@ -34365,7 +37629,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html
          */
         constructor(properties: ApplicationOutputProperties) {
-            this.Type = "AWS::KinesisAnalytics::ApplicationOutput";
+            this.Type = ApplicationOutput.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -34438,6 +37702,36 @@ export namespace Cf {
         static DestinationSchema(properties: ApplicationOutputDestinationSchema) : ApplicationOutputDestinationSchema {
           return properties;
         }
+        /**
+         * Returns the KinesisFirehoseOutput property type name (`"AWS::KinesisAnalytics::ApplicationOutput.KinesisFirehoseOutput"`)
+         */
+        static get KinesisFirehoseOutputTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.KinesisFirehoseOutput"
+        }
+        /**
+         * Returns the KinesisStreamsOutput property type name (`"AWS::KinesisAnalytics::ApplicationOutput.KinesisStreamsOutput"`)
+         */
+        static get KinesisStreamsOutputTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.KinesisStreamsOutput"
+        }
+        /**
+         * Returns the Output property type name (`"AWS::KinesisAnalytics::ApplicationOutput.Output"`)
+         */
+        static get OutputTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.Output"
+        }
+        /**
+         * Returns the LambdaOutput property type name (`"AWS::KinesisAnalytics::ApplicationOutput.LambdaOutput"`)
+         */
+        static get LambdaOutputTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.LambdaOutput"
+        }
+        /**
+         * Returns the DestinationSchema property type name (`"AWS::KinesisAnalytics::ApplicationOutput.DestinationSchema"`)
+         */
+        static get DestinationSchemaTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.DestinationSchema"
+        }
       }
       export interface ApplicationReferenceDataSourceProperties {
         /**
@@ -34460,6 +37754,12 @@ export namespace Cf {
         ReferenceDataSource: ApplicationReferenceDataSourceReferenceDataSource
       }
       export class ApplicationReferenceDataSource implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource"
+        }
         Type: string
         Properties: ApplicationReferenceDataSourceProperties
         /**
@@ -34468,7 +37768,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationreferencedatasource.html
          */
         constructor(properties: ApplicationReferenceDataSourceProperties) {
-            this.Type = "AWS::KinesisAnalytics::ApplicationReferenceDataSource";
+            this.Type = ApplicationReferenceDataSource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -34565,6 +37865,54 @@ export namespace Cf {
         static ReferenceDataSource(properties: ApplicationReferenceDataSourceReferenceDataSource) : ApplicationReferenceDataSourceReferenceDataSource {
           return properties;
         }
+        /**
+         * Returns the S3ReferenceDataSource property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.S3ReferenceDataSource"`)
+         */
+        static get S3ReferenceDataSourceTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.S3ReferenceDataSource"
+        }
+        /**
+         * Returns the MappingParameters property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.MappingParameters"`)
+         */
+        static get MappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.MappingParameters"
+        }
+        /**
+         * Returns the JSONMappingParameters property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.JSONMappingParameters"`)
+         */
+        static get JSONMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.JSONMappingParameters"
+        }
+        /**
+         * Returns the RecordFormat property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.RecordFormat"`)
+         */
+        static get RecordFormatTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.RecordFormat"
+        }
+        /**
+         * Returns the RecordColumn property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.RecordColumn"`)
+         */
+        static get RecordColumnTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.RecordColumn"
+        }
+        /**
+         * Returns the CSVMappingParameters property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.CSVMappingParameters"`)
+         */
+        static get CSVMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.CSVMappingParameters"
+        }
+        /**
+         * Returns the ReferenceSchema property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.ReferenceSchema"`)
+         */
+        static get ReferenceSchemaTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.ReferenceSchema"
+        }
+        /**
+         * Returns the ReferenceDataSource property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.ReferenceDataSource"`)
+         */
+        static get ReferenceDataSourceTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.ReferenceDataSource"
+        }
       }
       export interface ApplicationProperties {
         /**
@@ -34605,6 +37953,12 @@ export namespace Cf {
         ApplicationCode?: string
       }
       export class Application implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalytics::Application"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KinesisAnalytics::Application"
+        }
         Type: string
         Properties: ApplicationProperties
         /**
@@ -34613,7 +37967,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html
          */
         constructor(properties: ApplicationProperties) {
-            this.Type = "AWS::KinesisAnalytics::Application";
+            this.Type = Application.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -34741,6 +38095,78 @@ export namespace Cf {
          */
         static InputLambdaProcessor(properties: ApplicationInputLambdaProcessor) : ApplicationInputLambdaProcessor {
           return properties;
+        }
+        /**
+         * Returns the MappingParameters property type name (`"AWS::KinesisAnalytics::Application.MappingParameters"`)
+         */
+        static get MappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.MappingParameters"
+        }
+        /**
+         * Returns the CSVMappingParameters property type name (`"AWS::KinesisAnalytics::Application.CSVMappingParameters"`)
+         */
+        static get CSVMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.CSVMappingParameters"
+        }
+        /**
+         * Returns the KinesisStreamsInput property type name (`"AWS::KinesisAnalytics::Application.KinesisStreamsInput"`)
+         */
+        static get KinesisStreamsInputTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.KinesisStreamsInput"
+        }
+        /**
+         * Returns the Input property type name (`"AWS::KinesisAnalytics::Application.Input"`)
+         */
+        static get InputTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.Input"
+        }
+        /**
+         * Returns the InputSchema property type name (`"AWS::KinesisAnalytics::Application.InputSchema"`)
+         */
+        static get InputSchemaTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.InputSchema"
+        }
+        /**
+         * Returns the RecordColumn property type name (`"AWS::KinesisAnalytics::Application.RecordColumn"`)
+         */
+        static get RecordColumnTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.RecordColumn"
+        }
+        /**
+         * Returns the RecordFormat property type name (`"AWS::KinesisAnalytics::Application.RecordFormat"`)
+         */
+        static get RecordFormatTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.RecordFormat"
+        }
+        /**
+         * Returns the KinesisFirehoseInput property type name (`"AWS::KinesisAnalytics::Application.KinesisFirehoseInput"`)
+         */
+        static get KinesisFirehoseInputTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.KinesisFirehoseInput"
+        }
+        /**
+         * Returns the InputParallelism property type name (`"AWS::KinesisAnalytics::Application.InputParallelism"`)
+         */
+        static get InputParallelismTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.InputParallelism"
+        }
+        /**
+         * Returns the InputProcessingConfiguration property type name (`"AWS::KinesisAnalytics::Application.InputProcessingConfiguration"`)
+         */
+        static get InputProcessingConfigurationTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.InputProcessingConfiguration"
+        }
+        /**
+         * Returns the JSONMappingParameters property type name (`"AWS::KinesisAnalytics::Application.JSONMappingParameters"`)
+         */
+        static get JSONMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.JSONMappingParameters"
+        }
+        /**
+         * Returns the InputLambdaProcessor property type name (`"AWS::KinesisAnalytics::Application.InputLambdaProcessor"`)
+         */
+        static get InputLambdaProcessorTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.InputLambdaProcessor"
         }
       }
     }
@@ -35450,6 +38876,12 @@ export namespace Cf {
         StackId: string
       }
       export class Volume implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::Volume"`)
+         */
+        static get TypeName(): string {
+          return "AWS::OpsWorks::Volume"
+        }
         Type: string
         Properties: VolumeProperties
         /**
@@ -35458,7 +38890,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html
          */
         constructor(properties: VolumeProperties) {
-            this.Type = "AWS::OpsWorks::Volume";
+            this.Type = Volume.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -35603,6 +39035,12 @@ export namespace Cf {
         Type: string
       }
       export class App implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::App"`)
+         */
+        static get TypeName(): string {
+          return "AWS::OpsWorks::App"
+        }
         Type: string
         Properties: AppProperties
         /**
@@ -35611,7 +39049,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html
          */
         constructor(properties: AppProperties) {
-            this.Type = "AWS::OpsWorks::App";
+            this.Type = App.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -35675,6 +39113,30 @@ export namespace Cf {
          */
         static Source(properties: AppSource) : AppSource {
           return properties;
+        }
+        /**
+         * Returns the DataSource property type name (`"AWS::OpsWorks::App.DataSource"`)
+         */
+        static get DataSourceTypeName(): string {
+          return "AWS::OpsWorks::App.DataSource"
+        }
+        /**
+         * Returns the EnvironmentVariable property type name (`"AWS::OpsWorks::App.EnvironmentVariable"`)
+         */
+        static get EnvironmentVariableTypeName(): string {
+          return "AWS::OpsWorks::App.EnvironmentVariable"
+        }
+        /**
+         * Returns the SslConfiguration property type name (`"AWS::OpsWorks::App.SslConfiguration"`)
+         */
+        static get SslConfigurationTypeName(): string {
+          return "AWS::OpsWorks::App.SslConfiguration"
+        }
+        /**
+         * Returns the Source property type name (`"AWS::OpsWorks::App.Source"`)
+         */
+        static get SourceTypeName(): string {
+          return "AWS::OpsWorks::App.Source"
         }
       }
       export interface LayerProperties {
@@ -35851,6 +39313,12 @@ export namespace Cf {
         VolumeConfigurations?: LayerVolumeConfiguration[]
       }
       export class Layer implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::Layer"`)
+         */
+        static get TypeName(): string {
+          return "AWS::OpsWorks::Layer"
+        }
         Type: string
         Properties: LayerProperties
         /**
@@ -35859,7 +39327,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html
          */
         constructor(properties: LayerProperties) {
-            this.Type = "AWS::OpsWorks::Layer";
+            this.Type = Layer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -35939,6 +39407,42 @@ export namespace Cf {
          */
         static LoadBasedAutoScaling(properties: LayerLoadBasedAutoScaling) : LayerLoadBasedAutoScaling {
           return properties;
+        }
+        /**
+         * Returns the ShutdownEventConfiguration property type name (`"AWS::OpsWorks::Layer.ShutdownEventConfiguration"`)
+         */
+        static get ShutdownEventConfigurationTypeName(): string {
+          return "AWS::OpsWorks::Layer.ShutdownEventConfiguration"
+        }
+        /**
+         * Returns the VolumeConfiguration property type name (`"AWS::OpsWorks::Layer.VolumeConfiguration"`)
+         */
+        static get VolumeConfigurationTypeName(): string {
+          return "AWS::OpsWorks::Layer.VolumeConfiguration"
+        }
+        /**
+         * Returns the AutoScalingThresholds property type name (`"AWS::OpsWorks::Layer.AutoScalingThresholds"`)
+         */
+        static get AutoScalingThresholdsTypeName(): string {
+          return "AWS::OpsWorks::Layer.AutoScalingThresholds"
+        }
+        /**
+         * Returns the Recipes property type name (`"AWS::OpsWorks::Layer.Recipes"`)
+         */
+        static get RecipesTypeName(): string {
+          return "AWS::OpsWorks::Layer.Recipes"
+        }
+        /**
+         * Returns the LifecycleEventConfiguration property type name (`"AWS::OpsWorks::Layer.LifecycleEventConfiguration"`)
+         */
+        static get LifecycleEventConfigurationTypeName(): string {
+          return "AWS::OpsWorks::Layer.LifecycleEventConfiguration"
+        }
+        /**
+         * Returns the LoadBasedAutoScaling property type name (`"AWS::OpsWorks::Layer.LoadBasedAutoScaling"`)
+         */
+        static get LoadBasedAutoScalingTypeName(): string {
+          return "AWS::OpsWorks::Layer.LoadBasedAutoScaling"
         }
       }
       export interface StackProperties {
@@ -36169,6 +39673,12 @@ export namespace Cf {
         VpcId?: string
       }
       export class Stack implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::Stack"`)
+         */
+        static get TypeName(): string {
+          return "AWS::OpsWorks::Stack"
+        }
         Type: string
         Properties: StackProperties
         /**
@@ -36177,7 +39687,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html
          */
         constructor(properties: StackProperties) {
-            this.Type = "AWS::OpsWorks::Stack";
+            this.Type = Stack.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36250,6 +39760,36 @@ export namespace Cf {
         static ElasticIp(properties: StackElasticIp) : StackElasticIp {
           return properties;
         }
+        /**
+         * Returns the Source property type name (`"AWS::OpsWorks::Stack.Source"`)
+         */
+        static get SourceTypeName(): string {
+          return "AWS::OpsWorks::Stack.Source"
+        }
+        /**
+         * Returns the ChefConfiguration property type name (`"AWS::OpsWorks::Stack.ChefConfiguration"`)
+         */
+        static get ChefConfigurationTypeName(): string {
+          return "AWS::OpsWorks::Stack.ChefConfiguration"
+        }
+        /**
+         * Returns the StackConfigurationManager property type name (`"AWS::OpsWorks::Stack.StackConfigurationManager"`)
+         */
+        static get StackConfigurationManagerTypeName(): string {
+          return "AWS::OpsWorks::Stack.StackConfigurationManager"
+        }
+        /**
+         * Returns the RdsDbInstance property type name (`"AWS::OpsWorks::Stack.RdsDbInstance"`)
+         */
+        static get RdsDbInstanceTypeName(): string {
+          return "AWS::OpsWorks::Stack.RdsDbInstance"
+        }
+        /**
+         * Returns the ElasticIp property type name (`"AWS::OpsWorks::Stack.ElasticIp"`)
+         */
+        static get ElasticIpTypeName(): string {
+          return "AWS::OpsWorks::Stack.ElasticIp"
+        }
       }
       export interface ElasticLoadBalancerAttachmentProperties {
         /**
@@ -36272,6 +39812,12 @@ export namespace Cf {
         LayerId: string
       }
       export class ElasticLoadBalancerAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::ElasticLoadBalancerAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::OpsWorks::ElasticLoadBalancerAttachment"
+        }
         Type: string
         Properties: ElasticLoadBalancerAttachmentProperties
         /**
@@ -36280,7 +39826,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html
          */
         constructor(properties: ElasticLoadBalancerAttachmentProperties) {
-            this.Type = "AWS::OpsWorks::ElasticLoadBalancerAttachment";
+            this.Type = ElasticLoadBalancerAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36506,6 +40052,12 @@ export namespace Cf {
         Volumes?: string[]
       }
       export class Instance implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::Instance"`)
+         */
+        static get TypeName(): string {
+          return "AWS::OpsWorks::Instance"
+        }
         Type: string
         Properties: InstanceProperties
         /**
@@ -36514,7 +40066,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html
          */
         constructor(properties: InstanceProperties) {
-            this.Type = "AWS::OpsWorks::Instance";
+            this.Type = Instance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -36571,6 +40123,24 @@ export namespace Cf {
         static TimeBasedAutoScaling(properties: InstanceTimeBasedAutoScaling) : InstanceTimeBasedAutoScaling {
           return properties;
         }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::OpsWorks::Instance.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::OpsWorks::Instance.BlockDeviceMapping"
+        }
+        /**
+         * Returns the EbsBlockDevice property type name (`"AWS::OpsWorks::Instance.EbsBlockDevice"`)
+         */
+        static get EbsBlockDeviceTypeName(): string {
+          return "AWS::OpsWorks::Instance.EbsBlockDevice"
+        }
+        /**
+         * Returns the TimeBasedAutoScaling property type name (`"AWS::OpsWorks::Instance.TimeBasedAutoScaling"`)
+         */
+        static get TimeBasedAutoScalingTypeName(): string {
+          return "AWS::OpsWorks::Instance.TimeBasedAutoScaling"
+        }
       }
       export interface UserProfileProperties {
         /**
@@ -36611,6 +40181,12 @@ export namespace Cf {
         SshUsername?: string
       }
       export class UserProfile implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::UserProfile"`)
+         */
+        static get TypeName(): string {
+          return "AWS::OpsWorks::UserProfile"
+        }
         Type: string
         Properties: UserProfileProperties
         /**
@@ -36619,7 +40195,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html
          */
         constructor(properties: UserProfileProperties) {
-            this.Type = "AWS::OpsWorks::UserProfile";
+            this.Type = UserProfile.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -37571,6 +41147,12 @@ export namespace Cf {
         Tags: TagProperties[]
       }
       export class StreamingDistribution implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudFront::StreamingDistribution"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudFront::StreamingDistribution"
+        }
         Type: string
         Properties: StreamingDistributionProperties
         /**
@@ -37579,7 +41161,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html
          */
         constructor(properties: StreamingDistributionProperties) {
-            this.Type = "AWS::CloudFront::StreamingDistribution";
+            this.Type = StreamingDistribution.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -37644,6 +41226,30 @@ export namespace Cf {
         static StreamingDistributionConfig(properties: StreamingDistributionStreamingDistributionConfig) : StreamingDistributionStreamingDistributionConfig {
           return properties;
         }
+        /**
+         * Returns the TrustedSigners property type name (`"AWS::CloudFront::StreamingDistribution.TrustedSigners"`)
+         */
+        static get TrustedSignersTypeName(): string {
+          return "AWS::CloudFront::StreamingDistribution.TrustedSigners"
+        }
+        /**
+         * Returns the S3Origin property type name (`"AWS::CloudFront::StreamingDistribution.S3Origin"`)
+         */
+        static get S3OriginTypeName(): string {
+          return "AWS::CloudFront::StreamingDistribution.S3Origin"
+        }
+        /**
+         * Returns the Logging property type name (`"AWS::CloudFront::StreamingDistribution.Logging"`)
+         */
+        static get LoggingTypeName(): string {
+          return "AWS::CloudFront::StreamingDistribution.Logging"
+        }
+        /**
+         * Returns the StreamingDistributionConfig property type name (`"AWS::CloudFront::StreamingDistribution.StreamingDistributionConfig"`)
+         */
+        static get StreamingDistributionConfigTypeName(): string {
+          return "AWS::CloudFront::StreamingDistribution.StreamingDistributionConfig"
+        }
       }
       export interface DistributionProperties {
         /**
@@ -37666,6 +41272,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Distribution implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudFront::Distribution"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudFront::Distribution"
+        }
         Type: string
         Properties: DistributionProperties
         /**
@@ -37674,7 +41286,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html
          */
         constructor(properties: DistributionProperties) {
-            this.Type = "AWS::CloudFront::Distribution";
+            this.Type = Distribution.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -37827,6 +41439,96 @@ export namespace Cf {
         static OriginCustomHeader(properties: DistributionOriginCustomHeader) : DistributionOriginCustomHeader {
           return properties;
         }
+        /**
+         * Returns the Cookies property type name (`"AWS::CloudFront::Distribution.Cookies"`)
+         */
+        static get CookiesTypeName(): string {
+          return "AWS::CloudFront::Distribution.Cookies"
+        }
+        /**
+         * Returns the LambdaFunctionAssociation property type name (`"AWS::CloudFront::Distribution.LambdaFunctionAssociation"`)
+         */
+        static get LambdaFunctionAssociationTypeName(): string {
+          return "AWS::CloudFront::Distribution.LambdaFunctionAssociation"
+        }
+        /**
+         * Returns the CustomOriginConfig property type name (`"AWS::CloudFront::Distribution.CustomOriginConfig"`)
+         */
+        static get CustomOriginConfigTypeName(): string {
+          return "AWS::CloudFront::Distribution.CustomOriginConfig"
+        }
+        /**
+         * Returns the ForwardedValues property type name (`"AWS::CloudFront::Distribution.ForwardedValues"`)
+         */
+        static get ForwardedValuesTypeName(): string {
+          return "AWS::CloudFront::Distribution.ForwardedValues"
+        }
+        /**
+         * Returns the CacheBehavior property type name (`"AWS::CloudFront::Distribution.CacheBehavior"`)
+         */
+        static get CacheBehaviorTypeName(): string {
+          return "AWS::CloudFront::Distribution.CacheBehavior"
+        }
+        /**
+         * Returns the DefaultCacheBehavior property type name (`"AWS::CloudFront::Distribution.DefaultCacheBehavior"`)
+         */
+        static get DefaultCacheBehaviorTypeName(): string {
+          return "AWS::CloudFront::Distribution.DefaultCacheBehavior"
+        }
+        /**
+         * Returns the Restrictions property type name (`"AWS::CloudFront::Distribution.Restrictions"`)
+         */
+        static get RestrictionsTypeName(): string {
+          return "AWS::CloudFront::Distribution.Restrictions"
+        }
+        /**
+         * Returns the Origin property type name (`"AWS::CloudFront::Distribution.Origin"`)
+         */
+        static get OriginTypeName(): string {
+          return "AWS::CloudFront::Distribution.Origin"
+        }
+        /**
+         * Returns the GeoRestriction property type name (`"AWS::CloudFront::Distribution.GeoRestriction"`)
+         */
+        static get GeoRestrictionTypeName(): string {
+          return "AWS::CloudFront::Distribution.GeoRestriction"
+        }
+        /**
+         * Returns the ViewerCertificate property type name (`"AWS::CloudFront::Distribution.ViewerCertificate"`)
+         */
+        static get ViewerCertificateTypeName(): string {
+          return "AWS::CloudFront::Distribution.ViewerCertificate"
+        }
+        /**
+         * Returns the S3OriginConfig property type name (`"AWS::CloudFront::Distribution.S3OriginConfig"`)
+         */
+        static get S3OriginConfigTypeName(): string {
+          return "AWS::CloudFront::Distribution.S3OriginConfig"
+        }
+        /**
+         * Returns the CustomErrorResponse property type name (`"AWS::CloudFront::Distribution.CustomErrorResponse"`)
+         */
+        static get CustomErrorResponseTypeName(): string {
+          return "AWS::CloudFront::Distribution.CustomErrorResponse"
+        }
+        /**
+         * Returns the Logging property type name (`"AWS::CloudFront::Distribution.Logging"`)
+         */
+        static get LoggingTypeName(): string {
+          return "AWS::CloudFront::Distribution.Logging"
+        }
+        /**
+         * Returns the DistributionConfig property type name (`"AWS::CloudFront::Distribution.DistributionConfig"`)
+         */
+        static get DistributionConfigTypeName(): string {
+          return "AWS::CloudFront::Distribution.DistributionConfig"
+        }
+        /**
+         * Returns the OriginCustomHeader property type name (`"AWS::CloudFront::Distribution.OriginCustomHeader"`)
+         */
+        static get OriginCustomHeaderTypeName(): string {
+          return "AWS::CloudFront::Distribution.OriginCustomHeader"
+        }
       }
       export interface CloudFrontOriginAccessIdentityProperties {
         /**
@@ -37840,6 +41542,12 @@ export namespace Cf {
         CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig
       }
       export class CloudFrontOriginAccessIdentity implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudFront::CloudFrontOriginAccessIdentity"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudFront::CloudFrontOriginAccessIdentity"
+        }
         Type: string
         Properties: CloudFrontOriginAccessIdentityProperties
         /**
@@ -37848,7 +41556,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cloudfrontoriginaccessidentity.html
          */
         constructor(properties: CloudFrontOriginAccessIdentityProperties) {
-            this.Type = "AWS::CloudFront::CloudFrontOriginAccessIdentity";
+            this.Type = CloudFrontOriginAccessIdentity.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -37888,6 +41596,12 @@ export namespace Cf {
          */
         static CloudFrontOriginAccessIdentityConfig(properties: CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig) : CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig {
           return properties;
+        }
+        /**
+         * Returns the CloudFrontOriginAccessIdentityConfig property type name (`"AWS::CloudFront::CloudFrontOriginAccessIdentity.CloudFrontOriginAccessIdentityConfig"`)
+         */
+        static get CloudFrontOriginAccessIdentityConfigTypeName(): string {
+          return "AWS::CloudFront::CloudFrontOriginAccessIdentity.CloudFrontOriginAccessIdentityConfig"
         }
       }
     }
@@ -38018,6 +41732,12 @@ export namespace Cf {
         RoutingStrategy: AliasRoutingStrategy
       }
       export class Alias implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::GameLift::Alias"`)
+         */
+        static get TypeName(): string {
+          return "AWS::GameLift::Alias"
+        }
         Type: string
         Properties: AliasProperties
         /**
@@ -38026,7 +41746,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html
          */
         constructor(properties: AliasProperties) {
-            this.Type = "AWS::GameLift::Alias";
+            this.Type = Alias.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -38067,6 +41787,12 @@ export namespace Cf {
         static RoutingStrategy(properties: AliasRoutingStrategy) : AliasRoutingStrategy {
           return properties;
         }
+        /**
+         * Returns the RoutingStrategy property type name (`"AWS::GameLift::Alias.RoutingStrategy"`)
+         */
+        static get RoutingStrategyTypeName(): string {
+          return "AWS::GameLift::Alias.RoutingStrategy"
+        }
       }
       export interface BuildProperties {
         /**
@@ -38098,6 +41824,12 @@ export namespace Cf {
         Version?: string
       }
       export class Build implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::GameLift::Build"`)
+         */
+        static get TypeName(): string {
+          return "AWS::GameLift::Build"
+        }
         Type: string
         Properties: BuildProperties
         /**
@@ -38106,7 +41838,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html
          */
         constructor(properties: BuildProperties) {
-            this.Type = "AWS::GameLift::Build";
+            this.Type = Build.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -38146,6 +41878,12 @@ export namespace Cf {
          */
         static S3Location(properties: BuildS3Location) : BuildS3Location {
           return properties;
+        }
+        /**
+         * Returns the S3Location property type name (`"AWS::GameLift::Build.S3Location"`)
+         */
+        static get S3LocationTypeName(): string {
+          return "AWS::GameLift::Build.S3Location"
         }
       }
       export interface FleetProperties {
@@ -38250,6 +41988,12 @@ export namespace Cf {
         ServerLaunchPath: string
       }
       export class Fleet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::GameLift::Fleet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::GameLift::Fleet"
+        }
         Type: string
         Properties: FleetProperties
         /**
@@ -38258,7 +42002,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html
          */
         constructor(properties: FleetProperties) {
-            this.Type = "AWS::GameLift::Fleet";
+            this.Type = Fleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -38298,6 +42042,12 @@ export namespace Cf {
          */
         static IpPermission(properties: FleetIpPermission) : FleetIpPermission {
           return properties;
+        }
+        /**
+         * Returns the IpPermission property type name (`"AWS::GameLift::Fleet.IpPermission"`)
+         */
+        static get IpPermissionTypeName(): string {
+          return "AWS::GameLift::Fleet.IpPermission"
         }
       }
     }
@@ -38426,6 +42176,12 @@ export namespace Cf {
         Name?: string
       }
       export class Filter implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::Filter"`)
+         */
+        static get TypeName(): string {
+          return "AWS::GuardDuty::Filter"
+        }
         Type: string
         Properties: FilterProperties
         /**
@@ -38434,7 +42190,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html
          */
         constructor(properties: FilterProperties) {
-            this.Type = "AWS::GuardDuty::Filter";
+            this.Type = Filter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -38482,6 +42238,18 @@ export namespace Cf {
          */
         static Condition(properties: FilterCondition) : FilterCondition {
           return properties;
+        }
+        /**
+         * Returns the FindingCriteria property type name (`"AWS::GuardDuty::Filter.FindingCriteria"`)
+         */
+        static get FindingCriteriaTypeName(): string {
+          return "AWS::GuardDuty::Filter.FindingCriteria"
+        }
+        /**
+         * Returns the Condition property type name (`"AWS::GuardDuty::Filter.Condition"`)
+         */
+        static get ConditionTypeName(): string {
+          return "AWS::GuardDuty::Filter.Condition"
         }
       }
       export interface ThreatIntelSetProperties {
@@ -38532,6 +42300,12 @@ export namespace Cf {
         Location: string
       }
       export class ThreatIntelSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::ThreatIntelSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::GuardDuty::ThreatIntelSet"
+        }
         Type: string
         Properties: ThreatIntelSetProperties
         /**
@@ -38540,7 +42314,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html
          */
         constructor(properties: ThreatIntelSetProperties) {
-            this.Type = "AWS::GuardDuty::ThreatIntelSet";
+            this.Type = ThreatIntelSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -38631,6 +42405,12 @@ export namespace Cf {
         DetectorId: string
       }
       export class Member implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::Member"`)
+         */
+        static get TypeName(): string {
+          return "AWS::GuardDuty::Member"
+        }
         Type: string
         Properties: MemberProperties
         /**
@@ -38639,7 +42419,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html
          */
         constructor(properties: MemberProperties) {
-            this.Type = "AWS::GuardDuty::Member";
+            this.Type = Member.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -38694,6 +42474,12 @@ export namespace Cf {
         Enable: boolean
       }
       export class Detector implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::Detector"`)
+         */
+        static get TypeName(): string {
+          return "AWS::GuardDuty::Detector"
+        }
         Type: string
         Properties: DetectorProperties
         /**
@@ -38702,7 +42488,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html
          */
         constructor(properties: DetectorProperties) {
-            this.Type = "AWS::GuardDuty::Detector";
+            this.Type = Detector.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -38784,6 +42570,12 @@ export namespace Cf {
         Location: string
       }
       export class IPSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::IPSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::GuardDuty::IPSet"
+        }
         Type: string
         Properties: IPSetProperties
         /**
@@ -38792,7 +42584,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html
          */
         constructor(properties: IPSetProperties) {
-            this.Type = "AWS::GuardDuty::IPSet";
+            this.Type = IPSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -38856,6 +42648,12 @@ export namespace Cf {
         InvitationId?: string
       }
       export class Master implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::Master"`)
+         */
+        static get TypeName(): string {
+          return "AWS::GuardDuty::Master"
+        }
         Type: string
         Properties: MasterProperties
         /**
@@ -38864,7 +42662,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html
          */
         constructor(properties: MasterProperties) {
-            this.Type = "AWS::GuardDuty::Master";
+            this.Type = Master.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39006,6 +42804,12 @@ export namespace Cf {
         VpcSettings: MicrosoftADVpcSettings
       }
       export class MicrosoftAD implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DirectoryService::MicrosoftAD"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DirectoryService::MicrosoftAD"
+        }
         Type: string
         Properties: MicrosoftADProperties
         /**
@@ -39014,7 +42818,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html
          */
         constructor(properties: MicrosoftADProperties) {
-            this.Type = "AWS::DirectoryService::MicrosoftAD";
+            this.Type = MicrosoftAD.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39054,6 +42858,12 @@ export namespace Cf {
          */
         static VpcSettings(properties: MicrosoftADVpcSettings) : MicrosoftADVpcSettings {
           return properties;
+        }
+        /**
+         * Returns the VpcSettings property type name (`"AWS::DirectoryService::MicrosoftAD.VpcSettings"`)
+         */
+        static get VpcSettingsTypeName(): string {
+          return "AWS::DirectoryService::MicrosoftAD.VpcSettings"
         }
       }
       export interface SimpleADProperties {
@@ -39131,6 +42941,12 @@ export namespace Cf {
         VpcSettings: SimpleADVpcSettings
       }
       export class SimpleAD implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DirectoryService::SimpleAD"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DirectoryService::SimpleAD"
+        }
         Type: string
         Properties: SimpleADProperties
         /**
@@ -39139,7 +42955,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html
          */
         constructor(properties: SimpleADProperties) {
-            this.Type = "AWS::DirectoryService::SimpleAD";
+            this.Type = SimpleAD.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39179,6 +42995,12 @@ export namespace Cf {
          */
         static VpcSettings(properties: SimpleADVpcSettings) : SimpleADVpcSettings {
           return properties;
+        }
+        /**
+         * Returns the VpcSettings property type name (`"AWS::DirectoryService::SimpleAD.VpcSettings"`)
+         */
+        static get VpcSettingsTypeName(): string {
+          return "AWS::DirectoryService::SimpleAD.VpcSettings"
         }
       }
     }
@@ -39269,6 +43091,12 @@ export namespace Cf {
         TopicArn: string
       }
       export class Subscription implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SNS::Subscription"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SNS::Subscription"
+        }
         Type: string
         Properties: SubscriptionProperties
         /**
@@ -39277,7 +43105,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html
          */
         constructor(properties: SubscriptionProperties) {
-            this.Type = "AWS::SNS::Subscription";
+            this.Type = Subscription.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39350,6 +43178,12 @@ export namespace Cf {
         TopicName?: string
       }
       export class Topic implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SNS::Topic"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SNS::Topic"
+        }
         Type: string
         Properties: TopicProperties
         /**
@@ -39358,7 +43192,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html
          */
         constructor(properties: TopicProperties) {
-            this.Type = "AWS::SNS::Topic";
+            this.Type = Topic.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39399,6 +43233,12 @@ export namespace Cf {
         static Subscription(properties: TopicSubscription) : TopicSubscription {
           return properties;
         }
+        /**
+         * Returns the Subscription property type name (`"AWS::SNS::Topic.Subscription"`)
+         */
+        static get SubscriptionTypeName(): string {
+          return "AWS::SNS::Topic.Subscription"
+        }
       }
       export interface TopicPolicyProperties {
         /**
@@ -39421,6 +43261,12 @@ export namespace Cf {
         Topics: string[]
       }
       export class TopicPolicy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SNS::TopicPolicy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SNS::TopicPolicy"
+        }
         Type: string
         Properties: TopicPolicyProperties
         /**
@@ -39429,7 +43275,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html
          */
         constructor(properties: TopicPolicyProperties) {
-            this.Type = "AWS::SNS::TopicPolicy";
+            this.Type = TopicPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39524,6 +43370,12 @@ export namespace Cf {
         SubnetId: string
       }
       export class MountTarget implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EFS::MountTarget"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EFS::MountTarget"
+        }
         Type: string
         Properties: MountTargetProperties
         /**
@@ -39532,7 +43384,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html
          */
         constructor(properties: MountTargetProperties) {
-            this.Type = "AWS::EFS::MountTarget";
+            this.Type = MountTarget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39623,6 +43475,12 @@ export namespace Cf {
         ThroughputMode?: string
       }
       export class FileSystem implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::EFS::FileSystem"`)
+         */
+        static get TypeName(): string {
+          return "AWS::EFS::FileSystem"
+        }
         Type: string
         Properties: FileSystemProperties
         /**
@@ -39631,7 +43489,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html
          */
         constructor(properties: FileSystemProperties) {
-            this.Type = "AWS::EFS::FileSystem";
+            this.Type = FileSystem.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -39671,6 +43529,12 @@ export namespace Cf {
          */
         static ElasticFileSystemTag(properties: FileSystemElasticFileSystemTag) : FileSystemElasticFileSystemTag {
           return properties;
+        }
+        /**
+         * Returns the ElasticFileSystemTag property type name (`"AWS::EFS::FileSystem.ElasticFileSystemTag"`)
+         */
+        static get ElasticFileSystemTagTypeName(): string {
+          return "AWS::EFS::FileSystem.ElasticFileSystemTag"
         }
       }
     }
@@ -40164,6 +44028,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Document implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SSM::Document"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SSM::Document"
+        }
         Type: string
         Properties: DocumentProperties
         /**
@@ -40172,7 +44042,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html
          */
         constructor(properties: DocumentProperties) {
-            this.Type = "AWS::SSM::Document";
+            this.Type = Document.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -40317,6 +44187,12 @@ export namespace Cf {
         RejectedPatches?: string[]
       }
       export class PatchBaseline implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SSM::PatchBaseline"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SSM::PatchBaseline"
+        }
         Type: string
         Properties: PatchBaselineProperties
         /**
@@ -40325,7 +44201,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html
          */
         constructor(properties: PatchBaselineProperties) {
-            this.Type = "AWS::SSM::PatchBaseline";
+            this.Type = PatchBaseline.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -40398,6 +44274,36 @@ export namespace Cf {
         static PatchSource(properties: PatchBaselinePatchSource) : PatchBaselinePatchSource {
           return properties;
         }
+        /**
+         * Returns the RuleGroup property type name (`"AWS::SSM::PatchBaseline.RuleGroup"`)
+         */
+        static get RuleGroupTypeName(): string {
+          return "AWS::SSM::PatchBaseline.RuleGroup"
+        }
+        /**
+         * Returns the PatchFilter property type name (`"AWS::SSM::PatchBaseline.PatchFilter"`)
+         */
+        static get PatchFilterTypeName(): string {
+          return "AWS::SSM::PatchBaseline.PatchFilter"
+        }
+        /**
+         * Returns the Rule property type name (`"AWS::SSM::PatchBaseline.Rule"`)
+         */
+        static get RuleTypeName(): string {
+          return "AWS::SSM::PatchBaseline.Rule"
+        }
+        /**
+         * Returns the PatchFilterGroup property type name (`"AWS::SSM::PatchBaseline.PatchFilterGroup"`)
+         */
+        static get PatchFilterGroupTypeName(): string {
+          return "AWS::SSM::PatchBaseline.PatchFilterGroup"
+        }
+        /**
+         * Returns the PatchSource property type name (`"AWS::SSM::PatchBaseline.PatchSource"`)
+         */
+        static get PatchSourceTypeName(): string {
+          return "AWS::SSM::PatchBaseline.PatchSource"
+        }
       }
       export interface MaintenanceWindowTargetProperties {
         /**
@@ -40456,6 +44362,12 @@ export namespace Cf {
         Name?: string
       }
       export class MaintenanceWindowTarget implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SSM::MaintenanceWindowTarget"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTarget"
+        }
         Type: string
         Properties: MaintenanceWindowTargetProperties
         /**
@@ -40464,7 +44376,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtarget.html
          */
         constructor(properties: MaintenanceWindowTargetProperties) {
-            this.Type = "AWS::SSM::MaintenanceWindowTarget";
+            this.Type = MaintenanceWindowTarget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -40504,6 +44416,12 @@ export namespace Cf {
          */
         static Targets(properties: MaintenanceWindowTargetTargets) : MaintenanceWindowTargetTargets {
           return properties;
+        }
+        /**
+         * Returns the Targets property type name (`"AWS::SSM::MaintenanceWindowTarget.Targets"`)
+         */
+        static get TargetsTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTarget.Targets"
         }
       }
       export interface MaintenanceWindowProperties {
@@ -40590,6 +44508,12 @@ export namespace Cf {
         ScheduleTimezone?: string
       }
       export class MaintenanceWindow implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SSM::MaintenanceWindow"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SSM::MaintenanceWindow"
+        }
         Type: string
         Properties: MaintenanceWindowProperties
         /**
@@ -40598,7 +44522,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindow.html
          */
         constructor(properties: MaintenanceWindowProperties) {
-            this.Type = "AWS::SSM::MaintenanceWindow";
+            this.Type = MaintenanceWindow.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -40680,6 +44604,12 @@ export namespace Cf {
         Name?: string
       }
       export class Parameter implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SSM::Parameter"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SSM::Parameter"
+        }
         Type: string
         Properties: ParameterProperties
         /**
@@ -40688,7 +44618,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html
          */
         constructor(properties: ParameterProperties) {
-            this.Type = "AWS::SSM::Parameter";
+            this.Type = Parameter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -40779,6 +44709,12 @@ export namespace Cf {
         BucketPrefix?: string
       }
       export class ResourceDataSync implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SSM::ResourceDataSync"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SSM::ResourceDataSync"
+        }
         Type: string
         Properties: ResourceDataSyncProperties
         /**
@@ -40787,7 +44723,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html
          */
         constructor(properties: ResourceDataSyncProperties) {
-            this.Type = "AWS::SSM::ResourceDataSync";
+            this.Type = ResourceDataSync.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -40896,6 +44832,12 @@ export namespace Cf {
         Targets?: AssociationTarget[]
       }
       export class Association implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SSM::Association"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SSM::Association"
+        }
         Type: string
         Properties: AssociationProperties
         /**
@@ -40904,7 +44846,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html
          */
         constructor(properties: AssociationProperties) {
-            this.Type = "AWS::SSM::Association";
+            this.Type = Association.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -40968,6 +44910,30 @@ export namespace Cf {
          */
         static S3OutputLocation(properties: AssociationS3OutputLocation) : AssociationS3OutputLocation {
           return properties;
+        }
+        /**
+         * Returns the InstanceAssociationOutputLocation property type name (`"AWS::SSM::Association.InstanceAssociationOutputLocation"`)
+         */
+        static get InstanceAssociationOutputLocationTypeName(): string {
+          return "AWS::SSM::Association.InstanceAssociationOutputLocation"
+        }
+        /**
+         * Returns the Target property type name (`"AWS::SSM::Association.Target"`)
+         */
+        static get TargetTypeName(): string {
+          return "AWS::SSM::Association.Target"
+        }
+        /**
+         * Returns the ParameterValues property type name (`"AWS::SSM::Association.ParameterValues"`)
+         */
+        static get ParameterValuesTypeName(): string {
+          return "AWS::SSM::Association.ParameterValues"
+        }
+        /**
+         * Returns the S3OutputLocation property type name (`"AWS::SSM::Association.S3OutputLocation"`)
+         */
+        static get S3OutputLocationTypeName(): string {
+          return "AWS::SSM::Association.S3OutputLocation"
         }
       }
       export interface MaintenanceWindowTaskProperties {
@@ -41090,6 +45056,12 @@ export namespace Cf {
         LoggingInfo?: MaintenanceWindowTaskLoggingInfo
       }
       export class MaintenanceWindowTask implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SSM::MaintenanceWindowTask"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask"
+        }
         Type: string
         Properties: MaintenanceWindowTaskProperties
         /**
@@ -41098,7 +45070,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html
          */
         constructor(properties: MaintenanceWindowTaskProperties) {
-            this.Type = "AWS::SSM::MaintenanceWindowTask";
+            this.Type = MaintenanceWindowTask.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41194,6 +45166,54 @@ export namespace Cf {
          */
         static MaintenanceWindowRunCommandParameters(properties: MaintenanceWindowTaskMaintenanceWindowRunCommandParameters) : MaintenanceWindowTaskMaintenanceWindowRunCommandParameters {
           return properties;
+        }
+        /**
+         * Returns the MaintenanceWindowLambdaParameters property type name (`"AWS::SSM::MaintenanceWindowTask.MaintenanceWindowLambdaParameters"`)
+         */
+        static get MaintenanceWindowLambdaParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.MaintenanceWindowLambdaParameters"
+        }
+        /**
+         * Returns the NotificationConfig property type name (`"AWS::SSM::MaintenanceWindowTask.NotificationConfig"`)
+         */
+        static get NotificationConfigTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.NotificationConfig"
+        }
+        /**
+         * Returns the MaintenanceWindowAutomationParameters property type name (`"AWS::SSM::MaintenanceWindowTask.MaintenanceWindowAutomationParameters"`)
+         */
+        static get MaintenanceWindowAutomationParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.MaintenanceWindowAutomationParameters"
+        }
+        /**
+         * Returns the TaskInvocationParameters property type name (`"AWS::SSM::MaintenanceWindowTask.TaskInvocationParameters"`)
+         */
+        static get TaskInvocationParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.TaskInvocationParameters"
+        }
+        /**
+         * Returns the LoggingInfo property type name (`"AWS::SSM::MaintenanceWindowTask.LoggingInfo"`)
+         */
+        static get LoggingInfoTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.LoggingInfo"
+        }
+        /**
+         * Returns the Target property type name (`"AWS::SSM::MaintenanceWindowTask.Target"`)
+         */
+        static get TargetTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.Target"
+        }
+        /**
+         * Returns the MaintenanceWindowStepFunctionsParameters property type name (`"AWS::SSM::MaintenanceWindowTask.MaintenanceWindowStepFunctionsParameters"`)
+         */
+        static get MaintenanceWindowStepFunctionsParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.MaintenanceWindowStepFunctionsParameters"
+        }
+        /**
+         * Returns the MaintenanceWindowRunCommandParameters property type name (`"AWS::SSM::MaintenanceWindowTask.MaintenanceWindowRunCommandParameters"`)
+         */
+        static get MaintenanceWindowRunCommandParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.MaintenanceWindowRunCommandParameters"
         }
       }
     }
@@ -41380,6 +45400,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Model implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::Model"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SageMaker::Model"
+        }
         Type: string
         Properties: ModelProperties
         /**
@@ -41388,7 +45414,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html
          */
         constructor(properties: ModelProperties) {
-            this.Type = "AWS::SageMaker::Model";
+            this.Type = Model.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41437,6 +45463,18 @@ export namespace Cf {
         static ContainerDefinition(properties: ModelContainerDefinition) : ModelContainerDefinition {
           return properties;
         }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::SageMaker::Model.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::SageMaker::Model.VpcConfig"
+        }
+        /**
+         * Returns the ContainerDefinition property type name (`"AWS::SageMaker::Model.ContainerDefinition"`)
+         */
+        static get ContainerDefinitionTypeName(): string {
+          return "AWS::SageMaker::Model.ContainerDefinition"
+        }
       }
       export interface NotebookInstanceLifecycleConfigProperties {
         /**
@@ -41468,6 +45506,12 @@ export namespace Cf {
         OnCreate?: NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook[]
       }
       export class NotebookInstanceLifecycleConfig implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::NotebookInstanceLifecycleConfig"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SageMaker::NotebookInstanceLifecycleConfig"
+        }
         Type: string
         Properties: NotebookInstanceLifecycleConfigProperties
         /**
@@ -41476,7 +45520,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html
          */
         constructor(properties: NotebookInstanceLifecycleConfigProperties) {
-            this.Type = "AWS::SageMaker::NotebookInstanceLifecycleConfig";
+            this.Type = NotebookInstanceLifecycleConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41516,6 +45560,12 @@ export namespace Cf {
          */
         static NotebookInstanceLifecycleHook(properties: NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook) : NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook {
           return properties;
+        }
+        /**
+         * Returns the NotebookInstanceLifecycleHook property type name (`"AWS::SageMaker::NotebookInstanceLifecycleConfig.NotebookInstanceLifecycleHook"`)
+         */
+        static get NotebookInstanceLifecycleHookTypeName(): string {
+          return "AWS::SageMaker::NotebookInstanceLifecycleConfig.NotebookInstanceLifecycleHook"
         }
       }
       export interface EndpointConfigProperties {
@@ -41557,6 +45607,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class EndpointConfig implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::EndpointConfig"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SageMaker::EndpointConfig"
+        }
         Type: string
         Properties: EndpointConfigProperties
         /**
@@ -41565,7 +45621,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html
          */
         constructor(properties: EndpointConfigProperties) {
-            this.Type = "AWS::SageMaker::EndpointConfig";
+            this.Type = EndpointConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41606,6 +45662,12 @@ export namespace Cf {
         static ProductionVariant(properties: EndpointConfigProductionVariant) : EndpointConfigProductionVariant {
           return properties;
         }
+        /**
+         * Returns the ProductionVariant property type name (`"AWS::SageMaker::EndpointConfig.ProductionVariant"`)
+         */
+        static get ProductionVariantTypeName(): string {
+          return "AWS::SageMaker::EndpointConfig.ProductionVariant"
+        }
       }
       export interface EndpointProperties {
         /**
@@ -41637,6 +45699,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Endpoint implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::Endpoint"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SageMaker::Endpoint"
+        }
         Type: string
         Properties: EndpointProperties
         /**
@@ -41645,7 +45713,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html
          */
         constructor(properties: EndpointProperties) {
-            this.Type = "AWS::SageMaker::Endpoint";
+            this.Type = Endpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -41772,6 +45840,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class NotebookInstance implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::NotebookInstance"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SageMaker::NotebookInstance"
+        }
         Type: string
         Properties: NotebookInstanceProperties
         /**
@@ -41780,7 +45854,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html
          */
         constructor(properties: NotebookInstanceProperties) {
-            this.Type = "AWS::SageMaker::NotebookInstance";
+            this.Type = NotebookInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42058,6 +46132,12 @@ export namespace Cf {
         SnsTopicARN?: string
       }
       export class DeliveryChannel implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Config::DeliveryChannel"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Config::DeliveryChannel"
+        }
         Type: string
         Properties: DeliveryChannelProperties
         /**
@@ -42066,7 +46146,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html
          */
         constructor(properties: DeliveryChannelProperties) {
-            this.Type = "AWS::Config::DeliveryChannel";
+            this.Type = DeliveryChannel.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42107,6 +46187,12 @@ export namespace Cf {
         static ConfigSnapshotDeliveryProperties(properties: DeliveryChannelConfigSnapshotDeliveryProperties) : DeliveryChannelConfigSnapshotDeliveryProperties {
           return properties;
         }
+        /**
+         * Returns the ConfigSnapshotDeliveryProperties property type name (`"AWS::Config::DeliveryChannel.ConfigSnapshotDeliveryProperties"`)
+         */
+        static get ConfigSnapshotDeliveryPropertiesTypeName(): string {
+          return "AWS::Config::DeliveryChannel.ConfigSnapshotDeliveryProperties"
+        }
       }
       export interface ConfigurationAggregatorProperties {
         /**
@@ -42138,6 +46224,12 @@ export namespace Cf {
         OrganizationAggregationSource?: ConfigurationAggregatorOrganizationAggregationSource
       }
       export class ConfigurationAggregator implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Config::ConfigurationAggregator"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Config::ConfigurationAggregator"
+        }
         Type: string
         Properties: ConfigurationAggregatorProperties
         /**
@@ -42146,7 +46238,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html
          */
         constructor(properties: ConfigurationAggregatorProperties) {
-            this.Type = "AWS::Config::ConfigurationAggregator";
+            this.Type = ConfigurationAggregator.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42195,6 +46287,18 @@ export namespace Cf {
         static AccountAggregationSource(properties: ConfigurationAggregatorAccountAggregationSource) : ConfigurationAggregatorAccountAggregationSource {
           return properties;
         }
+        /**
+         * Returns the OrganizationAggregationSource property type name (`"AWS::Config::ConfigurationAggregator.OrganizationAggregationSource"`)
+         */
+        static get OrganizationAggregationSourceTypeName(): string {
+          return "AWS::Config::ConfigurationAggregator.OrganizationAggregationSource"
+        }
+        /**
+         * Returns the AccountAggregationSource property type name (`"AWS::Config::ConfigurationAggregator.AccountAggregationSource"`)
+         */
+        static get AccountAggregationSourceTypeName(): string {
+          return "AWS::Config::ConfigurationAggregator.AccountAggregationSource"
+        }
       }
       export interface AggregationAuthorizationProperties {
         /**
@@ -42217,6 +46321,12 @@ export namespace Cf {
         AuthorizedAwsRegion: string
       }
       export class AggregationAuthorization implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Config::AggregationAuthorization"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Config::AggregationAuthorization"
+        }
         Type: string
         Properties: AggregationAuthorizationProperties
         /**
@@ -42225,7 +46335,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html
          */
         constructor(properties: AggregationAuthorizationProperties) {
-            this.Type = "AWS::Config::AggregationAuthorization";
+            this.Type = AggregationAuthorization.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42289,6 +46399,12 @@ export namespace Cf {
         RoleARN: string
       }
       export class ConfigurationRecorder implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Config::ConfigurationRecorder"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Config::ConfigurationRecorder"
+        }
         Type: string
         Properties: ConfigurationRecorderProperties
         /**
@@ -42297,7 +46413,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html
          */
         constructor(properties: ConfigurationRecorderProperties) {
-            this.Type = "AWS::Config::ConfigurationRecorder";
+            this.Type = ConfigurationRecorder.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42337,6 +46453,12 @@ export namespace Cf {
          */
         static RecordingGroup(properties: ConfigurationRecorderRecordingGroup) : ConfigurationRecorderRecordingGroup {
           return properties;
+        }
+        /**
+         * Returns the RecordingGroup property type name (`"AWS::Config::ConfigurationRecorder.RecordingGroup"`)
+         */
+        static get RecordingGroupTypeName(): string {
+          return "AWS::Config::ConfigurationRecorder.RecordingGroup"
         }
       }
       export interface ConfigRuleProperties {
@@ -42396,6 +46518,12 @@ export namespace Cf {
         Source: ConfigRuleSource
       }
       export class ConfigRule implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Config::ConfigRule"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Config::ConfigRule"
+        }
         Type: string
         Properties: ConfigRuleProperties
         /**
@@ -42404,7 +46532,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html
          */
         constructor(properties: ConfigRuleProperties) {
-            this.Type = "AWS::Config::ConfigRule";
+            this.Type = ConfigRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42460,6 +46588,24 @@ export namespace Cf {
          */
         static SourceDetail(properties: ConfigRuleSourceDetail) : ConfigRuleSourceDetail {
           return properties;
+        }
+        /**
+         * Returns the Scope property type name (`"AWS::Config::ConfigRule.Scope"`)
+         */
+        static get ScopeTypeName(): string {
+          return "AWS::Config::ConfigRule.Scope"
+        }
+        /**
+         * Returns the Source property type name (`"AWS::Config::ConfigRule.Source"`)
+         */
+        static get SourceTypeName(): string {
+          return "AWS::Config::ConfigRule.Source"
+        }
+        /**
+         * Returns the SourceDetail property type name (`"AWS::Config::ConfigRule.SourceDetail"`)
+         */
+        static get SourceDetailTypeName(): string {
+          return "AWS::Config::ConfigRule.SourceDetail"
         }
       }
     }
@@ -42530,6 +46676,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Key implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KMS::Key"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KMS::Key"
+        }
         Type: string
         Properties: KeyProperties
         /**
@@ -42538,7 +46690,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html
          */
         constructor(properties: KeyProperties) {
-            this.Type = "AWS::KMS::Key";
+            this.Type = Key.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42593,6 +46745,12 @@ export namespace Cf {
         TargetKeyId: string
       }
       export class Alias implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KMS::Alias"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KMS::Alias"
+        }
         Type: string
         Properties: AliasProperties
         /**
@@ -42601,7 +46759,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html
          */
         constructor(properties: AliasProperties) {
-            this.Type = "AWS::KMS::Alias";
+            this.Type = Alias.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42941,6 +47099,12 @@ export namespace Cf {
         VpcSecurityGroupIds?: string[]
       }
       export class Cluster implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::Cluster"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Redshift::Cluster"
+        }
         Type: string
         Properties: ClusterProperties
         /**
@@ -42949,7 +47113,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html
          */
         constructor(properties: ClusterProperties) {
-            this.Type = "AWS::Redshift::Cluster";
+            this.Type = Cluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -42989,6 +47153,12 @@ export namespace Cf {
          */
         static LoggingProperties(properties: ClusterLoggingProperties) : ClusterLoggingProperties {
           return properties;
+        }
+        /**
+         * Returns the LoggingProperties property type name (`"AWS::Redshift::Cluster.LoggingProperties"`)
+         */
+        static get LoggingPropertiesTypeName(): string {
+          return "AWS::Redshift::Cluster.LoggingProperties"
         }
       }
       export interface ClusterParameterGroupProperties {
@@ -43030,6 +47200,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ClusterParameterGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::ClusterParameterGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Redshift::ClusterParameterGroup"
+        }
         Type: string
         Properties: ClusterParameterGroupProperties
         /**
@@ -43038,7 +47214,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html
          */
         constructor(properties: ClusterParameterGroupProperties) {
-            this.Type = "AWS::Redshift::ClusterParameterGroup";
+            this.Type = ClusterParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43078,6 +47254,12 @@ export namespace Cf {
          */
         static Parameter(properties: ClusterParameterGroupParameter) : ClusterParameterGroupParameter {
           return properties;
+        }
+        /**
+         * Returns the Parameter property type name (`"AWS::Redshift::ClusterParameterGroup.Parameter"`)
+         */
+        static get ParameterTypeName(): string {
+          return "AWS::Redshift::ClusterParameterGroup.Parameter"
         }
       }
       export interface ClusterSecurityGroupIngressProperties {
@@ -43119,6 +47301,12 @@ export namespace Cf {
         EC2SecurityGroupOwnerId?: string
       }
       export class ClusterSecurityGroupIngress implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::ClusterSecurityGroupIngress"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Redshift::ClusterSecurityGroupIngress"
+        }
         Type: string
         Properties: ClusterSecurityGroupIngressProperties
         /**
@@ -43127,7 +47315,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html
          */
         constructor(properties: ClusterSecurityGroupIngressProperties) {
-            this.Type = "AWS::Redshift::ClusterSecurityGroupIngress";
+            this.Type = ClusterSecurityGroupIngress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43191,6 +47379,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ClusterSubnetGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::ClusterSubnetGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Redshift::ClusterSubnetGroup"
+        }
         Type: string
         Properties: ClusterSubnetGroupProperties
         /**
@@ -43199,7 +47393,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersubnetgroup.html
          */
         constructor(properties: ClusterSubnetGroupProperties) {
-            this.Type = "AWS::Redshift::ClusterSubnetGroup";
+            this.Type = ClusterSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43254,6 +47448,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ClusterSecurityGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::ClusterSecurityGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Redshift::ClusterSecurityGroup"
+        }
         Type: string
         Properties: ClusterSecurityGroupProperties
         /**
@@ -43262,7 +47462,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroup.html
          */
         constructor(properties: ClusterSecurityGroupProperties) {
-            this.Type = "AWS::Redshift::ClusterSecurityGroup";
+            this.Type = ClusterSecurityGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43497,6 +47697,12 @@ export namespace Cf {
         StartingPosition?: string
       }
       export class EventSourceMapping implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::EventSourceMapping"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Lambda::EventSourceMapping"
+        }
         Type: string
         Properties: EventSourceMappingProperties
         /**
@@ -43505,7 +47711,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html
          */
         constructor(properties: EventSourceMappingProperties) {
-            this.Type = "AWS::Lambda::EventSourceMapping";
+            this.Type = EventSourceMapping.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43587,6 +47793,12 @@ export namespace Cf {
         Content: LayerVersionContent
       }
       export class LayerVersion implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::LayerVersion"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Lambda::LayerVersion"
+        }
         Type: string
         Properties: LayerVersionProperties
         /**
@@ -43595,7 +47807,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversion.html
          */
         constructor(properties: LayerVersionProperties) {
-            this.Type = "AWS::Lambda::LayerVersion";
+            this.Type = LayerVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43635,6 +47847,12 @@ export namespace Cf {
          */
         static Content(properties: LayerVersionContent) : LayerVersionContent {
           return properties;
+        }
+        /**
+         * Returns the Content property type name (`"AWS::Lambda::LayerVersion.Content"`)
+         */
+        static get ContentTypeName(): string {
+          return "AWS::Lambda::LayerVersion.Content"
         }
       }
       export interface AliasProperties {
@@ -43685,6 +47903,12 @@ export namespace Cf {
         RoutingConfig?: AliasAliasRoutingConfiguration
       }
       export class Alias implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::Alias"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Lambda::Alias"
+        }
         Type: string
         Properties: AliasProperties
         /**
@@ -43693,7 +47917,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html
          */
         constructor(properties: AliasProperties) {
-            this.Type = "AWS::Lambda::Alias";
+            this.Type = Alias.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43742,6 +47966,18 @@ export namespace Cf {
         static VersionWeight(properties: AliasVersionWeight) : AliasVersionWeight {
           return properties;
         }
+        /**
+         * Returns the AliasRoutingConfiguration property type name (`"AWS::Lambda::Alias.AliasRoutingConfiguration"`)
+         */
+        static get AliasRoutingConfigurationTypeName(): string {
+          return "AWS::Lambda::Alias.AliasRoutingConfiguration"
+        }
+        /**
+         * Returns the VersionWeight property type name (`"AWS::Lambda::Alias.VersionWeight"`)
+         */
+        static get VersionWeightTypeName(): string {
+          return "AWS::Lambda::Alias.VersionWeight"
+        }
       }
       export interface LayerVersionPermissionProperties {
         /**
@@ -43782,6 +48018,12 @@ export namespace Cf {
         Principal: string
       }
       export class LayerVersionPermission implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::LayerVersionPermission"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Lambda::LayerVersionPermission"
+        }
         Type: string
         Properties: LayerVersionPermissionProperties
         /**
@@ -43790,7 +48032,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html
          */
         constructor(properties: LayerVersionPermissionProperties) {
-            this.Type = "AWS::Lambda::LayerVersionPermission";
+            this.Type = LayerVersionPermission.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -43971,6 +48213,12 @@ export namespace Cf {
         VpcConfig?: FunctionVpcConfig
       }
       export class Function implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::Function"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Lambda::Function"
+        }
         Type: string
         Properties: FunctionProperties
         /**
@@ -43979,7 +48227,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html
          */
         constructor(properties: FunctionProperties) {
-            this.Type = "AWS::Lambda::Function";
+            this.Type = Function.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44052,6 +48300,36 @@ export namespace Cf {
         static Environment(properties: FunctionEnvironment) : FunctionEnvironment {
           return properties;
         }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::Lambda::Function.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::Lambda::Function.VpcConfig"
+        }
+        /**
+         * Returns the DeadLetterConfig property type name (`"AWS::Lambda::Function.DeadLetterConfig"`)
+         */
+        static get DeadLetterConfigTypeName(): string {
+          return "AWS::Lambda::Function.DeadLetterConfig"
+        }
+        /**
+         * Returns the TracingConfig property type name (`"AWS::Lambda::Function.TracingConfig"`)
+         */
+        static get TracingConfigTypeName(): string {
+          return "AWS::Lambda::Function.TracingConfig"
+        }
+        /**
+         * Returns the Code property type name (`"AWS::Lambda::Function.Code"`)
+         */
+        static get CodeTypeName(): string {
+          return "AWS::Lambda::Function.Code"
+        }
+        /**
+         * Returns the Environment property type name (`"AWS::Lambda::Function.Environment"`)
+         */
+        static get EnvironmentTypeName(): string {
+          return "AWS::Lambda::Function.Environment"
+        }
       }
       export interface VersionProperties {
         /**
@@ -44083,6 +48361,12 @@ export namespace Cf {
         FunctionName: string
       }
       export class Version implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::Version"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Lambda::Version"
+        }
         Type: string
         Properties: VersionProperties
         /**
@@ -44091,7 +48375,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html
          */
         constructor(properties: VersionProperties) {
-            this.Type = "AWS::Lambda::Version";
+            this.Type = Version.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44182,6 +48466,12 @@ export namespace Cf {
         SourceArn?: string
       }
       export class Permission implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::Permission"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Lambda::Permission"
+        }
         Type: string
         Properties: PermissionProperties
         /**
@@ -44190,7 +48480,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html
          */
         constructor(properties: PermissionProperties) {
-            this.Type = "AWS::Lambda::Permission";
+            this.Type = Permission.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44294,6 +48584,12 @@ export namespace Cf {
         ValidationMethod?: string
       }
       export class Certificate implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CertificateManager::Certificate"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CertificateManager::Certificate"
+        }
         Type: string
         Properties: CertificateProperties
         /**
@@ -44302,7 +48598,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html
          */
         constructor(properties: CertificateProperties) {
-            this.Type = "AWS::CertificateManager::Certificate";
+            this.Type = Certificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44343,6 +48639,12 @@ export namespace Cf {
         static DomainValidationOption(properties: CertificateDomainValidationOption) : CertificateDomainValidationOption {
           return properties;
         }
+        /**
+         * Returns the DomainValidationOption property type name (`"AWS::CertificateManager::Certificate.DomainValidationOption"`)
+         */
+        static get DomainValidationOptionTypeName(): string {
+          return "AWS::CertificateManager::Certificate.DomainValidationOption"
+        }
       }
     }
     export namespace Inspector {
@@ -44358,6 +48660,12 @@ export namespace Cf {
         ResourceGroupTags: TagProperties[]
       }
       export class ResourceGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Inspector::ResourceGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Inspector::ResourceGroup"
+        }
         Type: string
         Properties: ResourceGroupProperties
         /**
@@ -44366,7 +48674,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html
          */
         constructor(properties: ResourceGroupProperties) {
-            this.Type = "AWS::Inspector::ResourceGroup";
+            this.Type = ResourceGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44448,6 +48756,12 @@ export namespace Cf {
         UserAttributesForFindings?: TagProperties[]
       }
       export class AssessmentTemplate implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Inspector::AssessmentTemplate"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Inspector::AssessmentTemplate"
+        }
         Type: string
         Properties: AssessmentTemplateProperties
         /**
@@ -44456,7 +48770,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html
          */
         constructor(properties: AssessmentTemplateProperties) {
-            this.Type = "AWS::Inspector::AssessmentTemplate";
+            this.Type = AssessmentTemplate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44511,6 +48825,12 @@ export namespace Cf {
         ResourceGroupArn?: string
       }
       export class AssessmentTarget implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Inspector::AssessmentTarget"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Inspector::AssessmentTarget"
+        }
         Type: string
         Properties: AssessmentTargetProperties
         /**
@@ -44519,7 +48839,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html
          */
         constructor(properties: AssessmentTargetProperties) {
-            this.Type = "AWS::Inspector::AssessmentTarget";
+            this.Type = AssessmentTarget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44625,6 +48945,12 @@ export namespace Cf {
         ProjectName?: string
       }
       export class Project implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoT1Click::Project"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoT1Click::Project"
+        }
         Type: string
         Properties: ProjectProperties
         /**
@@ -44633,7 +48959,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html
          */
         constructor(properties: ProjectProperties) {
-            this.Type = "AWS::IoT1Click::Project";
+            this.Type = Project.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44682,6 +49008,18 @@ export namespace Cf {
         static PlacementTemplate(properties: ProjectPlacementTemplate) : ProjectPlacementTemplate {
           return properties;
         }
+        /**
+         * Returns the DeviceTemplate property type name (`"AWS::IoT1Click::Project.DeviceTemplate"`)
+         */
+        static get DeviceTemplateTypeName(): string {
+          return "AWS::IoT1Click::Project.DeviceTemplate"
+        }
+        /**
+         * Returns the PlacementTemplate property type name (`"AWS::IoT1Click::Project.PlacementTemplate"`)
+         */
+        static get PlacementTemplateTypeName(): string {
+          return "AWS::IoT1Click::Project.PlacementTemplate"
+        }
       }
       export interface DeviceProperties {
         /**
@@ -44704,6 +49042,12 @@ export namespace Cf {
         Enabled: boolean
       }
       export class Device implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoT1Click::Device"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoT1Click::Device"
+        }
         Type: string
         Properties: DeviceProperties
         /**
@@ -44712,7 +49056,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-device.html
          */
         constructor(properties: DeviceProperties) {
-            this.Type = "AWS::IoT1Click::Device";
+            this.Type = Device.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -44785,6 +49129,12 @@ export namespace Cf {
         Attributes?: object
       }
       export class Placement implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoT1Click::Placement"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoT1Click::Placement"
+        }
         Type: string
         Properties: PlacementProperties
         /**
@@ -44793,7 +49143,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html
          */
         constructor(properties: PlacementProperties) {
-            this.Type = "AWS::IoT1Click::Placement";
+            this.Type = Placement.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45613,6 +49963,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Dataset implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoTAnalytics::Dataset"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoTAnalytics::Dataset"
+        }
         Type: string
         Properties: DatasetProperties
         /**
@@ -45621,7 +49977,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html
          */
         constructor(properties: DatasetProperties) {
-            this.Type = "AWS::IoTAnalytics::Dataset";
+            this.Type = Dataset.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45758,6 +50114,84 @@ export namespace Cf {
         static ContainerAction(properties: DatasetContainerAction) : DatasetContainerAction {
           return properties;
         }
+        /**
+         * Returns the DatasetContentVersionValue property type name (`"AWS::IoTAnalytics::Dataset.DatasetContentVersionValue"`)
+         */
+        static get DatasetContentVersionValueTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.DatasetContentVersionValue"
+        }
+        /**
+         * Returns the OutputFileUriValue property type name (`"AWS::IoTAnalytics::Dataset.OutputFileUriValue"`)
+         */
+        static get OutputFileUriValueTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.OutputFileUriValue"
+        }
+        /**
+         * Returns the QueryAction property type name (`"AWS::IoTAnalytics::Dataset.QueryAction"`)
+         */
+        static get QueryActionTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.QueryAction"
+        }
+        /**
+         * Returns the Variable property type name (`"AWS::IoTAnalytics::Dataset.Variable"`)
+         */
+        static get VariableTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Variable"
+        }
+        /**
+         * Returns the Filter property type name (`"AWS::IoTAnalytics::Dataset.Filter"`)
+         */
+        static get FilterTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Filter"
+        }
+        /**
+         * Returns the DeltaTime property type name (`"AWS::IoTAnalytics::Dataset.DeltaTime"`)
+         */
+        static get DeltaTimeTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.DeltaTime"
+        }
+        /**
+         * Returns the ResourceConfiguration property type name (`"AWS::IoTAnalytics::Dataset.ResourceConfiguration"`)
+         */
+        static get ResourceConfigurationTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.ResourceConfiguration"
+        }
+        /**
+         * Returns the TriggeringDataset property type name (`"AWS::IoTAnalytics::Dataset.TriggeringDataset"`)
+         */
+        static get TriggeringDatasetTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.TriggeringDataset"
+        }
+        /**
+         * Returns the Schedule property type name (`"AWS::IoTAnalytics::Dataset.Schedule"`)
+         */
+        static get ScheduleTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Schedule"
+        }
+        /**
+         * Returns the Trigger property type name (`"AWS::IoTAnalytics::Dataset.Trigger"`)
+         */
+        static get TriggerTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Trigger"
+        }
+        /**
+         * Returns the RetentionPeriod property type name (`"AWS::IoTAnalytics::Dataset.RetentionPeriod"`)
+         */
+        static get RetentionPeriodTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.RetentionPeriod"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::IoTAnalytics::Dataset.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Action"
+        }
+        /**
+         * Returns the ContainerAction property type name (`"AWS::IoTAnalytics::Dataset.ContainerAction"`)
+         */
+        static get ContainerActionTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.ContainerAction"
+        }
       }
       export interface ChannelProperties {
         /**
@@ -45789,6 +50223,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Channel implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoTAnalytics::Channel"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoTAnalytics::Channel"
+        }
         Type: string
         Properties: ChannelProperties
         /**
@@ -45797,7 +50237,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html
          */
         constructor(properties: ChannelProperties) {
-            this.Type = "AWS::IoTAnalytics::Channel";
+            this.Type = Channel.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45838,6 +50278,12 @@ export namespace Cf {
         static RetentionPeriod(properties: ChannelRetentionPeriod) : ChannelRetentionPeriod {
           return properties;
         }
+        /**
+         * Returns the RetentionPeriod property type name (`"AWS::IoTAnalytics::Channel.RetentionPeriod"`)
+         */
+        static get RetentionPeriodTypeName(): string {
+          return "AWS::IoTAnalytics::Channel.RetentionPeriod"
+        }
       }
       export interface PipelineProperties {
         /**
@@ -45869,6 +50315,12 @@ export namespace Cf {
         PipelineActivities: PipelineActivity[]
       }
       export class Pipeline implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoTAnalytics::Pipeline"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline"
+        }
         Type: string
         Properties: PipelineProperties
         /**
@@ -45877,7 +50329,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html
          */
         constructor(properties: PipelineProperties) {
-            this.Type = "AWS::IoTAnalytics::Pipeline";
+            this.Type = Pipeline.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -45998,6 +50450,72 @@ export namespace Cf {
         static Filter(properties: PipelineFilter) : PipelineFilter {
           return properties;
         }
+        /**
+         * Returns the DeviceShadowEnrich property type name (`"AWS::IoTAnalytics::Pipeline.DeviceShadowEnrich"`)
+         */
+        static get DeviceShadowEnrichTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.DeviceShadowEnrich"
+        }
+        /**
+         * Returns the Activity property type name (`"AWS::IoTAnalytics::Pipeline.Activity"`)
+         */
+        static get ActivityTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Activity"
+        }
+        /**
+         * Returns the Lambda property type name (`"AWS::IoTAnalytics::Pipeline.Lambda"`)
+         */
+        static get LambdaTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Lambda"
+        }
+        /**
+         * Returns the Math property type name (`"AWS::IoTAnalytics::Pipeline.Math"`)
+         */
+        static get MathTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Math"
+        }
+        /**
+         * Returns the RemoveAttributes property type name (`"AWS::IoTAnalytics::Pipeline.RemoveAttributes"`)
+         */
+        static get RemoveAttributesTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.RemoveAttributes"
+        }
+        /**
+         * Returns the SelectAttributes property type name (`"AWS::IoTAnalytics::Pipeline.SelectAttributes"`)
+         */
+        static get SelectAttributesTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.SelectAttributes"
+        }
+        /**
+         * Returns the Datastore property type name (`"AWS::IoTAnalytics::Pipeline.Datastore"`)
+         */
+        static get DatastoreTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Datastore"
+        }
+        /**
+         * Returns the AddAttributes property type name (`"AWS::IoTAnalytics::Pipeline.AddAttributes"`)
+         */
+        static get AddAttributesTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.AddAttributes"
+        }
+        /**
+         * Returns the DeviceRegistryEnrich property type name (`"AWS::IoTAnalytics::Pipeline.DeviceRegistryEnrich"`)
+         */
+        static get DeviceRegistryEnrichTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.DeviceRegistryEnrich"
+        }
+        /**
+         * Returns the Channel property type name (`"AWS::IoTAnalytics::Pipeline.Channel"`)
+         */
+        static get ChannelTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Channel"
+        }
+        /**
+         * Returns the Filter property type name (`"AWS::IoTAnalytics::Pipeline.Filter"`)
+         */
+        static get FilterTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Filter"
+        }
       }
       export interface DatastoreProperties {
         /**
@@ -46029,6 +50547,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Datastore implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoTAnalytics::Datastore"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoTAnalytics::Datastore"
+        }
         Type: string
         Properties: DatastoreProperties
         /**
@@ -46037,7 +50561,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html
          */
         constructor(properties: DatastoreProperties) {
-            this.Type = "AWS::IoTAnalytics::Datastore";
+            this.Type = Datastore.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46077,6 +50601,12 @@ export namespace Cf {
          */
         static RetentionPeriod(properties: DatastoreRetentionPeriod) : DatastoreRetentionPeriod {
           return properties;
+        }
+        /**
+         * Returns the RetentionPeriod property type name (`"AWS::IoTAnalytics::Datastore.RetentionPeriod"`)
+         */
+        static get RetentionPeriodTypeName(): string {
+          return "AWS::IoTAnalytics::Datastore.RetentionPeriod"
         }
       }
     }
@@ -46632,6 +51162,12 @@ export namespace Cf {
         RetryStrategy?: JobDefinitionRetryStrategy
       }
       export class JobDefinition implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Batch::JobDefinition"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Batch::JobDefinition"
+        }
         Type: string
         Properties: JobDefinitionProperties
         /**
@@ -46640,7 +51176,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html
          */
         constructor(properties: JobDefinitionProperties) {
-            this.Type = "AWS::Batch::JobDefinition";
+            this.Type = JobDefinition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46753,6 +51289,66 @@ export namespace Cf {
         static VolumesHost(properties: JobDefinitionVolumesHost) : JobDefinitionVolumesHost {
           return properties;
         }
+        /**
+         * Returns the NodeProperties property type name (`"AWS::Batch::JobDefinition.NodeProperties"`)
+         */
+        static get NodePropertiesTypeName(): string {
+          return "AWS::Batch::JobDefinition.NodeProperties"
+        }
+        /**
+         * Returns the Volumes property type name (`"AWS::Batch::JobDefinition.Volumes"`)
+         */
+        static get VolumesTypeName(): string {
+          return "AWS::Batch::JobDefinition.Volumes"
+        }
+        /**
+         * Returns the RetryStrategy property type name (`"AWS::Batch::JobDefinition.RetryStrategy"`)
+         */
+        static get RetryStrategyTypeName(): string {
+          return "AWS::Batch::JobDefinition.RetryStrategy"
+        }
+        /**
+         * Returns the ContainerProperties property type name (`"AWS::Batch::JobDefinition.ContainerProperties"`)
+         */
+        static get ContainerPropertiesTypeName(): string {
+          return "AWS::Batch::JobDefinition.ContainerProperties"
+        }
+        /**
+         * Returns the Timeout property type name (`"AWS::Batch::JobDefinition.Timeout"`)
+         */
+        static get TimeoutTypeName(): string {
+          return "AWS::Batch::JobDefinition.Timeout"
+        }
+        /**
+         * Returns the NodeRangeProperty property type name (`"AWS::Batch::JobDefinition.NodeRangeProperty"`)
+         */
+        static get NodeRangePropertyTypeName(): string {
+          return "AWS::Batch::JobDefinition.NodeRangeProperty"
+        }
+        /**
+         * Returns the MountPoints property type name (`"AWS::Batch::JobDefinition.MountPoints"`)
+         */
+        static get MountPointsTypeName(): string {
+          return "AWS::Batch::JobDefinition.MountPoints"
+        }
+        /**
+         * Returns the Environment property type name (`"AWS::Batch::JobDefinition.Environment"`)
+         */
+        static get EnvironmentTypeName(): string {
+          return "AWS::Batch::JobDefinition.Environment"
+        }
+        /**
+         * Returns the Ulimit property type name (`"AWS::Batch::JobDefinition.Ulimit"`)
+         */
+        static get UlimitTypeName(): string {
+          return "AWS::Batch::JobDefinition.Ulimit"
+        }
+        /**
+         * Returns the VolumesHost property type name (`"AWS::Batch::JobDefinition.VolumesHost"`)
+         */
+        static get VolumesHostTypeName(): string {
+          return "AWS::Batch::JobDefinition.VolumesHost"
+        }
       }
       export interface JobQueueProperties {
         /**
@@ -46793,6 +51389,12 @@ export namespace Cf {
         JobQueueName?: string
       }
       export class JobQueue implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Batch::JobQueue"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Batch::JobQueue"
+        }
         Type: string
         Properties: JobQueueProperties
         /**
@@ -46801,7 +51403,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html
          */
         constructor(properties: JobQueueProperties) {
-            this.Type = "AWS::Batch::JobQueue";
+            this.Type = JobQueue.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46841,6 +51443,12 @@ export namespace Cf {
          */
         static ComputeEnvironmentOrder(properties: JobQueueComputeEnvironmentOrder) : JobQueueComputeEnvironmentOrder {
           return properties;
+        }
+        /**
+         * Returns the ComputeEnvironmentOrder property type name (`"AWS::Batch::JobQueue.ComputeEnvironmentOrder"`)
+         */
+        static get ComputeEnvironmentOrderTypeName(): string {
+          return "AWS::Batch::JobQueue.ComputeEnvironmentOrder"
         }
       }
       export interface ComputeEnvironmentProperties {
@@ -46891,6 +51499,12 @@ export namespace Cf {
         State?: string
       }
       export class ComputeEnvironment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Batch::ComputeEnvironment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Batch::ComputeEnvironment"
+        }
         Type: string
         Properties: ComputeEnvironmentProperties
         /**
@@ -46899,7 +51513,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html
          */
         constructor(properties: ComputeEnvironmentProperties) {
-            this.Type = "AWS::Batch::ComputeEnvironment";
+            this.Type = ComputeEnvironment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -46948,6 +51562,18 @@ export namespace Cf {
         static ComputeResources(properties: ComputeEnvironmentComputeResources) : ComputeEnvironmentComputeResources {
           return properties;
         }
+        /**
+         * Returns the LaunchTemplateSpecification property type name (`"AWS::Batch::ComputeEnvironment.LaunchTemplateSpecification"`)
+         */
+        static get LaunchTemplateSpecificationTypeName(): string {
+          return "AWS::Batch::ComputeEnvironment.LaunchTemplateSpecification"
+        }
+        /**
+         * Returns the ComputeResources property type name (`"AWS::Batch::ComputeEnvironment.ComputeResources"`)
+         */
+        static get ComputeResourcesTypeName(): string {
+          return "AWS::Batch::ComputeEnvironment.ComputeResources"
+        }
       }
     }
     export namespace DocDB {
@@ -46990,6 +51616,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBSubnetGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DocDB::DBSubnetGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DocDB::DBSubnetGroup"
+        }
         Type: string
         Properties: DBSubnetGroupProperties
         /**
@@ -46998,7 +51630,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbsubnetgroup.html
          */
         constructor(properties: DBSubnetGroupProperties) {
-            this.Type = "AWS::DocDB::DBSubnetGroup";
+            this.Type = DBSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47098,6 +51730,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBInstance implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DocDB::DBInstance"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DocDB::DBInstance"
+        }
         Type: string
         Properties: DBInstanceProperties
         /**
@@ -47106,7 +51744,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbinstance.html
          */
         constructor(properties: DBInstanceProperties) {
-            this.Type = "AWS::DocDB::DBInstance";
+            this.Type = DBInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47287,6 +51925,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBCluster implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DocDB::DBCluster"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DocDB::DBCluster"
+        }
         Type: string
         Properties: DBClusterProperties
         /**
@@ -47295,7 +51939,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html
          */
         constructor(properties: DBClusterProperties) {
-            this.Type = "AWS::DocDB::DBCluster";
+            this.Type = DBCluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47377,6 +52021,12 @@ export namespace Cf {
         Name?: string
       }
       export class DBClusterParameterGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DocDB::DBClusterParameterGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DocDB::DBClusterParameterGroup"
+        }
         Type: string
         Properties: DBClusterParameterGroupProperties
         /**
@@ -47385,7 +52035,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbclusterparametergroup.html
          */
         constructor(properties: DBClusterParameterGroupProperties) {
-            this.Type = "AWS::DocDB::DBClusterParameterGroup";
+            this.Type = DBClusterParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47597,6 +52247,12 @@ export namespace Cf {
         Engine?: string
       }
       export class Server implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorksCM::Server"`)
+         */
+        static get TypeName(): string {
+          return "AWS::OpsWorksCM::Server"
+        }
         Type: string
         Properties: ServerProperties
         /**
@@ -47605,7 +52261,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html
          */
         constructor(properties: ServerProperties) {
-            this.Type = "AWS::OpsWorksCM::Server";
+            this.Type = Server.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -47645,6 +52301,12 @@ export namespace Cf {
          */
         static EngineAttribute(properties: ServerEngineAttribute) : ServerEngineAttribute {
           return properties;
+        }
+        /**
+         * Returns the EngineAttribute property type name (`"AWS::OpsWorksCM::Server.EngineAttribute"`)
+         */
+        static get EngineAttributeTypeName(): string {
+          return "AWS::OpsWorksCM::Server.EngineAttribute"
         }
       }
     }
@@ -48345,6 +53007,12 @@ export namespace Cf {
         ThingName?: string
       }
       export class Thing implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoT::Thing"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoT::Thing"
+        }
         Type: string
         Properties: ThingProperties
         /**
@@ -48353,7 +53021,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thing.html
          */
         constructor(properties: ThingProperties) {
-            this.Type = "AWS::IoT::Thing";
+            this.Type = Thing.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48394,6 +53062,12 @@ export namespace Cf {
         static AttributePayload(properties: ThingAttributePayload) : ThingAttributePayload {
           return properties;
         }
+        /**
+         * Returns the AttributePayload property type name (`"AWS::IoT::Thing.AttributePayload"`)
+         */
+        static get AttributePayloadTypeName(): string {
+          return "AWS::IoT::Thing.AttributePayload"
+        }
       }
       export interface PolicyProperties {
         /**
@@ -48416,6 +53090,12 @@ export namespace Cf {
         PolicyName?: string
       }
       export class Policy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoT::Policy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoT::Policy"
+        }
         Type: string
         Properties: PolicyProperties
         /**
@@ -48424,7 +53104,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html
          */
         constructor(properties: PolicyProperties) {
-            this.Type = "AWS::IoT::Policy";
+            this.Type = Policy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48479,6 +53159,12 @@ export namespace Cf {
         TopicRulePayload: TopicRuleTopicRulePayload
       }
       export class TopicRule implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoT::TopicRule"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoT::TopicRule"
+        }
         Type: string
         Properties: TopicRuleProperties
         /**
@@ -48487,7 +53173,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html
          */
         constructor(properties: TopicRuleProperties) {
-            this.Type = "AWS::IoT::TopicRule";
+            this.Type = TopicRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48656,6 +53342,108 @@ export namespace Cf {
         static CloudwatchMetricAction(properties: TopicRuleCloudwatchMetricAction) : TopicRuleCloudwatchMetricAction {
           return properties;
         }
+        /**
+         * Returns the S3Action property type name (`"AWS::IoT::TopicRule.S3Action"`)
+         */
+        static get S3ActionTypeName(): string {
+          return "AWS::IoT::TopicRule.S3Action"
+        }
+        /**
+         * Returns the SqsAction property type name (`"AWS::IoT::TopicRule.SqsAction"`)
+         */
+        static get SqsActionTypeName(): string {
+          return "AWS::IoT::TopicRule.SqsAction"
+        }
+        /**
+         * Returns the PutItemInput property type name (`"AWS::IoT::TopicRule.PutItemInput"`)
+         */
+        static get PutItemInputTypeName(): string {
+          return "AWS::IoT::TopicRule.PutItemInput"
+        }
+        /**
+         * Returns the RepublishAction property type name (`"AWS::IoT::TopicRule.RepublishAction"`)
+         */
+        static get RepublishActionTypeName(): string {
+          return "AWS::IoT::TopicRule.RepublishAction"
+        }
+        /**
+         * Returns the SnsAction property type name (`"AWS::IoT::TopicRule.SnsAction"`)
+         */
+        static get SnsActionTypeName(): string {
+          return "AWS::IoT::TopicRule.SnsAction"
+        }
+        /**
+         * Returns the StepFunctionsAction property type name (`"AWS::IoT::TopicRule.StepFunctionsAction"`)
+         */
+        static get StepFunctionsActionTypeName(): string {
+          return "AWS::IoT::TopicRule.StepFunctionsAction"
+        }
+        /**
+         * Returns the FirehoseAction property type name (`"AWS::IoT::TopicRule.FirehoseAction"`)
+         */
+        static get FirehoseActionTypeName(): string {
+          return "AWS::IoT::TopicRule.FirehoseAction"
+        }
+        /**
+         * Returns the TopicRulePayload property type name (`"AWS::IoT::TopicRule.TopicRulePayload"`)
+         */
+        static get TopicRulePayloadTypeName(): string {
+          return "AWS::IoT::TopicRule.TopicRulePayload"
+        }
+        /**
+         * Returns the LambdaAction property type name (`"AWS::IoT::TopicRule.LambdaAction"`)
+         */
+        static get LambdaActionTypeName(): string {
+          return "AWS::IoT::TopicRule.LambdaAction"
+        }
+        /**
+         * Returns the DynamoDBv2Action property type name (`"AWS::IoT::TopicRule.DynamoDBv2Action"`)
+         */
+        static get DynamoDBv2ActionTypeName(): string {
+          return "AWS::IoT::TopicRule.DynamoDBv2Action"
+        }
+        /**
+         * Returns the ElasticsearchAction property type name (`"AWS::IoT::TopicRule.ElasticsearchAction"`)
+         */
+        static get ElasticsearchActionTypeName(): string {
+          return "AWS::IoT::TopicRule.ElasticsearchAction"
+        }
+        /**
+         * Returns the DynamoDBAction property type name (`"AWS::IoT::TopicRule.DynamoDBAction"`)
+         */
+        static get DynamoDBActionTypeName(): string {
+          return "AWS::IoT::TopicRule.DynamoDBAction"
+        }
+        /**
+         * Returns the KinesisAction property type name (`"AWS::IoT::TopicRule.KinesisAction"`)
+         */
+        static get KinesisActionTypeName(): string {
+          return "AWS::IoT::TopicRule.KinesisAction"
+        }
+        /**
+         * Returns the CloudwatchAlarmAction property type name (`"AWS::IoT::TopicRule.CloudwatchAlarmAction"`)
+         */
+        static get CloudwatchAlarmActionTypeName(): string {
+          return "AWS::IoT::TopicRule.CloudwatchAlarmAction"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::IoT::TopicRule.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::IoT::TopicRule.Action"
+        }
+        /**
+         * Returns the IotAnalyticsAction property type name (`"AWS::IoT::TopicRule.IotAnalyticsAction"`)
+         */
+        static get IotAnalyticsActionTypeName(): string {
+          return "AWS::IoT::TopicRule.IotAnalyticsAction"
+        }
+        /**
+         * Returns the CloudwatchMetricAction property type name (`"AWS::IoT::TopicRule.CloudwatchMetricAction"`)
+         */
+        static get CloudwatchMetricActionTypeName(): string {
+          return "AWS::IoT::TopicRule.CloudwatchMetricAction"
+        }
       }
       export interface PolicyPrincipalAttachmentProperties {
         /**
@@ -48678,6 +53466,12 @@ export namespace Cf {
         Principal: string
       }
       export class PolicyPrincipalAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoT::PolicyPrincipalAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoT::PolicyPrincipalAttachment"
+        }
         Type: string
         Properties: PolicyPrincipalAttachmentProperties
         /**
@@ -48686,7 +53480,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html
          */
         constructor(properties: PolicyPrincipalAttachmentProperties) {
-            this.Type = "AWS::IoT::PolicyPrincipalAttachment";
+            this.Type = PolicyPrincipalAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48741,6 +53535,12 @@ export namespace Cf {
         ThingName: string
       }
       export class ThingPrincipalAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoT::ThingPrincipalAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoT::ThingPrincipalAttachment"
+        }
         Type: string
         Properties: ThingPrincipalAttachmentProperties
         /**
@@ -48749,7 +53549,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html
          */
         constructor(properties: ThingPrincipalAttachmentProperties) {
-            this.Type = "AWS::IoT::ThingPrincipalAttachment";
+            this.Type = ThingPrincipalAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -48804,6 +53604,12 @@ export namespace Cf {
         Status: string
       }
       export class Certificate implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::IoT::Certificate"`)
+         */
+        static get TypeName(): string {
+          return "AWS::IoT::Certificate"
+        }
         Type: string
         Properties: CertificateProperties
         /**
@@ -48812,7 +53618,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html
          */
         constructor(properties: CertificateProperties) {
-            this.Type = "AWS::IoT::Certificate";
+            this.Type = Certificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -49254,6 +54060,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class LoadBalancer implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancing::LoadBalancer"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer"
+        }
         Type: string
         Properties: LoadBalancerProperties
         /**
@@ -49262,7 +54074,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html
          */
         constructor(properties: LoadBalancerProperties) {
-            this.Type = "AWS::ElasticLoadBalancing::LoadBalancer";
+            this.Type = LoadBalancer.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -49358,6 +54170,54 @@ export namespace Cf {
          */
         static AppCookieStickinessPolicy(properties: LoadBalancerAppCookieStickinessPolicy) : LoadBalancerAppCookieStickinessPolicy {
           return properties;
+        }
+        /**
+         * Returns the HealthCheck property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.HealthCheck"`)
+         */
+        static get HealthCheckTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.HealthCheck"
+        }
+        /**
+         * Returns the AccessLoggingPolicy property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.AccessLoggingPolicy"`)
+         */
+        static get AccessLoggingPolicyTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.AccessLoggingPolicy"
+        }
+        /**
+         * Returns the ConnectionSettings property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.ConnectionSettings"`)
+         */
+        static get ConnectionSettingsTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.ConnectionSettings"
+        }
+        /**
+         * Returns the LBCookieStickinessPolicy property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.LBCookieStickinessPolicy"`)
+         */
+        static get LBCookieStickinessPolicyTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.LBCookieStickinessPolicy"
+        }
+        /**
+         * Returns the ConnectionDrainingPolicy property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.ConnectionDrainingPolicy"`)
+         */
+        static get ConnectionDrainingPolicyTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.ConnectionDrainingPolicy"
+        }
+        /**
+         * Returns the Listeners property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.Listeners"`)
+         */
+        static get ListenersTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.Listeners"
+        }
+        /**
+         * Returns the Policies property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.Policies"`)
+         */
+        static get PoliciesTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.Policies"
+        }
+        /**
+         * Returns the AppCookieStickinessPolicy property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.AppCookieStickinessPolicy"`)
+         */
+        static get AppCookieStickinessPolicyTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.AppCookieStickinessPolicy"
         }
       }
     }
@@ -49636,6 +54496,12 @@ export namespace Cf {
         CertificateWallet?: string
       }
       export class Certificate implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DMS::Certificate"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DMS::Certificate"
+        }
         Type: string
         Properties: CertificateProperties
         /**
@@ -49644,7 +54510,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html
          */
         constructor(properties: CertificateProperties) {
-            this.Type = "AWS::DMS::Certificate";
+            this.Type = Certificate.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -49717,6 +54583,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ReplicationSubnetGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DMS::ReplicationSubnetGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DMS::ReplicationSubnetGroup"
+        }
         Type: string
         Properties: ReplicationSubnetGroupProperties
         /**
@@ -49725,7 +54597,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html
          */
         constructor(properties: ReplicationSubnetGroupProperties) {
-            this.Type = "AWS::DMS::ReplicationSubnetGroup";
+            this.Type = ReplicationSubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -49825,6 +54697,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class EventSubscription implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DMS::EventSubscription"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DMS::EventSubscription"
+        }
         Type: string
         Properties: EventSubscriptionProperties
         /**
@@ -49833,7 +54711,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html
          */
         constructor(properties: EventSubscriptionProperties) {
-            this.Type = "AWS::DMS::EventSubscription";
+            this.Type = EventSubscription.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -50032,6 +54910,12 @@ export namespace Cf {
         MongoDbSettings?: EndpointMongoDbSettings
       }
       export class Endpoint implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DMS::Endpoint"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DMS::Endpoint"
+        }
         Type: string
         Properties: EndpointProperties
         /**
@@ -50040,7 +54924,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html
          */
         constructor(properties: EndpointProperties) {
-            this.Type = "AWS::DMS::Endpoint";
+            this.Type = Endpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -50112,6 +54996,36 @@ export namespace Cf {
          */
         static DynamoDbSettings(properties: EndpointDynamoDbSettings) : EndpointDynamoDbSettings {
           return properties;
+        }
+        /**
+         * Returns the KinesisSettings property type name (`"AWS::DMS::Endpoint.KinesisSettings"`)
+         */
+        static get KinesisSettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.KinesisSettings"
+        }
+        /**
+         * Returns the S3Settings property type name (`"AWS::DMS::Endpoint.S3Settings"`)
+         */
+        static get S3SettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.S3Settings"
+        }
+        /**
+         * Returns the MongoDbSettings property type name (`"AWS::DMS::Endpoint.MongoDbSettings"`)
+         */
+        static get MongoDbSettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.MongoDbSettings"
+        }
+        /**
+         * Returns the ElasticsearchSettings property type name (`"AWS::DMS::Endpoint.ElasticsearchSettings"`)
+         */
+        static get ElasticsearchSettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.ElasticsearchSettings"
+        }
+        /**
+         * Returns the DynamoDbSettings property type name (`"AWS::DMS::Endpoint.DynamoDbSettings"`)
+         */
+        static get DynamoDbSettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.DynamoDbSettings"
         }
       }
       export interface ReplicationTaskProperties {
@@ -50198,6 +55112,12 @@ export namespace Cf {
         CdcStartTime?: number
       }
       export class ReplicationTask implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DMS::ReplicationTask"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DMS::ReplicationTask"
+        }
         Type: string
         Properties: ReplicationTaskProperties
         /**
@@ -50206,7 +55126,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html
          */
         constructor(properties: ReplicationTaskProperties) {
-            this.Type = "AWS::DMS::ReplicationTask";
+            this.Type = ReplicationTask.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -50369,6 +55289,12 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ReplicationInstance implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DMS::ReplicationInstance"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DMS::ReplicationInstance"
+        }
         Type: string
         Properties: ReplicationInstanceProperties
         /**
@@ -50377,7 +55303,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html
          */
         constructor(properties: ReplicationInstanceProperties) {
-            this.Type = "AWS::DMS::ReplicationInstance";
+            this.Type = ReplicationInstance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51419,6 +56345,12 @@ export namespace Cf {
         CatalogId: string
       }
       export class Table implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Table"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Glue::Table"
+        }
         Type: string
         Properties: TableProperties
         /**
@@ -51427,7 +56359,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html
          */
         constructor(properties: TableProperties) {
-            this.Type = "AWS::Glue::Table";
+            this.Type = Table.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51508,6 +56440,42 @@ export namespace Cf {
         static Column(properties: TableColumn) : TableColumn {
           return properties;
         }
+        /**
+         * Returns the SkewedInfo property type name (`"AWS::Glue::Table.SkewedInfo"`)
+         */
+        static get SkewedInfoTypeName(): string {
+          return "AWS::Glue::Table.SkewedInfo"
+        }
+        /**
+         * Returns the StorageDescriptor property type name (`"AWS::Glue::Table.StorageDescriptor"`)
+         */
+        static get StorageDescriptorTypeName(): string {
+          return "AWS::Glue::Table.StorageDescriptor"
+        }
+        /**
+         * Returns the TableInput property type name (`"AWS::Glue::Table.TableInput"`)
+         */
+        static get TableInputTypeName(): string {
+          return "AWS::Glue::Table.TableInput"
+        }
+        /**
+         * Returns the SerdeInfo property type name (`"AWS::Glue::Table.SerdeInfo"`)
+         */
+        static get SerdeInfoTypeName(): string {
+          return "AWS::Glue::Table.SerdeInfo"
+        }
+        /**
+         * Returns the Order property type name (`"AWS::Glue::Table.Order"`)
+         */
+        static get OrderTypeName(): string {
+          return "AWS::Glue::Table.Order"
+        }
+        /**
+         * Returns the Column property type name (`"AWS::Glue::Table.Column"`)
+         */
+        static get ColumnTypeName(): string {
+          return "AWS::Glue::Table.Column"
+        }
       }
       export interface ConnectionProperties {
         /**
@@ -51530,6 +56498,12 @@ export namespace Cf {
         CatalogId: string
       }
       export class Connection implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Connection"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Glue::Connection"
+        }
         Type: string
         Properties: ConnectionProperties
         /**
@@ -51538,7 +56512,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html
          */
         constructor(properties: ConnectionProperties) {
-            this.Type = "AWS::Glue::Connection";
+            this.Type = Connection.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51587,6 +56561,18 @@ export namespace Cf {
         static PhysicalConnectionRequirements(properties: ConnectionPhysicalConnectionRequirements) : ConnectionPhysicalConnectionRequirements {
           return properties;
         }
+        /**
+         * Returns the ConnectionInput property type name (`"AWS::Glue::Connection.ConnectionInput"`)
+         */
+        static get ConnectionInputTypeName(): string {
+          return "AWS::Glue::Connection.ConnectionInput"
+        }
+        /**
+         * Returns the PhysicalConnectionRequirements property type name (`"AWS::Glue::Connection.PhysicalConnectionRequirements"`)
+         */
+        static get PhysicalConnectionRequirementsTypeName(): string {
+          return "AWS::Glue::Connection.PhysicalConnectionRequirements"
+        }
       }
       export interface PartitionProperties {
         /**
@@ -51627,6 +56613,12 @@ export namespace Cf {
         PartitionInput: PartitionPartitionInput
       }
       export class Partition implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Partition"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Glue::Partition"
+        }
         Type: string
         Properties: PartitionProperties
         /**
@@ -51635,7 +56627,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html
          */
         constructor(properties: PartitionProperties) {
-            this.Type = "AWS::Glue::Partition";
+            this.Type = Partition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51715,6 +56707,42 @@ export namespace Cf {
          */
         static PartitionInput(properties: PartitionPartitionInput) : PartitionPartitionInput {
           return properties;
+        }
+        /**
+         * Returns the SerdeInfo property type name (`"AWS::Glue::Partition.SerdeInfo"`)
+         */
+        static get SerdeInfoTypeName(): string {
+          return "AWS::Glue::Partition.SerdeInfo"
+        }
+        /**
+         * Returns the StorageDescriptor property type name (`"AWS::Glue::Partition.StorageDescriptor"`)
+         */
+        static get StorageDescriptorTypeName(): string {
+          return "AWS::Glue::Partition.StorageDescriptor"
+        }
+        /**
+         * Returns the Order property type name (`"AWS::Glue::Partition.Order"`)
+         */
+        static get OrderTypeName(): string {
+          return "AWS::Glue::Partition.Order"
+        }
+        /**
+         * Returns the SkewedInfo property type name (`"AWS::Glue::Partition.SkewedInfo"`)
+         */
+        static get SkewedInfoTypeName(): string {
+          return "AWS::Glue::Partition.SkewedInfo"
+        }
+        /**
+         * Returns the Column property type name (`"AWS::Glue::Partition.Column"`)
+         */
+        static get ColumnTypeName(): string {
+          return "AWS::Glue::Partition.Column"
+        }
+        /**
+         * Returns the PartitionInput property type name (`"AWS::Glue::Partition.PartitionInput"`)
+         */
+        static get PartitionInputTypeName(): string {
+          return "AWS::Glue::Partition.PartitionInput"
         }
       }
       export interface JobProperties {
@@ -51810,6 +56838,12 @@ export namespace Cf {
         Name?: string
       }
       export class Job implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Job"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Glue::Job"
+        }
         Type: string
         Properties: JobProperties
         /**
@@ -51818,7 +56852,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html
          */
         constructor(properties: JobProperties) {
-            this.Type = "AWS::Glue::Job";
+            this.Type = Job.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51875,6 +56909,24 @@ export namespace Cf {
         static ExecutionProperty(properties: JobExecutionProperty) : JobExecutionProperty {
           return properties;
         }
+        /**
+         * Returns the JobCommand property type name (`"AWS::Glue::Job.JobCommand"`)
+         */
+        static get JobCommandTypeName(): string {
+          return "AWS::Glue::Job.JobCommand"
+        }
+        /**
+         * Returns the ConnectionsList property type name (`"AWS::Glue::Job.ConnectionsList"`)
+         */
+        static get ConnectionsListTypeName(): string {
+          return "AWS::Glue::Job.ConnectionsList"
+        }
+        /**
+         * Returns the ExecutionProperty property type name (`"AWS::Glue::Job.ExecutionProperty"`)
+         */
+        static get ExecutionPropertyTypeName(): string {
+          return "AWS::Glue::Job.ExecutionProperty"
+        }
       }
       export interface DatabaseProperties {
         /**
@@ -51897,6 +56949,12 @@ export namespace Cf {
         CatalogId: string
       }
       export class Database implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Database"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Glue::Database"
+        }
         Type: string
         Properties: DatabaseProperties
         /**
@@ -51905,7 +56963,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html
          */
         constructor(properties: DatabaseProperties) {
-            this.Type = "AWS::Glue::Database";
+            this.Type = Database.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -51945,6 +57003,12 @@ export namespace Cf {
          */
         static DatabaseInput(properties: DatabaseDatabaseInput) : DatabaseDatabaseInput {
           return properties;
+        }
+        /**
+         * Returns the DatabaseInput property type name (`"AWS::Glue::Database.DatabaseInput"`)
+         */
+        static get DatabaseInputTypeName(): string {
+          return "AWS::Glue::Database.DatabaseInput"
         }
       }
       export interface DevEndpointProperties {
@@ -52022,6 +57086,12 @@ export namespace Cf {
         RoleArn: string
       }
       export class DevEndpoint implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Glue::DevEndpoint"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Glue::DevEndpoint"
+        }
         Type: string
         Properties: DevEndpointProperties
         /**
@@ -52030,7 +57100,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html
          */
         constructor(properties: DevEndpointProperties) {
-            this.Type = "AWS::Glue::DevEndpoint";
+            this.Type = DevEndpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -52121,6 +57191,12 @@ export namespace Cf {
         Predicate?: TriggerPredicate
       }
       export class Trigger implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Trigger"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Glue::Trigger"
+        }
         Type: string
         Properties: TriggerProperties
         /**
@@ -52129,7 +57205,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html
          */
         constructor(properties: TriggerProperties) {
-            this.Type = "AWS::Glue::Trigger";
+            this.Type = Trigger.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -52185,6 +57261,24 @@ export namespace Cf {
          */
         static Predicate(properties: TriggerPredicate) : TriggerPredicate {
           return properties;
+        }
+        /**
+         * Returns the Action property type name (`"AWS::Glue::Trigger.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::Glue::Trigger.Action"
+        }
+        /**
+         * Returns the Condition property type name (`"AWS::Glue::Trigger.Condition"`)
+         */
+        static get ConditionTypeName(): string {
+          return "AWS::Glue::Trigger.Condition"
+        }
+        /**
+         * Returns the Predicate property type name (`"AWS::Glue::Trigger.Predicate"`)
+         */
+        static get PredicateTypeName(): string {
+          return "AWS::Glue::Trigger.Predicate"
         }
       }
       export interface CrawlerProperties {
@@ -52280,6 +57374,12 @@ export namespace Cf {
         Name?: string
       }
       export class Crawler implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Crawler"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Glue::Crawler"
+        }
         Type: string
         Properties: CrawlerProperties
         /**
@@ -52288,7 +57388,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html
          */
         constructor(properties: CrawlerProperties) {
-            this.Type = "AWS::Glue::Crawler";
+            this.Type = Crawler.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -52361,6 +57461,36 @@ export namespace Cf {
         static SchemaChangePolicy(properties: CrawlerSchemaChangePolicy) : CrawlerSchemaChangePolicy {
           return properties;
         }
+        /**
+         * Returns the Targets property type name (`"AWS::Glue::Crawler.Targets"`)
+         */
+        static get TargetsTypeName(): string {
+          return "AWS::Glue::Crawler.Targets"
+        }
+        /**
+         * Returns the JdbcTarget property type name (`"AWS::Glue::Crawler.JdbcTarget"`)
+         */
+        static get JdbcTargetTypeName(): string {
+          return "AWS::Glue::Crawler.JdbcTarget"
+        }
+        /**
+         * Returns the Schedule property type name (`"AWS::Glue::Crawler.Schedule"`)
+         */
+        static get ScheduleTypeName(): string {
+          return "AWS::Glue::Crawler.Schedule"
+        }
+        /**
+         * Returns the S3Target property type name (`"AWS::Glue::Crawler.S3Target"`)
+         */
+        static get S3TargetTypeName(): string {
+          return "AWS::Glue::Crawler.S3Target"
+        }
+        /**
+         * Returns the SchemaChangePolicy property type name (`"AWS::Glue::Crawler.SchemaChangePolicy"`)
+         */
+        static get SchemaChangePolicyTypeName(): string {
+          return "AWS::Glue::Crawler.SchemaChangePolicy"
+        }
       }
       export interface ClassifierProperties {
         /**
@@ -52392,6 +57522,12 @@ export namespace Cf {
         GrokClassifier?: ClassifierGrokClassifier
       }
       export class Classifier implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Classifier"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Glue::Classifier"
+        }
         Type: string
         Properties: ClassifierProperties
         /**
@@ -52400,7 +57536,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html
          */
         constructor(properties: ClassifierProperties) {
-            this.Type = "AWS::Glue::Classifier";
+            this.Type = Classifier.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -52456,6 +57592,24 @@ export namespace Cf {
          */
         static JsonClassifier(properties: ClassifierJsonClassifier) : ClassifierJsonClassifier {
           return properties;
+        }
+        /**
+         * Returns the XMLClassifier property type name (`"AWS::Glue::Classifier.XMLClassifier"`)
+         */
+        static get XMLClassifierTypeName(): string {
+          return "AWS::Glue::Classifier.XMLClassifier"
+        }
+        /**
+         * Returns the GrokClassifier property type name (`"AWS::Glue::Classifier.GrokClassifier"`)
+         */
+        static get GrokClassifierTypeName(): string {
+          return "AWS::Glue::Classifier.GrokClassifier"
+        }
+        /**
+         * Returns the JsonClassifier property type name (`"AWS::Glue::Classifier.JsonClassifier"`)
+         */
+        static get JsonClassifierTypeName(): string {
+          return "AWS::Glue::Classifier.JsonClassifier"
         }
       }
     }
@@ -52519,6 +57673,12 @@ export namespace Cf {
         Description: string
       }
       export class SecurityGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::SecurityGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElastiCache::SecurityGroup"
+        }
         Type: string
         Properties: SecurityGroupProperties
         /**
@@ -52527,7 +57687,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group.html
          */
         constructor(properties: SecurityGroupProperties) {
-            this.Type = "AWS::ElastiCache::SecurityGroup";
+            this.Type = SecurityGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -52591,6 +57751,12 @@ export namespace Cf {
         SubnetIds: string[]
       }
       export class SubnetGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::SubnetGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElastiCache::SubnetGroup"
+        }
         Type: string
         Properties: SubnetGroupProperties
         /**
@@ -52599,7 +57765,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html
          */
         constructor(properties: SubnetGroupProperties) {
-            this.Type = "AWS::ElastiCache::SubnetGroup";
+            this.Type = SubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -52663,6 +57829,12 @@ export namespace Cf {
         EC2SecurityGroupOwnerId?: string
       }
       export class SecurityGroupIngress implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::SecurityGroupIngress"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElastiCache::SecurityGroupIngress"
+        }
         Type: string
         Properties: SecurityGroupIngressProperties
         /**
@@ -52671,7 +57843,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html
          */
         constructor(properties: SecurityGroupIngressProperties) {
-            this.Type = "AWS::ElastiCache::SecurityGroupIngress";
+            this.Type = SecurityGroupIngress.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -52969,6 +58141,12 @@ export namespace Cf {
         TransitEncryptionEnabled?: boolean
       }
       export class ReplicationGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::ReplicationGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElastiCache::ReplicationGroup"
+        }
         Type: string
         Properties: ReplicationGroupProperties
         /**
@@ -52977,7 +58155,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html
          */
         constructor(properties: ReplicationGroupProperties) {
-            this.Type = "AWS::ElastiCache::ReplicationGroup";
+            this.Type = ReplicationGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -53018,6 +58196,12 @@ export namespace Cf {
         static NodeGroupConfiguration(properties: ReplicationGroupNodeGroupConfiguration) : ReplicationGroupNodeGroupConfiguration {
           return properties;
         }
+        /**
+         * Returns the NodeGroupConfiguration property type name (`"AWS::ElastiCache::ReplicationGroup.NodeGroupConfiguration"`)
+         */
+        static get NodeGroupConfigurationTypeName(): string {
+          return "AWS::ElastiCache::ReplicationGroup.NodeGroupConfiguration"
+        }
       }
       export interface ParameterGroupProperties {
         /**
@@ -53049,6 +58233,12 @@ export namespace Cf {
         Properties?: {[key: string]: string}
       }
       export class ParameterGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::ParameterGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElastiCache::ParameterGroup"
+        }
         Type: string
         Properties: ParameterGroupProperties
         /**
@@ -53057,7 +58247,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html
          */
         constructor(properties: ParameterGroupProperties) {
-            this.Type = "AWS::ElastiCache::ParameterGroup";
+            this.Type = ParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -53283,6 +58473,12 @@ export namespace Cf {
         VpcSecurityGroupIds?: string[]
       }
       export class CacheCluster implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::CacheCluster"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ElastiCache::CacheCluster"
+        }
         Type: string
         Properties: CacheClusterProperties
         /**
@@ -53291,7 +58487,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html
          */
         constructor(properties: CacheClusterProperties) {
-            this.Type = "AWS::ElastiCache::CacheCluster";
+            this.Type = CacheCluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -53863,6 +59059,12 @@ export namespace Cf {
         TriggerConfigurations?: DeploymentGroupTriggerConfig[]
       }
       export class DeploymentGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CodeDeploy::DeploymentGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup"
+        }
         Type: string
         Properties: DeploymentGroupProperties
         /**
@@ -53871,7 +59073,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html
          */
         constructor(properties: DeploymentGroupProperties) {
-            this.Type = "AWS::CodeDeploy::DeploymentGroup";
+            this.Type = DeploymentGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54048,6 +59250,114 @@ export namespace Cf {
         static EC2TagSetListObject(properties: DeploymentGroupEC2TagSetListObject) : DeploymentGroupEC2TagSetListObject {
           return properties;
         }
+        /**
+         * Returns the LoadBalancerInfo property type name (`"AWS::CodeDeploy::DeploymentGroup.LoadBalancerInfo"`)
+         */
+        static get LoadBalancerInfoTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.LoadBalancerInfo"
+        }
+        /**
+         * Returns the RevisionLocation property type name (`"AWS::CodeDeploy::DeploymentGroup.RevisionLocation"`)
+         */
+        static get RevisionLocationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.RevisionLocation"
+        }
+        /**
+         * Returns the S3Location property type name (`"AWS::CodeDeploy::DeploymentGroup.S3Location"`)
+         */
+        static get S3LocationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.S3Location"
+        }
+        /**
+         * Returns the TriggerConfig property type name (`"AWS::CodeDeploy::DeploymentGroup.TriggerConfig"`)
+         */
+        static get TriggerConfigTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.TriggerConfig"
+        }
+        /**
+         * Returns the TagFilter property type name (`"AWS::CodeDeploy::DeploymentGroup.TagFilter"`)
+         */
+        static get TagFilterTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.TagFilter"
+        }
+        /**
+         * Returns the GitHubLocation property type name (`"AWS::CodeDeploy::DeploymentGroup.GitHubLocation"`)
+         */
+        static get GitHubLocationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.GitHubLocation"
+        }
+        /**
+         * Returns the TargetGroupInfo property type name (`"AWS::CodeDeploy::DeploymentGroup.TargetGroupInfo"`)
+         */
+        static get TargetGroupInfoTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.TargetGroupInfo"
+        }
+        /**
+         * Returns the EC2TagSet property type name (`"AWS::CodeDeploy::DeploymentGroup.EC2TagSet"`)
+         */
+        static get EC2TagSetTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.EC2TagSet"
+        }
+        /**
+         * Returns the ELBInfo property type name (`"AWS::CodeDeploy::DeploymentGroup.ELBInfo"`)
+         */
+        static get ELBInfoTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.ELBInfo"
+        }
+        /**
+         * Returns the AlarmConfiguration property type name (`"AWS::CodeDeploy::DeploymentGroup.AlarmConfiguration"`)
+         */
+        static get AlarmConfigurationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.AlarmConfiguration"
+        }
+        /**
+         * Returns the OnPremisesTagSetListObject property type name (`"AWS::CodeDeploy::DeploymentGroup.OnPremisesTagSetListObject"`)
+         */
+        static get OnPremisesTagSetListObjectTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.OnPremisesTagSetListObject"
+        }
+        /**
+         * Returns the DeploymentStyle property type name (`"AWS::CodeDeploy::DeploymentGroup.DeploymentStyle"`)
+         */
+        static get DeploymentStyleTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.DeploymentStyle"
+        }
+        /**
+         * Returns the Alarm property type name (`"AWS::CodeDeploy::DeploymentGroup.Alarm"`)
+         */
+        static get AlarmTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.Alarm"
+        }
+        /**
+         * Returns the EC2TagFilter property type name (`"AWS::CodeDeploy::DeploymentGroup.EC2TagFilter"`)
+         */
+        static get EC2TagFilterTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.EC2TagFilter"
+        }
+        /**
+         * Returns the OnPremisesTagSet property type name (`"AWS::CodeDeploy::DeploymentGroup.OnPremisesTagSet"`)
+         */
+        static get OnPremisesTagSetTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.OnPremisesTagSet"
+        }
+        /**
+         * Returns the AutoRollbackConfiguration property type name (`"AWS::CodeDeploy::DeploymentGroup.AutoRollbackConfiguration"`)
+         */
+        static get AutoRollbackConfigurationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.AutoRollbackConfiguration"
+        }
+        /**
+         * Returns the Deployment property type name (`"AWS::CodeDeploy::DeploymentGroup.Deployment"`)
+         */
+        static get DeploymentTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.Deployment"
+        }
+        /**
+         * Returns the EC2TagSetListObject property type name (`"AWS::CodeDeploy::DeploymentGroup.EC2TagSetListObject"`)
+         */
+        static get EC2TagSetListObjectTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.EC2TagSetListObject"
+        }
       }
       export interface DeploymentConfigProperties {
         /**
@@ -54070,6 +59380,12 @@ export namespace Cf {
         MinimumHealthyHosts?: DeploymentConfigMinimumHealthyHosts
       }
       export class DeploymentConfig implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CodeDeploy::DeploymentConfig"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CodeDeploy::DeploymentConfig"
+        }
         Type: string
         Properties: DeploymentConfigProperties
         /**
@@ -54078,7 +59394,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html
          */
         constructor(properties: DeploymentConfigProperties) {
-            this.Type = "AWS::CodeDeploy::DeploymentConfig";
+            this.Type = DeploymentConfig.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54119,6 +59435,12 @@ export namespace Cf {
         static MinimumHealthyHosts(properties: DeploymentConfigMinimumHealthyHosts) : DeploymentConfigMinimumHealthyHosts {
           return properties;
         }
+        /**
+         * Returns the MinimumHealthyHosts property type name (`"AWS::CodeDeploy::DeploymentConfig.MinimumHealthyHosts"`)
+         */
+        static get MinimumHealthyHostsTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentConfig.MinimumHealthyHosts"
+        }
       }
       export interface ApplicationProperties {
         /**
@@ -54141,6 +59463,12 @@ export namespace Cf {
         ComputePlatform?: string
       }
       export class Application implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CodeDeploy::Application"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CodeDeploy::Application"
+        }
         Type: string
         Properties: ApplicationProperties
         /**
@@ -54149,7 +59477,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html
          */
         constructor(properties: ApplicationProperties) {
-            this.Type = "AWS::CodeDeploy::Application";
+            this.Type = Application.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54697,6 +60025,12 @@ export namespace Cf {
         Filter: ReceiptFilterFilter
       }
       export class ReceiptFilter implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SES::ReceiptFilter"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SES::ReceiptFilter"
+        }
         Type: string
         Properties: ReceiptFilterProperties
         /**
@@ -54705,7 +60039,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptfilter.html
          */
         constructor(properties: ReceiptFilterProperties) {
-            this.Type = "AWS::SES::ReceiptFilter";
+            this.Type = ReceiptFilter.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54754,6 +60088,18 @@ export namespace Cf {
         static IpFilter(properties: ReceiptFilterIpFilter) : ReceiptFilterIpFilter {
           return properties;
         }
+        /**
+         * Returns the Filter property type name (`"AWS::SES::ReceiptFilter.Filter"`)
+         */
+        static get FilterTypeName(): string {
+          return "AWS::SES::ReceiptFilter.Filter"
+        }
+        /**
+         * Returns the IpFilter property type name (`"AWS::SES::ReceiptFilter.IpFilter"`)
+         */
+        static get IpFilterTypeName(): string {
+          return "AWS::SES::ReceiptFilter.IpFilter"
+        }
       }
       export interface ReceiptRuleProperties {
         /**
@@ -54785,6 +60131,12 @@ export namespace Cf {
         RuleSetName: string
       }
       export class ReceiptRule implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SES::ReceiptRule"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SES::ReceiptRule"
+        }
         Type: string
         Properties: ReceiptRuleProperties
         /**
@@ -54793,7 +60145,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html
          */
         constructor(properties: ReceiptRuleProperties) {
-            this.Type = "AWS::SES::ReceiptRule";
+            this.Type = ReceiptRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54898,6 +60250,60 @@ export namespace Cf {
         static AddHeaderAction(properties: ReceiptRuleAddHeaderAction) : ReceiptRuleAddHeaderAction {
           return properties;
         }
+        /**
+         * Returns the BounceAction property type name (`"AWS::SES::ReceiptRule.BounceAction"`)
+         */
+        static get BounceActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.BounceAction"
+        }
+        /**
+         * Returns the WorkmailAction property type name (`"AWS::SES::ReceiptRule.WorkmailAction"`)
+         */
+        static get WorkmailActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.WorkmailAction"
+        }
+        /**
+         * Returns the StopAction property type name (`"AWS::SES::ReceiptRule.StopAction"`)
+         */
+        static get StopActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.StopAction"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::SES::ReceiptRule.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.Action"
+        }
+        /**
+         * Returns the SNSAction property type name (`"AWS::SES::ReceiptRule.SNSAction"`)
+         */
+        static get SNSActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.SNSAction"
+        }
+        /**
+         * Returns the Rule property type name (`"AWS::SES::ReceiptRule.Rule"`)
+         */
+        static get RuleTypeName(): string {
+          return "AWS::SES::ReceiptRule.Rule"
+        }
+        /**
+         * Returns the LambdaAction property type name (`"AWS::SES::ReceiptRule.LambdaAction"`)
+         */
+        static get LambdaActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.LambdaAction"
+        }
+        /**
+         * Returns the S3Action property type name (`"AWS::SES::ReceiptRule.S3Action"`)
+         */
+        static get S3ActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.S3Action"
+        }
+        /**
+         * Returns the AddHeaderAction property type name (`"AWS::SES::ReceiptRule.AddHeaderAction"`)
+         */
+        static get AddHeaderActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.AddHeaderAction"
+        }
       }
       export interface ConfigurationSetEventDestinationProperties {
         /**
@@ -54920,6 +60326,12 @@ export namespace Cf {
         EventDestination: ConfigurationSetEventDestinationEventDestination
       }
       export class ConfigurationSetEventDestination implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SES::ConfigurationSetEventDestination"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SES::ConfigurationSetEventDestination"
+        }
         Type: string
         Properties: ConfigurationSetEventDestinationProperties
         /**
@@ -54928,7 +60340,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationseteventdestination.html
          */
         constructor(properties: ConfigurationSetEventDestinationProperties) {
-            this.Type = "AWS::SES::ConfigurationSetEventDestination";
+            this.Type = ConfigurationSetEventDestination.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -54993,6 +60405,30 @@ export namespace Cf {
         static DimensionConfiguration(properties: ConfigurationSetEventDestinationDimensionConfiguration) : ConfigurationSetEventDestinationDimensionConfiguration {
           return properties;
         }
+        /**
+         * Returns the EventDestination property type name (`"AWS::SES::ConfigurationSetEventDestination.EventDestination"`)
+         */
+        static get EventDestinationTypeName(): string {
+          return "AWS::SES::ConfigurationSetEventDestination.EventDestination"
+        }
+        /**
+         * Returns the CloudWatchDestination property type name (`"AWS::SES::ConfigurationSetEventDestination.CloudWatchDestination"`)
+         */
+        static get CloudWatchDestinationTypeName(): string {
+          return "AWS::SES::ConfigurationSetEventDestination.CloudWatchDestination"
+        }
+        /**
+         * Returns the KinesisFirehoseDestination property type name (`"AWS::SES::ConfigurationSetEventDestination.KinesisFirehoseDestination"`)
+         */
+        static get KinesisFirehoseDestinationTypeName(): string {
+          return "AWS::SES::ConfigurationSetEventDestination.KinesisFirehoseDestination"
+        }
+        /**
+         * Returns the DimensionConfiguration property type name (`"AWS::SES::ConfigurationSetEventDestination.DimensionConfiguration"`)
+         */
+        static get DimensionConfigurationTypeName(): string {
+          return "AWS::SES::ConfigurationSetEventDestination.DimensionConfiguration"
+        }
       }
       export interface TemplateProperties {
         /**
@@ -55006,6 +60442,12 @@ export namespace Cf {
         Template?: TemplateTemplate
       }
       export class Template implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SES::Template"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SES::Template"
+        }
         Type: string
         Properties: TemplateProperties
         /**
@@ -55014,7 +60456,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-template.html
          */
         constructor(properties: TemplateProperties) {
-            this.Type = "AWS::SES::Template";
+            this.Type = Template.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -55055,6 +60497,12 @@ export namespace Cf {
         static Template(properties: TemplateTemplate) : TemplateTemplate {
           return properties;
         }
+        /**
+         * Returns the Template property type name (`"AWS::SES::Template.Template"`)
+         */
+        static get TemplateTypeName(): string {
+          return "AWS::SES::Template.Template"
+        }
       }
       export interface ConfigurationSetProperties {
         /**
@@ -55068,6 +60516,12 @@ export namespace Cf {
         Name?: string
       }
       export class ConfigurationSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SES::ConfigurationSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SES::ConfigurationSet"
+        }
         Type: string
         Properties: ConfigurationSetProperties
         /**
@@ -55076,7 +60530,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationset.html
          */
         constructor(properties: ConfigurationSetProperties) {
-            this.Type = "AWS::SES::ConfigurationSet";
+            this.Type = ConfigurationSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -55122,6 +60576,12 @@ export namespace Cf {
         RuleSetName?: string
       }
       export class ReceiptRuleSet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SES::ReceiptRuleSet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SES::ReceiptRuleSet"
+        }
         Type: string
         Properties: ReceiptRuleSetProperties
         /**
@@ -55130,7 +60590,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptruleset.html
          */
         constructor(properties: ReceiptRuleSetProperties) {
-            this.Type = "AWS::SES::ReceiptRuleSet";
+            this.Type = ReceiptRuleSet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -55299,6 +60759,12 @@ export namespace Cf {
         RotationRules?: RotationScheduleRotationRules
       }
       export class RotationSchedule implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SecretsManager::RotationSchedule"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SecretsManager::RotationSchedule"
+        }
         Type: string
         Properties: RotationScheduleProperties
         /**
@@ -55307,7 +60773,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-rotationschedule.html
          */
         constructor(properties: RotationScheduleProperties) {
-            this.Type = "AWS::SecretsManager::RotationSchedule";
+            this.Type = RotationSchedule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -55347,6 +60813,12 @@ export namespace Cf {
          */
         static RotationRules(properties: RotationScheduleRotationRules) : RotationScheduleRotationRules {
           return properties;
+        }
+        /**
+         * Returns the RotationRules property type name (`"AWS::SecretsManager::RotationSchedule.RotationRules"`)
+         */
+        static get RotationRulesTypeName(): string {
+          return "AWS::SecretsManager::RotationSchedule.RotationRules"
         }
       }
       export interface SecretProperties {
@@ -55406,6 +60878,12 @@ export namespace Cf {
         Name?: string
       }
       export class Secret implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SecretsManager::Secret"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SecretsManager::Secret"
+        }
         Type: string
         Properties: SecretProperties
         /**
@@ -55414,7 +60892,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-secret.html
          */
         constructor(properties: SecretProperties) {
-            this.Type = "AWS::SecretsManager::Secret";
+            this.Type = Secret.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -55455,6 +60933,12 @@ export namespace Cf {
         static GenerateSecretString(properties: SecretGenerateSecretString) : SecretGenerateSecretString {
           return properties;
         }
+        /**
+         * Returns the GenerateSecretString property type name (`"AWS::SecretsManager::Secret.GenerateSecretString"`)
+         */
+        static get GenerateSecretStringTypeName(): string {
+          return "AWS::SecretsManager::Secret.GenerateSecretString"
+        }
       }
       export interface ResourcePolicyProperties {
         /**
@@ -55477,6 +60961,12 @@ export namespace Cf {
         ResourcePolicy: object
       }
       export class ResourcePolicy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SecretsManager::ResourcePolicy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SecretsManager::ResourcePolicy"
+        }
         Type: string
         Properties: ResourcePolicyProperties
         /**
@@ -55485,7 +60975,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-resourcepolicy.html
          */
         constructor(properties: ResourcePolicyProperties) {
-            this.Type = "AWS::SecretsManager::ResourcePolicy";
+            this.Type = ResourcePolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -55549,6 +61039,12 @@ export namespace Cf {
         TargetId: string
       }
       export class SecretTargetAttachment implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SecretsManager::SecretTargetAttachment"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SecretsManager::SecretTargetAttachment"
+        }
         Type: string
         Properties: SecretTargetAttachmentProperties
         /**
@@ -55557,7 +61053,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-secrettargetattachment.html
          */
         constructor(properties: SecretTargetAttachmentProperties) {
-            this.Type = "AWS::SecretsManager::SecretTargetAttachment";
+            this.Type = SecretTargetAttachment.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -56226,6 +61722,12 @@ export namespace Cf {
         Cache?: ProjectProjectCache
       }
       export class Project implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CodeBuild::Project"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CodeBuild::Project"
+        }
         Type: string
         Properties: ProjectProperties
         /**
@@ -56234,7 +61736,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html
          */
         constructor(properties: ProjectProperties) {
-            this.Type = "AWS::CodeBuild::Project";
+            this.Type = Project.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -56378,6 +61880,90 @@ export namespace Cf {
          */
         static WebhookFilter(properties: ProjectWebhookFilter) : ProjectWebhookFilter {
           return properties;
+        }
+        /**
+         * Returns the Artifacts property type name (`"AWS::CodeBuild::Project.Artifacts"`)
+         */
+        static get ArtifactsTypeName(): string {
+          return "AWS::CodeBuild::Project.Artifacts"
+        }
+        /**
+         * Returns the LogsConfig property type name (`"AWS::CodeBuild::Project.LogsConfig"`)
+         */
+        static get LogsConfigTypeName(): string {
+          return "AWS::CodeBuild::Project.LogsConfig"
+        }
+        /**
+         * Returns the RegistryCredential property type name (`"AWS::CodeBuild::Project.RegistryCredential"`)
+         */
+        static get RegistryCredentialTypeName(): string {
+          return "AWS::CodeBuild::Project.RegistryCredential"
+        }
+        /**
+         * Returns the SourceAuth property type name (`"AWS::CodeBuild::Project.SourceAuth"`)
+         */
+        static get SourceAuthTypeName(): string {
+          return "AWS::CodeBuild::Project.SourceAuth"
+        }
+        /**
+         * Returns the Environment property type name (`"AWS::CodeBuild::Project.Environment"`)
+         */
+        static get EnvironmentTypeName(): string {
+          return "AWS::CodeBuild::Project.Environment"
+        }
+        /**
+         * Returns the CloudWatchLogsConfig property type name (`"AWS::CodeBuild::Project.CloudWatchLogsConfig"`)
+         */
+        static get CloudWatchLogsConfigTypeName(): string {
+          return "AWS::CodeBuild::Project.CloudWatchLogsConfig"
+        }
+        /**
+         * Returns the ProjectCache property type name (`"AWS::CodeBuild::Project.ProjectCache"`)
+         */
+        static get ProjectCacheTypeName(): string {
+          return "AWS::CodeBuild::Project.ProjectCache"
+        }
+        /**
+         * Returns the FilterGroup property type name (`"AWS::CodeBuild::Project.FilterGroup"`)
+         */
+        static get FilterGroupTypeName(): string {
+          return "AWS::CodeBuild::Project.FilterGroup"
+        }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::CodeBuild::Project.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::CodeBuild::Project.VpcConfig"
+        }
+        /**
+         * Returns the ProjectTriggers property type name (`"AWS::CodeBuild::Project.ProjectTriggers"`)
+         */
+        static get ProjectTriggersTypeName(): string {
+          return "AWS::CodeBuild::Project.ProjectTriggers"
+        }
+        /**
+         * Returns the EnvironmentVariable property type name (`"AWS::CodeBuild::Project.EnvironmentVariable"`)
+         */
+        static get EnvironmentVariableTypeName(): string {
+          return "AWS::CodeBuild::Project.EnvironmentVariable"
+        }
+        /**
+         * Returns the S3LogsConfig property type name (`"AWS::CodeBuild::Project.S3LogsConfig"`)
+         */
+        static get S3LogsConfigTypeName(): string {
+          return "AWS::CodeBuild::Project.S3LogsConfig"
+        }
+        /**
+         * Returns the Source property type name (`"AWS::CodeBuild::Project.Source"`)
+         */
+        static get SourceTypeName(): string {
+          return "AWS::CodeBuild::Project.Source"
+        }
+        /**
+         * Returns the WebhookFilter property type name (`"AWS::CodeBuild::Project.WebhookFilter"`)
+         */
+        static get WebhookFilterTypeName(): string {
+          return "AWS::CodeBuild::Project.WebhookFilter"
         }
       }
     }
@@ -56687,6 +62273,12 @@ export namespace Cf {
         Budget: BudgetBudgetData
       }
       export class Budget implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Budgets::Budget"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Budgets::Budget"
+        }
         Type: string
         Properties: BudgetProperties
         /**
@@ -56695,7 +62287,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html
          */
         constructor(properties: BudgetProperties) {
-            this.Type = "AWS::Budgets::Budget";
+            this.Type = Budget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -56784,6 +62376,48 @@ export namespace Cf {
         static Spend(properties: BudgetSpend) : BudgetSpend {
           return properties;
         }
+        /**
+         * Returns the NotificationWithSubscribers property type name (`"AWS::Budgets::Budget.NotificationWithSubscribers"`)
+         */
+        static get NotificationWithSubscribersTypeName(): string {
+          return "AWS::Budgets::Budget.NotificationWithSubscribers"
+        }
+        /**
+         * Returns the Subscriber property type name (`"AWS::Budgets::Budget.Subscriber"`)
+         */
+        static get SubscriberTypeName(): string {
+          return "AWS::Budgets::Budget.Subscriber"
+        }
+        /**
+         * Returns the Notification property type name (`"AWS::Budgets::Budget.Notification"`)
+         */
+        static get NotificationTypeName(): string {
+          return "AWS::Budgets::Budget.Notification"
+        }
+        /**
+         * Returns the BudgetData property type name (`"AWS::Budgets::Budget.BudgetData"`)
+         */
+        static get BudgetDataTypeName(): string {
+          return "AWS::Budgets::Budget.BudgetData"
+        }
+        /**
+         * Returns the CostTypes property type name (`"AWS::Budgets::Budget.CostTypes"`)
+         */
+        static get CostTypesTypeName(): string {
+          return "AWS::Budgets::Budget.CostTypes"
+        }
+        /**
+         * Returns the TimePeriod property type name (`"AWS::Budgets::Budget.TimePeriod"`)
+         */
+        static get TimePeriodTypeName(): string {
+          return "AWS::Budgets::Budget.TimePeriod"
+        }
+        /**
+         * Returns the Spend property type name (`"AWS::Budgets::Budget.Spend"`)
+         */
+        static get SpendTypeName(): string {
+          return "AWS::Budgets::Budget.Spend"
+        }
       }
     }
     export namespace DAX {
@@ -56828,6 +62462,12 @@ export namespace Cf {
         SubnetIds: string[]
       }
       export class SubnetGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DAX::SubnetGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DAX::SubnetGroup"
+        }
         Type: string
         Properties: SubnetGroupProperties
         /**
@@ -56836,7 +62476,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-subnetgroup.html
          */
         constructor(properties: SubnetGroupProperties) {
-            this.Type = "AWS::DAX::SubnetGroup";
+            this.Type = SubnetGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -56900,6 +62540,12 @@ export namespace Cf {
         ParameterGroupName?: string
       }
       export class ParameterGroup implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DAX::ParameterGroup"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DAX::ParameterGroup"
+        }
         Type: string
         Properties: ParameterGroupProperties
         /**
@@ -56908,7 +62554,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-parametergroup.html
          */
         constructor(properties: ParameterGroupProperties) {
-            this.Type = "AWS::DAX::ParameterGroup";
+            this.Type = ParameterGroup.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57062,6 +62708,12 @@ export namespace Cf {
         Tags?: object
       }
       export class Cluster implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DAX::Cluster"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DAX::Cluster"
+        }
         Type: string
         Properties: ClusterProperties
         /**
@@ -57070,7 +62722,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html
          */
         constructor(properties: ClusterProperties) {
-            this.Type = "AWS::DAX::Cluster";
+            this.Type = Cluster.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57110,6 +62762,12 @@ export namespace Cf {
          */
         static SSESpecification(properties: ClusterSSESpecification) : ClusterSSESpecification {
           return properties;
+        }
+        /**
+         * Returns the SSESpecification property type name (`"AWS::DAX::Cluster.SSESpecification"`)
+         */
+        static get SSESpecificationTypeName(): string {
+          return "AWS::DAX::Cluster.SSESpecification"
         }
       }
     }
@@ -57312,6 +62970,12 @@ export namespace Cf {
         WindowsConfiguration?: FileSystemWindowsConfiguration
       }
       export class FileSystem implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::FSx::FileSystem"`)
+         */
+        static get TypeName(): string {
+          return "AWS::FSx::FileSystem"
+        }
         Type: string
         Properties: FileSystemProperties
         /**
@@ -57320,7 +62984,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html
          */
         constructor(properties: FileSystemProperties) {
-            this.Type = "AWS::FSx::FileSystem";
+            this.Type = FileSystem.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57376,6 +63040,24 @@ export namespace Cf {
          */
         static WindowsConfiguration(properties: FileSystemWindowsConfiguration) : FileSystemWindowsConfiguration {
           return properties;
+        }
+        /**
+         * Returns the TagEntry property type name (`"AWS::FSx::FileSystem.TagEntry"`)
+         */
+        static get TagEntryTypeName(): string {
+          return "AWS::FSx::FileSystem.TagEntry"
+        }
+        /**
+         * Returns the LustreConfiguration property type name (`"AWS::FSx::FileSystem.LustreConfiguration"`)
+         */
+        static get LustreConfigurationTypeName(): string {
+          return "AWS::FSx::FileSystem.LustreConfiguration"
+        }
+        /**
+         * Returns the WindowsConfiguration property type name (`"AWS::FSx::FileSystem.WindowsConfiguration"`)
+         */
+        static get WindowsConfigurationTypeName(): string {
+          return "AWS::FSx::FileSystem.WindowsConfiguration"
         }
       }
     }
@@ -57584,6 +63266,12 @@ export namespace Cf {
         PipelineTags?: PipelinePipelineTag[]
       }
       export class Pipeline implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DataPipeline::Pipeline"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DataPipeline::Pipeline"
+        }
         Type: string
         Properties: PipelineProperties
         /**
@@ -57592,7 +63280,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html
          */
         constructor(properties: PipelineProperties) {
-            this.Type = "AWS::DataPipeline::Pipeline";
+            this.Type = Pipeline.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57672,6 +63360,42 @@ export namespace Cf {
          */
         static Field(properties: PipelineField) : PipelineField {
           return properties;
+        }
+        /**
+         * Returns the ParameterAttribute property type name (`"AWS::DataPipeline::Pipeline.ParameterAttribute"`)
+         */
+        static get ParameterAttributeTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.ParameterAttribute"
+        }
+        /**
+         * Returns the PipelineTag property type name (`"AWS::DataPipeline::Pipeline.PipelineTag"`)
+         */
+        static get PipelineTagTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.PipelineTag"
+        }
+        /**
+         * Returns the ParameterObject property type name (`"AWS::DataPipeline::Pipeline.ParameterObject"`)
+         */
+        static get ParameterObjectTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.ParameterObject"
+        }
+        /**
+         * Returns the PipelineObject property type name (`"AWS::DataPipeline::Pipeline.PipelineObject"`)
+         */
+        static get PipelineObjectTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.PipelineObject"
+        }
+        /**
+         * Returns the ParameterValue property type name (`"AWS::DataPipeline::Pipeline.ParameterValue"`)
+         */
+        static get ParameterValueTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.ParameterValue"
+        }
+        /**
+         * Returns the Field property type name (`"AWS::DataPipeline::Pipeline.Field"`)
+         */
+        static get FieldTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.Field"
         }
       }
     }
@@ -57773,6 +63497,12 @@ export namespace Cf {
         Name?: string
       }
       export class ResolverRule implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Route53Resolver::ResolverRule"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Route53Resolver::ResolverRule"
+        }
         Type: string
         Properties: ResolverRuleProperties
         /**
@@ -57781,7 +63511,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html
          */
         constructor(properties: ResolverRuleProperties) {
-            this.Type = "AWS::Route53Resolver::ResolverRule";
+            this.Type = ResolverRule.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57822,6 +63552,12 @@ export namespace Cf {
         static TargetAddress(properties: ResolverRuleTargetAddress) : ResolverRuleTargetAddress {
           return properties;
         }
+        /**
+         * Returns the TargetAddress property type name (`"AWS::Route53Resolver::ResolverRule.TargetAddress"`)
+         */
+        static get TargetAddressTypeName(): string {
+          return "AWS::Route53Resolver::ResolverRule.TargetAddress"
+        }
       }
       export interface ResolverRuleAssociationProperties {
         /**
@@ -57853,6 +63589,12 @@ export namespace Cf {
         Name?: string
       }
       export class ResolverRuleAssociation implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Route53Resolver::ResolverRuleAssociation"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Route53Resolver::ResolverRuleAssociation"
+        }
         Type: string
         Properties: ResolverRuleAssociationProperties
         /**
@@ -57861,7 +63603,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverruleassociation.html
          */
         constructor(properties: ResolverRuleAssociationProperties) {
-            this.Type = "AWS::Route53Resolver::ResolverRuleAssociation";
+            this.Type = ResolverRuleAssociation.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57943,6 +63685,12 @@ export namespace Cf {
         Name?: string
       }
       export class ResolverEndpoint implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Route53Resolver::ResolverEndpoint"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Route53Resolver::ResolverEndpoint"
+        }
         Type: string
         Properties: ResolverEndpointProperties
         /**
@@ -57951,7 +63699,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html
          */
         constructor(properties: ResolverEndpointProperties) {
-            this.Type = "AWS::Route53Resolver::ResolverEndpoint";
+            this.Type = ResolverEndpoint.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -57991,6 +63739,12 @@ export namespace Cf {
          */
         static IpAddressRequest(properties: ResolverEndpointIpAddressRequest) : ResolverEndpointIpAddressRequest {
           return properties;
+        }
+        /**
+         * Returns the IpAddressRequest property type name (`"AWS::Route53Resolver::ResolverEndpoint.IpAddressRequest"`)
+         */
+        static get IpAddressRequestTypeName(): string {
+          return "AWS::Route53Resolver::ResolverEndpoint.IpAddressRequest"
         }
       }
     }
@@ -58164,6 +63918,12 @@ export namespace Cf {
         TrailName?: string
       }
       export class Trail implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudTrail::Trail"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudTrail::Trail"
+        }
         Type: string
         Properties: TrailProperties
         /**
@@ -58172,7 +63932,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html
          */
         constructor(properties: TrailProperties) {
-            this.Type = "AWS::CloudTrail::Trail";
+            this.Type = Trail.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58220,6 +63980,18 @@ export namespace Cf {
          */
         static DataResource(properties: TrailDataResource) : TrailDataResource {
           return properties;
+        }
+        /**
+         * Returns the EventSelector property type name (`"AWS::CloudTrail::Trail.EventSelector"`)
+         */
+        static get EventSelectorTypeName(): string {
+          return "AWS::CloudTrail::Trail.EventSelector"
+        }
+        /**
+         * Returns the DataResource property type name (`"AWS::CloudTrail::Trail.DataResource"`)
+         */
+        static get DataResourceTypeName(): string {
+          return "AWS::CloudTrail::Trail.DataResource"
         }
       }
     }
@@ -58428,6 +64200,12 @@ export namespace Cf {
         Name?: string
       }
       export class SimulationApplication implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::SimulationApplication"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RoboMaker::SimulationApplication"
+        }
         Type: string
         Properties: SimulationApplicationProperties
         /**
@@ -58436,7 +64214,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html
          */
         constructor(properties: SimulationApplicationProperties) {
-            this.Type = "AWS::RoboMaker::SimulationApplication";
+            this.Type = SimulationApplication.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58501,6 +64279,30 @@ export namespace Cf {
         static SimulationSoftwareSuite(properties: SimulationApplicationSimulationSoftwareSuite) : SimulationApplicationSimulationSoftwareSuite {
           return properties;
         }
+        /**
+         * Returns the RobotSoftwareSuite property type name (`"AWS::RoboMaker::SimulationApplication.RobotSoftwareSuite"`)
+         */
+        static get RobotSoftwareSuiteTypeName(): string {
+          return "AWS::RoboMaker::SimulationApplication.RobotSoftwareSuite"
+        }
+        /**
+         * Returns the SourceConfig property type name (`"AWS::RoboMaker::SimulationApplication.SourceConfig"`)
+         */
+        static get SourceConfigTypeName(): string {
+          return "AWS::RoboMaker::SimulationApplication.SourceConfig"
+        }
+        /**
+         * Returns the RenderingEngine property type name (`"AWS::RoboMaker::SimulationApplication.RenderingEngine"`)
+         */
+        static get RenderingEngineTypeName(): string {
+          return "AWS::RoboMaker::SimulationApplication.RenderingEngine"
+        }
+        /**
+         * Returns the SimulationSoftwareSuite property type name (`"AWS::RoboMaker::SimulationApplication.SimulationSoftwareSuite"`)
+         */
+        static get SimulationSoftwareSuiteTypeName(): string {
+          return "AWS::RoboMaker::SimulationApplication.SimulationSoftwareSuite"
+        }
       }
       export interface SimulationApplicationVersionProperties {
         /**
@@ -58523,6 +64325,12 @@ export namespace Cf {
         Application: string
       }
       export class SimulationApplicationVersion implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::SimulationApplicationVersion"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RoboMaker::SimulationApplicationVersion"
+        }
         Type: string
         Properties: SimulationApplicationVersionProperties
         /**
@@ -58531,7 +64339,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplicationversion.html
          */
         constructor(properties: SimulationApplicationVersionProperties) {
-            this.Type = "AWS::RoboMaker::SimulationApplicationVersion";
+            this.Type = SimulationApplicationVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58586,6 +64394,12 @@ export namespace Cf {
         Application: string
       }
       export class RobotApplicationVersion implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::RobotApplicationVersion"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RoboMaker::RobotApplicationVersion"
+        }
         Type: string
         Properties: RobotApplicationVersionProperties
         /**
@@ -58594,7 +64408,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplicationversion.html
          */
         constructor(properties: RobotApplicationVersionProperties) {
-            this.Type = "AWS::RoboMaker::RobotApplicationVersion";
+            this.Type = RobotApplicationVersion.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58676,6 +64490,12 @@ export namespace Cf {
         Name?: string
       }
       export class RobotApplication implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::RobotApplication"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RoboMaker::RobotApplication"
+        }
         Type: string
         Properties: RobotApplicationProperties
         /**
@@ -58684,7 +64504,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html
          */
         constructor(properties: RobotApplicationProperties) {
-            this.Type = "AWS::RoboMaker::RobotApplication";
+            this.Type = RobotApplication.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58732,6 +64552,18 @@ export namespace Cf {
          */
         static SourceConfig(properties: RobotApplicationSourceConfig) : RobotApplicationSourceConfig {
           return properties;
+        }
+        /**
+         * Returns the RobotSoftwareSuite property type name (`"AWS::RoboMaker::RobotApplication.RobotSoftwareSuite"`)
+         */
+        static get RobotSoftwareSuiteTypeName(): string {
+          return "AWS::RoboMaker::RobotApplication.RobotSoftwareSuite"
+        }
+        /**
+         * Returns the SourceConfig property type name (`"AWS::RoboMaker::RobotApplication.SourceConfig"`)
+         */
+        static get SourceConfigTypeName(): string {
+          return "AWS::RoboMaker::RobotApplication.SourceConfig"
         }
       }
       export interface RobotProperties {
@@ -58782,6 +64614,12 @@ export namespace Cf {
         Name?: string
       }
       export class Robot implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::Robot"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RoboMaker::Robot"
+        }
         Type: string
         Properties: RobotProperties
         /**
@@ -58790,7 +64628,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robot.html
          */
         constructor(properties: RobotProperties) {
-            this.Type = "AWS::RoboMaker::Robot";
+            this.Type = Robot.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58845,6 +64683,12 @@ export namespace Cf {
         Name?: string
       }
       export class Fleet implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::Fleet"`)
+         */
+        static get TypeName(): string {
+          return "AWS::RoboMaker::Fleet"
+        }
         Type: string
         Properties: FleetProperties
         /**
@@ -58853,7 +64697,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-fleet.html
          */
         constructor(properties: FleetProperties) {
-            this.Type = "AWS::RoboMaker::Fleet";
+            this.Type = Fleet.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -58919,6 +64763,12 @@ export namespace Cf {
         Timeout?: string
       }
       export class WaitCondition implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::WaitCondition"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudFormation::WaitCondition"
+        }
         Type: string
         Properties: WaitConditionProperties
         /**
@@ -58927,7 +64777,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html
          */
         constructor(properties: WaitConditionProperties) {
-            this.Type = "AWS::CloudFormation::WaitCondition";
+            this.Type = WaitCondition.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59009,6 +64859,12 @@ export namespace Cf {
         TimeoutInMinutes?: number
       }
       export class Stack implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::Stack"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudFormation::Stack"
+        }
         Type: string
         Properties: StackProperties
         /**
@@ -59017,7 +64873,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html
          */
         constructor(properties: StackProperties) {
-            this.Type = "AWS::CloudFormation::Stack";
+            this.Type = Stack.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59054,6 +64910,12 @@ export namespace Cf {
       export interface WaitConditionHandleProperties {
       }
       export class WaitConditionHandle implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::WaitConditionHandle"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudFormation::WaitConditionHandle"
+        }
         Type: string
         Properties: WaitConditionHandleProperties
         /**
@@ -59062,7 +64924,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitconditionhandle.html
          */
         constructor(properties: WaitConditionHandleProperties) {
-            this.Type = "AWS::CloudFormation::WaitConditionHandle";
+            this.Type = WaitConditionHandle.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59144,6 +65006,12 @@ export namespace Cf {
         Name: string
       }
       export class Macro implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::Macro"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudFormation::Macro"
+        }
         Type: string
         Properties: MacroProperties
         /**
@@ -59152,7 +65020,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-macro.html
          */
         constructor(properties: MacroProperties) {
-            this.Type = "AWS::CloudFormation::Macro";
+            this.Type = Macro.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59198,6 +65066,12 @@ export namespace Cf {
         ServiceToken: string
       }
       export class CustomResource implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::CustomResource"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CloudFormation::CustomResource"
+        }
         Type: string
         Properties: CustomResourceProperties
         /**
@@ -59206,7 +65080,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html
          */
         constructor(properties: CustomResourceProperties) {
-            this.Type = "AWS::CloudFormation::CustomResource";
+            this.Type = CustomResource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59328,6 +65202,12 @@ export namespace Cf {
         Name?: string
       }
       export class EnvironmentEC2 implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Cloud9::EnvironmentEC2"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Cloud9::EnvironmentEC2"
+        }
         Type: string
         Properties: EnvironmentEC2Properties
         /**
@@ -59336,7 +65216,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html
          */
         constructor(properties: EnvironmentEC2Properties) {
-            this.Type = "AWS::Cloud9::EnvironmentEC2";
+            this.Type = EnvironmentEC2.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59376,6 +65256,12 @@ export namespace Cf {
          */
         static Repository(properties: EnvironmentEC2Repository) : EnvironmentEC2Repository {
           return properties;
+        }
+        /**
+         * Returns the Repository property type name (`"AWS::Cloud9::EnvironmentEC2.Repository"`)
+         */
+        static get RepositoryTypeName(): string {
+          return "AWS::Cloud9::EnvironmentEC2.Repository"
         }
       }
     }
@@ -59499,6 +65385,12 @@ export namespace Cf {
         ServiceId: string
       }
       export class Instance implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::Instance"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceDiscovery::Instance"
+        }
         Type: string
         Properties: InstanceProperties
         /**
@@ -59507,7 +65399,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html
          */
         constructor(properties: InstanceProperties) {
-            this.Type = "AWS::ServiceDiscovery::Instance";
+            this.Type = Instance.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59598,6 +65490,12 @@ export namespace Cf {
         Name?: string
       }
       export class Service implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::Service"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceDiscovery::Service"
+        }
         Type: string
         Properties: ServiceProperties
         /**
@@ -59606,7 +65504,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html
          */
         constructor(properties: ServiceProperties) {
-            this.Type = "AWS::ServiceDiscovery::Service";
+            this.Type = Service.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59671,6 +65569,30 @@ export namespace Cf {
         static HealthCheckConfig(properties: ServiceHealthCheckConfig) : ServiceHealthCheckConfig {
           return properties;
         }
+        /**
+         * Returns the DnsConfig property type name (`"AWS::ServiceDiscovery::Service.DnsConfig"`)
+         */
+        static get DnsConfigTypeName(): string {
+          return "AWS::ServiceDiscovery::Service.DnsConfig"
+        }
+        /**
+         * Returns the DnsRecord property type name (`"AWS::ServiceDiscovery::Service.DnsRecord"`)
+         */
+        static get DnsRecordTypeName(): string {
+          return "AWS::ServiceDiscovery::Service.DnsRecord"
+        }
+        /**
+         * Returns the HealthCheckCustomConfig property type name (`"AWS::ServiceDiscovery::Service.HealthCheckCustomConfig"`)
+         */
+        static get HealthCheckCustomConfigTypeName(): string {
+          return "AWS::ServiceDiscovery::Service.HealthCheckCustomConfig"
+        }
+        /**
+         * Returns the HealthCheckConfig property type name (`"AWS::ServiceDiscovery::Service.HealthCheckConfig"`)
+         */
+        static get HealthCheckConfigTypeName(): string {
+          return "AWS::ServiceDiscovery::Service.HealthCheckConfig"
+        }
       }
       export interface HttpNamespaceProperties {
         /**
@@ -59693,6 +65615,12 @@ export namespace Cf {
         Name: string
       }
       export class HttpNamespace implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::HttpNamespace"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceDiscovery::HttpNamespace"
+        }
         Type: string
         Properties: HttpNamespaceProperties
         /**
@@ -59701,7 +65629,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-httpnamespace.html
          */
         constructor(properties: HttpNamespaceProperties) {
-            this.Type = "AWS::ServiceDiscovery::HttpNamespace";
+            this.Type = HttpNamespace.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59765,6 +65693,12 @@ export namespace Cf {
         Name: string
       }
       export class PrivateDnsNamespace implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::PrivateDnsNamespace"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceDiscovery::PrivateDnsNamespace"
+        }
         Type: string
         Properties: PrivateDnsNamespaceProperties
         /**
@@ -59773,7 +65707,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-privatednsnamespace.html
          */
         constructor(properties: PrivateDnsNamespaceProperties) {
-            this.Type = "AWS::ServiceDiscovery::PrivateDnsNamespace";
+            this.Type = PrivateDnsNamespace.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -59828,6 +65762,12 @@ export namespace Cf {
         Name: string
       }
       export class PublicDnsNamespace implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::PublicDnsNamespace"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ServiceDiscovery::PublicDnsNamespace"
+        }
         Type: string
         Properties: PublicDnsNamespaceProperties
         /**
@@ -59836,7 +65776,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-publicdnsnamespace.html
          */
         constructor(properties: PublicDnsNamespaceProperties) {
-            this.Type = "AWS::ServiceDiscovery::PublicDnsNamespace";
+            this.Type = PublicDnsNamespace.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60725,6 +66665,12 @@ export namespace Cf {
         Output: ApplicationOutputOutput
       }
       export class ApplicationOutput implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput"
+        }
         Type: string
         Properties: ApplicationOutputProperties
         /**
@@ -60733,7 +66679,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationoutput.html
          */
         constructor(properties: ApplicationOutputProperties) {
-            this.Type = "AWS::KinesisAnalyticsV2::ApplicationOutput";
+            this.Type = ApplicationOutput.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60806,6 +66752,36 @@ export namespace Cf {
         static KinesisStreamsOutput(properties: ApplicationOutputKinesisStreamsOutput) : ApplicationOutputKinesisStreamsOutput {
           return properties;
         }
+        /**
+         * Returns the LambdaOutput property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.LambdaOutput"`)
+         */
+        static get LambdaOutputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.LambdaOutput"
+        }
+        /**
+         * Returns the DestinationSchema property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.DestinationSchema"`)
+         */
+        static get DestinationSchemaTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.DestinationSchema"
+        }
+        /**
+         * Returns the Output property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.Output"`)
+         */
+        static get OutputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.Output"
+        }
+        /**
+         * Returns the KinesisFirehoseOutput property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.KinesisFirehoseOutput"`)
+         */
+        static get KinesisFirehoseOutputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.KinesisFirehoseOutput"
+        }
+        /**
+         * Returns the KinesisStreamsOutput property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.KinesisStreamsOutput"`)
+         */
+        static get KinesisStreamsOutputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.KinesisStreamsOutput"
+        }
       }
       export interface ApplicationCloudWatchLoggingOptionProperties {
         /**
@@ -60828,6 +66804,12 @@ export namespace Cf {
         CloudWatchLoggingOption: ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption
       }
       export class ApplicationCloudWatchLoggingOption implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption"
+        }
         Type: string
         Properties: ApplicationCloudWatchLoggingOptionProperties
         /**
@@ -60836,7 +66818,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption.html
          */
         constructor(properties: ApplicationCloudWatchLoggingOptionProperties) {
-            this.Type = "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption";
+            this.Type = ApplicationCloudWatchLoggingOption.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -60877,6 +66859,12 @@ export namespace Cf {
         static CloudWatchLoggingOption(properties: ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption) : ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption {
           return properties;
         }
+        /**
+         * Returns the CloudWatchLoggingOption property type name (`"AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption.CloudWatchLoggingOption"`)
+         */
+        static get CloudWatchLoggingOptionTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption.CloudWatchLoggingOption"
+        }
       }
       export interface ApplicationReferenceDataSourceProperties {
         /**
@@ -60899,6 +66887,12 @@ export namespace Cf {
         ReferenceDataSource: ApplicationReferenceDataSourceReferenceDataSource
       }
       export class ApplicationReferenceDataSource implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource"
+        }
         Type: string
         Properties: ApplicationReferenceDataSourceProperties
         /**
@@ -60907,7 +66901,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html
          */
         constructor(properties: ApplicationReferenceDataSourceProperties) {
-            this.Type = "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource";
+            this.Type = ApplicationReferenceDataSource.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -61004,6 +66998,54 @@ export namespace Cf {
         static CSVMappingParameters(properties: ApplicationReferenceDataSourceCSVMappingParameters) : ApplicationReferenceDataSourceCSVMappingParameters {
           return properties;
         }
+        /**
+         * Returns the RecordColumn property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.RecordColumn"`)
+         */
+        static get RecordColumnTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.RecordColumn"
+        }
+        /**
+         * Returns the RecordFormat property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.RecordFormat"`)
+         */
+        static get RecordFormatTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.RecordFormat"
+        }
+        /**
+         * Returns the JSONMappingParameters property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.JSONMappingParameters"`)
+         */
+        static get JSONMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.JSONMappingParameters"
+        }
+        /**
+         * Returns the S3ReferenceDataSource property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.S3ReferenceDataSource"`)
+         */
+        static get S3ReferenceDataSourceTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.S3ReferenceDataSource"
+        }
+        /**
+         * Returns the ReferenceDataSource property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.ReferenceDataSource"`)
+         */
+        static get ReferenceDataSourceTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.ReferenceDataSource"
+        }
+        /**
+         * Returns the MappingParameters property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.MappingParameters"`)
+         */
+        static get MappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.MappingParameters"
+        }
+        /**
+         * Returns the ReferenceSchema property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.ReferenceSchema"`)
+         */
+        static get ReferenceSchemaTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.ReferenceSchema"
+        }
+        /**
+         * Returns the CSVMappingParameters property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.CSVMappingParameters"`)
+         */
+        static get CSVMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.CSVMappingParameters"
+        }
       }
       export interface ApplicationProperties {
         /**
@@ -61053,6 +67095,12 @@ export namespace Cf {
         ServiceExecutionRole: string
       }
       export class Application implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalyticsV2::Application"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application"
+        }
         Type: string
         Properties: ApplicationProperties
         /**
@@ -61061,7 +67109,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html
          */
         constructor(properties: ApplicationProperties) {
-            this.Type = "AWS::KinesisAnalyticsV2::Application";
+            this.Type = Application.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -61285,6 +67333,150 @@ export namespace Cf {
          */
         static InputSchema(properties: ApplicationInputSchema) : ApplicationInputSchema {
           return properties;
+        }
+        /**
+         * Returns the RecordColumn property type name (`"AWS::KinesisAnalyticsV2::Application.RecordColumn"`)
+         */
+        static get RecordColumnTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.RecordColumn"
+        }
+        /**
+         * Returns the ParallelismConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.ParallelismConfiguration"`)
+         */
+        static get ParallelismConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.ParallelismConfiguration"
+        }
+        /**
+         * Returns the CSVMappingParameters property type name (`"AWS::KinesisAnalyticsV2::Application.CSVMappingParameters"`)
+         */
+        static get CSVMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.CSVMappingParameters"
+        }
+        /**
+         * Returns the MonitoringConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.MonitoringConfiguration"`)
+         */
+        static get MonitoringConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.MonitoringConfiguration"
+        }
+        /**
+         * Returns the RecordFormat property type name (`"AWS::KinesisAnalyticsV2::Application.RecordFormat"`)
+         */
+        static get RecordFormatTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.RecordFormat"
+        }
+        /**
+         * Returns the JSONMappingParameters property type name (`"AWS::KinesisAnalyticsV2::Application.JSONMappingParameters"`)
+         */
+        static get JSONMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.JSONMappingParameters"
+        }
+        /**
+         * Returns the CodeContent property type name (`"AWS::KinesisAnalyticsV2::Application.CodeContent"`)
+         */
+        static get CodeContentTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.CodeContent"
+        }
+        /**
+         * Returns the S3ContentLocation property type name (`"AWS::KinesisAnalyticsV2::Application.S3ContentLocation"`)
+         */
+        static get S3ContentLocationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.S3ContentLocation"
+        }
+        /**
+         * Returns the PropertyGroup property type name (`"AWS::KinesisAnalyticsV2::Application.PropertyGroup"`)
+         */
+        static get PropertyGroupTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.PropertyGroup"
+        }
+        /**
+         * Returns the KinesisStreamsInput property type name (`"AWS::KinesisAnalyticsV2::Application.KinesisStreamsInput"`)
+         */
+        static get KinesisStreamsInputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.KinesisStreamsInput"
+        }
+        /**
+         * Returns the MappingParameters property type name (`"AWS::KinesisAnalyticsV2::Application.MappingParameters"`)
+         */
+        static get MappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.MappingParameters"
+        }
+        /**
+         * Returns the CheckpointConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.CheckpointConfiguration"`)
+         */
+        static get CheckpointConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.CheckpointConfiguration"
+        }
+        /**
+         * Returns the SqlApplicationConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.SqlApplicationConfiguration"`)
+         */
+        static get SqlApplicationConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.SqlApplicationConfiguration"
+        }
+        /**
+         * Returns the InputProcessingConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.InputProcessingConfiguration"`)
+         */
+        static get InputProcessingConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.InputProcessingConfiguration"
+        }
+        /**
+         * Returns the InputParallelism property type name (`"AWS::KinesisAnalyticsV2::Application.InputParallelism"`)
+         */
+        static get InputParallelismTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.InputParallelism"
+        }
+        /**
+         * Returns the ApplicationConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.ApplicationConfiguration"`)
+         */
+        static get ApplicationConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.ApplicationConfiguration"
+        }
+        /**
+         * Returns the ApplicationCodeConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.ApplicationCodeConfiguration"`)
+         */
+        static get ApplicationCodeConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.ApplicationCodeConfiguration"
+        }
+        /**
+         * Returns the InputLambdaProcessor property type name (`"AWS::KinesisAnalyticsV2::Application.InputLambdaProcessor"`)
+         */
+        static get InputLambdaProcessorTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.InputLambdaProcessor"
+        }
+        /**
+         * Returns the FlinkApplicationConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.FlinkApplicationConfiguration"`)
+         */
+        static get FlinkApplicationConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.FlinkApplicationConfiguration"
+        }
+        /**
+         * Returns the Input property type name (`"AWS::KinesisAnalyticsV2::Application.Input"`)
+         */
+        static get InputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.Input"
+        }
+        /**
+         * Returns the ApplicationSnapshotConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.ApplicationSnapshotConfiguration"`)
+         */
+        static get ApplicationSnapshotConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.ApplicationSnapshotConfiguration"
+        }
+        /**
+         * Returns the KinesisFirehoseInput property type name (`"AWS::KinesisAnalyticsV2::Application.KinesisFirehoseInput"`)
+         */
+        static get KinesisFirehoseInputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.KinesisFirehoseInput"
+        }
+        /**
+         * Returns the EnvironmentProperties property type name (`"AWS::KinesisAnalyticsV2::Application.EnvironmentProperties"`)
+         */
+        static get EnvironmentPropertiesTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.EnvironmentProperties"
+        }
+        /**
+         * Returns the InputSchema property type name (`"AWS::KinesisAnalyticsV2::Application.InputSchema"`)
+         */
+        static get InputSchemaTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.InputSchema"
         }
       }
     }
@@ -61650,6 +67842,12 @@ export namespace Cf {
         TargetTrackingScalingPolicyConfiguration?: ScalingPolicyTargetTrackingScalingPolicyConfiguration
       }
       export class ScalingPolicy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApplicationAutoScaling::ScalingPolicy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy"
+        }
         Type: string
         Properties: ScalingPolicyProperties
         /**
@@ -61658,7 +67856,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html
          */
         constructor(properties: ScalingPolicyProperties) {
-            this.Type = "AWS::ApplicationAutoScaling::ScalingPolicy";
+            this.Type = ScalingPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -61739,6 +67937,42 @@ export namespace Cf {
         static TargetTrackingScalingPolicyConfiguration(properties: ScalingPolicyTargetTrackingScalingPolicyConfiguration) : ScalingPolicyTargetTrackingScalingPolicyConfiguration {
           return properties;
         }
+        /**
+         * Returns the StepScalingPolicyConfiguration property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.StepScalingPolicyConfiguration"`)
+         */
+        static get StepScalingPolicyConfigurationTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.StepScalingPolicyConfiguration"
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.MetricDimension"
+        }
+        /**
+         * Returns the StepAdjustment property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.StepAdjustment"`)
+         */
+        static get StepAdjustmentTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.StepAdjustment"
+        }
+        /**
+         * Returns the PredefinedMetricSpecification property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.PredefinedMetricSpecification"`)
+         */
+        static get PredefinedMetricSpecificationTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.PredefinedMetricSpecification"
+        }
+        /**
+         * Returns the CustomizedMetricSpecification property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.CustomizedMetricSpecification"`)
+         */
+        static get CustomizedMetricSpecificationTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.CustomizedMetricSpecification"
+        }
+        /**
+         * Returns the TargetTrackingScalingPolicyConfiguration property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.TargetTrackingScalingPolicyConfiguration"`)
+         */
+        static get TargetTrackingScalingPolicyConfigurationTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.TargetTrackingScalingPolicyConfiguration"
+        }
       }
       export interface ScalableTargetProperties {
         /**
@@ -61806,6 +68040,12 @@ export namespace Cf {
         ServiceNamespace: string
       }
       export class ScalableTarget implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ApplicationAutoScaling::ScalableTarget"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalableTarget"
+        }
         Type: string
         Properties: ScalableTargetProperties
         /**
@@ -61814,7 +68054,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html
          */
         constructor(properties: ScalableTargetProperties) {
-            this.Type = "AWS::ApplicationAutoScaling::ScalableTarget";
+            this.Type = ScalableTarget.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -61862,6 +68102,18 @@ export namespace Cf {
          */
         static ScalableTargetAction(properties: ScalableTargetScalableTargetAction) : ScalableTargetScalableTargetAction {
           return properties;
+        }
+        /**
+         * Returns the ScheduledAction property type name (`"AWS::ApplicationAutoScaling::ScalableTarget.ScheduledAction"`)
+         */
+        static get ScheduledActionTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalableTarget.ScheduledAction"
+        }
+        /**
+         * Returns the ScalableTargetAction property type name (`"AWS::ApplicationAutoScaling::ScalableTarget.ScalableTargetAction"`)
+         */
+        static get ScalableTargetActionTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalableTarget.ScalableTargetAction"
         }
       }
     }
@@ -61943,6 +68195,12 @@ export namespace Cf {
         RepositoryDescription?: string
       }
       export class Repository implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::CodeCommit::Repository"`)
+         */
+        static get TypeName(): string {
+          return "AWS::CodeCommit::Repository"
+        }
         Type: string
         Properties: RepositoryProperties
         /**
@@ -61951,7 +68209,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html
          */
         constructor(properties: RepositoryProperties) {
-            this.Type = "AWS::CodeCommit::Repository";
+            this.Type = Repository.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -61991,6 +68249,12 @@ export namespace Cf {
          */
         static RepositoryTrigger(properties: RepositoryRepositoryTrigger) : RepositoryRepositoryTrigger {
           return properties;
+        }
+        /**
+         * Returns the RepositoryTrigger property type name (`"AWS::CodeCommit::Repository.RepositoryTrigger"`)
+         */
+        static get RepositoryTriggerTypeName(): string {
+          return "AWS::CodeCommit::Repository.RepositoryTrigger"
         }
       }
     }
@@ -63194,6 +69458,12 @@ export namespace Cf {
         WebsiteConfiguration?: BucketWebsiteConfiguration
       }
       export class Bucket implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::S3::Bucket"`)
+         */
+        static get TypeName(): string {
+          return "AWS::S3::Bucket"
+        }
         Type: string
         Properties: BucketProperties
         /**
@@ -63202,7 +69472,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
          */
         constructor(properties: BucketProperties) {
-            this.Type = "AWS::S3::Bucket";
+            this.Type = Bucket.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -63555,6 +69825,246 @@ export namespace Cf {
         static PublicAccessBlockConfiguration(properties: BucketPublicAccessBlockConfiguration) : BucketPublicAccessBlockConfiguration {
           return properties;
         }
+        /**
+         * Returns the BucketEncryption property type name (`"AWS::S3::Bucket.BucketEncryption"`)
+         */
+        static get BucketEncryptionTypeName(): string {
+          return "AWS::S3::Bucket.BucketEncryption"
+        }
+        /**
+         * Returns the NotificationFilter property type name (`"AWS::S3::Bucket.NotificationFilter"`)
+         */
+        static get NotificationFilterTypeName(): string {
+          return "AWS::S3::Bucket.NotificationFilter"
+        }
+        /**
+         * Returns the RoutingRuleCondition property type name (`"AWS::S3::Bucket.RoutingRuleCondition"`)
+         */
+        static get RoutingRuleConditionTypeName(): string {
+          return "AWS::S3::Bucket.RoutingRuleCondition"
+        }
+        /**
+         * Returns the LifecycleConfiguration property type name (`"AWS::S3::Bucket.LifecycleConfiguration"`)
+         */
+        static get LifecycleConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.LifecycleConfiguration"
+        }
+        /**
+         * Returns the LambdaConfiguration property type name (`"AWS::S3::Bucket.LambdaConfiguration"`)
+         */
+        static get LambdaConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.LambdaConfiguration"
+        }
+        /**
+         * Returns the ReplicationRule property type name (`"AWS::S3::Bucket.ReplicationRule"`)
+         */
+        static get ReplicationRuleTypeName(): string {
+          return "AWS::S3::Bucket.ReplicationRule"
+        }
+        /**
+         * Returns the CorsRule property type name (`"AWS::S3::Bucket.CorsRule"`)
+         */
+        static get CorsRuleTypeName(): string {
+          return "AWS::S3::Bucket.CorsRule"
+        }
+        /**
+         * Returns the Destination property type name (`"AWS::S3::Bucket.Destination"`)
+         */
+        static get DestinationTypeName(): string {
+          return "AWS::S3::Bucket.Destination"
+        }
+        /**
+         * Returns the ServerSideEncryptionRule property type name (`"AWS::S3::Bucket.ServerSideEncryptionRule"`)
+         */
+        static get ServerSideEncryptionRuleTypeName(): string {
+          return "AWS::S3::Bucket.ServerSideEncryptionRule"
+        }
+        /**
+         * Returns the AnalyticsConfiguration property type name (`"AWS::S3::Bucket.AnalyticsConfiguration"`)
+         */
+        static get AnalyticsConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.AnalyticsConfiguration"
+        }
+        /**
+         * Returns the SourceSelectionCriteria property type name (`"AWS::S3::Bucket.SourceSelectionCriteria"`)
+         */
+        static get SourceSelectionCriteriaTypeName(): string {
+          return "AWS::S3::Bucket.SourceSelectionCriteria"
+        }
+        /**
+         * Returns the LoggingConfiguration property type name (`"AWS::S3::Bucket.LoggingConfiguration"`)
+         */
+        static get LoggingConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.LoggingConfiguration"
+        }
+        /**
+         * Returns the StorageClassAnalysis property type name (`"AWS::S3::Bucket.StorageClassAnalysis"`)
+         */
+        static get StorageClassAnalysisTypeName(): string {
+          return "AWS::S3::Bucket.StorageClassAnalysis"
+        }
+        /**
+         * Returns the RoutingRule property type name (`"AWS::S3::Bucket.RoutingRule"`)
+         */
+        static get RoutingRuleTypeName(): string {
+          return "AWS::S3::Bucket.RoutingRule"
+        }
+        /**
+         * Returns the AccessControlTranslation property type name (`"AWS::S3::Bucket.AccessControlTranslation"`)
+         */
+        static get AccessControlTranslationTypeName(): string {
+          return "AWS::S3::Bucket.AccessControlTranslation"
+        }
+        /**
+         * Returns the VersioningConfiguration property type name (`"AWS::S3::Bucket.VersioningConfiguration"`)
+         */
+        static get VersioningConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.VersioningConfiguration"
+        }
+        /**
+         * Returns the EncryptionConfiguration property type name (`"AWS::S3::Bucket.EncryptionConfiguration"`)
+         */
+        static get EncryptionConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.EncryptionConfiguration"
+        }
+        /**
+         * Returns the NotificationConfiguration property type name (`"AWS::S3::Bucket.NotificationConfiguration"`)
+         */
+        static get NotificationConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.NotificationConfiguration"
+        }
+        /**
+         * Returns the ServerSideEncryptionByDefault property type name (`"AWS::S3::Bucket.ServerSideEncryptionByDefault"`)
+         */
+        static get ServerSideEncryptionByDefaultTypeName(): string {
+          return "AWS::S3::Bucket.ServerSideEncryptionByDefault"
+        }
+        /**
+         * Returns the RedirectRule property type name (`"AWS::S3::Bucket.RedirectRule"`)
+         */
+        static get RedirectRuleTypeName(): string {
+          return "AWS::S3::Bucket.RedirectRule"
+        }
+        /**
+         * Returns the RedirectAllRequestsTo property type name (`"AWS::S3::Bucket.RedirectAllRequestsTo"`)
+         */
+        static get RedirectAllRequestsToTypeName(): string {
+          return "AWS::S3::Bucket.RedirectAllRequestsTo"
+        }
+        /**
+         * Returns the S3KeyFilter property type name (`"AWS::S3::Bucket.S3KeyFilter"`)
+         */
+        static get S3KeyFilterTypeName(): string {
+          return "AWS::S3::Bucket.S3KeyFilter"
+        }
+        /**
+         * Returns the InventoryConfiguration property type name (`"AWS::S3::Bucket.InventoryConfiguration"`)
+         */
+        static get InventoryConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.InventoryConfiguration"
+        }
+        /**
+         * Returns the WebsiteConfiguration property type name (`"AWS::S3::Bucket.WebsiteConfiguration"`)
+         */
+        static get WebsiteConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.WebsiteConfiguration"
+        }
+        /**
+         * Returns the ReplicationConfiguration property type name (`"AWS::S3::Bucket.ReplicationConfiguration"`)
+         */
+        static get ReplicationConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.ReplicationConfiguration"
+        }
+        /**
+         * Returns the SseKmsEncryptedObjects property type name (`"AWS::S3::Bucket.SseKmsEncryptedObjects"`)
+         */
+        static get SseKmsEncryptedObjectsTypeName(): string {
+          return "AWS::S3::Bucket.SseKmsEncryptedObjects"
+        }
+        /**
+         * Returns the Rule property type name (`"AWS::S3::Bucket.Rule"`)
+         */
+        static get RuleTypeName(): string {
+          return "AWS::S3::Bucket.Rule"
+        }
+        /**
+         * Returns the QueueConfiguration property type name (`"AWS::S3::Bucket.QueueConfiguration"`)
+         */
+        static get QueueConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.QueueConfiguration"
+        }
+        /**
+         * Returns the TopicConfiguration property type name (`"AWS::S3::Bucket.TopicConfiguration"`)
+         */
+        static get TopicConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.TopicConfiguration"
+        }
+        /**
+         * Returns the MetricsConfiguration property type name (`"AWS::S3::Bucket.MetricsConfiguration"`)
+         */
+        static get MetricsConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.MetricsConfiguration"
+        }
+        /**
+         * Returns the TagFilter property type name (`"AWS::S3::Bucket.TagFilter"`)
+         */
+        static get TagFilterTypeName(): string {
+          return "AWS::S3::Bucket.TagFilter"
+        }
+        /**
+         * Returns the Transition property type name (`"AWS::S3::Bucket.Transition"`)
+         */
+        static get TransitionTypeName(): string {
+          return "AWS::S3::Bucket.Transition"
+        }
+        /**
+         * Returns the DataExport property type name (`"AWS::S3::Bucket.DataExport"`)
+         */
+        static get DataExportTypeName(): string {
+          return "AWS::S3::Bucket.DataExport"
+        }
+        /**
+         * Returns the CorsConfiguration property type name (`"AWS::S3::Bucket.CorsConfiguration"`)
+         */
+        static get CorsConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.CorsConfiguration"
+        }
+        /**
+         * Returns the ReplicationDestination property type name (`"AWS::S3::Bucket.ReplicationDestination"`)
+         */
+        static get ReplicationDestinationTypeName(): string {
+          return "AWS::S3::Bucket.ReplicationDestination"
+        }
+        /**
+         * Returns the AccelerateConfiguration property type name (`"AWS::S3::Bucket.AccelerateConfiguration"`)
+         */
+        static get AccelerateConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.AccelerateConfiguration"
+        }
+        /**
+         * Returns the NoncurrentVersionTransition property type name (`"AWS::S3::Bucket.NoncurrentVersionTransition"`)
+         */
+        static get NoncurrentVersionTransitionTypeName(): string {
+          return "AWS::S3::Bucket.NoncurrentVersionTransition"
+        }
+        /**
+         * Returns the AbortIncompleteMultipartUpload property type name (`"AWS::S3::Bucket.AbortIncompleteMultipartUpload"`)
+         */
+        static get AbortIncompleteMultipartUploadTypeName(): string {
+          return "AWS::S3::Bucket.AbortIncompleteMultipartUpload"
+        }
+        /**
+         * Returns the FilterRule property type name (`"AWS::S3::Bucket.FilterRule"`)
+         */
+        static get FilterRuleTypeName(): string {
+          return "AWS::S3::Bucket.FilterRule"
+        }
+        /**
+         * Returns the PublicAccessBlockConfiguration property type name (`"AWS::S3::Bucket.PublicAccessBlockConfiguration"`)
+         */
+        static get PublicAccessBlockConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.PublicAccessBlockConfiguration"
+        }
       }
       export interface BucketPolicyProperties {
         /**
@@ -63577,6 +70087,12 @@ export namespace Cf {
         PolicyDocument: object
       }
       export class BucketPolicy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::S3::BucketPolicy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::S3::BucketPolicy"
+        }
         Type: string
         Properties: BucketPolicyProperties
         /**
@@ -63585,7 +70101,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html
          */
         constructor(properties: BucketPolicyProperties) {
-            this.Type = "AWS::S3::BucketPolicy";
+            this.Type = BucketPolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64342,6 +70858,12 @@ export namespace Cf {
         SplunkDestinationConfiguration?: DeliveryStreamSplunkDestinationConfiguration
       }
       export class DeliveryStream implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::KinesisFirehose::DeliveryStream"`)
+         */
+        static get TypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream"
+        }
         Type: string
         Properties: DeliveryStreamProperties
         /**
@@ -64350,7 +70872,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html
          */
         constructor(properties: DeliveryStreamProperties) {
-            this.Type = "AWS::KinesisFirehose::DeliveryStream";
+            this.Type = DeliveryStream.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64519,6 +71041,108 @@ export namespace Cf {
         static RedshiftDestinationConfiguration(properties: DeliveryStreamRedshiftDestinationConfiguration) : DeliveryStreamRedshiftDestinationConfiguration {
           return properties;
         }
+        /**
+         * Returns the ElasticsearchDestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.ElasticsearchDestinationConfiguration"`)
+         */
+        static get ElasticsearchDestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ElasticsearchDestinationConfiguration"
+        }
+        /**
+         * Returns the ElasticsearchBufferingHints property type name (`"AWS::KinesisFirehose::DeliveryStream.ElasticsearchBufferingHints"`)
+         */
+        static get ElasticsearchBufferingHintsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ElasticsearchBufferingHints"
+        }
+        /**
+         * Returns the SplunkDestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.SplunkDestinationConfiguration"`)
+         */
+        static get SplunkDestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.SplunkDestinationConfiguration"
+        }
+        /**
+         * Returns the EncryptionConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.EncryptionConfiguration"`)
+         */
+        static get EncryptionConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.EncryptionConfiguration"
+        }
+        /**
+         * Returns the CloudWatchLoggingOptions property type name (`"AWS::KinesisFirehose::DeliveryStream.CloudWatchLoggingOptions"`)
+         */
+        static get CloudWatchLoggingOptionsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.CloudWatchLoggingOptions"
+        }
+        /**
+         * Returns the ProcessingConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.ProcessingConfiguration"`)
+         */
+        static get ProcessingConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ProcessingConfiguration"
+        }
+        /**
+         * Returns the BufferingHints property type name (`"AWS::KinesisFirehose::DeliveryStream.BufferingHints"`)
+         */
+        static get BufferingHintsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.BufferingHints"
+        }
+        /**
+         * Returns the SplunkRetryOptions property type name (`"AWS::KinesisFirehose::DeliveryStream.SplunkRetryOptions"`)
+         */
+        static get SplunkRetryOptionsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.SplunkRetryOptions"
+        }
+        /**
+         * Returns the KinesisStreamSourceConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.KinesisStreamSourceConfiguration"`)
+         */
+        static get KinesisStreamSourceConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.KinesisStreamSourceConfiguration"
+        }
+        /**
+         * Returns the ProcessorParameter property type name (`"AWS::KinesisFirehose::DeliveryStream.ProcessorParameter"`)
+         */
+        static get ProcessorParameterTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ProcessorParameter"
+        }
+        /**
+         * Returns the Processor property type name (`"AWS::KinesisFirehose::DeliveryStream.Processor"`)
+         */
+        static get ProcessorTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.Processor"
+        }
+        /**
+         * Returns the CopyCommand property type name (`"AWS::KinesisFirehose::DeliveryStream.CopyCommand"`)
+         */
+        static get CopyCommandTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.CopyCommand"
+        }
+        /**
+         * Returns the S3DestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.S3DestinationConfiguration"`)
+         */
+        static get S3DestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.S3DestinationConfiguration"
+        }
+        /**
+         * Returns the ElasticsearchRetryOptions property type name (`"AWS::KinesisFirehose::DeliveryStream.ElasticsearchRetryOptions"`)
+         */
+        static get ElasticsearchRetryOptionsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ElasticsearchRetryOptions"
+        }
+        /**
+         * Returns the KMSEncryptionConfig property type name (`"AWS::KinesisFirehose::DeliveryStream.KMSEncryptionConfig"`)
+         */
+        static get KMSEncryptionConfigTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.KMSEncryptionConfig"
+        }
+        /**
+         * Returns the ExtendedS3DestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.ExtendedS3DestinationConfiguration"`)
+         */
+        static get ExtendedS3DestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ExtendedS3DestinationConfiguration"
+        }
+        /**
+         * Returns the RedshiftDestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.RedshiftDestinationConfiguration"`)
+         */
+        static get RedshiftDestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.RedshiftDestinationConfiguration"
+        }
       }
     }
     export namespace DLM {
@@ -64677,6 +71301,12 @@ export namespace Cf {
         PolicyDetails?: LifecyclePolicyPolicyDetails
       }
       export class LifecyclePolicy implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DLM::LifecyclePolicy"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DLM::LifecyclePolicy"
+        }
         Type: string
         Properties: LifecyclePolicyProperties
         /**
@@ -64685,7 +71315,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html
          */
         constructor(properties: LifecyclePolicyProperties) {
-            this.Type = "AWS::DLM::LifecyclePolicy";
+            this.Type = LifecyclePolicy.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64750,6 +71380,30 @@ export namespace Cf {
         static PolicyDetails(properties: LifecyclePolicyPolicyDetails) : LifecyclePolicyPolicyDetails {
           return properties;
         }
+        /**
+         * Returns the Schedule property type name (`"AWS::DLM::LifecyclePolicy.Schedule"`)
+         */
+        static get ScheduleTypeName(): string {
+          return "AWS::DLM::LifecyclePolicy.Schedule"
+        }
+        /**
+         * Returns the CreateRule property type name (`"AWS::DLM::LifecyclePolicy.CreateRule"`)
+         */
+        static get CreateRuleTypeName(): string {
+          return "AWS::DLM::LifecyclePolicy.CreateRule"
+        }
+        /**
+         * Returns the RetainRule property type name (`"AWS::DLM::LifecyclePolicy.RetainRule"`)
+         */
+        static get RetainRuleTypeName(): string {
+          return "AWS::DLM::LifecyclePolicy.RetainRule"
+        }
+        /**
+         * Returns the PolicyDetails property type name (`"AWS::DLM::LifecyclePolicy.PolicyDetails"`)
+         */
+        static get PolicyDetailsTypeName(): string {
+          return "AWS::DLM::LifecyclePolicy.PolicyDetails"
+        }
       }
     }
     export namespace SDB {
@@ -64765,6 +71419,12 @@ export namespace Cf {
         Description?: string
       }
       export class Domain implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::SDB::Domain"`)
+         */
+        static get TypeName(): string {
+          return "AWS::SDB::Domain"
+        }
         Type: string
         Properties: DomainProperties
         /**
@@ -64773,7 +71433,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-simpledb.html
          */
         constructor(properties: DomainProperties) {
-            this.Type = "AWS::SDB::Domain";
+            this.Type = Domain.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64859,6 +71519,12 @@ export namespace Cf {
         RepositoryPolicyText?: object
       }
       export class Repository implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::ECR::Repository"`)
+         */
+        static get TypeName(): string {
+          return "AWS::ECR::Repository"
+        }
         Type: string
         Properties: RepositoryProperties
         /**
@@ -64867,7 +71533,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html
          */
         constructor(properties: RepositoryProperties) {
-            this.Type = "AWS::ECR::Repository";
+            this.Type = Repository.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -64907,6 +71573,12 @@ export namespace Cf {
          */
         static LifecyclePolicy(properties: RepositoryLifecyclePolicy) : RepositoryLifecyclePolicy {
           return properties;
+        }
+        /**
+         * Returns the LifecyclePolicy property type name (`"AWS::ECR::Repository.LifecyclePolicy"`)
+         */
+        static get LifecyclePolicyTypeName(): string {
+          return "AWS::ECR::Repository.LifecyclePolicy"
         }
       }
     }
@@ -65222,6 +71894,12 @@ export namespace Cf {
         TimeToLiveSpecification?: TableTimeToLiveSpecification
       }
       export class Table implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::DynamoDB::Table"`)
+         */
+        static get TypeName(): string {
+          return "AWS::DynamoDB::Table"
+        }
         Type: string
         Properties: TableProperties
         /**
@@ -65230,7 +71908,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html
          */
         constructor(properties: TableProperties) {
-            this.Type = "AWS::DynamoDB::Table";
+            this.Type = Table.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65343,6 +72021,66 @@ export namespace Cf {
         static StreamSpecification(properties: TableStreamSpecification) : TableStreamSpecification {
           return properties;
         }
+        /**
+         * Returns the TimeToLiveSpecification property type name (`"AWS::DynamoDB::Table.TimeToLiveSpecification"`)
+         */
+        static get TimeToLiveSpecificationTypeName(): string {
+          return "AWS::DynamoDB::Table.TimeToLiveSpecification"
+        }
+        /**
+         * Returns the AttributeDefinition property type name (`"AWS::DynamoDB::Table.AttributeDefinition"`)
+         */
+        static get AttributeDefinitionTypeName(): string {
+          return "AWS::DynamoDB::Table.AttributeDefinition"
+        }
+        /**
+         * Returns the LocalSecondaryIndex property type name (`"AWS::DynamoDB::Table.LocalSecondaryIndex"`)
+         */
+        static get LocalSecondaryIndexTypeName(): string {
+          return "AWS::DynamoDB::Table.LocalSecondaryIndex"
+        }
+        /**
+         * Returns the ProvisionedThroughput property type name (`"AWS::DynamoDB::Table.ProvisionedThroughput"`)
+         */
+        static get ProvisionedThroughputTypeName(): string {
+          return "AWS::DynamoDB::Table.ProvisionedThroughput"
+        }
+        /**
+         * Returns the GlobalSecondaryIndex property type name (`"AWS::DynamoDB::Table.GlobalSecondaryIndex"`)
+         */
+        static get GlobalSecondaryIndexTypeName(): string {
+          return "AWS::DynamoDB::Table.GlobalSecondaryIndex"
+        }
+        /**
+         * Returns the KeySchema property type name (`"AWS::DynamoDB::Table.KeySchema"`)
+         */
+        static get KeySchemaTypeName(): string {
+          return "AWS::DynamoDB::Table.KeySchema"
+        }
+        /**
+         * Returns the Projection property type name (`"AWS::DynamoDB::Table.Projection"`)
+         */
+        static get ProjectionTypeName(): string {
+          return "AWS::DynamoDB::Table.Projection"
+        }
+        /**
+         * Returns the PointInTimeRecoverySpecification property type name (`"AWS::DynamoDB::Table.PointInTimeRecoverySpecification"`)
+         */
+        static get PointInTimeRecoverySpecificationTypeName(): string {
+          return "AWS::DynamoDB::Table.PointInTimeRecoverySpecification"
+        }
+        /**
+         * Returns the SSESpecification property type name (`"AWS::DynamoDB::Table.SSESpecification"`)
+         */
+        static get SSESpecificationTypeName(): string {
+          return "AWS::DynamoDB::Table.SSESpecification"
+        }
+        /**
+         * Returns the StreamSpecification property type name (`"AWS::DynamoDB::Table.StreamSpecification"`)
+         */
+        static get StreamSpecificationTypeName(): string {
+          return "AWS::DynamoDB::Table.StreamSpecification"
+        }
       }
     }
     export namespace Athena {
@@ -65385,6 +72123,12 @@ export namespace Cf {
         Name?: string
       }
       export class NamedQuery implements LibcfResource {
+        /**
+         * Returns the resource type name (`"AWS::Athena::NamedQuery"`)
+         */
+        static get TypeName(): string {
+          return "AWS::Athena::NamedQuery"
+        }
         Type: string
         Properties: NamedQueryProperties
         /**
@@ -65393,7 +72137,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html
          */
         constructor(properties: NamedQueryProperties) {
-            this.Type = "AWS::Athena::NamedQuery";
+            this.Type = NamedQuery.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65548,6 +72292,12 @@ export namespace Cf {
         SkillPackage: SkillSkillPackage
       }
       export class Skill implements LibcfResource {
+        /**
+         * Returns the resource type name (`"Alexa::ASK::Skill"`)
+         */
+        static get TypeName(): string {
+          return "Alexa::ASK::Skill"
+        }
         Type: string
         Properties: SkillProperties
         /**
@@ -65556,7 +72306,7 @@ export namespace Cf {
          * See http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ask-skill.html
          */
         constructor(properties: SkillProperties) {
-            this.Type = "Alexa::ASK::Skill";
+            this.Type = Skill.TypeName
             this.Properties = properties;
         }
         CreationPolicy: any
@@ -65612,6 +72362,24 @@ export namespace Cf {
          */
         static AuthenticationConfiguration(properties: SkillAuthenticationConfiguration) : SkillAuthenticationConfiguration {
           return properties;
+        }
+        /**
+         * Returns the SkillPackage property type name (`"Alexa::ASK::Skill.SkillPackage"`)
+         */
+        static get SkillPackageTypeName(): string {
+          return "Alexa::ASK::Skill.SkillPackage"
+        }
+        /**
+         * Returns the Overrides property type name (`"Alexa::ASK::Skill.Overrides"`)
+         */
+        static get OverridesTypeName(): string {
+          return "Alexa::ASK::Skill.Overrides"
+        }
+        /**
+         * Returns the AuthenticationConfiguration property type name (`"Alexa::ASK::Skill.AuthenticationConfiguration"`)
+         */
+        static get AuthenticationConfigurationTypeName(): string {
+          return "Alexa::ASK::Skill.AuthenticationConfiguration"
         }
       }
     }
