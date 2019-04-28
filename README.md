@@ -79,7 +79,7 @@ let template = new Template({
 
 ## Property types
 
-Libcf provides an interface for each CloudFormation property type.  These may be useful when, for example, re-using certain property values across different resources.  To create a property type in JavaScript, you should use the static methods which exist on each resource type class.  For example, the following code shows how to create a [DynamoDB KeySchema](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html) property and store it for re-use by multiple resources:
+Libcf provides an interface for each CloudFormation property type.  These may be useful when, for example, re-using certain property values across different resources.  To create a property type instance, you should use the static methods which exist on each resource type class.  For example, the following code shows how to create a [DynamoDB KeySchema](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html) property and store it for re-use by multiple resources:
 
 ```javascript
 let usersKeySchema = Cf.AWS.DynamoDB.Table.KeySchema({
@@ -98,17 +98,6 @@ let template = new Template({
 ```
 
 (Note the use of the static `Cf.AWS.DynamoDB.Table.KeySchema` method - this convenience method simply returns the input without doing anything, however it has type information attached to it, which allows the VSCode's intellisense and type checking to work).
-
-In TypeScript, the interface can be used directly:
-
-```typescript
-let usersKeySchema: Cf.AWS.DynamoDB.TableKeySchema = ({
-    AttributeName: "UserId",
-    KeyType: "HASH"
-})
-```
-
-Note that the property type name (`KeySchema`) is prefixed by the resource type name (`Table`), due to name clashes which would occur otherwise.
 
 ## Other resource properties
 

@@ -29,7 +29,8 @@ export class ResourceType {
     }
 
     generateCode() {
-        let propertyCode = this._propertyTypes.reduce((array, p) => array.concat(p.generateStaticCastFunction()), [])
+        let propertyCastFunctions = this._propertyTypes.reduce((array, p) => array.concat(p.generateStaticCastFunction()), [])
+        let propertyTypeNameFunctions = this._propertyTypes.reduce((array, p) => array.concat(p.generateStaticTypeNameFunction()), [])
         let innerCode = [
             ...this.generateTypeNameStaticGetter(),
             ...this.generateInstanceVariables(),
@@ -41,7 +42,8 @@ export class ResourceType {
             ...this.generateAttributeBuilder('Metadata'),
             ...this.generateAttributeBuilder('UpdatePolicy'),
             ...this.generateAttributeBuilder('UpdateReplacePolicy'),
-            ...propertyCode
+            ...propertyCastFunctions,
+            ...propertyTypeNameFunctions
         ].map(line => '  ' + line)
 
         return [

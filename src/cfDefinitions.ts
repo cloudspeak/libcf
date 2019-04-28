@@ -377,6 +377,18 @@ export namespace Cf {
         static ConfigurationOptionSetting(properties: ConfigurationTemplateConfigurationOptionSetting) : ConfigurationTemplateConfigurationOptionSetting {
           return properties;
         }
+        /**
+         * Returns the SourceConfiguration property type name (`"AWS::ElasticBeanstalk::ConfigurationTemplate.SourceConfiguration"`)
+         */
+        static get SourceConfigurationTypeName(): string {
+          return "AWS::ElasticBeanstalk::ConfigurationTemplate.SourceConfiguration"
+        }
+        /**
+         * Returns the ConfigurationOptionSetting property type name (`"AWS::ElasticBeanstalk::ConfigurationTemplate.ConfigurationOptionSetting"`)
+         */
+        static get ConfigurationOptionSettingTypeName(): string {
+          return "AWS::ElasticBeanstalk::ConfigurationTemplate.ConfigurationOptionSetting"
+        }
       }
       export interface ApplicationProperties {
         /**
@@ -486,6 +498,30 @@ export namespace Cf {
          */
         static MaxAgeRule(properties: ApplicationMaxAgeRule) : ApplicationMaxAgeRule {
           return properties;
+        }
+        /**
+         * Returns the ApplicationResourceLifecycleConfig property type name (`"AWS::ElasticBeanstalk::Application.ApplicationResourceLifecycleConfig"`)
+         */
+        static get ApplicationResourceLifecycleConfigTypeName(): string {
+          return "AWS::ElasticBeanstalk::Application.ApplicationResourceLifecycleConfig"
+        }
+        /**
+         * Returns the ApplicationVersionLifecycleConfig property type name (`"AWS::ElasticBeanstalk::Application.ApplicationVersionLifecycleConfig"`)
+         */
+        static get ApplicationVersionLifecycleConfigTypeName(): string {
+          return "AWS::ElasticBeanstalk::Application.ApplicationVersionLifecycleConfig"
+        }
+        /**
+         * Returns the MaxCountRule property type name (`"AWS::ElasticBeanstalk::Application.MaxCountRule"`)
+         */
+        static get MaxCountRuleTypeName(): string {
+          return "AWS::ElasticBeanstalk::Application.MaxCountRule"
+        }
+        /**
+         * Returns the MaxAgeRule property type name (`"AWS::ElasticBeanstalk::Application.MaxAgeRule"`)
+         */
+        static get MaxAgeRuleTypeName(): string {
+          return "AWS::ElasticBeanstalk::Application.MaxAgeRule"
         }
       }
       export interface EnvironmentProperties {
@@ -653,6 +689,18 @@ export namespace Cf {
         static Tier(properties: EnvironmentTier) : EnvironmentTier {
           return properties;
         }
+        /**
+         * Returns the OptionSetting property type name (`"AWS::ElasticBeanstalk::Environment.OptionSetting"`)
+         */
+        static get OptionSettingTypeName(): string {
+          return "AWS::ElasticBeanstalk::Environment.OptionSetting"
+        }
+        /**
+         * Returns the Tier property type name (`"AWS::ElasticBeanstalk::Environment.Tier"`)
+         */
+        static get TierTypeName(): string {
+          return "AWS::ElasticBeanstalk::Environment.Tier"
+        }
       }
       export interface ApplicationVersionProperties {
         /**
@@ -738,6 +786,12 @@ export namespace Cf {
          */
         static SourceBundle(properties: ApplicationVersionSourceBundle) : ApplicationVersionSourceBundle {
           return properties;
+        }
+        /**
+         * Returns the SourceBundle property type name (`"AWS::ElasticBeanstalk::ApplicationVersion.SourceBundle"`)
+         */
+        static get SourceBundleTypeName(): string {
+          return "AWS::ElasticBeanstalk::ApplicationVersion.SourceBundle"
         }
       }
     }
@@ -1125,6 +1179,36 @@ export namespace Cf {
         static ConfigurationId(properties: BrokerConfigurationId) : BrokerConfigurationId {
           return properties;
         }
+        /**
+         * Returns the User property type name (`"AWS::AmazonMQ::Broker.User"`)
+         */
+        static get UserTypeName(): string {
+          return "AWS::AmazonMQ::Broker.User"
+        }
+        /**
+         * Returns the MaintenanceWindow property type name (`"AWS::AmazonMQ::Broker.MaintenanceWindow"`)
+         */
+        static get MaintenanceWindowTypeName(): string {
+          return "AWS::AmazonMQ::Broker.MaintenanceWindow"
+        }
+        /**
+         * Returns the LogList property type name (`"AWS::AmazonMQ::Broker.LogList"`)
+         */
+        static get LogListTypeName(): string {
+          return "AWS::AmazonMQ::Broker.LogList"
+        }
+        /**
+         * Returns the TagsEntry property type name (`"AWS::AmazonMQ::Broker.TagsEntry"`)
+         */
+        static get TagsEntryTypeName(): string {
+          return "AWS::AmazonMQ::Broker.TagsEntry"
+        }
+        /**
+         * Returns the ConfigurationId property type name (`"AWS::AmazonMQ::Broker.ConfigurationId"`)
+         */
+        static get ConfigurationIdTypeName(): string {
+          return "AWS::AmazonMQ::Broker.ConfigurationId"
+        }
       }
       export interface ConfigurationAssociationProperties {
         /**
@@ -1201,6 +1285,12 @@ export namespace Cf {
          */
         static ConfigurationId(properties: ConfigurationAssociationConfigurationId) : ConfigurationAssociationConfigurationId {
           return properties;
+        }
+        /**
+         * Returns the ConfigurationId property type name (`"AWS::AmazonMQ::ConfigurationAssociation.ConfigurationId"`)
+         */
+        static get ConfigurationIdTypeName(): string {
+          return "AWS::AmazonMQ::ConfigurationAssociation.ConfigurationId"
         }
       }
       export interface ConfigurationProperties {
@@ -1314,6 +1404,12 @@ export namespace Cf {
          */
         static TagsEntry(properties: ConfigurationTagsEntry) : ConfigurationTagsEntry {
           return properties;
+        }
+        /**
+         * Returns the TagsEntry property type name (`"AWS::AmazonMQ::Configuration.TagsEntry"`)
+         */
+        static get TagsEntryTypeName(): string {
+          return "AWS::AmazonMQ::Configuration.TagsEntry"
         }
       }
     }
@@ -1816,6 +1912,54 @@ export namespace Cf {
         static ElasticsearchConfig(properties: DataSourceElasticsearchConfig) : DataSourceElasticsearchConfig {
           return properties;
         }
+        /**
+         * Returns the AuthorizationConfig property type name (`"AWS::AppSync::DataSource.AuthorizationConfig"`)
+         */
+        static get AuthorizationConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.AuthorizationConfig"
+        }
+        /**
+         * Returns the RelationalDatabaseConfig property type name (`"AWS::AppSync::DataSource.RelationalDatabaseConfig"`)
+         */
+        static get RelationalDatabaseConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.RelationalDatabaseConfig"
+        }
+        /**
+         * Returns the RdsHttpEndpointConfig property type name (`"AWS::AppSync::DataSource.RdsHttpEndpointConfig"`)
+         */
+        static get RdsHttpEndpointConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.RdsHttpEndpointConfig"
+        }
+        /**
+         * Returns the LambdaConfig property type name (`"AWS::AppSync::DataSource.LambdaConfig"`)
+         */
+        static get LambdaConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.LambdaConfig"
+        }
+        /**
+         * Returns the AwsIamConfig property type name (`"AWS::AppSync::DataSource.AwsIamConfig"`)
+         */
+        static get AwsIamConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.AwsIamConfig"
+        }
+        /**
+         * Returns the HttpConfig property type name (`"AWS::AppSync::DataSource.HttpConfig"`)
+         */
+        static get HttpConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.HttpConfig"
+        }
+        /**
+         * Returns the DynamoDBConfig property type name (`"AWS::AppSync::DataSource.DynamoDBConfig"`)
+         */
+        static get DynamoDBConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.DynamoDBConfig"
+        }
+        /**
+         * Returns the ElasticsearchConfig property type name (`"AWS::AppSync::DataSource.ElasticsearchConfig"`)
+         */
+        static get ElasticsearchConfigTypeName(): string {
+          return "AWS::AppSync::DataSource.ElasticsearchConfig"
+        }
       }
       export interface ResolverProperties {
         /**
@@ -1964,6 +2108,12 @@ export namespace Cf {
          */
         static PipelineConfig(properties: ResolverPipelineConfig) : ResolverPipelineConfig {
           return properties;
+        }
+        /**
+         * Returns the PipelineConfig property type name (`"AWS::AppSync::Resolver.PipelineConfig"`)
+         */
+        static get PipelineConfigTypeName(): string {
+          return "AWS::AppSync::Resolver.PipelineConfig"
         }
       }
       export interface GraphQLSchemaProperties {
@@ -2162,6 +2312,24 @@ export namespace Cf {
          */
         static UserPoolConfig(properties: GraphQLApiUserPoolConfig) : GraphQLApiUserPoolConfig {
           return properties;
+        }
+        /**
+         * Returns the OpenIDConnectConfig property type name (`"AWS::AppSync::GraphQLApi.OpenIDConnectConfig"`)
+         */
+        static get OpenIDConnectConfigTypeName(): string {
+          return "AWS::AppSync::GraphQLApi.OpenIDConnectConfig"
+        }
+        /**
+         * Returns the LogConfig property type name (`"AWS::AppSync::GraphQLApi.LogConfig"`)
+         */
+        static get LogConfigTypeName(): string {
+          return "AWS::AppSync::GraphQLApi.LogConfig"
+        }
+        /**
+         * Returns the UserPoolConfig property type name (`"AWS::AppSync::GraphQLApi.UserPoolConfig"`)
+         */
+        static get UserPoolConfigTypeName(): string {
+          return "AWS::AppSync::GraphQLApi.UserPoolConfig"
         }
       }
       export interface FunctionConfigurationProperties {
@@ -5275,6 +5443,18 @@ export namespace Cf {
         static PortRange(properties: NetworkAclEntryPortRange) : NetworkAclEntryPortRange {
           return properties;
         }
+        /**
+         * Returns the Icmp property type name (`"AWS::EC2::NetworkAclEntry.Icmp"`)
+         */
+        static get IcmpTypeName(): string {
+          return "AWS::EC2::NetworkAclEntry.Icmp"
+        }
+        /**
+         * Returns the PortRange property type name (`"AWS::EC2::NetworkAclEntry.PortRange"`)
+         */
+        static get PortRangeTypeName(): string {
+          return "AWS::EC2::NetworkAclEntry.PortRange"
+        }
       }
       export interface InternetGatewayProperties {
         /**
@@ -5571,6 +5751,132 @@ export namespace Cf {
          */
         static LaunchTemplateElasticInferenceAccelerator(properties: LaunchTemplateLaunchTemplateElasticInferenceAccelerator) : LaunchTemplateLaunchTemplateElasticInferenceAccelerator {
           return properties;
+        }
+        /**
+         * Returns the PrivateIpAdd property type name (`"AWS::EC2::LaunchTemplate.PrivateIpAdd"`)
+         */
+        static get PrivateIpAddTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.PrivateIpAdd"
+        }
+        /**
+         * Returns the LaunchTemplateData property type name (`"AWS::EC2::LaunchTemplate.LaunchTemplateData"`)
+         */
+        static get LaunchTemplateDataTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.LaunchTemplateData"
+        }
+        /**
+         * Returns the InstanceMarketOptions property type name (`"AWS::EC2::LaunchTemplate.InstanceMarketOptions"`)
+         */
+        static get InstanceMarketOptionsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.InstanceMarketOptions"
+        }
+        /**
+         * Returns the CreditSpecification property type name (`"AWS::EC2::LaunchTemplate.CreditSpecification"`)
+         */
+        static get CreditSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CreditSpecification"
+        }
+        /**
+         * Returns the Monitoring property type name (`"AWS::EC2::LaunchTemplate.Monitoring"`)
+         */
+        static get MonitoringTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.Monitoring"
+        }
+        /**
+         * Returns the Placement property type name (`"AWS::EC2::LaunchTemplate.Placement"`)
+         */
+        static get PlacementTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.Placement"
+        }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::EC2::LaunchTemplate.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.BlockDeviceMapping"
+        }
+        /**
+         * Returns the SpotOptions property type name (`"AWS::EC2::LaunchTemplate.SpotOptions"`)
+         */
+        static get SpotOptionsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.SpotOptions"
+        }
+        /**
+         * Returns the CapacityReservationPreference property type name (`"AWS::EC2::LaunchTemplate.CapacityReservationPreference"`)
+         */
+        static get CapacityReservationPreferenceTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CapacityReservationPreference"
+        }
+        /**
+         * Returns the CapacityReservationSpecification property type name (`"AWS::EC2::LaunchTemplate.CapacityReservationSpecification"`)
+         */
+        static get CapacityReservationSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CapacityReservationSpecification"
+        }
+        /**
+         * Returns the ElasticGpuSpecification property type name (`"AWS::EC2::LaunchTemplate.ElasticGpuSpecification"`)
+         */
+        static get ElasticGpuSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.ElasticGpuSpecification"
+        }
+        /**
+         * Returns the TagSpecification property type name (`"AWS::EC2::LaunchTemplate.TagSpecification"`)
+         */
+        static get TagSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.TagSpecification"
+        }
+        /**
+         * Returns the Ipv6Add property type name (`"AWS::EC2::LaunchTemplate.Ipv6Add"`)
+         */
+        static get Ipv6AddTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.Ipv6Add"
+        }
+        /**
+         * Returns the IamInstanceProfile property type name (`"AWS::EC2::LaunchTemplate.IamInstanceProfile"`)
+         */
+        static get IamInstanceProfileTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.IamInstanceProfile"
+        }
+        /**
+         * Returns the CapacityReservationTarget property type name (`"AWS::EC2::LaunchTemplate.CapacityReservationTarget"`)
+         */
+        static get CapacityReservationTargetTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CapacityReservationTarget"
+        }
+        /**
+         * Returns the NetworkInterface property type name (`"AWS::EC2::LaunchTemplate.NetworkInterface"`)
+         */
+        static get NetworkInterfaceTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.NetworkInterface"
+        }
+        /**
+         * Returns the LicenseSpecification property type name (`"AWS::EC2::LaunchTemplate.LicenseSpecification"`)
+         */
+        static get LicenseSpecificationTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.LicenseSpecification"
+        }
+        /**
+         * Returns the CpuOptions property type name (`"AWS::EC2::LaunchTemplate.CpuOptions"`)
+         */
+        static get CpuOptionsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.CpuOptions"
+        }
+        /**
+         * Returns the Ebs property type name (`"AWS::EC2::LaunchTemplate.Ebs"`)
+         */
+        static get EbsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.Ebs"
+        }
+        /**
+         * Returns the HibernationOptions property type name (`"AWS::EC2::LaunchTemplate.HibernationOptions"`)
+         */
+        static get HibernationOptionsTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.HibernationOptions"
+        }
+        /**
+         * Returns the LaunchTemplateElasticInferenceAccelerator property type name (`"AWS::EC2::LaunchTemplate.LaunchTemplateElasticInferenceAccelerator"`)
+         */
+        static get LaunchTemplateElasticInferenceAcceleratorTypeName(): string {
+          return "AWS::EC2::LaunchTemplate.LaunchTemplateElasticInferenceAccelerator"
         }
       }
       export interface VolumeProperties {
@@ -5992,6 +6298,126 @@ export namespace Cf {
          */
         static BlockDeviceMapping(properties: SpotFleetBlockDeviceMapping) : SpotFleetBlockDeviceMapping {
           return properties;
+        }
+        /**
+         * Returns the ClassicLoadBalancer property type name (`"AWS::EC2::SpotFleet.ClassicLoadBalancer"`)
+         */
+        static get ClassicLoadBalancerTypeName(): string {
+          return "AWS::EC2::SpotFleet.ClassicLoadBalancer"
+        }
+        /**
+         * Returns the LaunchTemplateConfig property type name (`"AWS::EC2::SpotFleet.LaunchTemplateConfig"`)
+         */
+        static get LaunchTemplateConfigTypeName(): string {
+          return "AWS::EC2::SpotFleet.LaunchTemplateConfig"
+        }
+        /**
+         * Returns the IamInstanceProfileSpecification property type name (`"AWS::EC2::SpotFleet.IamInstanceProfileSpecification"`)
+         */
+        static get IamInstanceProfileSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.IamInstanceProfileSpecification"
+        }
+        /**
+         * Returns the InstanceNetworkInterfaceSpecification property type name (`"AWS::EC2::SpotFleet.InstanceNetworkInterfaceSpecification"`)
+         */
+        static get InstanceNetworkInterfaceSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.InstanceNetworkInterfaceSpecification"
+        }
+        /**
+         * Returns the SpotFleetTagSpecification property type name (`"AWS::EC2::SpotFleet.SpotFleetTagSpecification"`)
+         */
+        static get SpotFleetTagSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotFleetTagSpecification"
+        }
+        /**
+         * Returns the PrivateIpAddressSpecification property type name (`"AWS::EC2::SpotFleet.PrivateIpAddressSpecification"`)
+         */
+        static get PrivateIpAddressSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.PrivateIpAddressSpecification"
+        }
+        /**
+         * Returns the SpotFleetLaunchSpecification property type name (`"AWS::EC2::SpotFleet.SpotFleetLaunchSpecification"`)
+         */
+        static get SpotFleetLaunchSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotFleetLaunchSpecification"
+        }
+        /**
+         * Returns the ClassicLoadBalancersConfig property type name (`"AWS::EC2::SpotFleet.ClassicLoadBalancersConfig"`)
+         */
+        static get ClassicLoadBalancersConfigTypeName(): string {
+          return "AWS::EC2::SpotFleet.ClassicLoadBalancersConfig"
+        }
+        /**
+         * Returns the SpotPlacement property type name (`"AWS::EC2::SpotFleet.SpotPlacement"`)
+         */
+        static get SpotPlacementTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotPlacement"
+        }
+        /**
+         * Returns the SpotFleetRequestConfigData property type name (`"AWS::EC2::SpotFleet.SpotFleetRequestConfigData"`)
+         */
+        static get SpotFleetRequestConfigDataTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotFleetRequestConfigData"
+        }
+        /**
+         * Returns the EbsBlockDevice property type name (`"AWS::EC2::SpotFleet.EbsBlockDevice"`)
+         */
+        static get EbsBlockDeviceTypeName(): string {
+          return "AWS::EC2::SpotFleet.EbsBlockDevice"
+        }
+        /**
+         * Returns the LoadBalancersConfig property type name (`"AWS::EC2::SpotFleet.LoadBalancersConfig"`)
+         */
+        static get LoadBalancersConfigTypeName(): string {
+          return "AWS::EC2::SpotFleet.LoadBalancersConfig"
+        }
+        /**
+         * Returns the FleetLaunchTemplateSpecification property type name (`"AWS::EC2::SpotFleet.FleetLaunchTemplateSpecification"`)
+         */
+        static get FleetLaunchTemplateSpecificationTypeName(): string {
+          return "AWS::EC2::SpotFleet.FleetLaunchTemplateSpecification"
+        }
+        /**
+         * Returns the TargetGroup property type name (`"AWS::EC2::SpotFleet.TargetGroup"`)
+         */
+        static get TargetGroupTypeName(): string {
+          return "AWS::EC2::SpotFleet.TargetGroup"
+        }
+        /**
+         * Returns the InstanceIpv6Address property type name (`"AWS::EC2::SpotFleet.InstanceIpv6Address"`)
+         */
+        static get InstanceIpv6AddressTypeName(): string {
+          return "AWS::EC2::SpotFleet.InstanceIpv6Address"
+        }
+        /**
+         * Returns the TargetGroupsConfig property type name (`"AWS::EC2::SpotFleet.TargetGroupsConfig"`)
+         */
+        static get TargetGroupsConfigTypeName(): string {
+          return "AWS::EC2::SpotFleet.TargetGroupsConfig"
+        }
+        /**
+         * Returns the GroupIdentifier property type name (`"AWS::EC2::SpotFleet.GroupIdentifier"`)
+         */
+        static get GroupIdentifierTypeName(): string {
+          return "AWS::EC2::SpotFleet.GroupIdentifier"
+        }
+        /**
+         * Returns the LaunchTemplateOverrides property type name (`"AWS::EC2::SpotFleet.LaunchTemplateOverrides"`)
+         */
+        static get LaunchTemplateOverridesTypeName(): string {
+          return "AWS::EC2::SpotFleet.LaunchTemplateOverrides"
+        }
+        /**
+         * Returns the SpotFleetMonitoring property type name (`"AWS::EC2::SpotFleet.SpotFleetMonitoring"`)
+         */
+        static get SpotFleetMonitoringTypeName(): string {
+          return "AWS::EC2::SpotFleet.SpotFleetMonitoring"
+        }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::EC2::SpotFleet.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::EC2::SpotFleet.BlockDeviceMapping"
         }
       }
       export interface VPNConnectionRouteProperties {
@@ -7059,6 +7485,18 @@ export namespace Cf {
         static PrivateIpAddressSpecification(properties: NetworkInterfacePrivateIpAddressSpecification) : NetworkInterfacePrivateIpAddressSpecification {
           return properties;
         }
+        /**
+         * Returns the InstanceIpv6Address property type name (`"AWS::EC2::NetworkInterface.InstanceIpv6Address"`)
+         */
+        static get InstanceIpv6AddressTypeName(): string {
+          return "AWS::EC2::NetworkInterface.InstanceIpv6Address"
+        }
+        /**
+         * Returns the PrivateIpAddressSpecification property type name (`"AWS::EC2::NetworkInterface.PrivateIpAddressSpecification"`)
+         */
+        static get PrivateIpAddressSpecificationTypeName(): string {
+          return "AWS::EC2::NetworkInterface.PrivateIpAddressSpecification"
+        }
       }
       export interface TransitGatewayAttachmentProperties {
         /**
@@ -7482,6 +7920,18 @@ export namespace Cf {
          */
         static Egress(properties: SecurityGroupEgress) : SecurityGroupEgress {
           return properties;
+        }
+        /**
+         * Returns the Ingress property type name (`"AWS::EC2::SecurityGroup.Ingress"`)
+         */
+        static get IngressTypeName(): string {
+          return "AWS::EC2::SecurityGroup.Ingress"
+        }
+        /**
+         * Returns the Egress property type name (`"AWS::EC2::SecurityGroup.Egress"`)
+         */
+        static get EgressTypeName(): string {
+          return "AWS::EC2::SecurityGroup.Egress"
         }
       }
       export interface SubnetProperties {
@@ -8161,6 +8611,90 @@ export namespace Cf {
          */
         static PrivateIpAddressSpecification(properties: InstancePrivateIpAddressSpecification) : InstancePrivateIpAddressSpecification {
           return properties;
+        }
+        /**
+         * Returns the ElasticGpuSpecification property type name (`"AWS::EC2::Instance.ElasticGpuSpecification"`)
+         */
+        static get ElasticGpuSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.ElasticGpuSpecification"
+        }
+        /**
+         * Returns the NetworkInterface property type name (`"AWS::EC2::Instance.NetworkInterface"`)
+         */
+        static get NetworkInterfaceTypeName(): string {
+          return "AWS::EC2::Instance.NetworkInterface"
+        }
+        /**
+         * Returns the InstanceIpv6Address property type name (`"AWS::EC2::Instance.InstanceIpv6Address"`)
+         */
+        static get InstanceIpv6AddressTypeName(): string {
+          return "AWS::EC2::Instance.InstanceIpv6Address"
+        }
+        /**
+         * Returns the Volume property type name (`"AWS::EC2::Instance.Volume"`)
+         */
+        static get VolumeTypeName(): string {
+          return "AWS::EC2::Instance.Volume"
+        }
+        /**
+         * Returns the AssociationParameter property type name (`"AWS::EC2::Instance.AssociationParameter"`)
+         */
+        static get AssociationParameterTypeName(): string {
+          return "AWS::EC2::Instance.AssociationParameter"
+        }
+        /**
+         * Returns the LaunchTemplateSpecification property type name (`"AWS::EC2::Instance.LaunchTemplateSpecification"`)
+         */
+        static get LaunchTemplateSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.LaunchTemplateSpecification"
+        }
+        /**
+         * Returns the Ebs property type name (`"AWS::EC2::Instance.Ebs"`)
+         */
+        static get EbsTypeName(): string {
+          return "AWS::EC2::Instance.Ebs"
+        }
+        /**
+         * Returns the LicenseSpecification property type name (`"AWS::EC2::Instance.LicenseSpecification"`)
+         */
+        static get LicenseSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.LicenseSpecification"
+        }
+        /**
+         * Returns the NoDevice property type name (`"AWS::EC2::Instance.NoDevice"`)
+         */
+        static get NoDeviceTypeName(): string {
+          return "AWS::EC2::Instance.NoDevice"
+        }
+        /**
+         * Returns the SsmAssociation property type name (`"AWS::EC2::Instance.SsmAssociation"`)
+         */
+        static get SsmAssociationTypeName(): string {
+          return "AWS::EC2::Instance.SsmAssociation"
+        }
+        /**
+         * Returns the CreditSpecification property type name (`"AWS::EC2::Instance.CreditSpecification"`)
+         */
+        static get CreditSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.CreditSpecification"
+        }
+        /**
+         * Returns the ElasticInferenceAccelerator property type name (`"AWS::EC2::Instance.ElasticInferenceAccelerator"`)
+         */
+        static get ElasticInferenceAcceleratorTypeName(): string {
+          return "AWS::EC2::Instance.ElasticInferenceAccelerator"
+        }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::EC2::Instance.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::EC2::Instance.BlockDeviceMapping"
+        }
+        /**
+         * Returns the PrivateIpAddressSpecification property type name (`"AWS::EC2::Instance.PrivateIpAddressSpecification"`)
+         */
+        static get PrivateIpAddressSpecificationTypeName(): string {
+          return "AWS::EC2::Instance.PrivateIpAddressSpecification"
         }
       }
       export interface DHCPOptionsProperties {
@@ -9457,6 +9991,12 @@ export namespace Cf {
         static VpnTunnelOptionsSpecification(properties: VPNConnectionVpnTunnelOptionsSpecification) : VPNConnectionVpnTunnelOptionsSpecification {
           return properties;
         }
+        /**
+         * Returns the VpnTunnelOptionsSpecification property type name (`"AWS::EC2::VPNConnection.VpnTunnelOptionsSpecification"`)
+         */
+        static get VpnTunnelOptionsSpecificationTypeName(): string {
+          return "AWS::EC2::VPNConnection.VpnTunnelOptionsSpecification"
+        }
       }
       export interface VPCCidrBlockProperties {
         /**
@@ -9748,6 +10288,54 @@ export namespace Cf {
          */
         static SpotOptionsRequest(properties: EC2FleetSpotOptionsRequest) : EC2FleetSpotOptionsRequest {
           return properties;
+        }
+        /**
+         * Returns the FleetLaunchTemplateSpecificationRequest property type name (`"AWS::EC2::EC2Fleet.FleetLaunchTemplateSpecificationRequest"`)
+         */
+        static get FleetLaunchTemplateSpecificationRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.FleetLaunchTemplateSpecificationRequest"
+        }
+        /**
+         * Returns the FleetLaunchTemplateConfigRequest property type name (`"AWS::EC2::EC2Fleet.FleetLaunchTemplateConfigRequest"`)
+         */
+        static get FleetLaunchTemplateConfigRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.FleetLaunchTemplateConfigRequest"
+        }
+        /**
+         * Returns the OnDemandOptionsRequest property type name (`"AWS::EC2::EC2Fleet.OnDemandOptionsRequest"`)
+         */
+        static get OnDemandOptionsRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.OnDemandOptionsRequest"
+        }
+        /**
+         * Returns the TagRequest property type name (`"AWS::EC2::EC2Fleet.TagRequest"`)
+         */
+        static get TagRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.TagRequest"
+        }
+        /**
+         * Returns the TargetCapacitySpecificationRequest property type name (`"AWS::EC2::EC2Fleet.TargetCapacitySpecificationRequest"`)
+         */
+        static get TargetCapacitySpecificationRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.TargetCapacitySpecificationRequest"
+        }
+        /**
+         * Returns the FleetLaunchTemplateOverridesRequest property type name (`"AWS::EC2::EC2Fleet.FleetLaunchTemplateOverridesRequest"`)
+         */
+        static get FleetLaunchTemplateOverridesRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.FleetLaunchTemplateOverridesRequest"
+        }
+        /**
+         * Returns the TagSpecification property type name (`"AWS::EC2::EC2Fleet.TagSpecification"`)
+         */
+        static get TagSpecificationTypeName(): string {
+          return "AWS::EC2::EC2Fleet.TagSpecification"
+        }
+        /**
+         * Returns the SpotOptionsRequest property type name (`"AWS::EC2::EC2Fleet.SpotOptionsRequest"`)
+         */
+        static get SpotOptionsRequestTypeName(): string {
+          return "AWS::EC2::EC2Fleet.SpotOptionsRequest"
         }
       }
       export interface TransitGatewayRouteTableProperties {
@@ -10591,6 +11179,12 @@ export namespace Cf {
         static ProvisioningParameter(properties: CloudFormationProvisionedProductProvisioningParameter) : CloudFormationProvisionedProductProvisioningParameter {
           return properties;
         }
+        /**
+         * Returns the ProvisioningParameter property type name (`"AWS::ServiceCatalog::CloudFormationProvisionedProduct.ProvisioningParameter"`)
+         */
+        static get ProvisioningParameterTypeName(): string {
+          return "AWS::ServiceCatalog::CloudFormationProvisionedProduct.ProvisioningParameter"
+        }
       }
       export interface CloudFormationProductProperties {
         /**
@@ -10739,6 +11333,12 @@ export namespace Cf {
          */
         static ProvisioningArtifactProperties(properties: CloudFormationProductProvisioningArtifactProperties) : CloudFormationProductProvisioningArtifactProperties {
           return properties;
+        }
+        /**
+         * Returns the ProvisioningArtifactProperties property type name (`"AWS::ServiceCatalog::CloudFormationProduct.ProvisioningArtifactProperties"`)
+         */
+        static get ProvisioningArtifactPropertiesTypeName(): string {
+          return "AWS::ServiceCatalog::CloudFormationProduct.ProvisioningArtifactProperties"
         }
       }
       export interface PortfolioProductAssociationProperties {
@@ -11723,6 +12323,24 @@ export namespace Cf {
         static MappingRule(properties: IdentityPoolRoleAttachmentMappingRule) : IdentityPoolRoleAttachmentMappingRule {
           return properties;
         }
+        /**
+         * Returns the RulesConfigurationType property type name (`"AWS::Cognito::IdentityPoolRoleAttachment.RulesConfigurationType"`)
+         */
+        static get RulesConfigurationTypeTypeName(): string {
+          return "AWS::Cognito::IdentityPoolRoleAttachment.RulesConfigurationType"
+        }
+        /**
+         * Returns the RoleMapping property type name (`"AWS::Cognito::IdentityPoolRoleAttachment.RoleMapping"`)
+         */
+        static get RoleMappingTypeName(): string {
+          return "AWS::Cognito::IdentityPoolRoleAttachment.RoleMapping"
+        }
+        /**
+         * Returns the MappingRule property type name (`"AWS::Cognito::IdentityPoolRoleAttachment.MappingRule"`)
+         */
+        static get MappingRuleTypeName(): string {
+          return "AWS::Cognito::IdentityPoolRoleAttachment.MappingRule"
+        }
       }
       export interface UserPoolGroupProperties {
         /**
@@ -11984,6 +12602,24 @@ export namespace Cf {
         static CognitoStreams(properties: IdentityPoolCognitoStreams) : IdentityPoolCognitoStreams {
           return properties;
         }
+        /**
+         * Returns the PushSync property type name (`"AWS::Cognito::IdentityPool.PushSync"`)
+         */
+        static get PushSyncTypeName(): string {
+          return "AWS::Cognito::IdentityPool.PushSync"
+        }
+        /**
+         * Returns the CognitoIdentityProvider property type name (`"AWS::Cognito::IdentityPool.CognitoIdentityProvider"`)
+         */
+        static get CognitoIdentityProviderTypeName(): string {
+          return "AWS::Cognito::IdentityPool.CognitoIdentityProvider"
+        }
+        /**
+         * Returns the CognitoStreams property type name (`"AWS::Cognito::IdentityPool.CognitoStreams"`)
+         */
+        static get CognitoStreamsTypeName(): string {
+          return "AWS::Cognito::IdentityPool.CognitoStreams"
+        }
       }
       export interface UserPoolUserProperties {
         /**
@@ -12105,6 +12741,12 @@ export namespace Cf {
          */
         static AttributeType(properties: UserPoolUserAttributeType) : UserPoolUserAttributeType {
           return properties;
+        }
+        /**
+         * Returns the AttributeType property type name (`"AWS::Cognito::UserPoolUser.AttributeType"`)
+         */
+        static get AttributeTypeTypeName(): string {
+          return "AWS::Cognito::UserPoolUser.AttributeType"
         }
       }
       export interface UserPoolProperties {
@@ -12397,6 +13039,72 @@ export namespace Cf {
          */
         static StringAttributeConstraints(properties: UserPoolStringAttributeConstraints) : UserPoolStringAttributeConstraints {
           return properties;
+        }
+        /**
+         * Returns the PasswordPolicy property type name (`"AWS::Cognito::UserPool.PasswordPolicy"`)
+         */
+        static get PasswordPolicyTypeName(): string {
+          return "AWS::Cognito::UserPool.PasswordPolicy"
+        }
+        /**
+         * Returns the Policies property type name (`"AWS::Cognito::UserPool.Policies"`)
+         */
+        static get PoliciesTypeName(): string {
+          return "AWS::Cognito::UserPool.Policies"
+        }
+        /**
+         * Returns the EmailConfiguration property type name (`"AWS::Cognito::UserPool.EmailConfiguration"`)
+         */
+        static get EmailConfigurationTypeName(): string {
+          return "AWS::Cognito::UserPool.EmailConfiguration"
+        }
+        /**
+         * Returns the LambdaConfig property type name (`"AWS::Cognito::UserPool.LambdaConfig"`)
+         */
+        static get LambdaConfigTypeName(): string {
+          return "AWS::Cognito::UserPool.LambdaConfig"
+        }
+        /**
+         * Returns the AdminCreateUserConfig property type name (`"AWS::Cognito::UserPool.AdminCreateUserConfig"`)
+         */
+        static get AdminCreateUserConfigTypeName(): string {
+          return "AWS::Cognito::UserPool.AdminCreateUserConfig"
+        }
+        /**
+         * Returns the SchemaAttribute property type name (`"AWS::Cognito::UserPool.SchemaAttribute"`)
+         */
+        static get SchemaAttributeTypeName(): string {
+          return "AWS::Cognito::UserPool.SchemaAttribute"
+        }
+        /**
+         * Returns the NumberAttributeConstraints property type name (`"AWS::Cognito::UserPool.NumberAttributeConstraints"`)
+         */
+        static get NumberAttributeConstraintsTypeName(): string {
+          return "AWS::Cognito::UserPool.NumberAttributeConstraints"
+        }
+        /**
+         * Returns the SmsConfiguration property type name (`"AWS::Cognito::UserPool.SmsConfiguration"`)
+         */
+        static get SmsConfigurationTypeName(): string {
+          return "AWS::Cognito::UserPool.SmsConfiguration"
+        }
+        /**
+         * Returns the DeviceConfiguration property type name (`"AWS::Cognito::UserPool.DeviceConfiguration"`)
+         */
+        static get DeviceConfigurationTypeName(): string {
+          return "AWS::Cognito::UserPool.DeviceConfiguration"
+        }
+        /**
+         * Returns the InviteMessageTemplate property type name (`"AWS::Cognito::UserPool.InviteMessageTemplate"`)
+         */
+        static get InviteMessageTemplateTypeName(): string {
+          return "AWS::Cognito::UserPool.InviteMessageTemplate"
+        }
+        /**
+         * Returns the StringAttributeConstraints property type name (`"AWS::Cognito::UserPool.StringAttributeConstraints"`)
+         */
+        static get StringAttributeConstraintsTypeName(): string {
+          return "AWS::Cognito::UserPool.StringAttributeConstraints"
         }
       }
       export interface UserPoolClientProperties {
@@ -12976,6 +13684,48 @@ export namespace Cf {
         static EcsParameters(properties: RuleEcsParameters) : RuleEcsParameters {
           return properties;
         }
+        /**
+         * Returns the SqsParameters property type name (`"AWS::Events::Rule.SqsParameters"`)
+         */
+        static get SqsParametersTypeName(): string {
+          return "AWS::Events::Rule.SqsParameters"
+        }
+        /**
+         * Returns the RunCommandParameters property type name (`"AWS::Events::Rule.RunCommandParameters"`)
+         */
+        static get RunCommandParametersTypeName(): string {
+          return "AWS::Events::Rule.RunCommandParameters"
+        }
+        /**
+         * Returns the Target property type name (`"AWS::Events::Rule.Target"`)
+         */
+        static get TargetTypeName(): string {
+          return "AWS::Events::Rule.Target"
+        }
+        /**
+         * Returns the RunCommandTarget property type name (`"AWS::Events::Rule.RunCommandTarget"`)
+         */
+        static get RunCommandTargetTypeName(): string {
+          return "AWS::Events::Rule.RunCommandTarget"
+        }
+        /**
+         * Returns the InputTransformer property type name (`"AWS::Events::Rule.InputTransformer"`)
+         */
+        static get InputTransformerTypeName(): string {
+          return "AWS::Events::Rule.InputTransformer"
+        }
+        /**
+         * Returns the KinesisParameters property type name (`"AWS::Events::Rule.KinesisParameters"`)
+         */
+        static get KinesisParametersTypeName(): string {
+          return "AWS::Events::Rule.KinesisParameters"
+        }
+        /**
+         * Returns the EcsParameters property type name (`"AWS::Events::Rule.EcsParameters"`)
+         */
+        static get EcsParametersTypeName(): string {
+          return "AWS::Events::Rule.EcsParameters"
+        }
       }
       export interface EventBusPolicyProperties {
         /**
@@ -13070,6 +13820,12 @@ export namespace Cf {
          */
         static Condition(properties: EventBusPolicyCondition) : EventBusPolicyCondition {
           return properties;
+        }
+        /**
+         * Returns the Condition property type name (`"AWS::Events::EventBusPolicy.Condition"`)
+         */
+        static get ConditionTypeName(): string {
+          return "AWS::Events::EventBusPolicy.Condition"
         }
       }
     }
@@ -13444,6 +14200,12 @@ export namespace Cf {
         static IPSetDescriptor(properties: IPSetIPSetDescriptor) : IPSetIPSetDescriptor {
           return properties;
         }
+        /**
+         * Returns the IPSetDescriptor property type name (`"AWS::WAF::IPSet.IPSetDescriptor"`)
+         */
+        static get IPSetDescriptorTypeName(): string {
+          return "AWS::WAF::IPSet.IPSetDescriptor"
+        }
       }
       export interface SizeConstraintSetProperties {
         /**
@@ -13528,6 +14290,18 @@ export namespace Cf {
          */
         static SizeConstraint(properties: SizeConstraintSetSizeConstraint) : SizeConstraintSetSizeConstraint {
           return properties;
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAF::SizeConstraintSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAF::SizeConstraintSet.FieldToMatch"
+        }
+        /**
+         * Returns the SizeConstraint property type name (`"AWS::WAF::SizeConstraintSet.SizeConstraint"`)
+         */
+        static get SizeConstraintTypeName(): string {
+          return "AWS::WAF::SizeConstraintSet.SizeConstraint"
         }
       }
       export interface RuleProperties {
@@ -13615,6 +14389,12 @@ export namespace Cf {
         static Predicate(properties: RulePredicate) : RulePredicate {
           return properties;
         }
+        /**
+         * Returns the Predicate property type name (`"AWS::WAF::Rule.Predicate"`)
+         */
+        static get PredicateTypeName(): string {
+          return "AWS::WAF::Rule.Predicate"
+        }
       }
       export interface ByteMatchSetProperties {
         /**
@@ -13700,6 +14480,18 @@ export namespace Cf {
         static FieldToMatch(properties: ByteMatchSetFieldToMatch) : ByteMatchSetFieldToMatch {
           return properties;
         }
+        /**
+         * Returns the ByteMatchTuple property type name (`"AWS::WAF::ByteMatchSet.ByteMatchTuple"`)
+         */
+        static get ByteMatchTupleTypeName(): string {
+          return "AWS::WAF::ByteMatchSet.ByteMatchTuple"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAF::ByteMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAF::ByteMatchSet.FieldToMatch"
+        }
       }
       export interface SqlInjectionMatchSetProperties {
         /**
@@ -13784,6 +14576,18 @@ export namespace Cf {
          */
         static FieldToMatch(properties: SqlInjectionMatchSetFieldToMatch) : SqlInjectionMatchSetFieldToMatch {
           return properties;
+        }
+        /**
+         * Returns the SqlInjectionMatchTuple property type name (`"AWS::WAF::SqlInjectionMatchSet.SqlInjectionMatchTuple"`)
+         */
+        static get SqlInjectionMatchTupleTypeName(): string {
+          return "AWS::WAF::SqlInjectionMatchSet.SqlInjectionMatchTuple"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAF::SqlInjectionMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAF::SqlInjectionMatchSet.FieldToMatch"
         }
       }
       export interface WebACLProperties {
@@ -13888,6 +14692,18 @@ export namespace Cf {
         static ActivatedRule(properties: WebACLActivatedRule) : WebACLActivatedRule {
           return properties;
         }
+        /**
+         * Returns the WafAction property type name (`"AWS::WAF::WebACL.WafAction"`)
+         */
+        static get WafActionTypeName(): string {
+          return "AWS::WAF::WebACL.WafAction"
+        }
+        /**
+         * Returns the ActivatedRule property type name (`"AWS::WAF::WebACL.ActivatedRule"`)
+         */
+        static get ActivatedRuleTypeName(): string {
+          return "AWS::WAF::WebACL.ActivatedRule"
+        }
       }
       export interface XssMatchSetProperties {
         /**
@@ -13972,6 +14788,18 @@ export namespace Cf {
          */
         static XssMatchTuple(properties: XssMatchSetXssMatchTuple) : XssMatchSetXssMatchTuple {
           return properties;
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAF::XssMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAF::XssMatchSet.FieldToMatch"
+        }
+        /**
+         * Returns the XssMatchTuple property type name (`"AWS::WAF::XssMatchSet.XssMatchTuple"`)
+         */
+        static get XssMatchTupleTypeName(): string {
+          return "AWS::WAF::XssMatchSet.XssMatchTuple"
         }
       }
     }
@@ -14149,6 +14977,12 @@ export namespace Cf {
          */
         static Policy(properties: GroupPolicy) : GroupPolicy {
           return properties;
+        }
+        /**
+         * Returns the Policy property type name (`"AWS::IAM::Group.Policy"`)
+         */
+        static get PolicyTypeName(): string {
+          return "AWS::IAM::Group.Policy"
         }
       }
       export interface PolicyProperties {
@@ -14367,6 +15201,12 @@ export namespace Cf {
          */
         static Policy(properties: RolePolicy) : RolePolicy {
           return properties;
+        }
+        /**
+         * Returns the Policy property type name (`"AWS::IAM::Role.Policy"`)
+         */
+        static get PolicyTypeName(): string {
+          return "AWS::IAM::Role.Policy"
         }
       }
       export interface ServiceLinkedRoleProperties {
@@ -14800,6 +15640,18 @@ export namespace Cf {
          */
         static Policy(properties: UserPolicy) : UserPolicy {
           return properties;
+        }
+        /**
+         * Returns the LoginProfile property type name (`"AWS::IAM::User.LoginProfile"`)
+         */
+        static get LoginProfileTypeName(): string {
+          return "AWS::IAM::User.LoginProfile"
+        }
+        /**
+         * Returns the Policy property type name (`"AWS::IAM::User.Policy"`)
+         */
+        static get PolicyTypeName(): string {
+          return "AWS::IAM::User.Policy"
         }
       }
       export interface ManagedPolicyProperties {
@@ -15490,6 +16342,24 @@ export namespace Cf {
         static ConfigurationProperties(properties: CustomActionTypeConfigurationProperties) : CustomActionTypeConfigurationProperties {
           return properties;
         }
+        /**
+         * Returns the Settings property type name (`"AWS::CodePipeline::CustomActionType.Settings"`)
+         */
+        static get SettingsTypeName(): string {
+          return "AWS::CodePipeline::CustomActionType.Settings"
+        }
+        /**
+         * Returns the ArtifactDetails property type name (`"AWS::CodePipeline::CustomActionType.ArtifactDetails"`)
+         */
+        static get ArtifactDetailsTypeName(): string {
+          return "AWS::CodePipeline::CustomActionType.ArtifactDetails"
+        }
+        /**
+         * Returns the ConfigurationProperties property type name (`"AWS::CodePipeline::CustomActionType.ConfigurationProperties"`)
+         */
+        static get ConfigurationPropertiesTypeName(): string {
+          return "AWS::CodePipeline::CustomActionType.ConfigurationProperties"
+        }
       }
       export interface WebhookProperties {
         /**
@@ -15628,6 +16498,18 @@ export namespace Cf {
          */
         static WebhookAuthConfiguration(properties: WebhookWebhookAuthConfiguration) : WebhookWebhookAuthConfiguration {
           return properties;
+        }
+        /**
+         * Returns the WebhookFilterRule property type name (`"AWS::CodePipeline::Webhook.WebhookFilterRule"`)
+         */
+        static get WebhookFilterRuleTypeName(): string {
+          return "AWS::CodePipeline::Webhook.WebhookFilterRule"
+        }
+        /**
+         * Returns the WebhookAuthConfiguration property type name (`"AWS::CodePipeline::Webhook.WebhookAuthConfiguration"`)
+         */
+        static get WebhookAuthConfigurationTypeName(): string {
+          return "AWS::CodePipeline::Webhook.WebhookAuthConfiguration"
         }
       }
       export interface PipelineProperties {
@@ -15822,6 +16704,66 @@ export namespace Cf {
          */
         static EncryptionKey(properties: PipelineEncryptionKey) : PipelineEncryptionKey {
           return properties;
+        }
+        /**
+         * Returns the InputArtifact property type name (`"AWS::CodePipeline::Pipeline.InputArtifact"`)
+         */
+        static get InputArtifactTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.InputArtifact"
+        }
+        /**
+         * Returns the ActionDeclaration property type name (`"AWS::CodePipeline::Pipeline.ActionDeclaration"`)
+         */
+        static get ActionDeclarationTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.ActionDeclaration"
+        }
+        /**
+         * Returns the StageDeclaration property type name (`"AWS::CodePipeline::Pipeline.StageDeclaration"`)
+         */
+        static get StageDeclarationTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.StageDeclaration"
+        }
+        /**
+         * Returns the BlockerDeclaration property type name (`"AWS::CodePipeline::Pipeline.BlockerDeclaration"`)
+         */
+        static get BlockerDeclarationTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.BlockerDeclaration"
+        }
+        /**
+         * Returns the ArtifactStoreMap property type name (`"AWS::CodePipeline::Pipeline.ArtifactStoreMap"`)
+         */
+        static get ArtifactStoreMapTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.ArtifactStoreMap"
+        }
+        /**
+         * Returns the StageTransition property type name (`"AWS::CodePipeline::Pipeline.StageTransition"`)
+         */
+        static get StageTransitionTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.StageTransition"
+        }
+        /**
+         * Returns the ArtifactStore property type name (`"AWS::CodePipeline::Pipeline.ArtifactStore"`)
+         */
+        static get ArtifactStoreTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.ArtifactStore"
+        }
+        /**
+         * Returns the ActionTypeId property type name (`"AWS::CodePipeline::Pipeline.ActionTypeId"`)
+         */
+        static get ActionTypeIdTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.ActionTypeId"
+        }
+        /**
+         * Returns the OutputArtifact property type name (`"AWS::CodePipeline::Pipeline.OutputArtifact"`)
+         */
+        static get OutputArtifactTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.OutputArtifact"
+        }
+        /**
+         * Returns the EncryptionKey property type name (`"AWS::CodePipeline::Pipeline.EncryptionKey"`)
+         */
+        static get EncryptionKeyTypeName(): string {
+          return "AWS::CodePipeline::Pipeline.EncryptionKey"
         }
       }
     }
@@ -16178,6 +17120,42 @@ export namespace Cf {
          */
         static EncryptionAtRestOptions(properties: DomainEncryptionAtRestOptions) : DomainEncryptionAtRestOptions {
           return properties;
+        }
+        /**
+         * Returns the VPCOptions property type name (`"AWS::Elasticsearch::Domain.VPCOptions"`)
+         */
+        static get VPCOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.VPCOptions"
+        }
+        /**
+         * Returns the NodeToNodeEncryptionOptions property type name (`"AWS::Elasticsearch::Domain.NodeToNodeEncryptionOptions"`)
+         */
+        static get NodeToNodeEncryptionOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.NodeToNodeEncryptionOptions"
+        }
+        /**
+         * Returns the ElasticsearchClusterConfig property type name (`"AWS::Elasticsearch::Domain.ElasticsearchClusterConfig"`)
+         */
+        static get ElasticsearchClusterConfigTypeName(): string {
+          return "AWS::Elasticsearch::Domain.ElasticsearchClusterConfig"
+        }
+        /**
+         * Returns the SnapshotOptions property type name (`"AWS::Elasticsearch::Domain.SnapshotOptions"`)
+         */
+        static get SnapshotOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.SnapshotOptions"
+        }
+        /**
+         * Returns the EBSOptions property type name (`"AWS::Elasticsearch::Domain.EBSOptions"`)
+         */
+        static get EBSOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.EBSOptions"
+        }
+        /**
+         * Returns the EncryptionAtRestOptions property type name (`"AWS::Elasticsearch::Domain.EncryptionAtRestOptions"`)
+         */
+        static get EncryptionAtRestOptionsTypeName(): string {
+          return "AWS::Elasticsearch::Domain.EncryptionAtRestOptions"
         }
       }
     }
@@ -17306,6 +18284,36 @@ export namespace Cf {
         static AccessLogSetting(properties: DeploymentAccessLogSetting) : DeploymentAccessLogSetting {
           return properties;
         }
+        /**
+         * Returns the DeploymentCanarySettings property type name (`"AWS::ApiGateway::Deployment.DeploymentCanarySettings"`)
+         */
+        static get DeploymentCanarySettingsTypeName(): string {
+          return "AWS::ApiGateway::Deployment.DeploymentCanarySettings"
+        }
+        /**
+         * Returns the MethodSetting property type name (`"AWS::ApiGateway::Deployment.MethodSetting"`)
+         */
+        static get MethodSettingTypeName(): string {
+          return "AWS::ApiGateway::Deployment.MethodSetting"
+        }
+        /**
+         * Returns the StageDescription property type name (`"AWS::ApiGateway::Deployment.StageDescription"`)
+         */
+        static get StageDescriptionTypeName(): string {
+          return "AWS::ApiGateway::Deployment.StageDescription"
+        }
+        /**
+         * Returns the CanarySetting property type name (`"AWS::ApiGateway::Deployment.CanarySetting"`)
+         */
+        static get CanarySettingTypeName(): string {
+          return "AWS::ApiGateway::Deployment.CanarySetting"
+        }
+        /**
+         * Returns the AccessLogSetting property type name (`"AWS::ApiGateway::Deployment.AccessLogSetting"`)
+         */
+        static get AccessLogSettingTypeName(): string {
+          return "AWS::ApiGateway::Deployment.AccessLogSetting"
+        }
       }
       export interface AuthorizerProperties {
         /**
@@ -17542,6 +18550,12 @@ export namespace Cf {
         static EndpointConfiguration(properties: DomainNameEndpointConfiguration) : DomainNameEndpointConfiguration {
           return properties;
         }
+        /**
+         * Returns the EndpointConfiguration property type name (`"AWS::ApiGateway::DomainName.EndpointConfiguration"`)
+         */
+        static get EndpointConfigurationTypeName(): string {
+          return "AWS::ApiGateway::DomainName.EndpointConfiguration"
+        }
       }
       export interface DocumentationPartProperties {
         /**
@@ -17627,6 +18641,12 @@ export namespace Cf {
          */
         static Location(properties: DocumentationPartLocation) : DocumentationPartLocation {
           return properties;
+        }
+        /**
+         * Returns the Location property type name (`"AWS::ApiGateway::DocumentationPart.Location"`)
+         */
+        static get LocationTypeName(): string {
+          return "AWS::ApiGateway::DocumentationPart.Location"
         }
       }
       export interface ApiKeyProperties {
@@ -17749,6 +18769,12 @@ export namespace Cf {
          */
         static StageKey(properties: ApiKeyStageKey) : ApiKeyStageKey {
           return properties;
+        }
+        /**
+         * Returns the StageKey property type name (`"AWS::ApiGateway::ApiKey.StageKey"`)
+         */
+        static get StageKeyTypeName(): string {
+          return "AWS::ApiGateway::ApiKey.StageKey"
         }
       }
       export interface ModelProperties {
@@ -18159,6 +19185,18 @@ export namespace Cf {
         static EndpointConfiguration(properties: RestApiEndpointConfiguration) : RestApiEndpointConfiguration {
           return properties;
         }
+        /**
+         * Returns the S3Location property type name (`"AWS::ApiGateway::RestApi.S3Location"`)
+         */
+        static get S3LocationTypeName(): string {
+          return "AWS::ApiGateway::RestApi.S3Location"
+        }
+        /**
+         * Returns the EndpointConfiguration property type name (`"AWS::ApiGateway::RestApi.EndpointConfiguration"`)
+         */
+        static get EndpointConfigurationTypeName(): string {
+          return "AWS::ApiGateway::RestApi.EndpointConfiguration"
+        }
       }
       export interface UsagePlanProperties {
         /**
@@ -18278,6 +19316,24 @@ export namespace Cf {
          */
         static QuotaSettings(properties: UsagePlanQuotaSettings) : UsagePlanQuotaSettings {
           return properties;
+        }
+        /**
+         * Returns the ApiStage property type name (`"AWS::ApiGateway::UsagePlan.ApiStage"`)
+         */
+        static get ApiStageTypeName(): string {
+          return "AWS::ApiGateway::UsagePlan.ApiStage"
+        }
+        /**
+         * Returns the ThrottleSettings property type name (`"AWS::ApiGateway::UsagePlan.ThrottleSettings"`)
+         */
+        static get ThrottleSettingsTypeName(): string {
+          return "AWS::ApiGateway::UsagePlan.ThrottleSettings"
+        }
+        /**
+         * Returns the QuotaSettings property type name (`"AWS::ApiGateway::UsagePlan.QuotaSettings"`)
+         */
+        static get QuotaSettingsTypeName(): string {
+          return "AWS::ApiGateway::UsagePlan.QuotaSettings"
         }
       }
       export interface BasePathMappingProperties {
@@ -18566,6 +19622,24 @@ export namespace Cf {
          */
         static AccessLogSetting(properties: StageAccessLogSetting) : StageAccessLogSetting {
           return properties;
+        }
+        /**
+         * Returns the MethodSetting property type name (`"AWS::ApiGateway::Stage.MethodSetting"`)
+         */
+        static get MethodSettingTypeName(): string {
+          return "AWS::ApiGateway::Stage.MethodSetting"
+        }
+        /**
+         * Returns the CanarySetting property type name (`"AWS::ApiGateway::Stage.CanarySetting"`)
+         */
+        static get CanarySettingTypeName(): string {
+          return "AWS::ApiGateway::Stage.CanarySetting"
+        }
+        /**
+         * Returns the AccessLogSetting property type name (`"AWS::ApiGateway::Stage.AccessLogSetting"`)
+         */
+        static get AccessLogSettingTypeName(): string {
+          return "AWS::ApiGateway::Stage.AccessLogSetting"
         }
       }
       export interface VpcLinkProperties {
@@ -18932,6 +20006,24 @@ export namespace Cf {
          */
         static IntegrationResponse(properties: MethodIntegrationResponse) : MethodIntegrationResponse {
           return properties;
+        }
+        /**
+         * Returns the MethodResponse property type name (`"AWS::ApiGateway::Method.MethodResponse"`)
+         */
+        static get MethodResponseTypeName(): string {
+          return "AWS::ApiGateway::Method.MethodResponse"
+        }
+        /**
+         * Returns the Integration property type name (`"AWS::ApiGateway::Method.Integration"`)
+         */
+        static get IntegrationTypeName(): string {
+          return "AWS::ApiGateway::Method.Integration"
+        }
+        /**
+         * Returns the IntegrationResponse property type name (`"AWS::ApiGateway::Method.IntegrationResponse"`)
+         */
+        static get IntegrationResponseTypeName(): string {
+          return "AWS::ApiGateway::Method.IntegrationResponse"
         }
       }
       export interface ClientCertificateProperties {
@@ -19530,6 +20622,18 @@ export namespace Cf {
         static FieldToMatch(properties: SizeConstraintSetFieldToMatch) : SizeConstraintSetFieldToMatch {
           return properties;
         }
+        /**
+         * Returns the SizeConstraint property type name (`"AWS::WAFRegional::SizeConstraintSet.SizeConstraint"`)
+         */
+        static get SizeConstraintTypeName(): string {
+          return "AWS::WAFRegional::SizeConstraintSet.SizeConstraint"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAFRegional::SizeConstraintSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAFRegional::SizeConstraintSet.FieldToMatch"
+        }
       }
       export interface SqlInjectionMatchSetProperties {
         /**
@@ -19614,6 +20718,18 @@ export namespace Cf {
          */
         static SqlInjectionMatchTuple(properties: SqlInjectionMatchSetSqlInjectionMatchTuple) : SqlInjectionMatchSetSqlInjectionMatchTuple {
           return properties;
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAFRegional::SqlInjectionMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAFRegional::SqlInjectionMatchSet.FieldToMatch"
+        }
+        /**
+         * Returns the SqlInjectionMatchTuple property type name (`"AWS::WAFRegional::SqlInjectionMatchSet.SqlInjectionMatchTuple"`)
+         */
+        static get SqlInjectionMatchTupleTypeName(): string {
+          return "AWS::WAFRegional::SqlInjectionMatchSet.SqlInjectionMatchTuple"
         }
       }
       export interface XssMatchSetProperties {
@@ -19700,6 +20816,18 @@ export namespace Cf {
         static FieldToMatch(properties: XssMatchSetFieldToMatch) : XssMatchSetFieldToMatch {
           return properties;
         }
+        /**
+         * Returns the XssMatchTuple property type name (`"AWS::WAFRegional::XssMatchSet.XssMatchTuple"`)
+         */
+        static get XssMatchTupleTypeName(): string {
+          return "AWS::WAFRegional::XssMatchSet.XssMatchTuple"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAFRegional::XssMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAFRegional::XssMatchSet.FieldToMatch"
+        }
       }
       export interface ByteMatchSetProperties {
         /**
@@ -19784,6 +20912,18 @@ export namespace Cf {
          */
         static FieldToMatch(properties: ByteMatchSetFieldToMatch) : ByteMatchSetFieldToMatch {
           return properties;
+        }
+        /**
+         * Returns the ByteMatchTuple property type name (`"AWS::WAFRegional::ByteMatchSet.ByteMatchTuple"`)
+         */
+        static get ByteMatchTupleTypeName(): string {
+          return "AWS::WAFRegional::ByteMatchSet.ByteMatchTuple"
+        }
+        /**
+         * Returns the FieldToMatch property type name (`"AWS::WAFRegional::ByteMatchSet.FieldToMatch"`)
+         */
+        static get FieldToMatchTypeName(): string {
+          return "AWS::WAFRegional::ByteMatchSet.FieldToMatch"
         }
       }
       export interface WebACLAssociationProperties {
@@ -19957,6 +21097,18 @@ export namespace Cf {
         static Action(properties: WebACLAction) : WebACLAction {
           return properties;
         }
+        /**
+         * Returns the Rule property type name (`"AWS::WAFRegional::WebACL.Rule"`)
+         */
+        static get RuleTypeName(): string {
+          return "AWS::WAFRegional::WebACL.Rule"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::WAFRegional::WebACL.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::WAFRegional::WebACL.Action"
+        }
       }
       export interface RuleProperties {
         /**
@@ -20043,6 +21195,12 @@ export namespace Cf {
         static Predicate(properties: RulePredicate) : RulePredicate {
           return properties;
         }
+        /**
+         * Returns the Predicate property type name (`"AWS::WAFRegional::Rule.Predicate"`)
+         */
+        static get PredicateTypeName(): string {
+          return "AWS::WAFRegional::Rule.Predicate"
+        }
       }
       export interface IPSetProperties {
         /**
@@ -20119,6 +21277,12 @@ export namespace Cf {
          */
         static IPSetDescriptor(properties: IPSetIPSetDescriptor) : IPSetIPSetDescriptor {
           return properties;
+        }
+        /**
+         * Returns the IPSetDescriptor property type name (`"AWS::WAFRegional::IPSet.IPSetDescriptor"`)
+         */
+        static get IPSetDescriptorTypeName(): string {
+          return "AWS::WAFRegional::IPSet.IPSetDescriptor"
         }
       }
     }
@@ -20683,6 +21847,12 @@ export namespace Cf {
         static ScalingConfiguration(properties: DBClusterScalingConfiguration) : DBClusterScalingConfiguration {
           return properties;
         }
+        /**
+         * Returns the ScalingConfiguration property type name (`"AWS::RDS::DBCluster.ScalingConfiguration"`)
+         */
+        static get ScalingConfigurationTypeName(): string {
+          return "AWS::RDS::DBCluster.ScalingConfiguration"
+        }
       }
       export interface DBSubnetGroupProperties {
         /**
@@ -20881,6 +22051,18 @@ export namespace Cf {
          */
         static OptionConfiguration(properties: OptionGroupOptionConfiguration) : OptionGroupOptionConfiguration {
           return properties;
+        }
+        /**
+         * Returns the OptionSetting property type name (`"AWS::RDS::OptionGroup.OptionSetting"`)
+         */
+        static get OptionSettingTypeName(): string {
+          return "AWS::RDS::OptionGroup.OptionSetting"
+        }
+        /**
+         * Returns the OptionConfiguration property type name (`"AWS::RDS::OptionGroup.OptionConfiguration"`)
+         */
+        static get OptionConfigurationTypeName(): string {
+          return "AWS::RDS::OptionGroup.OptionConfiguration"
         }
       }
       export interface DBParameterGroupProperties {
@@ -21565,6 +22747,12 @@ export namespace Cf {
         static ProcessorFeature(properties: DBInstanceProcessorFeature) : DBInstanceProcessorFeature {
           return properties;
         }
+        /**
+         * Returns the ProcessorFeature property type name (`"AWS::RDS::DBInstance.ProcessorFeature"`)
+         */
+        static get ProcessorFeatureTypeName(): string {
+          return "AWS::RDS::DBInstance.ProcessorFeature"
+        }
       }
       export interface DBSecurityGroupProperties {
         /**
@@ -21659,6 +22847,12 @@ export namespace Cf {
          */
         static Ingress(properties: DBSecurityGroupIngress) : DBSecurityGroupIngress {
           return properties;
+        }
+        /**
+         * Returns the Ingress property type name (`"AWS::RDS::DBSecurityGroup.Ingress"`)
+         */
+        static get IngressTypeName(): string {
+          return "AWS::RDS::DBSecurityGroup.Ingress"
         }
       }
       export interface DBClusterParameterGroupProperties {
@@ -23426,6 +24620,48 @@ export namespace Cf {
         static EbsBlockDeviceConfig(properties: InstanceFleetConfigEbsBlockDeviceConfig) : InstanceFleetConfigEbsBlockDeviceConfig {
           return properties;
         }
+        /**
+         * Returns the VolumeSpecification property type name (`"AWS::EMR::InstanceFleetConfig.VolumeSpecification"`)
+         */
+        static get VolumeSpecificationTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.VolumeSpecification"
+        }
+        /**
+         * Returns the SpotProvisioningSpecification property type name (`"AWS::EMR::InstanceFleetConfig.SpotProvisioningSpecification"`)
+         */
+        static get SpotProvisioningSpecificationTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.SpotProvisioningSpecification"
+        }
+        /**
+         * Returns the Configuration property type name (`"AWS::EMR::InstanceFleetConfig.Configuration"`)
+         */
+        static get ConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.Configuration"
+        }
+        /**
+         * Returns the EbsConfiguration property type name (`"AWS::EMR::InstanceFleetConfig.EbsConfiguration"`)
+         */
+        static get EbsConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.EbsConfiguration"
+        }
+        /**
+         * Returns the InstanceTypeConfig property type name (`"AWS::EMR::InstanceFleetConfig.InstanceTypeConfig"`)
+         */
+        static get InstanceTypeConfigTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.InstanceTypeConfig"
+        }
+        /**
+         * Returns the InstanceFleetProvisioningSpecifications property type name (`"AWS::EMR::InstanceFleetConfig.InstanceFleetProvisioningSpecifications"`)
+         */
+        static get InstanceFleetProvisioningSpecificationsTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.InstanceFleetProvisioningSpecifications"
+        }
+        /**
+         * Returns the EbsBlockDeviceConfig property type name (`"AWS::EMR::InstanceFleetConfig.EbsBlockDeviceConfig"`)
+         */
+        static get EbsBlockDeviceConfigTypeName(): string {
+          return "AWS::EMR::InstanceFleetConfig.EbsBlockDeviceConfig"
+        }
       }
       export interface ClusterProperties {
         /**
@@ -23856,6 +25092,162 @@ export namespace Cf {
         static ScalingTrigger(properties: ClusterScalingTrigger) : ClusterScalingTrigger {
           return properties;
         }
+        /**
+         * Returns the InstanceGroupConfig property type name (`"AWS::EMR::Cluster.InstanceGroupConfig"`)
+         */
+        static get InstanceGroupConfigTypeName(): string {
+          return "AWS::EMR::Cluster.InstanceGroupConfig"
+        }
+        /**
+         * Returns the SpotProvisioningSpecification property type name (`"AWS::EMR::Cluster.SpotProvisioningSpecification"`)
+         */
+        static get SpotProvisioningSpecificationTypeName(): string {
+          return "AWS::EMR::Cluster.SpotProvisioningSpecification"
+        }
+        /**
+         * Returns the BootstrapActionConfig property type name (`"AWS::EMR::Cluster.BootstrapActionConfig"`)
+         */
+        static get BootstrapActionConfigTypeName(): string {
+          return "AWS::EMR::Cluster.BootstrapActionConfig"
+        }
+        /**
+         * Returns the ScalingConstraints property type name (`"AWS::EMR::Cluster.ScalingConstraints"`)
+         */
+        static get ScalingConstraintsTypeName(): string {
+          return "AWS::EMR::Cluster.ScalingConstraints"
+        }
+        /**
+         * Returns the InstanceFleetConfig property type name (`"AWS::EMR::Cluster.InstanceFleetConfig"`)
+         */
+        static get InstanceFleetConfigTypeName(): string {
+          return "AWS::EMR::Cluster.InstanceFleetConfig"
+        }
+        /**
+         * Returns the JobFlowInstancesConfig property type name (`"AWS::EMR::Cluster.JobFlowInstancesConfig"`)
+         */
+        static get JobFlowInstancesConfigTypeName(): string {
+          return "AWS::EMR::Cluster.JobFlowInstancesConfig"
+        }
+        /**
+         * Returns the ScalingAction property type name (`"AWS::EMR::Cluster.ScalingAction"`)
+         */
+        static get ScalingActionTypeName(): string {
+          return "AWS::EMR::Cluster.ScalingAction"
+        }
+        /**
+         * Returns the StepConfig property type name (`"AWS::EMR::Cluster.StepConfig"`)
+         */
+        static get StepConfigTypeName(): string {
+          return "AWS::EMR::Cluster.StepConfig"
+        }
+        /**
+         * Returns the KerberosAttributes property type name (`"AWS::EMR::Cluster.KerberosAttributes"`)
+         */
+        static get KerberosAttributesTypeName(): string {
+          return "AWS::EMR::Cluster.KerberosAttributes"
+        }
+        /**
+         * Returns the SimpleScalingPolicyConfiguration property type name (`"AWS::EMR::Cluster.SimpleScalingPolicyConfiguration"`)
+         */
+        static get SimpleScalingPolicyConfigurationTypeName(): string {
+          return "AWS::EMR::Cluster.SimpleScalingPolicyConfiguration"
+        }
+        /**
+         * Returns the Application property type name (`"AWS::EMR::Cluster.Application"`)
+         */
+        static get ApplicationTypeName(): string {
+          return "AWS::EMR::Cluster.Application"
+        }
+        /**
+         * Returns the EbsBlockDeviceConfig property type name (`"AWS::EMR::Cluster.EbsBlockDeviceConfig"`)
+         */
+        static get EbsBlockDeviceConfigTypeName(): string {
+          return "AWS::EMR::Cluster.EbsBlockDeviceConfig"
+        }
+        /**
+         * Returns the PlacementType property type name (`"AWS::EMR::Cluster.PlacementType"`)
+         */
+        static get PlacementTypeTypeName(): string {
+          return "AWS::EMR::Cluster.PlacementType"
+        }
+        /**
+         * Returns the Configuration property type name (`"AWS::EMR::Cluster.Configuration"`)
+         */
+        static get ConfigurationTypeName(): string {
+          return "AWS::EMR::Cluster.Configuration"
+        }
+        /**
+         * Returns the ScriptBootstrapActionConfig property type name (`"AWS::EMR::Cluster.ScriptBootstrapActionConfig"`)
+         */
+        static get ScriptBootstrapActionConfigTypeName(): string {
+          return "AWS::EMR::Cluster.ScriptBootstrapActionConfig"
+        }
+        /**
+         * Returns the CloudWatchAlarmDefinition property type name (`"AWS::EMR::Cluster.CloudWatchAlarmDefinition"`)
+         */
+        static get CloudWatchAlarmDefinitionTypeName(): string {
+          return "AWS::EMR::Cluster.CloudWatchAlarmDefinition"
+        }
+        /**
+         * Returns the EbsConfiguration property type name (`"AWS::EMR::Cluster.EbsConfiguration"`)
+         */
+        static get EbsConfigurationTypeName(): string {
+          return "AWS::EMR::Cluster.EbsConfiguration"
+        }
+        /**
+         * Returns the ScalingRule property type name (`"AWS::EMR::Cluster.ScalingRule"`)
+         */
+        static get ScalingRuleTypeName(): string {
+          return "AWS::EMR::Cluster.ScalingRule"
+        }
+        /**
+         * Returns the KeyValue property type name (`"AWS::EMR::Cluster.KeyValue"`)
+         */
+        static get KeyValueTypeName(): string {
+          return "AWS::EMR::Cluster.KeyValue"
+        }
+        /**
+         * Returns the InstanceTypeConfig property type name (`"AWS::EMR::Cluster.InstanceTypeConfig"`)
+         */
+        static get InstanceTypeConfigTypeName(): string {
+          return "AWS::EMR::Cluster.InstanceTypeConfig"
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::EMR::Cluster.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::EMR::Cluster.MetricDimension"
+        }
+        /**
+         * Returns the VolumeSpecification property type name (`"AWS::EMR::Cluster.VolumeSpecification"`)
+         */
+        static get VolumeSpecificationTypeName(): string {
+          return "AWS::EMR::Cluster.VolumeSpecification"
+        }
+        /**
+         * Returns the AutoScalingPolicy property type name (`"AWS::EMR::Cluster.AutoScalingPolicy"`)
+         */
+        static get AutoScalingPolicyTypeName(): string {
+          return "AWS::EMR::Cluster.AutoScalingPolicy"
+        }
+        /**
+         * Returns the InstanceFleetProvisioningSpecifications property type name (`"AWS::EMR::Cluster.InstanceFleetProvisioningSpecifications"`)
+         */
+        static get InstanceFleetProvisioningSpecificationsTypeName(): string {
+          return "AWS::EMR::Cluster.InstanceFleetProvisioningSpecifications"
+        }
+        /**
+         * Returns the HadoopJarStepConfig property type name (`"AWS::EMR::Cluster.HadoopJarStepConfig"`)
+         */
+        static get HadoopJarStepConfigTypeName(): string {
+          return "AWS::EMR::Cluster.HadoopJarStepConfig"
+        }
+        /**
+         * Returns the ScalingTrigger property type name (`"AWS::EMR::Cluster.ScalingTrigger"`)
+         */
+        static get ScalingTriggerTypeName(): string {
+          return "AWS::EMR::Cluster.ScalingTrigger"
+        }
       }
       export interface InstanceGroupConfigProperties {
         /**
@@ -24093,6 +25485,78 @@ export namespace Cf {
         static EbsConfiguration(properties: InstanceGroupConfigEbsConfiguration) : InstanceGroupConfigEbsConfiguration {
           return properties;
         }
+        /**
+         * Returns the EbsBlockDeviceConfig property type name (`"AWS::EMR::InstanceGroupConfig.EbsBlockDeviceConfig"`)
+         */
+        static get EbsBlockDeviceConfigTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.EbsBlockDeviceConfig"
+        }
+        /**
+         * Returns the Configuration property type name (`"AWS::EMR::InstanceGroupConfig.Configuration"`)
+         */
+        static get ConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.Configuration"
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::EMR::InstanceGroupConfig.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.MetricDimension"
+        }
+        /**
+         * Returns the SimpleScalingPolicyConfiguration property type name (`"AWS::EMR::InstanceGroupConfig.SimpleScalingPolicyConfiguration"`)
+         */
+        static get SimpleScalingPolicyConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.SimpleScalingPolicyConfiguration"
+        }
+        /**
+         * Returns the ScalingRule property type name (`"AWS::EMR::InstanceGroupConfig.ScalingRule"`)
+         */
+        static get ScalingRuleTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.ScalingRule"
+        }
+        /**
+         * Returns the ScalingAction property type name (`"AWS::EMR::InstanceGroupConfig.ScalingAction"`)
+         */
+        static get ScalingActionTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.ScalingAction"
+        }
+        /**
+         * Returns the ScalingTrigger property type name (`"AWS::EMR::InstanceGroupConfig.ScalingTrigger"`)
+         */
+        static get ScalingTriggerTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.ScalingTrigger"
+        }
+        /**
+         * Returns the ScalingConstraints property type name (`"AWS::EMR::InstanceGroupConfig.ScalingConstraints"`)
+         */
+        static get ScalingConstraintsTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.ScalingConstraints"
+        }
+        /**
+         * Returns the CloudWatchAlarmDefinition property type name (`"AWS::EMR::InstanceGroupConfig.CloudWatchAlarmDefinition"`)
+         */
+        static get CloudWatchAlarmDefinitionTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.CloudWatchAlarmDefinition"
+        }
+        /**
+         * Returns the VolumeSpecification property type name (`"AWS::EMR::InstanceGroupConfig.VolumeSpecification"`)
+         */
+        static get VolumeSpecificationTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.VolumeSpecification"
+        }
+        /**
+         * Returns the AutoScalingPolicy property type name (`"AWS::EMR::InstanceGroupConfig.AutoScalingPolicy"`)
+         */
+        static get AutoScalingPolicyTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.AutoScalingPolicy"
+        }
+        /**
+         * Returns the EbsConfiguration property type name (`"AWS::EMR::InstanceGroupConfig.EbsConfiguration"`)
+         */
+        static get EbsConfigurationTypeName(): string {
+          return "AWS::EMR::InstanceGroupConfig.EbsConfiguration"
+        }
       }
       export interface StepProperties {
         /**
@@ -24195,6 +25659,18 @@ export namespace Cf {
          */
         static KeyValue(properties: StepKeyValue) : StepKeyValue {
           return properties;
+        }
+        /**
+         * Returns the HadoopJarStepConfig property type name (`"AWS::EMR::Step.HadoopJarStepConfig"`)
+         */
+        static get HadoopJarStepConfigTypeName(): string {
+          return "AWS::EMR::Step.HadoopJarStepConfig"
+        }
+        /**
+         * Returns the KeyValue property type name (`"AWS::EMR::Step.KeyValue"`)
+         */
+        static get KeyValueTypeName(): string {
+          return "AWS::EMR::Step.KeyValue"
         }
       }
       export interface SecurityConfigurationProperties {
@@ -24444,6 +25920,12 @@ export namespace Cf {
          */
         static WorkspaceProperties(properties: WorkspaceWorkspaceProperties) : WorkspaceWorkspaceProperties {
           return properties;
+        }
+        /**
+         * Returns the WorkspaceProperties property type name (`"AWS::WorkSpaces::Workspace.WorkspaceProperties"`)
+         */
+        static get WorkspacePropertiesTypeName(): string {
+          return "AWS::WorkSpaces::Workspace.WorkspaceProperties"
         }
       }
     }
@@ -24702,6 +26184,12 @@ export namespace Cf {
          */
         static ParameterConstraints(properties: RouteParameterConstraints) : RouteParameterConstraints {
           return properties;
+        }
+        /**
+         * Returns the ParameterConstraints property type name (`"AWS::ApiGatewayV2::Route.ParameterConstraints"`)
+         */
+        static get ParameterConstraintsTypeName(): string {
+          return "AWS::ApiGatewayV2::Route.ParameterConstraints"
         }
       }
       export interface IntegrationProperties {
@@ -25018,6 +26506,18 @@ export namespace Cf {
          */
         static RouteSettings(properties: StageRouteSettings) : StageRouteSettings {
           return properties;
+        }
+        /**
+         * Returns the AccessLogSettings property type name (`"AWS::ApiGatewayV2::Stage.AccessLogSettings"`)
+         */
+        static get AccessLogSettingsTypeName(): string {
+          return "AWS::ApiGatewayV2::Stage.AccessLogSettings"
+        }
+        /**
+         * Returns the RouteSettings property type name (`"AWS::ApiGatewayV2::Stage.RouteSettings"`)
+         */
+        static get RouteSettingsTypeName(): string {
+          return "AWS::ApiGatewayV2::Stage.RouteSettings"
         }
       }
       export interface DeploymentProperties {
@@ -25543,6 +27043,12 @@ export namespace Cf {
         static ParameterConstraints(properties: RouteResponseParameterConstraints) : RouteResponseParameterConstraints {
           return properties;
         }
+        /**
+         * Returns the ParameterConstraints property type name (`"AWS::ApiGatewayV2::RouteResponse.ParameterConstraints"`)
+         */
+        static get ParameterConstraintsTypeName(): string {
+          return "AWS::ApiGatewayV2::RouteResponse.ParameterConstraints"
+        }
       }
       export interface IntegrationResponseProperties {
         /**
@@ -25851,6 +27357,12 @@ export namespace Cf {
          */
         static MetricTransformation(properties: MetricFilterMetricTransformation) : MetricFilterMetricTransformation {
           return properties;
+        }
+        /**
+         * Returns the MetricTransformation property type name (`"AWS::Logs::MetricFilter.MetricTransformation"`)
+         */
+        static get MetricTransformationTypeName(): string {
+          return "AWS::Logs::MetricFilter.MetricTransformation"
         }
       }
       export interface LogStreamProperties {
@@ -26220,6 +27732,12 @@ export namespace Cf {
          */
         static StreamEncryption(properties: StreamStreamEncryption) : StreamStreamEncryption {
           return properties;
+        }
+        /**
+         * Returns the StreamEncryption property type name (`"AWS::Kinesis::Stream.StreamEncryption"`)
+         */
+        static get StreamEncryptionTypeName(): string {
+          return "AWS::Kinesis::Stream.StreamEncryption"
         }
       }
       export interface StreamConsumerProperties {
@@ -27137,6 +28655,18 @@ export namespace Cf {
         static BlockDevice(properties: LaunchConfigurationBlockDevice) : LaunchConfigurationBlockDevice {
           return properties;
         }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::AutoScaling::LaunchConfiguration.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::AutoScaling::LaunchConfiguration.BlockDeviceMapping"
+        }
+        /**
+         * Returns the BlockDevice property type name (`"AWS::AutoScaling::LaunchConfiguration.BlockDevice"`)
+         */
+        static get BlockDeviceTypeName(): string {
+          return "AWS::AutoScaling::LaunchConfiguration.BlockDevice"
+        }
       }
       export interface LifecycleHookProperties {
         /**
@@ -27440,6 +28970,36 @@ export namespace Cf {
          */
         static StepAdjustment(properties: ScalingPolicyStepAdjustment) : ScalingPolicyStepAdjustment {
           return properties;
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::AutoScaling::ScalingPolicy.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.MetricDimension"
+        }
+        /**
+         * Returns the CustomizedMetricSpecification property type name (`"AWS::AutoScaling::ScalingPolicy.CustomizedMetricSpecification"`)
+         */
+        static get CustomizedMetricSpecificationTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.CustomizedMetricSpecification"
+        }
+        /**
+         * Returns the PredefinedMetricSpecification property type name (`"AWS::AutoScaling::ScalingPolicy.PredefinedMetricSpecification"`)
+         */
+        static get PredefinedMetricSpecificationTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.PredefinedMetricSpecification"
+        }
+        /**
+         * Returns the TargetTrackingConfiguration property type name (`"AWS::AutoScaling::ScalingPolicy.TargetTrackingConfiguration"`)
+         */
+        static get TargetTrackingConfigurationTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.TargetTrackingConfiguration"
+        }
+        /**
+         * Returns the StepAdjustment property type name (`"AWS::AutoScaling::ScalingPolicy.StepAdjustment"`)
+         */
+        static get StepAdjustmentTypeName(): string {
+          return "AWS::AutoScaling::ScalingPolicy.StepAdjustment"
         }
       }
       export interface AutoScalingGroupProperties {
@@ -27761,6 +29321,60 @@ export namespace Cf {
          */
         static TagProperty(properties: AutoScalingGroupTagProperty) : AutoScalingGroupTagProperty {
           return properties;
+        }
+        /**
+         * Returns the LaunchTemplateOverrides property type name (`"AWS::AutoScaling::AutoScalingGroup.LaunchTemplateOverrides"`)
+         */
+        static get LaunchTemplateOverridesTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.LaunchTemplateOverrides"
+        }
+        /**
+         * Returns the LifecycleHookSpecification property type name (`"AWS::AutoScaling::AutoScalingGroup.LifecycleHookSpecification"`)
+         */
+        static get LifecycleHookSpecificationTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.LifecycleHookSpecification"
+        }
+        /**
+         * Returns the MixedInstancesPolicy property type name (`"AWS::AutoScaling::AutoScalingGroup.MixedInstancesPolicy"`)
+         */
+        static get MixedInstancesPolicyTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.MixedInstancesPolicy"
+        }
+        /**
+         * Returns the LaunchTemplateSpecification property type name (`"AWS::AutoScaling::AutoScalingGroup.LaunchTemplateSpecification"`)
+         */
+        static get LaunchTemplateSpecificationTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.LaunchTemplateSpecification"
+        }
+        /**
+         * Returns the NotificationConfiguration property type name (`"AWS::AutoScaling::AutoScalingGroup.NotificationConfiguration"`)
+         */
+        static get NotificationConfigurationTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.NotificationConfiguration"
+        }
+        /**
+         * Returns the MetricsCollection property type name (`"AWS::AutoScaling::AutoScalingGroup.MetricsCollection"`)
+         */
+        static get MetricsCollectionTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.MetricsCollection"
+        }
+        /**
+         * Returns the InstancesDistribution property type name (`"AWS::AutoScaling::AutoScalingGroup.InstancesDistribution"`)
+         */
+        static get InstancesDistributionTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.InstancesDistribution"
+        }
+        /**
+         * Returns the LaunchTemplate property type name (`"AWS::AutoScaling::AutoScalingGroup.LaunchTemplate"`)
+         */
+        static get LaunchTemplateTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.LaunchTemplate"
+        }
+        /**
+         * Returns the TagProperty property type name (`"AWS::AutoScaling::AutoScalingGroup.TagProperty"`)
+         */
+        static get TagPropertyTypeName(): string {
+          return "AWS::AutoScaling::AutoScalingGroup.TagProperty"
         }
       }
       export interface ScheduledActionProperties {
@@ -28445,6 +30059,18 @@ export namespace Cf {
         static DomainJoinInfo(properties: ImageBuilderDomainJoinInfo) : ImageBuilderDomainJoinInfo {
           return properties;
         }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::AppStream::ImageBuilder.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::AppStream::ImageBuilder.VpcConfig"
+        }
+        /**
+         * Returns the DomainJoinInfo property type name (`"AWS::AppStream::ImageBuilder.DomainJoinInfo"`)
+         */
+        static get DomainJoinInfoTypeName(): string {
+          return "AWS::AppStream::ImageBuilder.DomainJoinInfo"
+        }
       }
       export interface StackProperties {
         /**
@@ -28610,6 +30236,24 @@ export namespace Cf {
         static UserSetting(properties: StackUserSetting) : StackUserSetting {
           return properties;
         }
+        /**
+         * Returns the ApplicationSettings property type name (`"AWS::AppStream::Stack.ApplicationSettings"`)
+         */
+        static get ApplicationSettingsTypeName(): string {
+          return "AWS::AppStream::Stack.ApplicationSettings"
+        }
+        /**
+         * Returns the StorageConnector property type name (`"AWS::AppStream::Stack.StorageConnector"`)
+         */
+        static get StorageConnectorTypeName(): string {
+          return "AWS::AppStream::Stack.StorageConnector"
+        }
+        /**
+         * Returns the UserSetting property type name (`"AWS::AppStream::Stack.UserSetting"`)
+         */
+        static get UserSettingTypeName(): string {
+          return "AWS::AppStream::Stack.UserSetting"
+        }
       }
       export interface DirectoryConfigProperties {
         /**
@@ -28695,6 +30339,12 @@ export namespace Cf {
          */
         static ServiceAccountCredentials(properties: DirectoryConfigServiceAccountCredentials) : DirectoryConfigServiceAccountCredentials {
           return properties;
+        }
+        /**
+         * Returns the ServiceAccountCredentials property type name (`"AWS::AppStream::DirectoryConfig.ServiceAccountCredentials"`)
+         */
+        static get ServiceAccountCredentialsTypeName(): string {
+          return "AWS::AppStream::DirectoryConfig.ServiceAccountCredentials"
         }
       }
       export interface StackFleetAssociationProperties {
@@ -29139,6 +30789,24 @@ export namespace Cf {
          */
         static VpcConfig(properties: FleetVpcConfig) : FleetVpcConfig {
           return properties;
+        }
+        /**
+         * Returns the ComputeCapacity property type name (`"AWS::AppStream::Fleet.ComputeCapacity"`)
+         */
+        static get ComputeCapacityTypeName(): string {
+          return "AWS::AppStream::Fleet.ComputeCapacity"
+        }
+        /**
+         * Returns the DomainJoinInfo property type name (`"AWS::AppStream::Fleet.DomainJoinInfo"`)
+         */
+        static get DomainJoinInfoTypeName(): string {
+          return "AWS::AppStream::Fleet.DomainJoinInfo"
+        }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::AppStream::Fleet.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::AppStream::Fleet.VpcConfig"
         }
       }
     }
@@ -29669,6 +31337,60 @@ export namespace Cf {
          */
         static CustomizedLoadMetricSpecification(properties: ScalingPlanCustomizedLoadMetricSpecification) : ScalingPlanCustomizedLoadMetricSpecification {
           return properties;
+        }
+        /**
+         * Returns the ApplicationSource property type name (`"AWS::AutoScalingPlans::ScalingPlan.ApplicationSource"`)
+         */
+        static get ApplicationSourceTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.ApplicationSource"
+        }
+        /**
+         * Returns the ScalingInstruction property type name (`"AWS::AutoScalingPlans::ScalingPlan.ScalingInstruction"`)
+         */
+        static get ScalingInstructionTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.ScalingInstruction"
+        }
+        /**
+         * Returns the TargetTrackingConfiguration property type name (`"AWS::AutoScalingPlans::ScalingPlan.TargetTrackingConfiguration"`)
+         */
+        static get TargetTrackingConfigurationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.TargetTrackingConfiguration"
+        }
+        /**
+         * Returns the CustomizedScalingMetricSpecification property type name (`"AWS::AutoScalingPlans::ScalingPlan.CustomizedScalingMetricSpecification"`)
+         */
+        static get CustomizedScalingMetricSpecificationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.CustomizedScalingMetricSpecification"
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::AutoScalingPlans::ScalingPlan.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.MetricDimension"
+        }
+        /**
+         * Returns the PredefinedScalingMetricSpecification property type name (`"AWS::AutoScalingPlans::ScalingPlan.PredefinedScalingMetricSpecification"`)
+         */
+        static get PredefinedScalingMetricSpecificationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.PredefinedScalingMetricSpecification"
+        }
+        /**
+         * Returns the TagFilter property type name (`"AWS::AutoScalingPlans::ScalingPlan.TagFilter"`)
+         */
+        static get TagFilterTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.TagFilter"
+        }
+        /**
+         * Returns the PredefinedLoadMetricSpecification property type name (`"AWS::AutoScalingPlans::ScalingPlan.PredefinedLoadMetricSpecification"`)
+         */
+        static get PredefinedLoadMetricSpecificationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.PredefinedLoadMetricSpecification"
+        }
+        /**
+         * Returns the CustomizedLoadMetricSpecification property type name (`"AWS::AutoScalingPlans::ScalingPlan.CustomizedLoadMetricSpecification"`)
+         */
+        static get CustomizedLoadMetricSpecificationTypeName(): string {
+          return "AWS::AutoScalingPlans::ScalingPlan.CustomizedLoadMetricSpecification"
         }
       }
     }
@@ -30375,6 +32097,18 @@ export namespace Cf {
         static AliasTarget(properties: RecordSetAliasTarget) : RecordSetAliasTarget {
           return properties;
         }
+        /**
+         * Returns the GeoLocation property type name (`"AWS::Route53::RecordSet.GeoLocation"`)
+         */
+        static get GeoLocationTypeName(): string {
+          return "AWS::Route53::RecordSet.GeoLocation"
+        }
+        /**
+         * Returns the AliasTarget property type name (`"AWS::Route53::RecordSet.AliasTarget"`)
+         */
+        static get AliasTargetTypeName(): string {
+          return "AWS::Route53::RecordSet.AliasTarget"
+        }
       }
       export interface HostedZoneProperties {
         /**
@@ -30503,6 +32237,30 @@ export namespace Cf {
         static VPC(properties: HostedZoneVPC) : HostedZoneVPC {
           return properties;
         }
+        /**
+         * Returns the HostedZoneTag property type name (`"AWS::Route53::HostedZone.HostedZoneTag"`)
+         */
+        static get HostedZoneTagTypeName(): string {
+          return "AWS::Route53::HostedZone.HostedZoneTag"
+        }
+        /**
+         * Returns the HostedZoneConfig property type name (`"AWS::Route53::HostedZone.HostedZoneConfig"`)
+         */
+        static get HostedZoneConfigTypeName(): string {
+          return "AWS::Route53::HostedZone.HostedZoneConfig"
+        }
+        /**
+         * Returns the QueryLoggingConfig property type name (`"AWS::Route53::HostedZone.QueryLoggingConfig"`)
+         */
+        static get QueryLoggingConfigTypeName(): string {
+          return "AWS::Route53::HostedZone.QueryLoggingConfig"
+        }
+        /**
+         * Returns the VPC property type name (`"AWS::Route53::HostedZone.VPC"`)
+         */
+        static get VPCTypeName(): string {
+          return "AWS::Route53::HostedZone.VPC"
+        }
       }
       export interface RecordSetGroupProperties {
         /**
@@ -30614,6 +32372,24 @@ export namespace Cf {
         static AliasTarget(properties: RecordSetGroupAliasTarget) : RecordSetGroupAliasTarget {
           return properties;
         }
+        /**
+         * Returns the RecordSet property type name (`"AWS::Route53::RecordSetGroup.RecordSet"`)
+         */
+        static get RecordSetTypeName(): string {
+          return "AWS::Route53::RecordSetGroup.RecordSet"
+        }
+        /**
+         * Returns the GeoLocation property type name (`"AWS::Route53::RecordSetGroup.GeoLocation"`)
+         */
+        static get GeoLocationTypeName(): string {
+          return "AWS::Route53::RecordSetGroup.GeoLocation"
+        }
+        /**
+         * Returns the AliasTarget property type name (`"AWS::Route53::RecordSetGroup.AliasTarget"`)
+         */
+        static get AliasTargetTypeName(): string {
+          return "AWS::Route53::RecordSetGroup.AliasTarget"
+        }
       }
       export interface HealthCheckProperties {
         /**
@@ -30706,6 +32482,24 @@ export namespace Cf {
          */
         static AlarmIdentifier(properties: HealthCheckAlarmIdentifier) : HealthCheckAlarmIdentifier {
           return properties;
+        }
+        /**
+         * Returns the HealthCheckConfig property type name (`"AWS::Route53::HealthCheck.HealthCheckConfig"`)
+         */
+        static get HealthCheckConfigTypeName(): string {
+          return "AWS::Route53::HealthCheck.HealthCheckConfig"
+        }
+        /**
+         * Returns the HealthCheckTag property type name (`"AWS::Route53::HealthCheck.HealthCheckTag"`)
+         */
+        static get HealthCheckTagTypeName(): string {
+          return "AWS::Route53::HealthCheck.HealthCheckTag"
+        }
+        /**
+         * Returns the AlarmIdentifier property type name (`"AWS::Route53::HealthCheck.AlarmIdentifier"`)
+         */
+        static get AlarmIdentifierTypeName(): string {
+          return "AWS::Route53::HealthCheck.AlarmIdentifier"
         }
       }
     }
@@ -31174,6 +32968,30 @@ export namespace Cf {
          */
         static Metric(properties: AlarmMetric) : AlarmMetric {
           return properties;
+        }
+        /**
+         * Returns the MetricStat property type name (`"AWS::CloudWatch::Alarm.MetricStat"`)
+         */
+        static get MetricStatTypeName(): string {
+          return "AWS::CloudWatch::Alarm.MetricStat"
+        }
+        /**
+         * Returns the Dimension property type name (`"AWS::CloudWatch::Alarm.Dimension"`)
+         */
+        static get DimensionTypeName(): string {
+          return "AWS::CloudWatch::Alarm.Dimension"
+        }
+        /**
+         * Returns the MetricDataQuery property type name (`"AWS::CloudWatch::Alarm.MetricDataQuery"`)
+         */
+        static get MetricDataQueryTypeName(): string {
+          return "AWS::CloudWatch::Alarm.MetricDataQuery"
+        }
+        /**
+         * Returns the Metric property type name (`"AWS::CloudWatch::Alarm.Metric"`)
+         */
+        static get MetricTypeName(): string {
+          return "AWS::CloudWatch::Alarm.Metric"
         }
       }
     }
@@ -32375,6 +34193,48 @@ export namespace Cf {
         static NetworkConfiguration(properties: ServiceNetworkConfiguration) : ServiceNetworkConfiguration {
           return properties;
         }
+        /**
+         * Returns the LoadBalancer property type name (`"AWS::ECS::Service.LoadBalancer"`)
+         */
+        static get LoadBalancerTypeName(): string {
+          return "AWS::ECS::Service.LoadBalancer"
+        }
+        /**
+         * Returns the PlacementStrategy property type name (`"AWS::ECS::Service.PlacementStrategy"`)
+         */
+        static get PlacementStrategyTypeName(): string {
+          return "AWS::ECS::Service.PlacementStrategy"
+        }
+        /**
+         * Returns the ServiceRegistry property type name (`"AWS::ECS::Service.ServiceRegistry"`)
+         */
+        static get ServiceRegistryTypeName(): string {
+          return "AWS::ECS::Service.ServiceRegistry"
+        }
+        /**
+         * Returns the DeploymentConfiguration property type name (`"AWS::ECS::Service.DeploymentConfiguration"`)
+         */
+        static get DeploymentConfigurationTypeName(): string {
+          return "AWS::ECS::Service.DeploymentConfiguration"
+        }
+        /**
+         * Returns the PlacementConstraint property type name (`"AWS::ECS::Service.PlacementConstraint"`)
+         */
+        static get PlacementConstraintTypeName(): string {
+          return "AWS::ECS::Service.PlacementConstraint"
+        }
+        /**
+         * Returns the AwsVpcConfiguration property type name (`"AWS::ECS::Service.AwsVpcConfiguration"`)
+         */
+        static get AwsVpcConfigurationTypeName(): string {
+          return "AWS::ECS::Service.AwsVpcConfiguration"
+        }
+        /**
+         * Returns the NetworkConfiguration property type name (`"AWS::ECS::Service.NetworkConfiguration"`)
+         */
+        static get NetworkConfigurationTypeName(): string {
+          return "AWS::ECS::Service.NetworkConfiguration"
+        }
       }
       export interface TaskDefinitionProperties {
         /**
@@ -32659,6 +34519,114 @@ export namespace Cf {
          */
         static RepositoryCredentials(properties: TaskDefinitionRepositoryCredentials) : TaskDefinitionRepositoryCredentials {
           return properties;
+        }
+        /**
+         * Returns the DockerVolumeConfiguration property type name (`"AWS::ECS::TaskDefinition.DockerVolumeConfiguration"`)
+         */
+        static get DockerVolumeConfigurationTypeName(): string {
+          return "AWS::ECS::TaskDefinition.DockerVolumeConfiguration"
+        }
+        /**
+         * Returns the ContainerDefinition property type name (`"AWS::ECS::TaskDefinition.ContainerDefinition"`)
+         */
+        static get ContainerDefinitionTypeName(): string {
+          return "AWS::ECS::TaskDefinition.ContainerDefinition"
+        }
+        /**
+         * Returns the LogConfiguration property type name (`"AWS::ECS::TaskDefinition.LogConfiguration"`)
+         */
+        static get LogConfigurationTypeName(): string {
+          return "AWS::ECS::TaskDefinition.LogConfiguration"
+        }
+        /**
+         * Returns the Device property type name (`"AWS::ECS::TaskDefinition.Device"`)
+         */
+        static get DeviceTypeName(): string {
+          return "AWS::ECS::TaskDefinition.Device"
+        }
+        /**
+         * Returns the KeyValuePair property type name (`"AWS::ECS::TaskDefinition.KeyValuePair"`)
+         */
+        static get KeyValuePairTypeName(): string {
+          return "AWS::ECS::TaskDefinition.KeyValuePair"
+        }
+        /**
+         * Returns the MountPoint property type name (`"AWS::ECS::TaskDefinition.MountPoint"`)
+         */
+        static get MountPointTypeName(): string {
+          return "AWS::ECS::TaskDefinition.MountPoint"
+        }
+        /**
+         * Returns the VolumeFrom property type name (`"AWS::ECS::TaskDefinition.VolumeFrom"`)
+         */
+        static get VolumeFromTypeName(): string {
+          return "AWS::ECS::TaskDefinition.VolumeFrom"
+        }
+        /**
+         * Returns the HostEntry property type name (`"AWS::ECS::TaskDefinition.HostEntry"`)
+         */
+        static get HostEntryTypeName(): string {
+          return "AWS::ECS::TaskDefinition.HostEntry"
+        }
+        /**
+         * Returns the KernelCapabilities property type name (`"AWS::ECS::TaskDefinition.KernelCapabilities"`)
+         */
+        static get KernelCapabilitiesTypeName(): string {
+          return "AWS::ECS::TaskDefinition.KernelCapabilities"
+        }
+        /**
+         * Returns the TaskDefinitionPlacementConstraint property type name (`"AWS::ECS::TaskDefinition.TaskDefinitionPlacementConstraint"`)
+         */
+        static get TaskDefinitionPlacementConstraintTypeName(): string {
+          return "AWS::ECS::TaskDefinition.TaskDefinitionPlacementConstraint"
+        }
+        /**
+         * Returns the Volume property type name (`"AWS::ECS::TaskDefinition.Volume"`)
+         */
+        static get VolumeTypeName(): string {
+          return "AWS::ECS::TaskDefinition.Volume"
+        }
+        /**
+         * Returns the HealthCheck property type name (`"AWS::ECS::TaskDefinition.HealthCheck"`)
+         */
+        static get HealthCheckTypeName(): string {
+          return "AWS::ECS::TaskDefinition.HealthCheck"
+        }
+        /**
+         * Returns the PortMapping property type name (`"AWS::ECS::TaskDefinition.PortMapping"`)
+         */
+        static get PortMappingTypeName(): string {
+          return "AWS::ECS::TaskDefinition.PortMapping"
+        }
+        /**
+         * Returns the Ulimit property type name (`"AWS::ECS::TaskDefinition.Ulimit"`)
+         */
+        static get UlimitTypeName(): string {
+          return "AWS::ECS::TaskDefinition.Ulimit"
+        }
+        /**
+         * Returns the LinuxParameters property type name (`"AWS::ECS::TaskDefinition.LinuxParameters"`)
+         */
+        static get LinuxParametersTypeName(): string {
+          return "AWS::ECS::TaskDefinition.LinuxParameters"
+        }
+        /**
+         * Returns the HostVolumeProperties property type name (`"AWS::ECS::TaskDefinition.HostVolumeProperties"`)
+         */
+        static get HostVolumePropertiesTypeName(): string {
+          return "AWS::ECS::TaskDefinition.HostVolumeProperties"
+        }
+        /**
+         * Returns the Tmpfs property type name (`"AWS::ECS::TaskDefinition.Tmpfs"`)
+         */
+        static get TmpfsTypeName(): string {
+          return "AWS::ECS::TaskDefinition.Tmpfs"
+        }
+        /**
+         * Returns the RepositoryCredentials property type name (`"AWS::ECS::TaskDefinition.RepositoryCredentials"`)
+         */
+        static get RepositoryCredentialsTypeName(): string {
+          return "AWS::ECS::TaskDefinition.RepositoryCredentials"
         }
       }
     }
@@ -33531,6 +35499,12 @@ export namespace Cf {
         static Certificate(properties: ListenerCertificateCertificate) : ListenerCertificateCertificate {
           return properties;
         }
+        /**
+         * Returns the Certificate property type name (`"AWS::ElasticLoadBalancingV2::ListenerCertificate.Certificate"`)
+         */
+        static get CertificateTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerCertificate.Certificate"
+        }
       }
       export interface LoadBalancerProperties {
         /**
@@ -33678,6 +35652,18 @@ export namespace Cf {
          */
         static SubnetMapping(properties: LoadBalancerSubnetMapping) : LoadBalancerSubnetMapping {
           return properties;
+        }
+        /**
+         * Returns the LoadBalancerAttribute property type name (`"AWS::ElasticLoadBalancingV2::LoadBalancer.LoadBalancerAttribute"`)
+         */
+        static get LoadBalancerAttributeTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::LoadBalancer.LoadBalancerAttribute"
+        }
+        /**
+         * Returns the SubnetMapping property type name (`"AWS::ElasticLoadBalancingV2::LoadBalancer.SubnetMapping"`)
+         */
+        static get SubnetMappingTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::LoadBalancer.SubnetMapping"
         }
       }
       export interface ListenerProperties {
@@ -33832,6 +35818,42 @@ export namespace Cf {
         static Certificate(properties: ListenerCertificate) : ListenerCertificate {
           return properties;
         }
+        /**
+         * Returns the AuthenticateOidcConfig property type name (`"AWS::ElasticLoadBalancingV2::Listener.AuthenticateOidcConfig"`)
+         */
+        static get AuthenticateOidcConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.AuthenticateOidcConfig"
+        }
+        /**
+         * Returns the AuthenticateCognitoConfig property type name (`"AWS::ElasticLoadBalancingV2::Listener.AuthenticateCognitoConfig"`)
+         */
+        static get AuthenticateCognitoConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.AuthenticateCognitoConfig"
+        }
+        /**
+         * Returns the RedirectConfig property type name (`"AWS::ElasticLoadBalancingV2::Listener.RedirectConfig"`)
+         */
+        static get RedirectConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.RedirectConfig"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::ElasticLoadBalancingV2::Listener.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.Action"
+        }
+        /**
+         * Returns the FixedResponseConfig property type name (`"AWS::ElasticLoadBalancingV2::Listener.FixedResponseConfig"`)
+         */
+        static get FixedResponseConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.FixedResponseConfig"
+        }
+        /**
+         * Returns the Certificate property type name (`"AWS::ElasticLoadBalancingV2::Listener.Certificate"`)
+         */
+        static get CertificateTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::Listener.Certificate"
+        }
       }
       export interface ListenerRuleProperties {
         /**
@@ -33966,6 +35988,42 @@ export namespace Cf {
          */
         static RedirectConfig(properties: ListenerRuleRedirectConfig) : ListenerRuleRedirectConfig {
           return properties;
+        }
+        /**
+         * Returns the AuthenticateOidcConfig property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.AuthenticateOidcConfig"`)
+         */
+        static get AuthenticateOidcConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.AuthenticateOidcConfig"
+        }
+        /**
+         * Returns the AuthenticateCognitoConfig property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.AuthenticateCognitoConfig"`)
+         */
+        static get AuthenticateCognitoConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.AuthenticateCognitoConfig"
+        }
+        /**
+         * Returns the FixedResponseConfig property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.FixedResponseConfig"`)
+         */
+        static get FixedResponseConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.FixedResponseConfig"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.Action"
+        }
+        /**
+         * Returns the RuleCondition property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.RuleCondition"`)
+         */
+        static get RuleConditionTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.RuleCondition"
+        }
+        /**
+         * Returns the RedirectConfig property type name (`"AWS::ElasticLoadBalancingV2::ListenerRule.RedirectConfig"`)
+         */
+        static get RedirectConfigTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::ListenerRule.RedirectConfig"
         }
       }
       export interface TargetGroupProperties {
@@ -34194,6 +36252,24 @@ export namespace Cf {
          */
         static TargetDescription(properties: TargetGroupTargetDescription) : TargetGroupTargetDescription {
           return properties;
+        }
+        /**
+         * Returns the TargetGroupAttribute property type name (`"AWS::ElasticLoadBalancingV2::TargetGroup.TargetGroupAttribute"`)
+         */
+        static get TargetGroupAttributeTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::TargetGroup.TargetGroupAttribute"
+        }
+        /**
+         * Returns the Matcher property type name (`"AWS::ElasticLoadBalancingV2::TargetGroup.Matcher"`)
+         */
+        static get MatcherTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::TargetGroup.Matcher"
+        }
+        /**
+         * Returns the TargetDescription property type name (`"AWS::ElasticLoadBalancingV2::TargetGroup.TargetDescription"`)
+         */
+        static get TargetDescriptionTypeName(): string {
+          return "AWS::ElasticLoadBalancingV2::TargetGroup.TargetDescription"
         }
       }
     }
@@ -35626,6 +37702,36 @@ export namespace Cf {
         static DestinationSchema(properties: ApplicationOutputDestinationSchema) : ApplicationOutputDestinationSchema {
           return properties;
         }
+        /**
+         * Returns the KinesisFirehoseOutput property type name (`"AWS::KinesisAnalytics::ApplicationOutput.KinesisFirehoseOutput"`)
+         */
+        static get KinesisFirehoseOutputTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.KinesisFirehoseOutput"
+        }
+        /**
+         * Returns the KinesisStreamsOutput property type name (`"AWS::KinesisAnalytics::ApplicationOutput.KinesisStreamsOutput"`)
+         */
+        static get KinesisStreamsOutputTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.KinesisStreamsOutput"
+        }
+        /**
+         * Returns the Output property type name (`"AWS::KinesisAnalytics::ApplicationOutput.Output"`)
+         */
+        static get OutputTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.Output"
+        }
+        /**
+         * Returns the LambdaOutput property type name (`"AWS::KinesisAnalytics::ApplicationOutput.LambdaOutput"`)
+         */
+        static get LambdaOutputTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.LambdaOutput"
+        }
+        /**
+         * Returns the DestinationSchema property type name (`"AWS::KinesisAnalytics::ApplicationOutput.DestinationSchema"`)
+         */
+        static get DestinationSchemaTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationOutput.DestinationSchema"
+        }
       }
       export interface ApplicationReferenceDataSourceProperties {
         /**
@@ -35758,6 +37864,54 @@ export namespace Cf {
          */
         static ReferenceDataSource(properties: ApplicationReferenceDataSourceReferenceDataSource) : ApplicationReferenceDataSourceReferenceDataSource {
           return properties;
+        }
+        /**
+         * Returns the S3ReferenceDataSource property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.S3ReferenceDataSource"`)
+         */
+        static get S3ReferenceDataSourceTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.S3ReferenceDataSource"
+        }
+        /**
+         * Returns the MappingParameters property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.MappingParameters"`)
+         */
+        static get MappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.MappingParameters"
+        }
+        /**
+         * Returns the JSONMappingParameters property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.JSONMappingParameters"`)
+         */
+        static get JSONMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.JSONMappingParameters"
+        }
+        /**
+         * Returns the RecordFormat property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.RecordFormat"`)
+         */
+        static get RecordFormatTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.RecordFormat"
+        }
+        /**
+         * Returns the RecordColumn property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.RecordColumn"`)
+         */
+        static get RecordColumnTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.RecordColumn"
+        }
+        /**
+         * Returns the CSVMappingParameters property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.CSVMappingParameters"`)
+         */
+        static get CSVMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.CSVMappingParameters"
+        }
+        /**
+         * Returns the ReferenceSchema property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.ReferenceSchema"`)
+         */
+        static get ReferenceSchemaTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.ReferenceSchema"
+        }
+        /**
+         * Returns the ReferenceDataSource property type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource.ReferenceDataSource"`)
+         */
+        static get ReferenceDataSourceTypeName(): string {
+          return "AWS::KinesisAnalytics::ApplicationReferenceDataSource.ReferenceDataSource"
         }
       }
       export interface ApplicationProperties {
@@ -35941,6 +38095,78 @@ export namespace Cf {
          */
         static InputLambdaProcessor(properties: ApplicationInputLambdaProcessor) : ApplicationInputLambdaProcessor {
           return properties;
+        }
+        /**
+         * Returns the MappingParameters property type name (`"AWS::KinesisAnalytics::Application.MappingParameters"`)
+         */
+        static get MappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.MappingParameters"
+        }
+        /**
+         * Returns the CSVMappingParameters property type name (`"AWS::KinesisAnalytics::Application.CSVMappingParameters"`)
+         */
+        static get CSVMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.CSVMappingParameters"
+        }
+        /**
+         * Returns the KinesisStreamsInput property type name (`"AWS::KinesisAnalytics::Application.KinesisStreamsInput"`)
+         */
+        static get KinesisStreamsInputTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.KinesisStreamsInput"
+        }
+        /**
+         * Returns the Input property type name (`"AWS::KinesisAnalytics::Application.Input"`)
+         */
+        static get InputTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.Input"
+        }
+        /**
+         * Returns the InputSchema property type name (`"AWS::KinesisAnalytics::Application.InputSchema"`)
+         */
+        static get InputSchemaTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.InputSchema"
+        }
+        /**
+         * Returns the RecordColumn property type name (`"AWS::KinesisAnalytics::Application.RecordColumn"`)
+         */
+        static get RecordColumnTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.RecordColumn"
+        }
+        /**
+         * Returns the RecordFormat property type name (`"AWS::KinesisAnalytics::Application.RecordFormat"`)
+         */
+        static get RecordFormatTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.RecordFormat"
+        }
+        /**
+         * Returns the KinesisFirehoseInput property type name (`"AWS::KinesisAnalytics::Application.KinesisFirehoseInput"`)
+         */
+        static get KinesisFirehoseInputTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.KinesisFirehoseInput"
+        }
+        /**
+         * Returns the InputParallelism property type name (`"AWS::KinesisAnalytics::Application.InputParallelism"`)
+         */
+        static get InputParallelismTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.InputParallelism"
+        }
+        /**
+         * Returns the InputProcessingConfiguration property type name (`"AWS::KinesisAnalytics::Application.InputProcessingConfiguration"`)
+         */
+        static get InputProcessingConfigurationTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.InputProcessingConfiguration"
+        }
+        /**
+         * Returns the JSONMappingParameters property type name (`"AWS::KinesisAnalytics::Application.JSONMappingParameters"`)
+         */
+        static get JSONMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.JSONMappingParameters"
+        }
+        /**
+         * Returns the InputLambdaProcessor property type name (`"AWS::KinesisAnalytics::Application.InputLambdaProcessor"`)
+         */
+        static get InputLambdaProcessorTypeName(): string {
+          return "AWS::KinesisAnalytics::Application.InputLambdaProcessor"
         }
       }
     }
@@ -36888,6 +39114,30 @@ export namespace Cf {
         static Source(properties: AppSource) : AppSource {
           return properties;
         }
+        /**
+         * Returns the DataSource property type name (`"AWS::OpsWorks::App.DataSource"`)
+         */
+        static get DataSourceTypeName(): string {
+          return "AWS::OpsWorks::App.DataSource"
+        }
+        /**
+         * Returns the EnvironmentVariable property type name (`"AWS::OpsWorks::App.EnvironmentVariable"`)
+         */
+        static get EnvironmentVariableTypeName(): string {
+          return "AWS::OpsWorks::App.EnvironmentVariable"
+        }
+        /**
+         * Returns the SslConfiguration property type name (`"AWS::OpsWorks::App.SslConfiguration"`)
+         */
+        static get SslConfigurationTypeName(): string {
+          return "AWS::OpsWorks::App.SslConfiguration"
+        }
+        /**
+         * Returns the Source property type name (`"AWS::OpsWorks::App.Source"`)
+         */
+        static get SourceTypeName(): string {
+          return "AWS::OpsWorks::App.Source"
+        }
       }
       export interface LayerProperties {
         /**
@@ -37157,6 +39407,42 @@ export namespace Cf {
          */
         static LoadBasedAutoScaling(properties: LayerLoadBasedAutoScaling) : LayerLoadBasedAutoScaling {
           return properties;
+        }
+        /**
+         * Returns the ShutdownEventConfiguration property type name (`"AWS::OpsWorks::Layer.ShutdownEventConfiguration"`)
+         */
+        static get ShutdownEventConfigurationTypeName(): string {
+          return "AWS::OpsWorks::Layer.ShutdownEventConfiguration"
+        }
+        /**
+         * Returns the VolumeConfiguration property type name (`"AWS::OpsWorks::Layer.VolumeConfiguration"`)
+         */
+        static get VolumeConfigurationTypeName(): string {
+          return "AWS::OpsWorks::Layer.VolumeConfiguration"
+        }
+        /**
+         * Returns the AutoScalingThresholds property type name (`"AWS::OpsWorks::Layer.AutoScalingThresholds"`)
+         */
+        static get AutoScalingThresholdsTypeName(): string {
+          return "AWS::OpsWorks::Layer.AutoScalingThresholds"
+        }
+        /**
+         * Returns the Recipes property type name (`"AWS::OpsWorks::Layer.Recipes"`)
+         */
+        static get RecipesTypeName(): string {
+          return "AWS::OpsWorks::Layer.Recipes"
+        }
+        /**
+         * Returns the LifecycleEventConfiguration property type name (`"AWS::OpsWorks::Layer.LifecycleEventConfiguration"`)
+         */
+        static get LifecycleEventConfigurationTypeName(): string {
+          return "AWS::OpsWorks::Layer.LifecycleEventConfiguration"
+        }
+        /**
+         * Returns the LoadBasedAutoScaling property type name (`"AWS::OpsWorks::Layer.LoadBasedAutoScaling"`)
+         */
+        static get LoadBasedAutoScalingTypeName(): string {
+          return "AWS::OpsWorks::Layer.LoadBasedAutoScaling"
         }
       }
       export interface StackProperties {
@@ -37473,6 +39759,36 @@ export namespace Cf {
          */
         static ElasticIp(properties: StackElasticIp) : StackElasticIp {
           return properties;
+        }
+        /**
+         * Returns the Source property type name (`"AWS::OpsWorks::Stack.Source"`)
+         */
+        static get SourceTypeName(): string {
+          return "AWS::OpsWorks::Stack.Source"
+        }
+        /**
+         * Returns the ChefConfiguration property type name (`"AWS::OpsWorks::Stack.ChefConfiguration"`)
+         */
+        static get ChefConfigurationTypeName(): string {
+          return "AWS::OpsWorks::Stack.ChefConfiguration"
+        }
+        /**
+         * Returns the StackConfigurationManager property type name (`"AWS::OpsWorks::Stack.StackConfigurationManager"`)
+         */
+        static get StackConfigurationManagerTypeName(): string {
+          return "AWS::OpsWorks::Stack.StackConfigurationManager"
+        }
+        /**
+         * Returns the RdsDbInstance property type name (`"AWS::OpsWorks::Stack.RdsDbInstance"`)
+         */
+        static get RdsDbInstanceTypeName(): string {
+          return "AWS::OpsWorks::Stack.RdsDbInstance"
+        }
+        /**
+         * Returns the ElasticIp property type name (`"AWS::OpsWorks::Stack.ElasticIp"`)
+         */
+        static get ElasticIpTypeName(): string {
+          return "AWS::OpsWorks::Stack.ElasticIp"
         }
       }
       export interface ElasticLoadBalancerAttachmentProperties {
@@ -37806,6 +40122,24 @@ export namespace Cf {
          */
         static TimeBasedAutoScaling(properties: InstanceTimeBasedAutoScaling) : InstanceTimeBasedAutoScaling {
           return properties;
+        }
+        /**
+         * Returns the BlockDeviceMapping property type name (`"AWS::OpsWorks::Instance.BlockDeviceMapping"`)
+         */
+        static get BlockDeviceMappingTypeName(): string {
+          return "AWS::OpsWorks::Instance.BlockDeviceMapping"
+        }
+        /**
+         * Returns the EbsBlockDevice property type name (`"AWS::OpsWorks::Instance.EbsBlockDevice"`)
+         */
+        static get EbsBlockDeviceTypeName(): string {
+          return "AWS::OpsWorks::Instance.EbsBlockDevice"
+        }
+        /**
+         * Returns the TimeBasedAutoScaling property type name (`"AWS::OpsWorks::Instance.TimeBasedAutoScaling"`)
+         */
+        static get TimeBasedAutoScalingTypeName(): string {
+          return "AWS::OpsWorks::Instance.TimeBasedAutoScaling"
         }
       }
       export interface UserProfileProperties {
@@ -38892,6 +41226,30 @@ export namespace Cf {
         static StreamingDistributionConfig(properties: StreamingDistributionStreamingDistributionConfig) : StreamingDistributionStreamingDistributionConfig {
           return properties;
         }
+        /**
+         * Returns the TrustedSigners property type name (`"AWS::CloudFront::StreamingDistribution.TrustedSigners"`)
+         */
+        static get TrustedSignersTypeName(): string {
+          return "AWS::CloudFront::StreamingDistribution.TrustedSigners"
+        }
+        /**
+         * Returns the S3Origin property type name (`"AWS::CloudFront::StreamingDistribution.S3Origin"`)
+         */
+        static get S3OriginTypeName(): string {
+          return "AWS::CloudFront::StreamingDistribution.S3Origin"
+        }
+        /**
+         * Returns the Logging property type name (`"AWS::CloudFront::StreamingDistribution.Logging"`)
+         */
+        static get LoggingTypeName(): string {
+          return "AWS::CloudFront::StreamingDistribution.Logging"
+        }
+        /**
+         * Returns the StreamingDistributionConfig property type name (`"AWS::CloudFront::StreamingDistribution.StreamingDistributionConfig"`)
+         */
+        static get StreamingDistributionConfigTypeName(): string {
+          return "AWS::CloudFront::StreamingDistribution.StreamingDistributionConfig"
+        }
       }
       export interface DistributionProperties {
         /**
@@ -39081,6 +41439,96 @@ export namespace Cf {
         static OriginCustomHeader(properties: DistributionOriginCustomHeader) : DistributionOriginCustomHeader {
           return properties;
         }
+        /**
+         * Returns the Cookies property type name (`"AWS::CloudFront::Distribution.Cookies"`)
+         */
+        static get CookiesTypeName(): string {
+          return "AWS::CloudFront::Distribution.Cookies"
+        }
+        /**
+         * Returns the LambdaFunctionAssociation property type name (`"AWS::CloudFront::Distribution.LambdaFunctionAssociation"`)
+         */
+        static get LambdaFunctionAssociationTypeName(): string {
+          return "AWS::CloudFront::Distribution.LambdaFunctionAssociation"
+        }
+        /**
+         * Returns the CustomOriginConfig property type name (`"AWS::CloudFront::Distribution.CustomOriginConfig"`)
+         */
+        static get CustomOriginConfigTypeName(): string {
+          return "AWS::CloudFront::Distribution.CustomOriginConfig"
+        }
+        /**
+         * Returns the ForwardedValues property type name (`"AWS::CloudFront::Distribution.ForwardedValues"`)
+         */
+        static get ForwardedValuesTypeName(): string {
+          return "AWS::CloudFront::Distribution.ForwardedValues"
+        }
+        /**
+         * Returns the CacheBehavior property type name (`"AWS::CloudFront::Distribution.CacheBehavior"`)
+         */
+        static get CacheBehaviorTypeName(): string {
+          return "AWS::CloudFront::Distribution.CacheBehavior"
+        }
+        /**
+         * Returns the DefaultCacheBehavior property type name (`"AWS::CloudFront::Distribution.DefaultCacheBehavior"`)
+         */
+        static get DefaultCacheBehaviorTypeName(): string {
+          return "AWS::CloudFront::Distribution.DefaultCacheBehavior"
+        }
+        /**
+         * Returns the Restrictions property type name (`"AWS::CloudFront::Distribution.Restrictions"`)
+         */
+        static get RestrictionsTypeName(): string {
+          return "AWS::CloudFront::Distribution.Restrictions"
+        }
+        /**
+         * Returns the Origin property type name (`"AWS::CloudFront::Distribution.Origin"`)
+         */
+        static get OriginTypeName(): string {
+          return "AWS::CloudFront::Distribution.Origin"
+        }
+        /**
+         * Returns the GeoRestriction property type name (`"AWS::CloudFront::Distribution.GeoRestriction"`)
+         */
+        static get GeoRestrictionTypeName(): string {
+          return "AWS::CloudFront::Distribution.GeoRestriction"
+        }
+        /**
+         * Returns the ViewerCertificate property type name (`"AWS::CloudFront::Distribution.ViewerCertificate"`)
+         */
+        static get ViewerCertificateTypeName(): string {
+          return "AWS::CloudFront::Distribution.ViewerCertificate"
+        }
+        /**
+         * Returns the S3OriginConfig property type name (`"AWS::CloudFront::Distribution.S3OriginConfig"`)
+         */
+        static get S3OriginConfigTypeName(): string {
+          return "AWS::CloudFront::Distribution.S3OriginConfig"
+        }
+        /**
+         * Returns the CustomErrorResponse property type name (`"AWS::CloudFront::Distribution.CustomErrorResponse"`)
+         */
+        static get CustomErrorResponseTypeName(): string {
+          return "AWS::CloudFront::Distribution.CustomErrorResponse"
+        }
+        /**
+         * Returns the Logging property type name (`"AWS::CloudFront::Distribution.Logging"`)
+         */
+        static get LoggingTypeName(): string {
+          return "AWS::CloudFront::Distribution.Logging"
+        }
+        /**
+         * Returns the DistributionConfig property type name (`"AWS::CloudFront::Distribution.DistributionConfig"`)
+         */
+        static get DistributionConfigTypeName(): string {
+          return "AWS::CloudFront::Distribution.DistributionConfig"
+        }
+        /**
+         * Returns the OriginCustomHeader property type name (`"AWS::CloudFront::Distribution.OriginCustomHeader"`)
+         */
+        static get OriginCustomHeaderTypeName(): string {
+          return "AWS::CloudFront::Distribution.OriginCustomHeader"
+        }
       }
       export interface CloudFrontOriginAccessIdentityProperties {
         /**
@@ -39148,6 +41596,12 @@ export namespace Cf {
          */
         static CloudFrontOriginAccessIdentityConfig(properties: CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig) : CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig {
           return properties;
+        }
+        /**
+         * Returns the CloudFrontOriginAccessIdentityConfig property type name (`"AWS::CloudFront::CloudFrontOriginAccessIdentity.CloudFrontOriginAccessIdentityConfig"`)
+         */
+        static get CloudFrontOriginAccessIdentityConfigTypeName(): string {
+          return "AWS::CloudFront::CloudFrontOriginAccessIdentity.CloudFrontOriginAccessIdentityConfig"
         }
       }
     }
@@ -39333,6 +41787,12 @@ export namespace Cf {
         static RoutingStrategy(properties: AliasRoutingStrategy) : AliasRoutingStrategy {
           return properties;
         }
+        /**
+         * Returns the RoutingStrategy property type name (`"AWS::GameLift::Alias.RoutingStrategy"`)
+         */
+        static get RoutingStrategyTypeName(): string {
+          return "AWS::GameLift::Alias.RoutingStrategy"
+        }
       }
       export interface BuildProperties {
         /**
@@ -39418,6 +41878,12 @@ export namespace Cf {
          */
         static S3Location(properties: BuildS3Location) : BuildS3Location {
           return properties;
+        }
+        /**
+         * Returns the S3Location property type name (`"AWS::GameLift::Build.S3Location"`)
+         */
+        static get S3LocationTypeName(): string {
+          return "AWS::GameLift::Build.S3Location"
         }
       }
       export interface FleetProperties {
@@ -39576,6 +42042,12 @@ export namespace Cf {
          */
         static IpPermission(properties: FleetIpPermission) : FleetIpPermission {
           return properties;
+        }
+        /**
+         * Returns the IpPermission property type name (`"AWS::GameLift::Fleet.IpPermission"`)
+         */
+        static get IpPermissionTypeName(): string {
+          return "AWS::GameLift::Fleet.IpPermission"
         }
       }
     }
@@ -39766,6 +42238,18 @@ export namespace Cf {
          */
         static Condition(properties: FilterCondition) : FilterCondition {
           return properties;
+        }
+        /**
+         * Returns the FindingCriteria property type name (`"AWS::GuardDuty::Filter.FindingCriteria"`)
+         */
+        static get FindingCriteriaTypeName(): string {
+          return "AWS::GuardDuty::Filter.FindingCriteria"
+        }
+        /**
+         * Returns the Condition property type name (`"AWS::GuardDuty::Filter.Condition"`)
+         */
+        static get ConditionTypeName(): string {
+          return "AWS::GuardDuty::Filter.Condition"
         }
       }
       export interface ThreatIntelSetProperties {
@@ -40375,6 +42859,12 @@ export namespace Cf {
         static VpcSettings(properties: MicrosoftADVpcSettings) : MicrosoftADVpcSettings {
           return properties;
         }
+        /**
+         * Returns the VpcSettings property type name (`"AWS::DirectoryService::MicrosoftAD.VpcSettings"`)
+         */
+        static get VpcSettingsTypeName(): string {
+          return "AWS::DirectoryService::MicrosoftAD.VpcSettings"
+        }
       }
       export interface SimpleADProperties {
         /**
@@ -40505,6 +42995,12 @@ export namespace Cf {
          */
         static VpcSettings(properties: SimpleADVpcSettings) : SimpleADVpcSettings {
           return properties;
+        }
+        /**
+         * Returns the VpcSettings property type name (`"AWS::DirectoryService::SimpleAD.VpcSettings"`)
+         */
+        static get VpcSettingsTypeName(): string {
+          return "AWS::DirectoryService::SimpleAD.VpcSettings"
         }
       }
     }
@@ -40736,6 +43232,12 @@ export namespace Cf {
          */
         static Subscription(properties: TopicSubscription) : TopicSubscription {
           return properties;
+        }
+        /**
+         * Returns the Subscription property type name (`"AWS::SNS::Topic.Subscription"`)
+         */
+        static get SubscriptionTypeName(): string {
+          return "AWS::SNS::Topic.Subscription"
         }
       }
       export interface TopicPolicyProperties {
@@ -41027,6 +43529,12 @@ export namespace Cf {
          */
         static ElasticFileSystemTag(properties: FileSystemElasticFileSystemTag) : FileSystemElasticFileSystemTag {
           return properties;
+        }
+        /**
+         * Returns the ElasticFileSystemTag property type name (`"AWS::EFS::FileSystem.ElasticFileSystemTag"`)
+         */
+        static get ElasticFileSystemTagTypeName(): string {
+          return "AWS::EFS::FileSystem.ElasticFileSystemTag"
         }
       }
     }
@@ -41766,6 +44274,36 @@ export namespace Cf {
         static PatchSource(properties: PatchBaselinePatchSource) : PatchBaselinePatchSource {
           return properties;
         }
+        /**
+         * Returns the RuleGroup property type name (`"AWS::SSM::PatchBaseline.RuleGroup"`)
+         */
+        static get RuleGroupTypeName(): string {
+          return "AWS::SSM::PatchBaseline.RuleGroup"
+        }
+        /**
+         * Returns the PatchFilter property type name (`"AWS::SSM::PatchBaseline.PatchFilter"`)
+         */
+        static get PatchFilterTypeName(): string {
+          return "AWS::SSM::PatchBaseline.PatchFilter"
+        }
+        /**
+         * Returns the Rule property type name (`"AWS::SSM::PatchBaseline.Rule"`)
+         */
+        static get RuleTypeName(): string {
+          return "AWS::SSM::PatchBaseline.Rule"
+        }
+        /**
+         * Returns the PatchFilterGroup property type name (`"AWS::SSM::PatchBaseline.PatchFilterGroup"`)
+         */
+        static get PatchFilterGroupTypeName(): string {
+          return "AWS::SSM::PatchBaseline.PatchFilterGroup"
+        }
+        /**
+         * Returns the PatchSource property type name (`"AWS::SSM::PatchBaseline.PatchSource"`)
+         */
+        static get PatchSourceTypeName(): string {
+          return "AWS::SSM::PatchBaseline.PatchSource"
+        }
       }
       export interface MaintenanceWindowTargetProperties {
         /**
@@ -41878,6 +44416,12 @@ export namespace Cf {
          */
         static Targets(properties: MaintenanceWindowTargetTargets) : MaintenanceWindowTargetTargets {
           return properties;
+        }
+        /**
+         * Returns the Targets property type name (`"AWS::SSM::MaintenanceWindowTarget.Targets"`)
+         */
+        static get TargetsTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTarget.Targets"
         }
       }
       export interface MaintenanceWindowProperties {
@@ -42367,6 +44911,30 @@ export namespace Cf {
         static S3OutputLocation(properties: AssociationS3OutputLocation) : AssociationS3OutputLocation {
           return properties;
         }
+        /**
+         * Returns the InstanceAssociationOutputLocation property type name (`"AWS::SSM::Association.InstanceAssociationOutputLocation"`)
+         */
+        static get InstanceAssociationOutputLocationTypeName(): string {
+          return "AWS::SSM::Association.InstanceAssociationOutputLocation"
+        }
+        /**
+         * Returns the Target property type name (`"AWS::SSM::Association.Target"`)
+         */
+        static get TargetTypeName(): string {
+          return "AWS::SSM::Association.Target"
+        }
+        /**
+         * Returns the ParameterValues property type name (`"AWS::SSM::Association.ParameterValues"`)
+         */
+        static get ParameterValuesTypeName(): string {
+          return "AWS::SSM::Association.ParameterValues"
+        }
+        /**
+         * Returns the S3OutputLocation property type name (`"AWS::SSM::Association.S3OutputLocation"`)
+         */
+        static get S3OutputLocationTypeName(): string {
+          return "AWS::SSM::Association.S3OutputLocation"
+        }
       }
       export interface MaintenanceWindowTaskProperties {
         /**
@@ -42598,6 +45166,54 @@ export namespace Cf {
          */
         static MaintenanceWindowRunCommandParameters(properties: MaintenanceWindowTaskMaintenanceWindowRunCommandParameters) : MaintenanceWindowTaskMaintenanceWindowRunCommandParameters {
           return properties;
+        }
+        /**
+         * Returns the MaintenanceWindowLambdaParameters property type name (`"AWS::SSM::MaintenanceWindowTask.MaintenanceWindowLambdaParameters"`)
+         */
+        static get MaintenanceWindowLambdaParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.MaintenanceWindowLambdaParameters"
+        }
+        /**
+         * Returns the NotificationConfig property type name (`"AWS::SSM::MaintenanceWindowTask.NotificationConfig"`)
+         */
+        static get NotificationConfigTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.NotificationConfig"
+        }
+        /**
+         * Returns the MaintenanceWindowAutomationParameters property type name (`"AWS::SSM::MaintenanceWindowTask.MaintenanceWindowAutomationParameters"`)
+         */
+        static get MaintenanceWindowAutomationParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.MaintenanceWindowAutomationParameters"
+        }
+        /**
+         * Returns the TaskInvocationParameters property type name (`"AWS::SSM::MaintenanceWindowTask.TaskInvocationParameters"`)
+         */
+        static get TaskInvocationParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.TaskInvocationParameters"
+        }
+        /**
+         * Returns the LoggingInfo property type name (`"AWS::SSM::MaintenanceWindowTask.LoggingInfo"`)
+         */
+        static get LoggingInfoTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.LoggingInfo"
+        }
+        /**
+         * Returns the Target property type name (`"AWS::SSM::MaintenanceWindowTask.Target"`)
+         */
+        static get TargetTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.Target"
+        }
+        /**
+         * Returns the MaintenanceWindowStepFunctionsParameters property type name (`"AWS::SSM::MaintenanceWindowTask.MaintenanceWindowStepFunctionsParameters"`)
+         */
+        static get MaintenanceWindowStepFunctionsParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.MaintenanceWindowStepFunctionsParameters"
+        }
+        /**
+         * Returns the MaintenanceWindowRunCommandParameters property type name (`"AWS::SSM::MaintenanceWindowTask.MaintenanceWindowRunCommandParameters"`)
+         */
+        static get MaintenanceWindowRunCommandParametersTypeName(): string {
+          return "AWS::SSM::MaintenanceWindowTask.MaintenanceWindowRunCommandParameters"
         }
       }
     }
@@ -42847,6 +45463,18 @@ export namespace Cf {
         static ContainerDefinition(properties: ModelContainerDefinition) : ModelContainerDefinition {
           return properties;
         }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::SageMaker::Model.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::SageMaker::Model.VpcConfig"
+        }
+        /**
+         * Returns the ContainerDefinition property type name (`"AWS::SageMaker::Model.ContainerDefinition"`)
+         */
+        static get ContainerDefinitionTypeName(): string {
+          return "AWS::SageMaker::Model.ContainerDefinition"
+        }
       }
       export interface NotebookInstanceLifecycleConfigProperties {
         /**
@@ -42932,6 +45560,12 @@ export namespace Cf {
          */
         static NotebookInstanceLifecycleHook(properties: NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook) : NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook {
           return properties;
+        }
+        /**
+         * Returns the NotebookInstanceLifecycleHook property type name (`"AWS::SageMaker::NotebookInstanceLifecycleConfig.NotebookInstanceLifecycleHook"`)
+         */
+        static get NotebookInstanceLifecycleHookTypeName(): string {
+          return "AWS::SageMaker::NotebookInstanceLifecycleConfig.NotebookInstanceLifecycleHook"
         }
       }
       export interface EndpointConfigProperties {
@@ -43027,6 +45661,12 @@ export namespace Cf {
          */
         static ProductionVariant(properties: EndpointConfigProductionVariant) : EndpointConfigProductionVariant {
           return properties;
+        }
+        /**
+         * Returns the ProductionVariant property type name (`"AWS::SageMaker::EndpointConfig.ProductionVariant"`)
+         */
+        static get ProductionVariantTypeName(): string {
+          return "AWS::SageMaker::EndpointConfig.ProductionVariant"
         }
       }
       export interface EndpointProperties {
@@ -43547,6 +46187,12 @@ export namespace Cf {
         static ConfigSnapshotDeliveryProperties(properties: DeliveryChannelConfigSnapshotDeliveryProperties) : DeliveryChannelConfigSnapshotDeliveryProperties {
           return properties;
         }
+        /**
+         * Returns the ConfigSnapshotDeliveryProperties property type name (`"AWS::Config::DeliveryChannel.ConfigSnapshotDeliveryProperties"`)
+         */
+        static get ConfigSnapshotDeliveryPropertiesTypeName(): string {
+          return "AWS::Config::DeliveryChannel.ConfigSnapshotDeliveryProperties"
+        }
       }
       export interface ConfigurationAggregatorProperties {
         /**
@@ -43640,6 +46286,18 @@ export namespace Cf {
          */
         static AccountAggregationSource(properties: ConfigurationAggregatorAccountAggregationSource) : ConfigurationAggregatorAccountAggregationSource {
           return properties;
+        }
+        /**
+         * Returns the OrganizationAggregationSource property type name (`"AWS::Config::ConfigurationAggregator.OrganizationAggregationSource"`)
+         */
+        static get OrganizationAggregationSourceTypeName(): string {
+          return "AWS::Config::ConfigurationAggregator.OrganizationAggregationSource"
+        }
+        /**
+         * Returns the AccountAggregationSource property type name (`"AWS::Config::ConfigurationAggregator.AccountAggregationSource"`)
+         */
+        static get AccountAggregationSourceTypeName(): string {
+          return "AWS::Config::ConfigurationAggregator.AccountAggregationSource"
         }
       }
       export interface AggregationAuthorizationProperties {
@@ -43796,6 +46454,12 @@ export namespace Cf {
         static RecordingGroup(properties: ConfigurationRecorderRecordingGroup) : ConfigurationRecorderRecordingGroup {
           return properties;
         }
+        /**
+         * Returns the RecordingGroup property type name (`"AWS::Config::ConfigurationRecorder.RecordingGroup"`)
+         */
+        static get RecordingGroupTypeName(): string {
+          return "AWS::Config::ConfigurationRecorder.RecordingGroup"
+        }
       }
       export interface ConfigRuleProperties {
         /**
@@ -43924,6 +46588,24 @@ export namespace Cf {
          */
         static SourceDetail(properties: ConfigRuleSourceDetail) : ConfigRuleSourceDetail {
           return properties;
+        }
+        /**
+         * Returns the Scope property type name (`"AWS::Config::ConfigRule.Scope"`)
+         */
+        static get ScopeTypeName(): string {
+          return "AWS::Config::ConfigRule.Scope"
+        }
+        /**
+         * Returns the Source property type name (`"AWS::Config::ConfigRule.Source"`)
+         */
+        static get SourceTypeName(): string {
+          return "AWS::Config::ConfigRule.Source"
+        }
+        /**
+         * Returns the SourceDetail property type name (`"AWS::Config::ConfigRule.SourceDetail"`)
+         */
+        static get SourceDetailTypeName(): string {
+          return "AWS::Config::ConfigRule.SourceDetail"
         }
       }
     }
@@ -44472,6 +47154,12 @@ export namespace Cf {
         static LoggingProperties(properties: ClusterLoggingProperties) : ClusterLoggingProperties {
           return properties;
         }
+        /**
+         * Returns the LoggingProperties property type name (`"AWS::Redshift::Cluster.LoggingProperties"`)
+         */
+        static get LoggingPropertiesTypeName(): string {
+          return "AWS::Redshift::Cluster.LoggingProperties"
+        }
       }
       export interface ClusterParameterGroupProperties {
         /**
@@ -44566,6 +47254,12 @@ export namespace Cf {
          */
         static Parameter(properties: ClusterParameterGroupParameter) : ClusterParameterGroupParameter {
           return properties;
+        }
+        /**
+         * Returns the Parameter property type name (`"AWS::Redshift::ClusterParameterGroup.Parameter"`)
+         */
+        static get ParameterTypeName(): string {
+          return "AWS::Redshift::ClusterParameterGroup.Parameter"
         }
       }
       export interface ClusterSecurityGroupIngressProperties {
@@ -45154,6 +47848,12 @@ export namespace Cf {
         static Content(properties: LayerVersionContent) : LayerVersionContent {
           return properties;
         }
+        /**
+         * Returns the Content property type name (`"AWS::Lambda::LayerVersion.Content"`)
+         */
+        static get ContentTypeName(): string {
+          return "AWS::Lambda::LayerVersion.Content"
+        }
       }
       export interface AliasProperties {
         /**
@@ -45265,6 +47965,18 @@ export namespace Cf {
          */
         static VersionWeight(properties: AliasVersionWeight) : AliasVersionWeight {
           return properties;
+        }
+        /**
+         * Returns the AliasRoutingConfiguration property type name (`"AWS::Lambda::Alias.AliasRoutingConfiguration"`)
+         */
+        static get AliasRoutingConfigurationTypeName(): string {
+          return "AWS::Lambda::Alias.AliasRoutingConfiguration"
+        }
+        /**
+         * Returns the VersionWeight property type name (`"AWS::Lambda::Alias.VersionWeight"`)
+         */
+        static get VersionWeightTypeName(): string {
+          return "AWS::Lambda::Alias.VersionWeight"
         }
       }
       export interface LayerVersionPermissionProperties {
@@ -45588,6 +48300,36 @@ export namespace Cf {
         static Environment(properties: FunctionEnvironment) : FunctionEnvironment {
           return properties;
         }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::Lambda::Function.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::Lambda::Function.VpcConfig"
+        }
+        /**
+         * Returns the DeadLetterConfig property type name (`"AWS::Lambda::Function.DeadLetterConfig"`)
+         */
+        static get DeadLetterConfigTypeName(): string {
+          return "AWS::Lambda::Function.DeadLetterConfig"
+        }
+        /**
+         * Returns the TracingConfig property type name (`"AWS::Lambda::Function.TracingConfig"`)
+         */
+        static get TracingConfigTypeName(): string {
+          return "AWS::Lambda::Function.TracingConfig"
+        }
+        /**
+         * Returns the Code property type name (`"AWS::Lambda::Function.Code"`)
+         */
+        static get CodeTypeName(): string {
+          return "AWS::Lambda::Function.Code"
+        }
+        /**
+         * Returns the Environment property type name (`"AWS::Lambda::Function.Environment"`)
+         */
+        static get EnvironmentTypeName(): string {
+          return "AWS::Lambda::Function.Environment"
+        }
       }
       export interface VersionProperties {
         /**
@@ -45896,6 +48638,12 @@ export namespace Cf {
          */
         static DomainValidationOption(properties: CertificateDomainValidationOption) : CertificateDomainValidationOption {
           return properties;
+        }
+        /**
+         * Returns the DomainValidationOption property type name (`"AWS::CertificateManager::Certificate.DomainValidationOption"`)
+         */
+        static get DomainValidationOptionTypeName(): string {
+          return "AWS::CertificateManager::Certificate.DomainValidationOption"
         }
       }
     }
@@ -46259,6 +49007,18 @@ export namespace Cf {
          */
         static PlacementTemplate(properties: ProjectPlacementTemplate) : ProjectPlacementTemplate {
           return properties;
+        }
+        /**
+         * Returns the DeviceTemplate property type name (`"AWS::IoT1Click::Project.DeviceTemplate"`)
+         */
+        static get DeviceTemplateTypeName(): string {
+          return "AWS::IoT1Click::Project.DeviceTemplate"
+        }
+        /**
+         * Returns the PlacementTemplate property type name (`"AWS::IoT1Click::Project.PlacementTemplate"`)
+         */
+        static get PlacementTemplateTypeName(): string {
+          return "AWS::IoT1Click::Project.PlacementTemplate"
         }
       }
       export interface DeviceProperties {
@@ -47354,6 +50114,84 @@ export namespace Cf {
         static ContainerAction(properties: DatasetContainerAction) : DatasetContainerAction {
           return properties;
         }
+        /**
+         * Returns the DatasetContentVersionValue property type name (`"AWS::IoTAnalytics::Dataset.DatasetContentVersionValue"`)
+         */
+        static get DatasetContentVersionValueTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.DatasetContentVersionValue"
+        }
+        /**
+         * Returns the OutputFileUriValue property type name (`"AWS::IoTAnalytics::Dataset.OutputFileUriValue"`)
+         */
+        static get OutputFileUriValueTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.OutputFileUriValue"
+        }
+        /**
+         * Returns the QueryAction property type name (`"AWS::IoTAnalytics::Dataset.QueryAction"`)
+         */
+        static get QueryActionTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.QueryAction"
+        }
+        /**
+         * Returns the Variable property type name (`"AWS::IoTAnalytics::Dataset.Variable"`)
+         */
+        static get VariableTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Variable"
+        }
+        /**
+         * Returns the Filter property type name (`"AWS::IoTAnalytics::Dataset.Filter"`)
+         */
+        static get FilterTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Filter"
+        }
+        /**
+         * Returns the DeltaTime property type name (`"AWS::IoTAnalytics::Dataset.DeltaTime"`)
+         */
+        static get DeltaTimeTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.DeltaTime"
+        }
+        /**
+         * Returns the ResourceConfiguration property type name (`"AWS::IoTAnalytics::Dataset.ResourceConfiguration"`)
+         */
+        static get ResourceConfigurationTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.ResourceConfiguration"
+        }
+        /**
+         * Returns the TriggeringDataset property type name (`"AWS::IoTAnalytics::Dataset.TriggeringDataset"`)
+         */
+        static get TriggeringDatasetTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.TriggeringDataset"
+        }
+        /**
+         * Returns the Schedule property type name (`"AWS::IoTAnalytics::Dataset.Schedule"`)
+         */
+        static get ScheduleTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Schedule"
+        }
+        /**
+         * Returns the Trigger property type name (`"AWS::IoTAnalytics::Dataset.Trigger"`)
+         */
+        static get TriggerTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Trigger"
+        }
+        /**
+         * Returns the RetentionPeriod property type name (`"AWS::IoTAnalytics::Dataset.RetentionPeriod"`)
+         */
+        static get RetentionPeriodTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.RetentionPeriod"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::IoTAnalytics::Dataset.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.Action"
+        }
+        /**
+         * Returns the ContainerAction property type name (`"AWS::IoTAnalytics::Dataset.ContainerAction"`)
+         */
+        static get ContainerActionTypeName(): string {
+          return "AWS::IoTAnalytics::Dataset.ContainerAction"
+        }
       }
       export interface ChannelProperties {
         /**
@@ -47439,6 +50277,12 @@ export namespace Cf {
          */
         static RetentionPeriod(properties: ChannelRetentionPeriod) : ChannelRetentionPeriod {
           return properties;
+        }
+        /**
+         * Returns the RetentionPeriod property type name (`"AWS::IoTAnalytics::Channel.RetentionPeriod"`)
+         */
+        static get RetentionPeriodTypeName(): string {
+          return "AWS::IoTAnalytics::Channel.RetentionPeriod"
         }
       }
       export interface PipelineProperties {
@@ -47606,6 +50450,72 @@ export namespace Cf {
         static Filter(properties: PipelineFilter) : PipelineFilter {
           return properties;
         }
+        /**
+         * Returns the DeviceShadowEnrich property type name (`"AWS::IoTAnalytics::Pipeline.DeviceShadowEnrich"`)
+         */
+        static get DeviceShadowEnrichTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.DeviceShadowEnrich"
+        }
+        /**
+         * Returns the Activity property type name (`"AWS::IoTAnalytics::Pipeline.Activity"`)
+         */
+        static get ActivityTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Activity"
+        }
+        /**
+         * Returns the Lambda property type name (`"AWS::IoTAnalytics::Pipeline.Lambda"`)
+         */
+        static get LambdaTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Lambda"
+        }
+        /**
+         * Returns the Math property type name (`"AWS::IoTAnalytics::Pipeline.Math"`)
+         */
+        static get MathTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Math"
+        }
+        /**
+         * Returns the RemoveAttributes property type name (`"AWS::IoTAnalytics::Pipeline.RemoveAttributes"`)
+         */
+        static get RemoveAttributesTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.RemoveAttributes"
+        }
+        /**
+         * Returns the SelectAttributes property type name (`"AWS::IoTAnalytics::Pipeline.SelectAttributes"`)
+         */
+        static get SelectAttributesTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.SelectAttributes"
+        }
+        /**
+         * Returns the Datastore property type name (`"AWS::IoTAnalytics::Pipeline.Datastore"`)
+         */
+        static get DatastoreTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Datastore"
+        }
+        /**
+         * Returns the AddAttributes property type name (`"AWS::IoTAnalytics::Pipeline.AddAttributes"`)
+         */
+        static get AddAttributesTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.AddAttributes"
+        }
+        /**
+         * Returns the DeviceRegistryEnrich property type name (`"AWS::IoTAnalytics::Pipeline.DeviceRegistryEnrich"`)
+         */
+        static get DeviceRegistryEnrichTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.DeviceRegistryEnrich"
+        }
+        /**
+         * Returns the Channel property type name (`"AWS::IoTAnalytics::Pipeline.Channel"`)
+         */
+        static get ChannelTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Channel"
+        }
+        /**
+         * Returns the Filter property type name (`"AWS::IoTAnalytics::Pipeline.Filter"`)
+         */
+        static get FilterTypeName(): string {
+          return "AWS::IoTAnalytics::Pipeline.Filter"
+        }
       }
       export interface DatastoreProperties {
         /**
@@ -47691,6 +50601,12 @@ export namespace Cf {
          */
         static RetentionPeriod(properties: DatastoreRetentionPeriod) : DatastoreRetentionPeriod {
           return properties;
+        }
+        /**
+         * Returns the RetentionPeriod property type name (`"AWS::IoTAnalytics::Datastore.RetentionPeriod"`)
+         */
+        static get RetentionPeriodTypeName(): string {
+          return "AWS::IoTAnalytics::Datastore.RetentionPeriod"
         }
       }
     }
@@ -48373,6 +51289,66 @@ export namespace Cf {
         static VolumesHost(properties: JobDefinitionVolumesHost) : JobDefinitionVolumesHost {
           return properties;
         }
+        /**
+         * Returns the NodeProperties property type name (`"AWS::Batch::JobDefinition.NodeProperties"`)
+         */
+        static get NodePropertiesTypeName(): string {
+          return "AWS::Batch::JobDefinition.NodeProperties"
+        }
+        /**
+         * Returns the Volumes property type name (`"AWS::Batch::JobDefinition.Volumes"`)
+         */
+        static get VolumesTypeName(): string {
+          return "AWS::Batch::JobDefinition.Volumes"
+        }
+        /**
+         * Returns the RetryStrategy property type name (`"AWS::Batch::JobDefinition.RetryStrategy"`)
+         */
+        static get RetryStrategyTypeName(): string {
+          return "AWS::Batch::JobDefinition.RetryStrategy"
+        }
+        /**
+         * Returns the ContainerProperties property type name (`"AWS::Batch::JobDefinition.ContainerProperties"`)
+         */
+        static get ContainerPropertiesTypeName(): string {
+          return "AWS::Batch::JobDefinition.ContainerProperties"
+        }
+        /**
+         * Returns the Timeout property type name (`"AWS::Batch::JobDefinition.Timeout"`)
+         */
+        static get TimeoutTypeName(): string {
+          return "AWS::Batch::JobDefinition.Timeout"
+        }
+        /**
+         * Returns the NodeRangeProperty property type name (`"AWS::Batch::JobDefinition.NodeRangeProperty"`)
+         */
+        static get NodeRangePropertyTypeName(): string {
+          return "AWS::Batch::JobDefinition.NodeRangeProperty"
+        }
+        /**
+         * Returns the MountPoints property type name (`"AWS::Batch::JobDefinition.MountPoints"`)
+         */
+        static get MountPointsTypeName(): string {
+          return "AWS::Batch::JobDefinition.MountPoints"
+        }
+        /**
+         * Returns the Environment property type name (`"AWS::Batch::JobDefinition.Environment"`)
+         */
+        static get EnvironmentTypeName(): string {
+          return "AWS::Batch::JobDefinition.Environment"
+        }
+        /**
+         * Returns the Ulimit property type name (`"AWS::Batch::JobDefinition.Ulimit"`)
+         */
+        static get UlimitTypeName(): string {
+          return "AWS::Batch::JobDefinition.Ulimit"
+        }
+        /**
+         * Returns the VolumesHost property type name (`"AWS::Batch::JobDefinition.VolumesHost"`)
+         */
+        static get VolumesHostTypeName(): string {
+          return "AWS::Batch::JobDefinition.VolumesHost"
+        }
       }
       export interface JobQueueProperties {
         /**
@@ -48467,6 +51443,12 @@ export namespace Cf {
          */
         static ComputeEnvironmentOrder(properties: JobQueueComputeEnvironmentOrder) : JobQueueComputeEnvironmentOrder {
           return properties;
+        }
+        /**
+         * Returns the ComputeEnvironmentOrder property type name (`"AWS::Batch::JobQueue.ComputeEnvironmentOrder"`)
+         */
+        static get ComputeEnvironmentOrderTypeName(): string {
+          return "AWS::Batch::JobQueue.ComputeEnvironmentOrder"
         }
       }
       export interface ComputeEnvironmentProperties {
@@ -48579,6 +51561,18 @@ export namespace Cf {
          */
         static ComputeResources(properties: ComputeEnvironmentComputeResources) : ComputeEnvironmentComputeResources {
           return properties;
+        }
+        /**
+         * Returns the LaunchTemplateSpecification property type name (`"AWS::Batch::ComputeEnvironment.LaunchTemplateSpecification"`)
+         */
+        static get LaunchTemplateSpecificationTypeName(): string {
+          return "AWS::Batch::ComputeEnvironment.LaunchTemplateSpecification"
+        }
+        /**
+         * Returns the ComputeResources property type name (`"AWS::Batch::ComputeEnvironment.ComputeResources"`)
+         */
+        static get ComputeResourcesTypeName(): string {
+          return "AWS::Batch::ComputeEnvironment.ComputeResources"
         }
       }
     }
@@ -49307,6 +52301,12 @@ export namespace Cf {
          */
         static EngineAttribute(properties: ServerEngineAttribute) : ServerEngineAttribute {
           return properties;
+        }
+        /**
+         * Returns the EngineAttribute property type name (`"AWS::OpsWorksCM::Server.EngineAttribute"`)
+         */
+        static get EngineAttributeTypeName(): string {
+          return "AWS::OpsWorksCM::Server.EngineAttribute"
         }
       }
     }
@@ -50062,6 +53062,12 @@ export namespace Cf {
         static AttributePayload(properties: ThingAttributePayload) : ThingAttributePayload {
           return properties;
         }
+        /**
+         * Returns the AttributePayload property type name (`"AWS::IoT::Thing.AttributePayload"`)
+         */
+        static get AttributePayloadTypeName(): string {
+          return "AWS::IoT::Thing.AttributePayload"
+        }
       }
       export interface PolicyProperties {
         /**
@@ -50335,6 +53341,108 @@ export namespace Cf {
          */
         static CloudwatchMetricAction(properties: TopicRuleCloudwatchMetricAction) : TopicRuleCloudwatchMetricAction {
           return properties;
+        }
+        /**
+         * Returns the S3Action property type name (`"AWS::IoT::TopicRule.S3Action"`)
+         */
+        static get S3ActionTypeName(): string {
+          return "AWS::IoT::TopicRule.S3Action"
+        }
+        /**
+         * Returns the SqsAction property type name (`"AWS::IoT::TopicRule.SqsAction"`)
+         */
+        static get SqsActionTypeName(): string {
+          return "AWS::IoT::TopicRule.SqsAction"
+        }
+        /**
+         * Returns the PutItemInput property type name (`"AWS::IoT::TopicRule.PutItemInput"`)
+         */
+        static get PutItemInputTypeName(): string {
+          return "AWS::IoT::TopicRule.PutItemInput"
+        }
+        /**
+         * Returns the RepublishAction property type name (`"AWS::IoT::TopicRule.RepublishAction"`)
+         */
+        static get RepublishActionTypeName(): string {
+          return "AWS::IoT::TopicRule.RepublishAction"
+        }
+        /**
+         * Returns the SnsAction property type name (`"AWS::IoT::TopicRule.SnsAction"`)
+         */
+        static get SnsActionTypeName(): string {
+          return "AWS::IoT::TopicRule.SnsAction"
+        }
+        /**
+         * Returns the StepFunctionsAction property type name (`"AWS::IoT::TopicRule.StepFunctionsAction"`)
+         */
+        static get StepFunctionsActionTypeName(): string {
+          return "AWS::IoT::TopicRule.StepFunctionsAction"
+        }
+        /**
+         * Returns the FirehoseAction property type name (`"AWS::IoT::TopicRule.FirehoseAction"`)
+         */
+        static get FirehoseActionTypeName(): string {
+          return "AWS::IoT::TopicRule.FirehoseAction"
+        }
+        /**
+         * Returns the TopicRulePayload property type name (`"AWS::IoT::TopicRule.TopicRulePayload"`)
+         */
+        static get TopicRulePayloadTypeName(): string {
+          return "AWS::IoT::TopicRule.TopicRulePayload"
+        }
+        /**
+         * Returns the LambdaAction property type name (`"AWS::IoT::TopicRule.LambdaAction"`)
+         */
+        static get LambdaActionTypeName(): string {
+          return "AWS::IoT::TopicRule.LambdaAction"
+        }
+        /**
+         * Returns the DynamoDBv2Action property type name (`"AWS::IoT::TopicRule.DynamoDBv2Action"`)
+         */
+        static get DynamoDBv2ActionTypeName(): string {
+          return "AWS::IoT::TopicRule.DynamoDBv2Action"
+        }
+        /**
+         * Returns the ElasticsearchAction property type name (`"AWS::IoT::TopicRule.ElasticsearchAction"`)
+         */
+        static get ElasticsearchActionTypeName(): string {
+          return "AWS::IoT::TopicRule.ElasticsearchAction"
+        }
+        /**
+         * Returns the DynamoDBAction property type name (`"AWS::IoT::TopicRule.DynamoDBAction"`)
+         */
+        static get DynamoDBActionTypeName(): string {
+          return "AWS::IoT::TopicRule.DynamoDBAction"
+        }
+        /**
+         * Returns the KinesisAction property type name (`"AWS::IoT::TopicRule.KinesisAction"`)
+         */
+        static get KinesisActionTypeName(): string {
+          return "AWS::IoT::TopicRule.KinesisAction"
+        }
+        /**
+         * Returns the CloudwatchAlarmAction property type name (`"AWS::IoT::TopicRule.CloudwatchAlarmAction"`)
+         */
+        static get CloudwatchAlarmActionTypeName(): string {
+          return "AWS::IoT::TopicRule.CloudwatchAlarmAction"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::IoT::TopicRule.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::IoT::TopicRule.Action"
+        }
+        /**
+         * Returns the IotAnalyticsAction property type name (`"AWS::IoT::TopicRule.IotAnalyticsAction"`)
+         */
+        static get IotAnalyticsActionTypeName(): string {
+          return "AWS::IoT::TopicRule.IotAnalyticsAction"
+        }
+        /**
+         * Returns the CloudwatchMetricAction property type name (`"AWS::IoT::TopicRule.CloudwatchMetricAction"`)
+         */
+        static get CloudwatchMetricActionTypeName(): string {
+          return "AWS::IoT::TopicRule.CloudwatchMetricAction"
         }
       }
       export interface PolicyPrincipalAttachmentProperties {
@@ -51062,6 +54170,54 @@ export namespace Cf {
          */
         static AppCookieStickinessPolicy(properties: LoadBalancerAppCookieStickinessPolicy) : LoadBalancerAppCookieStickinessPolicy {
           return properties;
+        }
+        /**
+         * Returns the HealthCheck property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.HealthCheck"`)
+         */
+        static get HealthCheckTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.HealthCheck"
+        }
+        /**
+         * Returns the AccessLoggingPolicy property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.AccessLoggingPolicy"`)
+         */
+        static get AccessLoggingPolicyTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.AccessLoggingPolicy"
+        }
+        /**
+         * Returns the ConnectionSettings property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.ConnectionSettings"`)
+         */
+        static get ConnectionSettingsTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.ConnectionSettings"
+        }
+        /**
+         * Returns the LBCookieStickinessPolicy property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.LBCookieStickinessPolicy"`)
+         */
+        static get LBCookieStickinessPolicyTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.LBCookieStickinessPolicy"
+        }
+        /**
+         * Returns the ConnectionDrainingPolicy property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.ConnectionDrainingPolicy"`)
+         */
+        static get ConnectionDrainingPolicyTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.ConnectionDrainingPolicy"
+        }
+        /**
+         * Returns the Listeners property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.Listeners"`)
+         */
+        static get ListenersTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.Listeners"
+        }
+        /**
+         * Returns the Policies property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.Policies"`)
+         */
+        static get PoliciesTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.Policies"
+        }
+        /**
+         * Returns the AppCookieStickinessPolicy property type name (`"AWS::ElasticLoadBalancing::LoadBalancer.AppCookieStickinessPolicy"`)
+         */
+        static get AppCookieStickinessPolicyTypeName(): string {
+          return "AWS::ElasticLoadBalancing::LoadBalancer.AppCookieStickinessPolicy"
         }
       }
     }
@@ -51840,6 +54996,36 @@ export namespace Cf {
          */
         static DynamoDbSettings(properties: EndpointDynamoDbSettings) : EndpointDynamoDbSettings {
           return properties;
+        }
+        /**
+         * Returns the KinesisSettings property type name (`"AWS::DMS::Endpoint.KinesisSettings"`)
+         */
+        static get KinesisSettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.KinesisSettings"
+        }
+        /**
+         * Returns the S3Settings property type name (`"AWS::DMS::Endpoint.S3Settings"`)
+         */
+        static get S3SettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.S3Settings"
+        }
+        /**
+         * Returns the MongoDbSettings property type name (`"AWS::DMS::Endpoint.MongoDbSettings"`)
+         */
+        static get MongoDbSettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.MongoDbSettings"
+        }
+        /**
+         * Returns the ElasticsearchSettings property type name (`"AWS::DMS::Endpoint.ElasticsearchSettings"`)
+         */
+        static get ElasticsearchSettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.ElasticsearchSettings"
+        }
+        /**
+         * Returns the DynamoDbSettings property type name (`"AWS::DMS::Endpoint.DynamoDbSettings"`)
+         */
+        static get DynamoDbSettingsTypeName(): string {
+          return "AWS::DMS::Endpoint.DynamoDbSettings"
         }
       }
       export interface ReplicationTaskProperties {
@@ -53254,6 +56440,42 @@ export namespace Cf {
         static Column(properties: TableColumn) : TableColumn {
           return properties;
         }
+        /**
+         * Returns the SkewedInfo property type name (`"AWS::Glue::Table.SkewedInfo"`)
+         */
+        static get SkewedInfoTypeName(): string {
+          return "AWS::Glue::Table.SkewedInfo"
+        }
+        /**
+         * Returns the StorageDescriptor property type name (`"AWS::Glue::Table.StorageDescriptor"`)
+         */
+        static get StorageDescriptorTypeName(): string {
+          return "AWS::Glue::Table.StorageDescriptor"
+        }
+        /**
+         * Returns the TableInput property type name (`"AWS::Glue::Table.TableInput"`)
+         */
+        static get TableInputTypeName(): string {
+          return "AWS::Glue::Table.TableInput"
+        }
+        /**
+         * Returns the SerdeInfo property type name (`"AWS::Glue::Table.SerdeInfo"`)
+         */
+        static get SerdeInfoTypeName(): string {
+          return "AWS::Glue::Table.SerdeInfo"
+        }
+        /**
+         * Returns the Order property type name (`"AWS::Glue::Table.Order"`)
+         */
+        static get OrderTypeName(): string {
+          return "AWS::Glue::Table.Order"
+        }
+        /**
+         * Returns the Column property type name (`"AWS::Glue::Table.Column"`)
+         */
+        static get ColumnTypeName(): string {
+          return "AWS::Glue::Table.Column"
+        }
       }
       export interface ConnectionProperties {
         /**
@@ -53338,6 +56560,18 @@ export namespace Cf {
          */
         static PhysicalConnectionRequirements(properties: ConnectionPhysicalConnectionRequirements) : ConnectionPhysicalConnectionRequirements {
           return properties;
+        }
+        /**
+         * Returns the ConnectionInput property type name (`"AWS::Glue::Connection.ConnectionInput"`)
+         */
+        static get ConnectionInputTypeName(): string {
+          return "AWS::Glue::Connection.ConnectionInput"
+        }
+        /**
+         * Returns the PhysicalConnectionRequirements property type name (`"AWS::Glue::Connection.PhysicalConnectionRequirements"`)
+         */
+        static get PhysicalConnectionRequirementsTypeName(): string {
+          return "AWS::Glue::Connection.PhysicalConnectionRequirements"
         }
       }
       export interface PartitionProperties {
@@ -53473,6 +56707,42 @@ export namespace Cf {
          */
         static PartitionInput(properties: PartitionPartitionInput) : PartitionPartitionInput {
           return properties;
+        }
+        /**
+         * Returns the SerdeInfo property type name (`"AWS::Glue::Partition.SerdeInfo"`)
+         */
+        static get SerdeInfoTypeName(): string {
+          return "AWS::Glue::Partition.SerdeInfo"
+        }
+        /**
+         * Returns the StorageDescriptor property type name (`"AWS::Glue::Partition.StorageDescriptor"`)
+         */
+        static get StorageDescriptorTypeName(): string {
+          return "AWS::Glue::Partition.StorageDescriptor"
+        }
+        /**
+         * Returns the Order property type name (`"AWS::Glue::Partition.Order"`)
+         */
+        static get OrderTypeName(): string {
+          return "AWS::Glue::Partition.Order"
+        }
+        /**
+         * Returns the SkewedInfo property type name (`"AWS::Glue::Partition.SkewedInfo"`)
+         */
+        static get SkewedInfoTypeName(): string {
+          return "AWS::Glue::Partition.SkewedInfo"
+        }
+        /**
+         * Returns the Column property type name (`"AWS::Glue::Partition.Column"`)
+         */
+        static get ColumnTypeName(): string {
+          return "AWS::Glue::Partition.Column"
+        }
+        /**
+         * Returns the PartitionInput property type name (`"AWS::Glue::Partition.PartitionInput"`)
+         */
+        static get PartitionInputTypeName(): string {
+          return "AWS::Glue::Partition.PartitionInput"
         }
       }
       export interface JobProperties {
@@ -53639,6 +56909,24 @@ export namespace Cf {
         static ExecutionProperty(properties: JobExecutionProperty) : JobExecutionProperty {
           return properties;
         }
+        /**
+         * Returns the JobCommand property type name (`"AWS::Glue::Job.JobCommand"`)
+         */
+        static get JobCommandTypeName(): string {
+          return "AWS::Glue::Job.JobCommand"
+        }
+        /**
+         * Returns the ConnectionsList property type name (`"AWS::Glue::Job.ConnectionsList"`)
+         */
+        static get ConnectionsListTypeName(): string {
+          return "AWS::Glue::Job.ConnectionsList"
+        }
+        /**
+         * Returns the ExecutionProperty property type name (`"AWS::Glue::Job.ExecutionProperty"`)
+         */
+        static get ExecutionPropertyTypeName(): string {
+          return "AWS::Glue::Job.ExecutionProperty"
+        }
       }
       export interface DatabaseProperties {
         /**
@@ -53715,6 +57003,12 @@ export namespace Cf {
          */
         static DatabaseInput(properties: DatabaseDatabaseInput) : DatabaseDatabaseInput {
           return properties;
+        }
+        /**
+         * Returns the DatabaseInput property type name (`"AWS::Glue::Database.DatabaseInput"`)
+         */
+        static get DatabaseInputTypeName(): string {
+          return "AWS::Glue::Database.DatabaseInput"
         }
       }
       export interface DevEndpointProperties {
@@ -53968,6 +57262,24 @@ export namespace Cf {
         static Predicate(properties: TriggerPredicate) : TriggerPredicate {
           return properties;
         }
+        /**
+         * Returns the Action property type name (`"AWS::Glue::Trigger.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::Glue::Trigger.Action"
+        }
+        /**
+         * Returns the Condition property type name (`"AWS::Glue::Trigger.Condition"`)
+         */
+        static get ConditionTypeName(): string {
+          return "AWS::Glue::Trigger.Condition"
+        }
+        /**
+         * Returns the Predicate property type name (`"AWS::Glue::Trigger.Predicate"`)
+         */
+        static get PredicateTypeName(): string {
+          return "AWS::Glue::Trigger.Predicate"
+        }
       }
       export interface CrawlerProperties {
         /**
@@ -54149,6 +57461,36 @@ export namespace Cf {
         static SchemaChangePolicy(properties: CrawlerSchemaChangePolicy) : CrawlerSchemaChangePolicy {
           return properties;
         }
+        /**
+         * Returns the Targets property type name (`"AWS::Glue::Crawler.Targets"`)
+         */
+        static get TargetsTypeName(): string {
+          return "AWS::Glue::Crawler.Targets"
+        }
+        /**
+         * Returns the JdbcTarget property type name (`"AWS::Glue::Crawler.JdbcTarget"`)
+         */
+        static get JdbcTargetTypeName(): string {
+          return "AWS::Glue::Crawler.JdbcTarget"
+        }
+        /**
+         * Returns the Schedule property type name (`"AWS::Glue::Crawler.Schedule"`)
+         */
+        static get ScheduleTypeName(): string {
+          return "AWS::Glue::Crawler.Schedule"
+        }
+        /**
+         * Returns the S3Target property type name (`"AWS::Glue::Crawler.S3Target"`)
+         */
+        static get S3TargetTypeName(): string {
+          return "AWS::Glue::Crawler.S3Target"
+        }
+        /**
+         * Returns the SchemaChangePolicy property type name (`"AWS::Glue::Crawler.SchemaChangePolicy"`)
+         */
+        static get SchemaChangePolicyTypeName(): string {
+          return "AWS::Glue::Crawler.SchemaChangePolicy"
+        }
       }
       export interface ClassifierProperties {
         /**
@@ -54250,6 +57592,24 @@ export namespace Cf {
          */
         static JsonClassifier(properties: ClassifierJsonClassifier) : ClassifierJsonClassifier {
           return properties;
+        }
+        /**
+         * Returns the XMLClassifier property type name (`"AWS::Glue::Classifier.XMLClassifier"`)
+         */
+        static get XMLClassifierTypeName(): string {
+          return "AWS::Glue::Classifier.XMLClassifier"
+        }
+        /**
+         * Returns the GrokClassifier property type name (`"AWS::Glue::Classifier.GrokClassifier"`)
+         */
+        static get GrokClassifierTypeName(): string {
+          return "AWS::Glue::Classifier.GrokClassifier"
+        }
+        /**
+         * Returns the JsonClassifier property type name (`"AWS::Glue::Classifier.JsonClassifier"`)
+         */
+        static get JsonClassifierTypeName(): string {
+          return "AWS::Glue::Classifier.JsonClassifier"
         }
       }
     }
@@ -54835,6 +58195,12 @@ export namespace Cf {
          */
         static NodeGroupConfiguration(properties: ReplicationGroupNodeGroupConfiguration) : ReplicationGroupNodeGroupConfiguration {
           return properties;
+        }
+        /**
+         * Returns the NodeGroupConfiguration property type name (`"AWS::ElastiCache::ReplicationGroup.NodeGroupConfiguration"`)
+         */
+        static get NodeGroupConfigurationTypeName(): string {
+          return "AWS::ElastiCache::ReplicationGroup.NodeGroupConfiguration"
         }
       }
       export interface ParameterGroupProperties {
@@ -55884,6 +59250,114 @@ export namespace Cf {
         static EC2TagSetListObject(properties: DeploymentGroupEC2TagSetListObject) : DeploymentGroupEC2TagSetListObject {
           return properties;
         }
+        /**
+         * Returns the LoadBalancerInfo property type name (`"AWS::CodeDeploy::DeploymentGroup.LoadBalancerInfo"`)
+         */
+        static get LoadBalancerInfoTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.LoadBalancerInfo"
+        }
+        /**
+         * Returns the RevisionLocation property type name (`"AWS::CodeDeploy::DeploymentGroup.RevisionLocation"`)
+         */
+        static get RevisionLocationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.RevisionLocation"
+        }
+        /**
+         * Returns the S3Location property type name (`"AWS::CodeDeploy::DeploymentGroup.S3Location"`)
+         */
+        static get S3LocationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.S3Location"
+        }
+        /**
+         * Returns the TriggerConfig property type name (`"AWS::CodeDeploy::DeploymentGroup.TriggerConfig"`)
+         */
+        static get TriggerConfigTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.TriggerConfig"
+        }
+        /**
+         * Returns the TagFilter property type name (`"AWS::CodeDeploy::DeploymentGroup.TagFilter"`)
+         */
+        static get TagFilterTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.TagFilter"
+        }
+        /**
+         * Returns the GitHubLocation property type name (`"AWS::CodeDeploy::DeploymentGroup.GitHubLocation"`)
+         */
+        static get GitHubLocationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.GitHubLocation"
+        }
+        /**
+         * Returns the TargetGroupInfo property type name (`"AWS::CodeDeploy::DeploymentGroup.TargetGroupInfo"`)
+         */
+        static get TargetGroupInfoTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.TargetGroupInfo"
+        }
+        /**
+         * Returns the EC2TagSet property type name (`"AWS::CodeDeploy::DeploymentGroup.EC2TagSet"`)
+         */
+        static get EC2TagSetTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.EC2TagSet"
+        }
+        /**
+         * Returns the ELBInfo property type name (`"AWS::CodeDeploy::DeploymentGroup.ELBInfo"`)
+         */
+        static get ELBInfoTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.ELBInfo"
+        }
+        /**
+         * Returns the AlarmConfiguration property type name (`"AWS::CodeDeploy::DeploymentGroup.AlarmConfiguration"`)
+         */
+        static get AlarmConfigurationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.AlarmConfiguration"
+        }
+        /**
+         * Returns the OnPremisesTagSetListObject property type name (`"AWS::CodeDeploy::DeploymentGroup.OnPremisesTagSetListObject"`)
+         */
+        static get OnPremisesTagSetListObjectTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.OnPremisesTagSetListObject"
+        }
+        /**
+         * Returns the DeploymentStyle property type name (`"AWS::CodeDeploy::DeploymentGroup.DeploymentStyle"`)
+         */
+        static get DeploymentStyleTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.DeploymentStyle"
+        }
+        /**
+         * Returns the Alarm property type name (`"AWS::CodeDeploy::DeploymentGroup.Alarm"`)
+         */
+        static get AlarmTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.Alarm"
+        }
+        /**
+         * Returns the EC2TagFilter property type name (`"AWS::CodeDeploy::DeploymentGroup.EC2TagFilter"`)
+         */
+        static get EC2TagFilterTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.EC2TagFilter"
+        }
+        /**
+         * Returns the OnPremisesTagSet property type name (`"AWS::CodeDeploy::DeploymentGroup.OnPremisesTagSet"`)
+         */
+        static get OnPremisesTagSetTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.OnPremisesTagSet"
+        }
+        /**
+         * Returns the AutoRollbackConfiguration property type name (`"AWS::CodeDeploy::DeploymentGroup.AutoRollbackConfiguration"`)
+         */
+        static get AutoRollbackConfigurationTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.AutoRollbackConfiguration"
+        }
+        /**
+         * Returns the Deployment property type name (`"AWS::CodeDeploy::DeploymentGroup.Deployment"`)
+         */
+        static get DeploymentTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.Deployment"
+        }
+        /**
+         * Returns the EC2TagSetListObject property type name (`"AWS::CodeDeploy::DeploymentGroup.EC2TagSetListObject"`)
+         */
+        static get EC2TagSetListObjectTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentGroup.EC2TagSetListObject"
+        }
       }
       export interface DeploymentConfigProperties {
         /**
@@ -55960,6 +59434,12 @@ export namespace Cf {
          */
         static MinimumHealthyHosts(properties: DeploymentConfigMinimumHealthyHosts) : DeploymentConfigMinimumHealthyHosts {
           return properties;
+        }
+        /**
+         * Returns the MinimumHealthyHosts property type name (`"AWS::CodeDeploy::DeploymentConfig.MinimumHealthyHosts"`)
+         */
+        static get MinimumHealthyHostsTypeName(): string {
+          return "AWS::CodeDeploy::DeploymentConfig.MinimumHealthyHosts"
         }
       }
       export interface ApplicationProperties {
@@ -56608,6 +60088,18 @@ export namespace Cf {
         static IpFilter(properties: ReceiptFilterIpFilter) : ReceiptFilterIpFilter {
           return properties;
         }
+        /**
+         * Returns the Filter property type name (`"AWS::SES::ReceiptFilter.Filter"`)
+         */
+        static get FilterTypeName(): string {
+          return "AWS::SES::ReceiptFilter.Filter"
+        }
+        /**
+         * Returns the IpFilter property type name (`"AWS::SES::ReceiptFilter.IpFilter"`)
+         */
+        static get IpFilterTypeName(): string {
+          return "AWS::SES::ReceiptFilter.IpFilter"
+        }
       }
       export interface ReceiptRuleProperties {
         /**
@@ -56758,6 +60250,60 @@ export namespace Cf {
         static AddHeaderAction(properties: ReceiptRuleAddHeaderAction) : ReceiptRuleAddHeaderAction {
           return properties;
         }
+        /**
+         * Returns the BounceAction property type name (`"AWS::SES::ReceiptRule.BounceAction"`)
+         */
+        static get BounceActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.BounceAction"
+        }
+        /**
+         * Returns the WorkmailAction property type name (`"AWS::SES::ReceiptRule.WorkmailAction"`)
+         */
+        static get WorkmailActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.WorkmailAction"
+        }
+        /**
+         * Returns the StopAction property type name (`"AWS::SES::ReceiptRule.StopAction"`)
+         */
+        static get StopActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.StopAction"
+        }
+        /**
+         * Returns the Action property type name (`"AWS::SES::ReceiptRule.Action"`)
+         */
+        static get ActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.Action"
+        }
+        /**
+         * Returns the SNSAction property type name (`"AWS::SES::ReceiptRule.SNSAction"`)
+         */
+        static get SNSActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.SNSAction"
+        }
+        /**
+         * Returns the Rule property type name (`"AWS::SES::ReceiptRule.Rule"`)
+         */
+        static get RuleTypeName(): string {
+          return "AWS::SES::ReceiptRule.Rule"
+        }
+        /**
+         * Returns the LambdaAction property type name (`"AWS::SES::ReceiptRule.LambdaAction"`)
+         */
+        static get LambdaActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.LambdaAction"
+        }
+        /**
+         * Returns the S3Action property type name (`"AWS::SES::ReceiptRule.S3Action"`)
+         */
+        static get S3ActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.S3Action"
+        }
+        /**
+         * Returns the AddHeaderAction property type name (`"AWS::SES::ReceiptRule.AddHeaderAction"`)
+         */
+        static get AddHeaderActionTypeName(): string {
+          return "AWS::SES::ReceiptRule.AddHeaderAction"
+        }
       }
       export interface ConfigurationSetEventDestinationProperties {
         /**
@@ -56859,6 +60405,30 @@ export namespace Cf {
         static DimensionConfiguration(properties: ConfigurationSetEventDestinationDimensionConfiguration) : ConfigurationSetEventDestinationDimensionConfiguration {
           return properties;
         }
+        /**
+         * Returns the EventDestination property type name (`"AWS::SES::ConfigurationSetEventDestination.EventDestination"`)
+         */
+        static get EventDestinationTypeName(): string {
+          return "AWS::SES::ConfigurationSetEventDestination.EventDestination"
+        }
+        /**
+         * Returns the CloudWatchDestination property type name (`"AWS::SES::ConfigurationSetEventDestination.CloudWatchDestination"`)
+         */
+        static get CloudWatchDestinationTypeName(): string {
+          return "AWS::SES::ConfigurationSetEventDestination.CloudWatchDestination"
+        }
+        /**
+         * Returns the KinesisFirehoseDestination property type name (`"AWS::SES::ConfigurationSetEventDestination.KinesisFirehoseDestination"`)
+         */
+        static get KinesisFirehoseDestinationTypeName(): string {
+          return "AWS::SES::ConfigurationSetEventDestination.KinesisFirehoseDestination"
+        }
+        /**
+         * Returns the DimensionConfiguration property type name (`"AWS::SES::ConfigurationSetEventDestination.DimensionConfiguration"`)
+         */
+        static get DimensionConfigurationTypeName(): string {
+          return "AWS::SES::ConfigurationSetEventDestination.DimensionConfiguration"
+        }
       }
       export interface TemplateProperties {
         /**
@@ -56926,6 +60496,12 @@ export namespace Cf {
          */
         static Template(properties: TemplateTemplate) : TemplateTemplate {
           return properties;
+        }
+        /**
+         * Returns the Template property type name (`"AWS::SES::Template.Template"`)
+         */
+        static get TemplateTypeName(): string {
+          return "AWS::SES::Template.Template"
         }
       }
       export interface ConfigurationSetProperties {
@@ -57238,6 +60814,12 @@ export namespace Cf {
         static RotationRules(properties: RotationScheduleRotationRules) : RotationScheduleRotationRules {
           return properties;
         }
+        /**
+         * Returns the RotationRules property type name (`"AWS::SecretsManager::RotationSchedule.RotationRules"`)
+         */
+        static get RotationRulesTypeName(): string {
+          return "AWS::SecretsManager::RotationSchedule.RotationRules"
+        }
       }
       export interface SecretProperties {
         /**
@@ -57350,6 +60932,12 @@ export namespace Cf {
          */
         static GenerateSecretString(properties: SecretGenerateSecretString) : SecretGenerateSecretString {
           return properties;
+        }
+        /**
+         * Returns the GenerateSecretString property type name (`"AWS::SecretsManager::Secret.GenerateSecretString"`)
+         */
+        static get GenerateSecretStringTypeName(): string {
+          return "AWS::SecretsManager::Secret.GenerateSecretString"
         }
       }
       export interface ResourcePolicyProperties {
@@ -58293,6 +61881,90 @@ export namespace Cf {
         static WebhookFilter(properties: ProjectWebhookFilter) : ProjectWebhookFilter {
           return properties;
         }
+        /**
+         * Returns the Artifacts property type name (`"AWS::CodeBuild::Project.Artifacts"`)
+         */
+        static get ArtifactsTypeName(): string {
+          return "AWS::CodeBuild::Project.Artifacts"
+        }
+        /**
+         * Returns the LogsConfig property type name (`"AWS::CodeBuild::Project.LogsConfig"`)
+         */
+        static get LogsConfigTypeName(): string {
+          return "AWS::CodeBuild::Project.LogsConfig"
+        }
+        /**
+         * Returns the RegistryCredential property type name (`"AWS::CodeBuild::Project.RegistryCredential"`)
+         */
+        static get RegistryCredentialTypeName(): string {
+          return "AWS::CodeBuild::Project.RegistryCredential"
+        }
+        /**
+         * Returns the SourceAuth property type name (`"AWS::CodeBuild::Project.SourceAuth"`)
+         */
+        static get SourceAuthTypeName(): string {
+          return "AWS::CodeBuild::Project.SourceAuth"
+        }
+        /**
+         * Returns the Environment property type name (`"AWS::CodeBuild::Project.Environment"`)
+         */
+        static get EnvironmentTypeName(): string {
+          return "AWS::CodeBuild::Project.Environment"
+        }
+        /**
+         * Returns the CloudWatchLogsConfig property type name (`"AWS::CodeBuild::Project.CloudWatchLogsConfig"`)
+         */
+        static get CloudWatchLogsConfigTypeName(): string {
+          return "AWS::CodeBuild::Project.CloudWatchLogsConfig"
+        }
+        /**
+         * Returns the ProjectCache property type name (`"AWS::CodeBuild::Project.ProjectCache"`)
+         */
+        static get ProjectCacheTypeName(): string {
+          return "AWS::CodeBuild::Project.ProjectCache"
+        }
+        /**
+         * Returns the FilterGroup property type name (`"AWS::CodeBuild::Project.FilterGroup"`)
+         */
+        static get FilterGroupTypeName(): string {
+          return "AWS::CodeBuild::Project.FilterGroup"
+        }
+        /**
+         * Returns the VpcConfig property type name (`"AWS::CodeBuild::Project.VpcConfig"`)
+         */
+        static get VpcConfigTypeName(): string {
+          return "AWS::CodeBuild::Project.VpcConfig"
+        }
+        /**
+         * Returns the ProjectTriggers property type name (`"AWS::CodeBuild::Project.ProjectTriggers"`)
+         */
+        static get ProjectTriggersTypeName(): string {
+          return "AWS::CodeBuild::Project.ProjectTriggers"
+        }
+        /**
+         * Returns the EnvironmentVariable property type name (`"AWS::CodeBuild::Project.EnvironmentVariable"`)
+         */
+        static get EnvironmentVariableTypeName(): string {
+          return "AWS::CodeBuild::Project.EnvironmentVariable"
+        }
+        /**
+         * Returns the S3LogsConfig property type name (`"AWS::CodeBuild::Project.S3LogsConfig"`)
+         */
+        static get S3LogsConfigTypeName(): string {
+          return "AWS::CodeBuild::Project.S3LogsConfig"
+        }
+        /**
+         * Returns the Source property type name (`"AWS::CodeBuild::Project.Source"`)
+         */
+        static get SourceTypeName(): string {
+          return "AWS::CodeBuild::Project.Source"
+        }
+        /**
+         * Returns the WebhookFilter property type name (`"AWS::CodeBuild::Project.WebhookFilter"`)
+         */
+        static get WebhookFilterTypeName(): string {
+          return "AWS::CodeBuild::Project.WebhookFilter"
+        }
       }
     }
     export namespace Budgets {
@@ -58704,6 +62376,48 @@ export namespace Cf {
         static Spend(properties: BudgetSpend) : BudgetSpend {
           return properties;
         }
+        /**
+         * Returns the NotificationWithSubscribers property type name (`"AWS::Budgets::Budget.NotificationWithSubscribers"`)
+         */
+        static get NotificationWithSubscribersTypeName(): string {
+          return "AWS::Budgets::Budget.NotificationWithSubscribers"
+        }
+        /**
+         * Returns the Subscriber property type name (`"AWS::Budgets::Budget.Subscriber"`)
+         */
+        static get SubscriberTypeName(): string {
+          return "AWS::Budgets::Budget.Subscriber"
+        }
+        /**
+         * Returns the Notification property type name (`"AWS::Budgets::Budget.Notification"`)
+         */
+        static get NotificationTypeName(): string {
+          return "AWS::Budgets::Budget.Notification"
+        }
+        /**
+         * Returns the BudgetData property type name (`"AWS::Budgets::Budget.BudgetData"`)
+         */
+        static get BudgetDataTypeName(): string {
+          return "AWS::Budgets::Budget.BudgetData"
+        }
+        /**
+         * Returns the CostTypes property type name (`"AWS::Budgets::Budget.CostTypes"`)
+         */
+        static get CostTypesTypeName(): string {
+          return "AWS::Budgets::Budget.CostTypes"
+        }
+        /**
+         * Returns the TimePeriod property type name (`"AWS::Budgets::Budget.TimePeriod"`)
+         */
+        static get TimePeriodTypeName(): string {
+          return "AWS::Budgets::Budget.TimePeriod"
+        }
+        /**
+         * Returns the Spend property type name (`"AWS::Budgets::Budget.Spend"`)
+         */
+        static get SpendTypeName(): string {
+          return "AWS::Budgets::Budget.Spend"
+        }
       }
     }
     export namespace DAX {
@@ -59049,6 +62763,12 @@ export namespace Cf {
         static SSESpecification(properties: ClusterSSESpecification) : ClusterSSESpecification {
           return properties;
         }
+        /**
+         * Returns the SSESpecification property type name (`"AWS::DAX::Cluster.SSESpecification"`)
+         */
+        static get SSESpecificationTypeName(): string {
+          return "AWS::DAX::Cluster.SSESpecification"
+        }
       }
     }
     export namespace FSx {
@@ -59320,6 +63040,24 @@ export namespace Cf {
          */
         static WindowsConfiguration(properties: FileSystemWindowsConfiguration) : FileSystemWindowsConfiguration {
           return properties;
+        }
+        /**
+         * Returns the TagEntry property type name (`"AWS::FSx::FileSystem.TagEntry"`)
+         */
+        static get TagEntryTypeName(): string {
+          return "AWS::FSx::FileSystem.TagEntry"
+        }
+        /**
+         * Returns the LustreConfiguration property type name (`"AWS::FSx::FileSystem.LustreConfiguration"`)
+         */
+        static get LustreConfigurationTypeName(): string {
+          return "AWS::FSx::FileSystem.LustreConfiguration"
+        }
+        /**
+         * Returns the WindowsConfiguration property type name (`"AWS::FSx::FileSystem.WindowsConfiguration"`)
+         */
+        static get WindowsConfigurationTypeName(): string {
+          return "AWS::FSx::FileSystem.WindowsConfiguration"
         }
       }
     }
@@ -59623,6 +63361,42 @@ export namespace Cf {
         static Field(properties: PipelineField) : PipelineField {
           return properties;
         }
+        /**
+         * Returns the ParameterAttribute property type name (`"AWS::DataPipeline::Pipeline.ParameterAttribute"`)
+         */
+        static get ParameterAttributeTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.ParameterAttribute"
+        }
+        /**
+         * Returns the PipelineTag property type name (`"AWS::DataPipeline::Pipeline.PipelineTag"`)
+         */
+        static get PipelineTagTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.PipelineTag"
+        }
+        /**
+         * Returns the ParameterObject property type name (`"AWS::DataPipeline::Pipeline.ParameterObject"`)
+         */
+        static get ParameterObjectTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.ParameterObject"
+        }
+        /**
+         * Returns the PipelineObject property type name (`"AWS::DataPipeline::Pipeline.PipelineObject"`)
+         */
+        static get PipelineObjectTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.PipelineObject"
+        }
+        /**
+         * Returns the ParameterValue property type name (`"AWS::DataPipeline::Pipeline.ParameterValue"`)
+         */
+        static get ParameterValueTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.ParameterValue"
+        }
+        /**
+         * Returns the Field property type name (`"AWS::DataPipeline::Pipeline.Field"`)
+         */
+        static get FieldTypeName(): string {
+          return "AWS::DataPipeline::Pipeline.Field"
+        }
       }
     }
     export namespace Route53Resolver {
@@ -59777,6 +63551,12 @@ export namespace Cf {
          */
         static TargetAddress(properties: ResolverRuleTargetAddress) : ResolverRuleTargetAddress {
           return properties;
+        }
+        /**
+         * Returns the TargetAddress property type name (`"AWS::Route53Resolver::ResolverRule.TargetAddress"`)
+         */
+        static get TargetAddressTypeName(): string {
+          return "AWS::Route53Resolver::ResolverRule.TargetAddress"
         }
       }
       export interface ResolverRuleAssociationProperties {
@@ -59959,6 +63739,12 @@ export namespace Cf {
          */
         static IpAddressRequest(properties: ResolverEndpointIpAddressRequest) : ResolverEndpointIpAddressRequest {
           return properties;
+        }
+        /**
+         * Returns the IpAddressRequest property type name (`"AWS::Route53Resolver::ResolverEndpoint.IpAddressRequest"`)
+         */
+        static get IpAddressRequestTypeName(): string {
+          return "AWS::Route53Resolver::ResolverEndpoint.IpAddressRequest"
         }
       }
     }
@@ -60194,6 +63980,18 @@ export namespace Cf {
          */
         static DataResource(properties: TrailDataResource) : TrailDataResource {
           return properties;
+        }
+        /**
+         * Returns the EventSelector property type name (`"AWS::CloudTrail::Trail.EventSelector"`)
+         */
+        static get EventSelectorTypeName(): string {
+          return "AWS::CloudTrail::Trail.EventSelector"
+        }
+        /**
+         * Returns the DataResource property type name (`"AWS::CloudTrail::Trail.DataResource"`)
+         */
+        static get DataResourceTypeName(): string {
+          return "AWS::CloudTrail::Trail.DataResource"
         }
       }
     }
@@ -60481,6 +64279,30 @@ export namespace Cf {
         static SimulationSoftwareSuite(properties: SimulationApplicationSimulationSoftwareSuite) : SimulationApplicationSimulationSoftwareSuite {
           return properties;
         }
+        /**
+         * Returns the RobotSoftwareSuite property type name (`"AWS::RoboMaker::SimulationApplication.RobotSoftwareSuite"`)
+         */
+        static get RobotSoftwareSuiteTypeName(): string {
+          return "AWS::RoboMaker::SimulationApplication.RobotSoftwareSuite"
+        }
+        /**
+         * Returns the SourceConfig property type name (`"AWS::RoboMaker::SimulationApplication.SourceConfig"`)
+         */
+        static get SourceConfigTypeName(): string {
+          return "AWS::RoboMaker::SimulationApplication.SourceConfig"
+        }
+        /**
+         * Returns the RenderingEngine property type name (`"AWS::RoboMaker::SimulationApplication.RenderingEngine"`)
+         */
+        static get RenderingEngineTypeName(): string {
+          return "AWS::RoboMaker::SimulationApplication.RenderingEngine"
+        }
+        /**
+         * Returns the SimulationSoftwareSuite property type name (`"AWS::RoboMaker::SimulationApplication.SimulationSoftwareSuite"`)
+         */
+        static get SimulationSoftwareSuiteTypeName(): string {
+          return "AWS::RoboMaker::SimulationApplication.SimulationSoftwareSuite"
+        }
       }
       export interface SimulationApplicationVersionProperties {
         /**
@@ -60730,6 +64552,18 @@ export namespace Cf {
          */
         static SourceConfig(properties: RobotApplicationSourceConfig) : RobotApplicationSourceConfig {
           return properties;
+        }
+        /**
+         * Returns the RobotSoftwareSuite property type name (`"AWS::RoboMaker::RobotApplication.RobotSoftwareSuite"`)
+         */
+        static get RobotSoftwareSuiteTypeName(): string {
+          return "AWS::RoboMaker::RobotApplication.RobotSoftwareSuite"
+        }
+        /**
+         * Returns the SourceConfig property type name (`"AWS::RoboMaker::RobotApplication.SourceConfig"`)
+         */
+        static get SourceConfigTypeName(): string {
+          return "AWS::RoboMaker::RobotApplication.SourceConfig"
         }
       }
       export interface RobotProperties {
@@ -61423,6 +65257,12 @@ export namespace Cf {
         static Repository(properties: EnvironmentEC2Repository) : EnvironmentEC2Repository {
           return properties;
         }
+        /**
+         * Returns the Repository property type name (`"AWS::Cloud9::EnvironmentEC2.Repository"`)
+         */
+        static get RepositoryTypeName(): string {
+          return "AWS::Cloud9::EnvironmentEC2.Repository"
+        }
       }
     }
     export namespace ServiceDiscovery {
@@ -61728,6 +65568,30 @@ export namespace Cf {
          */
         static HealthCheckConfig(properties: ServiceHealthCheckConfig) : ServiceHealthCheckConfig {
           return properties;
+        }
+        /**
+         * Returns the DnsConfig property type name (`"AWS::ServiceDiscovery::Service.DnsConfig"`)
+         */
+        static get DnsConfigTypeName(): string {
+          return "AWS::ServiceDiscovery::Service.DnsConfig"
+        }
+        /**
+         * Returns the DnsRecord property type name (`"AWS::ServiceDiscovery::Service.DnsRecord"`)
+         */
+        static get DnsRecordTypeName(): string {
+          return "AWS::ServiceDiscovery::Service.DnsRecord"
+        }
+        /**
+         * Returns the HealthCheckCustomConfig property type name (`"AWS::ServiceDiscovery::Service.HealthCheckCustomConfig"`)
+         */
+        static get HealthCheckCustomConfigTypeName(): string {
+          return "AWS::ServiceDiscovery::Service.HealthCheckCustomConfig"
+        }
+        /**
+         * Returns the HealthCheckConfig property type name (`"AWS::ServiceDiscovery::Service.HealthCheckConfig"`)
+         */
+        static get HealthCheckConfigTypeName(): string {
+          return "AWS::ServiceDiscovery::Service.HealthCheckConfig"
         }
       }
       export interface HttpNamespaceProperties {
@@ -62888,6 +66752,36 @@ export namespace Cf {
         static KinesisStreamsOutput(properties: ApplicationOutputKinesisStreamsOutput) : ApplicationOutputKinesisStreamsOutput {
           return properties;
         }
+        /**
+         * Returns the LambdaOutput property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.LambdaOutput"`)
+         */
+        static get LambdaOutputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.LambdaOutput"
+        }
+        /**
+         * Returns the DestinationSchema property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.DestinationSchema"`)
+         */
+        static get DestinationSchemaTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.DestinationSchema"
+        }
+        /**
+         * Returns the Output property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.Output"`)
+         */
+        static get OutputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.Output"
+        }
+        /**
+         * Returns the KinesisFirehoseOutput property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.KinesisFirehoseOutput"`)
+         */
+        static get KinesisFirehoseOutputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.KinesisFirehoseOutput"
+        }
+        /**
+         * Returns the KinesisStreamsOutput property type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput.KinesisStreamsOutput"`)
+         */
+        static get KinesisStreamsOutputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationOutput.KinesisStreamsOutput"
+        }
       }
       export interface ApplicationCloudWatchLoggingOptionProperties {
         /**
@@ -62964,6 +66858,12 @@ export namespace Cf {
          */
         static CloudWatchLoggingOption(properties: ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption) : ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption {
           return properties;
+        }
+        /**
+         * Returns the CloudWatchLoggingOption property type name (`"AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption.CloudWatchLoggingOption"`)
+         */
+        static get CloudWatchLoggingOptionTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption.CloudWatchLoggingOption"
         }
       }
       export interface ApplicationReferenceDataSourceProperties {
@@ -63097,6 +66997,54 @@ export namespace Cf {
          */
         static CSVMappingParameters(properties: ApplicationReferenceDataSourceCSVMappingParameters) : ApplicationReferenceDataSourceCSVMappingParameters {
           return properties;
+        }
+        /**
+         * Returns the RecordColumn property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.RecordColumn"`)
+         */
+        static get RecordColumnTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.RecordColumn"
+        }
+        /**
+         * Returns the RecordFormat property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.RecordFormat"`)
+         */
+        static get RecordFormatTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.RecordFormat"
+        }
+        /**
+         * Returns the JSONMappingParameters property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.JSONMappingParameters"`)
+         */
+        static get JSONMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.JSONMappingParameters"
+        }
+        /**
+         * Returns the S3ReferenceDataSource property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.S3ReferenceDataSource"`)
+         */
+        static get S3ReferenceDataSourceTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.S3ReferenceDataSource"
+        }
+        /**
+         * Returns the ReferenceDataSource property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.ReferenceDataSource"`)
+         */
+        static get ReferenceDataSourceTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.ReferenceDataSource"
+        }
+        /**
+         * Returns the MappingParameters property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.MappingParameters"`)
+         */
+        static get MappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.MappingParameters"
+        }
+        /**
+         * Returns the ReferenceSchema property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.ReferenceSchema"`)
+         */
+        static get ReferenceSchemaTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.ReferenceSchema"
+        }
+        /**
+         * Returns the CSVMappingParameters property type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.CSVMappingParameters"`)
+         */
+        static get CSVMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource.CSVMappingParameters"
         }
       }
       export interface ApplicationProperties {
@@ -63385,6 +67333,150 @@ export namespace Cf {
          */
         static InputSchema(properties: ApplicationInputSchema) : ApplicationInputSchema {
           return properties;
+        }
+        /**
+         * Returns the RecordColumn property type name (`"AWS::KinesisAnalyticsV2::Application.RecordColumn"`)
+         */
+        static get RecordColumnTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.RecordColumn"
+        }
+        /**
+         * Returns the ParallelismConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.ParallelismConfiguration"`)
+         */
+        static get ParallelismConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.ParallelismConfiguration"
+        }
+        /**
+         * Returns the CSVMappingParameters property type name (`"AWS::KinesisAnalyticsV2::Application.CSVMappingParameters"`)
+         */
+        static get CSVMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.CSVMappingParameters"
+        }
+        /**
+         * Returns the MonitoringConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.MonitoringConfiguration"`)
+         */
+        static get MonitoringConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.MonitoringConfiguration"
+        }
+        /**
+         * Returns the RecordFormat property type name (`"AWS::KinesisAnalyticsV2::Application.RecordFormat"`)
+         */
+        static get RecordFormatTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.RecordFormat"
+        }
+        /**
+         * Returns the JSONMappingParameters property type name (`"AWS::KinesisAnalyticsV2::Application.JSONMappingParameters"`)
+         */
+        static get JSONMappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.JSONMappingParameters"
+        }
+        /**
+         * Returns the CodeContent property type name (`"AWS::KinesisAnalyticsV2::Application.CodeContent"`)
+         */
+        static get CodeContentTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.CodeContent"
+        }
+        /**
+         * Returns the S3ContentLocation property type name (`"AWS::KinesisAnalyticsV2::Application.S3ContentLocation"`)
+         */
+        static get S3ContentLocationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.S3ContentLocation"
+        }
+        /**
+         * Returns the PropertyGroup property type name (`"AWS::KinesisAnalyticsV2::Application.PropertyGroup"`)
+         */
+        static get PropertyGroupTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.PropertyGroup"
+        }
+        /**
+         * Returns the KinesisStreamsInput property type name (`"AWS::KinesisAnalyticsV2::Application.KinesisStreamsInput"`)
+         */
+        static get KinesisStreamsInputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.KinesisStreamsInput"
+        }
+        /**
+         * Returns the MappingParameters property type name (`"AWS::KinesisAnalyticsV2::Application.MappingParameters"`)
+         */
+        static get MappingParametersTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.MappingParameters"
+        }
+        /**
+         * Returns the CheckpointConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.CheckpointConfiguration"`)
+         */
+        static get CheckpointConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.CheckpointConfiguration"
+        }
+        /**
+         * Returns the SqlApplicationConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.SqlApplicationConfiguration"`)
+         */
+        static get SqlApplicationConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.SqlApplicationConfiguration"
+        }
+        /**
+         * Returns the InputProcessingConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.InputProcessingConfiguration"`)
+         */
+        static get InputProcessingConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.InputProcessingConfiguration"
+        }
+        /**
+         * Returns the InputParallelism property type name (`"AWS::KinesisAnalyticsV2::Application.InputParallelism"`)
+         */
+        static get InputParallelismTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.InputParallelism"
+        }
+        /**
+         * Returns the ApplicationConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.ApplicationConfiguration"`)
+         */
+        static get ApplicationConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.ApplicationConfiguration"
+        }
+        /**
+         * Returns the ApplicationCodeConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.ApplicationCodeConfiguration"`)
+         */
+        static get ApplicationCodeConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.ApplicationCodeConfiguration"
+        }
+        /**
+         * Returns the InputLambdaProcessor property type name (`"AWS::KinesisAnalyticsV2::Application.InputLambdaProcessor"`)
+         */
+        static get InputLambdaProcessorTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.InputLambdaProcessor"
+        }
+        /**
+         * Returns the FlinkApplicationConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.FlinkApplicationConfiguration"`)
+         */
+        static get FlinkApplicationConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.FlinkApplicationConfiguration"
+        }
+        /**
+         * Returns the Input property type name (`"AWS::KinesisAnalyticsV2::Application.Input"`)
+         */
+        static get InputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.Input"
+        }
+        /**
+         * Returns the ApplicationSnapshotConfiguration property type name (`"AWS::KinesisAnalyticsV2::Application.ApplicationSnapshotConfiguration"`)
+         */
+        static get ApplicationSnapshotConfigurationTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.ApplicationSnapshotConfiguration"
+        }
+        /**
+         * Returns the KinesisFirehoseInput property type name (`"AWS::KinesisAnalyticsV2::Application.KinesisFirehoseInput"`)
+         */
+        static get KinesisFirehoseInputTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.KinesisFirehoseInput"
+        }
+        /**
+         * Returns the EnvironmentProperties property type name (`"AWS::KinesisAnalyticsV2::Application.EnvironmentProperties"`)
+         */
+        static get EnvironmentPropertiesTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.EnvironmentProperties"
+        }
+        /**
+         * Returns the InputSchema property type name (`"AWS::KinesisAnalyticsV2::Application.InputSchema"`)
+         */
+        static get InputSchemaTypeName(): string {
+          return "AWS::KinesisAnalyticsV2::Application.InputSchema"
         }
       }
     }
@@ -63845,6 +67937,42 @@ export namespace Cf {
         static TargetTrackingScalingPolicyConfiguration(properties: ScalingPolicyTargetTrackingScalingPolicyConfiguration) : ScalingPolicyTargetTrackingScalingPolicyConfiguration {
           return properties;
         }
+        /**
+         * Returns the StepScalingPolicyConfiguration property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.StepScalingPolicyConfiguration"`)
+         */
+        static get StepScalingPolicyConfigurationTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.StepScalingPolicyConfiguration"
+        }
+        /**
+         * Returns the MetricDimension property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.MetricDimension"`)
+         */
+        static get MetricDimensionTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.MetricDimension"
+        }
+        /**
+         * Returns the StepAdjustment property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.StepAdjustment"`)
+         */
+        static get StepAdjustmentTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.StepAdjustment"
+        }
+        /**
+         * Returns the PredefinedMetricSpecification property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.PredefinedMetricSpecification"`)
+         */
+        static get PredefinedMetricSpecificationTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.PredefinedMetricSpecification"
+        }
+        /**
+         * Returns the CustomizedMetricSpecification property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.CustomizedMetricSpecification"`)
+         */
+        static get CustomizedMetricSpecificationTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.CustomizedMetricSpecification"
+        }
+        /**
+         * Returns the TargetTrackingScalingPolicyConfiguration property type name (`"AWS::ApplicationAutoScaling::ScalingPolicy.TargetTrackingScalingPolicyConfiguration"`)
+         */
+        static get TargetTrackingScalingPolicyConfigurationTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalingPolicy.TargetTrackingScalingPolicyConfiguration"
+        }
       }
       export interface ScalableTargetProperties {
         /**
@@ -63974,6 +68102,18 @@ export namespace Cf {
          */
         static ScalableTargetAction(properties: ScalableTargetScalableTargetAction) : ScalableTargetScalableTargetAction {
           return properties;
+        }
+        /**
+         * Returns the ScheduledAction property type name (`"AWS::ApplicationAutoScaling::ScalableTarget.ScheduledAction"`)
+         */
+        static get ScheduledActionTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalableTarget.ScheduledAction"
+        }
+        /**
+         * Returns the ScalableTargetAction property type name (`"AWS::ApplicationAutoScaling::ScalableTarget.ScalableTargetAction"`)
+         */
+        static get ScalableTargetActionTypeName(): string {
+          return "AWS::ApplicationAutoScaling::ScalableTarget.ScalableTargetAction"
         }
       }
     }
@@ -64109,6 +68249,12 @@ export namespace Cf {
          */
         static RepositoryTrigger(properties: RepositoryRepositoryTrigger) : RepositoryRepositoryTrigger {
           return properties;
+        }
+        /**
+         * Returns the RepositoryTrigger property type name (`"AWS::CodeCommit::Repository.RepositoryTrigger"`)
+         */
+        static get RepositoryTriggerTypeName(): string {
+          return "AWS::CodeCommit::Repository.RepositoryTrigger"
         }
       }
     }
@@ -65679,6 +69825,246 @@ export namespace Cf {
         static PublicAccessBlockConfiguration(properties: BucketPublicAccessBlockConfiguration) : BucketPublicAccessBlockConfiguration {
           return properties;
         }
+        /**
+         * Returns the BucketEncryption property type name (`"AWS::S3::Bucket.BucketEncryption"`)
+         */
+        static get BucketEncryptionTypeName(): string {
+          return "AWS::S3::Bucket.BucketEncryption"
+        }
+        /**
+         * Returns the NotificationFilter property type name (`"AWS::S3::Bucket.NotificationFilter"`)
+         */
+        static get NotificationFilterTypeName(): string {
+          return "AWS::S3::Bucket.NotificationFilter"
+        }
+        /**
+         * Returns the RoutingRuleCondition property type name (`"AWS::S3::Bucket.RoutingRuleCondition"`)
+         */
+        static get RoutingRuleConditionTypeName(): string {
+          return "AWS::S3::Bucket.RoutingRuleCondition"
+        }
+        /**
+         * Returns the LifecycleConfiguration property type name (`"AWS::S3::Bucket.LifecycleConfiguration"`)
+         */
+        static get LifecycleConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.LifecycleConfiguration"
+        }
+        /**
+         * Returns the LambdaConfiguration property type name (`"AWS::S3::Bucket.LambdaConfiguration"`)
+         */
+        static get LambdaConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.LambdaConfiguration"
+        }
+        /**
+         * Returns the ReplicationRule property type name (`"AWS::S3::Bucket.ReplicationRule"`)
+         */
+        static get ReplicationRuleTypeName(): string {
+          return "AWS::S3::Bucket.ReplicationRule"
+        }
+        /**
+         * Returns the CorsRule property type name (`"AWS::S3::Bucket.CorsRule"`)
+         */
+        static get CorsRuleTypeName(): string {
+          return "AWS::S3::Bucket.CorsRule"
+        }
+        /**
+         * Returns the Destination property type name (`"AWS::S3::Bucket.Destination"`)
+         */
+        static get DestinationTypeName(): string {
+          return "AWS::S3::Bucket.Destination"
+        }
+        /**
+         * Returns the ServerSideEncryptionRule property type name (`"AWS::S3::Bucket.ServerSideEncryptionRule"`)
+         */
+        static get ServerSideEncryptionRuleTypeName(): string {
+          return "AWS::S3::Bucket.ServerSideEncryptionRule"
+        }
+        /**
+         * Returns the AnalyticsConfiguration property type name (`"AWS::S3::Bucket.AnalyticsConfiguration"`)
+         */
+        static get AnalyticsConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.AnalyticsConfiguration"
+        }
+        /**
+         * Returns the SourceSelectionCriteria property type name (`"AWS::S3::Bucket.SourceSelectionCriteria"`)
+         */
+        static get SourceSelectionCriteriaTypeName(): string {
+          return "AWS::S3::Bucket.SourceSelectionCriteria"
+        }
+        /**
+         * Returns the LoggingConfiguration property type name (`"AWS::S3::Bucket.LoggingConfiguration"`)
+         */
+        static get LoggingConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.LoggingConfiguration"
+        }
+        /**
+         * Returns the StorageClassAnalysis property type name (`"AWS::S3::Bucket.StorageClassAnalysis"`)
+         */
+        static get StorageClassAnalysisTypeName(): string {
+          return "AWS::S3::Bucket.StorageClassAnalysis"
+        }
+        /**
+         * Returns the RoutingRule property type name (`"AWS::S3::Bucket.RoutingRule"`)
+         */
+        static get RoutingRuleTypeName(): string {
+          return "AWS::S3::Bucket.RoutingRule"
+        }
+        /**
+         * Returns the AccessControlTranslation property type name (`"AWS::S3::Bucket.AccessControlTranslation"`)
+         */
+        static get AccessControlTranslationTypeName(): string {
+          return "AWS::S3::Bucket.AccessControlTranslation"
+        }
+        /**
+         * Returns the VersioningConfiguration property type name (`"AWS::S3::Bucket.VersioningConfiguration"`)
+         */
+        static get VersioningConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.VersioningConfiguration"
+        }
+        /**
+         * Returns the EncryptionConfiguration property type name (`"AWS::S3::Bucket.EncryptionConfiguration"`)
+         */
+        static get EncryptionConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.EncryptionConfiguration"
+        }
+        /**
+         * Returns the NotificationConfiguration property type name (`"AWS::S3::Bucket.NotificationConfiguration"`)
+         */
+        static get NotificationConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.NotificationConfiguration"
+        }
+        /**
+         * Returns the ServerSideEncryptionByDefault property type name (`"AWS::S3::Bucket.ServerSideEncryptionByDefault"`)
+         */
+        static get ServerSideEncryptionByDefaultTypeName(): string {
+          return "AWS::S3::Bucket.ServerSideEncryptionByDefault"
+        }
+        /**
+         * Returns the RedirectRule property type name (`"AWS::S3::Bucket.RedirectRule"`)
+         */
+        static get RedirectRuleTypeName(): string {
+          return "AWS::S3::Bucket.RedirectRule"
+        }
+        /**
+         * Returns the RedirectAllRequestsTo property type name (`"AWS::S3::Bucket.RedirectAllRequestsTo"`)
+         */
+        static get RedirectAllRequestsToTypeName(): string {
+          return "AWS::S3::Bucket.RedirectAllRequestsTo"
+        }
+        /**
+         * Returns the S3KeyFilter property type name (`"AWS::S3::Bucket.S3KeyFilter"`)
+         */
+        static get S3KeyFilterTypeName(): string {
+          return "AWS::S3::Bucket.S3KeyFilter"
+        }
+        /**
+         * Returns the InventoryConfiguration property type name (`"AWS::S3::Bucket.InventoryConfiguration"`)
+         */
+        static get InventoryConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.InventoryConfiguration"
+        }
+        /**
+         * Returns the WebsiteConfiguration property type name (`"AWS::S3::Bucket.WebsiteConfiguration"`)
+         */
+        static get WebsiteConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.WebsiteConfiguration"
+        }
+        /**
+         * Returns the ReplicationConfiguration property type name (`"AWS::S3::Bucket.ReplicationConfiguration"`)
+         */
+        static get ReplicationConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.ReplicationConfiguration"
+        }
+        /**
+         * Returns the SseKmsEncryptedObjects property type name (`"AWS::S3::Bucket.SseKmsEncryptedObjects"`)
+         */
+        static get SseKmsEncryptedObjectsTypeName(): string {
+          return "AWS::S3::Bucket.SseKmsEncryptedObjects"
+        }
+        /**
+         * Returns the Rule property type name (`"AWS::S3::Bucket.Rule"`)
+         */
+        static get RuleTypeName(): string {
+          return "AWS::S3::Bucket.Rule"
+        }
+        /**
+         * Returns the QueueConfiguration property type name (`"AWS::S3::Bucket.QueueConfiguration"`)
+         */
+        static get QueueConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.QueueConfiguration"
+        }
+        /**
+         * Returns the TopicConfiguration property type name (`"AWS::S3::Bucket.TopicConfiguration"`)
+         */
+        static get TopicConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.TopicConfiguration"
+        }
+        /**
+         * Returns the MetricsConfiguration property type name (`"AWS::S3::Bucket.MetricsConfiguration"`)
+         */
+        static get MetricsConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.MetricsConfiguration"
+        }
+        /**
+         * Returns the TagFilter property type name (`"AWS::S3::Bucket.TagFilter"`)
+         */
+        static get TagFilterTypeName(): string {
+          return "AWS::S3::Bucket.TagFilter"
+        }
+        /**
+         * Returns the Transition property type name (`"AWS::S3::Bucket.Transition"`)
+         */
+        static get TransitionTypeName(): string {
+          return "AWS::S3::Bucket.Transition"
+        }
+        /**
+         * Returns the DataExport property type name (`"AWS::S3::Bucket.DataExport"`)
+         */
+        static get DataExportTypeName(): string {
+          return "AWS::S3::Bucket.DataExport"
+        }
+        /**
+         * Returns the CorsConfiguration property type name (`"AWS::S3::Bucket.CorsConfiguration"`)
+         */
+        static get CorsConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.CorsConfiguration"
+        }
+        /**
+         * Returns the ReplicationDestination property type name (`"AWS::S3::Bucket.ReplicationDestination"`)
+         */
+        static get ReplicationDestinationTypeName(): string {
+          return "AWS::S3::Bucket.ReplicationDestination"
+        }
+        /**
+         * Returns the AccelerateConfiguration property type name (`"AWS::S3::Bucket.AccelerateConfiguration"`)
+         */
+        static get AccelerateConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.AccelerateConfiguration"
+        }
+        /**
+         * Returns the NoncurrentVersionTransition property type name (`"AWS::S3::Bucket.NoncurrentVersionTransition"`)
+         */
+        static get NoncurrentVersionTransitionTypeName(): string {
+          return "AWS::S3::Bucket.NoncurrentVersionTransition"
+        }
+        /**
+         * Returns the AbortIncompleteMultipartUpload property type name (`"AWS::S3::Bucket.AbortIncompleteMultipartUpload"`)
+         */
+        static get AbortIncompleteMultipartUploadTypeName(): string {
+          return "AWS::S3::Bucket.AbortIncompleteMultipartUpload"
+        }
+        /**
+         * Returns the FilterRule property type name (`"AWS::S3::Bucket.FilterRule"`)
+         */
+        static get FilterRuleTypeName(): string {
+          return "AWS::S3::Bucket.FilterRule"
+        }
+        /**
+         * Returns the PublicAccessBlockConfiguration property type name (`"AWS::S3::Bucket.PublicAccessBlockConfiguration"`)
+         */
+        static get PublicAccessBlockConfigurationTypeName(): string {
+          return "AWS::S3::Bucket.PublicAccessBlockConfiguration"
+        }
       }
       export interface BucketPolicyProperties {
         /**
@@ -66655,6 +71041,108 @@ export namespace Cf {
         static RedshiftDestinationConfiguration(properties: DeliveryStreamRedshiftDestinationConfiguration) : DeliveryStreamRedshiftDestinationConfiguration {
           return properties;
         }
+        /**
+         * Returns the ElasticsearchDestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.ElasticsearchDestinationConfiguration"`)
+         */
+        static get ElasticsearchDestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ElasticsearchDestinationConfiguration"
+        }
+        /**
+         * Returns the ElasticsearchBufferingHints property type name (`"AWS::KinesisFirehose::DeliveryStream.ElasticsearchBufferingHints"`)
+         */
+        static get ElasticsearchBufferingHintsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ElasticsearchBufferingHints"
+        }
+        /**
+         * Returns the SplunkDestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.SplunkDestinationConfiguration"`)
+         */
+        static get SplunkDestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.SplunkDestinationConfiguration"
+        }
+        /**
+         * Returns the EncryptionConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.EncryptionConfiguration"`)
+         */
+        static get EncryptionConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.EncryptionConfiguration"
+        }
+        /**
+         * Returns the CloudWatchLoggingOptions property type name (`"AWS::KinesisFirehose::DeliveryStream.CloudWatchLoggingOptions"`)
+         */
+        static get CloudWatchLoggingOptionsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.CloudWatchLoggingOptions"
+        }
+        /**
+         * Returns the ProcessingConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.ProcessingConfiguration"`)
+         */
+        static get ProcessingConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ProcessingConfiguration"
+        }
+        /**
+         * Returns the BufferingHints property type name (`"AWS::KinesisFirehose::DeliveryStream.BufferingHints"`)
+         */
+        static get BufferingHintsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.BufferingHints"
+        }
+        /**
+         * Returns the SplunkRetryOptions property type name (`"AWS::KinesisFirehose::DeliveryStream.SplunkRetryOptions"`)
+         */
+        static get SplunkRetryOptionsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.SplunkRetryOptions"
+        }
+        /**
+         * Returns the KinesisStreamSourceConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.KinesisStreamSourceConfiguration"`)
+         */
+        static get KinesisStreamSourceConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.KinesisStreamSourceConfiguration"
+        }
+        /**
+         * Returns the ProcessorParameter property type name (`"AWS::KinesisFirehose::DeliveryStream.ProcessorParameter"`)
+         */
+        static get ProcessorParameterTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ProcessorParameter"
+        }
+        /**
+         * Returns the Processor property type name (`"AWS::KinesisFirehose::DeliveryStream.Processor"`)
+         */
+        static get ProcessorTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.Processor"
+        }
+        /**
+         * Returns the CopyCommand property type name (`"AWS::KinesisFirehose::DeliveryStream.CopyCommand"`)
+         */
+        static get CopyCommandTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.CopyCommand"
+        }
+        /**
+         * Returns the S3DestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.S3DestinationConfiguration"`)
+         */
+        static get S3DestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.S3DestinationConfiguration"
+        }
+        /**
+         * Returns the ElasticsearchRetryOptions property type name (`"AWS::KinesisFirehose::DeliveryStream.ElasticsearchRetryOptions"`)
+         */
+        static get ElasticsearchRetryOptionsTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ElasticsearchRetryOptions"
+        }
+        /**
+         * Returns the KMSEncryptionConfig property type name (`"AWS::KinesisFirehose::DeliveryStream.KMSEncryptionConfig"`)
+         */
+        static get KMSEncryptionConfigTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.KMSEncryptionConfig"
+        }
+        /**
+         * Returns the ExtendedS3DestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.ExtendedS3DestinationConfiguration"`)
+         */
+        static get ExtendedS3DestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.ExtendedS3DestinationConfiguration"
+        }
+        /**
+         * Returns the RedshiftDestinationConfiguration property type name (`"AWS::KinesisFirehose::DeliveryStream.RedshiftDestinationConfiguration"`)
+         */
+        static get RedshiftDestinationConfigurationTypeName(): string {
+          return "AWS::KinesisFirehose::DeliveryStream.RedshiftDestinationConfiguration"
+        }
       }
     }
     export namespace DLM {
@@ -66892,6 +71380,30 @@ export namespace Cf {
         static PolicyDetails(properties: LifecyclePolicyPolicyDetails) : LifecyclePolicyPolicyDetails {
           return properties;
         }
+        /**
+         * Returns the Schedule property type name (`"AWS::DLM::LifecyclePolicy.Schedule"`)
+         */
+        static get ScheduleTypeName(): string {
+          return "AWS::DLM::LifecyclePolicy.Schedule"
+        }
+        /**
+         * Returns the CreateRule property type name (`"AWS::DLM::LifecyclePolicy.CreateRule"`)
+         */
+        static get CreateRuleTypeName(): string {
+          return "AWS::DLM::LifecyclePolicy.CreateRule"
+        }
+        /**
+         * Returns the RetainRule property type name (`"AWS::DLM::LifecyclePolicy.RetainRule"`)
+         */
+        static get RetainRuleTypeName(): string {
+          return "AWS::DLM::LifecyclePolicy.RetainRule"
+        }
+        /**
+         * Returns the PolicyDetails property type name (`"AWS::DLM::LifecyclePolicy.PolicyDetails"`)
+         */
+        static get PolicyDetailsTypeName(): string {
+          return "AWS::DLM::LifecyclePolicy.PolicyDetails"
+        }
       }
     }
     export namespace SDB {
@@ -67061,6 +71573,12 @@ export namespace Cf {
          */
         static LifecyclePolicy(properties: RepositoryLifecyclePolicy) : RepositoryLifecyclePolicy {
           return properties;
+        }
+        /**
+         * Returns the LifecyclePolicy property type name (`"AWS::ECR::Repository.LifecyclePolicy"`)
+         */
+        static get LifecyclePolicyTypeName(): string {
+          return "AWS::ECR::Repository.LifecyclePolicy"
         }
       }
     }
@@ -67503,6 +72021,66 @@ export namespace Cf {
         static StreamSpecification(properties: TableStreamSpecification) : TableStreamSpecification {
           return properties;
         }
+        /**
+         * Returns the TimeToLiveSpecification property type name (`"AWS::DynamoDB::Table.TimeToLiveSpecification"`)
+         */
+        static get TimeToLiveSpecificationTypeName(): string {
+          return "AWS::DynamoDB::Table.TimeToLiveSpecification"
+        }
+        /**
+         * Returns the AttributeDefinition property type name (`"AWS::DynamoDB::Table.AttributeDefinition"`)
+         */
+        static get AttributeDefinitionTypeName(): string {
+          return "AWS::DynamoDB::Table.AttributeDefinition"
+        }
+        /**
+         * Returns the LocalSecondaryIndex property type name (`"AWS::DynamoDB::Table.LocalSecondaryIndex"`)
+         */
+        static get LocalSecondaryIndexTypeName(): string {
+          return "AWS::DynamoDB::Table.LocalSecondaryIndex"
+        }
+        /**
+         * Returns the ProvisionedThroughput property type name (`"AWS::DynamoDB::Table.ProvisionedThroughput"`)
+         */
+        static get ProvisionedThroughputTypeName(): string {
+          return "AWS::DynamoDB::Table.ProvisionedThroughput"
+        }
+        /**
+         * Returns the GlobalSecondaryIndex property type name (`"AWS::DynamoDB::Table.GlobalSecondaryIndex"`)
+         */
+        static get GlobalSecondaryIndexTypeName(): string {
+          return "AWS::DynamoDB::Table.GlobalSecondaryIndex"
+        }
+        /**
+         * Returns the KeySchema property type name (`"AWS::DynamoDB::Table.KeySchema"`)
+         */
+        static get KeySchemaTypeName(): string {
+          return "AWS::DynamoDB::Table.KeySchema"
+        }
+        /**
+         * Returns the Projection property type name (`"AWS::DynamoDB::Table.Projection"`)
+         */
+        static get ProjectionTypeName(): string {
+          return "AWS::DynamoDB::Table.Projection"
+        }
+        /**
+         * Returns the PointInTimeRecoverySpecification property type name (`"AWS::DynamoDB::Table.PointInTimeRecoverySpecification"`)
+         */
+        static get PointInTimeRecoverySpecificationTypeName(): string {
+          return "AWS::DynamoDB::Table.PointInTimeRecoverySpecification"
+        }
+        /**
+         * Returns the SSESpecification property type name (`"AWS::DynamoDB::Table.SSESpecification"`)
+         */
+        static get SSESpecificationTypeName(): string {
+          return "AWS::DynamoDB::Table.SSESpecification"
+        }
+        /**
+         * Returns the StreamSpecification property type name (`"AWS::DynamoDB::Table.StreamSpecification"`)
+         */
+        static get StreamSpecificationTypeName(): string {
+          return "AWS::DynamoDB::Table.StreamSpecification"
+        }
       }
     }
     export namespace Athena {
@@ -67784,6 +72362,24 @@ export namespace Cf {
          */
         static AuthenticationConfiguration(properties: SkillAuthenticationConfiguration) : SkillAuthenticationConfiguration {
           return properties;
+        }
+        /**
+         * Returns the SkillPackage property type name (`"Alexa::ASK::Skill.SkillPackage"`)
+         */
+        static get SkillPackageTypeName(): string {
+          return "Alexa::ASK::Skill.SkillPackage"
+        }
+        /**
+         * Returns the Overrides property type name (`"Alexa::ASK::Skill.Overrides"`)
+         */
+        static get OverridesTypeName(): string {
+          return "Alexa::ASK::Skill.Overrides"
+        }
+        /**
+         * Returns the AuthenticationConfiguration property type name (`"Alexa::ASK::Skill.AuthenticationConfiguration"`)
+         */
+        static get AuthenticationConfigurationTypeName(): string {
+          return "Alexa::ASK::Skill.AuthenticationConfiguration"
         }
       }
     }

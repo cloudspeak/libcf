@@ -62,5 +62,15 @@ export class PropertyType {
         ]
     }
 
+    generateStaticTypeNameFunction() {
+        return [
+            `/**`,
+            ` * Returns the ${this.parsedName.propertyName} property type name (\`"${this.parsedName.fullname}"\`)`,
+            ` */`,
+            `static get ${this.parsedName.propertyName}TypeName(): string {`,
+            `  return "${this.parsedName.fullname}"`,
+            `}`
+        ]
+    }
 
 }
