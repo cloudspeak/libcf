@@ -24,10 +24,15 @@ export class NamespaceNode extends RootNode {
             return array.concat(this.children[key].generateCode())
         }, [])
 
-        let propertyCode = this.properties.reduce((array: string[], prop: PropertyType) => {
+        let propertyInterfaceCode = this.properties.reduce((array: string[], prop: PropertyType) => {
             return array.concat(prop.generatePropertyTypeInterface())
         }, [])
-        childrenCode = childrenCode.concat(propertyCode)
+        childrenCode = childrenCode.concat(propertyInterfaceCode)
+
+        let partialPropertyInterfaceCode = this.properties.reduce((array: string[], prop: PropertyType) => {
+            return array.concat(prop.generatePropertyTypeInterface(true))
+        }, [])
+        childrenCode = childrenCode.concat(partialPropertyInterfaceCode)
 
         let resourceCode = this.resources.reduce((array: string[], prop: ResourceType) => {
             return array.concat(prop.generateCode())
