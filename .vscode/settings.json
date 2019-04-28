@@ -3,6 +3,7 @@
         "Cidr",
         "Cloudspeak",
         "Subnet",
+        "cloudformation",
         "libcf",
         "libcf's"
     ]
