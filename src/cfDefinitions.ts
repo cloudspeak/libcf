@@ -314,7 +314,10 @@ export namespace Cf {
         SourceConfiguration?: ConfigurationTemplateSourceConfiguration
       }
       export class ConfigurationTemplate implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticBeanstalk::ConfigurationTemplate"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticBeanstalk::ConfigurationTemplate"
         }
         Type: string
@@ -405,7 +408,10 @@ export namespace Cf {
         ResourceLifecycleConfig?: ApplicationApplicationResourceLifecycleConfig
       }
       export class Application implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticBeanstalk::Application"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticBeanstalk::Application"
         }
         Type: string
@@ -584,7 +590,10 @@ export namespace Cf {
         VersionLabel?: string
       }
       export class Environment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticBeanstalk::Environment"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticBeanstalk::Environment"
         }
         Type: string
@@ -675,7 +684,10 @@ export namespace Cf {
         SourceBundle: ApplicationVersionSourceBundle
       }
       export class ApplicationVersion implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticBeanstalk::ApplicationVersion"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticBeanstalk::ApplicationVersion"
         }
         Type: string
@@ -1026,7 +1038,10 @@ export namespace Cf {
         Tags?: BrokerTagsEntry[]
       }
       export class Broker implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AmazonMQ::Broker"`)
+         */
+        static get TypeName(): string {
           return "AWS::AmazonMQ::Broker"
         }
         Type: string
@@ -1132,7 +1147,10 @@ export namespace Cf {
         Configuration: ConfigurationAssociationConfigurationId
       }
       export class ConfigurationAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AmazonMQ::ConfigurationAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::AmazonMQ::ConfigurationAssociation"
         }
         Type: string
@@ -1242,7 +1260,10 @@ export namespace Cf {
         Name: string
       }
       export class Configuration implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AmazonMQ::Configuration"`)
+         */
+        static get TypeName(): string {
           return "AWS::AmazonMQ::Configuration"
         }
         Type: string
@@ -1684,7 +1705,10 @@ export namespace Cf {
         ElasticsearchConfig?: DataSourceElasticsearchConfig
       }
       export class DataSource implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::DataSource"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppSync::DataSource"
         }
         Type: string
@@ -1886,7 +1910,10 @@ export namespace Cf {
         FieldName: string
       }
       export class Resolver implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::Resolver"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppSync::Resolver"
         }
         Type: string
@@ -1969,7 +1996,10 @@ export namespace Cf {
         ApiId: string
       }
       export class GraphQLSchema implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::GraphQLSchema"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppSync::GraphQLSchema"
         }
         Type: string
@@ -2062,7 +2092,10 @@ export namespace Cf {
         LogConfig?: GraphQLApiLogConfig
       }
       export class GraphQLApi implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::GraphQLApi"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppSync::GraphQLApi"
         }
         Type: string
@@ -2215,7 +2248,10 @@ export namespace Cf {
         Name?: string
       }
       export class FunctionConfiguration implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::FunctionConfiguration"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppSync::FunctionConfiguration"
         }
         Type: string
@@ -2290,7 +2326,10 @@ export namespace Cf {
         ApiId: string
       }
       export class ApiKey implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppSync::ApiKey"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppSync::ApiKey"
         }
         Type: string
@@ -4684,7 +4723,10 @@ export namespace Cf {
         VpcId: string
       }
       export class RouteTable implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::RouteTable"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::RouteTable"
         }
         Type: string
@@ -4786,7 +4828,10 @@ export namespace Cf {
         VpcId: string
       }
       export class VPCPeeringConnection implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCPeeringConnection"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPCPeeringConnection"
         }
         Type: string
@@ -4843,7 +4888,10 @@ export namespace Cf {
         Strategy?: string
       }
       export class PlacementGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::PlacementGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::PlacementGroup"
         }
         Type: string
@@ -4963,7 +5011,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class TransitGateway implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGateway"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::TransitGateway"
         }
         Type: string
@@ -5029,7 +5080,10 @@ export namespace Cf {
         ServiceId: string
       }
       export class VPCEndpointServicePermissions implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCEndpointServicePermissions"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPCEndpointServicePermissions"
         }
         Type: string
@@ -5158,7 +5212,10 @@ export namespace Cf {
         RuleNumber: number
       }
       export class NetworkAclEntry implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkAclEntry"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::NetworkAclEntry"
         }
         Type: string
@@ -5231,7 +5288,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class InternetGateway implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::InternetGateway"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::InternetGateway"
         }
         Type: string
@@ -5297,7 +5357,10 @@ export namespace Cf {
         LaunchTemplateData?: LaunchTemplateLaunchTemplateData
       }
       export class LaunchTemplate implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::LaunchTemplate"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::LaunchTemplate"
         }
         Type: string
@@ -5594,7 +5657,10 @@ export namespace Cf {
         VolumeType?: string
       }
       export class Volume implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Volume"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::Volume"
         }
         Type: string
@@ -5660,7 +5726,10 @@ export namespace Cf {
         TransitGatewayAttachmentId: string
       }
       export class TransitGatewayRouteTableAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayRouteTableAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::TransitGatewayRouteTableAssociation"
         }
         Type: string
@@ -5717,7 +5786,10 @@ export namespace Cf {
         SpotFleetRequestConfigData: SpotFleetSpotFleetRequestConfigData
       }
       export class SpotFleet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SpotFleet"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::SpotFleet"
         }
         Type: string
@@ -5943,7 +6015,10 @@ export namespace Cf {
         VpnConnectionId: string
       }
       export class VPNConnectionRoute implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPNConnectionRoute"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPNConnectionRoute"
         }
         Type: string
@@ -6018,7 +6093,10 @@ export namespace Cf {
         Permission: string
       }
       export class NetworkInterfacePermission implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkInterfacePermission"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::NetworkInterfacePermission"
         }
         Type: string
@@ -6093,7 +6171,10 @@ export namespace Cf {
         PublicIpv4Pool?: string
       }
       export class EIP implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::EIP"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::EIP"
         }
         Type: string
@@ -6249,7 +6330,10 @@ export namespace Cf {
         ToPort?: number
       }
       export class SecurityGroupIngress implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SecurityGroupIngress"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::SecurityGroupIngress"
         }
         Type: string
@@ -6315,7 +6399,10 @@ export namespace Cf {
         SubnetId: string
       }
       export class SubnetRouteTableAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SubnetRouteTableAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::SubnetRouteTableAssociation"
         }
         Type: string
@@ -6444,7 +6531,10 @@ export namespace Cf {
         VpcPeeringConnectionId?: string
       }
       export class Route implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Route"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::Route"
         }
         Type: string
@@ -6555,7 +6645,10 @@ export namespace Cf {
         TrafficType: string
       }
       export class FlowLog implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::FlowLog"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::FlowLog"
         }
         Type: string
@@ -6621,7 +6714,10 @@ export namespace Cf {
         TransitGatewayAttachmentId: string
       }
       export class TransitGatewayRouteTablePropagation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayRouteTablePropagation"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::TransitGatewayRouteTablePropagation"
         }
         Type: string
@@ -6750,7 +6846,10 @@ export namespace Cf {
         ToPort?: number
       }
       export class SecurityGroupEgress implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SecurityGroupEgress"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::SecurityGroupEgress"
         }
         Type: string
@@ -6897,7 +6996,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class NetworkInterface implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkInterface"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::NetworkInterface"
         }
         Type: string
@@ -6997,7 +7099,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class TransitGatewayAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::TransitGatewayAttachment"
         }
         Type: string
@@ -7063,7 +7168,10 @@ export namespace Cf {
         SubnetId: string
       }
       export class SubnetNetworkAclAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SubnetNetworkAclAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::SubnetNetworkAclAssociation"
         }
         Type: string
@@ -7129,7 +7237,10 @@ export namespace Cf {
         SubnetId: string
       }
       export class SubnetCidrBlock implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SubnetCidrBlock"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::SubnetCidrBlock"
         }
         Type: string
@@ -7204,7 +7315,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class NatGateway implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NatGateway"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::NatGateway"
         }
         Type: string
@@ -7306,7 +7420,10 @@ export namespace Cf {
         VpcId?: string
       }
       export class SecurityGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::SecurityGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::SecurityGroup"
         }
         Type: string
@@ -7433,7 +7550,10 @@ export namespace Cf {
         VpcId: string
       }
       export class Subnet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Subnet"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::Subnet"
         }
         Type: string
@@ -7526,7 +7646,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class VPC implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPC"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPC"
         }
         Type: string
@@ -7880,7 +8003,10 @@ export namespace Cf {
         Volumes?: InstanceVolume[]
       }
       export class Instance implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Instance"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::Instance"
         }
         Type: string
@@ -8094,7 +8220,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DHCPOptions implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::DHCPOptions"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::DHCPOptions"
         }
         Type: string
@@ -8178,7 +8307,10 @@ export namespace Cf {
         TransitGatewayAttachmentId?: string
       }
       export class TransitGatewayRoute implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayRoute"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::TransitGatewayRoute"
         }
         Type: string
@@ -8244,7 +8376,10 @@ export namespace Cf {
         VpcId: string
       }
       export class NetworkAcl implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkAcl"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::NetworkAcl"
         }
         Type: string
@@ -8310,7 +8445,10 @@ export namespace Cf {
         VpnGatewayId: string
       }
       export class VPNGatewayRoutePropagation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPNGatewayRoutePropagation"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPNGatewayRoutePropagation"
         }
         Type: string
@@ -8367,7 +8505,10 @@ export namespace Cf {
         VpcId: string
       }
       export class EgressOnlyInternetGateway implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::EgressOnlyInternetGateway"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::EgressOnlyInternetGateway"
         }
         Type: string
@@ -8451,7 +8592,10 @@ export namespace Cf {
         NetworkInterfaceId: string
       }
       export class NetworkInterfaceAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::NetworkInterfaceAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::NetworkInterfaceAttachment"
         }
         Type: string
@@ -8535,7 +8679,10 @@ export namespace Cf {
         Type: string
       }
       export class CustomerGateway implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::CustomerGateway"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::CustomerGateway"
         }
         Type: string
@@ -8619,7 +8766,10 @@ export namespace Cf {
         VLANId?: number
       }
       export class TrunkInterfaceAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TrunkInterfaceAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::TrunkInterfaceAssociation"
         }
         Type: string
@@ -8694,7 +8844,10 @@ export namespace Cf {
         VolumeId: string
       }
       export class VolumeAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VolumeAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VolumeAttachment"
         }
         Type: string
@@ -8769,7 +8922,10 @@ export namespace Cf {
         InstanceType: string
       }
       export class Host implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::Host"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::Host"
         }
         Type: string
@@ -8862,7 +9018,10 @@ export namespace Cf {
         PrivateIpAddress?: string
       }
       export class EIPAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::EIPAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::EIPAssociation"
         }
         Type: string
@@ -8937,7 +9096,10 @@ export namespace Cf {
         Type: string
       }
       export class VPNGateway implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPNGateway"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPNGateway"
         }
         Type: string
@@ -9057,7 +9219,10 @@ export namespace Cf {
         VpcId: string
       }
       export class VPCEndpoint implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCEndpoint"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPCEndpoint"
         }
         Type: string
@@ -9132,7 +9297,10 @@ export namespace Cf {
         VpnGatewayId?: string
       }
       export class VPCGatewayAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCGatewayAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPCGatewayAttachment"
         }
         Type: string
@@ -9234,7 +9402,10 @@ export namespace Cf {
         VpnTunnelOptionsSpecifications?: VPNConnectionVpnTunnelOptionsSpecification[]
       }
       export class VPNConnection implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPNConnection"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPNConnection"
         }
         Type: string
@@ -9317,7 +9488,10 @@ export namespace Cf {
         VpcId: string
       }
       export class VPCCidrBlock implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCCidrBlock"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPCCidrBlock"
         }
         Type: string
@@ -9464,7 +9638,10 @@ export namespace Cf {
         ValidUntil?: string
       }
       export class EC2Fleet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::EC2Fleet"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::EC2Fleet"
         }
         Type: string
@@ -9594,7 +9771,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class TransitGatewayRouteTable implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::TransitGatewayRouteTable"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::TransitGatewayRouteTable"
         }
         Type: string
@@ -9660,7 +9840,10 @@ export namespace Cf {
         VpcId: string
       }
       export class VPCDHCPOptionsAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EC2::VPCDHCPOptionsAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::EC2::VPCDHCPOptionsAssociation"
         }
         Type: string
@@ -9786,7 +9969,10 @@ export namespace Cf {
         PortfolioId: string
       }
       export class PortfolioShare implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::PortfolioShare"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::PortfolioShare"
         }
         Type: string
@@ -9852,7 +10038,10 @@ export namespace Cf {
         ResourceId: string
       }
       export class TagOptionAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::TagOptionAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::TagOptionAssociation"
         }
         Type: string
@@ -9945,7 +10134,10 @@ export namespace Cf {
         Rules: string
       }
       export class LaunchTemplateConstraint implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::LaunchTemplateConstraint"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::LaunchTemplateConstraint"
         }
         Type: string
@@ -10020,7 +10212,10 @@ export namespace Cf {
         Key: string
       }
       export class TagOption implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::TagOption"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::TagOption"
         }
         Type: string
@@ -10104,7 +10299,10 @@ export namespace Cf {
         PrincipalType: string
       }
       export class PortfolioPrincipalAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::PortfolioPrincipalAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::PortfolioPrincipalAssociation"
         }
         Type: string
@@ -10197,7 +10395,10 @@ export namespace Cf {
         RoleArn: string
       }
       export class LaunchRoleConstraint implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::LaunchRoleConstraint"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::LaunchRoleConstraint"
         }
         Type: string
@@ -10335,7 +10536,10 @@ export namespace Cf {
         ProvisioningArtifactId?: string
       }
       export class CloudFormationProvisionedProduct implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::CloudFormationProvisionedProduct"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::CloudFormationProvisionedProduct"
         }
         Type: string
@@ -10481,7 +10685,10 @@ export namespace Cf {
         ProvisioningArtifactParameters: CloudFormationProductProvisioningArtifactProperties[]
       }
       export class CloudFormationProduct implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::CloudFormationProduct"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::CloudFormationProduct"
         }
         Type: string
@@ -10573,7 +10780,10 @@ export namespace Cf {
         ProductId: string
       }
       export class PortfolioProductAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::PortfolioProductAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::PortfolioProductAssociation"
         }
         Type: string
@@ -10666,7 +10876,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Portfolio implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::Portfolio"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::Portfolio"
         }
         Type: string
@@ -10732,7 +10945,10 @@ export namespace Cf {
         PortfolioId: string
       }
       export class AcceptedPortfolioShare implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::AcceptedPortfolioShare"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::AcceptedPortfolioShare"
         }
         Type: string
@@ -10825,7 +11041,10 @@ export namespace Cf {
         ProductId: string
       }
       export class LaunchNotificationConstraint implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceCatalog::LaunchNotificationConstraint"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceCatalog::LaunchNotificationConstraint"
         }
         Type: string
@@ -11433,7 +11652,10 @@ export namespace Cf {
         Roles?: object
       }
       export class IdentityPoolRoleAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::IdentityPoolRoleAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::Cognito::IdentityPoolRoleAttachment"
         }
         Type: string
@@ -11550,7 +11772,10 @@ export namespace Cf {
         RoleArn?: string
       }
       export class UserPoolGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPoolGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Cognito::UserPoolGroup"
         }
         Type: string
@@ -11688,7 +11913,10 @@ export namespace Cf {
         OpenIdConnectProviderARNs?: string[]
       }
       export class IdentityPool implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::IdentityPool"`)
+         */
+        static get TypeName(): string {
           return "AWS::Cognito::IdentityPool"
         }
         Type: string
@@ -11823,7 +12051,10 @@ export namespace Cf {
         UserAttributes?: UserPoolUserAttributeType[]
       }
       export class UserPoolUser implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPoolUser"`)
+         */
+        static get TypeName(): string {
           return "AWS::Cognito::UserPoolUser"
         }
         Type: string
@@ -12032,7 +12263,10 @@ export namespace Cf {
         EmailVerificationMessage?: string
       }
       export class UserPool implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPool"`)
+         */
+        static get TypeName(): string {
           return "AWS::Cognito::UserPool"
         }
         Type: string
@@ -12231,7 +12465,10 @@ export namespace Cf {
         WriteAttributes?: string[]
       }
       export class UserPoolClient implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPoolClient"`)
+         */
+        static get TypeName(): string {
           return "AWS::Cognito::UserPoolClient"
         }
         Type: string
@@ -12306,7 +12543,10 @@ export namespace Cf {
         Username: string
       }
       export class UserPoolUserToGroupAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Cognito::UserPoolUserToGroupAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::Cognito::UserPoolUserToGroupAttachment"
         }
         Type: string
@@ -12633,7 +12873,10 @@ export namespace Cf {
         Targets?: RuleTarget[]
       }
       export class Rule implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Events::Rule"`)
+         */
+        static get TypeName(): string {
           return "AWS::Events::Rule"
         }
         Type: string
@@ -12773,7 +13016,10 @@ export namespace Cf {
         Principal: string
       }
       export class EventBusPolicy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Events::EventBusPolicy"`)
+         */
+        static get TypeName(): string {
           return "AWS::Events::EventBusPolicy"
         }
         Type: string
@@ -13143,7 +13389,10 @@ export namespace Cf {
         Name: string
       }
       export class IPSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAF::IPSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAF::IPSet"
         }
         Type: string
@@ -13217,7 +13466,10 @@ export namespace Cf {
         SizeConstraints: SizeConstraintSetSizeConstraint[]
       }
       export class SizeConstraintSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAF::SizeConstraintSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAF::SizeConstraintSet"
         }
         Type: string
@@ -13308,7 +13560,10 @@ export namespace Cf {
         Predicates?: RulePredicate[]
       }
       export class Rule implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAF::Rule"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAF::Rule"
         }
         Type: string
@@ -13382,7 +13637,10 @@ export namespace Cf {
         Name: string
       }
       export class ByteMatchSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAF::ByteMatchSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAF::ByteMatchSet"
         }
         Type: string
@@ -13464,7 +13722,10 @@ export namespace Cf {
         SqlInjectionMatchTuples?: SqlInjectionMatchSetSqlInjectionMatchTuple[]
       }
       export class SqlInjectionMatchSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAF::SqlInjectionMatchSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAF::SqlInjectionMatchSet"
         }
         Type: string
@@ -13564,7 +13825,10 @@ export namespace Cf {
         Rules?: WebACLActivatedRule[]
       }
       export class WebACL implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAF::WebACL"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAF::WebACL"
         }
         Type: string
@@ -13646,7 +13910,10 @@ export namespace Cf {
         XssMatchTuples: XssMatchSetXssMatchTuple[]
       }
       export class XssMatchSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAF::XssMatchSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAF::XssMatchSet"
         }
         Type: string
@@ -13828,7 +14095,10 @@ export namespace Cf {
         Policies?: GroupPolicy[]
       }
       export class Group implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IAM::Group"`)
+         */
+        static get TypeName(): string {
           return "AWS::IAM::Group"
         }
         Type: string
@@ -13929,7 +14199,10 @@ export namespace Cf {
         Users?: string[]
       }
       export class Policy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IAM::Policy"`)
+         */
+        static get TypeName(): string {
           return "AWS::IAM::Policy"
         }
         Type: string
@@ -14040,7 +14313,10 @@ export namespace Cf {
         RoleName?: string
       }
       export class Role implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IAM::Role"`)
+         */
+        static get TypeName(): string {
           return "AWS::IAM::Role"
         }
         Type: string
@@ -14123,7 +14399,10 @@ export namespace Cf {
         AWSServiceName: string
       }
       export class ServiceLinkedRole implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IAM::ServiceLinkedRole"`)
+         */
+        static get TypeName(): string {
           return "AWS::IAM::ServiceLinkedRole"
         }
         Type: string
@@ -14189,7 +14468,10 @@ export namespace Cf {
         Users: string[]
       }
       export class UserToGroupAddition implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IAM::UserToGroupAddition"`)
+         */
+        static get TypeName(): string {
           return "AWS::IAM::UserToGroupAddition"
         }
         Type: string
@@ -14264,7 +14546,10 @@ export namespace Cf {
         Roles: string[]
       }
       export class InstanceProfile implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IAM::InstanceProfile"`)
+         */
+        static get TypeName(): string {
           return "AWS::IAM::InstanceProfile"
         }
         Type: string
@@ -14339,7 +14624,10 @@ export namespace Cf {
         UserName: string
       }
       export class AccessKey implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IAM::AccessKey"`)
+         */
+        static get TypeName(): string {
           return "AWS::IAM::AccessKey"
         }
         Type: string
@@ -14450,7 +14738,10 @@ export namespace Cf {
         UserName?: string
       }
       export class User implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IAM::User"`)
+         */
+        static get TypeName(): string {
           return "AWS::IAM::User"
         }
         Type: string
@@ -14577,7 +14868,10 @@ export namespace Cf {
         Users?: string[]
       }
       export class ManagedPolicy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IAM::ManagedPolicy"`)
+         */
+        static get TypeName(): string {
           return "AWS::IAM::ManagedPolicy"
         }
         Type: string
@@ -15125,7 +15419,10 @@ export namespace Cf {
         Version?: string
       }
       export class CustomActionType implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CodePipeline::CustomActionType"`)
+         */
+        static get TypeName(): string {
           return "AWS::CodePipeline::CustomActionType"
         }
         Type: string
@@ -15269,7 +15566,10 @@ export namespace Cf {
         RegisterWithThirdParty?: boolean
       }
       export class Webhook implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CodePipeline::Webhook"`)
+         */
+        static get TypeName(): string {
           return "AWS::CodePipeline::Webhook"
         }
         Type: string
@@ -15396,7 +15696,10 @@ export namespace Cf {
         Stages: PipelineStageDeclaration[]
       }
       export class Pipeline implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CodePipeline::Pipeline"`)
+         */
+        static get TypeName(): string {
           return "AWS::CodePipeline::Pipeline"
         }
         Type: string
@@ -15781,7 +16084,10 @@ export namespace Cf {
         VPCOptions?: DomainVPCOptions
       }
       export class Domain implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Elasticsearch::Domain"`)
+         */
+        static get TypeName(): string {
           return "AWS::Elasticsearch::Domain"
         }
         Type: string
@@ -16817,7 +17123,10 @@ export namespace Cf {
         ValidateRequestParameters?: boolean
       }
       export class RequestValidator implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::RequestValidator"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::RequestValidator"
         }
         Type: string
@@ -16910,7 +17219,10 @@ export namespace Cf {
         StageName?: string
       }
       export class Deployment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Deployment"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::Deployment"
         }
         Type: string
@@ -17088,7 +17400,10 @@ export namespace Cf {
         Type: string
       }
       export class Authorizer implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Authorizer"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::Authorizer"
         }
         Type: string
@@ -17172,7 +17487,10 @@ export namespace Cf {
         RegionalCertificateArn?: string
       }
       export class DomainName implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::DomainName"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::DomainName"
         }
         Type: string
@@ -17255,7 +17573,10 @@ export namespace Cf {
         RestApiId: string
       }
       export class DocumentationPart implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::DocumentationPart"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::DocumentationPart"
         }
         Type: string
@@ -17374,7 +17695,10 @@ export namespace Cf {
         Value?: string
       }
       export class ApiKey implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::ApiKey"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::ApiKey"
         }
         Type: string
@@ -17475,7 +17799,10 @@ export namespace Cf {
         Schema?: object
       }
       export class Model implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Model"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::Model"
         }
         Type: string
@@ -17550,7 +17877,10 @@ export namespace Cf {
         RestApiId: string
       }
       export class Resource implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Resource"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::Resource"
         }
         Type: string
@@ -17607,7 +17937,10 @@ export namespace Cf {
         CloudWatchRoleArn?: string
       }
       export class Account implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Account"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::Account"
         }
         Type: string
@@ -17763,7 +18096,10 @@ export namespace Cf {
         Policy?: object
       }
       export class RestApi implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::RestApi"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::RestApi"
         }
         Type: string
@@ -17872,7 +18208,10 @@ export namespace Cf {
         UsagePlanName?: string
       }
       export class UsagePlan implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::UsagePlan"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::UsagePlan"
         }
         Type: string
@@ -17980,7 +18319,10 @@ export namespace Cf {
         Stage?: string
       }
       export class BasePathMapping implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::BasePathMapping"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::BasePathMapping"
         }
         Type: string
@@ -18154,7 +18496,10 @@ export namespace Cf {
         Variables?: {[key: string]: string}
       }
       export class Stage implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Stage"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::Stage"
         }
         Type: string
@@ -18253,7 +18598,10 @@ export namespace Cf {
         Name: string
       }
       export class VpcLink implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::VpcLink"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::VpcLink"
         }
         Type: string
@@ -18346,7 +18694,10 @@ export namespace Cf {
         StatusCode?: string
       }
       export class GatewayResponse implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::GatewayResponse"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::GatewayResponse"
         }
         Type: string
@@ -18511,7 +18862,10 @@ export namespace Cf {
         RestApiId: string
       }
       export class Method implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::Method"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::Method"
         }
         Type: string
@@ -18592,7 +18946,10 @@ export namespace Cf {
         Description?: string
       }
       export class ClientCertificate implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::ClientCertificate"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::ClientCertificate"
         }
         Type: string
@@ -18667,7 +19024,10 @@ export namespace Cf {
         RestApiId: string
       }
       export class DocumentationVersion implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::DocumentationVersion"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::DocumentationVersion"
         }
         Type: string
@@ -18742,7 +19102,10 @@ export namespace Cf {
         UsagePlanId: string
       }
       export class UsagePlanKey implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGateway::UsagePlanKey"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGateway::UsagePlanKey"
         }
         Type: string
@@ -19104,7 +19467,10 @@ export namespace Cf {
         Name: string
       }
       export class SizeConstraintSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::SizeConstraintSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAFRegional::SizeConstraintSet"
         }
         Type: string
@@ -19186,7 +19552,10 @@ export namespace Cf {
         Name: string
       }
       export class SqlInjectionMatchSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::SqlInjectionMatchSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAFRegional::SqlInjectionMatchSet"
         }
         Type: string
@@ -19268,7 +19637,10 @@ export namespace Cf {
         Name: string
       }
       export class XssMatchSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::XssMatchSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAFRegional::XssMatchSet"
         }
         Type: string
@@ -19350,7 +19722,10 @@ export namespace Cf {
         Name: string
       }
       export class ByteMatchSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::ByteMatchSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAFRegional::ByteMatchSet"
         }
         Type: string
@@ -19432,7 +19807,10 @@ export namespace Cf {
         WebACLId: string
       }
       export class WebACLAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::WebACLAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAFRegional::WebACLAssociation"
         }
         Type: string
@@ -19516,7 +19894,10 @@ export namespace Cf {
         Name: string
       }
       export class WebACL implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::WebACL"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAFRegional::WebACL"
         }
         Type: string
@@ -19607,7 +19988,10 @@ export namespace Cf {
         Name: string
       }
       export class Rule implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::Rule"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAFRegional::Rule"
         }
         Type: string
@@ -19681,7 +20065,10 @@ export namespace Cf {
         Name: string
       }
       export class IPSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WAFRegional::IPSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::WAFRegional::IPSet"
         }
         Type: string
@@ -19956,7 +20343,10 @@ export namespace Cf {
         EC2SecurityGroupOwnerId?: string
       }
       export class DBSecurityGroupIngress implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBSecurityGroupIngress"`)
+         */
+        static get TypeName(): string {
           return "AWS::RDS::DBSecurityGroupIngress"
         }
         Type: string
@@ -20238,7 +20628,10 @@ export namespace Cf {
         VpcSecurityGroupIds?: string[]
       }
       export class DBCluster implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBCluster"`)
+         */
+        static get TypeName(): string {
           return "AWS::RDS::DBCluster"
         }
         Type: string
@@ -20330,7 +20723,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBSubnetGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBSubnetGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::RDS::DBSubnetGroup"
         }
         Type: string
@@ -20423,7 +20819,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class OptionGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RDS::OptionGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::RDS::OptionGroup"
         }
         Type: string
@@ -20523,7 +20922,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBParameterGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBParameterGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::RDS::DBParameterGroup"
         }
         Type: string
@@ -20616,7 +21018,10 @@ export namespace Cf {
         SourceType?: string
       }
       export class EventSubscription implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RDS::EventSubscription"`)
+         */
+        static get TypeName(): string {
           return "AWS::RDS::EventSubscription"
         }
         Type: string
@@ -21105,7 +21510,10 @@ export namespace Cf {
         VPCSecurityGroups?: string[]
       }
       export class DBInstance implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBInstance"`)
+         */
+        static get TypeName(): string {
           return "AWS::RDS::DBInstance"
         }
         Type: string
@@ -21197,7 +21605,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBSecurityGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBSecurityGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::RDS::DBSecurityGroup"
         }
         Type: string
@@ -21289,7 +21700,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBClusterParameterGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RDS::DBClusterParameterGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::RDS::DBClusterParameterGroup"
         }
         Type: string
@@ -22909,7 +23323,10 @@ export namespace Cf {
         TargetSpotCapacity?: number
       }
       export class InstanceFleetConfig implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EMR::InstanceFleetConfig"`)
+         */
+        static get TypeName(): string {
           return "AWS::EMR::InstanceFleetConfig"
         }
         Type: string
@@ -23184,7 +23601,10 @@ export namespace Cf {
         VisibleToAllUsers?: boolean
       }
       export class Cluster implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EMR::Cluster"`)
+         */
+        static get TypeName(): string {
           return "AWS::EMR::Cluster"
         }
         Type: string
@@ -23530,7 +23950,10 @@ export namespace Cf {
         Name?: string
       }
       export class InstanceGroupConfig implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EMR::InstanceGroupConfig"`)
+         */
+        static get TypeName(): string {
           return "AWS::EMR::InstanceGroupConfig"
         }
         Type: string
@@ -23710,7 +24133,10 @@ export namespace Cf {
         Name: string
       }
       export class Step implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EMR::Step"`)
+         */
+        static get TypeName(): string {
           return "AWS::EMR::Step"
         }
         Type: string
@@ -23792,7 +24218,10 @@ export namespace Cf {
         SecurityConfiguration: object
       }
       export class SecurityConfiguration implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EMR::SecurityConfiguration"`)
+         */
+        static get TypeName(): string {
           return "AWS::EMR::SecurityConfiguration"
         }
         Type: string
@@ -23961,7 +24390,10 @@ export namespace Cf {
         WorkspaceProperties?: WorkspaceWorkspaceProperties
       }
       export class Workspace implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::WorkSpaces::Workspace"`)
+         */
+        static get TypeName(): string {
           return "AWS::WorkSpaces::Workspace"
         }
         Type: string
@@ -24216,7 +24648,10 @@ export namespace Cf {
         RequestParameters?: object
       }
       export class Route implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Route"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGatewayV2::Route"
         }
         Type: string
@@ -24389,7 +24824,10 @@ export namespace Cf {
         IntegrationType: string
       }
       export class Integration implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Integration"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGatewayV2::Integration"
         }
         Type: string
@@ -24518,7 +24956,10 @@ export namespace Cf {
         DefaultRouteSettings?: StageRouteSettings
       }
       export class Stage implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Stage"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGatewayV2::Stage"
         }
         Type: string
@@ -24609,7 +25050,10 @@ export namespace Cf {
         ApiId: string
       }
       export class Deployment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Deployment"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGatewayV2::Deployment"
         }
         Type: string
@@ -24702,7 +25146,10 @@ export namespace Cf {
         Name: string
       }
       export class Model implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Model"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGatewayV2::Model"
         }
         Type: string
@@ -24822,7 +25269,10 @@ export namespace Cf {
         Name: string
       }
       export class Authorizer implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Authorizer"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGatewayV2::Authorizer"
         }
         Type: string
@@ -24933,7 +25383,10 @@ export namespace Cf {
         ApiKeySelectionExpression?: string
       }
       export class Api implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::Api"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGatewayV2::Api"
         }
         Type: string
@@ -25035,7 +25488,10 @@ export namespace Cf {
         ResponseModels?: object
       }
       export class RouteResponse implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::RouteResponse"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGatewayV2::RouteResponse"
         }
         Type: string
@@ -25154,7 +25610,10 @@ export namespace Cf {
         ApiId: string
       }
       export class IntegrationResponse implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApiGatewayV2::IntegrationResponse"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApiGatewayV2::IntegrationResponse"
         }
         Type: string
@@ -25260,7 +25719,10 @@ export namespace Cf {
         RetentionInDays?: number
       }
       export class LogGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Logs::LogGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Logs::LogGroup"
         }
         Type: string
@@ -25335,7 +25797,10 @@ export namespace Cf {
         MetricTransformations: MetricFilterMetricTransformation[]
       }
       export class MetricFilter implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Logs::MetricFilter"`)
+         */
+        static get TypeName(): string {
           return "AWS::Logs::MetricFilter"
         }
         Type: string
@@ -25409,7 +25874,10 @@ export namespace Cf {
         LogStreamName?: string
       }
       export class LogStream implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Logs::LogStream"`)
+         */
+        static get TypeName(): string {
           return "AWS::Logs::LogStream"
         }
         Type: string
@@ -25493,7 +25961,10 @@ export namespace Cf {
         RoleArn?: string
       }
       export class SubscriptionFilter implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Logs::SubscriptionFilter"`)
+         */
+        static get TypeName(): string {
           return "AWS::Logs::SubscriptionFilter"
         }
         Type: string
@@ -25577,7 +26048,10 @@ export namespace Cf {
         TargetArn: string
       }
       export class Destination implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Logs::Destination"`)
+         */
+        static get TypeName(): string {
           return "AWS::Logs::Destination"
         }
         Type: string
@@ -25692,7 +26166,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Stream implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Kinesis::Stream"`)
+         */
+        static get TypeName(): string {
           return "AWS::Kinesis::Stream"
         }
         Type: string
@@ -25766,7 +26243,10 @@ export namespace Cf {
         StreamARN: string
       }
       export class StreamConsumer implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Kinesis::StreamConsumer"`)
+         */
+        static get TypeName(): string {
           return "AWS::Kinesis::StreamConsumer"
         }
         Type: string
@@ -25861,7 +26341,10 @@ export namespace Cf {
         Name: string
       }
       export class ResourceShare implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RAM::ResourceShare"`)
+         */
+        static get TypeName(): string {
           return "AWS::RAM::ResourceShare"
         }
         Type: string
@@ -26591,7 +27074,10 @@ export namespace Cf {
         UserData?: string
       }
       export class LaunchConfiguration implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::LaunchConfiguration"`)
+         */
+        static get TypeName(): string {
           return "AWS::AutoScaling::LaunchConfiguration"
         }
         Type: string
@@ -26727,7 +27213,10 @@ export namespace Cf {
         RoleARN?: string
       }
       export class LifecycleHook implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::LifecycleHook"`)
+         */
+        static get TypeName(): string {
           return "AWS::AutoScaling::LifecycleHook"
         }
         Type: string
@@ -26865,7 +27354,10 @@ export namespace Cf {
         TargetTrackingConfiguration?: ScalingPolicyTargetTrackingConfiguration
       }
       export class ScalingPolicy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::ScalingPolicy"`)
+         */
+        static get TypeName(): string {
           return "AWS::AutoScaling::ScalingPolicy"
         }
         Type: string
@@ -27151,7 +27643,10 @@ export namespace Cf {
         VPCZoneIdentifier?: string[]
       }
       export class AutoScalingGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::AutoScalingGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::AutoScaling::AutoScalingGroup"
         }
         Type: string
@@ -27334,7 +27829,10 @@ export namespace Cf {
         StartTime?: string
       }
       export class ScheduledAction implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AutoScaling::ScheduledAction"`)
+         */
+        static get TypeName(): string {
           return "AWS::AutoScaling::ScheduledAction"
         }
         Type: string
@@ -27492,7 +27990,10 @@ export namespace Cf {
         VisibilityTimeout?: number
       }
       export class Queue implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SQS::Queue"`)
+         */
+        static get TypeName(): string {
           return "AWS::SQS::Queue"
         }
         Type: string
@@ -27558,7 +28059,10 @@ export namespace Cf {
         Queues: string[]
       }
       export class QueuePolicy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SQS::QueuePolicy"`)
+         */
+        static get TypeName(): string {
           return "AWS::SQS::QueuePolicy"
         }
         Type: string
@@ -27878,7 +28382,10 @@ export namespace Cf {
         ImageArn?: string
       }
       export class ImageBuilder implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::ImageBuilder"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppStream::ImageBuilder"
         }
         Type: string
@@ -28032,7 +28539,10 @@ export namespace Cf {
         FeedbackURL?: string
       }
       export class Stack implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::Stack"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppStream::Stack"
         }
         Type: string
@@ -28131,7 +28641,10 @@ export namespace Cf {
         DirectoryName: string
       }
       export class DirectoryConfig implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::DirectoryConfig"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppStream::DirectoryConfig"
         }
         Type: string
@@ -28205,7 +28718,10 @@ export namespace Cf {
         StackName: string
       }
       export class StackFleetAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::StackFleetAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppStream::StackFleetAssociation"
         }
         Type: string
@@ -28289,7 +28805,10 @@ export namespace Cf {
         AuthenticationType: string
       }
       export class StackUserAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::StackUserAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppStream::StackUserAssociation"
         }
         Type: string
@@ -28382,7 +28901,10 @@ export namespace Cf {
         AuthenticationType: string
       }
       export class User implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::User"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppStream::User"
         }
         Type: string
@@ -28547,7 +29069,10 @@ export namespace Cf {
         ImageArn?: string
       }
       export class Fleet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AppStream::Fleet"`)
+         */
+        static get TypeName(): string {
           return "AWS::AppStream::Fleet"
         }
         Type: string
@@ -29026,7 +29551,10 @@ export namespace Cf {
         ScalingInstructions: ScalingPlanScalingInstruction[]
       }
       export class ScalingPlan implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::AutoScalingPlans::ScalingPlan"`)
+         */
+        static get TypeName(): string {
           return "AWS::AutoScalingPlans::ScalingPlan"
         }
         Type: string
@@ -29784,7 +30312,10 @@ export namespace Cf {
         Weight?: number
       }
       export class RecordSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Route53::RecordSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::Route53::RecordSet"
         }
         Type: string
@@ -29893,7 +30424,10 @@ export namespace Cf {
         VPCs?: HostedZoneVPC[]
       }
       export class HostedZone implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Route53::HostedZone"`)
+         */
+        static get TypeName(): string {
           return "AWS::Route53::HostedZone"
         }
         Type: string
@@ -30009,7 +30543,10 @@ export namespace Cf {
         RecordSets?: RecordSetGroupRecordSet[]
       }
       export class RecordSetGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Route53::RecordSetGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Route53::RecordSetGroup"
         }
         Type: string
@@ -30099,7 +30636,10 @@ export namespace Cf {
         HealthCheckTags?: HealthCheckHealthCheckTag[]
       }
       export class HealthCheck implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Route53::HealthCheck"`)
+         */
+        static get TypeName(): string {
           return "AWS::Route53::HealthCheck"
         }
         Type: string
@@ -30325,7 +30865,10 @@ export namespace Cf {
         DashboardBody: string
       }
       export class Dashboard implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudWatch::Dashboard"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudWatch::Dashboard"
         }
         Type: string
@@ -30553,7 +31096,10 @@ export namespace Cf {
         Unit?: string
       }
       export class Alarm implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudWatch::Alarm"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudWatch::Alarm"
         }
         Type: string
@@ -31540,7 +32086,10 @@ export namespace Cf {
         ClusterName?: string
       }
       export class Cluster implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ECS::Cluster"`)
+         */
+        static get TypeName(): string {
           return "AWS::ECS::Cluster"
         }
         Type: string
@@ -31723,7 +32272,10 @@ export namespace Cf {
         TaskDefinition: string
       }
       export class Service implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ECS::Service"`)
+         */
+        static get TypeName(): string {
           return "AWS::ECS::Service"
         }
         Type: string
@@ -31917,7 +32469,10 @@ export namespace Cf {
         Volumes?: TaskDefinitionVolume[]
       }
       export class TaskDefinition implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ECS::TaskDefinition"`)
+         */
+        static get TypeName(): string {
           return "AWS::ECS::TaskDefinition"
         }
         Type: string
@@ -32921,7 +33476,10 @@ export namespace Cf {
         ListenerArn: string
       }
       export class ListenerCertificate implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::ListenerCertificate"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticLoadBalancingV2::ListenerCertificate"
         }
         Type: string
@@ -33058,7 +33616,10 @@ export namespace Cf {
         Type?: string
       }
       export class LoadBalancer implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::LoadBalancer"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticLoadBalancingV2::LoadBalancer"
         }
         Type: string
@@ -33176,7 +33737,10 @@ export namespace Cf {
         SslPolicy?: string
       }
       export class Listener implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::Listener"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticLoadBalancingV2::Listener"
         }
         Type: string
@@ -33308,7 +33872,10 @@ export namespace Cf {
         Priority: number
       }
       export class ListenerRule implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::ListenerRule"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticLoadBalancingV2::ListenerRule"
         }
         Type: string
@@ -33557,7 +34124,10 @@ export namespace Cf {
         VpcId?: string
       }
       export class TargetGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancingV2::TargetGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticLoadBalancingV2::TargetGroup"
         }
         Type: string
@@ -33676,7 +34246,10 @@ export namespace Cf {
         Name?: string
       }
       export class DBParameterGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBParameterGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Neptune::DBParameterGroup"
         }
         Type: string
@@ -33769,7 +34342,10 @@ export namespace Cf {
         Name?: string
       }
       export class DBClusterParameterGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBClusterParameterGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Neptune::DBClusterParameterGroup"
         }
         Type: string
@@ -33943,7 +34519,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBCluster implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBCluster"`)
+         */
+        static get TypeName(): string {
           return "AWS::Neptune::DBCluster"
         }
         Type: string
@@ -34027,7 +34606,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBSubnetGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBSubnetGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Neptune::DBSubnetGroup"
         }
         Type: string
@@ -34174,7 +34756,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBInstance implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Neptune::DBInstance"`)
+         */
+        static get TypeName(): string {
           return "AWS::Neptune::DBInstance"
         }
         Type: string
@@ -34233,7 +34818,10 @@ export namespace Cf {
         Name: string
       }
       export class Activity implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::StepFunctions::Activity"`)
+         */
+        static get TypeName(): string {
           return "AWS::StepFunctions::Activity"
         }
         Type: string
@@ -34308,7 +34896,10 @@ export namespace Cf {
         RoleArn: string
       }
       export class StateMachine implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::StepFunctions::StateMachine"`)
+         */
+        static get TypeName(): string {
           return "AWS::StepFunctions::StateMachine"
         }
         Type: string
@@ -34948,7 +35539,10 @@ export namespace Cf {
         Output: ApplicationOutputOutput
       }
       export class ApplicationOutput implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalytics::ApplicationOutput"`)
+         */
+        static get TypeName(): string {
           return "AWS::KinesisAnalytics::ApplicationOutput"
         }
         Type: string
@@ -35054,7 +35648,10 @@ export namespace Cf {
         ReferenceDataSource: ApplicationReferenceDataSourceReferenceDataSource
       }
       export class ApplicationReferenceDataSource implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalytics::ApplicationReferenceDataSource"`)
+         */
+        static get TypeName(): string {
           return "AWS::KinesisAnalytics::ApplicationReferenceDataSource"
         }
         Type: string
@@ -35202,7 +35799,10 @@ export namespace Cf {
         ApplicationCode?: string
       }
       export class Application implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalytics::Application"`)
+         */
+        static get TypeName(): string {
           return "AWS::KinesisAnalytics::Application"
         }
         Type: string
@@ -36050,7 +36650,10 @@ export namespace Cf {
         StackId: string
       }
       export class Volume implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::Volume"`)
+         */
+        static get TypeName(): string {
           return "AWS::OpsWorks::Volume"
         }
         Type: string
@@ -36206,7 +36809,10 @@ export namespace Cf {
         Type: string
       }
       export class App implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::App"`)
+         */
+        static get TypeName(): string {
           return "AWS::OpsWorks::App"
         }
         Type: string
@@ -36457,7 +37063,10 @@ export namespace Cf {
         VolumeConfigurations?: LayerVolumeConfiguration[]
       }
       export class Layer implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::Layer"`)
+         */
+        static get TypeName(): string {
           return "AWS::OpsWorks::Layer"
         }
         Type: string
@@ -36778,7 +37387,10 @@ export namespace Cf {
         VpcId?: string
       }
       export class Stack implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::Stack"`)
+         */
+        static get TypeName(): string {
           return "AWS::OpsWorks::Stack"
         }
         Type: string
@@ -36884,7 +37496,10 @@ export namespace Cf {
         LayerId: string
       }
       export class ElasticLoadBalancerAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::ElasticLoadBalancerAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::OpsWorks::ElasticLoadBalancerAttachment"
         }
         Type: string
@@ -37121,7 +37736,10 @@ export namespace Cf {
         Volumes?: string[]
       }
       export class Instance implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::Instance"`)
+         */
+        static get TypeName(): string {
           return "AWS::OpsWorks::Instance"
         }
         Type: string
@@ -37229,7 +37847,10 @@ export namespace Cf {
         SshUsername?: string
       }
       export class UserProfile implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorks::UserProfile"`)
+         */
+        static get TypeName(): string {
           return "AWS::OpsWorks::UserProfile"
         }
         Type: string
@@ -38192,7 +38813,10 @@ export namespace Cf {
         Tags: TagProperties[]
       }
       export class StreamingDistribution implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudFront::StreamingDistribution"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudFront::StreamingDistribution"
         }
         Type: string
@@ -38290,7 +38914,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Distribution implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudFront::Distribution"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudFront::Distribution"
         }
         Type: string
@@ -38467,7 +39094,10 @@ export namespace Cf {
         CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig
       }
       export class CloudFrontOriginAccessIdentity implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudFront::CloudFrontOriginAccessIdentity"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudFront::CloudFrontOriginAccessIdentity"
         }
         Type: string
@@ -38648,7 +39278,10 @@ export namespace Cf {
         RoutingStrategy: AliasRoutingStrategy
       }
       export class Alias implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::GameLift::Alias"`)
+         */
+        static get TypeName(): string {
           return "AWS::GameLift::Alias"
         }
         Type: string
@@ -38731,7 +39364,10 @@ export namespace Cf {
         Version?: string
       }
       export class Build implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::GameLift::Build"`)
+         */
+        static get TypeName(): string {
           return "AWS::GameLift::Build"
         }
         Type: string
@@ -38886,7 +39522,10 @@ export namespace Cf {
         ServerLaunchPath: string
       }
       export class Fleet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::GameLift::Fleet"`)
+         */
+        static get TypeName(): string {
           return "AWS::GameLift::Fleet"
         }
         Type: string
@@ -39065,7 +39704,10 @@ export namespace Cf {
         Name?: string
       }
       export class Filter implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::Filter"`)
+         */
+        static get TypeName(): string {
           return "AWS::GuardDuty::Filter"
         }
         Type: string
@@ -39174,7 +39816,10 @@ export namespace Cf {
         Location: string
       }
       export class ThreatIntelSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::ThreatIntelSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::GuardDuty::ThreatIntelSet"
         }
         Type: string
@@ -39276,7 +39921,10 @@ export namespace Cf {
         DetectorId: string
       }
       export class Member implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::Member"`)
+         */
+        static get TypeName(): string {
           return "AWS::GuardDuty::Member"
         }
         Type: string
@@ -39342,7 +39990,10 @@ export namespace Cf {
         Enable: boolean
       }
       export class Detector implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::Detector"`)
+         */
+        static get TypeName(): string {
           return "AWS::GuardDuty::Detector"
         }
         Type: string
@@ -39435,7 +40086,10 @@ export namespace Cf {
         Location: string
       }
       export class IPSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::IPSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::GuardDuty::IPSet"
         }
         Type: string
@@ -39510,7 +40164,10 @@ export namespace Cf {
         InvitationId?: string
       }
       export class Master implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::GuardDuty::Master"`)
+         */
+        static get TypeName(): string {
           return "AWS::GuardDuty::Master"
         }
         Type: string
@@ -39663,7 +40320,10 @@ export namespace Cf {
         VpcSettings: MicrosoftADVpcSettings
       }
       export class MicrosoftAD implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DirectoryService::MicrosoftAD"`)
+         */
+        static get TypeName(): string {
           return "AWS::DirectoryService::MicrosoftAD"
         }
         Type: string
@@ -39791,7 +40451,10 @@ export namespace Cf {
         VpcSettings: SimpleADVpcSettings
       }
       export class SimpleAD implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DirectoryService::SimpleAD"`)
+         */
+        static get TypeName(): string {
           return "AWS::DirectoryService::SimpleAD"
         }
         Type: string
@@ -39932,7 +40595,10 @@ export namespace Cf {
         TopicArn: string
       }
       export class Subscription implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SNS::Subscription"`)
+         */
+        static get TypeName(): string {
           return "AWS::SNS::Subscription"
         }
         Type: string
@@ -40016,7 +40682,10 @@ export namespace Cf {
         TopicName?: string
       }
       export class Topic implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SNS::Topic"`)
+         */
+        static get TypeName(): string {
           return "AWS::SNS::Topic"
         }
         Type: string
@@ -40090,7 +40759,10 @@ export namespace Cf {
         Topics: string[]
       }
       export class TopicPolicy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SNS::TopicPolicy"`)
+         */
+        static get TypeName(): string {
           return "AWS::SNS::TopicPolicy"
         }
         Type: string
@@ -40196,7 +40868,10 @@ export namespace Cf {
         SubnetId: string
       }
       export class MountTarget implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EFS::MountTarget"`)
+         */
+        static get TypeName(): string {
           return "AWS::EFS::MountTarget"
         }
         Type: string
@@ -40298,7 +40973,10 @@ export namespace Cf {
         ThroughputMode?: string
       }
       export class FileSystem implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::EFS::FileSystem"`)
+         */
+        static get TypeName(): string {
           return "AWS::EFS::FileSystem"
         }
         Type: string
@@ -40842,7 +41520,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Document implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SSM::Document"`)
+         */
+        static get TypeName(): string {
           return "AWS::SSM::Document"
         }
         Type: string
@@ -40998,7 +41679,10 @@ export namespace Cf {
         RejectedPatches?: string[]
       }
       export class PatchBaseline implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SSM::PatchBaseline"`)
+         */
+        static get TypeName(): string {
           return "AWS::SSM::PatchBaseline"
         }
         Type: string
@@ -41140,7 +41824,10 @@ export namespace Cf {
         Name?: string
       }
       export class MaintenanceWindowTarget implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SSM::MaintenanceWindowTarget"`)
+         */
+        static get TypeName(): string {
           return "AWS::SSM::MaintenanceWindowTarget"
         }
         Type: string
@@ -41277,7 +41964,10 @@ export namespace Cf {
         ScheduleTimezone?: string
       }
       export class MaintenanceWindow implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SSM::MaintenanceWindow"`)
+         */
+        static get TypeName(): string {
           return "AWS::SSM::MaintenanceWindow"
         }
         Type: string
@@ -41370,7 +42060,10 @@ export namespace Cf {
         Name?: string
       }
       export class Parameter implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SSM::Parameter"`)
+         */
+        static get TypeName(): string {
           return "AWS::SSM::Parameter"
         }
         Type: string
@@ -41472,7 +42165,10 @@ export namespace Cf {
         BucketPrefix?: string
       }
       export class ResourceDataSync implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SSM::ResourceDataSync"`)
+         */
+        static get TypeName(): string {
           return "AWS::SSM::ResourceDataSync"
         }
         Type: string
@@ -41592,7 +42288,10 @@ export namespace Cf {
         Targets?: AssociationTarget[]
       }
       export class Association implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SSM::Association"`)
+         */
+        static get TypeName(): string {
           return "AWS::SSM::Association"
         }
         Type: string
@@ -41789,7 +42488,10 @@ export namespace Cf {
         LoggingInfo?: MaintenanceWindowTaskLoggingInfo
       }
       export class MaintenanceWindowTask implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SSM::MaintenanceWindowTask"`)
+         */
+        static get TypeName(): string {
           return "AWS::SSM::MaintenanceWindowTask"
         }
         Type: string
@@ -42082,7 +42784,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Model implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::Model"`)
+         */
+        static get TypeName(): string {
           return "AWS::SageMaker::Model"
         }
         Type: string
@@ -42173,7 +42878,10 @@ export namespace Cf {
         OnCreate?: NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook[]
       }
       export class NotebookInstanceLifecycleConfig implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::NotebookInstanceLifecycleConfig"`)
+         */
+        static get TypeName(): string {
           return "AWS::SageMaker::NotebookInstanceLifecycleConfig"
         }
         Type: string
@@ -42265,7 +42973,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class EndpointConfig implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::EndpointConfig"`)
+         */
+        static get TypeName(): string {
           return "AWS::SageMaker::EndpointConfig"
         }
         Type: string
@@ -42348,7 +43059,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Endpoint implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::Endpoint"`)
+         */
+        static get TypeName(): string {
           return "AWS::SageMaker::Endpoint"
         }
         Type: string
@@ -42486,7 +43200,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class NotebookInstance implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SageMaker::NotebookInstance"`)
+         */
+        static get TypeName(): string {
           return "AWS::SageMaker::NotebookInstance"
         }
         Type: string
@@ -42775,7 +43492,10 @@ export namespace Cf {
         SnsTopicARN?: string
       }
       export class DeliveryChannel implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Config::DeliveryChannel"`)
+         */
+        static get TypeName(): string {
           return "AWS::Config::DeliveryChannel"
         }
         Type: string
@@ -42858,7 +43578,10 @@ export namespace Cf {
         OrganizationAggregationSource?: ConfigurationAggregatorOrganizationAggregationSource
       }
       export class ConfigurationAggregator implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Config::ConfigurationAggregator"`)
+         */
+        static get TypeName(): string {
           return "AWS::Config::ConfigurationAggregator"
         }
         Type: string
@@ -42940,7 +43663,10 @@ export namespace Cf {
         AuthorizedAwsRegion: string
       }
       export class AggregationAuthorization implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Config::AggregationAuthorization"`)
+         */
+        static get TypeName(): string {
           return "AWS::Config::AggregationAuthorization"
         }
         Type: string
@@ -43015,7 +43741,10 @@ export namespace Cf {
         RoleARN: string
       }
       export class ConfigurationRecorder implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Config::ConfigurationRecorder"`)
+         */
+        static get TypeName(): string {
           return "AWS::Config::ConfigurationRecorder"
         }
         Type: string
@@ -43125,7 +43854,10 @@ export namespace Cf {
         Source: ConfigRuleSource
       }
       export class ConfigRule implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Config::ConfigRule"`)
+         */
+        static get TypeName(): string {
           return "AWS::Config::ConfigRule"
         }
         Type: string
@@ -43262,7 +43994,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Key implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KMS::Key"`)
+         */
+        static get TypeName(): string {
           return "AWS::KMS::Key"
         }
         Type: string
@@ -43328,7 +44063,10 @@ export namespace Cf {
         TargetKeyId: string
       }
       export class Alias implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KMS::Alias"`)
+         */
+        static get TypeName(): string {
           return "AWS::KMS::Alias"
         }
         Type: string
@@ -43679,7 +44417,10 @@ export namespace Cf {
         VpcSecurityGroupIds?: string[]
       }
       export class Cluster implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::Cluster"`)
+         */
+        static get TypeName(): string {
           return "AWS::Redshift::Cluster"
         }
         Type: string
@@ -43771,7 +44512,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ClusterParameterGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::ClusterParameterGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Redshift::ClusterParameterGroup"
         }
         Type: string
@@ -43863,7 +44607,10 @@ export namespace Cf {
         EC2SecurityGroupOwnerId?: string
       }
       export class ClusterSecurityGroupIngress implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::ClusterSecurityGroupIngress"`)
+         */
+        static get TypeName(): string {
           return "AWS::Redshift::ClusterSecurityGroupIngress"
         }
         Type: string
@@ -43938,7 +44685,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ClusterSubnetGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::ClusterSubnetGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Redshift::ClusterSubnetGroup"
         }
         Type: string
@@ -44004,7 +44754,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ClusterSecurityGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Redshift::ClusterSecurityGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Redshift::ClusterSecurityGroup"
         }
         Type: string
@@ -44250,7 +45003,10 @@ export namespace Cf {
         StartingPosition?: string
       }
       export class EventSourceMapping implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::EventSourceMapping"`)
+         */
+        static get TypeName(): string {
           return "AWS::Lambda::EventSourceMapping"
         }
         Type: string
@@ -44343,7 +45099,10 @@ export namespace Cf {
         Content: LayerVersionContent
       }
       export class LayerVersion implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::LayerVersion"`)
+         */
+        static get TypeName(): string {
           return "AWS::Lambda::LayerVersion"
         }
         Type: string
@@ -44444,7 +45203,10 @@ export namespace Cf {
         RoutingConfig?: AliasAliasRoutingConfiguration
       }
       export class Alias implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::Alias"`)
+         */
+        static get TypeName(): string {
           return "AWS::Lambda::Alias"
         }
         Type: string
@@ -44544,7 +45306,10 @@ export namespace Cf {
         Principal: string
       }
       export class LayerVersionPermission implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::LayerVersionPermission"`)
+         */
+        static get TypeName(): string {
           return "AWS::Lambda::LayerVersionPermission"
         }
         Type: string
@@ -44736,7 +45501,10 @@ export namespace Cf {
         VpcConfig?: FunctionVpcConfig
       }
       export class Function implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::Function"`)
+         */
+        static get TypeName(): string {
           return "AWS::Lambda::Function"
         }
         Type: string
@@ -44851,7 +45619,10 @@ export namespace Cf {
         FunctionName: string
       }
       export class Version implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::Version"`)
+         */
+        static get TypeName(): string {
           return "AWS::Lambda::Version"
         }
         Type: string
@@ -44953,7 +45724,10 @@ export namespace Cf {
         SourceArn?: string
       }
       export class Permission implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Lambda::Permission"`)
+         */
+        static get TypeName(): string {
           return "AWS::Lambda::Permission"
         }
         Type: string
@@ -45068,7 +45842,10 @@ export namespace Cf {
         ValidationMethod?: string
       }
       export class Certificate implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CertificateManager::Certificate"`)
+         */
+        static get TypeName(): string {
           return "AWS::CertificateManager::Certificate"
         }
         Type: string
@@ -45135,7 +45912,10 @@ export namespace Cf {
         ResourceGroupTags: TagProperties[]
       }
       export class ResourceGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Inspector::ResourceGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::Inspector::ResourceGroup"
         }
         Type: string
@@ -45228,7 +46008,10 @@ export namespace Cf {
         UserAttributesForFindings?: TagProperties[]
       }
       export class AssessmentTemplate implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Inspector::AssessmentTemplate"`)
+         */
+        static get TypeName(): string {
           return "AWS::Inspector::AssessmentTemplate"
         }
         Type: string
@@ -45294,7 +46077,10 @@ export namespace Cf {
         ResourceGroupArn?: string
       }
       export class AssessmentTarget implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Inspector::AssessmentTarget"`)
+         */
+        static get TypeName(): string {
           return "AWS::Inspector::AssessmentTarget"
         }
         Type: string
@@ -45411,7 +46197,10 @@ export namespace Cf {
         ProjectName?: string
       }
       export class Project implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoT1Click::Project"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoT1Click::Project"
         }
         Type: string
@@ -45493,7 +46282,10 @@ export namespace Cf {
         Enabled: boolean
       }
       export class Device implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoT1Click::Device"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoT1Click::Device"
         }
         Type: string
@@ -45577,7 +46369,10 @@ export namespace Cf {
         Attributes?: object
       }
       export class Placement implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoT1Click::Placement"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoT1Click::Placement"
         }
         Type: string
@@ -46408,7 +47203,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Dataset implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoTAnalytics::Dataset"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoTAnalytics::Dataset"
         }
         Type: string
@@ -46587,7 +47385,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Channel implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoTAnalytics::Channel"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoTAnalytics::Channel"
         }
         Type: string
@@ -46670,7 +47471,10 @@ export namespace Cf {
         PipelineActivities: PipelineActivity[]
       }
       export class Pipeline implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoTAnalytics::Pipeline"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoTAnalytics::Pipeline"
         }
         Type: string
@@ -46833,7 +47637,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class Datastore implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoTAnalytics::Datastore"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoTAnalytics::Datastore"
         }
         Type: string
@@ -47439,7 +48246,10 @@ export namespace Cf {
         RetryStrategy?: JobDefinitionRetryStrategy
       }
       export class JobDefinition implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Batch::JobDefinition"`)
+         */
+        static get TypeName(): string {
           return "AWS::Batch::JobDefinition"
         }
         Type: string
@@ -47603,7 +48413,10 @@ export namespace Cf {
         JobQueueName?: string
       }
       export class JobQueue implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Batch::JobQueue"`)
+         */
+        static get TypeName(): string {
           return "AWS::Batch::JobQueue"
         }
         Type: string
@@ -47704,7 +48517,10 @@ export namespace Cf {
         State?: string
       }
       export class ComputeEnvironment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Batch::ComputeEnvironment"`)
+         */
+        static get TypeName(): string {
           return "AWS::Batch::ComputeEnvironment"
         }
         Type: string
@@ -47806,7 +48622,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBSubnetGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DocDB::DBSubnetGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::DocDB::DBSubnetGroup"
         }
         Type: string
@@ -47917,7 +48736,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBInstance implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DocDB::DBInstance"`)
+         */
+        static get TypeName(): string {
           return "AWS::DocDB::DBInstance"
         }
         Type: string
@@ -48109,7 +48931,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class DBCluster implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DocDB::DBCluster"`)
+         */
+        static get TypeName(): string {
           return "AWS::DocDB::DBCluster"
         }
         Type: string
@@ -48202,7 +49027,10 @@ export namespace Cf {
         Name?: string
       }
       export class DBClusterParameterGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DocDB::DBClusterParameterGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::DocDB::DBClusterParameterGroup"
         }
         Type: string
@@ -48425,7 +49253,10 @@ export namespace Cf {
         Engine?: string
       }
       export class Server implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::OpsWorksCM::Server"`)
+         */
+        static get TypeName(): string {
           return "AWS::OpsWorksCM::Server"
         }
         Type: string
@@ -49176,7 +50007,10 @@ export namespace Cf {
         ThingName?: string
       }
       export class Thing implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoT::Thing"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoT::Thing"
         }
         Type: string
@@ -49250,7 +50084,10 @@ export namespace Cf {
         PolicyName?: string
       }
       export class Policy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoT::Policy"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoT::Policy"
         }
         Type: string
@@ -49316,7 +50153,10 @@ export namespace Cf {
         TopicRulePayload: TopicRuleTopicRulePayload
       }
       export class TopicRule implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoT::TopicRule"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoT::TopicRule"
         }
         Type: string
@@ -49518,7 +50358,10 @@ export namespace Cf {
         Principal: string
       }
       export class PolicyPrincipalAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoT::PolicyPrincipalAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoT::PolicyPrincipalAttachment"
         }
         Type: string
@@ -49584,7 +50427,10 @@ export namespace Cf {
         ThingName: string
       }
       export class ThingPrincipalAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoT::ThingPrincipalAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoT::ThingPrincipalAttachment"
         }
         Type: string
@@ -49650,7 +50496,10 @@ export namespace Cf {
         Status: string
       }
       export class Certificate implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::IoT::Certificate"`)
+         */
+        static get TypeName(): string {
           return "AWS::IoT::Certificate"
         }
         Type: string
@@ -50103,7 +50952,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class LoadBalancer implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElasticLoadBalancing::LoadBalancer"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElasticLoadBalancing::LoadBalancer"
         }
         Type: string
@@ -50488,7 +51340,10 @@ export namespace Cf {
         CertificateWallet?: string
       }
       export class Certificate implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DMS::Certificate"`)
+         */
+        static get TypeName(): string {
           return "AWS::DMS::Certificate"
         }
         Type: string
@@ -50572,7 +51427,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ReplicationSubnetGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DMS::ReplicationSubnetGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::DMS::ReplicationSubnetGroup"
         }
         Type: string
@@ -50683,7 +51541,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class EventSubscription implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DMS::EventSubscription"`)
+         */
+        static get TypeName(): string {
           return "AWS::DMS::EventSubscription"
         }
         Type: string
@@ -50893,7 +51754,10 @@ export namespace Cf {
         MongoDbSettings?: EndpointMongoDbSettings
       }
       export class Endpoint implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DMS::Endpoint"`)
+         */
+        static get TypeName(): string {
           return "AWS::DMS::Endpoint"
         }
         Type: string
@@ -51062,7 +51926,10 @@ export namespace Cf {
         CdcStartTime?: number
       }
       export class ReplicationTask implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DMS::ReplicationTask"`)
+         */
+        static get TypeName(): string {
           return "AWS::DMS::ReplicationTask"
         }
         Type: string
@@ -51236,7 +52103,10 @@ export namespace Cf {
         Tags?: TagProperties[]
       }
       export class ReplicationInstance implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DMS::ReplicationInstance"`)
+         */
+        static get TypeName(): string {
           return "AWS::DMS::ReplicationInstance"
         }
         Type: string
@@ -52289,7 +53159,10 @@ export namespace Cf {
         CatalogId: string
       }
       export class Table implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Table"`)
+         */
+        static get TypeName(): string {
           return "AWS::Glue::Table"
         }
         Type: string
@@ -52403,7 +53276,10 @@ export namespace Cf {
         CatalogId: string
       }
       export class Connection implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Connection"`)
+         */
+        static get TypeName(): string {
           return "AWS::Glue::Connection"
         }
         Type: string
@@ -52503,7 +53379,10 @@ export namespace Cf {
         PartitionInput: PartitionPartitionInput
       }
       export class Partition implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Partition"`)
+         */
+        static get TypeName(): string {
           return "AWS::Glue::Partition"
         }
         Type: string
@@ -52689,7 +53568,10 @@ export namespace Cf {
         Name?: string
       }
       export class Job implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Job"`)
+         */
+        static get TypeName(): string {
           return "AWS::Glue::Job"
         }
         Type: string
@@ -52779,7 +53661,10 @@ export namespace Cf {
         CatalogId: string
       }
       export class Database implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Database"`)
+         */
+        static get TypeName(): string {
           return "AWS::Glue::Database"
         }
         Type: string
@@ -52907,7 +53792,10 @@ export namespace Cf {
         RoleArn: string
       }
       export class DevEndpoint implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Glue::DevEndpoint"`)
+         */
+        static get TypeName(): string {
           return "AWS::Glue::DevEndpoint"
         }
         Type: string
@@ -53009,7 +53897,10 @@ export namespace Cf {
         Predicate?: TriggerPredicate
       }
       export class Trigger implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Trigger"`)
+         */
+        static get TypeName(): string {
           return "AWS::Glue::Trigger"
         }
         Type: string
@@ -53171,7 +54062,10 @@ export namespace Cf {
         Name?: string
       }
       export class Crawler implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Crawler"`)
+         */
+        static get TypeName(): string {
           return "AWS::Glue::Crawler"
         }
         Type: string
@@ -53286,7 +54180,10 @@ export namespace Cf {
         GrokClassifier?: ClassifierGrokClassifier
       }
       export class Classifier implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Glue::Classifier"`)
+         */
+        static get TypeName(): string {
           return "AWS::Glue::Classifier"
         }
         Type: string
@@ -53416,7 +54313,10 @@ export namespace Cf {
         Description: string
       }
       export class SecurityGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::SecurityGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElastiCache::SecurityGroup"
         }
         Type: string
@@ -53491,7 +54391,10 @@ export namespace Cf {
         SubnetIds: string[]
       }
       export class SubnetGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::SubnetGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElastiCache::SubnetGroup"
         }
         Type: string
@@ -53566,7 +54469,10 @@ export namespace Cf {
         EC2SecurityGroupOwnerId?: string
       }
       export class SecurityGroupIngress implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::SecurityGroupIngress"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElastiCache::SecurityGroupIngress"
         }
         Type: string
@@ -53875,7 +54781,10 @@ export namespace Cf {
         TransitEncryptionEnabled?: boolean
       }
       export class ReplicationGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::ReplicationGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElastiCache::ReplicationGroup"
         }
         Type: string
@@ -53958,7 +54867,10 @@ export namespace Cf {
         Properties?: {[key: string]: string}
       }
       export class ParameterGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::ParameterGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElastiCache::ParameterGroup"
         }
         Type: string
@@ -54195,7 +55107,10 @@ export namespace Cf {
         VpcSecurityGroupIds?: string[]
       }
       export class CacheCluster implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ElastiCache::CacheCluster"`)
+         */
+        static get TypeName(): string {
           return "AWS::ElastiCache::CacheCluster"
         }
         Type: string
@@ -54778,7 +55693,10 @@ export namespace Cf {
         TriggerConfigurations?: DeploymentGroupTriggerConfig[]
       }
       export class DeploymentGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CodeDeploy::DeploymentGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::CodeDeploy::DeploymentGroup"
         }
         Type: string
@@ -54988,7 +55906,10 @@ export namespace Cf {
         MinimumHealthyHosts?: DeploymentConfigMinimumHealthyHosts
       }
       export class DeploymentConfig implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CodeDeploy::DeploymentConfig"`)
+         */
+        static get TypeName(): string {
           return "AWS::CodeDeploy::DeploymentConfig"
         }
         Type: string
@@ -55062,7 +55983,10 @@ export namespace Cf {
         ComputePlatform?: string
       }
       export class Application implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CodeDeploy::Application"`)
+         */
+        static get TypeName(): string {
           return "AWS::CodeDeploy::Application"
         }
         Type: string
@@ -55621,7 +56545,10 @@ export namespace Cf {
         Filter: ReceiptFilterFilter
       }
       export class ReceiptFilter implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SES::ReceiptFilter"`)
+         */
+        static get TypeName(): string {
           return "AWS::SES::ReceiptFilter"
         }
         Type: string
@@ -55712,7 +56639,10 @@ export namespace Cf {
         RuleSetName: string
       }
       export class ReceiptRule implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SES::ReceiptRule"`)
+         */
+        static get TypeName(): string {
           return "AWS::SES::ReceiptRule"
         }
         Type: string
@@ -55850,7 +56780,10 @@ export namespace Cf {
         EventDestination: ConfigurationSetEventDestinationEventDestination
       }
       export class ConfigurationSetEventDestination implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SES::ConfigurationSetEventDestination"`)
+         */
+        static get TypeName(): string {
           return "AWS::SES::ConfigurationSetEventDestination"
         }
         Type: string
@@ -55939,7 +56872,10 @@ export namespace Cf {
         Template?: TemplateTemplate
       }
       export class Template implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SES::Template"`)
+         */
+        static get TypeName(): string {
           return "AWS::SES::Template"
         }
         Type: string
@@ -56004,7 +56940,10 @@ export namespace Cf {
         Name?: string
       }
       export class ConfigurationSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SES::ConfigurationSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::SES::ConfigurationSet"
         }
         Type: string
@@ -56061,7 +57000,10 @@ export namespace Cf {
         RuleSetName?: string
       }
       export class ReceiptRuleSet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SES::ReceiptRuleSet"`)
+         */
+        static get TypeName(): string {
           return "AWS::SES::ReceiptRuleSet"
         }
         Type: string
@@ -56241,7 +57183,10 @@ export namespace Cf {
         RotationRules?: RotationScheduleRotationRules
       }
       export class RotationSchedule implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SecretsManager::RotationSchedule"`)
+         */
+        static get TypeName(): string {
           return "AWS::SecretsManager::RotationSchedule"
         }
         Type: string
@@ -56351,7 +57296,10 @@ export namespace Cf {
         Name?: string
       }
       export class Secret implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SecretsManager::Secret"`)
+         */
+        static get TypeName(): string {
           return "AWS::SecretsManager::Secret"
         }
         Type: string
@@ -56425,7 +57373,10 @@ export namespace Cf {
         ResourcePolicy: object
       }
       export class ResourcePolicy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SecretsManager::ResourcePolicy"`)
+         */
+        static get TypeName(): string {
           return "AWS::SecretsManager::ResourcePolicy"
         }
         Type: string
@@ -56500,7 +57451,10 @@ export namespace Cf {
         TargetId: string
       }
       export class SecretTargetAttachment implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SecretsManager::SecretTargetAttachment"`)
+         */
+        static get TypeName(): string {
           return "AWS::SecretsManager::SecretTargetAttachment"
         }
         Type: string
@@ -57180,7 +58134,10 @@ export namespace Cf {
         Cache?: ProjectProjectCache
       }
       export class Project implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CodeBuild::Project"`)
+         */
+        static get TypeName(): string {
           return "AWS::CodeBuild::Project"
         }
         Type: string
@@ -57644,7 +58601,10 @@ export namespace Cf {
         Budget: BudgetBudgetData
       }
       export class Budget implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Budgets::Budget"`)
+         */
+        static get TypeName(): string {
           return "AWS::Budgets::Budget"
         }
         Type: string
@@ -57788,7 +58748,10 @@ export namespace Cf {
         SubnetIds: string[]
       }
       export class SubnetGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DAX::SubnetGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::DAX::SubnetGroup"
         }
         Type: string
@@ -57863,7 +58826,10 @@ export namespace Cf {
         ParameterGroupName?: string
       }
       export class ParameterGroup implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DAX::ParameterGroup"`)
+         */
+        static get TypeName(): string {
           return "AWS::DAX::ParameterGroup"
         }
         Type: string
@@ -58028,7 +58994,10 @@ export namespace Cf {
         Tags?: object
       }
       export class Cluster implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DAX::Cluster"`)
+         */
+        static get TypeName(): string {
           return "AWS::DAX::Cluster"
         }
         Type: string
@@ -58281,7 +59250,10 @@ export namespace Cf {
         WindowsConfiguration?: FileSystemWindowsConfiguration
       }
       export class FileSystem implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::FSx::FileSystem"`)
+         */
+        static get TypeName(): string {
           return "AWS::FSx::FileSystem"
         }
         Type: string
@@ -58556,7 +59528,10 @@ export namespace Cf {
         PipelineTags?: PipelinePipelineTag[]
       }
       export class Pipeline implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DataPipeline::Pipeline"`)
+         */
+        static get TypeName(): string {
           return "AWS::DataPipeline::Pipeline"
         }
         Type: string
@@ -58748,7 +59723,10 @@ export namespace Cf {
         Name?: string
       }
       export class ResolverRule implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Route53Resolver::ResolverRule"`)
+         */
+        static get TypeName(): string {
           return "AWS::Route53Resolver::ResolverRule"
         }
         Type: string
@@ -58831,7 +59809,10 @@ export namespace Cf {
         Name?: string
       }
       export class ResolverRuleAssociation implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Route53Resolver::ResolverRuleAssociation"`)
+         */
+        static get TypeName(): string {
           return "AWS::Route53Resolver::ResolverRuleAssociation"
         }
         Type: string
@@ -58924,7 +59905,10 @@ export namespace Cf {
         Name?: string
       }
       export class ResolverEndpoint implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Route53Resolver::ResolverEndpoint"`)
+         */
+        static get TypeName(): string {
           return "AWS::Route53Resolver::ResolverEndpoint"
         }
         Type: string
@@ -59148,7 +60132,10 @@ export namespace Cf {
         TrailName?: string
       }
       export class Trail implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudTrail::Trail"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudTrail::Trail"
         }
         Type: string
@@ -59415,7 +60402,10 @@ export namespace Cf {
         Name?: string
       }
       export class SimulationApplication implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::SimulationApplication"`)
+         */
+        static get TypeName(): string {
           return "AWS::RoboMaker::SimulationApplication"
         }
         Type: string
@@ -59513,7 +60503,10 @@ export namespace Cf {
         Application: string
       }
       export class SimulationApplicationVersion implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::SimulationApplicationVersion"`)
+         */
+        static get TypeName(): string {
           return "AWS::RoboMaker::SimulationApplicationVersion"
         }
         Type: string
@@ -59579,7 +60572,10 @@ export namespace Cf {
         Application: string
       }
       export class RobotApplicationVersion implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::RobotApplicationVersion"`)
+         */
+        static get TypeName(): string {
           return "AWS::RoboMaker::RobotApplicationVersion"
         }
         Type: string
@@ -59672,7 +60668,10 @@ export namespace Cf {
         Name?: string
       }
       export class RobotApplication implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::RobotApplication"`)
+         */
+        static get TypeName(): string {
           return "AWS::RoboMaker::RobotApplication"
         }
         Type: string
@@ -59781,7 +60780,10 @@ export namespace Cf {
         Name?: string
       }
       export class Robot implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::Robot"`)
+         */
+        static get TypeName(): string {
           return "AWS::RoboMaker::Robot"
         }
         Type: string
@@ -59847,7 +60849,10 @@ export namespace Cf {
         Name?: string
       }
       export class Fleet implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::RoboMaker::Fleet"`)
+         */
+        static get TypeName(): string {
           return "AWS::RoboMaker::Fleet"
         }
         Type: string
@@ -59924,7 +60929,10 @@ export namespace Cf {
         Timeout?: string
       }
       export class WaitCondition implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::WaitCondition"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudFormation::WaitCondition"
         }
         Type: string
@@ -60017,7 +61025,10 @@ export namespace Cf {
         TimeoutInMinutes?: number
       }
       export class Stack implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::Stack"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudFormation::Stack"
         }
         Type: string
@@ -60065,7 +61076,10 @@ export namespace Cf {
       export interface WaitConditionHandleProperties {
       }
       export class WaitConditionHandle implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::WaitConditionHandle"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudFormation::WaitConditionHandle"
         }
         Type: string
@@ -60158,7 +61172,10 @@ export namespace Cf {
         Name: string
       }
       export class Macro implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::Macro"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudFormation::Macro"
         }
         Type: string
@@ -60215,7 +61232,10 @@ export namespace Cf {
         ServiceToken: string
       }
       export class CustomResource implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CloudFormation::CustomResource"`)
+         */
+        static get TypeName(): string {
           return "AWS::CloudFormation::CustomResource"
         }
         Type: string
@@ -60348,7 +61368,10 @@ export namespace Cf {
         Name?: string
       }
       export class EnvironmentEC2 implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Cloud9::EnvironmentEC2"`)
+         */
+        static get TypeName(): string {
           return "AWS::Cloud9::EnvironmentEC2"
         }
         Type: string
@@ -60522,7 +61545,10 @@ export namespace Cf {
         ServiceId: string
       }
       export class Instance implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::Instance"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceDiscovery::Instance"
         }
         Type: string
@@ -60624,7 +61650,10 @@ export namespace Cf {
         Name?: string
       }
       export class Service implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::Service"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceDiscovery::Service"
         }
         Type: string
@@ -60722,7 +61751,10 @@ export namespace Cf {
         Name: string
       }
       export class HttpNamespace implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::HttpNamespace"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceDiscovery::HttpNamespace"
         }
         Type: string
@@ -60797,7 +61829,10 @@ export namespace Cf {
         Name: string
       }
       export class PrivateDnsNamespace implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::PrivateDnsNamespace"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceDiscovery::PrivateDnsNamespace"
         }
         Type: string
@@ -60863,7 +61898,10 @@ export namespace Cf {
         Name: string
       }
       export class PublicDnsNamespace implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ServiceDiscovery::PublicDnsNamespace"`)
+         */
+        static get TypeName(): string {
           return "AWS::ServiceDiscovery::PublicDnsNamespace"
         }
         Type: string
@@ -61763,7 +62801,10 @@ export namespace Cf {
         Output: ApplicationOutputOutput
       }
       export class ApplicationOutput implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalyticsV2::ApplicationOutput"`)
+         */
+        static get TypeName(): string {
           return "AWS::KinesisAnalyticsV2::ApplicationOutput"
         }
         Type: string
@@ -61869,7 +62910,10 @@ export namespace Cf {
         CloudWatchLoggingOption: ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption
       }
       export class ApplicationCloudWatchLoggingOption implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption"`)
+         */
+        static get TypeName(): string {
           return "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption"
         }
         Type: string
@@ -61943,7 +62987,10 @@ export namespace Cf {
         ReferenceDataSource: ApplicationReferenceDataSourceReferenceDataSource
       }
       export class ApplicationReferenceDataSource implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource"`)
+         */
+        static get TypeName(): string {
           return "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource"
         }
         Type: string
@@ -62100,7 +63147,10 @@ export namespace Cf {
         ServiceExecutionRole: string
       }
       export class Application implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KinesisAnalyticsV2::Application"`)
+         */
+        static get TypeName(): string {
           return "AWS::KinesisAnalyticsV2::Application"
         }
         Type: string
@@ -62700,7 +63750,10 @@ export namespace Cf {
         TargetTrackingScalingPolicyConfiguration?: ScalingPolicyTargetTrackingScalingPolicyConfiguration
       }
       export class ScalingPolicy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApplicationAutoScaling::ScalingPolicy"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApplicationAutoScaling::ScalingPolicy"
         }
         Type: string
@@ -62859,7 +63912,10 @@ export namespace Cf {
         ServiceNamespace: string
       }
       export class ScalableTarget implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ApplicationAutoScaling::ScalableTarget"`)
+         */
+        static get TypeName(): string {
           return "AWS::ApplicationAutoScaling::ScalableTarget"
         }
         Type: string
@@ -62999,7 +64055,10 @@ export namespace Cf {
         RepositoryDescription?: string
       }
       export class Repository implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::CodeCommit::Repository"`)
+         */
+        static get TypeName(): string {
           return "AWS::CodeCommit::Repository"
         }
         Type: string
@@ -64253,7 +65312,10 @@ export namespace Cf {
         WebsiteConfiguration?: BucketWebsiteConfiguration
       }
       export class Bucket implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::S3::Bucket"`)
+         */
+        static get TypeName(): string {
           return "AWS::S3::Bucket"
         }
         Type: string
@@ -64639,7 +65701,10 @@ export namespace Cf {
         PolicyDocument: object
       }
       export class BucketPolicy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::S3::BucketPolicy"`)
+         */
+        static get TypeName(): string {
           return "AWS::S3::BucketPolicy"
         }
         Type: string
@@ -65407,7 +66472,10 @@ export namespace Cf {
         SplunkDestinationConfiguration?: DeliveryStreamSplunkDestinationConfiguration
       }
       export class DeliveryStream implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::KinesisFirehose::DeliveryStream"`)
+         */
+        static get TypeName(): string {
           return "AWS::KinesisFirehose::DeliveryStream"
         }
         Type: string
@@ -65745,7 +66813,10 @@ export namespace Cf {
         PolicyDetails?: LifecyclePolicyPolicyDetails
       }
       export class LifecyclePolicy implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DLM::LifecyclePolicy"`)
+         */
+        static get TypeName(): string {
           return "AWS::DLM::LifecyclePolicy"
         }
         Type: string
@@ -65836,7 +66907,10 @@ export namespace Cf {
         Description?: string
       }
       export class Domain implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::SDB::Domain"`)
+         */
+        static get TypeName(): string {
           return "AWS::SDB::Domain"
         }
         Type: string
@@ -65933,7 +67007,10 @@ export namespace Cf {
         RepositoryPolicyText?: object
       }
       export class Repository implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::ECR::Repository"`)
+         */
+        static get TypeName(): string {
           return "AWS::ECR::Repository"
         }
         Type: string
@@ -66299,7 +67376,10 @@ export namespace Cf {
         TimeToLiveSpecification?: TableTimeToLiveSpecification
       }
       export class Table implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::DynamoDB::Table"`)
+         */
+        static get TypeName(): string {
           return "AWS::DynamoDB::Table"
         }
         Type: string
@@ -66465,7 +67545,10 @@ export namespace Cf {
         Name?: string
       }
       export class NamedQuery implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"AWS::Athena::NamedQuery"`)
+         */
+        static get TypeName(): string {
           return "AWS::Athena::NamedQuery"
         }
         Type: string
@@ -66631,7 +67714,10 @@ export namespace Cf {
         SkillPackage: SkillSkillPackage
       }
       export class Skill implements LibcfResource {
-        static get TypeName() {
+        /**
+         * Returns the resource type name (`"Alexa::ASK::Skill"`)
+         */
+        static get TypeName(): string {
           return "Alexa::ASK::Skill"
         }
         Type: string

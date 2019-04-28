@@ -46,7 +46,7 @@ export class ResourceType {
 
         return [
             ...this.generatePropertiesInterface(),
-            `export class ${this.parsedName.namespace[this.parsedName.namespace.length - 1]} implements ${TsGenerator.CfResourceInterfaceAlias} {`,
+            `export class ${this.getClassName()} implements ${TsGenerator.CfResourceInterfaceAlias} {`,
             ...innerCode,
             '}'
         ]
@@ -109,10 +109,16 @@ export class ResourceType {
 
     generateTypeNameStaticGetter() {
         return [
-            `static get TypeName() {`,
+            `/**`,
+            ` * Returns the resource type name (\`"${this.parsedName.fullname}"\`)`,
+            ` */`,
+            `static get TypeName(): string {`,
             `  return "${this.parsedName.fullname}"`,
             `}`
         ]
     }
 
+    getClassName() {
+        return this.parsedName.namespace[this.parsedName.namespace.length - 1]
+    }
 }
