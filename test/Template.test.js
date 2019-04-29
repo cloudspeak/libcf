@@ -76,39 +76,58 @@ test('Simple resource', () => {
 })
 
 
-// test('AWS Example Template', () => {
-//     let libTemplate = json(new cf.Template({
-
-//     }))
-//     let expected = norm(`{
-//         "AWSTemplateFormatVersion" : "2010-09-09",
-//         "Description" : "AWS CloudFormation Sample Template",
-//         "Resources" : {
-//           "S3Bucket" : {
-//             "Type" : "AWS::S3::Bucket",
-//             "Properties" : {
-//               "AccessControl" : "PublicRead",
-//               "WebsiteConfiguration" : {
-//                 "IndexDocument" : "index.html",
-//                 "ErrorDocument" : "error.html"
-//                }
-//             },
-//             "DeletionPolicy" : "Retain"
-//           }
-//         },
-//         "Outputs" : {
-//           "WebsiteURL" : {
-//             "Value" : { "Fn::GetAtt" : [ "S3Bucket", "WebsiteURL" ] },
-//             "Description" : "URL for website hosted on S3"
-//           },
-//           "S3BucketSecureURL" : {
-//             "Value" : { "Fn::Join" : [ "", [ "https://", { "Fn::GetAtt" : [ "S3Bucket", "DomainName" ] } ] ] },
-//             "Description" : "Name of S3 bucket to hold website content"
-//           }
-//         }
-//       }`)
-//     expect(libTemplate).toBe(expected)
-// })
+test('AWS Example Template', () => {
+    let libTemplate = norm(new Template({
+        S3Bucket: new Cf.AWS.S3.Bucket({
+            AccessControl : "PublicRead",
+            WebsiteConfiguration : {
+                IndexDocument : "index.html",
+                ErrorDocument : "error.html"
+            }
+        })
+        .setDeletionPolicy("Retain")
+    })
+    .setDescription("AWS CloudFormation Sample Template")
+    .setOutputs({
+        "WebsiteURL" : {
+          "Value" : { "Fn::GetAtt" : [ "S3Bucket", "WebsiteURL" ] },
+          "Description" : "URL for website hosted on S3"
+        },
+        "S3BucketSecureURL" : {
+          "Value" : { "Fn::Join" : [ "", [ "https://", { "Fn::GetAtt" : [ "S3Bucket", "DomainName" ] } ] ] },
+          "Description" : "Name of S3 bucket to hold website content"
+        }
+      })
+    )
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "2010-09-09",
+        "Description" : "AWS CloudFormation Sample Template",
+        "Resources" : {
+          "S3Bucket" : {
+            "Type" : "AWS::S3::Bucket",
+            "Properties" : {
+              "AccessControl" : "PublicRead",
+              "WebsiteConfiguration" : {
+                "IndexDocument" : "index.html",
+                "ErrorDocument" : "error.html"
+               }
+            },
+            "DeletionPolicy" : "Retain"
+          }
+        },
+        "Outputs" : {
+          "WebsiteURL" : {
+            "Value" : { "Fn::GetAtt" : [ "S3Bucket", "WebsiteURL" ] },
+            "Description" : "URL for website hosted on S3"
+          },
+          "S3BucketSecureURL" : {
+            "Value" : { "Fn::Join" : [ "", [ "https://", { "Fn::GetAtt" : [ "S3Bucket", "DomainName" ] } ] ] },
+            "Description" : "Name of S3 bucket to hold website content"
+          }
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
 
 
 test('When setResource is called for a nonexistent key then it is added', () => {
