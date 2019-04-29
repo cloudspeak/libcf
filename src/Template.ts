@@ -40,7 +40,7 @@ export class Template {
     Resources: {[key: string]: Resource}
     Metadata: any
     Parameters: any
-    Mappings: any
+    Mappings: {[key: string]: any}
     Conditions: {[key: string]: boolean}
     Transform: string[]
     Outputs: {[key: string]: Output}
@@ -203,10 +203,10 @@ export class Template {
      * Builder pattern method which sets the template mappings.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html
-     * @param {object} mappings Template mappings
-     * @returns {Template} This template
+     * @param mappings Template mappings
+     * @returns This template
      */
-    setMappings(mappings: any): Template {
+    setMappings(mappings: {[key: string]: any}): Template {
         this.Mappings = mappings;
         return this;
     }

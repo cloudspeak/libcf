@@ -31,7 +31,6 @@ test('Non-resource attributes', () => {
     let libTemplate = norm(new Template({})
             .setVersion("myver")
             .setDescription("mydescription")
-            .setMappings({ "map": "map1" })
             .setMetadata({ "met": "met1" })
             .setParameters({ "par": "par1" })
         )
@@ -40,7 +39,6 @@ test('Non-resource attributes', () => {
         "AWSTemplateFormatVersion" : "myver",
         "Description": "mydescription",
         "Resources": {},
-        "Mappings": { "map": "map1" },
         "Metadata": { "met": "met1" },
         "Parameters": { "par": "par1" }
     }`)
@@ -277,6 +275,34 @@ test('Conditions attribute', () => {
         "Resources": {},
         "Conditions": {
             "CreateProdResources" : {"Fn::Equals" : [{"Ref" : "EnvType"}, "prod"]}
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Mappings attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setMappings({
+                "RegionAndInstanceTypeToAMIID" : {
+                    "us-east-1": {
+                      "test": "ami-8ff710e2",
+                      "prod": "ami-f5f41398"
+                    },
+                }
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Mappings": {
+            "RegionAndInstanceTypeToAMIID": {
+                "us-east-1": {
+                  "test": "ami-8ff710e2",
+                  "prod": "ami-f5f41398"
+                }
+            }
         }
     }`)
     assert.deepStrictEqual(libTemplate, expected)
