@@ -34,7 +34,6 @@ test('Non-resource attributes', () => {
             .setConditions({ "cond": "cond1" })
             .setMappings({ "map": "map1" })
             .setMetadata({ "met": "met1" })
-            .setOutputs({ "out": "out1" })
             .setParameters({ "par": "par1" })
             .setTransform({ "tran": "tran1" })
         )
@@ -46,7 +45,6 @@ test('Non-resource attributes', () => {
         "Conditions": { "cond": "cond1" },
         "Mappings": { "map": "map1" },
         "Metadata": { "met": "met1" },
-        "Outputs": { "out": "out1" },
         "Parameters": { "par": "par1" },
         "Transform": { "tran": "tran1" }
     }`)
@@ -224,6 +222,36 @@ test('When addResources is called for multiple nonexistent keys and one existing
     expect(libTemplate.Resources["MyResource1"]["Properties"]["BucketName"]).toBe("MyBucket1a")
     expect(libTemplate.Resources["MyResource2"]).not.toBeDefined()
     expect(libTemplate.Resources["MyResource3"]).not.toBeDefined()
+})
+
+test('Outputs attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setOutputs({
+                myOutput: {
+                    Description: "myDescription",
+                    Export: {
+                        Name: "myexportname"
+                    },
+                    Value: "myvalue"
+                }
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Outputs": {
+            "myOutput": {
+                "Description": "myDescription",
+                "Export": {
+                    "Name": "myexportname"
+                },
+                "Value": "myvalue"
+            }
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
 })
 
 test('When json is called, valid JSON is returned', () => {

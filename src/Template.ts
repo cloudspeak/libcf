@@ -3,6 +3,7 @@
  */
 
 import { Resource } from "./Resource";
+import { Output } from "./Output";
 
  /**
   * Represents a CloudFormation template, as specified by the CloudFormation template
@@ -42,7 +43,7 @@ export class Template {
     Mappings: any
     Conditions: any
     Transform: any
-    Outputs: any
+    Outputs: {[key: string]: Output}
 
     /**
      * The default version for CloudFormation templates.
@@ -238,10 +239,10 @@ export class Template {
      * Builder pattern method which sets the template outputs.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
-     * @param {object} outputs Template outputs
-     * @returns {Template} This template
+     * @param outputs Template outputs
+     * @returns This template
      */
-    setOutputs(outputs: any): Template {
+    setOutputs(outputs: {[key: string]: Output}): Template {
         this.Outputs = outputs;
         return this;
     }
