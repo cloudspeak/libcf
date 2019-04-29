@@ -1,6 +1,6 @@
 //@ts-check
 
-const { Template, Cf } = require('..')
+const { Template, Cf, Cast } = require('..')
 const assert = require('assert');
 
 test('Empty Template', () => {
@@ -21,34 +21,6 @@ test('When clearVersion is called, version is not present', () => {
     
     let expected = JSON.parse(`{
         "Resources": {}
-    }`)
-    assert.deepStrictEqual(libTemplate, expected)
-})
-
-
-test('Non-resource attributes', () => {
-
-    let libTemplate = norm(new Template({})
-            .setVersion("myver")
-            .setDescription("mydescription")
-            .setConditions({ "cond": "cond1" })
-            .setMappings({ "map": "map1" })
-            .setMetadata({ "met": "met1" })
-            .setOutputs({ "out": "out1" })
-            .setParameters({ "par": "par1" })
-            .setTransform({ "tran": "tran1" })
-        )
-    
-    let expected = JSON.parse(`{
-        "AWSTemplateFormatVersion" : "myver",
-        "Description": "mydescription",
-        "Resources": {},
-        "Conditions": { "cond": "cond1" },
-        "Mappings": { "map": "map1" },
-        "Metadata": { "met": "met1" },
-        "Outputs": { "out": "out1" },
-        "Parameters": { "par": "par1" },
-        "Transform": { "tran": "tran1" }
     }`)
     assert.deepStrictEqual(libTemplate, expected)
 })
@@ -76,39 +48,58 @@ test('Simple resource', () => {
 })
 
 
-// test('AWS Example Template', () => {
-//     let libTemplate = json(new cf.Template({
-
-//     }))
-//     let expected = norm(`{
-//         "AWSTemplateFormatVersion" : "2010-09-09",
-//         "Description" : "AWS CloudFormation Sample Template",
-//         "Resources" : {
-//           "S3Bucket" : {
-//             "Type" : "AWS::S3::Bucket",
-//             "Properties" : {
-//               "AccessControl" : "PublicRead",
-//               "WebsiteConfiguration" : {
-//                 "IndexDocument" : "index.html",
-//                 "ErrorDocument" : "error.html"
-//                }
-//             },
-//             "DeletionPolicy" : "Retain"
-//           }
-//         },
-//         "Outputs" : {
-//           "WebsiteURL" : {
-//             "Value" : { "Fn::GetAtt" : [ "S3Bucket", "WebsiteURL" ] },
-//             "Description" : "URL for website hosted on S3"
-//           },
-//           "S3BucketSecureURL" : {
-//             "Value" : { "Fn::Join" : [ "", [ "https://", { "Fn::GetAtt" : [ "S3Bucket", "DomainName" ] } ] ] },
-//             "Description" : "Name of S3 bucket to hold website content"
-//           }
-//         }
-//       }`)
-//     expect(libTemplate).toBe(expected)
-// })
+test('AWS Example Template', () => {
+    let libTemplate = norm(new Template({
+        S3Bucket: new Cf.AWS.S3.Bucket({
+            AccessControl : "PublicRead",
+            WebsiteConfiguration : {
+                IndexDocument : "index.html",
+                ErrorDocument : "error.html"
+            }
+        })
+        .setDeletionPolicy("Retain")
+    })
+    .setDescription("AWS CloudFormation Sample Template")
+    .setOutputs({
+        "WebsiteURL" : {
+          "Value" : { "Fn::GetAtt" : [ "S3Bucket", "WebsiteURL" ] },
+          "Description" : "URL for website hosted on S3"
+        },
+        "S3BucketSecureURL" : {
+          "Value" : { "Fn::Join" : [ "", [ "https://", { "Fn::GetAtt" : [ "S3Bucket", "DomainName" ] } ] ] },
+          "Description" : "Name of S3 bucket to hold website content"
+        }
+      })
+    )
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "2010-09-09",
+        "Description" : "AWS CloudFormation Sample Template",
+        "Resources" : {
+          "S3Bucket" : {
+            "Type" : "AWS::S3::Bucket",
+            "Properties" : {
+              "AccessControl" : "PublicRead",
+              "WebsiteConfiguration" : {
+                "IndexDocument" : "index.html",
+                "ErrorDocument" : "error.html"
+               }
+            },
+            "DeletionPolicy" : "Retain"
+          }
+        },
+        "Outputs" : {
+          "WebsiteURL" : {
+            "Value" : { "Fn::GetAtt" : [ "S3Bucket", "WebsiteURL" ] },
+            "Description" : "URL for website hosted on S3"
+          },
+          "S3BucketSecureURL" : {
+            "Value" : { "Fn::Join" : [ "", [ "https://", { "Fn::GetAtt" : [ "S3Bucket", "DomainName" ] } ] ] },
+            "Description" : "Name of S3 bucket to hold website content"
+          }
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
 
 
 test('When setResource is called for a nonexistent key then it is added', () => {
@@ -205,6 +196,170 @@ test('When addResources is called for multiple nonexistent keys and one existing
     expect(libTemplate.Resources["MyResource1"]["Properties"]["BucketName"]).toBe("MyBucket1a")
     expect(libTemplate.Resources["MyResource2"]).not.toBeDefined()
     expect(libTemplate.Resources["MyResource3"]).not.toBeDefined()
+})
+
+test('Outputs attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setOutputs({
+                myOutput: {
+                    Description: "myDescription",
+                    Export: {
+                        Name: "myexportname"
+                    },
+                    Value: "myvalue"
+                }
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Outputs": {
+            "myOutput": {
+                "Description": "myDescription",
+                "Export": {
+                    "Name": "myexportname"
+                },
+                "Value": "myvalue"
+            }
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Transform attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setTransform(["mytrans1", "mytrans2"])
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Transform": ["mytrans1", "mytrans2"]
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Conditions attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setConditions({
+                "CreateProdResources" : Cast({"Fn::Equals" : [{"Ref" : "EnvType"}, "prod"]})
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Conditions": {
+            "CreateProdResources" : {"Fn::Equals" : [{"Ref" : "EnvType"}, "prod"]}
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Mappings attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setMappings({
+                "RegionAndInstanceTypeToAMIID" : {
+                    "us-east-1": {
+                      "test": "ami-8ff710e2",
+                      "prod": "ami-f5f41398"
+                    },
+                }
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Mappings": {
+            "RegionAndInstanceTypeToAMIID": {
+                "us-east-1": {
+                  "test": "ami-8ff710e2",
+                  "prod": "ami-f5f41398"
+                }
+            }
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Parameters attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setParameters({
+                "MyParam": {
+                    AllowedPattern: "myAllowedPattern",
+                    AllowedValues: [ "myAllowedValue1", "myAllowedValue2" ],
+                    ConstraintDescription: "myConstraintDesc",
+                    Default: "myDefault",
+                    Description: "myDesc",
+                    MaxLength: 123,
+                    MaxValue: 234,
+                    MinLength: 345,
+                    MinValue: 456,
+                    NoEcho: true,
+                    Type: "myType"
+                }
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Parameters": {
+            "MyParam": {
+                "AllowedPattern": "myAllowedPattern",
+                "AllowedValues": [ "myAllowedValue1", "myAllowedValue2" ],
+                "ConstraintDescription": "myConstraintDesc",
+                "Default": "myDefault",
+                "Description": "myDesc",
+                "MaxLength": 123,
+                "MaxValue": 234,
+                "MinLength": 345,
+                "MinValue": 456,
+                "NoEcho": true,
+                "Type": "myType"
+            }
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Metadata attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setMetadata({
+                "SomeData": "SomeValue"
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Metadata": {
+            "SomeData": "SomeValue"
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Description attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setDescription("myDescription")
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Description": "myDescription"
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
 })
 
 test('When json is called, valid JSON is returned', () => {

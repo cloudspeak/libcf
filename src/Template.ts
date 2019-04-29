@@ -3,6 +3,8 @@
  */
 
 import { Resource } from "./Resource";
+import { Output } from "./Output";
+import { Parameter } from "./Parameter";
 
  /**
   * Represents a CloudFormation template, as specified by the CloudFormation template
@@ -38,11 +40,11 @@ export class Template {
     Description: string
     Resources: {[key: string]: Resource}
     Metadata: any
-    Parameters: any
-    Mappings: any
-    Conditions: any
-    Transform: any
-    Outputs: any
+    Parameters: {[key: string]: Parameter}
+    Mappings: {[key: string]: any}
+    Conditions: {[key: string]: boolean}
+    Transform: string[]
+    Outputs: {[key: string]: Output}
 
     /**
      * The default version for CloudFormation templates.
@@ -178,8 +180,8 @@ export class Template {
      * Builder pattern method which sets the template metadata.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
-     * @param {object} metadata Template metadata
-     * @returns {Template} This template
+     * @param metadata Template metadata
+     * @returns This template
      */
     setMetadata(metadata: any): Template {
         this.Metadata = metadata;
@@ -190,10 +192,10 @@ export class Template {
      * Builder pattern method which sets the template parameters.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
-     * @param {object} parameters Template parameters
-     * @returns {Template} This template
+     * @param parameters Template parameters
+     * @returns This template
      */
-    setParameters(parameters: any): Template {
+    setParameters(parameters: {[key: string]: Parameter}): Template {
         this.Parameters = parameters;
         return this;
     }
@@ -202,10 +204,10 @@ export class Template {
      * Builder pattern method which sets the template mappings.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html
-     * @param {object} mappings Template mappings
-     * @returns {Template} This template
+     * @param mappings Template mappings
+     * @returns This template
      */
-    setMappings(mappings: any): Template {
+    setMappings(mappings: {[key: string]: any}): Template {
         this.Mappings = mappings;
         return this;
     }
@@ -214,10 +216,10 @@ export class Template {
      * Builder pattern method which sets the template conditions.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
-     * @param {object} conditions Template conditions
-     * @returns {Template} This template
+     * @param conditions Template conditions
+     * @returns This template
      */
-    setConditions(conditions: any): Template {
+    setConditions(conditions: {[key: string]: boolean}): Template {
         this.Conditions = conditions;
         return this;
     }
@@ -226,10 +228,10 @@ export class Template {
      * Builder pattern method which sets the template transforms.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
-     * @param {object} transforms Template transforms
-     * @returns {Template} This template
+     * @param transforms Template transforms
+     * @returns This template
      */
-    setTransform(transforms: any): Template {
+    setTransform(transforms: string[]): Template {
         this.Transform = transforms;
         return this;
     }
@@ -238,10 +240,10 @@ export class Template {
      * Builder pattern method which sets the template outputs.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
-     * @param {object} outputs Template outputs
-     * @returns {Template} This template
+     * @param outputs Template outputs
+     * @returns This template
      */
-    setOutputs(outputs: any): Template {
+    setOutputs(outputs: {[key: string]: Output}): Template {
         this.Outputs = outputs;
         return this;
     }
