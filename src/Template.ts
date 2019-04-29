@@ -41,7 +41,7 @@ export class Template {
     Metadata: any
     Parameters: any
     Mappings: any
-    Conditions: any
+    Conditions: {[key: string]: boolean}
     Transform: string[]
     Outputs: {[key: string]: Output}
 
@@ -215,10 +215,10 @@ export class Template {
      * Builder pattern method which sets the template conditions.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
-     * @param {object} conditions Template conditions
-     * @returns {Template} This template
+     * @param conditions Template conditions
+     * @returns This template
      */
-    setConditions(conditions: any): Template {
+    setConditions(conditions: {[key: string]: boolean}): Template {
         this.Conditions = conditions;
         return this;
     }

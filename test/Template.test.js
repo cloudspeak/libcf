@@ -1,6 +1,6 @@
 //@ts-check
 
-const { Template, Cf } = require('..')
+const { Template, Cf, Cast } = require('..')
 const assert = require('assert');
 
 test('Empty Template', () => {
@@ -31,7 +31,6 @@ test('Non-resource attributes', () => {
     let libTemplate = norm(new Template({})
             .setVersion("myver")
             .setDescription("mydescription")
-            .setConditions({ "cond": "cond1" })
             .setMappings({ "map": "map1" })
             .setMetadata({ "met": "met1" })
             .setParameters({ "par": "par1" })
@@ -41,7 +40,6 @@ test('Non-resource attributes', () => {
         "AWSTemplateFormatVersion" : "myver",
         "Description": "mydescription",
         "Resources": {},
-        "Conditions": { "cond": "cond1" },
         "Mappings": { "map": "map1" },
         "Metadata": { "met": "met1" },
         "Parameters": { "par": "par1" }
@@ -262,6 +260,24 @@ test('Transform attribute', () => {
         "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
         "Resources": {},
         "Transform": ["mytrans1", "mytrans2"]
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Conditions attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setConditions({
+                "CreateProdResources" : Cast({"Fn::Equals" : [{"Ref" : "EnvType"}, "prod"]})
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Conditions": {
+            "CreateProdResources" : {"Fn::Equals" : [{"Ref" : "EnvType"}, "prod"]}
+        }
     }`)
     assert.deepStrictEqual(libTemplate, expected)
 })
