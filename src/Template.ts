@@ -4,6 +4,7 @@
 
 import { Resource } from "./Resource";
 import { Output } from "./Output";
+import { Parameter } from "./Parameter";
 
  /**
   * Represents a CloudFormation template, as specified by the CloudFormation template
@@ -39,7 +40,7 @@ export class Template {
     Description: string
     Resources: {[key: string]: Resource}
     Metadata: any
-    Parameters: any
+    Parameters: {[key: string]: Parameter}
     Mappings: {[key: string]: any}
     Conditions: {[key: string]: boolean}
     Transform: string[]
@@ -179,8 +180,8 @@ export class Template {
      * Builder pattern method which sets the template metadata.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
-     * @param {object} metadata Template metadata
-     * @returns {Template} This template
+     * @param metadata Template metadata
+     * @returns This template
      */
     setMetadata(metadata: any): Template {
         this.Metadata = metadata;
@@ -191,10 +192,10 @@ export class Template {
      * Builder pattern method which sets the template parameters.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
-     * @param {object} parameters Template parameters
-     * @returns {Template} This template
+     * @param parameters Template parameters
+     * @returns This template
      */
-    setParameters(parameters: any): Template {
+    setParameters(parameters: {[key: string]: Parameter}): Template {
         this.Parameters = parameters;
         return this;
     }
@@ -227,8 +228,8 @@ export class Template {
      * Builder pattern method which sets the template transforms.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
-     * @param {object} transforms Template transforms
-     * @returns {Template} This template
+     * @param transforms Template transforms
+     * @returns This template
      */
     setTransform(transforms: string[]): Template {
         this.Transform = transforms;

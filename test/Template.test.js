@@ -32,15 +32,13 @@ test('Non-resource attributes', () => {
             .setVersion("myver")
             .setDescription("mydescription")
             .setMetadata({ "met": "met1" })
-            .setParameters({ "par": "par1" })
         )
     
     let expected = JSON.parse(`{
         "AWSTemplateFormatVersion" : "myver",
         "Description": "mydescription",
         "Resources": {},
-        "Metadata": { "met": "met1" },
-        "Parameters": { "par": "par1" }
+        "Metadata": { "met": "met1" }
     }`)
     assert.deepStrictEqual(libTemplate, expected)
 })
@@ -302,6 +300,48 @@ test('Mappings attribute', () => {
                   "test": "ami-8ff710e2",
                   "prod": "ami-f5f41398"
                 }
+            }
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Parameters attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setParameters({
+                "MyParam": {
+                    AllowedPattern: "myAllowedPattern",
+                    AllowedValues: [ "myAllowedValue1", "myAllowedValue2" ],
+                    ConstraintDescription: "myConstraintDesc",
+                    Default: "myDefault",
+                    Description: "myDesc",
+                    MaxLength: 123,
+                    MaxValue: 234,
+                    MinLength: 345,
+                    MinValue: 456,
+                    NoEcho: true,
+                    Type: "myType"
+                }
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Parameters": {
+            "MyParam": {
+                "AllowedPattern": "myAllowedPattern",
+                "AllowedValues": [ "myAllowedValue1", "myAllowedValue2" ],
+                "ConstraintDescription": "myConstraintDesc",
+                "Default": "myDefault",
+                "Description": "myDesc",
+                "MaxLength": 123,
+                "MaxValue": 234,
+                "MinLength": 345,
+                "MinValue": 456,
+                "NoEcho": true,
+                "Type": "myType"
             }
         }
     }`)
