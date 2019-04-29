@@ -1,11 +1,13 @@
 import { ResourceType } from './ResourceType';
 import { PropertyType } from './PropertyType';
 import { RootNode } from './RootNode';
+import { OrphanedPropertyType } from './OrphanedPropertyType';
 
 export class NamespaceNode extends RootNode {
 
     resources: ResourceType[] = []
     properties: PropertyType[] = []
+    orphanedProperties: OrphanedPropertyType[] = []
 
     constructor(private name: string) {
         super()
@@ -34,10 +36,15 @@ export class NamespaceNode extends RootNode {
         }, [])
         childrenCode = childrenCode.concat(partialPropertyInterfaceCode)
 
-        let resourceCode = this.resources.reduce((array: string[], prop: ResourceType) => {
-            return array.concat(prop.generateCode())
+        let resourceCode = this.resources.reduce((array: string[], res: ResourceType) => {
+            return array.concat(res.generateCode())
         }, [])
         childrenCode = childrenCode.concat(resourceCode)
+
+        let orphanCode = this.orphanedProperties.reduce((array: string[], prop: OrphanedPropertyType) => {
+            return array.concat(prop.generateCode())
+        }, [])
+        childrenCode = childrenCode.concat(orphanCode)
 
         return [
             `export namespace ${this.name} {`,

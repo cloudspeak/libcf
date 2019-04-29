@@ -48,13 +48,13 @@ test('Resource type classes have static cast methods for partial resource proper
     })
 })
 
-// test('Orphaned property types have a cast function which returns input value', () => {
-//     expect(Cf.Tag).toBeDefined()
-//     expect(Cf.Tag({
-//         Key: "MyKey",
-//         Value: "MyValue"
-//     })).toBe({
-//         Key: "MyKey",
-//         Value: "MyValue"
-//     })
-// })
+test('Orphaned property types have a cast function which returns input value', () => {
+    expect(Cf.Tag).toBeDefined()
+    expect(Cf.Tag({
+        Key: "MyKey",
+        Value: "MyValue"
+    })).toEqual({
+        Key: "MyKey",
+        Value: "MyValue"
+    })
+})
