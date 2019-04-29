@@ -20,8 +20,22 @@ export class TsGenerator {
         return "Cf"
     }
 
+    static get PartialPropertyTypeInterfaceSuffix(): string {
+        return "Partial"
+    }
+
     static getResourceTypePropertiesInterfaceName(parsedName: TypeName) {
         return parsedName.namespace[parsedName.namespace.length - 1] + "Properties"
+    }
+    
+    static getResourceTypePartialPropertiesInterfaceName(parsedName: TypeName) {
+        return parsedName.namespace[parsedName.namespace.length - 1]
+                + "Properties" + this.PartialPropertyTypeInterfaceSuffix
+    }
+
+    static getPartialPropertyTypeInterfaceName(parsedName: TypeName) {
+        return TsGenerator.getPropertyTypeInterfaceName(parsedName)
+                + TsGenerator.PartialPropertyTypeInterfaceSuffix
     }
 
     static getPropertyTypeInterfaceName(parsedName: TypeName) {
@@ -36,13 +50,13 @@ export class TsGenerator {
         }
     }
     
-    static generatePropertyList(parsedName: TypeName, properties: {[key: string]: CfPropertyData}) {
+    static generatePropertyList(parsedName: TypeName, properties: {[key: string]: CfPropertyData}, markRequired = true) {
         
         let tsPropertyList = Object.keys(properties).reduce((array, propertyName) => {
             let property = properties[propertyName]
             let tsType = TsGenerator.getPropertyTsType(parsedName, property)
-            let tsFieldName = property.Required ? propertyName : `${propertyName}?`
-            let requiredString = property.Required ? "(required)" : "(optional)"
+            let tsFieldName = (property.Required && markRequired) ? propertyName : `${propertyName}?`
+            let requiredString = (property.Required && markRequired) ? "(required)" : "(optional)"
             let updateTypeComment = property.UpdateType ? [                    
                 `Update type is ${property.UpdateType}.`,
                 ``,
