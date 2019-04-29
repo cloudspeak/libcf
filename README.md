@@ -79,7 +79,25 @@ let template = new Template({
 
 ## Property types
 
-Libcf provides an interface for each CloudFormation property type.  These may be useful when, for example, re-using certain property values across different resources.  To create a property type instance, you should use the static methods which exist on each resource type class.  For example, the following code shows how to create a [DynamoDB KeySchema](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html) property and store it for re-use by multiple resources:
+Libcf provides a constructor method for each resource type's `Properties` type.  These may be useful when, for example, re-using property values across different resources.  To create a resource properties instance, you should use the static `Properties` method which exists on each resource type class.
+
+For example, the following code shows how to create two [DynamoDB tables](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html) with the same properties:
+
+```javascript
+let tableProperties = Cf.AWS.DynamoDB.Table.Properties({
+    KeySchema: [{
+        AttributeName: "UserId",
+        KeyType: "HASH"
+    }]
+})
+
+let template = new Template({
+    UsersTable: new Cf.AWS.DynamoDB.Table(tableProperties),
+    UserProfilesTable: new Cf.AWS.DynamoDB.Table(tableProperties)
+})
+```
+
+In addition, there are constructor methods for each CloudFormation property type.  For example, if we wished to change the above example so that each table had a different `TableName` value, we could just store the [KeySchema](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html) object in a variable for reuse instead:
 
 ```javascript
 let usersKeySchema = Cf.AWS.DynamoDB.Table.KeySchema({
@@ -89,15 +107,17 @@ let usersKeySchema = Cf.AWS.DynamoDB.Table.KeySchema({
 
 let template = new Template({
     UsersTable: new Cf.AWS.DynamoDB.Table({
-        KeySchema: [ usersKeySchema ]
+        KeySchema: [ usersKeySchema ],
+        TableName: "Users"
     }),
     UserProfilesTable: new Cf.AWS.DynamoDB.Table({
-        KeySchema: [ usersKeySchema ]
+        KeySchema: [ usersKeySchema ],
+        TableName: "UserProfiles"
     })
 })
 ```
 
-(Note the use of the static `Cf.AWS.DynamoDB.Table.KeySchema` method - this convenience method simply returns the input without doing anything, however it has type information attached to it, which allows the VSCode's intellisense and type checking to work).
+(Note that although they are called "constructor functions", these convenience methods simply return their input without doing anything. However they have type information attached to them, which allows VSCode's intellisense and type checking to work).
 
 ## Other resource properties
 

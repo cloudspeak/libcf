@@ -43,6 +43,8 @@ export class ResourceType {
             ...this.generateAttributeBuilder('Metadata'),
             ...this.generateAttributeBuilder('UpdatePolicy'),
             ...this.generateAttributeBuilder('UpdateReplacePolicy'),
+            ...this.generateStaticPropertiesCastFunction(),
+            ...this.generateStaticPartialPropertiesCastFunction(),
             ...propertyCastFunctions,
             ...propertyPartialCastFunctions,
             ...propertyTypeNameFunctions
@@ -50,6 +52,7 @@ export class ResourceType {
 
         return [
             ...this.generatePropertiesInterface(),
+            ...this.generatePartialPropertiesInterface(),
             `export class ${this.getClassName()} implements ${TsGenerator.CfResourceInterfaceAlias} {`,
             ...innerCode,
             '}'
@@ -69,12 +72,23 @@ export class ResourceType {
             'Type: string',
             `Properties: ${TsGenerator.getResourceTypePropertiesInterfaceName(this.parsedName)}`
         ]
-        
     }
 
     generatePropertiesInterface() {
         let tsName = TsGenerator.getResourceTypePropertiesInterfaceName(this.parsedName)
         let propertyListCode = TsGenerator.generatePropertyList(this.parsedName, this.data.Properties)
+        propertyListCode = propertyListCode.map(s => `  ${s}`)
+
+        return [
+            `export interface ${tsName} {`,
+            ...propertyListCode,
+            '}'
+        ]
+    }
+
+    generatePartialPropertiesInterface() {
+        let tsName = TsGenerator.getResourceTypePartialPropertiesInterfaceName(this.parsedName)
+        let propertyListCode = TsGenerator.generatePropertyList(this.parsedName, this.data.Properties, false)
         propertyListCode = propertyListCode.map(s => `  ${s}`)
 
         return [
@@ -111,6 +125,37 @@ export class ResourceType {
         ]
     }
 
+    generateStaticPropertiesCastFunction() {
+        return [
+            ...JsDocGenerator.generateComment([
+                `Create a new ${this.parsedName.fullname} properties object.`,
+                ``,
+                `See ${this.data.Documentation}`
+            ]),
+            `static Properties(properties: ${TsGenerator.getResourceTypePropertiesInterfaceName(this.parsedName)}) ` +
+                    `: ${TsGenerator.getResourceTypePropertiesInterfaceName(this.parsedName)} {`,
+            `  return properties;`,
+            `}`
+        ]
+    }
+
+    generateStaticPartialPropertiesCastFunction() {
+        return [
+            ...JsDocGenerator.generateComment([
+                `Create a new ${this.parsedName.fullname} partial properties object.`,
+                'Partial property objects have the same fields as full property objects, except that',
+                'all of their fields are optional.  This may be useful when capturing the value of',
+                `only some of the property type's fields without causing a type error.`,
+                ``,
+                `See ${this.data.Documentation}`
+            ]),
+            `static PropertiesPartial(properties: ${TsGenerator.getResourceTypePropertiesInterfaceName (this.parsedName)}) ` +
+                    `: ${TsGenerator.getResourceTypePartialPropertiesInterfaceName(this.parsedName)} {`,
+            `  return properties;`,
+            `}`
+        ]
+    }
+    
     generateTypeNameStaticGetter() {
         return [
             `/**`,

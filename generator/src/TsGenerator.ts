@@ -27,6 +27,11 @@ export class TsGenerator {
     static getResourceTypePropertiesInterfaceName(parsedName: TypeName) {
         return parsedName.namespace[parsedName.namespace.length - 1] + "Properties"
     }
+    
+    static getResourceTypePartialPropertiesInterfaceName(parsedName: TypeName) {
+        return parsedName.namespace[parsedName.namespace.length - 1]
+                + "Properties" + this.PartialPropertyTypeInterfaceSuffix
+    }
 
     static getPartialPropertyTypeInterfaceName(parsedName: TypeName) {
         return TsGenerator.getPropertyTypeInterfaceName(parsedName)
