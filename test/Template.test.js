@@ -35,7 +35,6 @@ test('Non-resource attributes', () => {
             .setMappings({ "map": "map1" })
             .setMetadata({ "met": "met1" })
             .setParameters({ "par": "par1" })
-            .setTransform({ "tran": "tran1" })
         )
     
     let expected = JSON.parse(`{
@@ -45,8 +44,7 @@ test('Non-resource attributes', () => {
         "Conditions": { "cond": "cond1" },
         "Mappings": { "map": "map1" },
         "Metadata": { "met": "met1" },
-        "Parameters": { "par": "par1" },
-        "Transform": { "tran": "tran1" }
+        "Parameters": { "par": "par1" }
     }`)
     assert.deepStrictEqual(libTemplate, expected)
 })
@@ -250,6 +248,20 @@ test('Outputs attribute', () => {
                 "Value": "myvalue"
             }
         }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Transform attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setTransform(["mytrans1", "mytrans2"])
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Transform": ["mytrans1", "mytrans2"]
     }`)
     assert.deepStrictEqual(libTemplate, expected)
 })

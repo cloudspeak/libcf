@@ -42,7 +42,7 @@ export class Template {
     Parameters: any
     Mappings: any
     Conditions: any
-    Transform: any
+    Transform: string[]
     Outputs: {[key: string]: Output}
 
     /**
@@ -230,7 +230,7 @@ export class Template {
      * @param {object} transforms Template transforms
      * @returns {Template} This template
      */
-    setTransform(transforms: any): Template {
+    setTransform(transforms: string[]): Template {
         this.Transform = transforms;
         return this;
     }
