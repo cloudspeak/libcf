@@ -25,24 +25,6 @@ test('When clearVersion is called, version is not present', () => {
     assert.deepStrictEqual(libTemplate, expected)
 })
 
-
-test('Non-resource attributes', () => {
-
-    let libTemplate = norm(new Template({})
-            .setVersion("myver")
-            .setDescription("mydescription")
-            .setMetadata({ "met": "met1" })
-        )
-    
-    let expected = JSON.parse(`{
-        "AWSTemplateFormatVersion" : "myver",
-        "Description": "mydescription",
-        "Resources": {},
-        "Metadata": { "met": "met1" }
-    }`)
-    assert.deepStrictEqual(libTemplate, expected)
-})
-
 test('Simple resource', () => {
 
     let libTemplate = norm(new Template({
@@ -344,6 +326,38 @@ test('Parameters attribute', () => {
                 "Type": "myType"
             }
         }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Metadata attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setMetadata({
+                "SomeData": "SomeValue"
+            })
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Metadata": {
+            "SomeData": "SomeValue"
+        }
+    }`)
+    assert.deepStrictEqual(libTemplate, expected)
+})
+
+test('Description attribute', () => {
+
+    let libTemplate = norm(new Template({})
+            .setDescription("myDescription")
+        )
+    
+    let expected = JSON.parse(`{
+        "AWSTemplateFormatVersion" : "${Template.DefaultVersion}",
+        "Resources": {},
+        "Description": "myDescription"
     }`)
     assert.deepStrictEqual(libTemplate, expected)
 })
