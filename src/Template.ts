@@ -200,6 +200,29 @@ export class Template {
         return this;
     }
     
+    
+    /**
+     * Builder pattern method which adds to the template parameters.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
+     * @param parameters Template parameters
+     * @returns This template
+     */
+    addParameters(parameters: {[key: string]: Parameter}): Template {
+        
+        let existingKeys = Object.keys(parameters).filter(k => this.Parameters.hasOwnProperty(k))
+
+        if (existingKeys.length > 0) {
+            throw new Error(`A parameter with the logical ID '${existingKeys[0]}' already exists`)
+        }
+
+        for (let key in parameters) {
+            this.Parameters[key] = parameters[key]
+        }
+        return this;
+    }
+    
+
     /**
      * Builder pattern method which sets the template mappings.
      * 
@@ -209,6 +232,28 @@ export class Template {
      */
     setMappings(mappings: {[key: string]: any}): Template {
         this.Mappings = mappings;
+        return this;
+    }
+
+    /**
+     * Builder pattern method which adds new template mappings.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html
+     * @param mappings Template mappings
+     * @returns This template
+     */
+    addMappings(mappings: {[key: string]: any}): Template {
+        
+        let existingKeys = Object.keys(mappings).filter(k => this.Mappings.hasOwnProperty(k))
+
+        if (existingKeys.length > 0) {
+            throw new Error(`A mapping with the logical ID '${existingKeys[0]}' already exists`)
+        }
+
+        for (let key in mappings) {
+            this.Mappings[key] = mappings[key]
+        }
+
         return this;
     }
     
@@ -225,6 +270,28 @@ export class Template {
     }
 
     /**
+     * Builder pattern method which adds new template conditions.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
+     * @param conditions Template conditions
+     * @returns This template
+     */
+    addConditions(conditions: {[key: string]: boolean}): Template {
+        
+        let existingKeys = Object.keys(conditions).filter(k => this.Conditions.hasOwnProperty(k))
+
+        if (existingKeys.length > 0) {
+            throw new Error(`A condition with the logical ID '${existingKeys[0]}' already exists`)
+        }
+
+        for (let key in conditions) {
+            this.Conditions[key] = conditions[key]
+        }
+
+        return this;
+    }
+
+    /**
      * Builder pattern method which sets the template transforms.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
@@ -237,6 +304,24 @@ export class Template {
     }
 
     /**
+     * Builder pattern method which adds new template transforms.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
+     * @param transforms Template transforms
+     * @returns This template
+     */
+    addTransforms(transforms: string[]): Template {
+        let existingTransform = transforms.filter(t => this.Transform.indexOf(t) >= 0)
+
+        if (existingTransform.length > 0) {
+            throw new Error(`The transform '${existingTransform[0]}' already exists on the template`)
+        }
+
+        this.Transform = this.Transform.concat(transforms)
+        return this;
+    }
+
+    /**
      * Builder pattern method which sets the template outputs.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
@@ -245,6 +330,28 @@ export class Template {
      */
     setOutputs(outputs: {[key: string]: Output}): Template {
         this.Outputs = outputs;
+        return this;
+    }
+
+    /**
+     * Builder pattern method which adds new template outputs.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
+     * @param outputs Template outputs
+     * @returns This template
+     */
+    addOutputs(outputs: {[key: string]: Output}): Template {
+        
+        let existingKeys = Object.keys(outputs).filter(k => this.Outputs.hasOwnProperty(k))
+
+        if (existingKeys.length > 0) {
+            throw new Error(`An output with the logical ID '${existingKeys[0]}' already exists`)
+        }
+
+        for (let key in outputs) {
+            this.Outputs[key] = outputs[key]
+        }
+
         return this;
     }
 }
