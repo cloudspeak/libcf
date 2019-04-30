@@ -32,7 +32,7 @@ import { Cf, Template } from 'cloudspeak-libcf'
 
 ## Getting started
 
-CloudFormation resources each have their own class within the `Cf` namespace, and are named and namespaced according to their [full CloudFormation resource type names](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html).  The constructor always takes the resource type's properties as its argument.  For example, an [S3 bucket resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html) can be created with the following code:
+CloudFormation resources each have their own class within the `Cf` namespace, and are named and namespaced according to their [full CloudFormation resource type names](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html).  The constructor always takes the resource type's properties as its argument.  For example, an [S3 bucket resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html) description can be created with the following code:
 
 ```javascript
 let bucket = new Cf.AWS.S3.Bucket({
@@ -58,9 +58,9 @@ console.log("Template JSON:", template.json)
 The `Template` class and resource classes naturally serialize to valid CloudFormation templates, although the `json` and `prettyJson` accessors are provided for convenience.
 
 
-## Other template properties
+## Builder-like methods
 
-Libcf does not yet provide strong typing for template attributes other than `Resources`, such as `Metadata`, `Outputs`, etc., however these attributes do exist on the template class.  There are also methods named `setMetadata`, `setOutputs`, etc. which return the template object, thus allowing them to be used in a builder-like pattern:
+Libcf also provides strong typing for other template attributes such as `Metadata`, `Outputs`, etc.  Each template attribute, including `Resources`, has methods such as `addOutputs`, `setOutputs` etc. which return the template object, thus allowing them to be used in a builder-like pattern:
 
 ```javascript
 let template = new Template({
@@ -71,44 +71,63 @@ let template = new Template({
 .setDescription("My example template")
 .setOutputs({
     MyBucketName: {
-        Value : "MyBucket",
-        Export : { Name : "BucketName" }
+        Value: "MyBucket",
+        Export: { Name : "BucketName" }
     }
 })
+
+if (addVersion) {
+    template.addOutputs({
+        MyVersion: {
+            Value: "1.0.0",
+        }
+    })
+}
 ```
 
 ## Property types
 
-Libcf provides an interface for each CloudFormation property type.  These may be useful when, for example, re-using certain property values across different resources.  To create a property type in JavaScript, you should use the static methods which exist on each resource type class.  For example, the following code shows how to create a [DynamoDB KeySchema](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html) property and store it for re-use by multiple resources:
+Libcf provides a constructor method for each resource type's `Properties` type.  These may be useful when, for example, re-using property values across different resources.  To create a resource properties instance, you should use the static `Properties` method which exists on each resource type class.
+
+For example, the following code shows how to create two [DynamoDB tables](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html) with the same properties:
 
 ```javascript
-    let usersKeySchema = Cf.AWS.DynamoDB.Table.KeySchema({
-            AttributeName: "UserId",
-            KeyType: "HASH"
-    })
+let tableProperties = Cf.AWS.DynamoDB.Table.Properties({
+    KeySchema: [{
+        AttributeName: "UserId",
+        KeyType: "HASH"
+    }]
+})
 
-    let template = new Template({
-        UsersTable: new Cf.AWS.DynamoDB.Table({
-            KeySchema: [ usersKeySchema ]
-        }),
-        UserProfilesTable: new Cf.AWS.DynamoDB.Table({
-            KeySchema: [ usersKeySchema ]
-        })
-    })
+let template = new Template({
+    UsersTable: new Cf.AWS.DynamoDB.Table(tableProperties),
+    UserProfilesTable: new Cf.AWS.DynamoDB.Table(tableProperties)
+})
 ```
 
-(Note the use of the static `Cf.AWS.DynamoDB.Table.KeySchema` method - this convenience method simply returns the input without doing anything, however it has type information attached to it, which allows the VSCode's intellisense and type checking to work).
+In addition, there are constructor methods for each CloudFormation property type.  For example, if we wished to change the above example so that each table had a different `TableName` value, we could just store the [KeySchema](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html) object in a variable for reuse instead:
 
-In TypeScript, the interface can be used directly:
+```javascript
+let usersKeySchema = Cf.AWS.DynamoDB.Table.KeySchema({
+    AttributeName: "UserId",
+    KeyType: "HASH"
+})
 
-```typescript
-    let usersKeySchema: Cf.AWS.DynamoDB.TableKeySchema = ({
-            AttributeName: "UserId",
-            KeyType: "HASH"
+let template = new Template({
+    UsersTable: new Cf.AWS.DynamoDB.Table({
+        KeySchema: [ usersKeySchema ],
+        TableName: "Users"
+    }),
+    UserProfilesTable: new Cf.AWS.DynamoDB.Table({
+        KeySchema: [ usersKeySchema ],
+        TableName: "UserProfiles"
     })
+})
 ```
 
-Note that the property type name (`KeySchema`) is prefixed by the resource type name (`Table`), due to name clashes which would occur otherwise.
+(Note that although they are called "constructor functions", these convenience methods simply return their input without doing anything. However they have type information attached to them, which allows VSCode's intellisense and type checking to work).
+
+Finally, there are also "partial" versions of each of these constructor functions.  Partial types are the same as their ordinary counterparts except that all of the fields are optional, thus allowing *partial* sets of property values to be specified when necessary without receiving type errors.
 
 ## Other resource properties
 
@@ -126,7 +145,7 @@ let template = new Template({
 
 ## Intrinsic functions
 
-Libcf also provides support for CloudFormation's [intrinsic functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html) such as `Ref` and `Fn::GetAtt`.  To match CloudFormation's syntax, all functions except `Ref` are located in the `Fn` namespace.  The functions also have simpler syntax so are easier to use than CloudFunction's unwieldy arrays used to pass parameters.
+Libcf also provides support for CloudFormation's [intrinsic functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html) such as `Ref` and `Fn::GetAtt`.  To match CloudFormation's syntax, all functions except `Ref` are located in the `Fn` namespace.  The functions also have simpler syntax so are easier to use than CloudFunction's unwieldy parameter arrays.
 
 The following is an example of several intrinsic functions:
 
@@ -155,11 +174,11 @@ let template = new Template({
 }
 ```
 
-Usually this is not a problem, and it necessary for strict type checking of CloudFormation templates.  However in rare cases it may be necessary to force a value to take on a certain type using casting, discussed next.
+Usually this is not a problem, and is necessary for strict type checking of CloudFormation templates.  However in rare cases it may be necessary to force a value to take on a certain type using casting, discussed next.
 
 ## Casting values
 
-In rare cases, it may be necessary to force the type system to ignore the types for a particular value.  For example, suppose that you need to insert some specific CloudFormation syntax which libcf does not support (perhaps because it is new):
+Occasionally, it may be necessary to force the type system to ignore the type of a particular value.  For example, suppose that you need to insert some specific CloudFormation syntax which libcf does not support (perhaps because it is new):
 
 ```javascript
 let template = new Template({

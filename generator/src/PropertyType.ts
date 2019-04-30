@@ -13,18 +13,30 @@ export class PropertyType {
         this.data = data
     }
 
-    generatePropertyTypeInterface() {
-        let tsName = TsGenerator.getPropertyTypeInterfaceName(this.parsedName)
+    hasPropertyList() {
+        return this.data.hasOwnProperty('Properties')
+    }
 
-        if (!this.data.hasOwnProperty('Properties')) {
+    generatePropertyTypeInterface(partial: boolean = false) {
+
+        if (!this.hasPropertyList()) {
+            if (partial) {
+                return []
+            }
+
+            let tsName = TsGenerator.getPropertyTypeInterfaceName(this.parsedName)
             return [
                 `type ${tsName} = ${TsGenerator.getPropertyTsType(this.parsedName, this.data as CfPropertyData)}`
             ]
         }
         else {
             let propertyTypeData = this.data as CfPropertyTypeData
-            let propertyListCode = TsGenerator.generatePropertyList(this.parsedName, propertyTypeData.Properties)
+            let propertyListCode = TsGenerator.generatePropertyList(this.parsedName, propertyTypeData.Properties, !partial)
             propertyListCode = propertyListCode.map(s => `  ${s}`)
+
+            let tsName = partial
+                    ? TsGenerator.getPartialPropertyTypeInterfaceName(this.parsedName)
+                    : TsGenerator.getPropertyTypeInterfaceName(this.parsedName)
 
             return [
                 `export interface ${tsName} {`,
@@ -62,5 +74,42 @@ export class PropertyType {
         ]
     }
 
+
+    generatePartialCastFunctionComment() {
+        return JsDocGenerator.generateComment([
+            `Create a new partial ${this.parsedName.fullname}.  Partial property objects have the`,
+            `same fields as full property objects, except that all of their fields are optional.`,
+            `This may be useful when capturing the value of only some of the property type's`,
+            `fields without causing a type error.`,
+            ``,
+            this.data.Documentation ? `See ${this.data.Documentation}` : ''
+        ])
+    }
+
+    generatePartialStaticCastFunction() {
+        if (!this.hasPropertyList()) {
+            return []
+        }
+
+        return [
+            ...this.generatePartialCastFunctionComment(),
+            `static ${this.parsedName.propertyName}${TsGenerator.PartialPropertyTypeInterfaceSuffix}` + 
+                    `(properties: ${TsGenerator.getPartialPropertyTypeInterfaceName(this.parsedName)}) ` + 
+                    `: ${TsGenerator.getPartialPropertyTypeInterfaceName(this.parsedName)} {`,
+            `  return properties;`,
+            `}`
+        ]
+    }
+
+    generateStaticTypeNameFunction() {
+        return [
+            `/**`,
+            ` * Returns the ${this.parsedName.propertyName} property type name (\`"${this.parsedName.fullname}"\`)`,
+            ` */`,
+            `static get ${this.parsedName.propertyName}TypeName(): string {`,
+            `  return "${this.parsedName.fullname}"`,
+            `}`
+        ]
+    }
 
 }

@@ -3,6 +3,8 @@
  */
 
 import { Resource } from "./Resource";
+import { Output } from "./Output";
+import { Parameter } from "./Parameter";
 
  /**
   * Represents a CloudFormation template, as specified by the CloudFormation template
@@ -38,11 +40,11 @@ export class Template {
     Description: string
     Resources: {[key: string]: Resource}
     Metadata: any
-    Parameters: any
-    Mappings: any
-    Conditions: any
-    Transform: any
-    Outputs: any
+    Parameters: {[key: string]: Parameter}
+    Mappings: {[key: string]: any}
+    Conditions: {[key: string]: boolean}
+    Transform: string[]
+    Outputs: {[key: string]: Output}
 
     /**
      * The default version for CloudFormation templates.
@@ -178,8 +180,8 @@ export class Template {
      * Builder pattern method which sets the template metadata.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html
-     * @param {object} metadata Template metadata
-     * @returns {Template} This template
+     * @param metadata Template metadata
+     * @returns This template
      */
     setMetadata(metadata: any): Template {
         this.Metadata = metadata;
@@ -190,23 +192,68 @@ export class Template {
      * Builder pattern method which sets the template parameters.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
-     * @param {object} parameters Template parameters
-     * @returns {Template} This template
+     * @param parameters Template parameters
+     * @returns This template
      */
-    setParameters(parameters: any): Template {
+    setParameters(parameters: {[key: string]: Parameter}): Template {
         this.Parameters = parameters;
         return this;
     }
     
+    
+    /**
+     * Builder pattern method which adds to the template parameters.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
+     * @param parameters Template parameters
+     * @returns This template
+     */
+    addParameters(parameters: {[key: string]: Parameter}): Template {
+        
+        let existingKeys = Object.keys(parameters).filter(k => this.Parameters.hasOwnProperty(k))
+
+        if (existingKeys.length > 0) {
+            throw new Error(`A parameter with the logical ID '${existingKeys[0]}' already exists`)
+        }
+
+        for (let key in parameters) {
+            this.Parameters[key] = parameters[key]
+        }
+        return this;
+    }
+    
+
     /**
      * Builder pattern method which sets the template mappings.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html
-     * @param {object} mappings Template mappings
-     * @returns {Template} This template
+     * @param mappings Template mappings
+     * @returns This template
      */
-    setMappings(mappings: any): Template {
+    setMappings(mappings: {[key: string]: any}): Template {
         this.Mappings = mappings;
+        return this;
+    }
+
+    /**
+     * Builder pattern method which adds new template mappings.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html
+     * @param mappings Template mappings
+     * @returns This template
+     */
+    addMappings(mappings: {[key: string]: any}): Template {
+        
+        let existingKeys = Object.keys(mappings).filter(k => this.Mappings.hasOwnProperty(k))
+
+        if (existingKeys.length > 0) {
+            throw new Error(`A mapping with the logical ID '${existingKeys[0]}' already exists`)
+        }
+
+        for (let key in mappings) {
+            this.Mappings[key] = mappings[key]
+        }
+
         return this;
     }
     
@@ -214,11 +261,33 @@ export class Template {
      * Builder pattern method which sets the template conditions.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
-     * @param {object} conditions Template conditions
-     * @returns {Template} This template
+     * @param conditions Template conditions
+     * @returns This template
      */
-    setConditions(conditions: any): Template {
+    setConditions(conditions: {[key: string]: boolean}): Template {
         this.Conditions = conditions;
+        return this;
+    }
+
+    /**
+     * Builder pattern method which adds new template conditions.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
+     * @param conditions Template conditions
+     * @returns This template
+     */
+    addConditions(conditions: {[key: string]: boolean}): Template {
+        
+        let existingKeys = Object.keys(conditions).filter(k => this.Conditions.hasOwnProperty(k))
+
+        if (existingKeys.length > 0) {
+            throw new Error(`A condition with the logical ID '${existingKeys[0]}' already exists`)
+        }
+
+        for (let key in conditions) {
+            this.Conditions[key] = conditions[key]
+        }
+
         return this;
     }
 
@@ -226,11 +295,29 @@ export class Template {
      * Builder pattern method which sets the template transforms.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
-     * @param {object} transforms Template transforms
-     * @returns {Template} This template
+     * @param transforms Template transforms
+     * @returns This template
      */
-    setTransform(transforms: any): Template {
+    setTransform(transforms: string[]): Template {
         this.Transform = transforms;
+        return this;
+    }
+
+    /**
+     * Builder pattern method which adds new template transforms.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
+     * @param transforms Template transforms
+     * @returns This template
+     */
+    addTransforms(transforms: string[]): Template {
+        let existingTransform = transforms.filter(t => this.Transform.indexOf(t) >= 0)
+
+        if (existingTransform.length > 0) {
+            throw new Error(`The transform '${existingTransform[0]}' already exists on the template`)
+        }
+
+        this.Transform = this.Transform.concat(transforms)
         return this;
     }
 
@@ -238,11 +325,33 @@ export class Template {
      * Builder pattern method which sets the template outputs.
      * 
      * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
-     * @param {object} outputs Template outputs
-     * @returns {Template} This template
+     * @param outputs Template outputs
+     * @returns This template
      */
-    setOutputs(outputs: any): Template {
+    setOutputs(outputs: {[key: string]: Output}): Template {
         this.Outputs = outputs;
+        return this;
+    }
+
+    /**
+     * Builder pattern method which adds new template outputs.
+     * 
+     * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
+     * @param outputs Template outputs
+     * @returns This template
+     */
+    addOutputs(outputs: {[key: string]: Output}): Template {
+        
+        let existingKeys = Object.keys(outputs).filter(k => this.Outputs.hasOwnProperty(k))
+
+        if (existingKeys.length > 0) {
+            throw new Error(`An output with the logical ID '${existingKeys[0]}' already exists`)
+        }
+
+        for (let key in outputs) {
+            this.Outputs[key] = outputs[key]
+        }
+
         return this;
     }
 }
