@@ -58,9 +58,9 @@ console.log("Template JSON:", template.json)
 The `Template` class and resource classes naturally serialize to valid CloudFormation templates, although the `json` and `prettyJson` accessors are provided for convenience.
 
 
-## Other template properties
+## Builder-like methods
 
-Libcf does not yet provide strong typing for template attributes other than `Resources`, such as `Metadata`, `Outputs`, etc., however these attributes do exist on the template class.  There are also methods named `setMetadata`, `setOutputs`, etc. which return the template object, thus allowing them to be used in a builder-like pattern:
+Libcf also provides strong typing for other template attributes such as `Metadata`, `Outputs`, etc.  Each template attribute, including `Resources`, has methods such as `addOutputs`, `setOutputs` etc. which return the template object, thus allowing them to be used in a builder-like pattern:
 
 ```javascript
 let template = new Template({
@@ -75,6 +75,14 @@ let template = new Template({
         Export: { Name : "BucketName" }
     }
 })
+
+if (addVersion) {
+    template.addOutputs({
+        MyVersion: {
+            Value: "1.0.0",
+        }
+    })
+}
 ```
 
 ## Property types
@@ -118,6 +126,8 @@ let template = new Template({
 ```
 
 (Note that although they are called "constructor functions", these convenience methods simply return their input without doing anything. However they have type information attached to them, which allows VSCode's intellisense and type checking to work).
+
+Finally, there are also "partial" versions of each of these constructor functions.  Partial types are the same as their ordinary counterparts except that all of the fields are optional, thus allowing *partial* sets of property values to be specified when necessary without receiving type errors.
 
 ## Other resource properties
 
